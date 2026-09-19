@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-19T22:20:30.601958+00:00",
+ "updated": "2026-09-19T23:22:10.405152+00:00",
  "status_note": "Last run found 0 new pick(s) and graded 0.",
  "bankroll": 112.26,
  "protection": {
@@ -283,35 +283,35 @@
  },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "tracker": {
-  "tracked": 2241,
+  "tracked": 2758,
   "series": 3827,
   "movers": []
  },
  "models": {
   "tennis": {
-   "matches": 19448,
-   "training_rows": 13307,
+   "matches": 19449,
+   "training_rows": 13308,
    "holdout": {
     "from": "2026-08-15",
     "matches": 1997,
     "elo_log_loss": 0.6587,
-    "model_log_loss": 0.651,
+    "model_log_loss": 0.6511,
     "elo_accuracy": 0.62,
     "model_accuracy": 0.627
    },
    "using": "full",
    "weights": {
-    "elo": 1.742,
+    "elo": 1.743,
     "dominance": 0.0,
     "rank": 0.0,
-    "h2h": 0.428,
+    "h2h": 0.429,
     "form": -1.095,
     "fatigue_games": -0.204,
     "fatigue_matches": 0.045,
     "rest": 0.016,
     "travel": 0.132,
     "altitude": 0.0,
-    "best_of_5": 0.439
+    "best_of_5": 0.438
    },
    "sport": "Tennis",
    "label": "Tennis",
@@ -389,31 +389,31 @@
    "holdout": {
     "matches": 650,
     "rating_log_loss": 0.6281,
-    "model_log_loss": 0.6245,
+    "model_log_loss": 0.6251,
     "rating_accuracy": 0.657,
-    "model_accuracy": 0.654
+    "model_accuracy": 0.651
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6012,
-    "model_log_loss": 0.6245,
+    "model_log_loss": 0.6251,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 650
    },
    "backtest": {
-    "bets": 15,
-    "wins": 3,
-    "units": -15.6,
-    "roi": -0.546
+    "bets": 17,
+    "wins": 6,
+    "units": -6.0,
+    "roi": -0.197
    },
    "weights": {
-    "home_field": 0.254,
-    "rating": 1.527,
-    "rest": 0.229,
-    "point_diff_form": 0.222,
-    "qb_change": 0.322,
-    "epa": 0.168
+    "home_field": 0.256,
+    "rating": 1.531,
+    "rest": 0.236,
+    "point_diff_form": 0.232,
+    "qb_change": 0.27,
+    "epa": 0.167
    },
    "matches": 4380,
    "totals": {
@@ -957,11 +957,11 @@
    "made": "2026-09-19T16:08:49.619994+00:00",
    "expected_end": "2026-09-20T02:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.305,
+   "latest_price": 0.295,
    "pnl": null,
    "why": "Ratings 1437 (Atlas, home) vs 1551 (UNAM Pumas). Share of chances lately (xG or shots on target) 50% vs 50%. Goal difference last 6: -4 vs +1. Last played Sep 13 vs Sep 14. Model gives the away 39%. Blended with the market that's 34% vs a 32% price. Sharp sportsbook price (Pinnacle) says 31%.",
    "start_est": "2026-09-19T23:30:00+00:00",
-   "close_price": 0.305,
+   "close_price": 0.295,
    "sharp_prob": 0.3053,
    "sharp_source": "Pinnacle",
    "research": "",
