@@ -28,6 +28,12 @@ FEATURES = ["home_field", "rating", "starting_pitcher", "run_diff_form", "rest",
 PITCHERS = os.path.join(c.STATE_DIR, "mlb_pitchers.json")
 LEAGUE_FIP = 4.2
 LEAGUE_RA = 4.5
+# Approximate run factors by home team (1.00 = neutral). Rough public estimates, used only for totals.
+PARK = {"COL": 1.28, "CIN": 1.08, "BOS": 1.06, "PHI": 1.03, "KC": 1.03, "AZ": 1.03, "ARI": 1.03, "CHC": 1.02,
+        "NYY": 1.02, "ATH": 1.02, "BAL": 1.00, "LAA": 1.01, "ATL": 1.01, "WSH": 1.00, "TOR": 1.00, "CWS": 1.00,
+        "MIN": 0.99, "HOU": 0.99, "TEX": 0.98, "MIL": 0.98, "LAD": 0.98, "CLE": 0.97, "DET": 0.97, "STL": 0.97,
+        "PIT": 0.97, "NYM": 0.96, "TB": 0.96, "SD": 0.95, "SF": 0.95, "MIA": 0.95, "SEA": 0.92}
+ROOF = {"TB", "TOR", "MIA", "HOU", "AZ", "ARI", "MIL", "SEA", "TEX"}  # domes and retractable roofs
 
 
 def _schedule(start, end):
@@ -119,6 +125,9 @@ class MLBModel:
         self.last = {}
         self.coef = np.array([0.14, 2.3, 0, 0, 0, 0])
         self.fip = {}
+        self.run_scale = 1.0
+        self.rs = defaultdict(lambda: deque(maxlen=15))
+        self.ra = defaultdict(lambda: deque(maxlen=15))
 
     def rating(self, team, day):
         yr = day.year
@@ -170,6 +179,10 @@ class MLBModel:
             self.sp[int(g["ap"])].append(hs)
         self.rd[h].append(hs - as_)
         self.rd[a].append(as_ - hs)
+        self.rs[h].append(hs)
+        self.ra[h].append(as_)
+        self.rs[a].append(as_)
+        self.ra[a].append(hs)
         self.last[h] = self.last[a] = day
 
 
@@ -183,12 +196,15 @@ def build(s):
     model = MLBModel()
     model.fip = load_pitchers(FIRST_SEASON - 1, datetime.now(timezone.utc).year - 1)
     X, y = [], []
+    runs = []  # (expected total, actual total) to correct any bias in the runs projection
     for g in games:
         for k in ("hp", "ap"):
             g[k] = None if pd.isna(g.get(k)) else int(g[k])
         day = _day(g["date"])
         if len(model.rd[g["home_id"]]) >= 5 and len(model.rd[g["away_id"]]) >= 5:
-            x, _ = model.features(g, day)
+            x, fi = model.features(g, day)
+            eh, ea = expected_runs(model, g, day, fi["fiph"], fi["fipa"])
+            runs.append((eh + ea, float(g["hs"]) + float(g["as"])))
             X.append(x)
             y.append(1.0 if g["hs"] > g["as"] else 0.0)
         model.update(g, day)
@@ -198,6 +214,10 @@ def build(s):
                                    min_price=s["min_price"])
     model.coef = coef
     info["matches"] = len(games)
+    recent = runs[-3000:]
+    if recent:
+        model.run_scale = sum(a for _, a in recent) / sum(e for e, _ in recent)
+        info["runs_scale"] = round(model.run_scale, 3)
     try:
         today = datetime.now(timezone.utc).date()
         upcoming = _schedule(str(today - timedelta(days=1)), str(today + timedelta(days=2)))
@@ -206,6 +226,15 @@ def build(s):
         print(f"mlb: upcoming schedule unavailable ({e})")
         upcoming, teams = [], []
     return Engine(model, upcoming, teams, info)
+
+
+def expected_runs(model, g, day, fip_h, fip_a):
+    """Runs each team should score: its offence, the other side's starter and bullpen, and the park."""
+    def rate(q):
+        return (sum(q) + LEAGUE_RA * 8) / (len(q) + 8)
+    pitch_a = 0.6 * fip_a / LEAGUE_FIP + 0.4 * rate(model.ra[g["away_id"]]) / LEAGUE_RA
+    pitch_h = 0.6 * fip_h / LEAGUE_FIP + 0.4 * rate(model.ra[g["home_id"]]) / LEAGUE_RA
+    return rate(model.rs[g["home_id"]]) * pitch_a, rate(model.rs[g["away_id"]]) * pitch_h
 
 
 class Engine:
@@ -259,7 +288,21 @@ class Engine:
             home = tid == game["home_id"]
             p = ph if home else 1 - ph
             outcomes.append(c.Outcome(mk, p, f"{mk.get('yes_sub_title')} to win", self.why(game, info, home, p)))
-        return c.Candidate(event, self.sport, "MLB", f"{game['away']} at {game['home']}", outcomes)
+        cand = c.Candidate(event, self.sport, "MLB", f"{game['away']} at {game['home']}", outcomes)
+        cand.sides = {mk["ticker"].split("-")[-1]: ("home" if tid == game["home_id"] else "away")
+                      for mk, tid in zip(markets, ids)}
+        lh, la = expected_runs(m, game, day, info["fiph"], info["fipa"])
+        code = next((k for k, v in self.abbr.items() if v == game["home_id"]), "")
+        park, note = PARK.get(code, 1.0), ""
+        if code not in ROOF:
+            loc = next((n for n in self.names.get(game["home_id"], [])[1:2] if n), None)
+            spot = c.place(loc) if loc else None
+            wx = c.weather(spot["lat"], spot["lon"], _day(game["date"])) if spot else None
+            if wx:
+                park *= 1 + 0.01 * (wx["temp"] - 70) / 10 * 3  # warm air carries the ball
+                note = f"Forecast {wx['temp']:.0f}F, wind {wx['wind']:.0f} mph."
+        cand.dist = c.PoissonDist(lh * park * m.run_scale, la * park * m.run_scale, (f"Park factor {PARK.get(code, 1.0):.2f}. " + note).strip())
+        return cand
 
     def why(self, g, info, home, p):
         me, opp = (g["home"], g["away"]) if home else (g["away"], g["home"])

@@ -236,3 +236,132 @@ class Candidate:
     def __init__(self, event, sport, league, title, outcomes, extra=None):
         self.event, self.sport, self.league, self.title = event, sport, league, title
         self.outcomes, self.extra = outcomes, extra or {}
+
+
+# ---------------------------------------------------------------- weather and distributions
+GEO2 = os.path.join(STATE_DIR, "places.json")
+_places = None
+_forecasts = {}
+
+
+def place(name):
+    """Map coordinates for a city or stadium name (free Open-Meteo geocoding, cached)."""
+    global _places
+    if _places is None:
+        _places = load_json(GEO2, {})
+    if name in _places:
+        return _places[name]
+    try:
+        r = get("https://geocoding-api.open-meteo.com/v1/search", params={"name": name, "count": 1}, timeout=15, tries=1)
+        res = (r.json().get("results") or [None])[0]
+        _places[name] = {"lat": res["latitude"], "lon": res["longitude"]} if res else None
+        save_json(GEO2, _places)
+    except Exception:
+        return None
+    return _places[name]
+
+
+def weather(lat, lon, when):
+    """Forecast at a place and time: temperature (F), wind (mph) and rain (mm). None if unavailable."""
+    key = (round(lat, 2), round(lon, 2))
+    if key not in _forecasts:
+        try:
+            r = get("https://api.open-meteo.com/v1/forecast", params={
+                "latitude": lat, "longitude": lon, "hourly": "temperature_2m,precipitation,wind_speed_10m",
+                "wind_speed_unit": "mph", "temperature_unit": "fahrenheit", "forecast_days": 7, "timezone": "UTC"},
+                timeout=15, tries=1)
+            _forecasts[key] = r.json().get("hourly")
+        except Exception:
+            _forecasts[key] = None
+    h = _forecasts[key]
+    if not h:
+        return None
+    stamp = when.strftime("%Y-%m-%dT%H:00")
+    if stamp not in h["time"]:
+        return None
+    i = h["time"].index(stamp)
+    return {"temp": h["temperature_2m"][i], "wind": h["wind_speed_10m"][i], "rain": h["precipitation"][i]}
+
+
+def norm_cdf(z):
+    return 0.5 * (1 + math.erf(z / math.sqrt(2)))
+
+
+def norm_ppf(p):
+    p = min(max(p, 1e-6), 1 - 1e-6)
+    lo, hi = -10.0, 10.0
+    for _ in range(60):
+        mid = (lo + hi) / 2
+        if norm_cdf(mid) < p:
+            lo = mid
+        else:
+            hi = mid
+    return (lo + hi) / 2
+
+
+class NormalDist:
+    """Final margin and total as bell curves (football)."""
+    def __init__(self, mu_margin, sd_margin, mu_total, sd_total, note=""):
+        self.mm, self.sm, self.mt, self.st, self.note = mu_margin, sd_margin, mu_total, sd_total, note
+
+    def total_over(self, x):
+        return 1 - norm_cdf((x - self.mt) / self.st)
+
+    def margin_over(self, side, x):
+        mu = self.mm if side == "home" else -self.mm
+        return 1 - norm_cdf((x - mu) / self.sm)
+
+    def team_over(self, side, x):
+        mean = (self.mt + (self.mm if side == "home" else -self.mm)) / 2
+        return 1 - norm_cdf((x - mean) / (self.st * 0.72))
+
+    def part(self, which):
+        """Halves get about half the points, quarters about a quarter, each with relatively more spread."""
+        if which in ("1h", "2h"):
+            return NormalDist(self.mm * 0.5, self.sm * 0.68, self.mt * 0.5, self.st * 0.68, self.note)
+        if which in ("1q", "2q", "3q", "4q"):
+            share = {"1q": 0.23, "2q": 0.29, "3q": 0.22, "4q": 0.26}[which]  # 2nd and 4th quarters score more
+            return NormalDist(self.mm * 0.25, self.sm * 0.5, self.mt * share, self.st * 0.52, self.note)
+        return None
+
+    def describe(self):
+        return f"Projected score margin {self.mm:+.1f} (home) and total {self.mt:.1f}.{(' ' + self.note) if self.note else ''}"
+
+
+def negbin_pmf(mean, r, n):
+    """Scoring spread wider than Poisson (real run totals swing more than a Poisson allows)."""
+    p = r / (r + mean)
+    out, prob = [], p ** r
+    for k in range(n):
+        out.append(prob)
+        prob *= (k + r) / (k + 1) * (1 - p)
+    return out
+
+
+class PoissonDist:
+    """Scoring for each side (baseball runs), using a negative binomial so blowouts are possible."""
+    def __init__(self, lam_h, lam_a, note="", n=30, r=4.0):
+        self.lh, self.la, self.note = lam_h, lam_a, note
+        ph = negbin_pmf(lam_h, r, n)
+        pa = negbin_pmf(lam_a, r, n)
+        self.cells = [(i, j, ph[i] * pa[j]) for i in range(n) for j in range(n)]
+
+    def total_over(self, x):
+        return sum(p for i, j, p in self.cells if i + j > x)
+
+    def margin_over(self, side, x):
+        sign = 1 if side == "home" else -1
+        return sum(p for i, j, p in self.cells if sign * (i - j) > x)
+
+    def team_over(self, side, x):
+        pm = negbin_pmf(self.lh if side == "home" else self.la, 4.0, 30)
+        return 1 - sum(pm[:int(math.floor(x)) + 1])
+
+    def part(self, which):
+        """First five innings: about 55% of the runs (mostly the starters)."""
+        if which != "f5":
+            return None
+        return PoissonDist(self.lh * 0.55, self.la * 0.55, self.note)
+
+    def describe(self):
+        return f"Projected runs {self.lh:.1f} (home) vs {self.la:.1f} ({self.lh + self.la:.1f} total).{(' ' + self.note) if self.note else ''}"

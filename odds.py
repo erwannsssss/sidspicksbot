@@ -39,7 +39,8 @@ def _now():
 
 
 class Sharp:
-    def __init__(self, daily_cap):
+    def __init__(self, daily_cap, markets="h2h,totals,spreads"):
+        self.markets = markets
         self.key = os.getenv("ODDS_API_KEY")
         self.cache = c.load_json(CACHE, {})
         self.usage = c.load_json(USAGE, {})
@@ -55,7 +56,8 @@ class Sharp:
         if self.usage.get("date") != today:
             self.usage.update(date=today, calls=0)
         remaining = self.usage.get("remaining")
-        return self.usage["calls"] < self.daily_cap and (remaining is None or remaining > 5)
+        cost = len(self.markets.split(","))
+        return self.usage["calls"] + cost <= self.daily_cap and (remaining is None or remaining > cost + 5)
 
     def _odds(self, sport_key):
         hit = self.cache.get(sport_key)
@@ -64,9 +66,10 @@ class Sharp:
         if not self.enabled or not self._budget_ok():
             return hit["events"] if hit else []
         try:
+            mk = self.markets if not sport_key.startswith("tennis") else "h2h"
             r = c.get(f"{API}/sports/{sport_key}/odds", params={
-                "apiKey": self.key, "regions": "eu", "markets": "h2h", "oddsFormat": "decimal"}, timeout=30, tries=1)
-            self.usage["calls"] += 1
+                "apiKey": self.key, "regions": "eu", "markets": mk, "oddsFormat": "decimal"}, timeout=30, tries=1)
+            self.usage["calls"] += len(mk.split(","))
             rem = r.headers.get("x-requests-remaining")
             if rem is not None:
                 self.usage["remaining"] = float(rem)
@@ -106,6 +109,9 @@ class Sharp:
         if not key:
             return None
         teams, side = pick.get("_teams"), pick.get("_side")
+        if pick.get("mtype", "winner") not in ("winner", "total", "spread") or \
+                (pick.get("mtype") == "spread" and pick.get("side") == "no"):
+            return None
         end = datetime.fromisoformat(pick["expected_end"])
         for ev in self._odds(key):
             names = [ev.get("home_team", ""), ev.get("away_team", "")]
@@ -120,18 +126,30 @@ class Sharp:
             books = {b["key"]: b for b in ev.get("bookmakers", [])}
             chosen = [books["pinnacle"]] if "pinnacle" in books else list(books.values())
             fair = []
+            mtype, line = pick.get("mtype", "winner"), pick.get("line")
+            api_key = {"winner": "h2h", "total": "totals", "spread": "spreads"}.get(mtype)
             for b in chosen:
-                mk = next((m for m in b.get("markets", []) if m["key"] == "h2h"), None)
+                mk = next((m for m in b.get("markets", []) if m["key"] == api_key), None)
                 if not mk:
                     continue
-                inv = {o["name"]: 1 / o["price"] for o in mk["outcomes"] if o.get("price", 0) > 1}
-                total = sum(inv.values())
-                if side == "Draw":
-                    target = next((n for n in inv if n.lower() == "draw"), None)
+                outs = [o for o in mk["outcomes"] if o.get("price", 0) > 1]
+                if mtype == "total":
+                    outs = [o for o in outs if o.get("point") == line]
+                    want = "over" if pick.get("side", "yes") == "yes" else "under"
+                    target = next((o for o in outs if o["name"].lower() == want), None)
+                elif mtype == "spread" and pick.get("side", "yes") == "yes":
+                    team = c.match_name(side, [o["name"] for o in outs], cutoff=0.75)
+                    mine = next((o for o in outs if o["name"] == team and o.get("point") == -line), None)
+                    other = next((o for o in outs if o["name"] != team and o.get("point") == line), None)
+                    outs, target = ([mine, other], mine) if mine and other else ([], None)
+                elif side == "Draw":
+                    target = next((o for o in outs if o["name"].lower() == "draw"), None)
                 else:
-                    target = c.match_name(side, [n for n in inv if n.lower() != "draw"], cutoff=0.75)
+                    name = c.match_name(side, [o["name"] for o in outs if o["name"].lower() != "draw"], cutoff=0.75)
+                    target = next((o for o in outs if o["name"] == name), None)
+                total = sum(1 / o["price"] for o in outs)
                 if target and total > 0:
-                    fair.append(inv[target] / total)
+                    fair.append((1 / target["price"]) / total)
             if fair:
                 return round(sum(fair) / len(fair), 4), ("Pinnacle" if "pinnacle" in books else f"{len(fair)} books")
         return None

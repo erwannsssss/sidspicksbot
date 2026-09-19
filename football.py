@@ -33,6 +33,13 @@ FEATURES = ["home_field", "rating", "rest", "point_diff_form", "qb_change", "epa
 EPA_CACHE = os.path.join(c.STATE_DIR, "nfl_epa.csv.gz")
 EPA_META = os.path.join(c.STATE_DIR, "nfl_epa_meta.json")
 PBP_URL = "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_{}.csv.gz"
+NFL_CITY = {"ARI": "Glendale, Arizona", "ATL": "Atlanta", "BAL": "Baltimore", "BUF": "Orchard Park",
+            "CAR": "Charlotte", "CHI": "Chicago", "CIN": "Cincinnati", "CLE": "Cleveland", "DAL": "Arlington, Texas",
+            "DEN": "Denver", "DET": "Detroit", "GB": "Green Bay", "HOU": "Houston", "IND": "Indianapolis",
+            "JAX": "Jacksonville", "KC": "Kansas City", "LA": "Inglewood", "LAC": "Inglewood", "LV": "Las Vegas",
+            "MIA": "Miami Gardens", "MIN": "Minneapolis", "NE": "Foxborough", "NO": "New Orleans",
+            "NYG": "East Rutherford", "NYJ": "East Rutherford", "PHI": "Philadelphia", "PIT": "Pittsburgh",
+            "SEA": "Seattle", "SF": "Santa Clara", "TB": "Tampa", "TEN": "Nashville", "WAS": "Landover"}
 NFL_CODES = {"LAR": "LA", "JAC": "JAX", "WSH": "WAS", "LVR": "LV", "OAK": "LV", "SD": "LAC", "STL": "LA"}
 
 
@@ -51,8 +58,11 @@ def _day(s):
 
 
 class GridModel:
-    def __init__(self, k, hfa, regress, new_rating=1500):
+    def __init__(self, k, hfa, regress, new_rating=1500, avg_total=44.0, sd_margin=13.5, sd_total=13.5):
         self.k, self.hfa, self.regress, self.new = k, hfa, regress, new_rating
+        self.avg_total, self.sd_margin, self.sd_total = avg_total, sd_margin, sd_total
+        self.pf = defaultdict(lambda: deque(maxlen=8))
+        self.pa = defaultdict(lambda: deque(maxlen=8))
         self.r, self.season = {}, {}
         self.form = defaultdict(lambda: deque(maxlen=5))
         self.last = {}
@@ -67,6 +77,13 @@ class GridModel:
             self.r[t] = 1500 + (self.r[t] - 1500) * (1 - self.regress)
         self.season[t] = season
         return self.r[t]
+
+    def expected_total(self, h, a):
+        avg = self.avg_total / 2
+
+        def rate(q):
+            return (sum(q) + avg * 4) / (len(q) + 4)
+        return (rate(self.pf[h]) + rate(self.pa[a])) / 2 + (rate(self.pf[a]) + rate(self.pa[h])) / 2
 
     def qb_change(self, t, qb):
         seen = [q for q in self.qbs[t] if q]
@@ -109,6 +126,11 @@ class GridModel:
         self.r[a] = ra - self.k * mov * (res - exp)
         self.form[h].append(hs - as_)
         self.form[a].append(as_ - hs)
+        self.pf[h].append(hs)
+        self.pa[h].append(as_)
+        self.pf[a].append(as_)
+        self.pa[a].append(hs)
+        self.avg_total += 0.01 * (hs + as_ - self.avg_total)
         self.last[h] = self.last[a] = day
         if g.get("hepa") is not None:
             self.epa[h].append(g["hepa"])
@@ -122,8 +144,14 @@ class GridModel:
 
 def _train(model, games, s, name):
     X, y, mkt, price = [], [], [], []
+    tot = []  # (model chance of going over the closing total, went over)
     for g in games:
         day = g["day"]
+        if g["done"] and g.get("total_line") and len(model.pf[g["home"]]) >= 4 and len(model.pf[g["away"]]) >= 4:
+            line = g["total_line"]
+            if float(g["hs"]) + float(g["as"]) != line:
+                p = 1 - c.norm_cdf((line - model.expected_total(g["home"], g["away"])) / model.sd_total)
+                tot.append((p, 1.0 if float(g["hs"]) + float(g["as"]) > line else 0.0))
         if g["done"]:
             if g["home"] in model.r and g["away"] in model.r and len(model.form[g["home"]]) >= 2 \
                     and len(model.form[g["away"]]) >= 2 and g["hs"] != g["as"]:
@@ -143,6 +171,12 @@ def _train(model, games, s, name):
                                    min_price=s["min_price"])
     model.coef = coef
     info["matches"] = sum(1 for g in games if g["done"])
+    if len(tot) > 500:
+        t = np.array(tot[-int(len(tot) * 0.15):])
+        grid = {w / 10: c.log_loss(w / 10 * t[:, 0] + (1 - w / 10) * 0.5, t[:, 1]) for w in range(11)}
+        info["totals"] = {"matches": len(t), "model_log_loss": round(c.log_loss(t[:, 0], t[:, 1]), 4),
+                          "market_log_loss": round(c.log_loss(np.full(len(t), 0.5), t[:, 1]), 4),
+                          "best_weight": min(grid, key=grid.get)}
     print(f"{name}: trained on {info['matches']} games, using {info.get('using')}")
     return info
 
@@ -199,6 +233,15 @@ def load_epa(seasons):
     return cache
 
 
+def _kick(r):
+    """Kickoff time in UTC (nflverse times are US Eastern)."""
+    try:
+        t = pd.Timestamp(f"{r['gameday']} {r.get('gametime') or '13:00'}").tz_localize("America/New_York")
+        return t.tz_convert("UTC").to_pydatetime().replace(tzinfo=None)
+    except Exception:
+        return None
+
+
 def build_nfl(s):
     df = load_nfl()
     if not len(df):
@@ -213,7 +256,10 @@ def build_nfl(s):
                       "neutral": r.get("location") == "Neutral", "hqb": r.get("home_qb_id") if isinstance(r.get("home_qb_id"), str) else None,
                       "aqb": r.get("away_qb_id") if isinstance(r.get("away_qb_id"), str) else None,
                       "hml": ml_to_prob(r.get("home_moneyline")), "aml": ml_to_prob(r.get("away_moneyline")),
-                      "hepa": epa_map.get((r["game_id"], r["home_team"])), "aepa": epa_map.get((r["game_id"], r["away_team"]))})
+                      "hepa": epa_map.get((r["game_id"], r["home_team"])), "aepa": epa_map.get((r["game_id"], r["away_team"])),
+                      "total_line": r.get("total_line") if not pd.isna(r.get("total_line")) else None,
+                      "roof": r.get("roof") if isinstance(r.get("roof"), str) else "",
+                      "kick": _kick(r)})
     model = GridModel(k=20, hfa=48, regress=1 / 3)
     info = _train(model, games, s, "NFL")
     upcoming = [g for g in games if not g["done"]]
@@ -286,7 +332,7 @@ def build_cfb(s):
                       "hdef": lower(r.get("hdiv")), "adef": lower(r.get("adiv")),
                       "hml": ml_to_prob(r.get("hml")), "aml": ml_to_prob(r.get("aml")),
                       "start": start})
-    model = GridModel(k=25, hfa=55, regress=0.4)
+    model = GridModel(k=25, hfa=55, regress=0.4, avg_total=54.0, sd_margin=16.0, sd_total=17.0)
     info = _train(model, games, s, "College football")
     now = datetime.now(timezone.utc).replace(tzinfo=None)
     upcoming = [g for g in games if not g["done"] and g["day"] > now - timedelta(days=1)]
@@ -338,7 +384,19 @@ class Engine:
             home = t == game["home"]
             p = ph if home else 1 - ph
             outs.append(c.Outcome(mk, p, f"{mk.get('yes_sub_title')} to win", self.why(game, info, home, p)))
-        return c.Candidate(event, self.sport, self.series[series], f"{game['away']} at {game['home']}", outs)
+        cand = c.Candidate(event, self.sport, self.series[series], f"{game['away']} at {game['home']}", outs)
+        cand.sides = {mk["ticker"].split("-")[-1]: ("home" if t == game["home"] else "away") for mk, t in zip(markets, ids)}
+        total, note = m.expected_total(game["home"], game["away"]), ""
+        if self.code_match and game.get("roof") not in ("dome", "closed") and game.get("kick"):
+            spot = c.place(NFL_CITY.get(game["home"], ""))
+            wx = c.weather(spot["lat"], spot["lon"], game["kick"]) if spot else None
+            if wx:
+                adj = -0.25 * max(wx["wind"] - 12, 0) - (1.5 if wx["rain"] > 1 else 0)
+                total += adj
+                note = f"Forecast {wx['temp']:.0f}F, wind {wx['wind']:.0f} mph, rain {wx['rain']:.1f} mm."
+        mu = m.sd_margin * c.norm_ppf(ph)
+        cand.dist = c.NormalDist(mu, m.sd_margin, total, m.sd_total, note)
+        return cand
 
     def why(self, g, info, home, p):
         me, opp = (g["home"], g["away"]) if home else (g["away"], g["home"])

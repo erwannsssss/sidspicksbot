@@ -66,6 +66,17 @@ def _odds(row, names):
     return None
 
 
+def _first(row, keys):
+    for k in keys:
+        try:
+            v = float(row.get(k))
+            if v > 1:
+                return v
+        except (TypeError, ValueError):
+            continue
+    return None
+
+
 def _main_season(code, y):
     url = f"https://www.football-data.co.uk/mmz4281/{_season_code(y)}/{code}.csv"
     df = pd.read_csv(io.StringIO(c.get(url).content.decode("utf-8-sig", "ignore")), on_bad_lines="skip")
@@ -78,6 +89,8 @@ def _main_season(code, y):
         rows.append({"date": pd.to_datetime(r["Date"], dayfirst=True, errors="coerce"), "league": code,
                      "home": r["HomeTeam"], "away": r["AwayTeam"], "hg": r["FTHG"], "ag": r["FTAG"],
                      "hst": r.get("HST"), "ast": r.get("AST"), "hxg": r.get("HxG"), "axg": r.get("AxG"),
+                     "o25": _first(r, ("AvgC>2.5", "Avg>2.5", "BbAv>2.5", "B365>2.5")),
+                     "u25": _first(r, ("AvgC<2.5", "Avg<2.5", "BbAv<2.5", "B365<2.5")),
                      "oh": o[0] if o else None, "od": o[1] if o else None, "oa": o[2] if o else None,
                      "season": y})
     return rows
@@ -95,13 +108,18 @@ def _extra_league(code):
             continue
         o = _odds(r, [("AvgCH", "AvgCD", "AvgCA"), ("PSCH", "PSCD", "PSCA"), ("B365CH", "B365CD", "B365CA")])
         rows.append({"date": d, "league": code, "home": r["Home"], "away": r["Away"], "hg": r["HG"],
-                     "ag": r["AG"], "hst": None, "ast": None, "oh": o[0] if o else None,
+                     "ag": r["AG"], "hst": None, "ast": None, "o25": None, "u25": None, "oh": o[0] if o else None,
                      "od": o[1] if o else None, "oa": o[2] if o else None, "season": d.year})
     return rows
 
 
+CACHE_VERSION = 2  # v2 adds over/under 2.5 goals odds
+
+
 def load_history():
     cache = pd.read_csv(CACHE, parse_dates=["date"]) if os.path.exists(CACHE) else pd.DataFrame()
+    if c.load_json(META, {}).get("version") != CACHE_VERSION:
+        cache = pd.DataFrame()  # rebuild once with the new columns
     if len(cache) and c.fresh(META, 20):
         return cache
     now = datetime.now(timezone.utc)
@@ -129,6 +147,7 @@ def load_history():
         os.makedirs(c.STATE_DIR, exist_ok=True)
         cache.to_csv(CACHE, index=False, compression="gzip")
         c.mark_fresh(META)
+        c.save_json(META, {**c.load_json(META, {}), "version": CACHE_VERSION})
     print(f"Soccer history: {len(cache)} matches")
     return cache
 
@@ -173,7 +192,24 @@ class SoccerModel:
         self.gd = defaultdict(lambda: deque(maxlen=6))
         self.last = {}
         self.league_of = {}
+        self.gf = defaultdict(lambda: deque(maxlen=10))
+        self.ga = defaultdict(lambda: deque(maxlen=10))
+        self.lg = defaultdict(lambda: [1.5, 1.2])   # league average home and away goals (slow moving)
         self.w, self.c1, self.c2 = np.array([1.0, 0, 0, 0]), -0.45, 0.25
+        self.goal_scale = 1.0
+
+    def goal_rates(self, h, a, lh, la):
+        """Expected goals for the home and away team, from recent scoring and the league's average."""
+        lg_h, lg_a = self.lg[lh]
+        avg = (lg_h + lg_a) / 2
+
+        def rate(q, k=6):
+            return (sum(q) + avg * k) / (len(q) + k) / avg
+        lam_h = lg_h * rate(self.gf[h]) * rate(self.ga[a]) * self.goal_scale
+        lam_a = lg_a * rate(self.gf[a]) * rate(self.ga[h]) * self.goal_scale
+        # nudge toward what the ratings say about who is stronger
+        tilt = 10 ** ((self.rating(h, lh) - self.rating(a, la)) / 1600)
+        return lam_h * tilt ** 0.5, lam_a / tilt ** 0.5
 
     def rating(self, team, league):
         if team not in self.r:
@@ -224,6 +260,14 @@ class SoccerModel:
             self.sot[a].append(m["ast"] / (m["hst"] + m["ast"]))
         self.gd[h].append(hg - ag)
         self.gd[a].append(ag - hg)
+        if not m.get("euro"):
+            self.gf[h].append(hg)
+            self.ga[h].append(ag)
+            self.gf[a].append(ag)
+            self.ga[a].append(hg)
+            L = self.lg[lh]
+            L[0] += 0.004 * (hg - L[0])
+            L[1] += 0.004 * (ag - L[1])
         self.last[h] = self.last[a] = m["date"]
         self.league_of[h], self.league_of[a] = lh, la
 
@@ -252,7 +296,8 @@ def build(kalshi_results, s):
                         "lh": r["league"], "la": r["league"], "hg": r["hg"], "ag": r["ag"],
                         "hst": _num(r.get("hst")), "ast": _num(r.get("ast")),
                         "hxg": _num(r.get("hxg")), "axg": _num(r.get("axg")),
-                        "odds": (r["oh"], r["od"], r["oa"]) if _num(r.get("oh")) and _num(r.get("od")) and _num(r.get("oa")) else None})
+                        "odds": (r["oh"], r["od"], r["oa"]) if _num(r.get("oh")) and _num(r.get("od")) and _num(r.get("oa")) else None,
+                        "ou": (_num(r.get("o25")), _num(r.get("u25"))) if _num(r.get("o25")) and _num(r.get("u25")) else None})
     euro_teams = sorted({t for code in EURO_CODES for t in teams_by_league.get(code, ())})
     league_of = {}
     for code, ts in teams_by_league.items():
@@ -268,7 +313,16 @@ def build(kalshi_results, s):
     matches.sort(key=lambda m: m["date"])
     model = SoccerModel()
     X, Y, odds = [], [], []
+    tot = []  # (model chance of over 2.5, market chance, went over)
+    goals = []  # (projected total, actual total)
     for m in matches:
+        if m.get("ou") and len(model.gf[m["home"]]) >= 5 and len(model.gf[m["away"]]) >= 5:
+            lh_, la_ = model.goal_rates(m["home"], m["away"], m["lh"], m["la"])
+            io, iu = 1 / m["ou"][0], 1 / m["ou"][1]
+            tot.append((p_over(lh_ + la_, 2.5), io / (io + iu), 1.0 if m["hg"] + m["ag"] > 2.5 else 0.0, io, iu))
+        if m["home"] in model.r and len(model.gf[m["home"]]) >= 5 and len(model.gf[m["away"]]) >= 5 and not m.get("euro"):
+            lh2, la2 = model.goal_rates(m["home"], m["away"], m["lh"], m["la"])
+            goals.append((lh2 + la2, m["hg"] + m["ag"]))
         if m["home"] in model.r and m["away"] in model.r and len(model.gd[m["home"]]) >= 4 and len(model.gd[m["away"]]) >= 4:
             x, _ = model.features(m["home"], m["away"], m["lh"], m["la"], m["date"])
             X.append(x)
@@ -276,6 +330,15 @@ def build(kalshi_results, s):
             odds.append(m["odds"])
         model.update(m)
     info = {"matches": len(matches), "from_kalshi": added, "training_rows": len(Y)}
+    if len(tot) > 2000:
+        t = np.array(tot[-int(len(tot) * 0.15):])
+        info["_tot"] = t
+        t = t[:, :3]
+        info["totals_bias"] = round(float(np.mean(t[:, 0]) - np.mean(t[:, 2])), 3)
+        grid = {g / 10: c.log_loss(g / 10 * t[:, 0] + (1 - g / 10) * t[:, 1], t[:, 2]) for g in range(11)}
+        info["totals"] = {"matches": len(t), "model_log_loss": round(c.log_loss(t[:, 0], t[:, 2]), 4),
+                          "market_log_loss": round(c.log_loss(t[:, 1], t[:, 2]), 4),
+                          "best_weight": min(grid, key=grid.get)}
     X, Y = np.array(X), np.array(Y)
     if len(Y) > 3000:
         cut = int(len(Y) * 0.85)
@@ -314,8 +377,49 @@ def build(kalshi_results, s):
             wb, cb1, cb2 = fit_ordered(X[:, :1], Y)
             model.w, model.c1, model.c2 = np.array([wb[0], 0, 0, 0]), cb1, cb2
         info["weights"] = {f: round(float(v), 3) for f, v in zip(FEATURES, model.w)}
+    last_goals = goals[-5000:]
+    if last_goals:
+        model.goal_scale = sum(a for _, a in last_goals) / sum(e for e, _ in last_goals)
+        info["goals_scale"] = round(model.goal_scale, 3)
     live_euro = sorted({t for code in EURO_CODES for t in recent.get(code, ())})
     return Engine(model, recent, live_euro, info)
+
+
+def _pois(lam, k):
+    return math.exp(-lam) * lam ** k / math.factorial(k)
+
+
+def p_over(lam_total, line):
+    return 1 - sum(_pois(lam_total, k) for k in range(int(math.floor(line)) + 1))
+
+
+class GoalDist:
+    """Independent Poisson goals for each team: totals, spreads and both-teams-to-score."""
+    def __init__(self, lam_h, lam_a):
+        self.lh, self.la = lam_h, lam_a
+        self.grid = [[_pois(lam_h, i) * _pois(lam_a, j) for j in range(12)] for i in range(12)]
+
+    def total_over(self, x):
+        return sum(p for i, row in enumerate(self.grid) for j, p in enumerate(row) if i + j > x)
+
+    def margin_over(self, side, x):
+        sign = 1 if side == "home" else -1
+        return sum(p for i, row in enumerate(self.grid) for j, p in enumerate(row) if sign * (i - j) > x)
+
+    def btts(self):
+        return (1 - math.exp(-self.lh)) * (1 - math.exp(-self.la))
+
+    def team_over(self, side, x):
+        lam = self.lh if side == "home" else self.la
+        return 1 - sum(_pois(lam, k) for k in range(int(math.floor(x)) + 1))
+
+    def part(self, which):
+        """First half has about 45% of the goals, second half about 55%."""
+        share = 0.45 if which == "1h" else 0.55
+        return GoalDist(self.lh * share, self.la * share)
+
+    def describe(self):
+        return f"Expected goals {self.lh:.2f} vs {self.la:.2f} ({self.lh + self.la:.2f} total)."
 
 
 # ---------------------------------------------------------------- live
@@ -368,7 +472,15 @@ class Engine:
                 outcomes.append(c.Outcome(m, pa, f"{sub} to win", self.why(info, h, a, "away", pa)))
         if len(outcomes) != 3:
             return None
-        return c.Candidate(event, self.sport, SERIES[series], f"{names[0]} vs {names[1]}", outcomes)
+        cand = c.Candidate(event, self.sport, SERIES[series], f"{names[0]} vs {names[1]}", outcomes)
+        cand.sides = {}
+        for m in markets:
+            code = m["ticker"].split("-")[-1]
+            sub = (m.get("yes_sub_title") or "").strip()
+            if sub.lower() != "tie":
+                cand.sides[code] = "home" if c.match_name(sub, [names[0], names[1]]) == names[0] else "away"
+        cand.dist = GoalDist(*self.model.goal_rates(h, a, lh, la))
+        return cand
 
     def why(self, info, h, a, side, p):
         gh, ga = info["gd"]

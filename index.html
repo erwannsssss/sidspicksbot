@@ -111,6 +111,10 @@ svg{display:block;width:100%;height:auto}
   <p class="meta" style="margin:-4px 0 10px">Smaller edges the agent tracks for practice only. They aren't recommendations and don't count in the bankroll, but they help it learn faster.</p>
   <div class="card"><div class="meta" id="watchSum"></div><div class="list" id="watch"></div></div>
 
+  <h2>Parlays</h2>
+  <p class="meta" style="margin:-4px 0 10px">Combinations of the agent's best legs from different games. Big payouts, low hit rates: only take one if Kalshi's combo pays at least the listed amount.</p>
+  <div class="card"><div class="meta" id="parlaySum"></div><div id="parlays"></div></div>
+
   <h2>Your record vs the model</h2>
   <div class="two">
     <div class="card"><div class="meta">Model, every pick</div><span class="num" id="mUnits">–</span><span class="meta" id="mRec"></span></div>
@@ -143,6 +147,13 @@ svg{display:block;width:100%;height:auto}
   <h2>How good are the models?</h2>
   <div id="modelcheck"><p class="empty">Shows up after the next run.</p></div>
 
+  <h2>Everything else it's watching</h2>
+  <p class="meta" style="margin:-4px 0 10px" id="trackNote"></p>
+  <div class="card list" id="movers"></div>
+
+  <h2>What it's learning</h2>
+  <div class="card"><table id="learnTable"></table><p class="meta" id="trendNote" style="margin:10px 0 0"></p></div>
+
   <h2>Weekly reports</h2>
   <div id="reports"></div>
 
@@ -169,6 +180,12 @@ function mergeTaken(){
   for (const [id, v] of Object.entries(pending)) { if (v) taken[id] = true; else delete taken[id]; }
 }
 async function saveTaken(id, value){
+  let paid = null;
+  if (value) {
+    const p = [...DATA.open, ...DATA.history].find(x => x.id === id);
+    const ans = prompt(`Price you paid in cents${p ? " (listed " + Math.round(p.price * 100) + "¢)" : ""}. Leave blank to use the listed price.`, "");
+    if (ans && !isNaN(parseFloat(ans))) paid = Math.min(Math.max(parseFloat(ans), 1), 99) / 100;
+  }
   pending[id] = value; store.set("pendingTaken", pending);
   if (value) taken[id] = true; else delete taken[id];
   renderRecords(); renderHistory(); renderOpen();
@@ -178,7 +195,7 @@ async function saveTaken(id, value){
   if (!pass){ pass = prompt("Enter your dashboard passcode") || ""; if (!pass) return; store.set("pass", pass); }
   $("saving").textContent = "Saving…";
   try{
-    const r = await fetch(url + "/taken", {method:"POST", headers:{"Content-Type":"application/json"}, body: JSON.stringify({id, taken:value, pass})});
+    const r = await fetch(url + "/taken", {method:"POST", headers:{"Content-Type":"application/json"}, body: JSON.stringify({id, taken:value, pass, price: paid})});
     const out = await r.json().catch(() => ({}));
     if (r.status === 401){ store.set("pass", ""); $("saving").textContent = "Wrong passcode. Tap the checkbox again to retry."; return; }
     if (!out.ok) throw new Error(out.error || r.status);
@@ -205,7 +222,7 @@ const day = s => s ? new Date(s).toLocaleDateString(undefined, {month:"short", d
 function summarize(list){
   const done = list.filter(p => p.status === "win" || p.status === "loss");
   const staked = done.reduce((a, p) => a + p.units, 0);
-  const pnl = done.reduce((a, p) => a + (p.pnl || 0), 0);
+  const pnl = done.reduce((a, p) => a + ((p.your_pnl ?? p.pnl) || 0), 0);
   const wins = done.filter(p => p.status === "win").length;
   return {wins, losses: done.length - wins, pnl, roi: staked ? pnl / staked : 0};
 }
@@ -242,9 +259,22 @@ function renderWatch(){
     : '<p class="empty" style="margin:8px 0 0">Nothing on the watchlist right now.</p>';
 }
 
+function renderParlays(){
+  const P = DATA.parlays || {open: [], done: [], summary: null};
+  const s = P.summary;
+  $("parlaySum").textContent = s && s.picks ? `Graded ${s.wins}-${s.losses}, ${u(s.units)}` : "No graded parlays yet.";
+  const items = [...(P.open || []), ...(P.done || []).slice(0, 10)];
+  $("parlays").innerHTML = items.length ? items.map(x => `<div style="border-top:1px solid var(--line);padding:10px 0">
+    <div style="display:flex;justify-content:space-between"><strong>${x.legs.length} legs: ${x.units}u to win ${x.payout_units}u</strong>
+    <span class="${x.status === "win" ? "w" : x.status === "loss" ? "l" : "meta"}">${x.status === "pending" ? "open" : x.status}</span></div>
+    <div class="meta">Model's chance ${pct(x.model_prob)}, worth +${pct(x.ev)} if the model is right</div>
+    ${x.legs.map(L => `<div style="font-size:14px">&bull; ${esc(L.market)} at ${cents(L.price)} <span class="meta">(${esc(L.matchup)})</span></div>`).join("")}
+  </div>`).join("") : '<p class="empty" style="margin:8px 0 0">No parlays yet. They appear when the agent finds several strong legs on the same day.</p>';
+}
+
 function renderRecords(){
   const hist = DATA.history;
-  const m = summarize(hist), y = summarize(hist.filter(p => taken[p.id]));
+  const m = summarize(hist.map(p => ({...p, your_pnl: undefined}))), y = summarize(hist.filter(p => taken[p.id]));
   $("mUnits").textContent = u(m.pnl); $("mUnits").className = "num " + (m.pnl >= 0 ? "w" : "l");
   $("mRec").textContent = `${m.wins}-${m.losses}, ROI ${pct(m.roi)}`;
   const yCount = y.wins + y.losses;
@@ -345,6 +375,24 @@ function renderModel(){
   }).join("");
 }
 
+function renderTracker(){
+  const T = DATA.tracker; if (!T) return;
+  $("trackNote").textContent = `Watching ${T.tracked.toLocaleString()} markets across ${T.series.toLocaleString()} Kalshi sports series (NBA, NHL, golf, props, corners, goalscorers and more). No picks from these yet; it's building their history. Biggest price moves:`;
+  $("movers").innerHTML = T.movers.length ? T.movers.map(m => `<div class="item"><div>${esc(m.title || m.ticker)}<div class="meta">${esc(m.series)}, now ${cents(m.price)}</div></div>
+    <div class="num ${m.move >= 0 ? "w" : "l"}" style="font-size:18px">${m.move >= 0 ? "+" : ""}${Math.round(m.move * 100)}¢</div></div>`).join("")
+    : '<p class="empty">Builds up over the first day.</p>';
+}
+
+function renderLearning(){
+  const L = DATA.learning || {}; const g = L.groups || {};
+  const rows = Object.entries(g).sort((a, b) => b[1].finished - a[1].finished);
+  $("learnTable").innerHTML = `<tr><th>Sport and market</th><th>Finished</th><th>Trust</th><th>Confidence fix</th></tr>` +
+    (rows.length ? rows.map(([k, v]) => `<tr><td>${esc(k.replace(":", " "))}</td><td>${v.finished}</td><td>${v.trust == null ? "–" : pct(v.trust)}</td><td>${v.confidence_fix ? "On" : "Not yet"}</td></tr>`).join("")
+      : `<tr><td colspan="4" class="empty">Starts filling in as tracked games finish.</td></tr>`);
+  const t = L.price_trend || {};
+  $("trendNote").textContent = Object.keys(t).length ? "Price trend check: " + Object.entries(t).map(([k, v]) => `${k} prices ${v.hit_vs_price >= 0 ? "beat" : "missed"} their price by ${Math.abs(v.hit_vs_price * 100).toFixed(1)} points (${v.markets} markets)`).join("; ") + "." : "";
+}
+
 function renderAll(){
   const s = DATA.summary;
   $("updated").textContent = "Updated " + new Date(DATA.updated).toLocaleString(undefined, {weekday:"short", hour:"numeric", minute:"2-digit"}) + ". " + DATA.status_note;
@@ -358,7 +406,7 @@ function renderAll(){
   $("roi").textContent = pct(s.all.roi);
   $("beat").textContent = pct(s.all.beat_price);
   $("clv").textContent = s.all.clv == null ? "–" : (s.all.clv > 0 ? "+" : "") + (Math.round(s.all.clv * 1000) / 10) + "¢";
-  renderOpen(); renderWatch(); renderRecords(); renderHistory(); renderCurve(); renderCalib(); renderReports(); renderModel();
+  renderOpen(); renderWatch(); renderParlays(); renderRecords(); renderHistory(); renderCurve(); renderCalib(); renderReports(); renderModel(); renderLearning(); renderTracker();
   table($("tiers"), "Tier", DATA.by_tier);
   table($("tours"), "League or tour", DATA.by_tour);
   table($("sportsTable"), "Sport", DATA.by_sport || {});

@@ -36,8 +36,11 @@ import requests
 import common
 import football
 import mlb
+import learn
 import model as tm
 import odds
+import props
+import tracker
 import soccer
 
 KALSHI = "https://api.elections.kalshi.com/trade-api/v2"
@@ -49,6 +52,7 @@ CHANGELOG_FILE = os.path.join(STATE_DIR, "changelog.json")
 SCANS_FILE = os.path.join(STATE_DIR, "scans.json")
 RESEARCH_FILE = os.path.join(STATE_DIR, "research.json")
 TAKEN_FILE = os.path.join(STATE_DIR, "taken.json")   # written by the Cloudflare worker
+CONTROL_FILE = os.path.join(STATE_DIR, "control.json")  # written by the Cloudflare worker
 DASHBOARD_FILE = "data.json"
 
 # Men's and women's match series on Kalshi (Challengers share the tour's rating pool)
@@ -80,7 +84,20 @@ DEFAULT_SETTINGS = {
     "brake_half": 0.10,        # down 10% from the peak: bet sizes are halved
     "brake_stop": None,        # no automatic pause (set a number like 0.20 to pause picks after a 20% drop)
     "min_main_prob": 0.40,     # recommended picks must have at least a 40% chance, to limit losing streaks
-    "paused": False,           # set by the 20% brake; set back to false in state/settings.json to resume
+    "paused": False,           # set by /pause in Telegram (or the optional brake)
+    "line_weights": {},        # starting trust for totals, spreads and both-teams-to-score, per sport
+    "league_daily_cap": 4.0,   # most units a day in any one league
+    "trend_block": 0.04,       # skip a recommended pick if its price fell this much in the last 12 hours
+    "move_alert": 0.05,        # alert when an open pick's price moves 5¢ either way
+    "gap_alert": 0.04,         # flag Kalshi prices at least 4¢ below the sharp sportsbook price
+    "odds_markets": "h2h,totals,spreads",
+    "track_series_per_run": 150,  # other Kalshi sports series watched per run (all of them over about a day)
+    "parlays_per_day": 2,      # parlay suggestions a day
+    "parlay_units": 1.0,       # stake per parlay
+    "parlay_max_legs": 4,
+    "parlay_leg_edge": 0.03,   # every leg needs at least this edge
+    "parlay_min_prob": 0.05,   # at least a 1-in-20 chance to hit
+    "parlay_min_ev": 0.10,     # model says it's worth at least 10% more than it costs
     "min_matches": 12,         # each player needs this many rated matches
     "min_volume_24h": 500,     # skip thin markets
     "max_spread": 0.04,        # skip markets with a wide bid/ask spread
@@ -99,6 +116,7 @@ DEFAULT_SETTINGS = {
     "watch_edge": 0.015,       # smaller edges go on the practice-only watchlist
     "watch_per_day": 20,       # most watchlist picks per day
     "watch_weight": 0.5,       # the watchlist trusts the model this much
+    "watch_per_type": 4,       # most watchlist picks a day of any one kind (keeps it varied)
     "odds_calls_per_day": 15,  # keeps The Odds API free tier (500 a month) from running out
     "disabled": [],            # leagues switched off because they keep getting worse prices than the close
     "max_edge": 0.15,          # bigger "edges" are almost always model errors
@@ -360,11 +378,11 @@ def gemini_model(key):
     return _GEMINI_MODEL
 
 
-def research(p, cache):
+def research(p, cache, force=False):
     """Search the web for news and expert opinion on a match. Returns a dict (never raises)."""
     empty = {"red_flag": False, "expert_lean": "none", "summary": "", "sources": []}
     hit = cache.get(p["event"])
-    if hit and parse_time(hit["t"]) > now_utc() - timedelta(hours=6):
+    if hit and not force and parse_time(hit["t"]) > now_utc() - timedelta(hours=6):
         return hit
     key = os.getenv("GEMINI_API_KEY")
     if not key:
@@ -419,20 +437,143 @@ def research(p, cache):
         return empty
 
 
-def make_picks(engines, picks, s, scans, research_cache, sharp):
-    already = {p["event"] for p in picks}
+QTRS = [f"{q}Q{x}" for q in "1234" for x in ("", "SPREAD", "TOTAL", "WINNER")]
+LINE_SERIES = {  # every other Kalshi market on the same game (tennis excluded: rarely offered)
+    "mlb": lambda g: [f"KXMLB{x}" for x in ("TOTAL", "SPREAD", "TEAMTOTAL", "F5TOTAL", "F5SPREAD")],
+    "nfl": lambda g: [f"KXNFL{x}" for x in ["TOTAL", "SPREAD", "TEAMTOTAL", "1HTOTAL", "1HSPREAD", "1HWINNER",
+                                            "2HTOTAL", "2HSPREAD"] + QTRS],
+    "cfb": lambda g: [f"KXNCAAF{x}" for x in ["TOTAL", "SPREAD", "TEAMTOTAL", "1HTOTAL", "1HSPREAD", "2H"] + QTRS],
+    "soccer": lambda g: [f"KX{g[2:-4]}{x}" for x in ("TOTAL", "SPREAD", "BTTS", "TEAMTOTAL", "1HTOTAL", "1HSPREAD",
+                                                      "1HBTTS", "2HTOTAL", "2HSPREAD", "2HBTTS", "SCORE", "FTTS")],
+}
+PROP_SERIES = {"nfl": list(props.NFL_PROPS), "mlb": list(props.MLB_PROPS)}
+UNIT = {"soccer": "goals", "mlb": "runs", "nfl": "points", "cfb": "points"}
+
+
+def mtype_of(series):
+    """(market type, part of the game) from a Kalshi series name."""
+    if series.endswith("TEAMTOTAL"):
+        return "team_total", None
+    if series.endswith("SCORE"):
+        return "correct_score", None
+    if series.endswith("FTTS"):
+        return "first_to_score", None
+    hit = re.search(r"(1H|2H|F5|[1-4]Q)(TOTAL|SPREAD|BTTS|WINNER)?$", series)
+    if hit:
+        kind = {"TOTAL": "total", "SPREAD": "spread", "BTTS": "btts"}.get(hit.group(2), "period_winner")
+        return kind, hit.group(1).lower()
+    kind = "total" if series.endswith("TOTAL") else "spread" if series.endswith("SPREAD") else \
+        "btts" if series.endswith("BTTS") else "winner"
+    return kind, None
+
+
+def prop_outcomes(eng, series, markets):
+    """Player props on both sides (over and under)."""
+    outs = []
+    for m, p, label, note in props.outcomes(eng.props, series, markets):
+        under = re.sub(r"(\d+)\+$", lambda x: f"under {x.group(1)}", label) if label.endswith("+") else f"No: {label}"
+        for yes, prob, lab in ((True, p, label), (False, 1 - p, under)):
+            o = common.Outcome(m, prob, lab, f"{note} Model gives \"{lab}\" {prob:.0%}.")
+            o.mtype, o.line, o.yes = f"prop_{series[len('KX' + eng.key.upper()):].lower()}", \
+                float(m.get("floor_strike") or 0), yes
+            outs.append(o)
+    return outs
+
+
+def line_outcomes(eng, cand, series, markets):
+    """Model chances for every other market on the game, on both the Yes and the No side
+    (so unders and "doesn't cover" count too)."""
+    dist = getattr(cand, "dist", None)
+    kind, part = mtype_of(series)
+    if dist is None:
+        return []
+    if part:
+        dist = dist.part(part) if hasattr(dist, "part") else None
+        if dist is None:
+            return []
+    group = kind + (f"_{part}" if part else "")
+    outs = []
+    for m in markets:
+        try:
+            x = float(m["floor_strike"]) if m.get("floor_strike") is not None else None
+            code = re.sub(r"\d+$", "", m["ticker"].split("-")[-1])
+            side = getattr(cand, "sides", {}).get(code)
+            if kind == "total":
+                p = dist.total_over(x)
+            elif kind == "period_winner" and side:
+                p = dist.margin_over(side, 0)
+            elif kind == "correct_score" and hasattr(dist, "grid"):
+                sc = re.match(r"([A-Z]+?)(\d+)([A-Z]+?)(\d+)$", m["ticker"].split("-")[-1])
+                if not sc:
+                    continue
+                s1, s2 = getattr(cand, "sides", {}).get(sc.group(1)), getattr(cand, "sides", {}).get(sc.group(3))
+                g1, g2 = int(sc.group(2)), int(sc.group(4))
+                if not s1 or not s2 or s1 == s2 or max(g1, g2) >= 12:
+                    continue
+                hg, ag = (g1, g2) if s1 == "home" else (g2, g1)
+                p = dist.grid[hg][ag]
+            elif kind == "first_to_score" and hasattr(dist, "lh"):
+                tot = dist.lh + dist.la
+                none = math.exp(-tot)
+                p = none if code == "NONE" else (dist.lh if side == "home" else dist.la) / tot * (1 - none) if side else None
+                if p is None:
+                    continue
+            elif kind == "spread" and side:
+                p = dist.margin_over(side, x)
+            elif kind == "team_total" and side and hasattr(dist, "team_over"):
+                p = dist.team_over(side, x)
+            elif kind == "btts" and hasattr(dist, "btts"):
+                p = dist.btts()
+            else:
+                continue
+        except (TypeError, ValueError, KeyError):
+            continue
+        label = m.get("yes_sub_title") or m["ticker"]
+        no_label = ("Under " + label[5:]) if label.lower().startswith("over ") else \
+            re.sub(r" over ", " under ", label) if kind == "team_total" else f"No: {label}"
+        for yes, prob, lab in ((True, p, label), (False, 1 - p, no_label)):
+            o = common.Outcome(m, prob, lab, f"{dist.describe()} Model gives \"{lab}\" {prob:.0%}.")
+            o.mtype, o.line, o.yes = group, x, yes
+            outs.append(o)
+    return outs
+
+
+def side_prices(o):
+    """Ask and bid for the side of the market this outcome buys."""
+    if getattr(o, "yes", True):
+        return price(o.market, "yes_ask_dollars"), price(o.market, "yes_bid_dollars")
+    return price(o.market, "no_ask_dollars"), price(o.market, "no_bid_dollars")
+
+
+def watch_kind(p):
+    """Watchlist variety buckets: all player props for a sport count as one kind."""
+    mt = p.get("mtype", "winner")
+    return f"{p.get('model_key', 'tennis')}:{'props' if mt.startswith('prop') else mt.split('_')[0]}"
+
+
+def make_picks(engines, picks, s, research_cache, sharp, obs, learned):
+    already_games = {p.get("game") or p["event"] for p in picks}
     today = now_utc().date().isoformat()
-    used_today = sum(p["units"] for p in picks if p["made"][:10] == today)
+    used_today = sum(p["units"] for p in picks if p["made"][:10] == today and is_main(p))
+    league_used = defaultdict(float)
+    for p in picks:
+        if p["made"][:10] == today and is_main(p):
+            league_used[p.get("tour")] += p["units"]
     now = now_utc()
-    candidates = []
+    candidates, legs = [], []
     for eng in engines:
-        weight = s["weights"].get(eng.key, s["model_weight"])
         horizon = s["horizon"].get(eng.key, s["horizon_hours"])
         books = open_markets(list(eng.series))
+        line_books = {}
+        if eng.key in LINE_SERIES:
+            names = sorted({ls for g in eng.series for ls in LINE_SERIES[eng.key](g)})
+            line_books = open_markets(names)
+        prop_books = open_markets(PROP_SERIES[eng.key]) if getattr(eng, "props", None) and eng.key in PROP_SERIES else {}
+        by_game = {}
         for series, events in books.items():
             for event, ms in events.items():
                 ms = [m for m in ms if m.get("status") == "active"]
-                if event in already or len(ms) < 2:
+                if len(ms) < 2:
                     continue
                 end = parse_time(ms[0].get("expected_expiration_time") or ms[0].get("occurrence_datetime"))
                 start = end - timedelta(hours=s["start_offset"].get(eng.key, 3)) if end else None
@@ -445,65 +586,110 @@ def make_picks(engines, picks, s, scans, research_cache, sharp):
                     continue
                 if not cand or cand.league in s["disabled"]:
                     continue
+                game = event.split("-", 1)[1]
+                cand.start, cand.end, cand.game = start, end, game
+                by_game[game] = (cand, series)
+        # every market for each game: winner plus totals, spreads and both-teams-to-score
+        for game, (cand, series) in by_game.items():
+            groups = []  # (series, outcomes, normalise mids?)
+            for o in cand.outcomes:
+                o.mtype, o.line, o.yes = "winner", None, True
+            groups.append((series, cand.outcomes, True))
+            for ls, events in line_books.items():
+                for event, ms in events.items():
+                    if event.split("-", 1)[1] == game:
+                        ms = [m for m in ms if m.get("status") == "active"]
+                        groups.append((ls, line_outcomes(eng, cand, ls, ms), False))
+            for ps, events in prop_books.items():
+                for event, ms in events.items():
+                    if event.split("-", 1)[1] == game:
+                        ms = [m for m in ms if m.get("status") == "active"]
+                        groups.append((ps, prop_outcomes(eng, ps, ms), False))
+            best = None
+            for gseries, outs, normalise in groups:
                 mids = []
-                for o in cand.outcomes:
-                    ask, bid = price(o.market, "yes_ask_dollars"), price(o.market, "yes_bid_dollars")
+                for o in outs:
+                    ask, bid = side_prices(o)
                     mids.append(None if ask is None or bid is None else (ask + bid) / 2)
-                if None in mids or sum(mids) <= 0:
+                if not outs or (normalise and None in mids):
                     continue
-                total = sum(mids)
-                mids = [m / total for m in mids]
-                o0 = cand.outcomes[0]
-                if now < end - timedelta(hours=3):  # remember what the model and market said
-                    scans[event] = {"key": eng.key, "ticker": o0.market["ticker"], "p": round(o0.prob, 4),
-                                    "mid": round(mids[0], 3), "end": end.isoformat(), "t": now.isoformat()}
-                best = None
-                for o, mid in zip(cand.outcomes, mids):
-                    m = o.market
-                    q = weight * o.prob + (1 - weight) * mid
-                    ask, bid = price(m, "yes_ask_dollars"), price(m, "yes_bid_dollars")
-                    vol = price(m, "volume_24h_fp") or 0
-                    if not (s["min_price"] <= ask <= s["max_price"]):
+                if normalise:
+                    tot = sum(mids)
+                    if tot <= 0:
                         continue
-                    if ask - bid > s["max_spread"] or vol < s["min_volume_24h"]:
+                    mids = [m / tot for m in mids]
+                for o, mid in zip(outs, mids):
+                    if mid is None:
+                        continue
+                    m = o.market
+                    group = f"{eng.key}:{o.mtype}"
+                    oid = m["ticker"] + ("" if o.yes else ":no")
+                    if 0.05 <= mid <= 0.95:
+                        ob = learn.observe(obs, oid, group, cand.league, cand.sport, gseries, game,
+                                           o.prob, mid, cand.start, now)
+                    else:
+                        ob = obs.get(oid)
+                    default = s["weights"].get(eng.key, s["model_weight"]) if o.mtype == "winner" else \
+                        s["line_weights"].get(group, s["min_model_weight"])
+                    weight = learn.get_trust(learned, group, cand.league, default)
+                    q = learn.calibrate(learned, group, weight * o.prob + (1 - weight) * mid)
+                    ask, bid = side_prices(o)
+                    vol = price(m, "volume_24h_fp") or 0
+                    min_vol = s["min_volume_24h"] if o.mtype == "winner" else s["min_volume_24h"] / 5
+                    if not (s["min_price"] <= ask <= s["max_price"]) or ask - bid > s["max_spread"] or vol < min_vol:
                         continue
                     p_eff = ask + fee(ask, s["fee_rate"])
                     edge = q - p_eff
-                    # the watchlist trusts the model more, to test its own opinions without risking anything
                     ww = max(weight, s["watch_weight"])
-                    wq = ww * o.prob + (1 - ww) * mid
+                    wq = learn.calibrate(learned, group, ww * o.prob + (1 - ww) * mid)
                     wedge = wq - p_eff
                     score = max(edge, wedge)
-                    if s["watch_edge"] <= score <= s["max_edge"] and (best is None or score > best["_score"]):
-                        units = max(size_units(q, p_eff, s), 0.5)
-                        if eng.key == "tennis":
-                            finfo, flip, surf = o.why
-                            why = explain(finfo, flip, surf, o.prob, q, ask)
-                            me, opp = cand.names[1] if flip else cand.names[0], cand.names[0] if flip else cand.names[1]
-                            teams, side = list(cand.names), me
+                    if not (s["watch_edge"] <= score <= s["max_edge"]) or (best and score <= best["_score"]):
+                        continue
+                    move = learn.trend(ob)
+                    if eng.key == "tennis":
+                        finfo, flip, surf = o.why
+                        why = explain(finfo, flip, surf, o.prob, q, ask)
+                        me = cand.names[1] if flip else cand.names[0]
+                        opp = cand.names[0] if flip else cand.names[1]
+                        teams, side = list(cand.names), me
+                    else:
+                        why = f"{o.why} Blended with the market that's {q:.0%} vs a {ask:.0%} price."
+                        me, opp = o.label, ""
+                        teams = [t.strip() for t in re.split(r" vs\.? | at ", cand.title)][:2]
+                        if o.mtype == "spread":
+                            side = re.sub(r" wins by .*$", "", o.label)
+                            side = common.match_name(side, teams, cutoff=0.5) or side
                         else:
-                            why = f"{o.why} Blended with the market that's {q:.0%} vs a {ask:.0%} price."
-                            me, opp = o.label, ""
-                            teams = [t.strip() for t in re.split(r" vs\.? | at ", cand.title)][:2]
                             side = "Draw" if o.label == "Draw" else o.label.replace(" to win", "")
-                        best = {
-                            "id": m["ticker"], "event": event, "sport": cand.sport, "model_key": eng.key,
-                            "tour": cand.league, "tournament": cand.title, "matchup": cand.title,
-                            "surface": cand.extra.get("surface", ""), "pick": me, "opponent": opp,
-                            "market": o.label, "price": round(ask, 2), "model_prob": round(q, 3),
-                            "raw_prob": round(o.prob, 3), "edge": round(edge, 3), "tier": tier_of(edge),
-                            "units": units, "made": now.isoformat(), "expected_end": end.isoformat(),
-                            "status": "pending", "latest_price": round(ask, 2), "pnl": None, "why": why,
-                            "_hint": eng.research_hint, "_teams": teams, "_side": side,
-                            "start_est": start.isoformat(), "close_price": None,
-                            "_score": score, "_watch": (round(wq, 3), round(wedge, 3)),
-                        }
-                if best:
-                    candidates.append(best)
-    candidates.sort(key=lambda p: p["edge"], reverse=True)
+                    if abs(move) >= 0.02:
+                        why += f" Price {'up' if move > 0 else 'down'} {abs(move) * 100:.0f}¢ in the last 12 hours."
+                    best = {
+                        "id": oid, "ticker": m["ticker"], "side": "yes" if o.yes else "no",
+                        "event": m["event_ticker"], "game": game, "sport": cand.sport,
+                        "model_key": eng.key, "mtype": o.mtype, "line": o.line, "tour": cand.league,
+                        "tournament": cand.title, "matchup": cand.title, "surface": cand.extra.get("surface", ""),
+                        "pick": me, "opponent": opp, "market": o.label, "price": round(ask, 2),
+                        "model_prob": round(q, 3), "raw_prob": round(o.prob, 3), "edge": round(edge, 3),
+                        "tier": tier_of(edge), "units": max(size_units(q, p_eff, s), 0.5), "made": now.isoformat(),
+                        "expected_end": cand.end.isoformat(), "start_est": cand.start.isoformat(),
+                        "status": "pending", "latest_price": round(ask, 2), "close_price": None, "pnl": None,
+                        "why": why, "trend": move, "new_market": bool(ob and ob.get("new")), "trust": weight,
+                        "_hint": eng.research_hint, "_teams": teams, "_side": side, "_score": score,
+                        "_watch": (round(wq, 3), round(wedge, 3)),
+                    }
+            if best and game not in already_games:  # one pick per game: no stacking correlated bets
+                candidates.append(best)
+            if best:
+                legs.append(dict(best))
+
+    candidates.sort(key=lambda p: p["_score"], reverse=True)
     new, searched = [], 0
     watch_today = sum(1 for p in picks if p["made"][:10] == today and not is_main(p))
-    candidates.sort(key=lambda p: p["_score"], reverse=True)
+    watch_kinds = defaultdict(int)
+    for p in picks:
+        if p["made"][:10] == today and not is_main(p):
+            watch_kinds[watch_kind(p)] += 1
     for p in candidates:
         wq, wedge = p.pop("_watch")
         p.pop("_score", None)
@@ -515,13 +701,29 @@ def make_picks(engines, picks, s, scans, research_cache, sharp):
             q = s["sharp_weight"] * sp + (1 - s["sharp_weight"]) * p["model_prob"]
             p.update(sharp_prob=sp, sharp_source=src, model_prob=round(q, 3), edge=round(q - p_eff, 3))
             p["why"] += f" Sharp sportsbook price ({src}) says {sp:.0%}."
+            if sp - p_eff >= s["gap_alert"]:
+                p["price_gap"] = round(sp - p_eff, 3)
         else:
             p["sharp_prob"] = None
         bar = s["min_edge"] if found else s["min_edge_no_sharp"]
-        if not (bar <= p["edge"] <= s["max_edge"]):
-            # Not strong enough to recommend: track the model's own view on the practice watchlist
-            if not (s["watch_edge"] <= wedge <= s["max_edge"]) or watch_today >= s["watch_per_day"]:
+        against = p["trend"] <= -s["trend_block"]  # price has been sliding away from this side
+        # new market types need a sharp price behind them until the agent has learned enough about them
+        unproven = p.get("mtype", "winner") != "winner" and not found and \
+            learned.get("counts", {}).get(f"{p['model_key']}:{p['mtype']}", 0) < learn.MIN_GROUP
+        main_ok = bar <= p["edge"] <= s["max_edge"] and not against and not s["paused"] and not unproven \
+            and p["model_prob"] >= s["min_main_prob"]
+        if main_ok:
+            p["tier"] = tier_of(p["edge"])
+            p["units"] = max(size_units(p["model_prob"], p_eff, s), 0.5)
+            if used_today + p["units"] > s["daily_unit_cap"] or league_used[p["tour"]] + p["units"] > s["league_daily_cap"]:
+                main_ok = False
+        if not main_ok:
+            # Track the model's own view on the practice watchlist so it learns faster
+            kind = watch_kind(p)
+            if not (s["watch_edge"] <= wedge <= s["max_edge"]) or watch_today >= s["watch_per_day"] \
+                    or watch_kinds[kind] >= s["watch_per_type"]:
                 continue
+            watch_kinds[kind] += 1
             if found and found[0] + 0.02 < p["price"]:
                 continue  # sharp books clearly disagree; not worth tracking
             watch_today += 1
@@ -530,22 +732,18 @@ def make_picks(engines, picks, s, scans, research_cache, sharp):
             p.update(tier="W", units=0.5, model_prob=wq, edge=wedge, research="", sources=[], expert_lean="none")
             new.append(p)
             continue
-        if s["paused"] or p["model_prob"] < s["min_main_prob"]:
-            continue  # bankroll protection: paused after a big drawdown, or too likely to lose
-        p["tier"] = tier_of(p["edge"])
-        p["units"] = max(size_units(p["model_prob"], p_eff, s), 0.5)
-        if used_today + p["units"] > s["daily_unit_cap"]:
-            continue
         if searched < s["max_research"] or p["event"] in research_cache:
             searched += p["event"] not in research_cache
             info = research(p, research_cache)
         else:
             info = {"red_flag": False, "expert_lean": "none", "summary": "", "sources": []}
-        for k in ("_hint", "_teams", "_side"):
-            p.pop(k, None)
         p["research"] = info.get("summary", "")
         p["sources"] = info.get("sources", [])
         p["expert_lean"] = info.get("expert_lean", "none")
+        p["_research_hint"] = p.get("_hint")
+        for k in ("_hint", "_teams", "_side"):
+            p.pop(k, None)
+        p.pop("_research_hint", None)
         if info.get("red_flag"):
             print(f"Skipped {p['market']}: news red flag ({p['research']})")
             continue
@@ -553,28 +751,118 @@ def make_picks(engines, picks, s, scans, research_cache, sharp):
             print(f"Skipped {p['market']}: experts disagree")
             continue
         used_today += p["units"]
+        league_used[p["tour"]] += p["units"]
         new.append(p)
-    return new
+    return new, legs
 
 
-def resolve_scans(scans, limit=150):
-    """Look up how scanned games finished, so the agent can learn model-vs-market trust."""
-    done = 0
-    for ev, sc in sorted(scans.items(), key=lambda kv: kv[1].get("end", "")):
-        if "ticker" not in sc or "won" in sc or done >= limit:
+# ---------------------------------------------------------------- parlays
+PARLAYS_FILE = os.path.join(STATE_DIR, "parlays.json")
+
+
+def build_parlays(legs, parlays, s):
+    """Combine the best legs from different games into parlays with a big payout and positive expected value."""
+    import itertools
+    today = now_utc().date().isoformat()
+    made_today = [x for x in parlays if x["made"][:10] == today]
+    if len(made_today) >= s["parlays_per_day"]:
+        return []
+    used = {leg["id"] for x in made_today for leg in x["legs"]}
+    pool, seen = [], set()
+    for L in sorted(legs, key=lambda L: L["edge"], reverse=True):
+        if L["edge"] >= s["parlay_leg_edge"] and L["game"] not in seen and L["id"] not in used \
+                and parse_time(L["start_est"]) > now_utc() + timedelta(minutes=30):
+            pool.append(L)
+            seen.add(L["game"])
+    pool = pool[:10]
+    options = []
+    for n in range(2, s["parlay_max_legs"] + 1):
+        for combo in itertools.combinations(pool, n):
+            prob = math.prod(L["model_prob"] for L in combo)
+            cost = math.prod(L["price"] + fee(L["price"], s["fee_rate"]) for L in combo)
+            payout = 1 / cost
+            ev = prob * payout - 1
+            if prob >= s["parlay_min_prob"] and ev >= s["parlay_min_ev"]:
+                options.append((ev, prob, cost, combo))
+    options.sort(key=lambda x: x[0] * x[1], reverse=True)  # value, but favour ones that actually hit sometimes
+    out, taken_legs = [], set()
+    for ev, prob, cost, combo in options:
+        if len(made_today) + len(out) >= s["parlays_per_day"]:
+            break
+        if taken_legs & {L["id"] for L in combo}:
             continue
-        end = parse_time(sc.get("end"))
-        if not end or end > now_utc() - timedelta(hours=3):
+        taken_legs |= {L["id"] for L in combo}
+        out.append({
+            "id": f"PARLAY-{now_utc().strftime('%Y%m%d%H%M')}-{len(out) + 1}", "tier": "P", "sport": "Parlay",
+            "made": now_utc().isoformat(), "units": s["parlay_units"], "price": round(cost, 4),
+            "model_prob": round(prob, 4), "ev": round(ev, 3), "payout_units": round(s["parlay_units"] * (1 / cost - 1), 1),
+            "status": "pending", "pnl": None,
+            "legs": [{k: L[k] for k in ("id", "ticker", "side", "market", "matchup", "sport", "price", "model_prob",
+                                        "edge", "expected_end")} for L in combo],
+        })
+    return out
+
+
+def grade_parlays(parlays, s):
+    graded = []
+    for x in parlays:
+        if x["status"] != "pending":
             continue
-        try:
-            m = kalshi_get(f"/markets/{sc['ticker']}").get("market", {})
-        except requests.RequestException:
+        results = []
+        for L in x["legs"]:
+            if "result" not in L:
+                try:
+                    m = kalshi_get(f"/markets/{L['ticker']}").get("market", {})
+                except requests.RequestException:
+                    results.append(None)
+                    continue
+                if m.get("status") in ("finalized", "settled", "determined"):
+                    r = m.get("result")
+                    L["result"] = "win" if r == L["side"] else "loss" if r in ("yes", "no") else "void"
+            results.append(L.get("result"))
+        if "loss" in results:
+            x["status"], x["pnl"] = "loss", -x["units"]
+        elif all(r in ("win", "void") for r in results):
+            live = [L for L in x["legs"] if L["result"] == "win"]
+            cost = math.prod(L["price"] + fee(L["price"], s["fee_rate"]) for L in live) if live else 1
+            x["status"] = "win" if live else "void"
+            x["pnl"] = round(x["units"] * (1 / cost - 1), 2) if live else 0.0
+        else:
             continue
-        done += 1
-        if m.get("result") in ("yes", "no"):
-            sc["won"] = m["result"] == "yes"
-        elif m.get("status") in ("finalized", "settled"):
-            sc["won"] = None
+        x["graded"] = now_utc().isoformat()
+        graded.append(x)
+    return graded
+
+
+def watch_open_picks(picks, obs, s):
+    """Price movement alerts and the pre-game news check for open recommended picks."""
+    alerts = []
+    now = now_utc()
+    for p in picks:
+        if p["status"] != "pending" or not is_main(p):
+            continue
+        o = obs.get(p["id"])
+        if o and o.get("h"):
+            mid = o["h"][-1][1]
+            move = mid - p["price"]
+            if move >= s["move_alert"] and not p.get("alert_up"):
+                p["alert_up"] = True
+                alerts.append(f"📈 {html.escape(p['market'])}: price up to {mid * 100:.0f}¢ from {p['price'] * 100:.0f}¢ "
+                              f"(the market is moving your way)")
+            elif move <= -s["move_alert"] and not p.get("alert_down"):
+                p["alert_down"] = True
+                alerts.append(f"📉 {html.escape(p['market'])}: price down to {mid * 100:.0f}¢ from {p['price'] * 100:.0f}¢ "
+                              f"(the market is moving against it)")
+        start = parse_time(p.get("start_est"))
+        if start and not p.get("prechecked") and timedelta(minutes=30) <= start - now <= timedelta(minutes=100):
+            p["prechecked"] = True
+            info = research(dict(p, _hint="confirmed lineups and starters, late scratches, injuries announced "
+                                           "today, weather"), {}, force=True)
+            if info.get("red_flag"):
+                alerts.append(f"⚠️ Pre-game check on {html.escape(p['market'])}: {html.escape(info.get('summary', ''))}")
+            elif info.get("summary"):
+                p["pregame"] = info["summary"]
+    return alerts
 
 
 def grade_picks(picks, s):
@@ -582,15 +870,17 @@ def grade_picks(picks, s):
     for p in picks:
         if p["status"] != "pending":
             continue
+        ticker = p.get("ticker", p["id"])
+        side = p.get("side", "yes")
         try:
-            m = kalshi_get(f"/markets/{p['id']}").get("market", {})
+            m = kalshi_get(f"/markets/{ticker}").get("market", {})
         except requests.RequestException:
             try:
-                m = kalshi_get(f"/historical/markets/{p['id']}").get("market", {})
+                m = kalshi_get(f"/historical/markets/{ticker}").get("market", {})
             except requests.RequestException:
                 continue
         status, result = m.get("status"), m.get("result")
-        ask, bid = price(m, "yes_ask_dollars"), price(m, "yes_bid_dollars")
+        ask, bid = price(m, f"{side}_ask_dollars"), price(m, f"{side}_bid_dollars")
         if status == "active" and ask is not None and bid is not None and ask > 0:
             start = parse_time(p.get("start_est")) or (parse_time(p["expected_end"]) - timedelta(hours=3))
             if now_utc() < start:  # keep the last price seen before the game starts: the "closing" price
@@ -599,9 +889,9 @@ def grade_picks(picks, s):
         if status in ("finalized", "settled", "determined"):
             pr, u = p["price"], p["units"]
             fee_units = u * s["fee_rate"] * (1 - pr)
-            if result == "yes":
+            if result == side:
                 p["status"], p["pnl"] = "win", round(u * (1 - pr) / pr - fee_units, 2)
-            elif result == "no":
+            elif result in ("yes", "no"):
                 p["status"], p["pnl"] = "loss", round(-u - fee_units, 2)
             else:
                 p["status"], p["pnl"] = "void", 0.0
@@ -611,6 +901,18 @@ def grade_picks(picks, s):
 
 
 # ---------------------------------------------------------------- stats
+def your_version(p, taken, s):
+    """A pick as you actually traded it: your own price if you logged one."""
+    t = taken.get(p["id"])
+    pr = t.get("price") if isinstance(t, dict) else None
+    if not pr or p["status"] not in ("win", "loss"):
+        return p
+    q = dict(p, price=pr)
+    fee_units = p["units"] * s["fee_rate"] * (1 - pr)
+    q["pnl"] = round(p["units"] * (1 - pr) / pr - fee_units, 2) if p["status"] == "win" else round(-p["units"] - fee_units, 2)
+    return q
+
+
 def summarize(picks):
     done = [p for p in picks if p["status"] in ("win", "loss")]
     staked = sum(p["units"] for p in done)
@@ -644,16 +946,24 @@ def calibration(picks):
 
 
 # ---------------------------------------------------------------- telegram / gemini
-def telegram(text):
+def telegram(text, buttons=None):
     token, chat = os.getenv("TELEGRAM_BOT_TOKEN"), os.getenv("TELEGRAM_CHAT_ID")
     if not token or not chat:
         print("[telegram skipped]\n" + text)
         return
     for chunk in [text[i:i + 3900] for i in range(0, len(text), 3900)]:
         try:
-            requests.post(f"https://api.telegram.org/bot{token}/sendMessage",
-                          json={"chat_id": chat, "text": chunk, "parse_mode": "HTML",
-                                "disable_web_page_preview": True}, timeout=20)
+            body = {"chat_id": chat, "text": chunk, "parse_mode": "HTML", "disable_web_page_preview": True}
+            if buttons:
+                body["reply_markup"] = {"inline_keyboard": buttons}
+            r = requests.post(f"https://api.telegram.org/bot{token}/sendMessage", json=body, timeout=20)
+            if not r.ok:  # e.g. a wrong token or chat ID in the GitHub secrets
+                print(f"Telegram refused the message ({r.status_code}): {r.text[:300]}")
+                r = requests.post(f"https://api.telegram.org/bot{token}/sendMessage",
+                                  json={"chat_id": chat, "text": re.sub(r"<[^>]+>", "", chunk)}, timeout=20)
+                print("Telegram plain-text retry " + ("worked" if r.ok else f"also failed: {r.text[:300]}"))
+            else:
+                print("Telegram message sent")
         except requests.RequestException as e:
             print(f"Telegram failed: {e}")
 
@@ -701,7 +1011,7 @@ def pick_line(p):
 
 
 # ---------------------------------------------------------------- weekly learning
-def weekly(picks, ctx, s, scans, taken):
+def weekly(picks, ctx, s, taken):
     matches = ctx.get("matches") or []
     changes = []
     # 1. Re-tune how fast Elo reacts, using every finished match (not just our picks)
@@ -721,18 +1031,11 @@ def weekly(picks, ctx, s, scans, taken):
         if mk:
             new_w = max(mk["best_weight"], s["min_model_weight"])
             why = f"{mk['matches']:,} past games with closing odds"
-        resolved = [(sc["p"], sc["mid"], sc["won"]) for sc in scans.values()
-                    if sc.get("key") == eng.key and sc.get("won") is not None and "p" in sc]
-        if len(resolved) >= 150:
-            def loss(w):
-                tot = 0.0
-                for pm, mid, won in resolved:
-                    q = min(max(w * pm + (1 - w) * mid, 1e-4), 1 - 1e-4)
-                    tot -= math.log(q if won else 1 - q)
-                return tot / len(resolved)
-            grid = {k / 10: loss(k / 10) for k in range(11)}
-            new_w = max(min(grid, key=grid.get), s["min_model_weight"])
-            why = f"{len(resolved)} games it scanned on Kalshi"
+        learned = ctx.get("learned", {})
+        n = learned.get("counts", {}).get(f"{eng.key}:winner", 0)
+        if n >= learn.MIN_GROUP:
+            new_w = learned["trust"][f"{eng.key}:winner"]
+            why = f"{n} finished Kalshi markets it tracked"
         s["weights"][eng.key] = new_w
         if abs(new_w - old) >= 0.1:
             changes.append(f"{eng.sport} ({eng.key.upper()}): trust in the model vs the market changed from "
@@ -776,7 +1079,7 @@ def weekly(picks, ctx, s, scans, taken):
         "by_tier": by_group(week, "tier"), "by_tour": by_group(week, "tour"),
         "by_sport": by_group(week, "sport"),
         "by_expert_lean": by_group(done, "expert_lean"),
-        "yours_week": summarize([p for p in week if taken.get(p["id"])]),
+        "yours_week": summarize([your_version(p, taken, s) for p in week if taken.get(p["id"])]),
         "calibration": calibration(done), "changes": changes,
         "models": {e.key: public(e.info) for e in ctx["engines"]},
     }
@@ -803,6 +1106,14 @@ def public(info):
 LABELS = {"tennis": "Tennis", "soccer": "Soccer", "mlb": "MLB", "nfl": "NFL", "cfb": "College football"}
 
 
+_OBS = []
+_PARLAYS = []
+
+
+def ctx_learned():
+    return load_json(learn.LEARNED_FILE, {})
+
+
 def write_dashboard(picks, s, reports, changelog, status_note, taken, engines):
     all_picks = picks
     picks = [p for p in all_picks if is_main(p)]
@@ -825,13 +1136,23 @@ def write_dashboard(picks, s, reports, changelog, status_note, taken, engines):
                            paused=s["paused"]),
         "settings": s,
         "open": [p for p in picks if p["status"] == "pending"],
-        "history": sorted(done, key=lambda p: p.get("graded", ""), reverse=True),
+        "history": [dict(p, your_pnl=your_version(p, taken, s)["pnl"], your_price=your_version(p, taken, s)["price"])
+                    if taken.get(p["id"]) else p for p in sorted(done, key=lambda p: p.get("graded", ""), reverse=True)],
+        "parlays": {"open": [x for x in (_PARLAYS[0] if _PARLAYS else []) if x["status"] == "pending"],
+                    "done": sorted([x for x in (_PARLAYS[0] if _PARLAYS else []) if x["status"] != "pending"],
+                                   key=lambda x: x.get("graded", ""), reverse=True)[:100],
+                    "summary": summarize(_PARLAYS[0] if _PARLAYS else [])},
+        "learning": {"groups": {g: {"finished": n, "trust": ctx_learned().get("trust", {}).get(g),
+                                    "confidence_fix": g in ctx_learned().get("calib", {})}
+                                for g, n in ctx_learned().get("counts", {}).items()},
+                     "price_trend": learn.trend_report(_OBS[0]) if _OBS else {}},
         "worker_url": os.getenv("WORKER_URL", "").rstrip("/"),
+        "tracker": tracker.movers(),
         "models": {e.key: dict(public(e.info), sport=e.sport, label=LABELS.get(e.key, e.sport),
                                trust=s["weights"].get(e.key, s["model_weight"])) for e in engines},
         "summary": {"all": summarize(picks),
                     "week": summarize([p for p in done if p.get("graded", "") >= week_ago]),
-                    "yours": summarize([p for p in done if taken.get(p["id"])]),
+                    "yours": summarize([your_version(p, taken, s) for p in done if taken.get(p["id"])]),
                     "watch": summarize(watch)},
         "by_expert_lean": by_group(picks, "expert_lean"),
         "by_tier": by_group(all_picks, "tier"),
@@ -861,7 +1182,9 @@ def main():
         p.setdefault("matchup", p.get("tournament", ""))
     reports = load_json(REPORTS_FILE, [])
     changelog = load_json(CHANGELOG_FILE, [])
-    scans = load_json(SCANS_FILE, {})
+    obs = learn.load_obs()
+    control = load_json(CONTROL_FILE, {})  # written by Telegram commands (/pause, /resume, /quiet, /loud)
+    s["paused"] = bool(control.get("paused", s["paused"]))
     research_cache = load_json(RESEARCH_FILE, {})
     taken = load_json(TAKEN_FILE, {})
     link = dashboard_url()
@@ -895,12 +1218,39 @@ def main():
         except Exception:
             print(f"{key} failed this run:\n" + traceback.format_exc())
     ctx["engines"] = engines
+    for e in engines:  # player props for the sports that have free player data
+        try:
+            if e.key == "nfl":
+                e.props = props.NFLProps()
+            elif e.key == "mlb":
+                e.props = props.MLBProps()
+        except Exception:
+            print(f"props for {e.key} failed:\n" + traceback.format_exc())
     for e in engines:  # first run for a sport: start from what its history says
         mk = (e.info or {}).get("market")
         if e.key not in s["weights"]:
             s["weights"][e.key] = max(mk["best_weight"], s["min_model_weight"]) if mk else s["model_weight"]
     for e in engines:
         print(f"{e.sport} ({e.key}) model check:", json.dumps(public(e.info), default=float))
+        tot = (e.info or {}).get("totals")
+        for mt in ("total", "spread", "btts"):
+            key = f"{e.key}:{mt}"
+            if key not in s["line_weights"]:
+                s["line_weights"][key] = max(tot["best_weight"], s["min_model_weight"]) if (tot and mt == "total") \
+                    else s["min_model_weight"]
+    # Learn from every market it has tracked: grade finished ones, then retune trust and confidence
+    graded_obs = learn.resolve(obs, kalshi_all)
+    learned = learn.learn(obs, {f"{k}:winner": w for k, w in s["weights"].items()} | s["line_weights"],
+                          s["min_model_weight"])
+    ctx["learned"] = learned
+    old = load_json(learn.LEARNED_FILE, {}).get("trust", {})
+    for g, w in learned["trust"].items():
+        if g in old and abs(old[g] - w) >= 0.1:
+            changelog.append({"date": now_utc().date().isoformat(),
+                              "change": f"{g}: trust in the model vs the market moved from {old[g]:.0%} to {w:.0%} "
+                                        f"after {learned['counts'][g]} finished markets"})
+    save_json(learn.LEARNED_FILE, learned)
+    print(f"Learning: graded {graded_obs} more markets; tracking {len(obs)}; groups {learned['counts']}")
 
     graded = grade_picks(picks, s)
     if graded:
@@ -912,7 +1262,7 @@ def main():
     t = now_utc()
     due = t.weekday() == 0 and t.hour >= 13 and not any(r["week_ending"] == t.date().isoformat() for r in reports)
     if mode == "weekly" or due:
-        report, changes = weekly(picks, ctx, s, scans, taken)
+        report, changes = weekly(picks, ctx, s, taken)
         reports.append(report)
         for c in changes:
             changelog.append({"date": now_utc().date().isoformat(), "change": c})
@@ -932,7 +1282,9 @@ def main():
                 if e.key == "tennis":
                     e.info = info
 
-    resolve_scans(scans)
+    alerts = watch_open_picks(picks, obs, s)
+    if alerts:
+        telegram("\n\n".join(alerts))
     # Bankroll protection brakes
     bank, peak, dd = bankroll_state(picks, s)
     s["_size_factor"] = 0.5 if dd >= s["brake_half"] else 1.0
@@ -942,24 +1294,55 @@ def main():
                           "change": f"Recommended picks paused: bankroll {bank:.1f}u is {dd:.0%} below its peak of {peak:.1f}u"})
         telegram(f"<b>Bankroll protection</b>\nThe bankroll is {bank:.1f}u, {dd:.0%} below its peak. Recommended picks are "
                  "paused to protect what's left. The watchlist keeps running so the agent can keep learning.")
-    sharp = odds.Sharp(s["odds_calls_per_day"])
-    new = make_picks(engines, picks, s, scans, research_cache, sharp)
+    sharp = odds.Sharp(s["odds_calls_per_day"], s["odds_markets"])
+    new, legs = make_picks(engines, picks, s, research_cache, sharp, obs, learned)
+    parlays = load_json(PARLAYS_FILE, [])
+    p_graded = grade_parlays(parlays, s)
+    for x in p_graded:
+        telegram(f"{'🎉' if x['status'] == 'win' else '❌' if x['status'] == 'loss' else '➖'} Parlay "
+                 f"({len(x['legs'])} legs) {x['status']}: {x['pnl']:+g}u")
+    new_parlays = build_parlays(legs, parlays, s)
+    parlays.extend(new_parlays)
+    save_json(PARLAYS_FILE, parlays)
+    for x in new_parlays:
+        telegram(f"<b>Parlay idea</b> ({len(x['legs'])} legs, {x['units']:g}u to win {x['payout_units']:g}u)\n"
+                 + "\n".join(f"• {html.escape(L['market'])} at {L['price'] * 100:.0f}¢ ({html.escape(L['sport'])}: "
+                              f"{html.escape(L['matchup'])})" for L in x["legs"])
+                 + f"\n\nModel's chance it hits: {x['model_prob']:.1%}. Expected value +{x['ev']:.0%} if the model is right."
+                 "\nBuild it in the Kalshi app if combos are offered for these markets.",
+                 buttons=[[{"text": "✅ I took this", "callback_data": f"t|{x['id']}|0"},
+                           {"text": "Skip", "callback_data": f"s|{x['id']}"}]])
     sharp.save()
     picks.extend(new)
     main_new = [p for p in new if is_main(p)]
     watch_new = [p for p in new if not is_main(p)]
-    if main_new:
-        total = sum(p["units"] for p in main_new)
-        telegram(f"<b>{len(main_new)} new pick{'s' if len(main_new) > 1 else ''}</b> ({total:g} units)\n\n"
-                 + "\n\n".join(pick_line(p) for p in main_new) + (f"\n\n{link}" if link else ""))
+    for p in main_new:  # one message per pick, with buttons to log it
+        telegram(f"<b>New pick</b>{' 🆕 new market' if p.get('new_market') else ''}\n" + pick_line(p)
+                 + (f"\n\n{link}" if link else ""),
+                 buttons=[[{"text": "✅ I took this", "callback_data": f"t|{p['id']}|{round(p['price'] * 100)}"},
+                           {"text": "Skip", "callback_data": f"s|{p['id']}"}]])
     if watch_new:
         telegram(f"<b>Watchlist</b> (smaller edges, practice only)\n"
                  + "\n".join(f"• {html.escape(p['market'])} at {p['price'] * 100:.0f}¢, edge +{p['edge']:.1%} "
                               f"({html.escape(p.get('sport', ''))})" for p in watch_new))
-    elif mode == "ask":
-        still_open = [p for p in picks if p["status"] == "pending"]
-        telegram(f"Fresh scan done: no new picks right now. {len(still_open)} pick"
-                 f"{'' if len(still_open) == 1 else 's'} still open." + (f"\n{link}" if link else ""))
+    gaps = [p for p in new if p.get("price_gap")]
+    if gaps:
+        telegram("<b>Price gaps</b> (Kalshi cheaper than sharp sportsbooks)\n" + "\n".join(
+            f"• {html.escape(p['market'])}: Kalshi {p['price'] * 100:.0f}¢ vs sharp {p['sharp_prob'] * 100:.0f}%"
+            for p in gaps))
+    # hourly check-in, even when nothing new turned up
+    open_main = [p for p in picks if p["status"] == "pending" and is_main(p)]
+    open_watch = [p for p in picks if p["status"] == "pending" and not is_main(p)]
+    today_done = [p for p in picks if is_main(p) and p.get("graded", "")[:10] == now_utc().date().isoformat()
+                  and p["status"] in ("win", "loss")]
+    td = summarize(today_done)
+    if mode == "ask" or not control.get("quiet"):
+        telegram(("⏸ Recommended picks are paused (send /resume to restart).\n" if s["paused"] else "")
+                 + (f"Hourly check: {len(main_new)} new pick{'' if len(main_new) == 1 else 's'}, "
+                    f"{len(watch_new)} new on the watchlist." if new else "Hourly check: nothing new this hour.")
+                 + f"\nOpen: {len(open_main)} pick{'' if len(open_main) == 1 else 's'}, {len(open_watch)} watchlist."
+                 + (f"\nToday: {td['wins']}-{td['losses']}, {td['units']:+g}u." if td["picks"] else "")
+                 + f"\nBankroll {bank:.1f}u.")
     print(f"Graded {len(graded)}, new picks {len(new)}")
 
     note = f"Last run found {len(new)} new pick(s) and graded {len(graded)}."
@@ -968,10 +1351,17 @@ def main():
     save_json(SETTINGS_FILE, s)
     save_json(REPORTS_FILE, reports)
     save_json(CHANGELOG_FILE, changelog)
-    save_json(SCANS_FILE, dict(sorted(scans.items(), key=lambda kv: kv[1]["t"])[-6000:]))
+    learn.save_obs(obs)
+    try:  # watch every other Kalshi sports market, building a price and result history for the future
+        tracked = tracker.run(kalshi_all, s["track_series_per_run"])
+        print(f"Tracker: {tracked}")
+    except Exception:
+        print("Tracker failed:\n" + traceback.format_exc())
     save_json(RESEARCH_FILE, dict(sorted(research_cache.items(), key=lambda kv: kv[1].get("t", ""))[-1500:]))
     if "geo" in ctx:
         ctx["geo"].save()
+    _OBS.append(obs)
+    _PARLAYS.append(parlays)
     write_dashboard(picks, s, reports, changelog, note, taken, engines)
 
 
