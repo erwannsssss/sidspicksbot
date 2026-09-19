@@ -42,12 +42,12 @@
   "made": "2026-09-19T04:41:00.973011+00:00",
   "expected_end": "2026-09-19T19:00:00+00:00",
   "status": "pending",
-  "latest_price": 0.425,
+  "latest_price": 0.405,
   "pnl": null,
   "why": "Elo 1671 vs 1609 on clay gives 59%; blended with the market that's 49% vs a 40% price. Form: 6-4 in last 10 vs 7-3 in last 10.",
   "model_key": "tennis",
   "matchup": "2026 WTA Sao Paulo",
-  "close_price": 0.425
+  "close_price": 0.405
  },
  {
   "id": "KXATPCHALLENGERMATCH-26SEP19MONTRU-MON",
@@ -66,12 +66,13 @@
   "units": 3.0,
   "made": "2026-09-19T04:41:00.971868+00:00",
   "expected_end": "2026-09-19T15:00:00+00:00",
-  "status": "pending",
+  "status": "win",
   "latest_price": 0.435,
-  "pnl": null,
+  "pnl": 3.7,
   "why": "Elo 1765 vs 1694 on hard gives 60%; blended with the market that's 52% vs a 44% price. Form: 7-3 in last 10 vs 7-3 in last 10.",
   "model_key": "tennis",
   "matchup": "2026 ATP Challenger Szczecin",
-  "close_price": 0.435
+  "close_price": 0.435,
+  "graded": "2026-09-19T14:19:29.180632+00:00"
  }
 ]

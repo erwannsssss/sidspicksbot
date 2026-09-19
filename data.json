@@ -1,7 +1,7 @@
 {
- "updated": "2026-09-19T13:19:57.359666+00:00",
- "status_note": "Last run found 0 new pick(s) and graded 0.",
- "bankroll": 104.19,
+ "updated": "2026-09-19T14:19:35.059061+00:00",
+ "status_note": "Last run found 0 new pick(s) and graded 1.",
+ "bankroll": 107.89,
  "settings": {
   "version": 3,
   "min_edge": 0.05,
@@ -66,13 +66,15 @@
    "made": "2026-09-19T04:41:00.973011+00:00",
    "expected_end": "2026-09-19T19:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.425,
+   "latest_price": 0.405,
    "pnl": null,
    "why": "Elo 1671 vs 1609 on clay gives 59%; blended with the market that's 49% vs a 40% price. Form: 6-4 in last 10 vs 7-3 in last 10.",
    "model_key": "tennis",
    "matchup": "2026 WTA Sao Paulo",
-   "close_price": 0.425
-  },
+   "close_price": 0.405
+  }
+ ],
+ "history": [
   {
    "id": "KXATPCHALLENGERMATCH-26SEP19MONTRU-MON",
    "event": "KXATPCHALLENGERMATCH-26SEP19MONTRU",
@@ -90,16 +92,15 @@
    "units": 3.0,
    "made": "2026-09-19T04:41:00.971868+00:00",
    "expected_end": "2026-09-19T15:00:00+00:00",
-   "status": "pending",
+   "status": "win",
    "latest_price": 0.435,
-   "pnl": null,
+   "pnl": 3.7,
    "why": "Elo 1765 vs 1694 on hard gives 60%; blended with the market that's 52% vs a 44% price. Form: 7-3 in last 10 vs 7-3 in last 10.",
    "model_key": "tennis",
    "matchup": "2026 ATP Challenger Szczecin",
-   "close_price": 0.435
-  }
- ],
- "history": [
+   "close_price": 0.435,
+   "graded": "2026-09-19T14:19:29.180632+00:00"
+  },
   {
    "id": "KXATPCHALLENGERMATCH-26SEP19KOUPAC-PAC",
    "event": "KXATPCHALLENGERMATCH-26SEP19KOUPAC",
@@ -129,29 +130,29 @@
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "models": {
   "tennis": {
-   "matches": 19416,
-   "training_rows": 13277,
+   "matches": 19423,
+   "training_rows": 13284,
    "holdout": {
     "from": "2026-08-14",
-    "matches": 1992,
-    "elo_log_loss": 0.6589,
-    "model_log_loss": 0.6518,
-    "elo_accuracy": 0.619,
-    "model_accuracy": 0.624
+    "matches": 1993,
+    "elo_log_loss": 0.6583,
+    "model_log_loss": 0.6511,
+    "elo_accuracy": 0.62,
+    "model_accuracy": 0.625
    },
    "using": "full",
    "weights": {
-    "elo": 1.735,
+    "elo": 1.737,
     "dominance": 0.0,
     "rank": 0.0,
-    "h2h": 0.438,
-    "form": -1.075,
-    "fatigue_games": -0.202,
+    "h2h": 0.437,
+    "form": -1.079,
+    "fatigue_games": -0.203,
     "fatigue_matches": 0.047,
     "rest": 0.018,
-    "travel": 0.133,
+    "travel": 0.132,
     "altitude": 0.0,
-    "best_of_5": 0.439
+    "best_of_5": 0.437
    },
    "sport": "Tennis",
    "label": "Tennis",
@@ -220,14 +221,14 @@
    "holdout": {
     "matches": 650,
     "rating_log_loss": 0.6281,
-    "model_log_loss": 0.6237,
+    "model_log_loss": 0.6239,
     "rating_accuracy": 0.657,
-    "model_accuracy": 0.649
+    "model_accuracy": 0.652
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6012,
-    "model_log_loss": 0.6237,
+    "model_log_loss": 0.6239,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 650
@@ -235,16 +236,16 @@
    "backtest": {
     "bets": 5,
     "wins": 1,
-    "units": -8.1,
-    "roi": -0.62
+    "units": -7.1,
+    "roi": -0.589
    },
    "weights": {
     "home_field": 0.255,
-    "rating": 1.521,
-    "rest": 0.238,
-    "point_diff_form": 0.226,
-    "qb_change": 0.347,
-    "epa": 0.165
+    "rating": 1.523,
+    "rest": 0.236,
+    "point_diff_form": 0.234,
+    "qb_change": 0.286,
+    "epa": 0.167
    },
    "matches": 4380,
    "sport": "Football",
@@ -254,26 +255,26 @@
  },
  "summary": {
   "all": {
-   "picks": 1,
-   "wins": 1,
+   "picks": 2,
+   "wins": 2,
    "losses": 0,
-   "units": 4.19,
-   "staked": 3.0,
-   "roi": 1.397,
+   "units": 7.89,
+   "staked": 6.0,
+   "roi": 1.315,
    "beat_price": 0.0,
-   "clv": null,
-   "clv_picks": 0
+   "clv": -0.005,
+   "clv_picks": 1
   },
   "week": {
-   "picks": 1,
-   "wins": 1,
+   "picks": 2,
+   "wins": 2,
    "losses": 0,
-   "units": 4.19,
-   "staked": 3.0,
-   "roi": 1.397,
+   "units": 7.89,
+   "staked": 6.0,
+   "roi": 1.315,
    "beat_price": 0.0,
-   "clv": null,
-   "clv_picks": 0
+   "clv": -0.005,
+   "clv_picks": 1
   },
   "yours": {
    "picks": 1,
@@ -289,15 +290,15 @@
  },
  "by_expert_lean": {
   "null": {
-   "picks": 1,
-   "wins": 1,
+   "picks": 2,
+   "wins": 2,
    "losses": 0,
-   "units": 4.19,
-   "staked": 3.0,
-   "roi": 1.397,
+   "units": 7.89,
+   "staked": 6.0,
+   "roi": 1.315,
    "beat_price": 0.0,
-   "clv": null,
-   "clv_picks": 0
+   "clv": -0.005,
+   "clv_picks": 1
   }
  },
  "by_tier": {
@@ -313,28 +314,28 @@
    "clv_picks": 0
   },
   "B": {
-   "picks": 0,
-   "wins": 0,
+   "picks": 1,
+   "wins": 1,
    "losses": 0,
-   "units": 0,
-   "staked": 0,
-   "roi": 0.0,
-   "beat_price": null,
-   "clv": null,
-   "clv_picks": 0
+   "units": 3.7,
+   "staked": 3.0,
+   "roi": 1.233,
+   "beat_price": 0.0,
+   "clv": -0.005,
+   "clv_picks": 1
   }
  },
  "by_tour": {
   "ATP Challenger": {
-   "picks": 1,
-   "wins": 1,
+   "picks": 2,
+   "wins": 2,
    "losses": 0,
-   "units": 4.19,
-   "staked": 3.0,
-   "roi": 1.397,
+   "units": 7.89,
+   "staked": 6.0,
+   "roi": 1.315,
    "beat_price": 0.0,
-   "clv": null,
-   "clv_picks": 0
+   "clv": -0.005,
+   "clv_picks": 1
   },
   "WTA": {
    "picks": 0,
@@ -350,20 +351,20 @@
  },
  "by_sport": {
   "Tennis": {
-   "picks": 1,
-   "wins": 1,
+   "picks": 2,
+   "wins": 2,
    "losses": 0,
-   "units": 4.19,
-   "staked": 3.0,
-   "roi": 1.397,
+   "units": 7.89,
+   "staked": 6.0,
+   "roi": 1.315,
    "beat_price": 0.0,
-   "clv": null,
-   "clv_picks": 0
+   "clv": -0.005,
+   "clv_picks": 1
   }
  },
  "calibration": {
   "50-60%": {
-   "n": 1,
+   "n": 2,
    "hit": 1.0
   }
  },
@@ -375,6 +376,10 @@
   {
    "t": "2026-09-19",
    "v": 104.19
+  },
+  {
+   "t": "2026-09-19",
+   "v": 107.89
   }
  ],
  "reports": [],
