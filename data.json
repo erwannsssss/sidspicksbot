@@ -1,6 +1,6 @@
 {
- "updated": "2026-09-19T21:18:56.321182+00:00",
- "status_note": "Last run found 0 new pick(s) and graded 3.",
+ "updated": "2026-09-19T21:20:06.277336+00:00",
+ "status_note": "Last run found 0 new pick(s) and graded 0.",
  "bankroll": 112.26,
  "protection": {
   "bankroll": 112.26,
@@ -235,31 +235,31 @@
    "holdout": {
     "matches": 650,
     "rating_log_loss": 0.6281,
-    "model_log_loss": 0.6217,
+    "model_log_loss": 0.6236,
     "rating_accuracy": 0.657,
-    "model_accuracy": 0.654
+    "model_accuracy": 0.652
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6012,
-    "model_log_loss": 0.6217,
+    "model_log_loss": 0.6236,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 650
    },
    "backtest": {
     "bets": 17,
-    "wins": 5,
-    "units": -10.4,
-    "roi": -0.334
+    "wins": 6,
+    "units": -5.5,
+    "roi": -0.184
    },
    "weights": {
-    "home_field": 0.255,
-    "rating": 1.529,
-    "rest": 0.232,
-    "point_diff_form": 0.221,
-    "qb_change": 0.322,
-    "epa": 0.171
+    "home_field": 0.254,
+    "rating": 1.525,
+    "rest": 0.23,
+    "point_diff_form": 0.223,
+    "qb_change": 0.294,
+    "epa": 0.172
    },
    "matches": 4380,
    "sport": "Football",
