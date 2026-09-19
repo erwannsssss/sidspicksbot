@@ -1,6 +1,6 @@
 {
- "updated": "2026-09-19T04:41:03.736400+00:00",
- "status_note": "Last run found 3 new pick(s) and graded 0.",
+ "updated": "2026-09-19T05:19:44.785791+00:00",
+ "status_note": "Last run found 0 new pick(s) and graded 0.",
  "bankroll": 100.0,
  "settings": {
   "min_edge": 0.03,
@@ -16,7 +16,9 @@
   "k_scale": 1.0,
   "model_weight": 0.5,
   "max_edge": 0.15,
-  "starting_bankroll": 100.0
+  "starting_bankroll": 100.0,
+  "max_research": 6,
+  "skip_expert_disagree": false
  },
  "open": [
   {
@@ -87,6 +89,7 @@
   }
  ],
  "history": [],
+ "worker_url": "",
  "summary": {
   "all": {
    "picks": 0,
@@ -98,6 +101,26 @@
    "beat_price": null
   },
   "week": {
+   "picks": 0,
+   "wins": 0,
+   "losses": 0,
+   "units": 0,
+   "staked": 0,
+   "roi": 0.0,
+   "beat_price": null
+  },
+  "yours": {
+   "picks": 0,
+   "wins": 0,
+   "losses": 0,
+   "units": 0,
+   "staked": 0,
+   "roi": 0.0,
+   "beat_price": null
+  }
+ },
+ "by_expert_lean": {
+  "null": {
    "picks": 0,
    "wins": 0,
    "losses": 0,
