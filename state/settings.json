@@ -1,5 +1,6 @@
 {
- "min_edge": 0.03,
+ "version": 3,
+ "min_edge": 0.05,
  "kelly_fraction": 0.25,
  "max_units": 3.0,
  "daily_unit_cap": 10.0,
@@ -7,12 +8,38 @@
  "min_volume_24h": 500,
  "max_spread": 0.04,
  "max_price": 0.9,
- "min_price": 0.1,
+ "min_price": 0.2,
  "fee_rate": 0.07,
  "k_scale": 1.0,
  "model_weight": 0.5,
+ "min_model_weight": 0.25,
+ "weights": {
+  "tennis": 0.5,
+  "soccer": 0.25,
+  "mlb": 0.5,
+  "nfl": 0.25
+ },
+ "horizon_hours": 24,
+ "horizon": {
+  "tennis": 24,
+  "soccer": 72,
+  "mlb": 30,
+  "nfl": 96,
+  "cfb": 96
+ },
+ "start_offset": {
+  "tennis": 3,
+  "soccer": 2.5,
+  "mlb": 3,
+  "nfl": 4,
+  "cfb": 4
+ },
+ "sharp_weight": 0.7,
+ "min_edge_no_sharp": 0.07,
+ "odds_calls_per_day": 15,
+ "disabled": [],
  "max_edge": 0.15,
  "starting_bankroll": 100.0,
  "max_research": 6,
- "skip_expert_disagree": false
+ "skip_expert_disagree": true
 }

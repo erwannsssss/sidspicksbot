@@ -1,9 +1,10 @@
 {
- "updated": "2026-09-19T07:16:57.035575+00:00",
- "status_note": "Last run found 0 new pick(s) and graded 0.",
- "bankroll": 100.0,
+ "updated": "2026-09-19T08:33:21.970693+00:00",
+ "status_note": "Last run found 0 new pick(s) and graded 1.",
+ "bankroll": 104.19,
  "settings": {
-  "min_edge": 0.03,
+  "version": 3,
+  "min_edge": 0.05,
   "kelly_fraction": 0.25,
   "max_units": 3.0,
   "daily_unit_cap": 10.0,
@@ -11,38 +12,42 @@
   "min_volume_24h": 500,
   "max_spread": 0.04,
   "max_price": 0.9,
-  "min_price": 0.1,
+  "min_price": 0.2,
   "fee_rate": 0.07,
   "k_scale": 1.0,
   "model_weight": 0.5,
+  "min_model_weight": 0.25,
+  "weights": {
+   "tennis": 0.5,
+   "soccer": 0.25,
+   "mlb": 0.5,
+   "nfl": 0.25
+  },
+  "horizon_hours": 24,
+  "horizon": {
+   "tennis": 24,
+   "soccer": 72,
+   "mlb": 30,
+   "nfl": 96,
+   "cfb": 96
+  },
+  "start_offset": {
+   "tennis": 3,
+   "soccer": 2.5,
+   "mlb": 3,
+   "nfl": 4,
+   "cfb": 4
+  },
+  "sharp_weight": 0.7,
+  "min_edge_no_sharp": 0.07,
+  "odds_calls_per_day": 15,
+  "disabled": [],
   "max_edge": 0.15,
   "starting_bankroll": 100.0,
   "max_research": 6,
-  "skip_expert_disagree": false
+  "skip_expert_disagree": true
  },
  "open": [
-  {
-   "id": "KXATPCHALLENGERMATCH-26SEP19KOUPAC-PAC",
-   "event": "KXATPCHALLENGERMATCH-26SEP19KOUPAC",
-   "sport": "Tennis",
-   "tour": "ATP Challenger",
-   "tournament": "2026 ATP Challenger Phan Thiet 4",
-   "surface": "hard",
-   "pick": "Rodrigo Pacheco Mendez",
-   "opponent": "Moise Kouame",
-   "market": "Rodrigo Pacheco Mendez to win",
-   "price": 0.41,
-   "model_prob": 0.527,
-   "edge": 0.1,
-   "tier": "A",
-   "units": 3.0,
-   "made": "2026-09-19T04:41:00.972589+00:00",
-   "expected_end": "2026-09-19T07:10:00+00:00",
-   "status": "pending",
-   "latest_price": 0.41,
-   "pnl": null,
-   "why": "Elo 1676 vs 1570 on hard gives 65%; blended with the market that's 53% vs a 41% price. Form: 7-3 in last 10 vs 5-5 in last 10."
-  },
   {
    "id": "KXWTAMATCH-26SEP19QUEBLI-QUE",
    "event": "KXWTAMATCH-26SEP19QUEBLI",
@@ -61,9 +66,12 @@
    "made": "2026-09-19T04:41:00.973011+00:00",
    "expected_end": "2026-09-19T19:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.39,
+   "latest_price": 0.425,
    "pnl": null,
-   "why": "Elo 1671 vs 1609 on clay gives 59%; blended with the market that's 49% vs a 40% price. Form: 6-4 in last 10 vs 7-3 in last 10."
+   "why": "Elo 1671 vs 1609 on clay gives 59%; blended with the market that's 49% vs a 40% price. Form: 6-4 in last 10 vs 7-3 in last 10.",
+   "model_key": "tennis",
+   "matchup": "2026 WTA Sao Paulo",
+   "close_price": 0.425
   },
   {
    "id": "KXATPCHALLENGERMATCH-26SEP19MONTRU-MON",
@@ -83,31 +91,189 @@
    "made": "2026-09-19T04:41:00.971868+00:00",
    "expected_end": "2026-09-19T15:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.44,
+   "latest_price": 0.435,
    "pnl": null,
-   "why": "Elo 1765 vs 1694 on hard gives 60%; blended with the market that's 52% vs a 44% price. Form: 7-3 in last 10 vs 7-3 in last 10."
+   "why": "Elo 1765 vs 1694 on hard gives 60%; blended with the market that's 52% vs a 44% price. Form: 7-3 in last 10 vs 7-3 in last 10.",
+   "model_key": "tennis",
+   "matchup": "2026 ATP Challenger Szczecin",
+   "close_price": 0.435
   }
  ],
- "history": [],
+ "history": [
+  {
+   "id": "KXATPCHALLENGERMATCH-26SEP19KOUPAC-PAC",
+   "event": "KXATPCHALLENGERMATCH-26SEP19KOUPAC",
+   "sport": "Tennis",
+   "tour": "ATP Challenger",
+   "tournament": "2026 ATP Challenger Phan Thiet 4",
+   "surface": "hard",
+   "pick": "Rodrigo Pacheco Mendez",
+   "opponent": "Moise Kouame",
+   "market": "Rodrigo Pacheco Mendez to win",
+   "price": 0.41,
+   "model_prob": 0.527,
+   "edge": 0.1,
+   "tier": "A",
+   "units": 3.0,
+   "made": "2026-09-19T04:41:00.972589+00:00",
+   "expected_end": "2026-09-19T07:10:00+00:00",
+   "status": "win",
+   "latest_price": 0.41,
+   "pnl": 4.19,
+   "why": "Elo 1676 vs 1570 on hard gives 65%; blended with the market that's 53% vs a 41% price. Form: 7-3 in last 10 vs 5-5 in last 10.",
+   "model_key": "tennis",
+   "matchup": "2026 ATP Challenger Phan Thiet 4",
+   "graded": "2026-09-19T08:33:16.621777+00:00"
+  }
+ ],
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
+ "models": {
+  "tennis": {
+   "matches": 19403,
+   "training_rows": 13267,
+   "holdout": {
+    "from": "2026-08-14",
+    "matches": 1991,
+    "elo_log_loss": 0.6588,
+    "model_log_loss": 0.6521,
+    "elo_accuracy": 0.62,
+    "model_accuracy": 0.629
+   },
+   "using": "full",
+   "weights": {
+    "elo": 1.752,
+    "dominance": 0.0,
+    "rank": 0.0,
+    "h2h": 0.44,
+    "form": -1.108,
+    "fatigue_games": -0.226,
+    "fatigue_matches": 0.053,
+    "rest": 0.01,
+    "travel": 0.118,
+    "altitude": 0.0,
+    "best_of_5": 0.445
+   },
+   "sport": "Tennis",
+   "label": "Tennis",
+   "trust": 0.5
+  },
+  "soccer": {
+   "matches": 81553,
+   "from_kalshi": 191,
+   "training_rows": 79686,
+   "holdout": {
+    "matches": 11953,
+    "rating_log_loss": 1.0107,
+    "model_log_loss": 1.009,
+    "rating_accuracy": 0.499,
+    "model_accuracy": 0.503
+   },
+   "using": "full",
+   "market": {
+    "market_log_loss": 0.991,
+    "model_log_loss": 1.0094,
+    "best_weight": 0.0,
+    "backtest_weight": 0.25,
+    "matches": 11764
+   },
+   "backtest": {
+    "bets": 12,
+    "wins": 7,
+    "units": 20.1,
+    "roi": 0.659
+   },
+   "weights": {
+    "rating": 1.609,
+    "chance_quality": 0.398,
+    "goal_diff_form": 0.028,
+    "rest": -0.067
+   },
+   "sport": "Soccer",
+   "label": "Soccer",
+   "trust": 0.25
+  },
+  "mlb": {
+   "training_rows": 14586,
+   "holdout": {
+    "matches": 2188,
+    "rating_log_loss": 0.6865,
+    "model_log_loss": 0.6852,
+    "rating_accuracy": 0.544,
+    "model_accuracy": 0.556
+   },
+   "using": "full",
+   "weights": {
+    "home_field": 0.126,
+    "rating": 1.528,
+    "starting_pitcher": 0.08,
+    "run_diff_form": 0.016,
+    "rest": 0.055,
+    "pitcher_fip": 0.11
+   },
+   "matches": 14665,
+   "sport": "Baseball",
+   "label": "MLB",
+   "trust": 0.5
+  },
+  "nfl": {
+   "training_rows": 4329,
+   "holdout": {
+    "matches": 650,
+    "rating_log_loss": 0.6281,
+    "model_log_loss": 0.6214,
+    "rating_accuracy": 0.657,
+    "model_accuracy": 0.654
+   },
+   "using": "full",
+   "market": {
+    "market_log_loss": 0.6012,
+    "model_log_loss": 0.6214,
+    "best_weight": 0.0,
+    "backtest_weight": 0.25,
+    "matches": 650
+   },
+   "backtest": {
+    "bets": 5,
+    "wins": 1,
+    "units": -7.1,
+    "roi": -0.589
+   },
+   "weights": {
+    "home_field": 0.255,
+    "rating": 1.532,
+    "rest": 0.23,
+    "point_diff_form": 0.22,
+    "qb_change": 0.332,
+    "epa": 0.167
+   },
+   "matches": 4380,
+   "sport": "Football",
+   "label": "NFL",
+   "trust": 0.25
+  }
+ },
  "summary": {
   "all": {
-   "picks": 0,
-   "wins": 0,
+   "picks": 1,
+   "wins": 1,
    "losses": 0,
-   "units": 0,
-   "staked": 0,
-   "roi": 0.0,
-   "beat_price": null
+   "units": 4.19,
+   "staked": 3.0,
+   "roi": 1.397,
+   "beat_price": 0.0,
+   "clv": null,
+   "clv_picks": 0
   },
   "week": {
-   "picks": 0,
-   "wins": 0,
+   "picks": 1,
+   "wins": 1,
    "losses": 0,
-   "units": 0,
-   "staked": 0,
-   "roi": 0.0,
-   "beat_price": null
+   "units": 4.19,
+   "staked": 3.0,
+   "roi": 1.397,
+   "beat_price": 0.0,
+   "clv": null,
+   "clv_picks": 0
   },
   "yours": {
    "picks": 0,
@@ -116,29 +282,35 @@
    "units": 0,
    "staked": 0,
    "roi": 0.0,
-   "beat_price": null
+   "beat_price": null,
+   "clv": null,
+   "clv_picks": 0
   }
  },
  "by_expert_lean": {
   "null": {
-   "picks": 0,
-   "wins": 0,
+   "picks": 1,
+   "wins": 1,
    "losses": 0,
-   "units": 0,
-   "staked": 0,
-   "roi": 0.0,
-   "beat_price": null
+   "units": 4.19,
+   "staked": 3.0,
+   "roi": 1.397,
+   "beat_price": 0.0,
+   "clv": null,
+   "clv_picks": 0
   }
  },
  "by_tier": {
   "A": {
-   "picks": 0,
-   "wins": 0,
+   "picks": 1,
+   "wins": 1,
    "losses": 0,
-   "units": 0,
-   "staked": 0,
-   "roi": 0.0,
-   "beat_price": null
+   "units": 4.19,
+   "staked": 3.0,
+   "roi": 1.397,
+   "beat_price": 0.0,
+   "clv": null,
+   "clv_picks": 0
   },
   "B": {
    "picks": 0,
@@ -147,18 +319,22 @@
    "units": 0,
    "staked": 0,
    "roi": 0.0,
-   "beat_price": null
+   "beat_price": null,
+   "clv": null,
+   "clv_picks": 0
   }
  },
  "by_tour": {
   "ATP Challenger": {
-   "picks": 0,
-   "wins": 0,
+   "picks": 1,
+   "wins": 1,
    "losses": 0,
-   "units": 0,
-   "staked": 0,
-   "roi": 0.0,
-   "beat_price": null
+   "units": 4.19,
+   "staked": 3.0,
+   "roi": 1.397,
+   "beat_price": 0.0,
+   "clv": null,
+   "clv_picks": 0
   },
   "WTA": {
    "picks": 0,
@@ -167,11 +343,40 @@
    "units": 0,
    "staked": 0,
    "roi": 0.0,
-   "beat_price": null
+   "beat_price": null,
+   "clv": null,
+   "clv_picks": 0
   }
  },
- "calibration": {},
- "curve": [],
+ "by_sport": {
+  "Tennis": {
+   "picks": 1,
+   "wins": 1,
+   "losses": 0,
+   "units": 4.19,
+   "staked": 3.0,
+   "roi": 1.397,
+   "beat_price": 0.0,
+   "clv": null,
+   "clv_picks": 0
+  }
+ },
+ "calibration": {
+  "50-60%": {
+   "n": 1,
+   "hit": 1.0
+  }
+ },
+ "curve": [
+  {
+   "t": "2026-09-19",
+   "v": 100.0
+  },
+  {
+   "t": "2026-09-19",
+   "v": 104.19
+  }
+ ],
  "reports": [],
  "changelog": []
 }

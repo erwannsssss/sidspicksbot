@@ -16,10 +16,13 @@
   "units": 3.0,
   "made": "2026-09-19T04:41:00.972589+00:00",
   "expected_end": "2026-09-19T07:10:00+00:00",
-  "status": "pending",
+  "status": "win",
   "latest_price": 0.41,
-  "pnl": null,
-  "why": "Elo 1676 vs 1570 on hard gives 65%; blended with the market that's 53% vs a 41% price. Form: 7-3 in last 10 vs 5-5 in last 10."
+  "pnl": 4.19,
+  "why": "Elo 1676 vs 1570 on hard gives 65%; blended with the market that's 53% vs a 41% price. Form: 7-3 in last 10 vs 5-5 in last 10.",
+  "model_key": "tennis",
+  "matchup": "2026 ATP Challenger Phan Thiet 4",
+  "graded": "2026-09-19T08:33:16.621777+00:00"
  },
  {
   "id": "KXWTAMATCH-26SEP19QUEBLI-QUE",
@@ -39,9 +42,12 @@
   "made": "2026-09-19T04:41:00.973011+00:00",
   "expected_end": "2026-09-19T19:00:00+00:00",
   "status": "pending",
-  "latest_price": 0.39,
+  "latest_price": 0.425,
   "pnl": null,
-  "why": "Elo 1671 vs 1609 on clay gives 59%; blended with the market that's 49% vs a 40% price. Form: 6-4 in last 10 vs 7-3 in last 10."
+  "why": "Elo 1671 vs 1609 on clay gives 59%; blended with the market that's 49% vs a 40% price. Form: 6-4 in last 10 vs 7-3 in last 10.",
+  "model_key": "tennis",
+  "matchup": "2026 WTA Sao Paulo",
+  "close_price": 0.425
  },
  {
   "id": "KXATPCHALLENGERMATCH-26SEP19MONTRU-MON",
@@ -61,8 +67,11 @@
   "made": "2026-09-19T04:41:00.971868+00:00",
   "expected_end": "2026-09-19T15:00:00+00:00",
   "status": "pending",
-  "latest_price": 0.44,
+  "latest_price": 0.435,
   "pnl": null,
-  "why": "Elo 1765 vs 1694 on hard gives 60%; blended with the market that's 52% vs a 44% price. Form: 7-3 in last 10 vs 7-3 in last 10."
+  "why": "Elo 1765 vs 1694 on hard gives 60%; blended with the market that's 52% vs a 44% price. Form: 7-3 in last 10 vs 7-3 in last 10.",
+  "model_key": "tennis",
+  "matchup": "2026 ATP Challenger Szczecin",
+  "close_price": 0.435
  }
 ]
