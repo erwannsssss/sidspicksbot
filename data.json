@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-19T21:39:00.927152+00:00",
+ "updated": "2026-09-19T21:50:15.775264+00:00",
  "status_note": "Last run found 0 new pick(s) and graded 0.",
  "bankroll": 112.26,
  "protection": {
@@ -283,35 +283,35 @@
  },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "tracker": {
-  "tracked": 338,
+  "tracked": 1719,
   "series": 3827,
   "movers": []
  },
  "models": {
   "tennis": {
-   "matches": 19447,
-   "training_rows": 13306,
+   "matches": 19448,
+   "training_rows": 13307,
    "holdout": {
     "from": "2026-08-15",
-    "matches": 1996,
-    "elo_log_loss": 0.6584,
-    "model_log_loss": 0.6508,
-    "elo_accuracy": 0.621,
+    "matches": 1997,
+    "elo_log_loss": 0.6587,
+    "model_log_loss": 0.651,
+    "elo_accuracy": 0.62,
     "model_accuracy": 0.627
    },
    "using": "full",
    "weights": {
-    "elo": 1.743,
+    "elo": 1.742,
     "dominance": 0.0,
     "rank": 0.0,
     "h2h": 0.428,
-    "form": -1.094,
+    "form": -1.095,
     "fatigue_games": -0.204,
     "fatigue_matches": 0.045,
     "rest": 0.016,
     "travel": 0.132,
     "altitude": 0.0,
-    "best_of_5": 0.438
+    "best_of_5": 0.439
    },
    "sport": "Tennis",
    "label": "Tennis",
@@ -389,31 +389,31 @@
    "holdout": {
     "matches": 650,
     "rating_log_loss": 0.6281,
-    "model_log_loss": 0.6218,
+    "model_log_loss": 0.6227,
     "rating_accuracy": 0.657,
-    "model_accuracy": 0.655
+    "model_accuracy": 0.651
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6012,
-    "model_log_loss": 0.6218,
+    "model_log_loss": 0.6227,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 650
    },
    "backtest": {
-    "bets": 17,
-    "wins": 6,
-    "units": -5.5,
-    "roi": -0.184
+    "bets": 16,
+    "wins": 5,
+    "units": -9.2,
+    "roi": -0.316
    },
    "weights": {
-    "home_field": 0.255,
-    "rating": 1.527,
-    "rest": 0.228,
-    "point_diff_form": 0.229,
+    "home_field": 0.256,
+    "rating": 1.528,
+    "rest": 0.231,
+    "point_diff_form": 0.23,
     "qb_change": 0.309,
-    "epa": 0.166
+    "epa": 0.163
    },
    "matches": 4380,
    "totals": {
@@ -989,11 +989,11 @@
    "made": "2026-09-19T16:08:49.619994+00:00",
    "expected_end": "2026-09-20T19:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.475,
+   "latest_price": 0.48,
    "pnl": null,
    "why": "Ratings 1527 (La Coruna, home) vs 1791 (Betis). Share of chances lately (xG or shots on target) 44% vs 47%. Goal difference last 6: +2 vs +2. Last played Sep 16 vs Sep 17. Model gives the away 55%. Blended with the market that's 50% vs a 48% price. Sharp sportsbook price (Pinnacle) says 47%.",
    "start_est": "2026-09-20T17:00:00+00:00",
-   "close_price": 0.475,
+   "close_price": 0.48,
    "sharp_prob": 0.4698,
    "sharp_source": "Pinnacle",
    "research": "",
