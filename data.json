@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-19T18:22:18.732206+00:00",
+ "updated": "2026-09-19T18:28:02.216268+00:00",
  "status_note": "Last run found 0 new pick(s) and graded 0.",
  "bankroll": 107.89,
  "protection": {
@@ -144,23 +144,23 @@
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "models": {
   "tennis": {
-   "matches": 19440,
-   "training_rows": 13300,
+   "matches": 19441,
+   "training_rows": 13301,
    "holdout": {
     "from": "2026-08-15",
-    "matches": 1995,
-    "elo_log_loss": 0.6581,
-    "model_log_loss": 0.6508,
+    "matches": 1996,
+    "elo_log_loss": 0.6579,
+    "model_log_loss": 0.6507,
     "elo_accuracy": 0.621,
     "model_accuracy": 0.628
    },
    "using": "full",
    "weights": {
-    "elo": 1.742,
+    "elo": 1.743,
     "dominance": 0.0,
     "rank": 0.0,
-    "h2h": 0.428,
-    "form": -1.092,
+    "h2h": 0.427,
+    "form": -1.093,
     "fatigue_games": -0.203,
     "fatigue_matches": 0.045,
     "rest": 0.017,
@@ -235,31 +235,31 @@
    "holdout": {
     "matches": 650,
     "rating_log_loss": 0.6281,
-    "model_log_loss": 0.6234,
+    "model_log_loss": 0.6227,
     "rating_accuracy": 0.657,
-    "model_accuracy": 0.651
+    "model_accuracy": 0.654
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6012,
-    "model_log_loss": 0.6234,
+    "model_log_loss": 0.6227,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 650
    },
    "backtest": {
-    "bets": 17,
-    "wins": 6,
-    "units": -6.0,
-    "roi": -0.197
+    "bets": 16,
+    "wins": 5,
+    "units": -8.9,
+    "roi": -0.3
    },
    "weights": {
-    "home_field": 0.256,
-    "rating": 1.535,
-    "rest": 0.228,
-    "point_diff_form": 0.224,
-    "qb_change": 0.302,
-    "epa": 0.168
+    "home_field": 0.255,
+    "rating": 1.523,
+    "rest": 0.231,
+    "point_diff_form": 0.229,
+    "qb_change": 0.324,
+    "epa": 0.166
    },
    "matches": 4380,
    "sport": "Football",
