@@ -1,6 +1,6 @@
 {
- "updated": "2026-09-19T08:33:21.970693+00:00",
- "status_note": "Last run found 0 new pick(s) and graded 1.",
+ "updated": "2026-09-19T09:21:34.123638+00:00",
+ "status_note": "Last run found 0 new pick(s) and graded 0.",
  "bankroll": 104.19,
  "settings": {
   "version": 3,
@@ -129,29 +129,29 @@
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "models": {
   "tennis": {
-   "matches": 19403,
-   "training_rows": 13267,
+   "matches": 19405,
+   "training_rows": 13268,
    "holdout": {
     "from": "2026-08-14",
     "matches": 1991,
-    "elo_log_loss": 0.6588,
-    "model_log_loss": 0.6521,
+    "elo_log_loss": 0.6589,
+    "model_log_loss": 0.6513,
     "elo_accuracy": 0.62,
-    "model_accuracy": 0.629
+    "model_accuracy": 0.626
    },
    "using": "full",
    "weights": {
-    "elo": 1.752,
+    "elo": 1.737,
     "dominance": 0.0,
     "rank": 0.0,
-    "h2h": 0.44,
-    "form": -1.108,
-    "fatigue_games": -0.226,
-    "fatigue_matches": 0.053,
-    "rest": 0.01,
-    "travel": 0.118,
+    "h2h": 0.437,
+    "form": -1.081,
+    "fatigue_games": -0.201,
+    "fatigue_matches": 0.046,
+    "rest": 0.018,
+    "travel": 0.133,
     "altitude": 0.0,
-    "best_of_5": 0.445
+    "best_of_5": 0.439
    },
    "sport": "Tennis",
    "label": "Tennis",
@@ -220,14 +220,14 @@
    "holdout": {
     "matches": 650,
     "rating_log_loss": 0.6281,
-    "model_log_loss": 0.6214,
+    "model_log_loss": 0.6231,
     "rating_accuracy": 0.657,
-    "model_accuracy": 0.654
+    "model_accuracy": 0.651
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6012,
-    "model_log_loss": 0.6214,
+    "model_log_loss": 0.6231,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 650
@@ -240,11 +240,11 @@
    },
    "weights": {
     "home_field": 0.255,
-    "rating": 1.532,
-    "rest": 0.23,
-    "point_diff_form": 0.22,
-    "qb_change": 0.332,
-    "epa": 0.167
+    "rating": 1.524,
+    "rest": 0.233,
+    "point_diff_form": 0.224,
+    "qb_change": 0.301,
+    "epa": 0.17
    },
    "matches": 4380,
    "sport": "Football",
@@ -276,13 +276,13 @@
    "clv_picks": 0
   },
   "yours": {
-   "picks": 0,
-   "wins": 0,
+   "picks": 1,
+   "wins": 1,
    "losses": 0,
-   "units": 0,
-   "staked": 0,
-   "roi": 0.0,
-   "beat_price": null,
+   "units": 4.19,
+   "staked": 3.0,
+   "roi": 1.397,
+   "beat_price": 0.0,
    "clv": null,
    "clv_picks": 0
   }
