@@ -65,14 +65,22 @@ SERIES = {
     "KXSIXKINGSSLAMMATCH": ("M", "Exhibition"),
 }
 
-SETTINGS_VERSION = 3
-NEW_IN_V3 = {"min_edge": 0.05, "min_price": 0.20, "skip_expert_disagree": True}
+SETTINGS_VERSION = 6
+NEW_IN_V3 = {"min_edge": 0.03, "min_price": 0.20, "skip_expert_disagree": True, "min_edge_no_sharp": 0.05,
+             "kelly_fraction": 0.125, "max_units": 8.0, "daily_unit_cap": 8.0, "brake_stop": None,
+             "paused": False}
 DEFAULT_SETTINGS = {
     "version": SETTINGS_VERSION,
-    "min_edge": 0.05,          # minimum edge after fees to make a pick
-    "kelly_fraction": 0.25,    # quarter Kelly sizing
-    "max_units": 3.0,          # biggest single pick
-    "daily_unit_cap": 10.0,    # most units risked per day
+    "min_edge": 0.03,          # minimum edge after fees when a sharp sportsbook price backs the pick
+    # Bankroll protection: the 100 units are treated as the owner's entire, irreplaceable bankroll.
+    # Survival comes first: small bets, a daily limit, and automatic brakes after losses.
+    "kelly_fraction": 0.125,   # eighth-Kelly sizing (half of the usual "cautious" quarter Kelly)
+    "max_units": 8.0,          # biggest single pick: no separate limit beyond the daily cap
+    "daily_unit_cap": 8.0,     # most units risked per day
+    "brake_half": 0.10,        # down 10% from the peak: bet sizes are halved
+    "brake_stop": None,        # no automatic pause (set a number like 0.20 to pause picks after a 20% drop)
+    "min_main_prob": 0.40,     # recommended picks must have at least a 40% chance, to limit losing streaks
+    "paused": False,           # set by the 20% brake; set back to false in state/settings.json to resume
     "min_matches": 12,         # each player needs this many rated matches
     "min_volume_24h": 500,     # skip thin markets
     "max_spread": 0.04,        # skip markets with a wide bid/ask spread
@@ -87,7 +95,10 @@ DEFAULT_SETTINGS = {
     "horizon": {"tennis": 24, "soccer": 72, "mlb": 30, "nfl": 96, "cfb": 96},  # pick early, when prices are softest
     "start_offset": {"tennis": 3, "soccer": 2.5, "mlb": 3, "nfl": 4, "cfb": 4},  # hours from kickoff to Kalshi's end time
     "sharp_weight": 0.7,       # how much to lean on sharp sportsbook prices when available
-    "min_edge_no_sharp": 0.07, # stricter bar when no sharp price is available
+    "min_edge_no_sharp": 0.05, # stricter bar when no sharp price is available
+    "watch_edge": 0.015,       # smaller edges go on the practice-only watchlist
+    "watch_per_day": 20,       # most watchlist picks per day
+    "watch_weight": 0.5,       # the watchlist trusts the model this much
     "odds_calls_per_day": 15,  # keeps The Odds API free tier (500 a month) from running out
     "disabled": [],            # leagues switched off because they keep getting worse prices than the close
     "max_edge": 0.15,          # bigger "edges" are almost always model errors
@@ -279,9 +290,24 @@ class TennisEngine:
 
 def size_units(q, p_eff, s):
     f = (q - p_eff) / (1 - p_eff)
-    units = s["kelly_fraction"] * f * 100
+    units = s["kelly_fraction"] * f * 100 * s.get("_size_factor", 1.0)
     units = min(s["max_units"], round(units * 2) / 2)
     return units if units >= 0.5 else 0.0
+
+
+def bankroll_state(picks, s):
+    """Current bankroll, its peak, and how far below the peak it is (recommended picks only)."""
+    run = peak = s["starting_bankroll"]
+    for p in sorted([p for p in picks if is_main(p) and p["status"] in ("win", "loss", "void")],
+                    key=lambda p: p.get("graded", "")):
+        run += p["pnl"] or 0
+        peak = max(peak, run)
+    return run, peak, (peak - run) / peak if peak else 0.0
+
+
+def is_main(p):
+    """Real recommendations (the watchlist is tracked separately)."""
+    return p.get("tier") != "W"
 
 
 def tier_of(edge):
@@ -443,10 +469,13 @@ def make_picks(engines, picks, s, scans, research_cache, sharp):
                         continue
                     p_eff = ask + fee(ask, s["fee_rate"])
                     edge = q - p_eff
-                    if s["min_edge"] <= edge <= s["max_edge"] and (best is None or edge > best["edge"]):
-                        units = size_units(q, p_eff, s)
-                        if units <= 0:
-                            continue
+                    # the watchlist trusts the model more, to test its own opinions without risking anything
+                    ww = max(weight, s["watch_weight"])
+                    wq = ww * o.prob + (1 - ww) * mid
+                    wedge = wq - p_eff
+                    score = max(edge, wedge)
+                    if s["watch_edge"] <= score <= s["max_edge"] and (best is None or score > best["_score"]):
+                        units = max(size_units(q, p_eff, s), 0.5)
                         if eng.key == "tennis":
                             finfo, flip, surf = o.why
                             why = explain(finfo, flip, surf, o.prob, q, ask)
@@ -467,32 +496,46 @@ def make_picks(engines, picks, s, scans, research_cache, sharp):
                             "status": "pending", "latest_price": round(ask, 2), "pnl": None, "why": why,
                             "_hint": eng.research_hint, "_teams": teams, "_side": side,
                             "start_est": start.isoformat(), "close_price": None,
+                            "_score": score, "_watch": (round(wq, 3), round(wedge, 3)),
                         }
                 if best:
                     candidates.append(best)
     candidates.sort(key=lambda p: p["edge"], reverse=True)
     new, searched = [], 0
+    watch_today = sum(1 for p in picks if p["made"][:10] == today and not is_main(p))
+    candidates.sort(key=lambda p: p["_score"], reverse=True)
     for p in candidates:
-        if used_today + p["units"] > s["daily_unit_cap"]:
-            continue
+        wq, wedge = p.pop("_watch")
+        p.pop("_score", None)
         # Compare with sharp sportsbook prices: the most reliable sign of a real edge
         found = sharp.prob(p) if sharp else None
+        p_eff = p["price"] + fee(p["price"], s["fee_rate"])
         if found:
             sp, src = found
             q = s["sharp_weight"] * sp + (1 - s["sharp_weight"]) * p["model_prob"]
-            p_eff = p["price"] + fee(p["price"], s["fee_rate"])
             p.update(sharp_prob=sp, sharp_source=src, model_prob=round(q, 3), edge=round(q - p_eff, 3))
             p["why"] += f" Sharp sportsbook price ({src}) says {sp:.0%}."
-            if not (s["min_edge"] <= p["edge"] <= s["max_edge"]):
-                print(f"Skipped {p['market']}: sharp price {sp:.0%} doesn't support it")
-                continue
-            p["tier"], p["units"] = tier_of(p["edge"]), size_units(q, p_eff, s)
-            if p["units"] <= 0:
-                continue
         else:
             p["sharp_prob"] = None
-            if p["edge"] < s["min_edge_no_sharp"]:
+        bar = s["min_edge"] if found else s["min_edge_no_sharp"]
+        if not (bar <= p["edge"] <= s["max_edge"]):
+            # Not strong enough to recommend: track the model's own view on the practice watchlist
+            if not (s["watch_edge"] <= wedge <= s["max_edge"]) or watch_today >= s["watch_per_day"]:
                 continue
+            if found and found[0] + 0.02 < p["price"]:
+                continue  # sharp books clearly disagree; not worth tracking
+            watch_today += 1
+            for k in ("_hint", "_teams", "_side"):
+                p.pop(k, None)
+            p.update(tier="W", units=0.5, model_prob=wq, edge=wedge, research="", sources=[], expert_lean="none")
+            new.append(p)
+            continue
+        if s["paused"] or p["model_prob"] < s["min_main_prob"]:
+            continue  # bankroll protection: paused after a big drawdown, or too likely to lose
+        p["tier"] = tier_of(p["edge"])
+        p["units"] = max(size_units(p["model_prob"], p_eff, s), 0.5)
+        if used_today + p["units"] > s["daily_unit_cap"]:
+            continue
         if searched < s["max_research"] or p["event"] in research_cache:
             searched += p["event"] not in research_cache
             info = research(p, research_cache)
@@ -696,7 +739,7 @@ def weekly(picks, ctx, s, scans, taken):
                            f"{old:.0%} to {new_w:.0%} based on {why}")
     # 3. Tighten or loosen the minimum edge, only with enough evidence
     done = [p for p in picks if p["status"] in ("win", "loss")]
-    recent = done[-80:]
+    recent = [p for p in done if is_main(p)][-80:]
     low_edge = [p for p in recent if p["edge"] < 0.05]
     if len(low_edge) >= 30 and summarize(low_edge)["roi"] < -0.08 and s["min_edge"] < 0.08:
         old = s["min_edge"]
@@ -761,6 +804,9 @@ LABELS = {"tennis": "Tennis", "soccer": "Soccer", "mlb": "MLB", "nfl": "NFL", "c
 
 
 def write_dashboard(picks, s, reports, changelog, status_note, taken, engines):
+    all_picks = picks
+    picks = [p for p in all_picks if is_main(p)]
+    watch = [p for p in all_picks if not is_main(p)]
     done = [p for p in picks if p["status"] in ("win", "loss", "void")]
     bankroll = s["starting_bankroll"] + sum(p["pnl"] or 0 for p in done)
     curve, run = [], s["starting_bankroll"]
@@ -775,6 +821,8 @@ def write_dashboard(picks, s, reports, changelog, status_note, taken, engines):
         "updated": now_utc().isoformat(),
         "status_note": status_note,
         "bankroll": round(bankroll, 2),
+        "protection": dict(zip(("bankroll", "peak", "drawdown"), [round(v, 3) for v in bankroll_state(all_picks, s)]),
+                           paused=s["paused"]),
         "settings": s,
         "open": [p for p in picks if p["status"] == "pending"],
         "history": sorted(done, key=lambda p: p.get("graded", ""), reverse=True),
@@ -783,9 +831,13 @@ def write_dashboard(picks, s, reports, changelog, status_note, taken, engines):
                                trust=s["weights"].get(e.key, s["model_weight"])) for e in engines},
         "summary": {"all": summarize(picks),
                     "week": summarize([p for p in done if p.get("graded", "") >= week_ago]),
-                    "yours": summarize([p for p in done if taken.get(p["id"])])},
+                    "yours": summarize([p for p in done if taken.get(p["id"])]),
+                    "watch": summarize(watch)},
         "by_expert_lean": by_group(picks, "expert_lean"),
-        "by_tier": by_group(picks, "tier"),
+        "by_tier": by_group(all_picks, "tier"),
+        "watch_open": [p for p in watch if p["status"] == "pending"],
+        "watch_history": sorted([p for p in watch if p["status"] in ("win", "loss", "void")],
+                                key=lambda p: p.get("graded", ""), reverse=True)[:300],
         "by_tour": by_group(picks, "tour"),
         "by_sport": by_group(picks, "sport"),
         "calibration": calibration(picks),
@@ -881,14 +933,29 @@ def main():
                     e.info = info
 
     resolve_scans(scans)
+    # Bankroll protection brakes
+    bank, peak, dd = bankroll_state(picks, s)
+    s["_size_factor"] = 0.5 if dd >= s["brake_half"] else 1.0
+    if s.get("brake_stop") and dd >= s["brake_stop"] and not s["paused"]:
+        s["paused"] = True
+        changelog.append({"date": now_utc().date().isoformat(),
+                          "change": f"Recommended picks paused: bankroll {bank:.1f}u is {dd:.0%} below its peak of {peak:.1f}u"})
+        telegram(f"<b>Bankroll protection</b>\nThe bankroll is {bank:.1f}u, {dd:.0%} below its peak. Recommended picks are "
+                 "paused to protect what's left. The watchlist keeps running so the agent can keep learning.")
     sharp = odds.Sharp(s["odds_calls_per_day"])
     new = make_picks(engines, picks, s, scans, research_cache, sharp)
     sharp.save()
     picks.extend(new)
-    if new:
-        total = sum(p["units"] for p in new)
-        telegram(f"<b>{len(new)} new pick{'s' if len(new) > 1 else ''}</b> ({total:g} units)\n\n"
-                 + "\n\n".join(pick_line(p) for p in new) + (f"\n\n{link}" if link else ""))
+    main_new = [p for p in new if is_main(p)]
+    watch_new = [p for p in new if not is_main(p)]
+    if main_new:
+        total = sum(p["units"] for p in main_new)
+        telegram(f"<b>{len(main_new)} new pick{'s' if len(main_new) > 1 else ''}</b> ({total:g} units)\n\n"
+                 + "\n\n".join(pick_line(p) for p in main_new) + (f"\n\n{link}" if link else ""))
+    if watch_new:
+        telegram(f"<b>Watchlist</b> (smaller edges, practice only)\n"
+                 + "\n".join(f"• {html.escape(p['market'])} at {p['price'] * 100:.0f}¢, edge +{p['edge']:.1%} "
+                              f"({html.escape(p.get('sport', ''))})" for p in watch_new))
     elif mode == "ask":
         still_open = [p for p in picks if p["status"] == "pending"]
         telegram(f"Fresh scan done: no new picks right now. {len(still_open)} pick"
@@ -897,6 +964,7 @@ def main():
 
     note = f"Last run found {len(new)} new pick(s) and graded {len(graded)}."
     save_json(PICKS_FILE, picks)
+    s.pop("_size_factor", None)
     save_json(SETTINGS_FILE, s)
     save_json(REPORTS_FILE, reports)
     save_json(CHANGELOG_FILE, changelog)

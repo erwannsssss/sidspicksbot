@@ -34,7 +34,7 @@ h2{font-size:22px;font-weight:600;margin:34px 0 10px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin-bottom:10px}
 .pick-top{display:flex;justify-content:space-between;align-items:center;gap:10px}
 .tier{font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:15px;padding:2px 10px;border-radius:6px}
-.tA{background:var(--ball);color:var(--ball-ink)} .tB{background:var(--win-bg);color:var(--win)} .tC{background:var(--amber-bg);color:var(--amber)}
+.tA{background:var(--ball);color:var(--ball-ink)} .tW{background:var(--bg);color:var(--muted);border:1px solid var(--line)} .tB{background:var(--win-bg);color:var(--win)} .tC{background:var(--amber-bg);color:var(--amber)}
 .meta{color:var(--muted);font-size:14px}
 .pick-name{font-size:19px;font-weight:600;margin:8px 0 0}
 .grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;margin:12px 0 10px}
@@ -83,6 +83,7 @@ svg{display:block;width:100%;height:auto}
   <section class="board" aria-label="Bankroll">
     <div class="lbl">Model bankroll (units)</div>
     <div class="big num" id="bankroll">–</div>
+    <div class="lbl" id="protect" style="margin-top:4px"></div>
     <div class="row">
       <div><div class="num" id="wk">–</div><div class="lbl">This week</div></div>
       <div><div class="num" id="rec">–</div><div class="lbl">Record</div></div>
@@ -105,6 +106,10 @@ svg{display:block;width:100%;height:auto}
   <p class="meta" style="margin:-4px 0 10px">Every pick is tracked and graded so the agent can learn from it. Check the box on the ones you actually trade.</p>
   <div id="open"></div>
   <p class="saving" id="saving" role="status"></p>
+
+  <h2>Watchlist</h2>
+  <p class="meta" style="margin:-4px 0 10px">Smaller edges the agent tracks for practice only. They aren't recommendations and don't count in the bankroll, but they help it learn faster.</p>
+  <div class="card"><div class="meta" id="watchSum"></div><div class="list" id="watch"></div></div>
 
   <h2>Your record vs the model</h2>
   <div class="two">
@@ -228,6 +233,15 @@ function renderOpen(){
   el.querySelectorAll("input[data-id]").forEach(i => i.addEventListener("change", e => saveTaken(e.target.dataset.id, e.target.checked)));
 }
 
+function renderWatch(){
+  const w = DATA.summary.watch;
+  $("watchSum").textContent = w && w.picks ? `Graded ${w.wins}-${w.losses}, ${u(w.units)}, ROI ${pct(w.roi)}` : "No graded watchlist picks yet.";
+  const open = bySport(DATA.watch_open || []);
+  $("watch").innerHTML = open.length ? open.map(p => `<div class="item"><div>${esc(p.market)} <span class="meta">${cents(p.price)}</span>
+    <div class="meta">${esc(p.sport)}, ${esc(p.tour)}, edge +${(p.edge * 100).toFixed(1)}%</div></div><span class="tier tW">Watch</span></div>`).join("")
+    : '<p class="empty" style="margin:8px 0 0">Nothing on the watchlist right now.</p>';
+}
+
 function renderRecords(){
   const hist = DATA.history;
   const m = summarize(hist), y = summarize(hist.filter(p => taken[p.id]));
@@ -335,12 +349,16 @@ function renderAll(){
   const s = DATA.summary;
   $("updated").textContent = "Updated " + new Date(DATA.updated).toLocaleString(undefined, {weekday:"short", hour:"numeric", minute:"2-digit"}) + ". " + DATA.status_note;
   $("bankroll").textContent = DATA.bankroll.toFixed(1);
+  const pr = DATA.protection;
+  if (pr) $("protect").textContent = pr.paused ? "Protection: recommended picks paused after a 20% drop"
+    : pr.drawdown >= (DATA.settings.brake_half || 0.1) ? `Protection: bet sizes halved (${pct(pr.drawdown)} below peak)`
+    : `Protection on: max ${DATA.settings.max_units}u a pick, ${DATA.settings.daily_unit_cap}u a day`;
   $("wk").textContent = u(s.week.units);
   $("rec").textContent = `${s.all.wins}-${s.all.losses}`;
   $("roi").textContent = pct(s.all.roi);
   $("beat").textContent = pct(s.all.beat_price);
   $("clv").textContent = s.all.clv == null ? "–" : (s.all.clv > 0 ? "+" : "") + (Math.round(s.all.clv * 1000) / 10) + "¢";
-  renderOpen(); renderRecords(); renderHistory(); renderCurve(); renderCalib(); renderReports(); renderModel();
+  renderOpen(); renderWatch(); renderRecords(); renderHistory(); renderCurve(); renderCalib(); renderReports(); renderModel();
   table($("tiers"), "Tier", DATA.by_tier);
   table($("tours"), "League or tour", DATA.by_tour);
   table($("sportsTable"), "Sport", DATA.by_sport || {});
@@ -351,7 +369,7 @@ function renderAll(){
 document.querySelectorAll("#sports button").forEach(b => b.addEventListener("click", () => {
   sport = b.dataset.s; shown = 50;
   document.querySelectorAll("#sports button").forEach(x => x.setAttribute("aria-pressed", x === b));
-  renderOpen(); renderHistory();
+  renderOpen(); renderWatch(); renderHistory();
 }));
 $("more").addEventListener("click", () => { shown += 50; renderHistory(); });
 document.querySelectorAll(".filters:not(#sports) button").forEach(b => b.addEventListener("click", () => {
