@@ -88,9 +88,18 @@ svg{display:block;width:100%;height:auto}
       <div><div class="num" id="rec">–</div><div class="lbl">Record</div></div>
       <div><div class="num" id="roi">–</div><div class="lbl">ROI</div></div>
       <div><div class="num" id="beat">–</div><div class="lbl">Price moved our way</div></div>
+      <div><div class="num" id="clv">–</div><div class="lbl">Avg closing line value</div></div>
     </div>
   </section>
 
+
+  <div class="filters" role="group" aria-label="Filter by sport" id="sports" style="flex-wrap:wrap;margin-top:24px">
+    <button data-s="all" aria-pressed="true">All sports</button>
+    <button data-s="Tennis" aria-pressed="false">Tennis</button>
+    <button data-s="Soccer" aria-pressed="false">Soccer</button>
+    <button data-s="Baseball" aria-pressed="false">Baseball</button>
+    <button data-s="Football" aria-pressed="false">Football</button>
+  </div>
 
   <h2>Open picks</h2>
   <p class="meta" style="margin:-4px 0 10px">Every pick is tracked and graded so the agent can learn from it. Check the box on the ones you actually trade.</p>
@@ -118,6 +127,7 @@ svg{display:block;width:100%;height:auto}
   <button class="more" id="more" hidden>Show more</button>
 
   <h2>Where it makes money</h2>
+  <div class="card"><table id="sportsTable"></table></div>
   <div class="card"><table id="tiers"></table></div>
   <div class="card"><table id="tours"></table></div>
   <div class="card"><table id="leans"></table></div>
@@ -125,13 +135,16 @@ svg{display:block;width:100%;height:auto}
   <h2>Is it honest about its confidence?</h2>
   <div class="card" id="calib"></div>
 
+  <h2>How good are the models?</h2>
+  <div id="modelcheck"><p class="empty">Shows up after the next run.</p></div>
+
   <h2>Weekly reports</h2>
   <div id="reports"></div>
 
   <h2>What the agent changed</h2>
   <div class="card list" id="changes"></div>
 
-  <p class="foot">Prices are Kalshi ask prices in cents. 1 unit = 1% of the starting bankroll. Checkboxes save to your repository, so they show on every device.</p>
+  <p class="foot">Closing line value is how much the Kalshi price moved in the pick's favour before the game started; above zero over many picks is the best early sign of a real edge. Prices are Kalshi ask prices in cents. 1 unit = 1% of the starting bankroll. Checkboxes save to your repository, so they show on every device.</p>
 </main>
 
 <script>
@@ -139,7 +152,8 @@ const store = {
   get(k, d){ try{ const v = localStorage.getItem(k); return v === null ? d : JSON.parse(v); }catch(e){ return d; } },
   set(k, v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }
 };
-let DATA = null, filter = "all", shown = 50;
+let DATA = null, filter = "all", shown = 50, sport = "all";
+const bySport = list => sport === "all" ? list : list.filter(p => (p.sport || "Tennis") === sport);
 let serverTaken = {};
 let pending = store.get("pendingTaken", {});   // clicks not yet confirmed by the repo
 let taken = {};
@@ -193,18 +207,20 @@ function summarize(list){
 
 function renderOpen(){
   const el = $("open");
-  if (!DATA.open.length){ el.innerHTML = '<p class="empty">No open picks right now. The agent checks again every few hours and only picks when it finds an edge.</p>'; return; }
-  el.innerHTML = DATA.open.map(p => `
+  const open = bySport(DATA.open);
+  if (!open.length){ el.innerHTML = '<p class="empty">No open picks right now. The agent checks again every few hours and only picks when it finds an edge.</p>'; return; }
+  el.innerHTML = open.map(p => `
     <article class="card">
-      <div class="pick-top"><span class="tier t${p.tier}">Tier ${p.tier}</span><span class="meta">${esc(p.tour)}, ${esc(p.surface)}</span></div>
+      <div class="pick-top"><span class="tier t${p.tier}">Tier ${p.tier}</span><span class="meta">${esc(p.sport || "Tennis")}, ${esc(p.tour)}${p.surface ? ", " + esc(p.surface) : ""}</span></div>
       <p class="pick-name">${esc(p.market)}</p>
-      <div class="meta">vs ${esc(p.opponent)}, ${esc(p.tournament)}</div>
+      <div class="meta">${p.opponent ? "vs " + esc(p.opponent) + ", " : ""}${esc(p.matchup || p.tournament)}</div>
       <div class="grid">
         <div><span class="num">${cents(p.price)}</span><small>Price</small></div>
         <div><span class="num">${pct(p.model_prob)}</span><small>Model</small></div>
         <div><span class="num w">+${pct(p.edge)}</span><small>Edge</small></div>
         <div><span class="num">${p.units}u</span><small>Size</small></div>
       </div>
+      ${p.sharp_prob ? `<p class="meta" style="margin:0 0 6px">Sharp sportsbook price: ${pct(p.sharp_prob)} (${esc(p.sharp_source)})</p>` : ""}
       <p class="why">${esc(p.why)}</p>
       ${newsBlock(p)}
       <label class="take"><input type="checkbox" data-id="${esc(p.id)}" ${taken[p.id] ? "checked" : ""}><span>I took this trade</span></label>
@@ -223,7 +239,7 @@ function renderRecords(){
 }
 
 function renderHistory(){
-  let list = DATA.history;
+  let list = bySport(DATA.history);
   if (filter === "win" || filter === "loss") list = list.filter(p => p.status === filter);
   if (filter === "taken") list = list.filter(p => taken[p.id]);
   const mine = DATA.history.filter(p => taken[p.id]).length;
@@ -232,7 +248,7 @@ function renderHistory(){
     <div class="item">
       <label class="hcheck"><input type="checkbox" data-hid="${esc(p.id)}" ${taken[p.id] ? "checked" : ""} aria-label="I took ${esc(p.market)}">
       <div><div>${esc(p.market)} <span class="meta">${cents(p.price)}, ${p.units}u</span></div>
-      <div class="meta">Tier ${p.tier}, ${esc(p.tour)}, ${day(p.made)}${leanText[p.expert_lean] ? ", " + leanText[p.expert_lean].toLowerCase() : ""}</div></div></label>
+      <div class="meta">${esc(p.sport || "Tennis")}, ${esc(p.tour)}, tier ${p.tier}, ${day(p.made)}${leanText[p.expert_lean] ? ", " + leanText[p.expert_lean].toLowerCase() : ""}</div></div></label>
       <div class="num ${p.status === "win" ? "w" : p.status === "loss" ? "l" : ""}" style="font-size:18px;white-space:nowrap">${p.status === "void" ? "Void" : u(p.pnl)}</div>
     </div>`).join("") : `<p class="empty">${filter === "taken" ? "Check the box on any pick you trade and it shows up here." : "Nothing here yet."}</p>`;
   $("more").hidden = list.length <= shown;
@@ -283,6 +299,38 @@ function renderReports(){
     : '<p class="empty">No changes yet. The agent only adjusts itself when the data backs it up.</p>';
 }
 
+const factorNames = {elo:"Elo rating", dominance:"Games won lately", rank:"Ranking", h2h:"Head to head",
+  form:"Recent form", fatigue_games:"Games in last 3 days", fatigue_matches:"Matches in last 7 days",
+  rest:"Days of rest", travel:"Travel distance", altitude:"Altitude", best_of_5:"Best of 5 sets",
+  rating:"Team rating", shots_on_target:"Shots on target share", goal_diff_form:"Recent goal difference",
+  home_field:"Home field", starting_pitcher:"Starting pitcher form", run_diff_form:"Recent run differential",
+  point_diff_form:"Recent point differential", qb_change:"Backup quarterback starting",
+  chance_quality:"Share of chances (xG or shots on target)", epa:"EPA per play", pitcher_fip:"Starter's FIP last season"};
+function renderModel(){
+  const models = DATA.models || {};
+  const keys = Object.keys(models);
+  if (!keys.length) return;
+  $("modelcheck").innerHTML = keys.map(k => {
+    const m = models[k], h = m.holdout, mk = m.market, bt = m.backtest;
+    if (!h) return `<div class="card"><strong>${esc(m.label)}</strong><p class="meta">Not enough history yet.</p></div>`;
+    const base = h.elo_accuracy !== undefined ? {acc: h.elo_accuracy, ll: h.elo_log_loss, name: "Elo only"} : {acc: h.rating_accuracy, ll: h.rating_log_loss, name: "Rating only"};
+    const max = Math.max(...Object.values(m.weights || {}).map(Math.abs)) || 1;
+    return `<details class="card"><summary style="cursor:pointer"><strong>${esc(m.label)}</strong>
+      <span class="meta">picked the winner ${pct(h.model_accuracy)} of ${h.matches.toLocaleString()} recent games, trust ${pct(m.trust)}</span></summary>
+      <table style="margin-top:10px"><tr><th></th><th>Picked winner</th><th>Error</th></tr>
+        <tr><td>Full model</td><td>${pct(h.model_accuracy)}</td><td>${h.model_log_loss}</td></tr>
+        <tr><td>${base.name}</td><td>${pct(base.acc)}</td><td>${base.ll}</td></tr>
+        ${mk ? `<tr><td>Sportsbooks (${mk.matches.toLocaleString()})</td><td></td><td>${mk.market_log_loss}</td></tr>
+        <tr><td>Model, same games</td><td></td><td>${mk.model_log_loss}</td></tr>` : ""}
+      </table>
+      <p class="meta" style="margin:8px 0 12px">Lower error is better. Learned from ${(m.matches || 0).toLocaleString()} games. ${m.using === "full" ? "The full model beat the basic rating, so it's in use." : "The full model didn't beat the basic rating, so the rating is in use."}
+      ${bt ? ` Backtest against closing sportsbook prices: ${bt.bets} bets, ${u(bt.units)}, ROI ${pct(bt.roi)}.` : " No historical odds to backtest against, so it learns from Kalshi prices as it goes."}</p>
+      ${Object.entries(m.weights || {}).map(([f, v]) => `<div style="margin-bottom:8px"><div style="display:flex;justify-content:space-between;font-size:14px"><span>${factorNames[f] || f}</span><span class="meta">${v > 0 ? "+" : ""}${v}</span></div>
+        <div class="bar"><i style="width:${Math.round(Math.abs(v) / max * 100)}%;background:${v < 0 ? "var(--loss)" : "var(--court)"}"></i></div></div>`).join("")}
+    </details>`;
+  }).join("");
+}
+
 function renderAll(){
   const s = DATA.summary;
   $("updated").textContent = "Updated " + new Date(DATA.updated).toLocaleString(undefined, {weekday:"short", hour:"numeric", minute:"2-digit"}) + ". " + DATA.status_note;
@@ -291,17 +339,24 @@ function renderAll(){
   $("rec").textContent = `${s.all.wins}-${s.all.losses}`;
   $("roi").textContent = pct(s.all.roi);
   $("beat").textContent = pct(s.all.beat_price);
-  renderOpen(); renderRecords(); renderHistory(); renderCurve(); renderCalib(); renderReports();
+  $("clv").textContent = s.all.clv == null ? "–" : (s.all.clv > 0 ? "+" : "") + (Math.round(s.all.clv * 1000) / 10) + "¢";
+  renderOpen(); renderRecords(); renderHistory(); renderCurve(); renderCalib(); renderReports(); renderModel();
   table($("tiers"), "Tier", DATA.by_tier);
-  table($("tours"), "Tour", DATA.by_tour);
+  table($("tours"), "League or tour", DATA.by_tour);
+  table($("sportsTable"), "Sport", DATA.by_sport || {});
   const leans = {}; for (const [k, v] of Object.entries(DATA.by_expert_lean || {})) leans[leanText[k] || "No expert view"] = v;
   table($("leans"), "Web research", leans);
 }
 
+document.querySelectorAll("#sports button").forEach(b => b.addEventListener("click", () => {
+  sport = b.dataset.s; shown = 50;
+  document.querySelectorAll("#sports button").forEach(x => x.setAttribute("aria-pressed", x === b));
+  renderOpen(); renderHistory();
+}));
 $("more").addEventListener("click", () => { shown += 50; renderHistory(); });
-document.querySelectorAll(".filters button").forEach(b => b.addEventListener("click", () => {
+document.querySelectorAll(".filters:not(#sports) button").forEach(b => b.addEventListener("click", () => {
   filter = b.dataset.f; shown = 50;
-  document.querySelectorAll(".filters button").forEach(x => x.setAttribute("aria-pressed", x === b));
+  document.querySelectorAll(".filters:not(#sports) button").forEach(x => x.setAttribute("aria-pressed", x === b));
   renderHistory();
 }));
 

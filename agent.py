@@ -1,8 +1,9 @@
 """
-Picks agent (tennis v1)
+Picks agent (multi-sport v3)
 -----------------------
 Runs on GitHub Actions. Each run it:
-  1. Downloads every settled Kalshi tennis match and rebuilds player Elo ratings
+  1. Rebuilds the tennis model from 10+ years of tour results plus every settled
+     Kalshi match (see model.py for every factor it uses)
   2. Grades any open picks that have finished
   3. Scans today's Kalshi tennis markets for edges and makes new picks
   4. Sends new picks and results to Telegram
@@ -21,6 +22,7 @@ Eastern each Monday.
 """
 import html
 import json
+import traceback
 import math
 import os
 import re
@@ -30,6 +32,13 @@ from collections import defaultdict
 from datetime import datetime, timedelta, timezone
 
 import requests
+
+import common
+import football
+import mlb
+import model as tm
+import odds
+import soccer
 
 KALSHI = "https://api.elections.kalshi.com/trade-api/v2"
 STATE_DIR = "state"
@@ -48,10 +57,19 @@ SERIES = {
     "KXATPCHALLENGERMATCH": ("M", "ATP Challenger"),
     "KXWTAMATCH": ("W", "WTA"),
     "KXWTACHALLENGERMATCH": ("W", "WTA Challenger"),
+    "KXATPGAME": ("M", "ATP"),
+    "KXWTAGAME": ("W", "WTA"),
+    "KXDAVISCUPMATCH": ("M", "Davis Cup"),
+    "KXEXHIBITIONMEN": ("M", "Exhibition"),
+    "KXEXHIBITIONWOMEN": ("W", "Exhibition"),
+    "KXSIXKINGSSLAMMATCH": ("M", "Exhibition"),
 }
 
+SETTINGS_VERSION = 3
+NEW_IN_V3 = {"min_edge": 0.05, "min_price": 0.20, "skip_expert_disagree": True}
 DEFAULT_SETTINGS = {
-    "min_edge": 0.03,          # minimum edge after fees to make a pick
+    "version": SETTINGS_VERSION,
+    "min_edge": 0.05,          # minimum edge after fees to make a pick
     "kelly_fraction": 0.25,    # quarter Kelly sizing
     "max_units": 3.0,          # biggest single pick
     "daily_unit_cap": 10.0,    # most units risked per day
@@ -59,14 +77,23 @@ DEFAULT_SETTINGS = {
     "min_volume_24h": 500,     # skip thin markets
     "max_spread": 0.04,        # skip markets with a wide bid/ask spread
     "max_price": 0.90,         # skip heavy favourites
-    "min_price": 0.10,         # skip long shots
+    "min_price": 0.20,         # skip long shots (they're usually overpriced)
     "fee_rate": 0.07,          # Kalshi taker fee multiplier
     "k_scale": 1.0,            # Elo speed, tuned weekly
-    "model_weight": 0.5,       # how much to trust Elo vs the market price, tuned weekly
+    "model_weight": 0.5,       # how much to trust the model vs the market price, tuned weekly
+    "min_model_weight": 0.25,  # floor, so it keeps making practice picks to learn from
+    "weights": {},             # trust in the model vs market, per sport (tuned weekly)
+    "horizon_hours": 24,       # fallback pick window
+    "horizon": {"tennis": 24, "soccer": 72, "mlb": 30, "nfl": 96, "cfb": 96},  # pick early, when prices are softest
+    "start_offset": {"tennis": 3, "soccer": 2.5, "mlb": 3, "nfl": 4, "cfb": 4},  # hours from kickoff to Kalshi's end time
+    "sharp_weight": 0.7,       # how much to lean on sharp sportsbook prices when available
+    "min_edge_no_sharp": 0.07, # stricter bar when no sharp price is available
+    "odds_calls_per_day": 15,  # keeps The Odds API free tier (500 a month) from running out
+    "disabled": [],            # leagues switched off because they keep getting worse prices than the close
     "max_edge": 0.15,          # bigger "edges" are almost always model errors
     "starting_bankroll": 100.0,
     "max_research": 6,         # web searches per run (free Gemini limits)
-    "skip_expert_disagree": False,  # turned on automatically if fading the experts keeps losing
+    "skip_expert_disagree": True,   # skip picks that reputable previews disagree with
 }
 
 CLAY = ["roland garros", "french open", "madrid", "rome", "italian", "monte carlo",
@@ -155,27 +182,13 @@ def tournament_of(m):
     return re.sub(r" (Qualification )?(Round|Quarter|Semi|Final|R\d).*$", "", hit.group(1))
 
 
-def surface_of(tournament):
-    t = re.sub(r"^\d{4} (atp|wta)( challenger)? ", "", tournament.lower())
-    has = lambda words: any(re.search(r"\b" + re.escape(w) + r"\b", t) for w in words)
-    if has(CLAY):
-        return "clay"
-    if has(GRASS):
-        return "grass"
-    return "hard"
-
-
-def competitor(m):
-    return (m.get("custom_strike") or {}).get("tennis_competitor") or m.get("yes_sub_title")
-
-
 def fee(p, rate):
     return rate * p * (1 - p)
 
 
 # ---------------------------------------------------------------- data
 def fetch_results():
-    """Every finished match on Kalshi as (time, pool, winner_id, loser_id, surface, names)."""
+    """Every finished match on Kalshi (this is where Challenger results come from)."""
     markets = []
     for series in SERIES:
         markets += kalshi_all("/historical/markets", {"series_ticker": series})
@@ -193,83 +206,75 @@ def fetch_results():
         pool = SERIES.get(ev_ticker.split("-")[0], ("M", ""))[0]
         tourn = tournament_of(win)
         matches.append({
-            "t": win.get("settlement_ts") or win.get("close_time"),
-            "pool": pool,
-            "w": competitor(win), "l": competitor(lose),
+            "t": win.get("settlement_ts") or win.get("close_time"), "pool": pool,
             "wn": win.get("yes_sub_title"), "ln": lose.get("yes_sub_title"),
-            "surface": surface_of(tourn), "ev": ev_ticker,
+            "tourn": tourn, "best_of": best_of(pool, tourn), "ev": ev_ticker,
         })
     matches.sort(key=lambda x: x["t"])
-    print(f"Loaded {len(matches)} finished matches")
+    print(f"Kalshi: {len(matches)} finished matches")
     return matches
 
 
-# ---------------------------------------------------------------- model
-class Elo:
-    def __init__(self, k_scale=1.0):
-        self.k_scale = k_scale
-        self.r = defaultdict(lambda: 1500.0)
-        self.n = defaultdict(int)
-        self.form = defaultdict(list)
-        self.names = {}
-
-    def k(self, n):
-        return 250.0 / ((n + 5) ** 0.4) * self.k_scale
-
-    def rating(self, pool, pid, surface):
-        o, s = self.r[(pool, pid, "all")], self.r[(pool, pid, surface)]
-        return 0.5 * o + 0.5 * s
-
-    def prob(self, pool, a, b, surface):
-        ra, rb = self.rating(pool, a, surface), self.rating(pool, b, surface)
-        return 1.0 / (1.0 + 10 ** ((rb - ra) / 400.0))
-
-    def update(self, m):
-        pool, w, l, s = m["pool"], m["w"], m["l"], m["surface"]
-        for key in ("all", s):
-            kw, kl = (pool, w, key), (pool, l, key)
-            exp = 1.0 / (1.0 + 10 ** ((self.r[kl] - self.r[kw]) / 400.0))
-            self.r[kw] += self.k(self.n[kw]) * (1 - exp)
-            self.r[kl] -= self.k(self.n[kl]) * (1 - exp)
-            self.n[kw] += 1
-            self.n[kl] += 1
-        for pid, res in ((w, 1), (l, 0)):
-            self.form[(pool, pid)] = (self.form[(pool, pid)] + [res])[-10:]
-        self.names[(pool, w)], self.names[(pool, l)] = m["wn"], m["ln"]
-
-    def played(self, pool, pid):
-        return self.n[(pool, pid, "all")]
-
-
-def build_elo(matches, k_scale):
-    elo = Elo(k_scale)
-    for m in matches:
-        elo.update(m)
-    return elo
-
-
-def log_loss_for(matches, k_scale, holdout=0.3):
-    """Train on older matches, score predictions on the newest 30%."""
-    elo = Elo(k_scale)
-    cut = int(len(matches) * (1 - holdout))
-    loss, n = 0.0, 0
-    for i, m in enumerate(matches):
-        if i >= cut and elo.played(m["pool"], m["w"]) >= 5 and elo.played(m["pool"], m["l"]) >= 5:
-            p = min(max(elo.prob(m["pool"], m["w"], m["l"], m["surface"]), 1e-4), 1 - 1e-4)
-            loss -= math.log(p)
-            n += 1
-        elo.update(m)
-    return loss / max(n, 1), n
+def best_of(pool, tourn):
+    low = tourn.lower()
+    slam = any(x in low for x in ("wimbledon", "us open", "australian open", "roland garros", "french open"))
+    return 5 if pool == "M" and slam and "qualif" not in low else 3
 
 
 # ---------------------------------------------------------------- picks
-def open_markets():
-    """Open match markets grouped into events (one event = one match, two markets)."""
-    grouped = defaultdict(list)
-    for series in SERIES:
-        for m in kalshi_all("/markets", {"series_ticker": series, "status": "open"}):
-            grouped[m["event_ticker"]].append(m)
-    return [{"event_ticker": k, "markets": v} for k, v in grouped.items()]
+def open_markets(series_list):
+    """Open markets grouped into events: {series: {event_ticker: [markets]}}."""
+    out = {}
+    for series in series_list:
+        grouped = defaultdict(list)
+        try:
+            for m in kalshi_all("/markets", {"series_ticker": series, "status": "open"}):
+                grouped[m["event_ticker"]].append(m)
+        except requests.RequestException as e:
+            print(f"Kalshi {series} unavailable ({e})")
+        out[series] = grouped
+    return out
+
+
+def settled_markets(series):
+    ms = []
+    for path, extra in (("/historical/markets", {}), ("/markets", {"status": "settled"})):
+        try:
+            ms += kalshi_all(path, {"series_ticker": series, **extra})
+        except requests.RequestException as e:
+            print(f"Kalshi {series} history unavailable ({e})")
+    return ms
+
+
+class TennisEngine:
+    key, sport = "tennis", "Tennis"
+    series = {k: v[1] for k, v in SERIES.items()}
+    research_hint = "injuries, illness, retirements, withdrawals or heavy fatigue in the last two weeks"
+
+    def __init__(self, ctx):
+        self.ctx, self.info = ctx, ctx["info"]
+
+    def evaluate(self, series, event, markets, day):
+        if len(markets) != 2:
+            return None
+        ctx, s = self.ctx, self.ctx["s"]
+        model, known = ctx["model"], ctx["known"]
+        pool = SERIES[series][0]
+        a, b = markets
+        ida = tm.full_key(a.get("yes_sub_title"), known[pool])
+        idb = tm.full_key(b.get("yes_sub_title"), known[pool])
+        if min(model.played(pool, ida), model.played(pool, idb)) < s["min_matches"]:
+            return None
+        tourn = tournament_of(a)
+        surf = tm.surface_for(tourn, ctx["surf_map"])
+        venue = ctx["geo"].get(tm.place_of(tourn))
+        x, finfo = model.features(pool, ida, idb, surf, day.date().isoformat(), venue, best_of(pool, tourn))
+        qa = model.prob(x)
+        outs = [common.Outcome(a, qa, f"{a.get('yes_sub_title')} to win", (finfo, False, surf)),
+                common.Outcome(b, 1 - qa, f"{b.get('yes_sub_title')} to win", (finfo, True, surf))]
+        cand = common.Candidate(event, "Tennis", SERIES[series][1], tourn, outs, {"surface": surf})
+        cand.names = (a.get("yes_sub_title"), b.get("yes_sub_title"))
+        return cand
 
 
 def size_units(q, p_eff, s):
@@ -283,9 +288,32 @@ def tier_of(edge):
     return "A" if edge >= 0.08 else "B" if edge >= 0.05 else "C"
 
 
-def form_text(elo, pool, pid):
-    f = elo.form[(pool, pid)]
-    return f"{sum(f)}-{len(f) - sum(f)} in last {len(f)}" if f else "no recent matches"
+def explain(info, flip, surf, raw, q, ask):
+    """Plain-English reasons for a pick, from the pick's point of view."""
+    sw = (lambda t: (t[1], t[0])) if flip else (lambda t: t)
+    ra, rb = sw((info["ra"], info["rb"]))
+    rka, rkb = sw(info["rank"])
+    (ha, hb), (fa, fb) = sw(info["h2h"]), sw(info["form"])
+    da, db = sw(info["dom"])
+    ga, gb = sw(info["games3"])
+    ka, kb = sw(info["km"])
+    parts = []
+    if rka or rkb:
+        parts.append(f"Ranked {int(rka) if rka else 'n/a'} vs {int(rkb) if rkb else 'n/a'}.")
+    parts.append(f"Elo {ra:.0f} vs {rb:.0f} on {surf}.")
+    parts.append(f"Won {da:.0%} vs {db:.0%} of games lately.")
+    if fa or fb:
+        parts.append(f"Form {sum(fa)}-{len(fa) - sum(fa)} vs {sum(fb)}-{len(fb) - sum(fb)}.")
+    if ha or hb:
+        parts.append(f"Head to head {ha}-{hb}.")
+    if ga or gb:
+        parts.append(f"Games played in last 3 days: {ga:.0f} vs {gb:.0f}.")
+    if max(ka, kb) > 500:
+        parts.append(f"Travelled {ka:,.0f} vs {kb:,.0f} km since last match.")
+    if info["elev"] > 500:
+        parts.append(f"Venue altitude {info['elev']:,.0f} m.")
+    parts.append(f"Model {raw:.0%}, blended with the market {q:.0%}, price {ask:.0%}.")
+    return " ".join(parts)
 
 
 _GEMINI_MODEL = None
@@ -315,21 +343,22 @@ def research(p, cache):
     key = os.getenv("GEMINI_API_KEY")
     if not key:
         return empty
+    bet = p["market"]
     prompt = (
-        f"You are researching a professional tennis match for a prediction-market trader.\n"
-        f"Match: {p['pick']} vs {p['opponent']}, {p['tournament']} ({p['tour']}), finishing around "
-        f"{p['expected_end'][:10]}. Our model favours {p['pick']} to win.\n"
-        "Use Google Search. Only trust reputable sources: official tour and tournament sites, major "
-        "sports media (ESPN, Tennis.com, BBC, The Athletic, Eurosport), Tennis Abstract, and well-known "
-        "professional handicappers or sportsbook previews with a track record. Ignore anonymous forums, "
-        "spam tip sites and social media rumours.\n"
-        "Find: (1) injuries, illness, retirements, withdrawals or heavy fatigue for either player in the "
-        "last two weeks; (2) recent form; (3) what reputable previews and tipsters predict.\n"
+        f"You are researching a {p['sport'].lower()} event for a prediction-market trader.\n"
+        f"Event: {p['matchup']} ({p['tour']}), around {p['expected_end'][:10]}. "
+        f"The trade under consideration: {bet}.\n"
+        "Use Google Search. Only trust reputable sources: official league and tournament sites, major "
+        "sports media (ESPN, BBC, The Athletic, Sky Sports, Marca, Gazzetta, Kicker, MLB.com, NFL.com), "
+        "respected analytics sites, and well-known professional handicappers or sportsbook previews with a "
+        "track record. Ignore anonymous forums, spam tip sites and social media rumours.\n"
+        f"Find: (1) {p.get('_hint', 'injuries and team news')}; (2) recent form; "
+        "(3) what reputable previews and tipsters predict.\n"
         "Reply with ONLY a JSON object, no other text:\n"
-        '{"red_flag": true or false (true ONLY if credible news says ' + p["pick"] + ' is injured, ill or '
-        'likely to withdraw, or something that clearly makes this pick worse), '
-        '"expert_lean": "agrees" or "disagrees" or "mixed" or "none" (whether reputable previews also '
-        'favour ' + p["pick"] + '; "none" if you found no reputable previews), '
+        '{"red_flag": true or false (true ONLY if credible news clearly makes this trade worse: '
+        '"' + bet + '"), '
+        '"expert_lean": "agrees" or "disagrees" or "mixed" or "none" (whether reputable previews '
+        'support "' + bet + '"; "none" if you found no reputable previews), '
         '"summary": "at most two short sentences with the most useful facts"}'
     )
     try:
@@ -364,78 +393,113 @@ def research(p, cache):
         return empty
 
 
-def make_picks(elo, picks, s, scans, research_cache):
+def make_picks(engines, picks, s, scans, research_cache, sharp):
     already = {p["event"] for p in picks}
     today = now_utc().date().isoformat()
     used_today = sum(p["units"] for p in picks if p["made"][:10] == today)
-    horizon = now_utc() + timedelta(hours=20)
+    now = now_utc()
     candidates = []
-    for ev in open_markets():
-        ms = [m for m in ev.get("markets", []) if m.get("status") == "active"]
-        if ev["event_ticker"] in already or len(ms) != 2:
-            continue
-        pool, tour = SERIES.get(ev["event_ticker"].split("-")[0], ("M", ""))
-        end = parse_time(ms[0].get("expected_expiration_time") or ms[0].get("occurrence_datetime"))
-        if not end or end > horizon or end < now_utc():
-            continue
-        a, b = ms
-        ida, idb = competitor(a), competitor(b)
-        if min(elo.played(pool, ida), elo.played(pool, idb)) < s["min_matches"]:
-            continue
-        tourn = tournament_of(a)
-        surf = surface_of(tourn)
-        qa = elo.prob(pool, ida, idb, surf)
-        mid_a = None
-        if price(a, "yes_ask_dollars") is not None and price(a, "yes_bid_dollars") is not None:
-            mid_a = (price(a, "yes_ask_dollars") + price(a, "yes_bid_dollars")) / 2
-            if now_utc() < end - timedelta(hours=3):  # remember what Elo and the market said
-                scans[ev["event_ticker"]] = {"pool": pool, "a": ida, "elo": round(qa, 4),
-                                            "mid": round(mid_a, 3), "t": now_utc().isoformat()}
-        if mid_a is None:
-            continue
-        w = s["model_weight"]
-        blend_a = w * qa + (1 - w) * mid_a
-        best = None
-        for m, q, me, opp, opp_id, raw in ((a, blend_a, ida, b, idb, qa), (b, 1 - blend_a, idb, a, ida, 1 - qa)):
-            ask, bid = price(m, "yes_ask_dollars"), price(m, "yes_bid_dollars")
-            vol = price(m, "volume_24h_fp") or 0
-            if ask is None or bid is None or not (s["min_price"] <= ask <= s["max_price"]):
-                continue
-            if ask - bid > s["max_spread"] or vol < s["min_volume_24h"]:
-                continue
-            p_eff = ask + fee(ask, s["fee_rate"])
-            edge = q - p_eff
-            if s["min_edge"] <= edge <= s["max_edge"] and (best is None or edge > best["edge"]):
-                units = size_units(q, p_eff, s)
-                if units <= 0:
+    for eng in engines:
+        weight = s["weights"].get(eng.key, s["model_weight"])
+        horizon = s["horizon"].get(eng.key, s["horizon_hours"])
+        books = open_markets(list(eng.series))
+        for series, events in books.items():
+            for event, ms in events.items():
+                ms = [m for m in ms if m.get("status") == "active"]
+                if event in already or len(ms) < 2:
                     continue
-                ra = elo.rating(pool, me, surf)
-                rb = elo.rating(pool, opp_id, surf)
-                best = {
-                    "id": m["ticker"], "event": ev["event_ticker"], "sport": "Tennis",
-                    "tour": tour, "tournament": tourn, "surface": surf,
-                    "pick": m.get("yes_sub_title"), "opponent": opp.get("yes_sub_title"),
-                    "market": f"{m.get('yes_sub_title')} to win",
-                    "price": round(ask, 2), "model_prob": round(q, 3),
-                    "edge": round(edge, 3), "tier": tier_of(edge), "units": units,
-                    "made": now_utc().isoformat(), "expected_end": end.isoformat(),
-                    "status": "pending", "latest_price": round(ask, 2), "pnl": None,
-                    "why": (f"Elo {ra:.0f} vs {rb:.0f} on {surf} gives {raw:.0%}; blended with the "
-                            f"market that's {q:.0%} vs a {ask:.0%} price. Form: {form_text(elo, pool, me)} "
-                            f"vs {form_text(elo, pool, opp_id)}."),
-                }
-        if best:
-            candidates.append(best)
+                end = parse_time(ms[0].get("expected_expiration_time") or ms[0].get("occurrence_datetime"))
+                start = end - timedelta(hours=s["start_offset"].get(eng.key, 3)) if end else None
+                if not end or start < now or end > now + timedelta(hours=horizon + 4):
+                    continue
+                try:
+                    cand = eng.evaluate(series, event, ms, now.replace(tzinfo=None))
+                except Exception as e:
+                    print(f"{eng.sport}: could not evaluate {event} ({e})")
+                    continue
+                if not cand or cand.league in s["disabled"]:
+                    continue
+                mids = []
+                for o in cand.outcomes:
+                    ask, bid = price(o.market, "yes_ask_dollars"), price(o.market, "yes_bid_dollars")
+                    mids.append(None if ask is None or bid is None else (ask + bid) / 2)
+                if None in mids or sum(mids) <= 0:
+                    continue
+                total = sum(mids)
+                mids = [m / total for m in mids]
+                o0 = cand.outcomes[0]
+                if now < end - timedelta(hours=3):  # remember what the model and market said
+                    scans[event] = {"key": eng.key, "ticker": o0.market["ticker"], "p": round(o0.prob, 4),
+                                    "mid": round(mids[0], 3), "end": end.isoformat(), "t": now.isoformat()}
+                best = None
+                for o, mid in zip(cand.outcomes, mids):
+                    m = o.market
+                    q = weight * o.prob + (1 - weight) * mid
+                    ask, bid = price(m, "yes_ask_dollars"), price(m, "yes_bid_dollars")
+                    vol = price(m, "volume_24h_fp") or 0
+                    if not (s["min_price"] <= ask <= s["max_price"]):
+                        continue
+                    if ask - bid > s["max_spread"] or vol < s["min_volume_24h"]:
+                        continue
+                    p_eff = ask + fee(ask, s["fee_rate"])
+                    edge = q - p_eff
+                    if s["min_edge"] <= edge <= s["max_edge"] and (best is None or edge > best["edge"]):
+                        units = size_units(q, p_eff, s)
+                        if units <= 0:
+                            continue
+                        if eng.key == "tennis":
+                            finfo, flip, surf = o.why
+                            why = explain(finfo, flip, surf, o.prob, q, ask)
+                            me, opp = cand.names[1] if flip else cand.names[0], cand.names[0] if flip else cand.names[1]
+                            teams, side = list(cand.names), me
+                        else:
+                            why = f"{o.why} Blended with the market that's {q:.0%} vs a {ask:.0%} price."
+                            me, opp = o.label, ""
+                            teams = [t.strip() for t in re.split(r" vs\.? | at ", cand.title)][:2]
+                            side = "Draw" if o.label == "Draw" else o.label.replace(" to win", "")
+                        best = {
+                            "id": m["ticker"], "event": event, "sport": cand.sport, "model_key": eng.key,
+                            "tour": cand.league, "tournament": cand.title, "matchup": cand.title,
+                            "surface": cand.extra.get("surface", ""), "pick": me, "opponent": opp,
+                            "market": o.label, "price": round(ask, 2), "model_prob": round(q, 3),
+                            "raw_prob": round(o.prob, 3), "edge": round(edge, 3), "tier": tier_of(edge),
+                            "units": units, "made": now.isoformat(), "expected_end": end.isoformat(),
+                            "status": "pending", "latest_price": round(ask, 2), "pnl": None, "why": why,
+                            "_hint": eng.research_hint, "_teams": teams, "_side": side,
+                            "start_est": start.isoformat(), "close_price": None,
+                        }
+                if best:
+                    candidates.append(best)
     candidates.sort(key=lambda p: p["edge"], reverse=True)
     new, searched = [], 0
     for p in candidates:
         if used_today + p["units"] > s["daily_unit_cap"]:
             continue
+        # Compare with sharp sportsbook prices: the most reliable sign of a real edge
+        found = sharp.prob(p) if sharp else None
+        if found:
+            sp, src = found
+            q = s["sharp_weight"] * sp + (1 - s["sharp_weight"]) * p["model_prob"]
+            p_eff = p["price"] + fee(p["price"], s["fee_rate"])
+            p.update(sharp_prob=sp, sharp_source=src, model_prob=round(q, 3), edge=round(q - p_eff, 3))
+            p["why"] += f" Sharp sportsbook price ({src}) says {sp:.0%}."
+            if not (s["min_edge"] <= p["edge"] <= s["max_edge"]):
+                print(f"Skipped {p['market']}: sharp price {sp:.0%} doesn't support it")
+                continue
+            p["tier"], p["units"] = tier_of(p["edge"]), size_units(q, p_eff, s)
+            if p["units"] <= 0:
+                continue
+        else:
+            p["sharp_prob"] = None
+            if p["edge"] < s["min_edge_no_sharp"]:
+                continue
         if searched < s["max_research"] or p["event"] in research_cache:
             searched += p["event"] not in research_cache
             info = research(p, research_cache)
         else:
             info = {"red_flag": False, "expert_lean": "none", "summary": "", "sources": []}
+        for k in ("_hint", "_teams", "_side"):
+            p.pop(k, None)
         p["research"] = info.get("summary", "")
         p["sources"] = info.get("sources", [])
         p["expert_lean"] = info.get("expert_lean", "none")
@@ -448,6 +512,26 @@ def make_picks(elo, picks, s, scans, research_cache):
         used_today += p["units"]
         new.append(p)
     return new
+
+
+def resolve_scans(scans, limit=150):
+    """Look up how scanned games finished, so the agent can learn model-vs-market trust."""
+    done = 0
+    for ev, sc in sorted(scans.items(), key=lambda kv: kv[1].get("end", "")):
+        if "ticker" not in sc or "won" in sc or done >= limit:
+            continue
+        end = parse_time(sc.get("end"))
+        if not end or end > now_utc() - timedelta(hours=3):
+            continue
+        try:
+            m = kalshi_get(f"/markets/{sc['ticker']}").get("market", {})
+        except requests.RequestException:
+            continue
+        done += 1
+        if m.get("result") in ("yes", "no"):
+            sc["won"] = m["result"] == "yes"
+        elif m.get("status") in ("finalized", "settled"):
+            sc["won"] = None
 
 
 def grade_picks(picks, s):
@@ -463,11 +547,12 @@ def grade_picks(picks, s):
             except requests.RequestException:
                 continue
         status, result = m.get("status"), m.get("result")
-        last = price(m, "last_price_dollars")
-        if status == "active" and last is not None:
-            end = parse_time(p["expected_end"])
-            if end and now_utc() < end - timedelta(hours=3):  # before the match likely starts
-                p["latest_price"] = round(last, 2)
+        ask, bid = price(m, "yes_ask_dollars"), price(m, "yes_bid_dollars")
+        if status == "active" and ask is not None and bid is not None and ask > 0:
+            start = parse_time(p.get("start_est")) or (parse_time(p["expected_end"]) - timedelta(hours=3))
+            if now_utc() < start:  # keep the last price seen before the game starts: the "closing" price
+                p["close_price"] = round((ask + bid) / 2, 3)
+                p["latest_price"] = p["close_price"]
         if status in ("finalized", "settled", "determined"):
             pr, u = p["price"], p["units"]
             fee_units = u * s["fee_rate"] * (1 - pr)
@@ -489,11 +574,13 @@ def summarize(picks):
     pnl = sum(p["pnl"] for p in done)
     wins = sum(p["status"] == "win" for p in done)
     beat = [p for p in done if p.get("latest_price") is not None]
+    clv = [p["close_price"] - p["price"] for p in done if p.get("close_price") is not None]
     return {
         "picks": len(done), "wins": wins, "losses": len(done) - wins,
         "units": round(pnl, 2), "staked": round(staked, 2),
         "roi": round(pnl / staked, 3) if staked else 0.0,
         "beat_price": round(sum(p["latest_price"] > p["price"] for p in beat) / len(beat), 3) if beat else None,
+        "clv": round(sum(clv) / len(clv), 4) if clv else None, "clv_picks": len(clv),
     }
 
 
@@ -565,35 +652,48 @@ def pick_line(p):
             extra += f" ({lean[p['expert_lean']]})"
     return (f"<b>{p['tier']}</b>: {html.escape(p['market'])} at {p['price'] * 100:.0f}¢, "
             f"{p['units']:g}u (model {p['model_prob']:.0%}, edge +{p['edge']:.0%})\n"
-            f"   <i>vs {html.escape(p['opponent'] or '')}, {html.escape(p['tournament'])}</i>{extra}")
+            f"   <i>{html.escape(p.get('sport', 'Tennis'))}: "
+            + (f"vs {html.escape(p['opponent'])}, " if p.get("opponent") else "")
+            + f"{html.escape(p.get('matchup') or p['tournament'])}</i>{extra}")
 
 
 # ---------------------------------------------------------------- weekly learning
-def weekly(picks, matches, s, scans, taken):
+def weekly(picks, ctx, s, scans, taken):
+    matches = ctx.get("matches") or []
     changes = []
     # 1. Re-tune how fast Elo reacts, using every finished match (not just our picks)
-    scores = {k: log_loss_for(matches, k)[0] for k in (0.4, 0.6, 0.8, 1.0, 1.2, 1.4)}
-    best_k = min(scores, key=scores.get)
-    if best_k != s["k_scale"] and scores[best_k] < scores.get(s["k_scale"], 9) - 0.002:
-        changes.append(f"Elo speed changed from {s['k_scale']} to {best_k} "
-                       f"(prediction error {scores.get(s['k_scale'], 0):.4f} to {scores[best_k]:.4f} on recent matches)")
-        s["k_scale"] = best_k
-    # 2. Re-tune how much to trust Elo vs the market, using every match the agent scanned
-    winners = {m["ev"]: m["w"] for m in matches}
-    resolved = [(sc["elo"], sc["mid"], winners[ev] == sc["a"]) for ev, sc in scans.items() if ev in winners]
-    if len(resolved) >= 200:
-        def loss(w):
-            tot = 0.0
-            for e, mid, won in resolved:
-                q = min(max(w * e + (1 - w) * mid, 1e-4), 1 - 1e-4)
-                tot -= math.log(q if won else 1 - q)
-            return tot / len(resolved)
-        wl = {w / 10: loss(w / 10) for w in range(0, 11)}
-        best_w = min(wl, key=wl.get)
-        if abs(best_w - s["model_weight"]) >= 0.1:
-            changes.append(f"Trust in Elo vs market changed from {s['model_weight']:.0%} to {best_w:.0%} "
-                           f"after checking {len(resolved)} scanned matches")
-            s["model_weight"] = best_w
+    if matches:
+        scores = {k: tm.elo_log_loss(matches, k) for k in (0.6, 0.8, 1.0, 1.2, 1.4)}
+        best_k = min(scores, key=scores.get)
+        if best_k != s["k_scale"] and scores[best_k] < scores.get(s["k_scale"], 9) - 0.002:
+            changes.append(f"Elo speed changed from {s['k_scale']} to {best_k} "
+                           f"(prediction error {scores.get(s['k_scale'], 0):.4f} to {scores[best_k]:.4f} on recent matches)")
+            s["k_scale"] = best_k
+    # 2. Re-tune how much to trust each sport's model vs the market. Starts from years of
+    #    sportsbook closing odds, then Kalshi's own prices take over once 150 scanned games finish.
+    for eng in ctx["engines"]:
+        old = s["weights"].get(eng.key, s["model_weight"])
+        new_w, why = old, ""
+        mk = (eng.info or {}).get("market")
+        if mk:
+            new_w = max(mk["best_weight"], s["min_model_weight"])
+            why = f"{mk['matches']:,} past games with closing odds"
+        resolved = [(sc["p"], sc["mid"], sc["won"]) for sc in scans.values()
+                    if sc.get("key") == eng.key and sc.get("won") is not None and "p" in sc]
+        if len(resolved) >= 150:
+            def loss(w):
+                tot = 0.0
+                for pm, mid, won in resolved:
+                    q = min(max(w * pm + (1 - w) * mid, 1e-4), 1 - 1e-4)
+                    tot -= math.log(q if won else 1 - q)
+                return tot / len(resolved)
+            grid = {k / 10: loss(k / 10) for k in range(11)}
+            new_w = max(min(grid, key=grid.get), s["min_model_weight"])
+            why = f"{len(resolved)} games it scanned on Kalshi"
+        s["weights"][eng.key] = new_w
+        if abs(new_w - old) >= 0.1:
+            changes.append(f"{eng.sport} ({eng.key.upper()}): trust in the model vs the market changed from "
+                           f"{old:.0%} to {new_w:.0%} based on {why}")
     # 3. Tighten or loosen the minimum edge, only with enough evidence
     done = [p for p in picks if p["status"] in ("win", "loss")]
     recent = done[-80:]
@@ -608,7 +708,17 @@ def weekly(picks, matches, s, scans, taken):
         s["min_edge"] = round(max(0.03, s["min_edge"] - 0.005), 3)
         changes.append(f"Minimum edge lowered from {old:.1%} to {s['min_edge']:.1%} after a profitable stretch")
 
-    # 4. Learn whether the web research is worth listening to
+    # 4. Switch off leagues that keep getting worse prices than the close (no real edge there)
+    by_league = defaultdict(list)
+    for p in done:
+        if p.get("close_price") is not None:
+            by_league[p.get("tour")].append(p["close_price"] - p["price"])
+    for league, vals in by_league.items():
+        if len(vals) >= 40 and sum(vals) / len(vals) < -0.01 and league not in s["disabled"]:
+            s["disabled"].append(league)
+            changes.append(f"Stopped picking {league}: over {len(vals)} picks the price moved against us by "
+                           f"{-sum(vals) / len(vals) * 100:.1f}¢ on average before the start")
+    # 5. Learn whether the web research is worth listening to
     disagree = [p for p in done if p.get("expert_lean") == "disagrees"]
     if not s["skip_expert_disagree"] and len(disagree) >= 25 and summarize(disagree)["roi"] < -0.10:
         s["skip_expert_disagree"] = True
@@ -621,18 +731,20 @@ def weekly(picks, matches, s, scans, taken):
         "week_ending": now_utc().date().isoformat(),
         "week": summarize(week), "all_time": summarize(done),
         "by_tier": by_group(week, "tier"), "by_tour": by_group(week, "tour"),
+        "by_sport": by_group(week, "sport"),
         "by_expert_lean": by_group(done, "expert_lean"),
         "yours_week": summarize([p for p in week if taken.get(p["id"])]),
         "calibration": calibration(done), "changes": changes,
+        "models": {e.key: public(e.info) for e in ctx["engines"]},
     }
     prompt = (
-        "You are the analyst for a tennis prediction-market model that trades on Kalshi using Elo "
-        "ratings. Write a short weekly reflection (under 150 words, plain text, no markdown) for the "
+        "You are the analyst for a multi-sport prediction-market model (tennis, soccer, MLB, NFL, college "
+        "football) that trades on Kalshi. Write a short weekly reflection (under 150 words, plain text, no markdown) for the "
         "owner: what went well, what went badly, likely reasons, and one idea worth testing next. "
         "Also comment on whether the web research (expert_lean) has been helping. "
         "Be honest about small sample sizes. Data:\n" + json.dumps(report)
         + "\nThis week's picks:\n"
-        + json.dumps([{k: p.get(k) for k in ("market", "tour", "surface", "price", "model_prob", "edge",
+        + json.dumps([{k: p.get(k) for k in ("sport", "market", "tour", "price", "model_prob", "edge",
                                              "tier", "status", "pnl", "expert_lean")} for p in week])
     )
     report["ai_note"] = gemini(prompt) or "AI reflection unavailable this week."
@@ -640,7 +752,15 @@ def weekly(picks, matches, s, scans, taken):
 
 
 # ---------------------------------------------------------------- dashboard
-def write_dashboard(picks, s, reports, changelog, status_note, taken):
+def public(info):
+    """Model info without the raw test arrays (they're only used for tuning)."""
+    return {k: v for k, v in (info or {}).items() if not k.startswith("_")}
+
+
+LABELS = {"tennis": "Tennis", "soccer": "Soccer", "mlb": "MLB", "nfl": "NFL", "cfb": "College football"}
+
+
+def write_dashboard(picks, s, reports, changelog, status_note, taken, engines):
     done = [p for p in picks if p["status"] in ("win", "loss", "void")]
     bankroll = s["starting_bankroll"] + sum(p["pnl"] or 0 for p in done)
     curve, run = [], s["starting_bankroll"]
@@ -659,12 +779,15 @@ def write_dashboard(picks, s, reports, changelog, status_note, taken):
         "open": [p for p in picks if p["status"] == "pending"],
         "history": sorted(done, key=lambda p: p.get("graded", ""), reverse=True),
         "worker_url": os.getenv("WORKER_URL", "").rstrip("/"),
+        "models": {e.key: dict(public(e.info), sport=e.sport, label=LABELS.get(e.key, e.sport),
+                               trust=s["weights"].get(e.key, s["model_weight"])) for e in engines},
         "summary": {"all": summarize(picks),
                     "week": summarize([p for p in done if p.get("graded", "") >= week_ago]),
                     "yours": summarize([p for p in done if taken.get(p["id"])])},
         "by_expert_lean": by_group(picks, "expert_lean"),
         "by_tier": by_group(picks, "tier"),
         "by_tour": by_group(picks, "tour"),
+        "by_sport": by_group(picks, "sport"),
         "calibration": calibration(picks),
         "curve": curve,
         "reports": reports[-12:][::-1],
@@ -675,8 +798,15 @@ def write_dashboard(picks, s, reports, changelog, status_note, taken):
 # ---------------------------------------------------------------- main
 def main():
     mode = sys.argv[1] if len(sys.argv) > 1 else "run"
-    s = {**DEFAULT_SETTINGS, **load_json(SETTINGS_FILE, {})}
+    stored = load_json(SETTINGS_FILE, {})
+    s = {**DEFAULT_SETTINGS, **stored}
+    if stored.get("version", 1) < SETTINGS_VERSION:  # apply the new, stricter defaults once
+        s.update(NEW_IN_V3, version=SETTINGS_VERSION)
     picks = load_json(PICKS_FILE, [])
+    for p in picks:  # picks made before multi-sport support
+        p.setdefault("sport", "Tennis")
+        p.setdefault("model_key", "tennis")
+        p.setdefault("matchup", p.get("tournament", ""))
     reports = load_json(REPORTS_FILE, [])
     changelog = load_json(CHANGELOG_FILE, [])
     scans = load_json(SCANS_FILE, {})
@@ -684,8 +814,41 @@ def main():
     taken = load_json(TAKEN_FILE, {})
     link = dashboard_url()
 
-    matches = fetch_results()
-    elo = build_elo(matches, s["k_scale"])
+    ctx = {"s": s}
+    engines = []
+    try:
+        kalshi = fetch_results()
+        td = tm.load_tennis_data()
+        geo = tm.Geo()
+        matches, surf_map, known = tm.build_matches(td, kalshi, geo)
+        model, info = tm.train(matches, s["k_scale"], s["min_edge"], s["max_edge"], s["min_model_weight"], s["min_price"])
+        geo.save()
+        ctx.update(model=model, info=info, matches=matches, kalshi=kalshi, surf_map=surf_map,
+                   known=known, geo=geo)
+        engines.append(TennisEngine(ctx))
+    except Exception:
+        print("Tennis failed this run:\n" + traceback.format_exc())
+    builders = [
+        ("soccer", lambda: soccer.build(soccer.parse_kalshi_results(settled_markets("KXUCLGAME")), s)),
+        ("mlb", lambda: mlb.build(s)),
+        ("nfl", lambda: football.build_nfl(s)),
+        ("cfb", lambda: football.build_cfb(s)),
+    ]
+    for key, build in builders:
+        try:
+            eng = build()
+            if eng:
+                eng.key = key
+                engines.append(eng)
+        except Exception:
+            print(f"{key} failed this run:\n" + traceback.format_exc())
+    ctx["engines"] = engines
+    for e in engines:  # first run for a sport: start from what its history says
+        mk = (e.info or {}).get("market")
+        if e.key not in s["weights"]:
+            s["weights"][e.key] = max(mk["best_weight"], s["min_model_weight"]) if mk else s["model_weight"]
+    for e in engines:
+        print(f"{e.sport} ({e.key}) model check:", json.dumps(public(e.info), default=float))
 
     graded = grade_picks(picks, s)
     if graded:
@@ -697,7 +860,7 @@ def main():
     t = now_utc()
     due = t.weekday() == 0 and t.hour >= 13 and not any(r["week_ending"] == t.date().isoformat() for r in reports)
     if mode == "weekly" or due:
-        report, changes = weekly(picks, matches, s, scans, taken)
+        report, changes = weekly(picks, ctx, s, scans, taken)
         reports.append(report)
         for c in changes:
             changelog.append({"date": now_utc().date().isoformat(), "change": c})
@@ -709,9 +872,18 @@ def main():
                + ("\n".join("• " + html.escape(c) for c in changes) + "\n" if changes else "No settings changed.\n")
                + "\n" + html.escape(report["ai_note"]))
         telegram(msg + (f"\n\n{link}" if link else ""))
-        elo = build_elo(matches, s["k_scale"])
+        if any("Elo speed" in ch for ch in changes) and "matches" in ctx:
+            model, info = tm.train(ctx["matches"], s["k_scale"], s["min_edge"], s["max_edge"], s["min_model_weight"],
+                                   s["min_price"])
+            ctx.update(model=model, info=info)
+            for e in engines:
+                if e.key == "tennis":
+                    e.info = info
 
-    new = make_picks(elo, picks, s, scans, research_cache)
+    resolve_scans(scans)
+    sharp = odds.Sharp(s["odds_calls_per_day"])
+    new = make_picks(engines, picks, s, scans, research_cache, sharp)
+    sharp.save()
     picks.extend(new)
     if new:
         total = sum(p["units"] for p in new)
@@ -730,7 +902,9 @@ def main():
     save_json(CHANGELOG_FILE, changelog)
     save_json(SCANS_FILE, dict(sorted(scans.items(), key=lambda kv: kv[1]["t"])[-6000:]))
     save_json(RESEARCH_FILE, dict(sorted(research_cache.items(), key=lambda kv: kv[1].get("t", ""))[-1500:]))
-    write_dashboard(picks, s, reports, changelog, note, taken)
+    if "geo" in ctx:
+        ctx["geo"].save()
+    write_dashboard(picks, s, reports, changelog, note, taken, engines)
 
 
 if __name__ == "__main__":
