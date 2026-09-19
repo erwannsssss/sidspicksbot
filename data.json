@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-19T17:13:11.758259+00:00",
+ "updated": "2026-09-19T17:18:07.728552+00:00",
  "status_note": "Last run found 0 new pick(s) and graded 0.",
  "bankroll": 107.89,
  "protection": {
@@ -235,31 +235,31 @@
    "holdout": {
     "matches": 650,
     "rating_log_loss": 0.6281,
-    "model_log_loss": 0.6228,
+    "model_log_loss": 0.6235,
     "rating_accuracy": 0.657,
     "model_accuracy": 0.652
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6012,
-    "model_log_loss": 0.6228,
+    "model_log_loss": 0.6235,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 650
    },
    "backtest": {
-    "bets": 16,
+    "bets": 17,
     "wins": 5,
-    "units": -9.2,
-    "roi": -0.316
+    "units": -11.2,
+    "roi": -0.36
    },
    "weights": {
     "home_field": 0.256,
-    "rating": 1.526,
-    "rest": 0.23,
-    "point_diff_form": 0.223,
-    "qb_change": 0.302,
-    "epa": 0.171
+    "rating": 1.52,
+    "rest": 0.235,
+    "point_diff_form": 0.225,
+    "qb_change": 0.309,
+    "epa": 0.172
    },
    "matches": 4380,
    "sport": "Football",
@@ -576,11 +576,11 @@
    "made": "2026-09-19T16:08:49.619994+00:00",
    "expected_end": "2026-09-20T15:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.47,
+   "latest_price": 0.465,
    "pnl": null,
    "why": "Ratings 1620 (Getafe, home) vs 1452 (Malaga). Share of chances lately (xG or shots on target) 36% vs 39%. Goal difference last 6: -4 vs -8. Last played Sep 17 vs Sep 17. Model gives the home 60%. Blended with the market that's 50% vs a 48% price. Sharp sportsbook price (Pinnacle) says 47%.",
    "start_est": "2026-09-20T12:30:00+00:00",
-   "close_price": 0.47,
+   "close_price": 0.465,
    "sharp_prob": 0.4674,
    "sharp_source": "Pinnacle",
    "research": "",
