@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-19T21:20:06.277336+00:00",
+ "updated": "2026-09-19T21:39:00.927152+00:00",
  "status_note": "Last run found 0 new pick(s) and graded 0.",
  "bankroll": 112.26,
  "protection": {
@@ -18,6 +18,35 @@
   "brake_stop": null,
   "min_main_prob": 0.4,
   "paused": false,
+  "line_weights": {
+   "tennis:total": 0.25,
+   "tennis:spread": 0.25,
+   "tennis:btts": 0.25,
+   "soccer:total": 0.25,
+   "soccer:spread": 0.25,
+   "soccer:btts": 0.25,
+   "mlb:total": 0.25,
+   "mlb:spread": 0.25,
+   "mlb:btts": 0.25,
+   "nfl:total": 0.25,
+   "nfl:spread": 0.25,
+   "nfl:btts": 0.25,
+   "cfb:total": 0.25,
+   "cfb:spread": 0.25,
+   "cfb:btts": 0.25
+  },
+  "league_daily_cap": 4.0,
+  "trend_block": 0.04,
+  "move_alert": 0.05,
+  "gap_alert": 0.04,
+  "odds_markets": "h2h,totals,spreads",
+  "track_series_per_run": 150,
+  "parlays_per_day": 2,
+  "parlay_units": 1.0,
+  "parlay_max_legs": 4,
+  "parlay_leg_edge": 0.03,
+  "parlay_min_prob": 0.05,
+  "parlay_min_ev": 0.1,
   "min_matches": 12,
   "min_volume_24h": 500,
   "max_spread": 0.04,
@@ -54,6 +83,7 @@
   "watch_edge": 0.015,
   "watch_per_day": 20,
   "watch_weight": 0.5,
+  "watch_per_type": 4,
   "odds_calls_per_day": 15,
   "disabled": [],
   "max_edge": 0.15,
@@ -141,7 +171,122 @@
    "graded": "2026-09-19T08:33:16.621777+00:00"
   }
  ],
+ "parlays": {
+  "open": [
+   {
+    "id": "PARLAY-202609192138-1",
+    "tier": "P",
+    "sport": "Parlay",
+    "made": "2026-09-19T21:38:29.825505+00:00",
+    "units": 1.0,
+    "price": 0.2994,
+    "model_prob": 0.3893,
+    "ev": 0.3,
+    "payout_units": 2.3,
+    "status": "pending",
+    "pnl": null,
+    "legs": [
+     {
+      "id": "KXNFLPASSTDS-26SEP20SEAARI-SEADLOCK2-2:no",
+      "ticker": "KXNFLPASSTDS-26SEP20SEAARI-SEADLOCK2-2",
+      "side": "no",
+      "market": "Drew Lock: under 2",
+      "matchup": "SEA at ARI",
+      "sport": "Football",
+      "price": 0.63,
+      "model_prob": 0.709,
+      "edge": 0.062,
+      "expected_end": "2026-09-20T23:25:00+00:00"
+     },
+     {
+      "id": "KXNCAAFSPREAD-26SEP19UNDNEB-NEB34:no",
+      "ticker": "KXNCAAFSPREAD-26SEP19UNDNEB-NEB34",
+      "side": "no",
+      "market": "No: Nebraska wins by over 33.5 points",
+      "matchup": "North Dakota at Nebraska",
+      "sport": "Football",
+      "price": 0.66,
+      "model_prob": 0.738,
+      "edge": 0.062,
+      "expected_end": "2026-09-20T02:15:00+00:00"
+     },
+     {
+      "id": "KXNCAAFSPREAD-26SEP19MONTORST-ORST24:no",
+      "ticker": "KXNCAAFSPREAD-26SEP19MONTORST-ORST24",
+      "side": "no",
+      "market": "No: Oregon St. wins by over 23.5 points",
+      "matchup": "Montana at Oregon State",
+      "sport": "Football",
+      "price": 0.67,
+      "model_prob": 0.744,
+      "edge": 0.059,
+      "expected_end": "2026-09-20T06:00:00+00:00"
+     }
+    ]
+   },
+   {
+    "id": "PARLAY-202609192138-2",
+    "tier": "P",
+    "sport": "Parlay",
+    "made": "2026-09-19T21:38:29.825560+00:00",
+    "units": 1.0,
+    "price": 0.3744,
+    "model_prob": 0.4515,
+    "ev": 0.206,
+    "payout_units": 1.7,
+    "status": "pending",
+    "pnl": null,
+    "legs": [
+     {
+      "id": "KXNCAAFSPREAD-26SEP19UTSATEX-TEX34:no",
+      "ticker": "KXNCAAFSPREAD-26SEP19UTSATEX-TEX34",
+      "side": "no",
+      "market": "No: Texas wins by over 33.5 points",
+      "matchup": "UTSA at Texas",
+      "sport": "Football",
+      "price": 0.6,
+      "model_prob": 0.678,
+      "edge": 0.061,
+      "expected_end": "2026-09-20T03:00:00+00:00"
+     },
+     {
+      "id": "KXNCAAFSPREAD-26SEP19KENNTENN-TENN39:no",
+      "ticker": "KXNCAAFSPREAD-26SEP19KENNTENN-TENN39",
+      "side": "no",
+      "market": "No: Tennessee wins by over 38.5 points",
+      "matchup": "Kennesaw State at Tennessee",
+      "sport": "Football",
+      "price": 0.59,
+      "model_prob": 0.666,
+      "edge": 0.059,
+      "expected_end": "2026-09-20T02:45:00+00:00"
+     }
+    ]
+   }
+  ],
+  "done": [],
+  "summary": {
+   "picks": 0,
+   "wins": 0,
+   "losses": 0,
+   "units": 0,
+   "staked": 0,
+   "roi": 0.0,
+   "beat_price": null,
+   "clv": null,
+   "clv_picks": 0
+  }
+ },
+ "learning": {
+  "groups": {},
+  "price_trend": {}
+ },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
+ "tracker": {
+  "tracked": 338,
+  "series": 3827,
+  "movers": []
+ },
  "models": {
   "tennis": {
    "matches": 19447,
@@ -176,26 +321,33 @@
    "matches": 81553,
    "from_kalshi": 191,
    "training_rows": 79686,
+   "totals_bias": -0.002,
+   "totals": {
+    "matches": 6537,
+    "model_log_loss": 0.6978,
+    "market_log_loss": 0.6706,
+    "best_weight": 0.0
+   },
    "holdout": {
     "matches": 11953,
-    "rating_log_loss": 1.0107,
-    "model_log_loss": 1.009,
+    "rating_log_loss": 1.0109,
+    "model_log_loss": 1.0092,
     "rating_accuracy": 0.499,
     "model_accuracy": 0.503
    },
    "using": "full",
    "market": {
-    "market_log_loss": 0.991,
-    "model_log_loss": 1.0094,
+    "market_log_loss": 0.9912,
+    "model_log_loss": 1.0096,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 11764
    },
    "backtest": {
-    "bets": 73,
+    "bets": 72,
     "wins": 23,
-    "units": 10.5,
-    "roi": 0.095
+    "units": 11.5,
+    "roi": 0.105
    },
    "weights": {
     "rating": 1.609,
@@ -203,6 +355,7 @@
     "goal_diff_form": 0.028,
     "rest": -0.067
    },
+   "goals_scale": 0.984,
    "sport": "Soccer",
    "label": "Soccer",
    "trust": 0.25
@@ -226,6 +379,7 @@
     "pitcher_fip": 0.11
    },
    "matches": 14666,
+   "runs_scale": 1.015,
    "sport": "Baseball",
    "label": "MLB",
    "trust": 0.5
@@ -235,14 +389,14 @@
    "holdout": {
     "matches": 650,
     "rating_log_loss": 0.6281,
-    "model_log_loss": 0.6236,
+    "model_log_loss": 0.6218,
     "rating_accuracy": 0.657,
-    "model_accuracy": 0.652
+    "model_accuracy": 0.655
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6012,
-    "model_log_loss": 0.6236,
+    "model_log_loss": 0.6218,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 650
@@ -254,14 +408,20 @@
     "roi": -0.184
    },
    "weights": {
-    "home_field": 0.254,
-    "rating": 1.525,
-    "rest": 0.23,
-    "point_diff_form": 0.223,
-    "qb_change": 0.294,
-    "epa": 0.172
+    "home_field": 0.255,
+    "rating": 1.527,
+    "rest": 0.228,
+    "point_diff_form": 0.229,
+    "qb_change": 0.309,
+    "epa": 0.166
    },
    "matches": 4380,
+   "totals": {
+    "matches": 638,
+    "model_log_loss": 0.7149,
+    "market_log_loss": 0.6931,
+    "best_weight": 0.0
+   },
    "sport": "Football",
    "label": "NFL",
    "trust": 0.25

@@ -1,0 +1,92 @@
+[
+ {
+  "id": "PARLAY-202609192138-1",
+  "tier": "P",
+  "sport": "Parlay",
+  "made": "2026-09-19T21:38:29.825505+00:00",
+  "units": 1.0,
+  "price": 0.2994,
+  "model_prob": 0.3893,
+  "ev": 0.3,
+  "payout_units": 2.3,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXNFLPASSTDS-26SEP20SEAARI-SEADLOCK2-2:no",
+    "ticker": "KXNFLPASSTDS-26SEP20SEAARI-SEADLOCK2-2",
+    "side": "no",
+    "market": "Drew Lock: under 2",
+    "matchup": "SEA at ARI",
+    "sport": "Football",
+    "price": 0.63,
+    "model_prob": 0.709,
+    "edge": 0.062,
+    "expected_end": "2026-09-20T23:25:00+00:00"
+   },
+   {
+    "id": "KXNCAAFSPREAD-26SEP19UNDNEB-NEB34:no",
+    "ticker": "KXNCAAFSPREAD-26SEP19UNDNEB-NEB34",
+    "side": "no",
+    "market": "No: Nebraska wins by over 33.5 points",
+    "matchup": "North Dakota at Nebraska",
+    "sport": "Football",
+    "price": 0.66,
+    "model_prob": 0.738,
+    "edge": 0.062,
+    "expected_end": "2026-09-20T02:15:00+00:00"
+   },
+   {
+    "id": "KXNCAAFSPREAD-26SEP19MONTORST-ORST24:no",
+    "ticker": "KXNCAAFSPREAD-26SEP19MONTORST-ORST24",
+    "side": "no",
+    "market": "No: Oregon St. wins by over 23.5 points",
+    "matchup": "Montana at Oregon State",
+    "sport": "Football",
+    "price": 0.67,
+    "model_prob": 0.744,
+    "edge": 0.059,
+    "expected_end": "2026-09-20T06:00:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": "PARLAY-202609192138-2",
+  "tier": "P",
+  "sport": "Parlay",
+  "made": "2026-09-19T21:38:29.825560+00:00",
+  "units": 1.0,
+  "price": 0.3744,
+  "model_prob": 0.4515,
+  "ev": 0.206,
+  "payout_units": 1.7,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXNCAAFSPREAD-26SEP19UTSATEX-TEX34:no",
+    "ticker": "KXNCAAFSPREAD-26SEP19UTSATEX-TEX34",
+    "side": "no",
+    "market": "No: Texas wins by over 33.5 points",
+    "matchup": "UTSA at Texas",
+    "sport": "Football",
+    "price": 0.6,
+    "model_prob": 0.678,
+    "edge": 0.061,
+    "expected_end": "2026-09-20T03:00:00+00:00"
+   },
+   {
+    "id": "KXNCAAFSPREAD-26SEP19KENNTENN-TENN39:no",
+    "ticker": "KXNCAAFSPREAD-26SEP19KENNTENN-TENN39",
+    "side": "no",
+    "market": "No: Tennessee wins by over 38.5 points",
+    "matchup": "Kennesaw State at Tennessee",
+    "sport": "Football",
+    "price": 0.59,
+    "model_prob": 0.666,
+    "edge": 0.059,
+    "expected_end": "2026-09-20T02:45:00+00:00"
+   }
+  ]
+ }
+]
