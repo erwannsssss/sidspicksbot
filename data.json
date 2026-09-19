@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-19T22:11:56.598028+00:00",
+ "updated": "2026-09-19T22:20:30.601958+00:00",
  "status_note": "Last run found 0 new pick(s) and graded 0.",
  "bankroll": 112.26,
  "protection": {
@@ -283,7 +283,7 @@
  },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "tracker": {
-  "tracked": 1830,
+  "tracked": 2241,
   "series": 3827,
   "movers": []
  },
@@ -389,31 +389,31 @@
    "holdout": {
     "matches": 650,
     "rating_log_loss": 0.6281,
-    "model_log_loss": 0.6223,
+    "model_log_loss": 0.6245,
     "rating_accuracy": 0.657,
-    "model_accuracy": 0.649
+    "model_accuracy": 0.654
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6012,
-    "model_log_loss": 0.6223,
+    "model_log_loss": 0.6245,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 650
    },
    "backtest": {
     "bets": 15,
-    "wins": 4,
-    "units": -12.0,
-    "roi": -0.429
+    "wins": 3,
+    "units": -15.6,
+    "roi": -0.546
    },
    "weights": {
-    "home_field": 0.255,
-    "rating": 1.53,
-    "rest": 0.232,
-    "point_diff_form": 0.219,
-    "qb_change": 0.325,
-    "epa": 0.167
+    "home_field": 0.254,
+    "rating": 1.527,
+    "rest": 0.229,
+    "point_diff_form": 0.222,
+    "qb_change": 0.322,
+    "epa": 0.168
    },
    "matches": 4380,
    "totals": {
@@ -989,11 +989,11 @@
    "made": "2026-09-19T16:08:49.619994+00:00",
    "expected_end": "2026-09-20T19:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.48,
+   "latest_price": 0.475,
    "pnl": null,
    "why": "Ratings 1527 (La Coruna, home) vs 1791 (Betis). Share of chances lately (xG or shots on target) 44% vs 47%. Goal difference last 6: +2 vs +2. Last played Sep 16 vs Sep 17. Model gives the away 55%. Blended with the market that's 50% vs a 48% price. Sharp sportsbook price (Pinnacle) says 47%.",
    "start_est": "2026-09-20T17:00:00+00:00",
-   "close_price": 0.48,
+   "close_price": 0.475,
    "sharp_prob": 0.4698,
    "sharp_source": "Pinnacle",
    "research": "",
