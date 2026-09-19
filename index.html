@@ -42,15 +42,18 @@ h2{font-size:22px;font-weight:600;margin:34px 0 10px}
 .grid .num{display:block;font-size:20px;font-weight:600}
 .grid small{color:var(--muted);font-size:12px}
 .why{font-size:14px;color:var(--muted);border-top:1px solid var(--line);padding-top:8px;margin:0}
-.take{display:flex;align-items:center;justify-content:space-between;margin-top:10px;font-size:15px}
-.switch{position:relative;width:46px;height:26px;flex-shrink:0}
-.switch input{opacity:0;width:100%;height:100%;margin:0;position:absolute;cursor:pointer;z-index:1}
-.switch span{position:absolute;inset:0;background:var(--line);border-radius:26px;transition:background .15s}
-.switch span::after{content:"";position:absolute;width:20px;height:20px;left:3px;top:3px;background:#fff;border-radius:50%;transition:transform .15s}
-.switch input:checked+span{background:var(--court)}
-.switch input:checked+span::after{transform:translateX(20px)}
-.switch input:focus-visible+span{outline:2px solid var(--court);outline-offset:2px}
-.mode{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.take{display:flex;align-items:center;gap:10px;margin-top:12px;font-size:15px;cursor:pointer;user-select:none}
+.take input,.hcheck input{appearance:none;-webkit-appearance:none;width:24px;height:24px;border:2px solid var(--muted);border-radius:6px;margin:0;flex-shrink:0;cursor:pointer;display:grid;place-content:center;background:var(--card)}
+.take input:checked,.hcheck input:checked{background:var(--court);border-color:var(--court)}
+.take input:checked::after,.hcheck input:checked::after{content:"";width:6px;height:12px;border:solid #fff;border-width:0 3px 3px 0;transform:rotate(45deg) translate(-1px,-1px)}
+.take input:focus-visible,.hcheck input:focus-visible{outline:2px solid var(--court);outline-offset:2px}
+.hcheck{display:flex;gap:12px;align-items:flex-start}
+.news{font-size:14px;margin:8px 0 0;padding:8px 10px;background:var(--bg);border-radius:8px}
+.news a{color:var(--court)}
+.lean{font-size:13px;font-weight:600;padding:1px 8px;border-radius:6px;margin-left:4px}
+.lean.agrees{background:var(--win-bg);color:var(--win)} .lean.disagrees{background:var(--loss-bg);color:var(--loss)} .lean.mixed{background:var(--amber-bg);color:var(--amber)}
+.more{font:inherit;width:100%;padding:10px;margin-top:6px;background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:10px;cursor:pointer}
+.saving{font-size:13px;color:var(--muted);min-height:18px;margin:6px 0 0}
 .list .item{display:flex;justify-content:space-between;gap:10px;padding:10px 0;border-bottom:1px solid var(--line);font-size:15px}
 .list .item:last-child{border-bottom:0}
 .w{color:var(--win)} .l{color:var(--loss)}
@@ -88,16 +91,11 @@ svg{display:block;width:100%;height:auto}
     </div>
   </section>
 
-  <div class="card mode">
-    <div>
-      <div style="font-weight:600">Practice mode</div>
-      <div class="meta" id="modeText">Every pick is tracked as a practice trade.</div>
-    </div>
-    <label class="switch"><input type="checkbox" id="practice" aria-label="Practice mode"><span></span></label>
-  </div>
 
   <h2>Open picks</h2>
+  <p class="meta" style="margin:-4px 0 10px">Every pick is tracked and graded so the agent can learn from it. Check the box on the ones you actually trade.</p>
   <div id="open"></div>
+  <p class="saving" id="saving" role="status"></p>
 
   <h2>Your record vs the model</h2>
   <div class="two">
@@ -108,18 +106,21 @@ svg{display:block;width:100%;height:auto}
   <h2>Bankroll over time</h2>
   <div class="card" id="curve"><p class="empty">The chart starts once the first pick is graded.</p></div>
 
-  <h2>Past picks</h2>
-  <div class="filters" role="group" aria-label="Filter past picks">
-    <button data-f="all" aria-pressed="true">All</button>
+  <h2>Every past pick</h2>
+  <div class="filters" role="group" aria-label="Filter past picks" style="flex-wrap:wrap">
+    <button data-f="all" aria-pressed="true">All recommended</button>
+    <button data-f="taken" aria-pressed="false">My trades</button>
     <button data-f="win" aria-pressed="false">Hits</button>
     <button data-f="loss" aria-pressed="false">Misses</button>
-    <button data-f="taken" aria-pressed="false">Taken</button>
   </div>
+  <p class="meta" id="histCount" style="margin:0 0 6px"></p>
   <div class="card list" id="history"></div>
+  <button class="more" id="more" hidden>Show more</button>
 
   <h2>Where it makes money</h2>
   <div class="card"><table id="tiers"></table></div>
   <div class="card"><table id="tours"></table></div>
+  <div class="card"><table id="leans"></table></div>
 
   <h2>Is it honest about its confidence?</h2>
   <div class="card" id="calib"></div>
@@ -130,7 +131,7 @@ svg{display:block;width:100%;height:auto}
   <h2>What the agent changed</h2>
   <div class="card list" id="changes"></div>
 
-  <p class="foot">Prices are Kalshi ask prices in cents. 1 unit = 1% of the starting bankroll. Taken toggles are saved on this device only.</p>
+  <p class="foot">Prices are Kalshi ask prices in cents. 1 unit = 1% of the starting bankroll. Checkboxes save to your repository, so they show on every device.</p>
 </main>
 
 <script>
@@ -138,15 +139,48 @@ const store = {
   get(k, d){ try{ const v = localStorage.getItem(k); return v === null ? d : JSON.parse(v); }catch(e){ return d; } },
   set(k, v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }
 };
-let DATA = null, filter = "all";
-let taken = store.get("taken", {});
-let practice = store.get("practice", true);
+let DATA = null, filter = "all", shown = 50;
+let serverTaken = {};
+let pending = store.get("pendingTaken", {});   // clicks not yet confirmed by the repo
+let taken = {};
+function mergeTaken(){
+  for (const [id, v] of Object.entries(pending)) if (!!serverTaken[id] === v) delete pending[id];
+  store.set("pendingTaken", pending);
+  taken = {...serverTaken};
+  for (const [id, v] of Object.entries(pending)) { if (v) taken[id] = true; else delete taken[id]; }
+}
+async function saveTaken(id, value){
+  pending[id] = value; store.set("pendingTaken", pending);
+  if (value) taken[id] = true; else delete taken[id];
+  renderRecords(); renderHistory(); renderOpen();
+  const url = DATA.worker_url;
+  if (!url){ $("saving").textContent = "Saved on this device. Finish the Cloudflare setup to sync everywhere."; return; }
+  let pass = store.get("pass", "");
+  if (!pass){ pass = prompt("Enter your dashboard passcode") || ""; if (!pass) return; store.set("pass", pass); }
+  $("saving").textContent = "Saving…";
+  try{
+    const r = await fetch(url + "/taken", {method:"POST", headers:{"Content-Type":"application/json"}, body: JSON.stringify({id, taken:value, pass})});
+    const out = await r.json().catch(() => ({}));
+    if (r.status === 401){ store.set("pass", ""); $("saving").textContent = "Wrong passcode. Tap the checkbox again to retry."; return; }
+    if (!out.ok) throw new Error(out.error || r.status);
+    serverTaken = {...serverTaken}; if (value) serverTaken[id] = true; else delete serverTaken[id];
+    delete pending[id]; store.set("pendingTaken", pending);
+    $("saving").textContent = "Saved.";
+  }catch(e){ $("saving").textContent = "Couldn't reach the server, saved on this device for now."; }
+}
 
 const $ = id => document.getElementById(id);
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const u = n => (n > 0 ? "+" : "") + (Math.round(n * 100) / 100) + "u";
 const pct = n => n == null ? "–" : Math.round(n * 100) + "%";
 const cents = p => Math.round(p * 100) + "¢";
+const leanText = {agrees:"Experts agree", disagrees:"Experts disagree", mixed:"Experts split"};
+const newsBlock = p => {
+  if (!p.research) return "";
+  const lean = leanText[p.expert_lean] ? `<span class="lean ${p.expert_lean}">${leanText[p.expert_lean]}</span>` : "";
+  const src = (p.sources || []).filter(x => x.url).map(x => `<a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title || "source")}</a>`).join(", ");
+  return `<p class="news">${lean} ${esc(p.research)}${src ? `<br><span class="meta">Sources: ${src}</span>` : ""}</p>`;
+};
 const day = s => s ? new Date(s).toLocaleDateString(undefined, {month:"short", day:"numeric"}) : "";
 
 function summarize(list){
@@ -172,13 +206,10 @@ function renderOpen(){
         <div><span class="num">${p.units}u</span><small>Size</small></div>
       </div>
       <p class="why">${esc(p.why)}</p>
-      ${practice ? "" : `<div class="take"><span>I'm taking this</span><label class="switch"><input type="checkbox" data-id="${esc(p.id)}" ${taken[p.id] ? "checked" : ""} aria-label="Taking ${esc(p.market)}"><span></span></label></div>`}
+      ${newsBlock(p)}
+      <label class="take"><input type="checkbox" data-id="${esc(p.id)}" ${taken[p.id] ? "checked" : ""}><span>I took this trade</span></label>
     </article>`).join("");
-  el.querySelectorAll("input[data-id]").forEach(i => i.addEventListener("change", e => {
-    const id = e.target.dataset.id;
-    if (e.target.checked) taken[id] = true; else delete taken[id];
-    store.set("taken", taken); renderRecords(); renderHistory();
-  }));
+  el.querySelectorAll("input[data-id]").forEach(i => i.addEventListener("change", e => saveTaken(e.target.dataset.id, e.target.checked)));
 }
 
 function renderRecords(){
@@ -188,19 +219,24 @@ function renderRecords(){
   $("mRec").textContent = `${m.wins}-${m.losses}, ROI ${pct(m.roi)}`;
   const yCount = y.wins + y.losses;
   $("yUnits").textContent = yCount ? u(y.pnl) : "–"; $("yUnits").className = "num " + (y.pnl >= 0 ? "w" : "l");
-  $("yRec").textContent = yCount ? `${y.wins}-${y.losses}, ROI ${pct(y.roi)}` : (practice ? "Practice mode is on" : "No graded picks taken yet");
+  $("yRec").textContent = yCount ? `${y.wins}-${y.losses}, ROI ${pct(y.roi)}` : "No graded trades checked yet";
 }
 
 function renderHistory(){
   let list = DATA.history;
   if (filter === "win" || filter === "loss") list = list.filter(p => p.status === filter);
   if (filter === "taken") list = list.filter(p => taken[p.id]);
-  $("history").innerHTML = list.length ? list.slice(0, 80).map(p => `
+  const mine = DATA.history.filter(p => taken[p.id]).length;
+  $("histCount").textContent = `${DATA.history.length} recommended, ${mine} traded by you`;
+  $("history").innerHTML = list.length ? list.slice(0, shown).map(p => `
     <div class="item">
+      <label class="hcheck"><input type="checkbox" data-hid="${esc(p.id)}" ${taken[p.id] ? "checked" : ""} aria-label="I took ${esc(p.market)}">
       <div><div>${esc(p.market)} <span class="meta">${cents(p.price)}, ${p.units}u</span></div>
-      <div class="meta">Tier ${p.tier}, ${day(p.graded)}${taken[p.id] ? ", taken" : ""}</div></div>
-      <div class="num ${p.status === "win" ? "w" : p.status === "loss" ? "l" : ""}" style="font-size:18px">${p.status === "void" ? "Void" : u(p.pnl)}</div>
-    </div>`).join("") : '<p class="empty">Nothing here yet.</p>';
+      <div class="meta">Tier ${p.tier}, ${esc(p.tour)}, ${day(p.made)}${leanText[p.expert_lean] ? ", " + leanText[p.expert_lean].toLowerCase() : ""}</div></div></label>
+      <div class="num ${p.status === "win" ? "w" : p.status === "loss" ? "l" : ""}" style="font-size:18px;white-space:nowrap">${p.status === "void" ? "Void" : u(p.pnl)}</div>
+    </div>`).join("") : `<p class="empty">${filter === "taken" ? "Check the box on any pick you trade and it shows up here." : "Nothing here yet."}</p>`;
+  $("more").hidden = list.length <= shown;
+  $("history").querySelectorAll("input[data-hid]").forEach(i => i.addEventListener("change", e => saveTaken(e.target.dataset.hid, e.target.checked)));
 }
 
 function table(el, title, groups){
@@ -255,22 +291,24 @@ function renderAll(){
   $("rec").textContent = `${s.all.wins}-${s.all.losses}`;
   $("roi").textContent = pct(s.all.roi);
   $("beat").textContent = pct(s.all.beat_price);
-  $("practice").checked = practice;
-  $("modeText").textContent = practice ? "Every pick is tracked as a practice trade." : "Use the switch on each pick to mark the ones you take.";
   renderOpen(); renderRecords(); renderHistory(); renderCurve(); renderCalib(); renderReports();
   table($("tiers"), "Tier", DATA.by_tier);
   table($("tours"), "Tour", DATA.by_tour);
+  const leans = {}; for (const [k, v] of Object.entries(DATA.by_expert_lean || {})) leans[leanText[k] || "No expert view"] = v;
+  table($("leans"), "Web research", leans);
 }
 
-$("practice").addEventListener("change", e => { practice = e.target.checked; store.set("practice", practice); renderAll(); });
+$("more").addEventListener("click", () => { shown += 50; renderHistory(); });
 document.querySelectorAll(".filters button").forEach(b => b.addEventListener("click", () => {
-  filter = b.dataset.f;
+  filter = b.dataset.f; shown = 50;
   document.querySelectorAll(".filters button").forEach(x => x.setAttribute("aria-pressed", x === b));
   renderHistory();
 }));
 
-fetch("data.json?" + Date.now()).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
-  .then(d => { DATA = d; renderAll(); })
+Promise.all([
+  fetch("data.json?" + Date.now()).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }),
+  fetch("state/taken.json?" + Date.now()).then(r => r.ok ? r.json() : {}).catch(() => ({}))
+]).then(([d, t]) => { DATA = d; serverTaken = t || {}; mergeTaken(); renderAll(); })
   .catch(() => { $("updated").textContent = "No data yet. Run the agent once from the Actions tab, then refresh."; });
 </script>
 </body>
