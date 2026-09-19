@@ -1,6 +1,6 @@
 {
- "updated": "2026-09-19T14:19:35.059061+00:00",
- "status_note": "Last run found 0 new pick(s) and graded 1.",
+ "updated": "2026-09-19T15:19:23.796450+00:00",
+ "status_note": "Last run found 0 new pick(s) and graded 0.",
  "bankroll": 107.89,
  "settings": {
   "version": 3,
@@ -130,15 +130,15 @@
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "models": {
   "tennis": {
-   "matches": 19423,
-   "training_rows": 13284,
+   "matches": 19425,
+   "training_rows": 13286,
    "holdout": {
     "from": "2026-08-14",
     "matches": 1993,
-    "elo_log_loss": 0.6583,
-    "model_log_loss": 0.6511,
+    "elo_log_loss": 0.6586,
+    "model_log_loss": 0.6513,
     "elo_accuracy": 0.62,
-    "model_accuracy": 0.625
+    "model_accuracy": 0.626
    },
    "using": "full",
    "weights": {
@@ -146,13 +146,13 @@
     "dominance": 0.0,
     "rank": 0.0,
     "h2h": 0.437,
-    "form": -1.079,
-    "fatigue_games": -0.203,
+    "form": -1.082,
+    "fatigue_games": -0.202,
     "fatigue_matches": 0.047,
     "rest": 0.018,
     "travel": 0.132,
     "altitude": 0.0,
-    "best_of_5": 0.437
+    "best_of_5": 0.438
    },
    "sport": "Tennis",
    "label": "Tennis",
@@ -221,31 +221,31 @@
    "holdout": {
     "matches": 650,
     "rating_log_loss": 0.6281,
-    "model_log_loss": 0.6239,
+    "model_log_loss": 0.6249,
     "rating_accuracy": 0.657,
     "model_accuracy": 0.652
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6012,
-    "model_log_loss": 0.6239,
+    "model_log_loss": 0.6249,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 650
    },
    "backtest": {
-    "bets": 5,
+    "bets": 6,
     "wins": 1,
-    "units": -7.1,
-    "roi": -0.589
+    "units": -9.1,
+    "roi": -0.647
    },
    "weights": {
     "home_field": 0.255,
-    "rating": 1.523,
-    "rest": 0.236,
-    "point_diff_form": 0.234,
-    "qb_change": 0.286,
-    "epa": 0.167
+    "rating": 1.529,
+    "rest": 0.237,
+    "point_diff_form": 0.231,
+    "qb_change": 0.306,
+    "epa": 0.165
    },
    "matches": 4380,
    "sport": "Football",
