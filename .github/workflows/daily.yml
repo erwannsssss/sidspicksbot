@@ -2,14 +2,15 @@ name: Picks agent
 
 on:
   schedule:
-    - cron: "0 0,12,15,18,21 * * *"   # 8am, 11am, 2pm, 5pm, 8pm Eastern (summer time)
-    - cron: "0 13 * * 1"              # Monday 9am Eastern: weekly report
+    # Every hour from 8am to 3am Eastern (times are in UTC; shifts an hour earlier in winter).
+    # The weekly report runs automatically on the first run after 9am Eastern each Monday.
+    - cron: "5 0-7,12-23 * * *"
   workflow_dispatch:
     inputs:
       mode:
-        description: "run = normal run, weekly = weekly report"
+        description: "run = normal run, ask = reply even with no new picks, weekly = weekly report"
         type: choice
-        options: [run, weekly]
+        options: [run, ask, weekly]
         default: run
 
 permissions:
@@ -37,10 +38,8 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: |
-          MODE=run
-          if [ "${{ github.event.schedule }}" = "0 13 * * 1" ] || [ "${{ inputs.mode }}" = "weekly" ]; then MODE=weekly; fi
-          python agent.py $MODE
+          WORKER_URL: ${{ secrets.WORKER_URL }}
+        run: python agent.py ${{ inputs.mode || 'run' }}
 
       - name: Save results
         run: |
@@ -48,5 +47,4 @@ jobs:
           git config user.email "picks-agent@users.noreply.github.com"
           git add -A
           git commit -m "Agent update $(date -u +%Y-%m-%dT%H:%MZ)" || echo "Nothing to save"
-          git pull --rebase
-          git push
+          for i in 1 2 3; do git pull --rebase && git push && break; sleep 5; done
