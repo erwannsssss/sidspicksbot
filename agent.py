@@ -10,8 +10,14 @@ Runs on GitHub Actions. Each run it:
 With "weekly" it also writes the weekly report, tunes itself and asks Gemini
 for a written reflection.
 
-Usage:  python agent.py run      (normal run)
-        python agent.py weekly   (weekly report + learning)
+Before picking, it searches the web (through Gemini with Google Search) for
+injury news and what reputable previews and tipsters are saying.
+
+Usage:  python agent.py run      (normal hourly run)
+        python agent.py ask      (you asked in Telegram: always replies)
+        python agent.py weekly   (force the weekly report + learning)
+The weekly report also runs automatically on the first run after 9am
+Eastern each Monday.
 """
 import html
 import json
@@ -32,6 +38,8 @@ SETTINGS_FILE = os.path.join(STATE_DIR, "settings.json")
 REPORTS_FILE = os.path.join(STATE_DIR, "reports.json")
 CHANGELOG_FILE = os.path.join(STATE_DIR, "changelog.json")
 SCANS_FILE = os.path.join(STATE_DIR, "scans.json")
+RESEARCH_FILE = os.path.join(STATE_DIR, "research.json")
+TAKEN_FILE = os.path.join(STATE_DIR, "taken.json")   # written by the Cloudflare worker
 DASHBOARD_FILE = "data.json"
 
 # Men's and women's match series on Kalshi (Challengers share the tour's rating pool)
@@ -57,6 +65,8 @@ DEFAULT_SETTINGS = {
     "model_weight": 0.5,       # how much to trust Elo vs the market price, tuned weekly
     "max_edge": 0.15,          # bigger "edges" are almost always model errors
     "starting_bankroll": 100.0,
+    "max_research": 6,         # web searches per run (free Gemini limits)
+    "skip_expert_disagree": False,  # turned on automatically if fading the experts keeps losing
 }
 
 CLAY = ["roland garros", "french open", "madrid", "rome", "italian", "monte carlo",
@@ -278,15 +288,91 @@ def form_text(elo, pool, pid):
     return f"{sum(f)}-{len(f) - sum(f)} in last {len(f)}" if f else "no recent matches"
 
 
-def make_picks(elo, picks, s, scans):
-    taken = {p["event"] for p in picks}
+_GEMINI_MODEL = None
+
+
+def gemini_model(key):
+    """Find a current Gemini Flash model so this keeps working as Google renames models."""
+    global _GEMINI_MODEL
+    if _GEMINI_MODEL:
+        return _GEMINI_MODEL
+    base = "https://generativelanguage.googleapis.com/v1beta"
+    models = requests.get(f"{base}/models", params={"key": key}, timeout=20).json().get("models", [])
+    usable = [m["name"] for m in models
+              if "generateContent" in m.get("supportedGenerationMethods", [])
+              and "flash" in m["name"] and "lite" not in m["name"]
+              and not any(x in m["name"] for x in ("image", "tts", "audio", "live", "exp"))]
+    _GEMINI_MODEL = next((n for n in usable if "flash-latest" in n), None) or (usable[0] if usable else None)
+    return _GEMINI_MODEL
+
+
+def research(p, cache):
+    """Search the web for news and expert opinion on a match. Returns a dict (never raises)."""
+    empty = {"red_flag": False, "expert_lean": "none", "summary": "", "sources": []}
+    hit = cache.get(p["event"])
+    if hit and parse_time(hit["t"]) > now_utc() - timedelta(hours=6):
+        return hit
+    key = os.getenv("GEMINI_API_KEY")
+    if not key:
+        return empty
+    prompt = (
+        f"You are researching a professional tennis match for a prediction-market trader.\n"
+        f"Match: {p['pick']} vs {p['opponent']}, {p['tournament']} ({p['tour']}), finishing around "
+        f"{p['expected_end'][:10]}. Our model favours {p['pick']} to win.\n"
+        "Use Google Search. Only trust reputable sources: official tour and tournament sites, major "
+        "sports media (ESPN, Tennis.com, BBC, The Athletic, Eurosport), Tennis Abstract, and well-known "
+        "professional handicappers or sportsbook previews with a track record. Ignore anonymous forums, "
+        "spam tip sites and social media rumours.\n"
+        "Find: (1) injuries, illness, retirements, withdrawals or heavy fatigue for either player in the "
+        "last two weeks; (2) recent form; (3) what reputable previews and tipsters predict.\n"
+        "Reply with ONLY a JSON object, no other text:\n"
+        '{"red_flag": true or false (true ONLY if credible news says ' + p["pick"] + ' is injured, ill or '
+        'likely to withdraw, or something that clearly makes this pick worse), '
+        '"expert_lean": "agrees" or "disagrees" or "mixed" or "none" (whether reputable previews also '
+        'favour ' + p["pick"] + '; "none" if you found no reputable previews), '
+        '"summary": "at most two short sentences with the most useful facts"}'
+    )
+    try:
+        model = gemini_model(key)
+        if not model:
+            return empty
+        r = requests.post(f"https://generativelanguage.googleapis.com/v1beta/{model}:generateContent",
+                          params={"key": key}, timeout=90,
+                          json={"contents": [{"parts": [{"text": prompt}]}],
+                                "tools": [{"google_search": {}}]})
+        data = r.json()
+        cand = data["candidates"][0]
+        text = "".join(part.get("text", "") for part in cand["content"]["parts"])
+        found = re.search(r"\{.*\}", text, re.S)
+        out = json.loads(found.group(0)) if found else {}
+        chunks = (cand.get("groundingMetadata") or {}).get("groundingChunks") or []
+        sources = [{"title": c["web"].get("title", ""), "url": c["web"].get("uri", "")}
+                   for c in chunks if c.get("web")][:4]
+        result = {
+            "red_flag": bool(out.get("red_flag", False)),
+            "expert_lean": out.get("expert_lean") if out.get("expert_lean") in
+            ("agrees", "disagrees", "mixed", "none") else "none",
+            "summary": str(out.get("summary", ""))[:400],
+            "sources": sources,
+            "t": now_utc().isoformat(),
+        }
+        cache[p["event"]] = result
+        time.sleep(5)  # stay inside the free rate limit
+        return result
+    except Exception as e:
+        print(f"Research failed for {p['event']}: {e}")
+        return empty
+
+
+def make_picks(elo, picks, s, scans, research_cache):
+    already = {p["event"] for p in picks}
     today = now_utc().date().isoformat()
     used_today = sum(p["units"] for p in picks if p["made"][:10] == today)
     horizon = now_utc() + timedelta(hours=20)
     candidates = []
     for ev in open_markets():
         ms = [m for m in ev.get("markets", []) if m.get("status") == "active"]
-        if ev["event_ticker"] in taken or len(ms) != 2:
+        if ev["event_ticker"] in already or len(ms) != 2:
             continue
         pool, tour = SERIES.get(ev["event_ticker"].split("-")[0], ("M", ""))
         end = parse_time(ms[0].get("expected_expiration_time") or ms[0].get("occurrence_datetime"))
@@ -341,9 +427,23 @@ def make_picks(elo, picks, s, scans):
         if best:
             candidates.append(best)
     candidates.sort(key=lambda p: p["edge"], reverse=True)
-    new = []
+    new, searched = [], 0
     for p in candidates:
         if used_today + p["units"] > s["daily_unit_cap"]:
+            continue
+        if searched < s["max_research"] or p["event"] in research_cache:
+            searched += p["event"] not in research_cache
+            info = research(p, research_cache)
+        else:
+            info = {"red_flag": False, "expert_lean": "none", "summary": "", "sources": []}
+        p["research"] = info.get("summary", "")
+        p["sources"] = info.get("sources", [])
+        p["expert_lean"] = info.get("expert_lean", "none")
+        if info.get("red_flag"):
+            print(f"Skipped {p['market']}: news red flag ({p['research']})")
+            continue
+        if s["skip_expert_disagree"] and p["expert_lean"] == "disagrees":
+            print(f"Skipped {p['market']}: experts disagree")
             continue
         used_today += p["units"]
         new.append(p)
@@ -457,13 +557,19 @@ def gemini(prompt):
 
 
 def pick_line(p):
+    lean = {"agrees": "experts agree", "disagrees": "experts disagree", "mixed": "experts split"}
+    extra = ""
+    if p.get("research"):
+        extra = f"\n   📰 {html.escape(p['research'])}"
+        if p.get("expert_lean") in lean:
+            extra += f" ({lean[p['expert_lean']]})"
     return (f"<b>{p['tier']}</b>: {html.escape(p['market'])} at {p['price'] * 100:.0f}¢, "
             f"{p['units']:g}u (model {p['model_prob']:.0%}, edge +{p['edge']:.0%})\n"
-            f"   <i>{html.escape(p['opponent'] or '')} · {html.escape(p['tournament'])}</i>")
+            f"   <i>vs {html.escape(p['opponent'] or '')}, {html.escape(p['tournament'])}</i>{extra}")
 
 
 # ---------------------------------------------------------------- weekly learning
-def weekly(picks, matches, s, scans):
+def weekly(picks, matches, s, scans, taken):
     changes = []
     # 1. Re-tune how fast Elo reacts, using every finished match (not just our picks)
     scores = {k: log_loss_for(matches, k)[0] for k in (0.4, 0.6, 0.8, 1.0, 1.2, 1.4)}
@@ -502,29 +608,39 @@ def weekly(picks, matches, s, scans):
         s["min_edge"] = round(max(0.03, s["min_edge"] - 0.005), 3)
         changes.append(f"Minimum edge lowered from {old:.1%} to {s['min_edge']:.1%} after a profitable stretch")
 
+    # 4. Learn whether the web research is worth listening to
+    disagree = [p for p in done if p.get("expert_lean") == "disagrees"]
+    if not s["skip_expert_disagree"] and len(disagree) >= 25 and summarize(disagree)["roi"] < -0.10:
+        s["skip_expert_disagree"] = True
+        changes.append(f"Now skipping picks where reputable experts disagree: those returned "
+                       f"{summarize(disagree)['roi']:.0%} over {len(disagree)} picks")
+
     week_ago = (now_utc() - timedelta(days=7)).isoformat()
     week = [p for p in done if p.get("graded", "") >= week_ago]
     report = {
         "week_ending": now_utc().date().isoformat(),
         "week": summarize(week), "all_time": summarize(done),
         "by_tier": by_group(week, "tier"), "by_tour": by_group(week, "tour"),
+        "by_expert_lean": by_group(done, "expert_lean"),
+        "yours_week": summarize([p for p in week if taken.get(p["id"])]),
         "calibration": calibration(done), "changes": changes,
     }
     prompt = (
         "You are the analyst for a tennis prediction-market model that trades on Kalshi using Elo "
         "ratings. Write a short weekly reflection (under 150 words, plain text, no markdown) for the "
         "owner: what went well, what went badly, likely reasons, and one idea worth testing next. "
+        "Also comment on whether the web research (expert_lean) has been helping. "
         "Be honest about small sample sizes. Data:\n" + json.dumps(report)
         + "\nThis week's picks:\n"
-        + json.dumps([{k: p[k] for k in ("market", "tour", "surface", "price", "model_prob", "edge",
-                                         "tier", "status", "pnl")} for p in week])
+        + json.dumps([{k: p.get(k) for k in ("market", "tour", "surface", "price", "model_prob", "edge",
+                                             "tier", "status", "pnl", "expert_lean")} for p in week])
     )
     report["ai_note"] = gemini(prompt) or "AI reflection unavailable this week."
     return report, changes
 
 
 # ---------------------------------------------------------------- dashboard
-def write_dashboard(picks, s, reports, changelog, status_note):
+def write_dashboard(picks, s, reports, changelog, status_note, taken):
     done = [p for p in picks if p["status"] in ("win", "loss", "void")]
     bankroll = s["starting_bankroll"] + sum(p["pnl"] or 0 for p in done)
     curve, run = [], s["starting_bankroll"]
@@ -541,9 +657,12 @@ def write_dashboard(picks, s, reports, changelog, status_note):
         "bankroll": round(bankroll, 2),
         "settings": s,
         "open": [p for p in picks if p["status"] == "pending"],
-        "history": sorted(done, key=lambda p: p.get("graded", ""), reverse=True)[:200],
+        "history": sorted(done, key=lambda p: p.get("graded", ""), reverse=True),
+        "worker_url": os.getenv("WORKER_URL", "").rstrip("/"),
         "summary": {"all": summarize(picks),
-                    "week": summarize([p for p in done if p.get("graded", "") >= week_ago])},
+                    "week": summarize([p for p in done if p.get("graded", "") >= week_ago]),
+                    "yours": summarize([p for p in done if taken.get(p["id"])])},
+        "by_expert_lean": by_group(picks, "expert_lean"),
         "by_tier": by_group(picks, "tier"),
         "by_tour": by_group(picks, "tour"),
         "calibration": calibration(picks),
@@ -561,6 +680,8 @@ def main():
     reports = load_json(REPORTS_FILE, [])
     changelog = load_json(CHANGELOG_FILE, [])
     scans = load_json(SCANS_FILE, {})
+    research_cache = load_json(RESEARCH_FILE, {})
+    taken = load_json(TAKEN_FILE, {})
     link = dashboard_url()
 
     matches = fetch_results()
@@ -572,25 +693,34 @@ def main():
                  f"{html.escape(p['market'])} at {p['price'] * 100:.0f}¢: {p['pnl']:+g}u" for p in graded]
         telegram("<b>Results</b>\n" + "\n".join(lines))
 
-    if mode == "weekly":
-        report, changes = weekly(picks, matches, s, scans)
+    # Weekly report: first run after 9am Eastern (13:00 UTC) on Monday, once per week
+    t = now_utc()
+    due = t.weekday() == 0 and t.hour >= 13 and not any(r["week_ending"] == t.date().isoformat() for r in reports)
+    if mode == "weekly" or due:
+        report, changes = weekly(picks, matches, s, scans, taken)
         reports.append(report)
         for c in changes:
             changelog.append({"date": now_utc().date().isoformat(), "change": c})
         w = report["week"]
-        msg = (f"<b>Weekly report</b>\nRecord {w['wins']}-{w['losses']}, {w['units']:+g}u, "
+        y = report["yours_week"]
+        msg = (f"<b>Weekly report</b>\nModel: {w['wins']}-{w['losses']}, {w['units']:+g}u, "
                f"ROI {w['roi']:.1%}\n"
+               + (f"Your trades: {y['wins']}-{y['losses']}, {y['units']:+g}u\n" if y["picks"] else "")
                + ("\n".join("• " + html.escape(c) for c in changes) + "\n" if changes else "No settings changed.\n")
                + "\n" + html.escape(report["ai_note"]))
         telegram(msg + (f"\n\n{link}" if link else ""))
         elo = build_elo(matches, s["k_scale"])
 
-    new = make_picks(elo, picks, s, scans)
+    new = make_picks(elo, picks, s, scans, research_cache)
     picks.extend(new)
     if new:
         total = sum(p["units"] for p in new)
         telegram(f"<b>{len(new)} new pick{'s' if len(new) > 1 else ''}</b> ({total:g} units)\n\n"
                  + "\n\n".join(pick_line(p) for p in new) + (f"\n\n{link}" if link else ""))
+    elif mode == "ask":
+        still_open = [p for p in picks if p["status"] == "pending"]
+        telegram(f"Fresh scan done: no new picks right now. {len(still_open)} pick"
+                 f"{'' if len(still_open) == 1 else 's'} still open." + (f"\n{link}" if link else ""))
     print(f"Graded {len(graded)}, new picks {len(new)}")
 
     note = f"Last run found {len(new)} new pick(s) and graded {len(graded)}."
@@ -599,7 +729,8 @@ def main():
     save_json(REPORTS_FILE, reports)
     save_json(CHANGELOG_FILE, changelog)
     save_json(SCANS_FILE, dict(sorted(scans.items(), key=lambda kv: kv[1]["t"])[-6000:]))
-    write_dashboard(picks, s, reports, changelog, note)
+    save_json(RESEARCH_FILE, dict(sorted(research_cache.items(), key=lambda kv: kv[1].get("t", ""))[-1500:]))
+    write_dashboard(picks, s, reports, changelog, note, taken)
 
 
 if __name__ == "__main__":
