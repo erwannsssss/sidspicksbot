@@ -69,10 +69,10 @@ SERIES = {
     "KXSIXKINGSSLAMMATCH": ("M", "Exhibition"),
 }
 
-SETTINGS_VERSION = 6
+SETTINGS_VERSION = 7
 NEW_IN_V3 = {"min_edge": 0.03, "min_price": 0.20, "skip_expert_disagree": True, "min_edge_no_sharp": 0.05,
              "kelly_fraction": 0.125, "max_units": 8.0, "daily_unit_cap": 8.0, "brake_stop": None,
-             "paused": False}
+             "paused": False, "min_main_prob": 0.0}
 DEFAULT_SETTINGS = {
     "version": SETTINGS_VERSION,
     "min_edge": 0.03,          # minimum edge after fees when a sharp sportsbook price backs the pick
@@ -83,7 +83,7 @@ DEFAULT_SETTINGS = {
     "daily_unit_cap": 8.0,     # most units risked per day
     "brake_half": 0.10,        # down 10% from the peak: bet sizes are halved
     "brake_stop": None,        # no automatic pause (set a number like 0.20 to pause picks after a 20% drop)
-    "min_main_prob": 0.40,     # recommended picks must have at least a 40% chance, to limit losing streaks
+    "min_main_prob": 0.0,     # no minimum chance: any pick the model rates as good (the 20¢ min price still applies)
     "paused": False,           # set by /pause in Telegram (or the optional brake)
     "line_weights": {},        # starting trust for totals, spreads and both-teams-to-score, per sport
     "league_daily_cap": 4.0,   # most units a day in any one league
@@ -681,7 +681,7 @@ def make_picks(engines, picks, s, research_cache, sharp, obs, learned):
             if best and game not in already_games:  # one pick per game: no stacking correlated bets
                 candidates.append(best)
             if best:
-                legs.append(dict(best))
+                pass
 
     candidates.sort(key=lambda p: p["_score"], reverse=True)
     new, searched = [], 0
@@ -712,6 +712,8 @@ def make_picks(engines, picks, s, research_cache, sharp, obs, learned):
             learned.get("counts", {}).get(f"{p['model_key']}:{p['mtype']}", 0) < learn.MIN_GROUP
         main_ok = bar <= p["edge"] <= s["max_edge"] and not against and not s["paused"] and not unproven \
             and p["model_prob"] >= s["min_main_prob"]
+        if main_ok:
+            legs.append({k: v for k, v in p.items() if not k.startswith("_")})  # parlays use only pick-quality legs
         if main_ok:
             p["tier"] = tier_of(p["edge"])
             p["units"] = max(size_units(p["model_prob"], p_eff, s), 0.5)
