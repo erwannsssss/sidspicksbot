@@ -1,6 +1,6 @@
 {
- "updated": "2026-09-19T20:16:49.868303+00:00",
- "status_note": "Last run found 0 new pick(s) and graded 1.",
+ "updated": "2026-09-19T20:19:53.619097+00:00",
+ "status_note": "Last run found 0 new pick(s) and graded 0.",
  "bankroll": 112.26,
  "protection": {
   "bankroll": 112.26,
@@ -235,31 +235,31 @@
    "holdout": {
     "matches": 650,
     "rating_log_loss": 0.6281,
-    "model_log_loss": 0.6235,
+    "model_log_loss": 0.6231,
     "rating_accuracy": 0.657,
-    "model_accuracy": 0.651
+    "model_accuracy": 0.652
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6012,
-    "model_log_loss": 0.6235,
+    "model_log_loss": 0.6231,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 650
    },
    "backtest": {
-    "bets": 16,
-    "wins": 5,
-    "units": -8.4,
-    "roi": -0.288
+    "bets": 15,
+    "wins": 4,
+    "units": -12.0,
+    "roi": -0.429
    },
    "weights": {
-    "home_field": 0.257,
-    "rating": 1.528,
-    "rest": 0.231,
+    "home_field": 0.256,
+    "rating": 1.521,
+    "rest": 0.229,
     "point_diff_form": 0.224,
-    "qb_change": 0.319,
-    "epa": 0.169
+    "qb_change": 0.324,
+    "epa": 0.168
    },
    "matches": 4380,
    "sport": "Football",
@@ -608,11 +608,11 @@
    "made": "2026-09-19T16:08:49.619994+00:00",
    "expected_end": "2026-09-20T22:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.255,
+   "latest_price": 0.258,
    "pnl": null,
    "why": "Ratings 1537 (Corinthians, home) vs 1640 (Fluminense). Share of chances lately (xG or shots on target) 50% vs 50%. Goal difference last 6: -3 vs +1. Last played Sep 13 vs Sep 12. Model gives the away 37%. Blended with the market that's 29% vs a 26% price. Sharp sportsbook price (Pinnacle) says 26%.",
    "start_est": "2026-09-20T19:30:00+00:00",
-   "close_price": 0.255,
+   "close_price": 0.258,
    "sharp_prob": 0.2554,
    "sharp_source": "Pinnacle",
    "research": "",
