@@ -42,7 +42,7 @@ jobs:
           WORKER_URL: ${{ secrets.WORKER_URL }}
           CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
-        run: python agent.py ${{ inputs.mode || 'run' }}
+       run: python -u agent.py ${{ inputs.mode || 'run' }}
 
       - name: Save results
         run: |
