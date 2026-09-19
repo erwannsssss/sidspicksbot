@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-19T16:14:43.390241+00:00",
+ "updated": "2026-09-19T16:20:11.670103+00:00",
  "status_note": "Last run found 0 new pick(s) and graded 0.",
  "bankroll": 107.89,
  "protection": {
@@ -235,31 +235,31 @@
    "holdout": {
     "matches": 650,
     "rating_log_loss": 0.6281,
-    "model_log_loss": 0.6227,
+    "model_log_loss": 0.6225,
     "rating_accuracy": 0.657,
-    "model_accuracy": 0.652
+    "model_accuracy": 0.651
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6012,
-    "model_log_loss": 0.6227,
+    "model_log_loss": 0.6225,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 650
    },
    "backtest": {
-    "bets": 17,
+    "bets": 16,
     "wins": 5,
-    "units": -11.2,
-    "roi": -0.36
+    "units": -8.4,
+    "roi": -0.288
    },
    "weights": {
-    "home_field": 0.257,
-    "rating": 1.53,
-    "rest": 0.23,
-    "point_diff_form": 0.227,
-    "qb_change": 0.304,
-    "epa": 0.165
+    "home_field": 0.256,
+    "rating": 1.528,
+    "rest": 0.236,
+    "point_diff_form": 0.223,
+    "qb_change": 0.321,
+    "epa": 0.167
    },
    "matches": 4380,
    "sport": "Football",
@@ -767,11 +767,11 @@
    "made": "2026-09-19T16:08:49.619994+00:00",
    "expected_end": "2026-09-19T20:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.395,
+   "latest_price": 0.4,
    "pnl": null,
    "why": "Ratings 1512 (Gimnasia Mendoza, home) vs 1462 (Dep. Riestra). Share of chances lately (xG or shots on target) 50% vs 50%. Goal difference last 6: +3 vs -3. Last played Sep 11 vs Sep 14. Model gives the home 48%. Blended with the market that's 42% vs a 40% price. Sharp sportsbook price (Pinnacle) says 40%.",
    "start_est": "2026-09-19T18:00:00+00:00",
-   "close_price": 0.395,
+   "close_price": 0.4,
    "sharp_prob": 0.403,
    "sharp_source": "Pinnacle",
    "research": "",
