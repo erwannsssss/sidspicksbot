@@ -1,0 +1,154 @@
+{
+ "updated": "2026-09-19T04:41:03.736400+00:00",
+ "status_note": "Last run found 3 new pick(s) and graded 0.",
+ "bankroll": 100.0,
+ "settings": {
+  "min_edge": 0.03,
+  "kelly_fraction": 0.25,
+  "max_units": 3.0,
+  "daily_unit_cap": 10.0,
+  "min_matches": 12,
+  "min_volume_24h": 500,
+  "max_spread": 0.04,
+  "max_price": 0.9,
+  "min_price": 0.1,
+  "fee_rate": 0.07,
+  "k_scale": 1.0,
+  "model_weight": 0.5,
+  "max_edge": 0.15,
+  "starting_bankroll": 100.0
+ },
+ "open": [
+  {
+   "id": "KXATPCHALLENGERMATCH-26SEP19KOUPAC-PAC",
+   "event": "KXATPCHALLENGERMATCH-26SEP19KOUPAC",
+   "sport": "Tennis",
+   "tour": "ATP Challenger",
+   "tournament": "2026 ATP Challenger Phan Thiet 4",
+   "surface": "hard",
+   "pick": "Rodrigo Pacheco Mendez",
+   "opponent": "Moise Kouame",
+   "market": "Rodrigo Pacheco Mendez to win",
+   "price": 0.41,
+   "model_prob": 0.527,
+   "edge": 0.1,
+   "tier": "A",
+   "units": 3.0,
+   "made": "2026-09-19T04:41:00.972589+00:00",
+   "expected_end": "2026-09-19T07:10:00+00:00",
+   "status": "pending",
+   "latest_price": 0.41,
+   "pnl": null,
+   "why": "Elo 1676 vs 1570 on hard gives 65%; blended with the market that's 53% vs a 41% price. Form: 7-3 in last 10 vs 5-5 in last 10."
+  },
+  {
+   "id": "KXWTAMATCH-26SEP19QUEBLI-QUE",
+   "event": "KXWTAMATCH-26SEP19QUEBLI",
+   "sport": "Tennis",
+   "tour": "WTA",
+   "tournament": "2026 WTA Sao Paulo",
+   "surface": "clay",
+   "pick": "Kaitlin Quevedo",
+   "opponent": "Anna Blinkova",
+   "market": "Kaitlin Quevedo to win",
+   "price": 0.4,
+   "model_prob": 0.492,
+   "edge": 0.075,
+   "tier": "B",
+   "units": 3.0,
+   "made": "2026-09-19T04:41:00.973011+00:00",
+   "expected_end": "2026-09-19T19:00:00+00:00",
+   "status": "pending",
+   "latest_price": 0.4,
+   "pnl": null,
+   "why": "Elo 1671 vs 1609 on clay gives 59%; blended with the market that's 49% vs a 40% price. Form: 6-4 in last 10 vs 7-3 in last 10."
+  },
+  {
+   "id": "KXATPCHALLENGERMATCH-26SEP19MONTRU-MON",
+   "event": "KXATPCHALLENGERMATCH-26SEP19MONTRU",
+   "sport": "Tennis",
+   "tour": "ATP Challenger",
+   "tournament": "2026 ATP Challenger Szczecin",
+   "surface": "hard",
+   "pick": "Thiago Monteiro",
+   "opponent": "Marco Trungelliti",
+   "market": "Thiago Monteiro to win",
+   "price": 0.44,
+   "model_prob": 0.518,
+   "edge": 0.06,
+   "tier": "B",
+   "units": 3.0,
+   "made": "2026-09-19T04:41:00.971868+00:00",
+   "expected_end": "2026-09-19T15:00:00+00:00",
+   "status": "pending",
+   "latest_price": 0.44,
+   "pnl": null,
+   "why": "Elo 1765 vs 1694 on hard gives 60%; blended with the market that's 52% vs a 44% price. Form: 7-3 in last 10 vs 7-3 in last 10."
+  }
+ ],
+ "history": [],
+ "summary": {
+  "all": {
+   "picks": 0,
+   "wins": 0,
+   "losses": 0,
+   "units": 0,
+   "staked": 0,
+   "roi": 0.0,
+   "beat_price": null
+  },
+  "week": {
+   "picks": 0,
+   "wins": 0,
+   "losses": 0,
+   "units": 0,
+   "staked": 0,
+   "roi": 0.0,
+   "beat_price": null
+  }
+ },
+ "by_tier": {
+  "A": {
+   "picks": 0,
+   "wins": 0,
+   "losses": 0,
+   "units": 0,
+   "staked": 0,
+   "roi": 0.0,
+   "beat_price": null
+  },
+  "B": {
+   "picks": 0,
+   "wins": 0,
+   "losses": 0,
+   "units": 0,
+   "staked": 0,
+   "roi": 0.0,
+   "beat_price": null
+  }
+ },
+ "by_tour": {
+  "ATP Challenger": {
+   "picks": 0,
+   "wins": 0,
+   "losses": 0,
+   "units": 0,
+   "staked": 0,
+   "roi": 0.0,
+   "beat_price": null
+  },
+  "WTA": {
+   "picks": 0,
+   "wins": 0,
+   "losses": 0,
+   "units": 0,
+   "staked": 0,
+   "roi": 0.0,
+   "beat_price": null
+  }
+ },
+ "calibration": {},
+ "curve": [],
+ "reports": [],
+ "changelog": []
+}
