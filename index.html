@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Picks board</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F3F5F8; --card:#FFFFFF; --ink:#16233B; --muted:#5B6678; --line:#DCE1E8;
+  --court:#2B5DA8; --ball:#DCEB3B; --ball-ink:#3A4200; --win:#1E7A4C; --loss:#B83A32;
+  --win-bg:#E3F3EA; --loss-bg:#F8E4E2; --amber:#8A5A00; --amber-bg:#FBF0D9;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#0E1524; --card:#172136; --ink:#E7ECF4; --muted:#9AA6BA; --line:#27334B;
+    --court:#7FA6E6; --ball:#DCEB3B; --ball-ink:#2A3000; --win:#5CCB8F; --loss:#F08A80;
+    --win-bg:#16342A; --loss-bg:#3B1E1D; --amber:#F2C46B; --amber-bg:#3A2E14;
+  }
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 Barlow,system-ui,-apple-system,Segoe UI,sans-serif}
+main{max-width:560px;margin:0 auto;padding:20px 16px 60px}
+h1,h2,.num{font-family:"Barlow Condensed",Barlow,system-ui,sans-serif}
+h1{font-size:22px;font-weight:600;margin:0}
+h2{font-size:22px;font-weight:600;margin:34px 0 10px}
+.sub{color:var(--muted);font-size:14px;margin:2px 0 0}
+.board{background:var(--ink);color:var(--bg);border-radius:14px;padding:18px 20px;margin:16px 0 12px}
+.board .big{font-size:56px;font-weight:700;line-height:1;letter-spacing:.5px}
+.board .lbl{font-size:14px;opacity:.75}
+.board .row{display:flex;gap:22px;margin-top:14px;flex-wrap:wrap}
+.board .row .num{font-size:24px;font-weight:600;line-height:1.1}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin-bottom:10px}
+.pick-top{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.tier{font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:15px;padding:2px 10px;border-radius:6px}
+.tA{background:var(--ball);color:var(--ball-ink)} .tB{background:var(--win-bg);color:var(--win)} .tC{background:var(--amber-bg);color:var(--amber)}
+.meta{color:var(--muted);font-size:14px}
+.pick-name{font-size:19px;font-weight:600;margin:8px 0 0}
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;margin:12px 0 10px}
+.grid div{background:var(--bg);border-radius:8px;padding:6px 8px}
+.grid .num{display:block;font-size:20px;font-weight:600}
+.grid small{color:var(--muted);font-size:12px}
+.why{font-size:14px;color:var(--muted);border-top:1px solid var(--line);padding-top:8px;margin:0}
+.take{display:flex;align-items:center;justify-content:space-between;margin-top:10px;font-size:15px}
+.switch{position:relative;width:46px;height:26px;flex-shrink:0}
+.switch input{opacity:0;width:100%;height:100%;margin:0;position:absolute;cursor:pointer;z-index:1}
+.switch span{position:absolute;inset:0;background:var(--line);border-radius:26px;transition:background .15s}
+.switch span::after{content:"";position:absolute;width:20px;height:20px;left:3px;top:3px;background:#fff;border-radius:50%;transition:transform .15s}
+.switch input:checked+span{background:var(--court)}
+.switch input:checked+span::after{transform:translateX(20px)}
+.switch input:focus-visible+span{outline:2px solid var(--court);outline-offset:2px}
+.mode{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.list .item{display:flex;justify-content:space-between;gap:10px;padding:10px 0;border-bottom:1px solid var(--line);font-size:15px}
+.list .item:last-child{border-bottom:0}
+.w{color:var(--win)} .l{color:var(--loss)}
+.filters{display:flex;gap:6px;margin-bottom:8px}
+.filters button{font:inherit;font-size:14px;background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:20px;padding:4px 14px;cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+table{width:100%;border-collapse:collapse;font-size:15px}
+th{font-weight:500;color:var(--muted);text-align:right;font-size:13px;padding:4px 0}
+th:first-child,td:first-child{text-align:left}
+td{text-align:right;padding:7px 0;border-top:1px solid var(--line)}
+.bar{height:8px;background:var(--bg);border-radius:4px;position:relative;margin-top:4px}
+.bar i{position:absolute;left:0;top:0;bottom:0;background:var(--court);border-radius:4px}
+.bar b{position:absolute;top:-3px;bottom:-3px;width:2px;background:var(--ink)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.two .num{font-size:28px;font-weight:600;display:block;line-height:1.1}
+.empty{color:var(--muted);font-size:15px}
+.note{font-size:15px;white-space:pre-wrap;margin:8px 0 0}
+svg{display:block;width:100%;height:auto}
+.foot{color:var(--muted);font-size:13px;margin-top:30px}
+</style>
+</head>
+<body>
+<main>
+  <h1>Picks board</h1>
+  <p class="sub" id="updated">Loading…</p>
+
+  <section class="board" aria-label="Bankroll">
+    <div class="lbl">Model bankroll (units)</div>
+    <div class="big num" id="bankroll">–</div>
+    <div class="row">
+      <div><div class="num" id="wk">–</div><div class="lbl">This week</div></div>
+      <div><div class="num" id="rec">–</div><div class="lbl">Record</div></div>
+      <div><div class="num" id="roi">–</div><div class="lbl">ROI</div></div>
+      <div><div class="num" id="beat">–</div><div class="lbl">Price moved our way</div></div>
+    </div>
+  </section>
+
+  <div class="card mode">
+    <div>
+      <div style="font-weight:600">Practice mode</div>
+      <div class="meta" id="modeText">Every pick is tracked as a practice trade.</div>
+    </div>
+    <label class="switch"><input type="checkbox" id="practice" aria-label="Practice mode"><span></span></label>
+  </div>
+
+  <h2>Open picks</h2>
+  <div id="open"></div>
+
+  <h2>Your record vs the model</h2>
+  <div class="two">
+    <div class="card"><div class="meta">Model, every pick</div><span class="num" id="mUnits">–</span><span class="meta" id="mRec"></span></div>
+    <div class="card"><div class="meta">You, picks you took</div><span class="num" id="yUnits">–</span><span class="meta" id="yRec"></span></div>
+  </div>
+
+  <h2>Bankroll over time</h2>
+  <div class="card" id="curve"><p class="empty">The chart starts once the first pick is graded.</p></div>
+
+  <h2>Past picks</h2>
+  <div class="filters" role="group" aria-label="Filter past picks">
+    <button data-f="all" aria-pressed="true">All</button>
+    <button data-f="win" aria-pressed="false">Hits</button>
+    <button data-f="loss" aria-pressed="false">Misses</button>
+    <button data-f="taken" aria-pressed="false">Taken</button>
+  </div>
+  <div class="card list" id="history"></div>
+
+  <h2>Where it makes money</h2>
+  <div class="card"><table id="tiers"></table></div>
+  <div class="card"><table id="tours"></table></div>
+
+  <h2>Is it honest about its confidence?</h2>
+  <div class="card" id="calib"></div>
+
+  <h2>Weekly reports</h2>
+  <div id="reports"></div>
+
+  <h2>What the agent changed</h2>
+  <div class="card list" id="changes"></div>
+
+  <p class="foot">Prices are Kalshi ask prices in cents. 1 unit = 1% of the starting bankroll. Taken toggles are saved on this device only.</p>
+</main>
+
+<script>
+const store = {
+  get(k, d){ try{ const v = localStorage.getItem(k); return v === null ? d : JSON.parse(v); }catch(e){ return d; } },
+  set(k, v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }
+};
+let DATA = null, filter = "all";
+let taken = store.get("taken", {});
+let practice = store.get("practice", true);
+
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const u = n => (n > 0 ? "+" : "") + (Math.round(n * 100) / 100) + "u";
+const pct = n => n == null ? "–" : Math.round(n * 100) + "%";
+const cents = p => Math.round(p * 100) + "¢";
+const day = s => s ? new Date(s).toLocaleDateString(undefined, {month:"short", day:"numeric"}) : "";
+
+function summarize(list){
+  const done = list.filter(p => p.status === "win" || p.status === "loss");
+  const staked = done.reduce((a, p) => a + p.units, 0);
+  const pnl = done.reduce((a, p) => a + (p.pnl || 0), 0);
+  const wins = done.filter(p => p.status === "win").length;
+  return {wins, losses: done.length - wins, pnl, roi: staked ? pnl / staked : 0};
+}
+
+function renderOpen(){
+  const el = $("open");
+  if (!DATA.open.length){ el.innerHTML = '<p class="empty">No open picks right now. The agent checks again every few hours and only picks when it finds an edge.</p>'; return; }
+  el.innerHTML = DATA.open.map(p => `
+    <article class="card">
+      <div class="pick-top"><span class="tier t${p.tier}">Tier ${p.tier}</span><span class="meta">${esc(p.tour)}, ${esc(p.surface)}</span></div>
+      <p class="pick-name">${esc(p.market)}</p>
+      <div class="meta">vs ${esc(p.opponent)}, ${esc(p.tournament)}</div>
+      <div class="grid">
+        <div><span class="num">${cents(p.price)}</span><small>Price</small></div>
+        <div><span class="num">${pct(p.model_prob)}</span><small>Model</small></div>
+        <div><span class="num w">+${pct(p.edge)}</span><small>Edge</small></div>
+        <div><span class="num">${p.units}u</span><small>Size</small></div>
+      </div>
+      <p class="why">${esc(p.why)}</p>
+      ${practice ? "" : `<div class="take"><span>I'm taking this</span><label class="switch"><input type="checkbox" data-id="${esc(p.id)}" ${taken[p.id] ? "checked" : ""} aria-label="Taking ${esc(p.market)}"><span></span></label></div>`}
+    </article>`).join("");
+  el.querySelectorAll("input[data-id]").forEach(i => i.addEventListener("change", e => {
+    const id = e.target.dataset.id;
+    if (e.target.checked) taken[id] = true; else delete taken[id];
+    store.set("taken", taken); renderRecords(); renderHistory();
+  }));
+}
+
+function renderRecords(){
+  const hist = DATA.history;
+  const m = summarize(hist), y = summarize(hist.filter(p => taken[p.id]));
+  $("mUnits").textContent = u(m.pnl); $("mUnits").className = "num " + (m.pnl >= 0 ? "w" : "l");
+  $("mRec").textContent = `${m.wins}-${m.losses}, ROI ${pct(m.roi)}`;
+  const yCount = y.wins + y.losses;
+  $("yUnits").textContent = yCount ? u(y.pnl) : "–"; $("yUnits").className = "num " + (y.pnl >= 0 ? "w" : "l");
+  $("yRec").textContent = yCount ? `${y.wins}-${y.losses}, ROI ${pct(y.roi)}` : (practice ? "Practice mode is on" : "No graded picks taken yet");
+}
+
+function renderHistory(){
+  let list = DATA.history;
+  if (filter === "win" || filter === "loss") list = list.filter(p => p.status === filter);
+  if (filter === "taken") list = list.filter(p => taken[p.id]);
+  $("history").innerHTML = list.length ? list.slice(0, 80).map(p => `
+    <div class="item">
+      <div><div>${esc(p.market)} <span class="meta">${cents(p.price)}, ${p.units}u</span></div>
+      <div class="meta">Tier ${p.tier}, ${day(p.graded)}${taken[p.id] ? ", taken" : ""}</div></div>
+      <div class="num ${p.status === "win" ? "w" : p.status === "loss" ? "l" : ""}" style="font-size:18px">${p.status === "void" ? "Void" : u(p.pnl)}</div>
+    </div>`).join("") : '<p class="empty">Nothing here yet.</p>';
+}
+
+function table(el, title, groups){
+  const rows = Object.entries(groups).filter(([, g]) => g.picks);
+  el.innerHTML = `<tr><th>${title}</th><th>Record</th><th>Units</th><th>ROI</th></tr>` + (rows.length ? rows.map(([k, g]) =>
+    `<tr><td>${esc(k)}</td><td>${g.wins}-${g.losses}</td><td class="${g.units >= 0 ? "w" : "l"}">${u(g.units)}</td><td>${pct(g.roi)}</td></tr>`).join("")
+    : `<tr><td colspan="4" class="empty">No graded picks yet.</td></tr>`);
+}
+
+function renderCurve(){
+  const c = DATA.curve;
+  if (c.length < 2) return;
+  const W = 520, H = 160, pad = 6;
+  const vals = c.map(p => p.v), lo = Math.min(...vals, DATA.settings.starting_bankroll), hi = Math.max(...vals, DATA.settings.starting_bankroll);
+  const x = i => pad + i * (W - 2 * pad) / (c.length - 1);
+  const y = v => H - pad - (v - lo) * (H - 2 * pad) / ((hi - lo) || 1);
+  const pts = c.map((p, i) => `${x(i).toFixed(1)},${y(p.v).toFixed(1)}`).join(" ");
+  const base = y(DATA.settings.starting_bankroll).toFixed(1);
+  $("curve").innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Bankroll from ${Math.round(c[0].v)} to ${Math.round(c[c.length - 1].v)} units">
+    <line x1="0" x2="${W}" y1="${base}" y2="${base}" stroke="var(--line)" stroke-dasharray="4 4"/>
+    <polyline points="${pts}" fill="none" stroke="var(--court)" stroke-width="2.5" stroke-linejoin="round"/></svg>
+    <div class="meta" style="display:flex;justify-content:space-between"><span>${day(c[0].t)}</span><span>${u(c[c.length - 1].v - DATA.settings.starting_bankroll)} overall</span><span>${day(c[c.length - 1].t)}</span></div>`;
+}
+
+function renderCalib(){
+  const e = Object.entries(DATA.calibration);
+  $("calib").innerHTML = e.length ? '<p class="meta" style="margin:0 0 8px">Bar = how often picks actually hit. Line = what the model predicted.</p>' + e.map(([k, v]) => {
+    const mid = (parseInt(k) + 5) / 100;
+    return `<div style="margin-bottom:10px"><div style="display:flex;justify-content:space-between;font-size:14px"><span>Said ${k}</span><span>Hit ${pct(v.hit)} of ${v.n}</span></div>
+      <div class="bar"><i style="width:${Math.round(v.hit * 100)}%"></i><b style="left:${Math.round(mid * 100)}%"></b></div></div>`;
+  }).join("") : '<p class="empty">Shows up after the first graded picks.</p>';
+}
+
+function renderReports(){
+  $("reports").innerHTML = DATA.reports.length ? DATA.reports.map(r => `
+    <article class="card">
+      <div class="pick-top"><strong>Week ending ${day(r.week_ending + "T12:00:00Z")}</strong>
+        <span class="num ${r.week.units >= 0 ? "w" : "l"}" style="font-size:20px">${u(r.week.units)}</span></div>
+      <div class="meta">${r.week.wins}-${r.week.losses}, ROI ${pct(r.week.roi)}</div>
+      <p class="note">${esc(r.ai_note)}</p>
+    </article>`).join("") : '<p class="empty">The first report arrives Monday morning.</p>';
+  $("changes").innerHTML = DATA.changelog.length ? DATA.changelog.map(c =>
+    `<div class="item"><div>${esc(c.change)}</div><div class="meta" style="white-space:nowrap">${day(c.date + "T12:00:00Z")}</div></div>`).join("")
+    : '<p class="empty">No changes yet. The agent only adjusts itself when the data backs it up.</p>';
+}
+
+function renderAll(){
+  const s = DATA.summary;
+  $("updated").textContent = "Updated " + new Date(DATA.updated).toLocaleString(undefined, {weekday:"short", hour:"numeric", minute:"2-digit"}) + ". " + DATA.status_note;
+  $("bankroll").textContent = DATA.bankroll.toFixed(1);
+  $("wk").textContent = u(s.week.units);
+  $("rec").textContent = `${s.all.wins}-${s.all.losses}`;
+  $("roi").textContent = pct(s.all.roi);
+  $("beat").textContent = pct(s.all.beat_price);
+  $("practice").checked = practice;
+  $("modeText").textContent = practice ? "Every pick is tracked as a practice trade." : "Use the switch on each pick to mark the ones you take.";
+  renderOpen(); renderRecords(); renderHistory(); renderCurve(); renderCalib(); renderReports();
+  table($("tiers"), "Tier", DATA.by_tier);
+  table($("tours"), "Tour", DATA.by_tour);
+}
+
+$("practice").addEventListener("change", e => { practice = e.target.checked; store.set("practice", practice); renderAll(); });
+document.querySelectorAll(".filters button").forEach(b => b.addEventListener("click", () => {
+  filter = b.dataset.f;
+  document.querySelectorAll(".filters button").forEach(x => x.setAttribute("aria-pressed", x === b));
+  renderHistory();
+}));
+
+fetch("data.json?" + Date.now()).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+  .then(d => { DATA = d; renderAll(); })
+  .catch(() => { $("updated").textContent = "No data yet. Run the agent once from the Actions tab, then refresh."; });
+</script>
+</body>
+</html>
