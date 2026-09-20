@@ -1,6 +1,6 @@
 {
- "updated": "2026-09-20T19:21:57.311912+00:00",
- "status_note": "Last run found 0 new pick(s) and graded 1.",
+ "updated": "2026-09-20T19:35:25.269435+00:00",
+ "status_note": "Quick check graded 1 pick(s) and 0 parlay(s).",
  "bankroll": 110.71,
  "protection": {
   "bankroll": 110.71,
@@ -253,7 +253,9 @@
    "research": "",
    "sources": [],
    "expert_lean": "none"
-  },
+  }
+ ],
+ "history": [
   {
    "id": "KXDAVISCUPMATCH-26SEP20FERAND-AND",
    "ticker": "KXDAVISCUPMATCH-26SEP20FERAND-AND",
@@ -280,10 +282,10 @@
    "made": "2026-09-20T06:24:49.978811+00:00",
    "expected_end": "2026-09-20T15:10:00+00:00",
    "start_est": "2026-09-20T11:10:00+00:00",
-   "status": "pending",
+   "status": "void",
    "latest_price": 0.22,
    "close_price": 0.22,
-   "pnl": null,
+   "pnl": 0.0,
    "why": "Elo 1650 vs 1779 on hard. Won 50% vs 50% of games lately. Form 6-4 vs 6-4. Games played in last 3 days: 22 vs 22. Model 36%, blended with the market 29%, price 22%. Price up 4\u00a2 in the last 12 hours.",
    "trend": 0.039,
    "new_market": false,
@@ -291,10 +293,9 @@
    "sharp_prob": null,
    "research": "",
    "sources": [],
-   "expert_lean": "none"
-  }
- ],
- "history": [
+   "expert_lean": "none",
+   "graded": "2026-09-20T19:35:24.377352+00:00"
+  },
   {
    "id": "KXATPCHALLENGERMATCH-26SEP20SAIMON-MON",
    "ticker": "KXATPCHALLENGERMATCH-26SEP20SAIMON-MON",
@@ -333,10 +334,7 @@
    "research": "",
    "sources": [],
    "expert_lean": "none",
-   "graded": "2026-09-20T14:19:24.561623+00:00",
-   "your_pnl": -1.55,
-   "your_price": 0.507,
-   "your_units": 1.5
+   "graded": "2026-09-20T14:19:24.561623+00:00"
   },
   {
    "id": "KXWTAMATCH-26SEP19QUEBLI-QUE",
