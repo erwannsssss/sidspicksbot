@@ -1,6 +1,6 @@
 {
- "updated": "2026-09-20T00:05:53.999905+00:00",
- "status_note": "Last run found 20 new pick(s) and graded 0.",
+ "updated": "2026-09-20T00:32:33.399717+00:00",
+ "status_note": "Last run found 0 new pick(s) and graded 0.",
  "bankroll": 112.26,
  "protection": {
   "bankroll": 112.26,
@@ -329,6 +329,26 @@
     "trust": 0.25,
     "confidence_fix": false
    },
+   "mlb:spread_f5": {
+    "finished": 8,
+    "trust": 0.25,
+    "confidence_fix": false
+   },
+   "mlb:total_f5": {
+    "finished": 14,
+    "trust": 0.25,
+    "confidence_fix": false
+   },
+   "mlb:total": {
+    "finished": 20,
+    "trust": 0.25,
+    "confidence_fix": false
+   },
+   "cfb:team_total": {
+    "finished": 56,
+    "trust": 0.25,
+    "confidence_fix": false
+   },
    "cfb:period_winner_1q": {
     "finished": 12,
     "trust": 0.25,
@@ -344,17 +364,27 @@
     "trust": 0.25,
     "confidence_fix": false
    },
-   "cfb:team_total": {
-    "finished": 26,
+   "cfb:spread_1h": {
+    "finished": 42,
+    "trust": 0.25,
+    "confidence_fix": false
+   },
+   "cfb:total_1h": {
+    "finished": 24,
     "trust": 0.25,
     "confidence_fix": false
    }
   },
-  "price_trend": {}
+  "price_trend": {
+   "flat": {
+    "markets": 42,
+    "hit_vs_price": -0.0
+   }
+  }
  },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "tracker": {
-  "tracked": 3184,
+  "tracked": 3296,
   "series": 3827,
   "movers": []
  },
@@ -460,14 +490,14 @@
    "holdout": {
     "matches": 650,
     "rating_log_loss": 0.6281,
-    "model_log_loss": 0.6218,
+    "model_log_loss": 0.6225,
     "rating_accuracy": 0.657,
-    "model_accuracy": 0.654
+    "model_accuracy": 0.655
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6012,
-    "model_log_loss": 0.6218,
+    "model_log_loss": 0.6225,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 650
@@ -475,16 +505,16 @@
    "backtest": {
     "bets": 15,
     "wins": 4,
-    "units": -11.5,
-    "roi": -0.419
+    "units": -10.9,
+    "roi": -0.383
    },
    "weights": {
-    "home_field": 0.256,
-    "rating": 1.526,
-    "rest": 0.24,
-    "point_diff_form": 0.22,
-    "qb_change": 0.326,
-    "epa": 0.17
+    "home_field": 0.257,
+    "rating": 1.529,
+    "rest": 0.231,
+    "point_diff_form": 0.225,
+    "qb_change": 0.334,
+    "epa": 0.163
    },
    "matches": 4380,
    "totals": {
@@ -1129,8 +1159,8 @@
    "expected_end": "2026-09-20T05:00:00+00:00",
    "start_est": "2026-09-20T01:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.59,
-   "close_price": null,
+   "latest_price": 0.57,
+   "close_price": 0.57,
    "pnl": null,
    "why": "Projected score margin -2.7 (home) and total 56.9. Model gives \"Boise St. under 45.5 points scored\" 93%. Blended with the market that's 67% vs a 59% price.",
    "trend": 0.0,
@@ -1168,8 +1198,8 @@
    "expected_end": "2026-09-20T06:00:00+00:00",
    "start_est": "2026-09-20T02:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.66,
-   "close_price": null,
+   "latest_price": 0.65,
+   "close_price": 0.65,
    "pnl": null,
    "why": "Projected score margin -22.0 (home) and total 54.7. Model gives \"No: Oregon St. wins by over 23.5 points\" 100%. Blended with the market that's 74% vs a 66% price.",
    "trend": -0.01,
@@ -1207,8 +1237,8 @@
    "expected_end": "2026-09-20T23:25:00+00:00",
    "start_est": "2026-09-20T19:25:00+00:00",
    "status": "pending",
-   "latest_price": 0.63,
-   "close_price": null,
+   "latest_price": 0.625,
+   "close_price": 0.625,
    "pnl": null,
    "why": "Drew Lock: 0.31 a game lately (last 4 games). Model gives \"Drew Lock: under 2\" 96%. Blended with the market that's 71% vs a 63% price.",
    "trend": 0.0,
@@ -1246,8 +1276,8 @@
    "expected_end": "2026-09-20T20:00:00+00:00",
    "start_est": "2026-09-20T16:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.67,
-   "close_price": null,
+   "latest_price": 0.655,
+   "close_price": 0.655,
    "pnl": null,
    "why": "Rashod Bateman: 11 a game lately (last 12 games). Model gives \"Rashod Bateman: under 50\" 99%. Blended with the market that's 75% vs a 67% price.",
    "trend": -0.005,
@@ -1285,8 +1315,8 @@
    "expected_end": "2026-09-20T05:30:00+00:00",
    "start_est": "2026-09-20T01:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.29,
-   "close_price": null,
+   "latest_price": 0.33,
+   "close_price": 0.33,
    "pnl": null,
    "why": "Projected score margin +10.3 (home) and total 25.5. Model gives \"No: Arizona wins 1H by over 13.5 points\" 61%. Blended with the market that's 36% vs a 29% price. Price up 2\u00a2 in the last 12 hours.",
    "trend": 0.02,
@@ -1324,8 +1354,8 @@
    "expected_end": "2026-09-20T20:00:00+00:00",
    "start_est": "2026-09-20T16:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.42,
-   "close_price": null,
+   "latest_price": 0.41,
+   "close_price": 0.41,
    "pnl": null,
    "why": "Kayshon Boutte: 1.77 a game lately (last 12 games). Model gives \"Kayshon Boutte: under 3\" 74%. Blended with the market that's 50% vs a 42% price.",
    "trend": 0.0,
@@ -1363,8 +1393,8 @@
    "expected_end": "2026-09-20T05:00:00+00:00",
    "start_est": "2026-09-20T01:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.35,
-   "close_price": null,
+   "latest_price": 0.355,
+   "close_price": 0.355,
    "pnl": null,
    "why": "Projected score margin -10.2 (home) and total 54.2. Model gives \"James Madison wins by over 3.5 points\" 66%. Blended with the market that's 42% vs a 35% price.",
    "trend": 0.005,
@@ -1402,8 +1432,8 @@
    "expected_end": "2026-09-20T23:25:00+00:00",
    "start_est": "2026-09-20T19:25:00+00:00",
    "status": "pending",
-   "latest_price": 0.37,
-   "close_price": null,
+   "latest_price": 0.365,
+   "close_price": 0.365,
    "pnl": null,
    "why": "Jayden Daniels: 165 a game lately (last 8 games). Model gives \"Jayden Daniels: under 200\" 68%. Blended with the market that's 44% vs a 37% price.",
    "trend": 0.0,
@@ -1441,8 +1471,8 @@
    "expected_end": "2026-09-20T21:45:00+00:00",
    "start_est": "2026-09-20T19:15:00+00:00",
    "status": "pending",
-   "latest_price": 0.47,
-   "close_price": null,
+   "latest_price": 0.465,
+   "close_price": 0.465,
    "pnl": null,
    "why": "Expected goals 1.47 vs 0.97 (2.44 total). Model gives \"No: Milan wins by more than 1.5 goals\" 76%. Blended with the market that's 54% vs a 47% price.",
    "trend": 0.0,
@@ -1480,8 +1510,8 @@
    "expected_end": "2026-09-20T03:40:00+00:00",
    "start_est": "2026-09-20T00:40:00+00:00",
    "status": "pending",
-   "latest_price": 0.59,
-   "close_price": null,
+   "latest_price": 0.585,
+   "close_price": 0.585,
    "pnl": null,
    "why": "Samad Taylor: 2.05 a game this season over 40 games (adjusted 2.07). Model gives \"Samad Taylor: 1+\" 87%. Blended with the market that's 66% vs a 59% price.",
    "trend": 0.0,
@@ -1519,8 +1549,8 @@
    "expected_end": "2026-09-20T04:30:00+00:00",
    "start_est": "2026-09-20T02:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.42,
-   "close_price": null,
+   "latest_price": 0.415,
+   "close_price": 0.415,
    "pnl": null,
    "why": "Expected goals 1.33 vs 0.67 (2.00 total). Model gives \"Under 2.5 goals scored\" 68%. Blended with the market that's 48% vs a 42% price.",
    "trend": 0.0,
@@ -1558,8 +1588,8 @@
    "expected_end": "2026-09-20T14:00:00+00:00",
    "start_est": "2026-09-20T11:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.22,
-   "close_price": null,
+   "latest_price": 0.215,
+   "close_price": 0.215,
    "pnl": null,
    "why": "Expected goals 2.29 vs 0.88 (3.18 total). Model gives \"Celtic wins by more than 1.5 goals\" 46%. Blended with the market that's 28% vs a 22% price.",
    "trend": -0.01,
@@ -1675,8 +1705,8 @@
    "expected_end": "2026-09-20T16:00:00+00:00",
    "start_est": "2026-09-20T13:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.33,
-   "close_price": null,
+   "latest_price": 0.325,
+   "close_price": 0.325,
    "pnl": null,
    "why": "Expected goals 2.78 vs 0.88 (3.66 total). Model gives \"Leeds United wins by more than 1.5 goals\" 56%. Blended with the market that's 38% vs a 33% price.",
    "trend": 0.0,
@@ -1714,8 +1744,8 @@
    "expected_end": "2026-09-20T16:00:00+00:00",
    "start_est": "2026-09-20T13:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.39,
-   "close_price": null,
+   "latest_price": 0.385,
+   "close_price": 0.385,
    "pnl": null,
    "why": "Expected goals 0.69 vs 1.64 (2.32 total). Model gives \"No: Both Teams To Score\" 60%. Blended with the market that's 44% vs a 39% price.",
    "trend": 0.0,
@@ -1753,8 +1783,8 @@
    "expected_end": "2026-09-20T05:30:00+00:00",
    "start_est": "2026-09-20T01:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.42,
-   "close_price": null,
+   "latest_price": 0.425,
+   "close_price": 0.425,
    "pnl": null,
    "why": "Projected score margin -20.1 (home) and total 55.2. Model gives \"Sacramento St. over 13.5 points scored\" 63%. Blended with the market that's 47% vs a 42% price.",
    "trend": 0.0,
@@ -1792,8 +1822,8 @@
    "expected_end": "2026-09-20T15:30:00+00:00",
    "start_est": "2026-09-20T13:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.26,
-   "close_price": null,
+   "latest_price": 0.255,
+   "close_price": 0.255,
    "pnl": null,
    "why": "Expected goals 1.42 vs 2.79 (4.21 total). Model gives \"Eindhoven wins by more than 1.5 goals\" 46%. Blended with the market that's 31% vs a 26% price.",
    "trend": -0.005,
@@ -1831,8 +1861,8 @@
    "expected_end": "2026-09-20T18:30:00+00:00",
    "start_est": "2026-09-20T16:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.39,
-   "close_price": null,
+   "latest_price": 0.385,
+   "close_price": 0.385,
    "pnl": null,
    "why": "Expected goals 0.91 vs 1.53 (2.44 total). Model gives \"Under 2.5 goals scored\" 56%. Blended with the market that's 43% vs a 39% price.",
    "trend": 0.0,
@@ -1870,8 +1900,8 @@
    "expected_end": "2026-09-20T04:10:00+00:00",
    "start_est": "2026-09-20T01:10:00+00:00",
    "status": "pending",
-   "latest_price": 0.23,
-   "close_price": null,
+   "latest_price": 0.225,
+   "close_price": 0.225,
    "pnl": null,
    "why": "Tarik Skubal: 7.21 a game this season over 24 games (adjusted 6.86). Model gives \"Tarik Skubal: under 6\" 37%. Blended with the market that's 26% vs a 23% price.",
    "trend": 0.01,
