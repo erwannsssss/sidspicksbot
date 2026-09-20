@@ -221,6 +221,13 @@ const newsBlock = p => {
   const src = (p.sources || []).filter(x => x.url).map(x => `<a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title || "source")}</a>`).join(", ");
   return `<p class="news">${lean} ${esc(p.research)}${src ? `<br><span class="meta">Sources: ${src}</span>` : ""}</p>`;
 };
+const startText = p => {
+  const t = p.start_est ? new Date(p.start_est) : null;
+  if (!t || isNaN(t)) return "";
+  const started = t < new Date();
+  const when = t.toLocaleString(undefined, {weekday: "short", month: "short", day: "numeric", hour: "numeric", minute: "2-digit"});
+  return `<div class="meta" style="margin-top:2px">${started ? "Started " : "Starts "}${when}${started ? ", waiting on Kalshi to settle" : ""}</div>`;
+};
 const day = s => s ? new Date(s).toLocaleDateString(undefined, {month:"short", day:"numeric"}) : "";
 
 function summarize(list){
@@ -240,6 +247,7 @@ function renderOpen(){
       <div class="pick-top"><span class="tier t${p.tier}">Tier ${p.tier}</span><span class="meta">${esc(p.sport || "Tennis")}, ${esc(p.tour)}${p.surface ? ", " + esc(p.surface) : ""}</span></div>
       <p class="pick-name">${esc(p.market)}</p>
       <div class="meta">${p.opponent ? "vs " + esc(p.opponent) + ", " : ""}${esc(p.matchup || p.tournament)}</div>
+      ${startText(p)}
       <div class="grid">
         <div><span class="num">${cents(p.price)}</span><small>Price</small></div>
         <div><span class="num">${pct(p.model_prob)}</span><small>Model</small></div>
