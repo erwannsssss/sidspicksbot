@@ -1260,9 +1260,21 @@ def main():
 
     graded = grade_picks(picks, s)
     if graded:
-        lines = [f"{'✅' if p['status'] == 'win' else '❌' if p['status'] == 'loss' else '➖'} "
-                 f"{html.escape(p['market'])} at {p['price'] * 100:.0f}¢: {p['pnl']:+g}u" for p in graded]
-        telegram("<b>Results</b>\n" + "\n".join(lines))
+        def line(p):
+            mark = '✅' if p['status'] == 'win' else '❌' if p['status'] == 'loss' else '➖'
+            text = f"{mark} {html.escape(p['market'])} at {p['price'] * 100:.0f}¢: {p['pnl']:+g}u"
+            if taken.get(p["id"]):
+                yours = your_version(p, taken, s)
+                text += f" (you took it: {yours['pnl']:+g}u on {yours['units']:g}u)" if yours.get("pnl") is not None else " (you took it)"
+            return text
+        main_g = [p for p in graded if is_main(p)]
+        watch_g = [p for p in graded if not is_main(p)]
+        msg = "<b>Results</b>"
+        if main_g:
+            msg += "\n\n<b>Recommended</b>\n" + "\n".join(line(p) for p in main_g)
+        if watch_g:
+            msg += "\n\n<b>Watchlist</b> (practice)\n" + "\n".join(line(p) for p in watch_g)
+        telegram(msg)
 
     # Weekly report: first run after 9am Eastern (13:00 UTC) on Monday, once per week
     t = now_utc()
