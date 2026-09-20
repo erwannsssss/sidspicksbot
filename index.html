@@ -53,6 +53,7 @@ h2{font-size:22px;font-weight:600;margin:34px 0 10px}
 .lean{font-size:13px;font-weight:600;padding:1px 8px;border-radius:6px;margin-left:4px}
 .lean.agrees{background:var(--win-bg);color:var(--win)} .lean.disagrees{background:var(--loss-bg);color:var(--loss)} .lean.mixed{background:var(--amber-bg);color:var(--amber)}
 .more{font:inherit;width:100%;padding:10px;margin-top:6px;background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:10px;cursor:pointer}
+.scroll{max-height:380px;overflow-y:auto;overscroll-behavior:contain}
 .saving{font-size:13px;color:var(--muted);min-height:18px;margin:6px 0 0}
 .list .item{display:flex;justify-content:space-between;gap:10px;padding:10px 0;border-bottom:1px solid var(--line);font-size:15px}
 .list .item:last-child{border-bottom:0}
@@ -109,11 +110,11 @@ svg{display:block;width:100%;height:auto}
 
   <h2>Watchlist</h2>
   <p class="meta" style="margin:-4px 0 10px">Smaller edges the agent tracks for practice only. They aren't recommendations and don't count in the bankroll, but they help it learn faster.</p>
-  <div class="card"><div class="meta" id="watchSum"></div><div class="list" id="watch"></div></div>
+  <div class="card"><div class="meta" id="watchSum"></div><div class="list scroll" id="watch"></div></div>
 
   <h2>Watchlist parlays</h2>
   <p class="meta" style="margin:-4px 0 10px">Practice only, counted with the watchlist. Built from this run's recommended and watchlist picks in different games. Big payouts, low hit rates: only take one if Kalshi's combo pays at least the listed amount.</p>
-  <div class="card"><div class="meta" id="parlaySum"></div><div id="parlays"></div></div>
+  <div class="card"><div class="meta" id="parlaySum"></div><div id="parlays" class="scroll"></div></div>
 
   <h2>Your record vs the model</h2>
   <div class="two">
@@ -132,7 +133,7 @@ svg{display:block;width:100%;height:auto}
     <button data-f="loss" aria-pressed="false">Misses</button>
   </div>
   <p class="meta" id="histCount" style="margin:0 0 6px"></p>
-  <div class="card list" id="history"></div>
+  <div class="card list scroll" id="history"></div>
   <button class="more" id="more" hidden>Show more</button>
 
   <h2>Where it makes money</h2>
@@ -145,20 +146,21 @@ svg{display:block;width:100%;height:auto}
   <div class="card" id="calib"></div>
 
   <h2>How good are the models?</h2>
-  <div id="modelcheck"><p class="empty">Shows up after the next run.</p></div>
+  <div id="modelcheck" class="scroll"><p class="empty">Shows up after the next run.</p></div>
 
   <h2>Everything else it's watching</h2>
   <p class="meta" style="margin:-4px 0 10px" id="trackNote"></p>
-  <div class="card list" id="movers"></div>
+  <div class="card list scroll" id="movers"></div>
 
   <h2>What it's learning</h2>
-  <div class="card"><table id="learnTable"></table><p class="meta" id="trendNote" style="margin:10px 0 0"></p></div>
+  <p class="meta" style="margin:-4px 0 10px">Market types with games in the last 5 days. "Trust" is how much it believes its own model over the Kalshi price (it tops out at 80%), not a win rate.</p>
+  <div class="card"><div class="scroll"><table id="learnTable"></table></div><p class="meta" id="trendNote" style="margin:10px 0 0"></p></div>
 
   <h2>Weekly reports</h2>
-  <div id="reports"></div>
+  <div id="reports" class="scroll"></div>
 
   <h2>What the agent changed</h2>
-  <div class="card list" id="changes"></div>
+  <div class="card list scroll" id="changes"></div>
 
   <p class="foot">Closing line value is how much the Kalshi price moved in the pick's favour before the game started; above zero over many picks is the best early sign of a real edge. Prices are Kalshi ask prices in cents. 1 unit = 1% of the starting bankroll. Checkboxes save to your repository, so they show on every device.</p>
 </main>
@@ -390,8 +392,8 @@ function renderTracker(){
 function renderLearning(){
   const L = DATA.learning || {}; const g = L.groups || {};
   const rows = Object.entries(g).sort((a, b) => b[1].finished - a[1].finished);
-  $("learnTable").innerHTML = `<tr><th>Sport and market</th><th>Finished</th><th>Trust</th><th>Confidence fix</th></tr>` +
-    (rows.length ? rows.map(([k, v]) => `<tr><td>${esc(k.replace(":", " "))}</td><td>${v.finished}</td><td>${v.trust == null ? "–" : pct(v.trust)}</td><td>${v.confidence_fix ? "On" : "Not yet"}</td></tr>`).join("")
+  $("learnTable").innerHTML = `<tr><th>Sport and market</th><th>Markets</th><th>Games</th><th>Trust</th><th>Confidence fix</th></tr>` +
+    (rows.length ? rows.map(([k, v]) => `<tr><td>${esc(k.replace(":", " ").replace(/_/g, " "))}</td><td>${v.finished}</td><td>${v.games ?? "–"}</td><td>${v.trust == null ? "–" : pct(v.trust)}</td><td>${v.confidence_fix ? "On" : "Not yet"}</td></tr>`).join("")
       : `<tr><td colspan="4" class="empty">Starts filling in as tracked games finish.</td></tr>`);
   const t = L.price_trend || {};
   $("trendNote").textContent = Object.keys(t).length ? "Price trend check: " + Object.entries(t).map(([k, v]) => `${k} prices ${v.hit_vs_price >= 0 ? "beat" : "missed"} their price by ${Math.abs(v.hit_vs_price * 100).toFixed(1)} points (${v.markets} markets)`).join("; ") + "." : "";

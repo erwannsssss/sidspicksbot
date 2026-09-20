@@ -27,6 +27,7 @@ import common as c
 OBS_FILE = os.path.join(c.STATE_DIR, "observations.json.gz")
 LEARNED_FILE = os.path.join(c.STATE_DIR, "learned.json")
 MIN_GROUP, MIN_LEAGUE, MIN_CALIB = 150, 60, 300
+MIN_GAMES, MAX_TRUST = 40, 0.8
 
 
 def _now():
@@ -121,18 +122,29 @@ def learn(obs, defaults, floor):
     """Recompute trust and confidence corrections from every finished market."""
     rows = defaultdict(list)
     league_rows = defaultdict(list)
+    games = defaultdict(set)       # distinct games per group: many markets on one game aren't independent evidence
+    last = {}
     for o in obs.values():
         if o.get("won") in (True, False) and "p" in o and "mid" in o:
             r = (o["p"], o["mid"], 1.0 if o["won"] else 0.0)
             rows[o["g"]].append(r)
             league_rows[(o["g"], o["lg"])].append(r)
+            games[o["g"]].add(o.get("game"))
+            last[o["g"]] = max(last.get(o["g"], ""), o.get("start", ""))
     trust, trust_league, calib, counts = {}, {}, {}, {}
     for g, rs in rows.items():
         counts[g] = len(rs)
         base = defaults.get(g, floor)
-        trust[g] = max(_fit_trust(rs), floor) if len(rs) >= MIN_GROUP else base
+        n_games = len(games[g])
+        if len(rs) >= MIN_GROUP and n_games >= MIN_GAMES:
+            # move away from the starting trust only as fast as the number of separate games justifies,
+            # and never trust the model more than MAX_TRUST however good it has looked
+            fitted = max(_fit_trust(rs), floor)
+            trust[g] = round(min(base + (fitted - base) * n_games / (n_games + 100), MAX_TRUST), 2)
+        else:
+            trust[g] = base
         # confidence correction: q' = sigmoid(a + b * logit(q)), fitted on older games, checked on newer
-        if len(rs) >= MIN_CALIB:
+        if len(rs) >= MIN_CALIB and len(games[g]) >= 2 * MIN_GAMES:
             w = trust[g]
             z = np.array([_logit(w * p + (1 - w) * m) for p, m, _ in rs])
             y = np.array([r[2] for r in rs])
@@ -150,7 +162,7 @@ def learn(obs, defaults, floor):
             n = len(rs)
             trust_league[f"{g}|{lg}"] = round((n * w_l + 300 * trust[g]) / (n + 300), 2)
     return {"trust": trust, "trust_league": trust_league, "calib": calib, "counts": counts,
-            "updated": _now().isoformat()}
+            "games": {g: len(v) for g, v in games.items()}, "last": last, "updated": _now().isoformat()}
 
 
 def get_trust(learned, group, league, fallback):

@@ -720,7 +720,8 @@ def make_picks(engines, picks, s, research_cache, sharp, obs, learned):
         against = p["trend"] <= -s["trend_block"]  # price has been sliding away from this side
         # new market types need a sharp price behind them until the agent has learned enough about them
         unproven = p.get("mtype", "winner") != "winner" and not found and \
-            learned.get("counts", {}).get(f"{p['model_key']}:{p['mtype']}", 0) < learn.MIN_GROUP
+            (learned.get("counts", {}).get(f"{p['model_key']}:{p['mtype']}", 0) < learn.MIN_GROUP or
+             learned.get("games", {}).get(f"{p['model_key']}:{p['mtype']}", 0) < learn.MIN_GAMES)
         main_ok = bar <= p["edge"] <= s["max_edge"] and not against and not s["paused"] and not unproven \
             and p["model_prob"] >= s["min_main_prob"]
         if main_ok:
@@ -1159,9 +1160,13 @@ def write_dashboard(picks, s, reports, changelog, status_note, taken, engines):
                     "done": sorted([x for x in (_PARLAYS[0] if _PARLAYS else []) if x["status"] != "pending"],
                                    key=lambda x: x.get("graded", ""), reverse=True)[:100],
                     "summary": summarize(_PARLAYS[0] if _PARLAYS else [])},
-        "learning": {"groups": {g: {"finished": n, "trust": ctx_learned().get("trust", {}).get(g),
-                                    "confidence_fix": g in ctx_learned().get("calib", {})}
-                                for g, n in ctx_learned().get("counts", {}).items()},
+        "learning": {"groups": {g: {"finished": n, "games": ctx_learned().get("games", {}).get(g, 0),
+                                    "trust": ctx_learned().get("trust", {}).get(g),
+                                    "confidence_fix": g in ctx_learned().get("calib", {}),
+                                    "last": ctx_learned().get("last", {}).get(g, "")}
+                                for g, n in ctx_learned().get("counts", {}).items()
+                                # only market types with games in the last 5 days (it keeps using everything it learned)
+                                if ctx_learned().get("last", {}).get(g, "") >= (now_utc() - timedelta(days=5)).isoformat()},
                      "price_trend": learn.trend_report(_OBS[0]) if _OBS else {}},
         "worker_url": os.getenv("WORKER_URL", "").rstrip("/"),
         "tracker": tracker.movers(),
@@ -1186,6 +1191,63 @@ def write_dashboard(picks, s, reports, changelog, status_note, taken, engines):
 
 
 # ---------------------------------------------------------------- main
+def results_message(graded, taken, s):
+    def line(p):
+        mark = '✅' if p['status'] == 'win' else '❌' if p['status'] == 'loss' else '➖'
+        text = f"{mark} {html.escape(p['market'])} at {p['price'] * 100:.0f}¢: {p['pnl']:+g}u"
+        if taken.get(p["id"]):
+            yours = your_version(p, taken, s)
+            text += f" (you took it: {yours['pnl']:+g}u on {yours['units']:g}u)" if yours.get("pnl") is not None else " (you took it)"
+        return text
+    main_g = [p for p in graded if is_main(p)]
+    watch_g = [p for p in graded if not is_main(p)]
+    msg = "<b>Results</b>"
+    if main_g:
+        msg += "\n\n<b>Recommended</b>\n" + "\n".join(line(p) for p in main_g)
+    if watch_g:
+        msg += "\n\n<b>Watchlist</b> (practice)\n" + "\n".join(line(p) for p in watch_g)
+    return msg
+
+
+def quick_grade(picks, s, taken, link):
+    """Check every open pick and parlay against Kalshi right now, update the dashboard, and report back."""
+    graded = grade_picks(picks, s)
+    parlays = load_json(PARLAYS_FILE, [])
+    p_graded = grade_parlays(parlays, s)
+    if graded:
+        telegram(results_message(graded, taken, s))
+    for x in p_graded:
+        telegram(f"{'🎉' if x['status'] == 'win' else '❌' if x['status'] == 'loss' else '➖'} Parlay "
+                 f"({len(x['legs'])} legs) {x['status']}: {x['pnl']:+g}u")
+    still = [p for p in picks if p["status"] == "pending"]
+    started = [p for p in still if (parse_time(p.get("start_est")) or now_utc()) < now_utc()]
+    if not graded and not p_graded:
+        telegram(f"Checked {len(still)} open picks and {sum(1 for x in parlays if x['status'] == 'pending')} open parlays: "
+                 f"nothing new has been settled by Kalshi yet."
+                 + (f" {len(started)} of them have started and are waiting on Kalshi to settle." if started else ""))
+    save_json(PICKS_FILE, picks)
+    save_json(PARLAYS_FILE, [x for x in parlays if x["status"] == "pending" or  # drop parlays settled 2+ weeks ago
+                               x.get("graded", x.get("made", "")) >= (now_utc() - timedelta(days=14)).isoformat()])
+    # refresh the dashboard's pick lists without rebuilding the models
+    data = load_json(DASHBOARD_FILE, {})
+    if data:
+        done = [p for p in picks if p["status"] in ("win", "loss", "void")]
+        data["updated"] = now_utc().isoformat()
+        data["status_note"] = f"Quick check graded {len(graded)} pick(s) and {len(p_graded)} parlay(s)."
+        data["open"] = [p for p in picks if p["status"] == "pending" and is_main(p)]
+        data["watch_open"] = [p for p in picks if p["status"] == "pending" and not is_main(p)]
+        data["history"] = sorted([p for p in done if is_main(p)], key=lambda p: p.get("graded", ""), reverse=True)
+        data["watch_history"] = sorted([p for p in done if not is_main(p)], key=lambda p: p.get("graded", ""), reverse=True)[:300]
+        main_p = [p for p in picks if is_main(p)]
+        week_ago = (now_utc() - timedelta(days=7)).isoformat()
+        data.setdefault("summary", {}).update(
+            all=summarize(main_p), week=summarize([p for p in main_p if p.get("graded", "") >= week_ago]),
+            watch=summarize([p for p in picks if not is_main(p)]),
+            yours=summarize([your_version(p, taken, s) for p in done if is_main(p) and taken.get(p["id"])]))
+        data["bankroll"] = round(s["starting_bankroll"] + sum(p["pnl"] or 0 for p in main_p if p["status"] in ("win", "loss", "void")), 2)
+        save_json(DASHBOARD_FILE, data)
+
+
 def main():
     mode = sys.argv[1] if len(sys.argv) > 1 else "run"
     stored = load_json(SETTINGS_FILE, {})
@@ -1206,6 +1268,9 @@ def main():
     taken = load_json(TAKEN_FILE, {})
     link = dashboard_url()
 
+    if mode == "grade":  # /refresh from Telegram: only check whether open picks have finished
+        quick_grade(picks, s, taken, link)
+        return
     ctx = {"s": s}
     engines = []
     try:
@@ -1271,21 +1336,7 @@ def main():
 
     graded = grade_picks(picks, s)
     if graded:
-        def line(p):
-            mark = '✅' if p['status'] == 'win' else '❌' if p['status'] == 'loss' else '➖'
-            text = f"{mark} {html.escape(p['market'])} at {p['price'] * 100:.0f}¢: {p['pnl']:+g}u"
-            if taken.get(p["id"]):
-                yours = your_version(p, taken, s)
-                text += f" (you took it: {yours['pnl']:+g}u on {yours['units']:g}u)" if yours.get("pnl") is not None else " (you took it)"
-            return text
-        main_g = [p for p in graded if is_main(p)]
-        watch_g = [p for p in graded if not is_main(p)]
-        msg = "<b>Results</b>"
-        if main_g:
-            msg += "\n\n<b>Recommended</b>\n" + "\n".join(line(p) for p in main_g)
-        if watch_g:
-            msg += "\n\n<b>Watchlist</b> (practice)\n" + "\n".join(line(p) for p in watch_g)
-        telegram(msg)
+        telegram(results_message(graded, taken, s))
 
     # Weekly report: first run after 9am Eastern (13:00 UTC) on Monday, once per week
     t = now_utc()
@@ -1333,7 +1384,8 @@ def main():
     open_legs = [dict(p) for p in picks if p["status"] == "pending" and p.get("model_prob") and p.get("price")]
     new_parlays = build_parlays(legs + open_legs, parlays, s)
     parlays.extend(new_parlays)
-    save_json(PARLAYS_FILE, parlays)
+    save_json(PARLAYS_FILE, [x for x in parlays if x["status"] == "pending" or  # drop parlays settled 2+ weeks ago
+                               x.get("graded", x.get("made", "")) >= (now_utc() - timedelta(days=14)).isoformat()])
     for x in new_parlays:
         telegram(f"<b>{'Parlay (all legs recommended)' if x.get('kind') == 'recommended' else 'Watchlist parlay'}</b> "
                  f"({len(x['legs'])} legs, {x['units']:g}u to win {x['payout_units']:g}u, practice only)\n"
