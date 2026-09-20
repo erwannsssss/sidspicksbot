@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-20T07:24:14.811891+00:00",
+ "updated": "2026-09-20T12:29:32.560408+00:00",
  "status_note": "Last run found 0 new pick(s) and graded 0.",
  "bankroll": 112.26,
  "protection": {
@@ -201,8 +201,8 @@
    "expected_end": "2026-09-21T02:20:00+00:00",
    "start_est": "2026-09-20T23:20:00+00:00",
    "status": "pending",
-   "latest_price": 0.34,
-   "close_price": 0.34,
+   "latest_price": 0.335,
+   "close_price": 0.335,
    "pnl": null,
    "why": "Projected runs 4.4 (home) vs 7.0 (11.4 total). Park factor 1.00. Forecast 81F, wind 5 mph. Model gives \"Over 9.5 runs scored\" 59%. Blended with the market that's 46% vs a 34% price.",
    "trend": 0.01,
@@ -240,8 +240,8 @@
    "expected_end": "2026-09-20T22:10:00+00:00",
    "start_est": "2026-09-20T19:10:00+00:00",
    "status": "pending",
-   "latest_price": 0.235,
-   "close_price": 0.235,
+   "latest_price": 0.24,
+   "close_price": 0.24,
    "pnl": null,
    "why": "Projected runs 6.4 (home) vs 8.6 (15.0 total). Park factor 1.28. Forecast 71F, wind 9 mph. Model gives \"Over 14.5 runs scored\" 48%. Blended with the market that's 36% vs a 25% price.",
    "trend": 0.0,
@@ -618,39 +618,60 @@
  "learning": {
   "groups": {
    "tennis:winner": {
-    "finished": 12,
-    "games": 6,
+    "finished": 16,
+    "games": 8,
     "trust": 0.5,
     "confidence_fix": false,
-    "last": "2026-09-20T04:10:00+00:00"
+    "last": "2026-09-20T08:30:00+00:00"
    },
    "soccer:winner": {
-    "finished": 66,
-    "games": 22,
+    "finished": 78,
+    "games": 26,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-09-20T03:30:00+00:00"
+    "last": "2026-09-20T10:15:00+00:00"
    },
    "soccer:btts_1h": {
-    "finished": 40,
-    "games": 20,
+    "finished": 46,
+    "games": 23,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-09-20T03:30:00+00:00"
+    "last": "2026-09-20T10:15:00+00:00"
    },
    "soccer:spread_1h": {
-    "finished": 76,
-    "games": 20,
+    "finished": 86,
+    "games": 23,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-09-20T03:30:00+00:00"
+    "last": "2026-09-20T10:15:00+00:00"
    },
    "soccer:total_1h": {
-    "finished": 120,
-    "games": 20,
+    "finished": 138,
+    "games": 23,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-09-20T03:30:00+00:00"
+    "last": "2026-09-20T10:15:00+00:00"
+   },
+   "soccer:btts": {
+    "finished": 52,
+    "games": 26,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-20T10:15:00+00:00"
+   },
+   "soccer:spread": {
+    "finished": 168,
+    "games": 26,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-20T10:15:00+00:00"
+   },
+   "soccer:total": {
+    "finished": 280,
+    "games": 26,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-20T10:15:00+00:00"
    },
    "soccer:btts_2h": {
     "finished": 34,
@@ -673,13 +694,6 @@
     "confidence_fix": false,
     "last": "2026-09-20T03:30:00+00:00"
    },
-   "soccer:btts": {
-    "finished": 44,
-    "games": 22,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-20T03:30:00+00:00"
-   },
    "soccer:first_to_score": {
     "finished": 96,
     "games": 20,
@@ -694,23 +708,9 @@
     "confidence_fix": false,
     "last": "2026-09-20T03:30:00+00:00"
    },
-   "soccer:spread": {
-    "finished": 142,
-    "games": 22,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-20T03:30:00+00:00"
-   },
    "soccer:team_total": {
     "finished": 240,
     "games": 20,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-20T03:30:00+00:00"
-   },
-   "soccer:total": {
-    "finished": 234,
-    "games": 22,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-09-20T03:30:00+00:00"
@@ -793,8 +793,8 @@
     "last": "2026-09-20T01:38:00+00:00"
    },
    "cfb:winner": {
-    "finished": 66,
-    "games": 33,
+    "finished": 68,
+    "games": 34,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-09-20T02:00:00+00:00"
@@ -928,50 +928,50 @@
   },
   "price_trend": {
    "flat": {
-    "markets": 12609,
+    "markets": 12727,
     "hit_vs_price": 0.0
    },
    "falling": {
-    "markets": 498,
-    "hit_vs_price": 0.008
+    "markets": 504,
+    "hit_vs_price": 0.01
    },
    "rising": {
-    "markets": 504,
-    "hit_vs_price": -0.01
+    "markets": 510,
+    "hit_vs_price": -0.011
    }
   }
  },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "tracker": {
-  "tracked": 22458,
+  "tracked": 23192,
   "series": 3827,
   "movers": []
  },
  "models": {
   "tennis": {
-   "matches": 19464,
-   "training_rows": 13321,
+   "matches": 19497,
+   "training_rows": 13333,
    "holdout": {
-    "from": "2026-08-15",
-    "matches": 1999,
-    "elo_log_loss": 0.6591,
-    "model_log_loss": 0.6514,
+    "from": "2026-08-16",
+    "matches": 2000,
+    "elo_log_loss": 0.659,
+    "model_log_loss": 0.6517,
     "elo_accuracy": 0.62,
-    "model_accuracy": 0.627
+    "model_accuracy": 0.629
    },
    "using": "full",
    "weights": {
-    "elo": 1.744,
+    "elo": 1.746,
     "dominance": 0.0,
     "rank": 0.0,
     "h2h": 0.431,
-    "form": -1.105,
-    "fatigue_games": -0.204,
+    "form": -1.107,
+    "fatigue_games": -0.203,
     "fatigue_matches": 0.047,
     "rest": 0.017,
     "travel": 0.132,
     "altitude": 0.0,
-    "best_of_5": 0.439
+    "best_of_5": 0.438
    },
    "sport": "Tennis",
    "label": "Tennis",
@@ -1021,24 +1021,24 @@
    "trust": 0.25
   },
   "mlb": {
-   "training_rows": 14587,
+   "training_rows": 14601,
    "holdout": {
-    "matches": 2189,
-    "rating_log_loss": 0.6865,
-    "model_log_loss": 0.6852,
-    "rating_accuracy": 0.545,
-    "model_accuracy": 0.556
+    "matches": 2191,
+    "rating_log_loss": 0.6859,
+    "model_log_loss": 0.6845,
+    "rating_accuracy": 0.547,
+    "model_accuracy": 0.559
    },
    "using": "full",
    "weights": {
     "home_field": 0.127,
-    "rating": 1.529,
-    "starting_pitcher": 0.08,
-    "run_diff_form": 0.016,
-    "rest": 0.055,
+    "rating": 1.525,
+    "starting_pitcher": 0.082,
+    "run_diff_form": 0.017,
+    "rest": 0.054,
     "pitcher_fip": 0.11
    },
-   "matches": 14666,
+   "matches": 14680,
    "runs_scale": 1.015,
    "sport": "Baseball",
    "label": "MLB",
@@ -1049,30 +1049,30 @@
    "holdout": {
     "matches": 650,
     "rating_log_loss": 0.6281,
-    "model_log_loss": 0.6228,
+    "model_log_loss": 0.6239,
     "rating_accuracy": 0.657,
-    "model_accuracy": 0.657
+    "model_accuracy": 0.652
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6012,
-    "model_log_loss": 0.6228,
+    "model_log_loss": 0.6239,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 650
    },
    "backtest": {
-    "bets": 18,
+    "bets": 17,
     "wins": 6,
-    "units": -8.0,
-    "roi": -0.247
+    "units": -5.5,
+    "roi": -0.184
    },
    "weights": {
-    "home_field": 0.255,
-    "rating": 1.52,
+    "home_field": 0.254,
+    "rating": 1.534,
     "rest": 0.233,
-    "point_diff_form": 0.228,
-    "qb_change": 0.301,
+    "point_diff_form": 0.229,
+    "qb_change": 0.285,
     "epa": 0.169
    },
    "matches": 4380,
@@ -1323,11 +1323,11 @@
    "made": "2026-09-19T16:08:49.619994+00:00",
    "expected_end": "2026-09-20T15:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.475,
+   "latest_price": 0.465,
    "pnl": null,
    "why": "Ratings 1620 (Getafe, home) vs 1452 (Malaga). Share of chances lately (xG or shots on target) 36% vs 39%. Goal difference last 6: -4 vs -8. Last played Sep 17 vs Sep 17. Model gives the home 60%. Blended with the market that's 50% vs a 48% price. Sharp sportsbook price (Pinnacle) says 47%.",
    "start_est": "2026-09-20T12:30:00+00:00",
-   "close_price": 0.475,
+   "close_price": 0.465,
    "sharp_prob": 0.4674,
    "sharp_source": "Pinnacle",
    "research": "",
@@ -1355,11 +1355,11 @@
    "made": "2026-09-19T16:08:49.619994+00:00",
    "expected_end": "2026-09-20T22:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.245,
+   "latest_price": 0.247,
    "pnl": null,
    "why": "Ratings 1537 (Corinthians, home) vs 1640 (Fluminense). Share of chances lately (xG or shots on target) 50% vs 50%. Goal difference last 6: -3 vs +1. Last played Sep 13 vs Sep 12. Model gives the away 37%. Blended with the market that's 29% vs a 26% price. Sharp sportsbook price (Pinnacle) says 26%.",
    "start_est": "2026-09-20T19:30:00+00:00",
-   "close_price": 0.245,
+   "close_price": 0.247,
    "sharp_prob": 0.2554,
    "sharp_source": "Pinnacle",
    "research": "",
@@ -1387,11 +1387,11 @@
    "made": "2026-09-19T16:08:49.619994+00:00",
    "expected_end": "2026-09-20T16:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.305,
+   "latest_price": 0.315,
    "pnl": null,
    "why": "Ratings 1830 (Bournemouth, home) vs 1864 (Liverpool). Share of chances lately (xG or shots on target) 54% vs 53%. Goal difference last 6: -1 vs +3. Last played Sep 12 vs Sep 12. Model gives the home 41%. Blended with the market that's 33% vs a 31% price. Sharp sportsbook price (Pinnacle) says 30%.",
    "start_est": "2026-09-20T13:30:00+00:00",
-   "close_price": 0.305,
+   "close_price": 0.315,
    "sharp_prob": 0.301,
    "sharp_source": "Pinnacle",
    "research": "",
@@ -1581,8 +1581,8 @@
    "expected_end": "2026-09-20T23:25:00+00:00",
    "start_est": "2026-09-20T19:25:00+00:00",
    "status": "pending",
-   "latest_price": 0.62,
-   "close_price": 0.62,
+   "latest_price": 0.625,
+   "close_price": 0.625,
    "pnl": null,
    "why": "Drew Lock: 0.31 a game lately (last 4 games). Model gives \"Drew Lock: under 2\" 96%. Blended with the market that's 71% vs a 63% price.",
    "trend": 0.0,
@@ -1620,8 +1620,8 @@
    "expected_end": "2026-09-20T20:00:00+00:00",
    "start_est": "2026-09-20T16:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.67,
-   "close_price": 0.67,
+   "latest_price": 0.665,
+   "close_price": 0.665,
    "pnl": null,
    "why": "Rashod Bateman: 11 a game lately (last 12 games). Model gives \"Rashod Bateman: under 50\" 99%. Blended with the market that's 75% vs a 67% price.",
    "trend": -0.005,
@@ -1698,8 +1698,8 @@
    "expected_end": "2026-09-20T23:25:00+00:00",
    "start_est": "2026-09-20T19:25:00+00:00",
    "status": "pending",
-   "latest_price": 0.355,
-   "close_price": 0.355,
+   "latest_price": 0.365,
+   "close_price": 0.365,
    "pnl": null,
    "why": "Jayden Daniels: 165 a game lately (last 8 games). Model gives \"Jayden Daniels: under 200\" 68%. Blended with the market that's 44% vs a 37% price.",
    "trend": 0.0,
@@ -1854,8 +1854,8 @@
    "expected_end": "2026-09-20T16:00:00+00:00",
    "start_est": "2026-09-20T13:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.385,
-   "close_price": 0.385,
+   "latest_price": 0.375,
+   "close_price": 0.375,
    "pnl": null,
    "why": "Expected goals 0.69 vs 1.64 (2.32 total). Model gives \"No: Both Teams To Score\" 60%. Blended with the market that's 44% vs a 39% price.",
    "trend": 0.0,
