@@ -1,7 +1,41 @@
 {
- "trust": {},
- "trust_league": {},
+ "trust": {
+  "soccer:winner": 0.25,
+  "soccer:btts_1h": 0.25,
+  "soccer:spread_1h": 0.25,
+  "soccer:total_1h": 0.25,
+  "soccer:btts": 0.25,
+  "soccer:first_to_score": 0.25,
+  "soccer:correct_score": 0.25,
+  "soccer:spread": 0.25,
+  "soccer:team_total": 0.25,
+  "soccer:total": 0.25,
+  "cfb:period_winner_1q": 0.25,
+  "cfb:spread_1q": 0.25,
+  "cfb:total_1q": 0.25,
+  "cfb:team_total": 0.25
+ },
+ "trust_league": {
+  "soccer:correct_score|Brasileirao": 0.38,
+  "cfb:spread_1q|College Football": 0.38,
+  "cfb:total_1q|College Football": 0.38
+ },
  "calib": {},
- "counts": {},
- "updated": "2026-09-19T23:17:45.887372+00:00"
+ "counts": {
+  "soccer:winner": 3,
+  "soccer:btts_1h": 2,
+  "soccer:spread_1h": 4,
+  "soccer:total_1h": 6,
+  "soccer:btts": 2,
+  "soccer:first_to_score": 6,
+  "soccer:correct_score": 60,
+  "soccer:spread": 8,
+  "soccer:team_total": 12,
+  "soccer:total": 12,
+  "cfb:period_winner_1q": 12,
+  "cfb:spread_1q": 60,
+  "cfb:total_1q": 60,
+  "cfb:team_total": 26
+ },
+ "updated": "2026-09-20T00:02:09.541447+00:00"
 }
