@@ -290,11 +290,11 @@
   "made": "2026-09-19T16:08:49.619994+00:00",
   "expected_end": "2026-09-20T22:00:00+00:00",
   "status": "pending",
-  "latest_price": 0.247,
+  "latest_price": 0.237,
   "pnl": null,
   "why": "Ratings 1537 (Corinthians, home) vs 1640 (Fluminense). Share of chances lately (xG or shots on target) 50% vs 50%. Goal difference last 6: -3 vs +1. Last played Sep 13 vs Sep 12. Model gives the away 37%. Blended with the market that's 29% vs a 26% price. Sharp sportsbook price (Pinnacle) says 26%.",
   "start_est": "2026-09-20T19:30:00+00:00",
-  "close_price": 0.247,
+  "close_price": 0.237,
   "sharp_prob": 0.2554,
   "sharp_source": "Pinnacle",
   "research": "",
@@ -678,9 +678,9 @@
   "units": 0.5,
   "made": "2026-09-19T16:08:49.619994+00:00",
   "expected_end": "2026-09-20T19:30:00+00:00",
-  "status": "pending",
+  "status": "loss",
   "latest_price": 0.515,
-  "pnl": null,
+  "pnl": -0.52,
   "why": "Ratings 1527 (La Coruna, home) vs 1791 (Betis). Share of chances lately (xG or shots on target) 44% vs 47%. Goal difference last 6: +2 vs +2. Last played Sep 16 vs Sep 17. Model gives the away 55%. Blended with the market that's 50% vs a 48% price. Sharp sportsbook price (Pinnacle) says 47%.",
   "start_est": "2026-09-20T17:00:00+00:00",
   "close_price": 0.515,
@@ -688,7 +688,8 @@
   "sharp_source": "Pinnacle",
   "research": "",
   "sources": [],
-  "expert_lean": "none"
+  "expert_lean": "none",
+  "graded": "2026-09-20T19:17:38.154948+00:00"
  },
  {
   "id": "KXNFLGAME-26SEP20MINCHI-MIN",
@@ -1555,7 +1556,8 @@
   "price_gap": 0.049,
   "research": "",
   "sources": [],
-  "expert_lean": "none"
+  "expert_lean": "none",
+  "prechecked": true
  },
  {
   "id": "KXATPCHALLENGERMATCH-26SEP20SAIMON-MON",
