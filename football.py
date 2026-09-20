@@ -385,6 +385,7 @@ class Engine:
             p = ph if home else 1 - ph
             outs.append(c.Outcome(mk, p, f"{mk.get('yes_sub_title')} to win", self.why(game, info, home, p)))
         cand = c.Candidate(event, self.sport, self.series[series], f"{game['away']} at {game['home']}", outs)
+        cand.start_exact = game.get("kick") or (game["day"] if not self.code_match else None)  # kickoff time
         cand.sides = {mk["ticker"].split("-")[-1]: ("home" if t == game["home"] else "away") for mk, t in zip(markets, ids)}
         total, note = m.expected_total(game["home"], game["away"]), ""
         if self.code_match and game.get("roof") not in ("dome", "closed") and game.get("kick"):

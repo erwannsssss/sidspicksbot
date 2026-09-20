@@ -69,10 +69,10 @@ SERIES = {
     "KXSIXKINGSSLAMMATCH": ("M", "Exhibition"),
 }
 
-SETTINGS_VERSION = 7
+SETTINGS_VERSION = 8
 NEW_IN_V3 = {"min_edge": 0.03, "min_price": 0.20, "skip_expert_disagree": True, "min_edge_no_sharp": 0.05,
              "kelly_fraction": 0.125, "max_units": 8.0, "daily_unit_cap": 8.0, "brake_stop": None,
-             "paused": False, "min_main_prob": 0.0}
+             "paused": False, "min_main_prob": 0.0, "start_offset": {"tennis": 4, "soccer": 3.5, "mlb": 3, "nfl": 6, "cfb": 4.5}}
 DEFAULT_SETTINGS = {
     "version": SETTINGS_VERSION,
     "min_edge": 0.03,          # minimum edge after fees when a sharp sportsbook price backs the pick
@@ -110,7 +110,9 @@ DEFAULT_SETTINGS = {
     "weights": {},             # trust in the model vs market, per sport (tuned weekly)
     "horizon_hours": 24,       # fallback pick window
     "horizon": {"tennis": 24, "soccer": 72, "mlb": 30, "nfl": 96, "cfb": 96},  # pick early, when prices are softest
-    "start_offset": {"tennis": 3, "soccer": 2.5, "mlb": 3, "nfl": 4, "cfb": 4},  # hours from kickoff to Kalshi's end time
+    "start_offset": {"tennis": 4, "soccer": 3.5, "mlb": 3, "nfl": 6, "cfb": 4.5},  # fallback: hours from start to Kalshi's end time
+    "start_buffer_min": 10,    # stop picking a game this many minutes before it starts
+    "live_jump": 0.10,         # a price jump this big within an hour near game time means the game is probably live
     "sharp_weight": 0.7,       # how much to lean on sharp sportsbook prices when available
     "min_edge_no_sharp": 0.05, # stricter bar when no sharp price is available
     "watch_edge": 0.015,       # smaller edges go on the practice-only watchlist
@@ -577,7 +579,7 @@ def make_picks(engines, picks, s, research_cache, sharp, obs, learned):
                     continue
                 end = parse_time(ms[0].get("expected_expiration_time") or ms[0].get("occurrence_datetime"))
                 start = end - timedelta(hours=s["start_offset"].get(eng.key, 3)) if end else None
-                if not end or start < now or end > now + timedelta(hours=horizon + 4):
+                if not end or end < now or end > now + timedelta(hours=horizon + 4):
                     continue
                 try:
                     cand = eng.evaluate(series, event, ms, now.replace(tzinfo=None))
@@ -586,6 +588,11 @@ def make_picks(engines, picks, s, research_cache, sharp, obs, learned):
                     continue
                 if not cand or cand.league in s["disabled"]:
                     continue
+                exact = getattr(cand, "start_exact", None)  # real start time from the schedule, when known
+                if exact:
+                    start = exact.replace(tzinfo=timezone.utc) if exact.tzinfo is None else exact
+                if start < now + timedelta(minutes=s["start_buffer_min"]):
+                    continue  # already started (or about to): prices now reflect the live game
                 game = event.split("-", 1)[1]
                 cand.start, cand.end, cand.game = start, end, game
                 by_game[game] = (cand, series)
@@ -624,6 +631,10 @@ def make_picks(engines, picks, s, research_cache, sharp, obs, learned):
                     m = o.market
                     group = f"{eng.key}:{o.mtype}"
                     oid = m["ticker"] + ("" if o.yes else ":no")
+                    prev = obs.get(oid, {}).get("h", [])
+                    if prev and abs(mid - prev[-1][1]) >= s["live_jump"] and now > cand.end - timedelta(hours=8) and \
+                            prev[-1][0] >= (now - timedelta(minutes=90)).strftime("%Y-%m-%dT%H:%M"):
+                        continue  # price jumped fast close to game time: the game is probably already live
                     if 0.05 <= mid <= 0.95:
                         ob = learn.observe(obs, oid, group, cand.league, cand.sport, gseries, game,
                                            o.prob, mid, cand.start, now)

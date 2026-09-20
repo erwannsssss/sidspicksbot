@@ -289,6 +289,7 @@ class Engine:
             p = ph if home else 1 - ph
             outcomes.append(c.Outcome(mk, p, f"{mk.get('yes_sub_title')} to win", self.why(game, info, home, p)))
         cand = c.Candidate(event, self.sport, "MLB", f"{game['away']} at {game['home']}", outcomes)
+        cand.start_exact = _day(game["date"])  # first pitch, from the MLB schedule
         cand.sides = {mk["ticker"].split("-")[-1]: ("home" if tid == game["home_id"] else "away")
                       for mk, tid in zip(markets, ids)}
         lh, la = expected_runs(m, game, day, info["fiph"], info["fipa"])

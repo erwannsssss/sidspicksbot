@@ -422,6 +422,37 @@ class GoalDist:
         return f"Expected goals {self.lh:.2f} vs {self.la:.2f} ({self.lh + self.la:.2f} total)."
 
 
+FIXTURES = os.path.join(c.STATE_DIR, "soccer_fixtures.json")
+COUNTRY = {"USA": "USA", "MEX": "Mexico", "BRA": "Brazil", "ARG": "Argentina", "JPN": "Japan", "DNK": "Denmark",
+           "NOR": "Norway", "SWE": "Sweden", "POL": "Poland", "SWZ": "Switzerland"}
+
+
+def load_fixtures():
+    """Upcoming kickoff times (football-data lists them in UK time; converted to UTC)."""
+    cached = c.load_json(FIXTURES, {})
+    if cached.get("rows") and c.fresh(os.path.join(c.STATE_DIR, "soccer_fixtures_meta.json"), 6):
+        return cached["rows"]
+    rows = []
+    for url, code_col, home, away in (("https://www.football-data.co.uk/fixtures.csv", "Div", "HomeTeam", "AwayTeam"),
+                                      ("https://www.football-data.co.uk/new_league_fixtures.csv", "Country", "Home", "Away")):
+        try:
+            df = pd.read_csv(io.StringIO(c.get(url, timeout=60).content.decode("utf-8-sig", "ignore")))
+            for r in df.to_dict("records"):
+                try:
+                    t = pd.to_datetime(f"{r['Date']} {r['Time']}", dayfirst=True).tz_localize("Europe/London").tz_convert("UTC")
+                except Exception:
+                    continue
+                key = r[code_col] if code_col == "Div" else next((k for k, v in COUNTRY.items() if v == r[code_col]), None)
+                if key:
+                    rows.append({"lg": key, "home": r[home], "away": r[away], "t": t.isoformat()})
+        except Exception as e:
+            print(f"soccer: fixtures unavailable ({e})")
+    if rows:
+        c.save_json(FIXTURES, {"rows": rows})
+        c.mark_fresh(os.path.join(c.STATE_DIR, "soccer_fixtures_meta.json"))
+    return rows or cached.get("rows", [])
+
+
 # ---------------------------------------------------------------- live
 TEAMS_RE = re.compile(r"(?:wins|result of) the (.+?) vs\.? (.+?) (?:professional|soccer|UEFA|game|match)", re.I)
 
@@ -442,6 +473,7 @@ class Engine:
 
     def __init__(self, model, teams_by_league, euro_teams, info):
         self.model, self.teams, self.euro, self.info = model, teams_by_league, euro_teams, info
+        self.fixtures = load_fixtures()
 
     def evaluate(self, series, event, markets, day):
         if len(markets) != 3:
@@ -480,6 +512,13 @@ class Engine:
             if sub.lower() != "tie":
                 cand.sides[code] = "home" if c.match_name(sub, [names[0], names[1]]) == names[0] else "away"
         cand.dist = GoalDist(*self.model.goal_rates(h, a, lh, la))
+        # exact kickoff from the fixture list, so it never picks a game that has already started
+        for f in self.fixtures:
+            if f["lg"] == lh and f["home"] == h and f["away"] == a:
+                t = datetime.fromisoformat(f["t"]).replace(tzinfo=None)
+                if abs((t - day).days) <= 4:
+                    cand.start_exact = t
+                    break
         return cand
 
     def why(self, info, h, a, side, p):
