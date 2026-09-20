@@ -1,6 +1,6 @@
 {
- "updated": "2026-09-20T00:32:33.399717+00:00",
- "status_note": "Last run found 0 new pick(s) and graded 0.",
+ "updated": "2026-09-20T01:22:57.803210+00:00",
+ "status_note": "Last run found 1 new pick(s) and graded 2.",
  "bankroll": 112.26,
  "protection": {
   "bankroll": 112.26,
@@ -91,7 +91,49 @@
   "max_research": 6,
   "skip_expert_disagree": true
  },
- "open": [],
+ "open": [
+  {
+   "id": "KXMLBSPREAD-26SEP201610NYYAZ-NYY2",
+   "ticker": "KXMLBSPREAD-26SEP201610NYYAZ-NYY2",
+   "side": "yes",
+   "event": "KXMLBSPREAD-26SEP201610NYYAZ",
+   "game": "26SEP201610NYYAZ",
+   "sport": "Baseball",
+   "model_key": "mlb",
+   "mtype": "spread",
+   "line": 1.5,
+   "tour": "MLB",
+   "tournament": "New York Yankees at Arizona Diamondbacks",
+   "matchup": "New York Yankees at Arizona Diamondbacks",
+   "surface": "",
+   "pick": "New York Y wins by over 1.5 runs",
+   "opponent": "",
+   "market": "New York Y wins by over 1.5 runs",
+   "price": 0.39,
+   "model_prob": 0.442,
+   "raw_prob": 0.481,
+   "edge": 0.035,
+   "tier": "C",
+   "units": 0.5,
+   "made": "2026-09-20T01:18:52.415808+00:00",
+   "expected_end": "2026-09-20T23:10:00+00:00",
+   "start_est": "2026-09-20T20:10:00+00:00",
+   "status": "pending",
+   "latest_price": 0.39,
+   "close_price": null,
+   "pnl": null,
+   "why": "Projected runs 3.7 (home) vs 5.2 (8.9 total). Park factor 1.03. Model gives \"New York Y wins by over 1.5 runs\" 48%. Blended with the market that's 41% vs a 39% price. Sharp sportsbook price (Pinnacle) says 46%.",
+   "trend": 0.01,
+   "new_market": false,
+   "trust": 0.25,
+   "sharp_prob": 0.4555,
+   "sharp_source": "Pinnacle",
+   "price_gap": 0.049,
+   "research": "",
+   "sources": [],
+   "expert_lean": "none"
+  }
+ ],
  "history": [
   {
    "id": "KXWTAMATCH-26SEP19QUEBLI-QUE",
@@ -279,8 +321,13 @@
  },
  "learning": {
   "groups": {
+   "tennis:winner": {
+    "finished": 4,
+    "trust": 0.5,
+    "confidence_fix": false
+   },
    "soccer:winner": {
-    "finished": 3,
+    "finished": 6,
     "trust": 0.25,
     "confidence_fix": false
    },
@@ -300,7 +347,7 @@
     "confidence_fix": false
    },
    "soccer:btts": {
-    "finished": 2,
+    "finished": 4,
     "trust": 0.25,
     "confidence_fix": false
    },
@@ -315,7 +362,7 @@
     "confidence_fix": false
    },
    "soccer:spread": {
-    "finished": 8,
+    "finished": 14,
     "trust": 0.25,
     "confidence_fix": false
    },
@@ -325,78 +372,126 @@
     "confidence_fix": false
    },
    "soccer:total": {
-    "finished": 12,
+    "finished": 24,
     "trust": 0.25,
     "confidence_fix": false
    },
    "mlb:spread_f5": {
-    "finished": 8,
+    "finished": 48,
     "trust": 0.25,
     "confidence_fix": false
    },
    "mlb:total_f5": {
-    "finished": 14,
+    "finished": 76,
     "trust": 0.25,
     "confidence_fix": false
    },
    "mlb:total": {
-    "finished": 20,
+    "finished": 48,
     "trust": 0.25,
     "confidence_fix": false
    },
-   "cfb:team_total": {
-    "finished": 56,
-    "trust": 0.25,
+   "mlb:winner": {
+    "finished": 2,
+    "trust": 0.5,
     "confidence_fix": false
    },
-   "cfb:period_winner_1q": {
+   "mlb:spread": {
     "finished": 12,
     "trust": 0.25,
     "confidence_fix": false
    },
-   "cfb:spread_1q": {
-    "finished": 60,
+   "mlb:team_total": {
+    "finished": 28,
     "trust": 0.25,
+    "confidence_fix": false
+   },
+   "mlb:prop_ks": {
+    "finished": 28,
+    "trust": 0.25,
+    "confidence_fix": false
+   },
+   "mlb:prop_hr": {
+    "finished": 34,
+    "trust": 0.25,
+    "confidence_fix": false
+   },
+   "cfb:period_winner_1q": {
+    "finished": 52,
+    "trust": 0.25,
+    "confidence_fix": false
+   },
+   "cfb:spread_1q": {
+    "finished": 274,
+    "trust": 0.6,
     "confidence_fix": false
    },
    "cfb:total_1q": {
-    "finished": 60,
+    "finished": 266,
     "trust": 0.25,
     "confidence_fix": false
    },
+   "cfb:team_total": {
+    "finished": 164,
+    "trust": 1.0,
+    "confidence_fix": false
+   },
    "cfb:spread_1h": {
-    "finished": 42,
+    "finished": 564,
     "trust": 0.25,
     "confidence_fix": false
    },
    "cfb:total_1h": {
-    "finished": 24,
+    "finished": 344,
+    "trust": 0.25,
+    "confidence_fix": false
+   },
+   "cfb:period_winner_2q": {
+    "finished": 28,
+    "trust": 0.25,
+    "confidence_fix": false
+   },
+   "cfb:spread_2q": {
+    "finished": 162,
+    "trust": 0.8,
+    "confidence_fix": false
+   },
+   "cfb:total_2q": {
+    "finished": 144,
     "trust": 0.25,
     "confidence_fix": false
    }
   },
   "price_trend": {
    "flat": {
-    "markets": 42,
-    "hit_vs_price": -0.0
+    "markets": 1280,
+    "hit_vs_price": 0.0
+   },
+   "rising": {
+    "markets": 37,
+    "hit_vs_price": -0.004
+   },
+   "falling": {
+    "markets": 36,
+    "hit_vs_price": -0.003
    }
   }
  },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "tracker": {
-  "tracked": 3296,
+  "tracked": 3559,
   "series": 3827,
   "movers": []
  },
  "models": {
   "tennis": {
-   "matches": 19450,
-   "training_rows": 13309,
+   "matches": 19452,
+   "training_rows": 13311,
    "holdout": {
     "from": "2026-08-15",
     "matches": 1997,
-    "elo_log_loss": 0.6591,
-    "model_log_loss": 0.6514,
+    "elo_log_loss": 0.6593,
+    "model_log_loss": 0.6515,
     "elo_accuracy": 0.62,
     "model_accuracy": 0.627
    },
@@ -406,10 +501,10 @@
     "dominance": 0.0,
     "rank": 0.0,
     "h2h": 0.429,
-    "form": -1.097,
-    "fatigue_games": -0.205,
+    "form": -1.101,
+    "fatigue_games": -0.204,
     "fatigue_matches": 0.047,
-    "rest": 0.016,
+    "rest": 0.017,
     "travel": 0.132,
     "altitude": 0.0,
     "best_of_5": 0.44
@@ -490,31 +585,31 @@
    "holdout": {
     "matches": 650,
     "rating_log_loss": 0.6281,
-    "model_log_loss": 0.6225,
+    "model_log_loss": 0.625,
     "rating_accuracy": 0.657,
-    "model_accuracy": 0.655
+    "model_accuracy": 0.648
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6012,
-    "model_log_loss": 0.6225,
+    "model_log_loss": 0.625,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 650
    },
    "backtest": {
-    "bets": 15,
-    "wins": 4,
-    "units": -10.9,
-    "roi": -0.383
+    "bets": 16,
+    "wins": 5,
+    "units": -9.2,
+    "roi": -0.316
    },
    "weights": {
-    "home_field": 0.257,
-    "rating": 1.529,
-    "rest": 0.231,
-    "point_diff_form": 0.225,
-    "qb_change": 0.334,
-    "epa": 0.163
+    "home_field": 0.254,
+    "rating": 1.528,
+    "rest": 0.235,
+    "point_diff_form": 0.228,
+    "qb_change": 0.278,
+    "epa": 0.171
    },
    "matches": 4380,
    "totals": {
@@ -599,15 +694,15 @@
    "clv_picks": 0
   },
   "watch": {
-   "picks": 5,
+   "picks": 7,
    "wins": 2,
-   "losses": 3,
-   "units": -0.48,
-   "staked": 2.5,
-   "roi": -0.192,
-   "beat_price": 0.4,
-   "clv": 0.0,
-   "clv_picks": 5
+   "losses": 5,
+   "units": -1.53,
+   "staked": 3.5,
+   "roi": -0.437,
+   "beat_price": 0.429,
+   "clv": -0.0029,
+   "clv_picks": 7
   }
  },
  "by_expert_lean": {
@@ -621,6 +716,17 @@
    "beat_price": 0.333,
    "clv": 0.0,
    "clv_picks": 2
+  },
+  "none": {
+   "picks": 0,
+   "wins": 0,
+   "losses": 0,
+   "units": 0,
+   "staked": 0,
+   "roi": 0.0,
+   "beat_price": null,
+   "clv": null,
+   "clv_picks": 0
   }
  },
  "by_tier": {
@@ -646,16 +752,27 @@
    "clv": 0.0,
    "clv_picks": 2
   },
+  "C": {
+   "picks": 0,
+   "wins": 0,
+   "losses": 0,
+   "units": 0,
+   "staked": 0,
+   "roi": 0.0,
+   "beat_price": null,
+   "clv": null,
+   "clv_picks": 0
+  },
   "W": {
-   "picks": 5,
+   "picks": 7,
    "wins": 2,
-   "losses": 3,
-   "units": -0.48,
-   "staked": 2.5,
-   "roi": -0.192,
-   "beat_price": 0.4,
-   "clv": 0.0,
-   "clv_picks": 5
+   "losses": 5,
+   "units": -1.53,
+   "staked": 3.5,
+   "roi": -0.437,
+   "beat_price": 0.429,
+   "clv": -0.0029,
+   "clv_picks": 7
   }
  },
  "watch_open": [
@@ -773,11 +890,11 @@
    "made": "2026-09-19T16:08:49.619994+00:00",
    "expected_end": "2026-09-20T15:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.465,
+   "latest_price": 0.47,
    "pnl": null,
    "why": "Ratings 1620 (Getafe, home) vs 1452 (Malaga). Share of chances lately (xG or shots on target) 36% vs 39%. Goal difference last 6: -4 vs -8. Last played Sep 17 vs Sep 17. Model gives the home 60%. Blended with the market that's 50% vs a 48% price. Sharp sportsbook price (Pinnacle) says 47%.",
    "start_est": "2026-09-20T12:30:00+00:00",
-   "close_price": 0.465,
+   "close_price": 0.47,
    "sharp_prob": 0.4674,
    "sharp_source": "Pinnacle",
    "research": "",
@@ -875,38 +992,6 @@
    "start_est": "2026-09-20T16:00:00+00:00",
    "close_price": 0.215,
    "sharp_prob": null,
-   "research": "",
-   "sources": [],
-   "expert_lean": "none"
-  },
-  {
-   "id": "KXWTAMATCH-26SEP19STEJOV-STE",
-   "event": "KXWTAMATCH-26SEP19STEJOV",
-   "sport": "Tennis",
-   "model_key": "tennis",
-   "tour": "WTA",
-   "tournament": "2026 WTA Guadalajara",
-   "matchup": "2026 WTA Guadalajara",
-   "surface": "hard",
-   "pick": "Peyton Stearns",
-   "opponent": "Iva Jovic",
-   "market": "Peyton Stearns to win",
-   "price": 0.25,
-   "model_prob": 0.291,
-   "raw_prob": 0.335,
-   "edge": 0.028,
-   "tier": "W",
-   "units": 0.5,
-   "made": "2026-09-19T16:08:49.619994+00:00",
-   "expected_end": "2026-09-20T02:00:00+00:00",
-   "status": "pending",
-   "latest_price": 0.255,
-   "pnl": null,
-   "why": "Elo 1676 vs 1853 on hard. Won 50% vs 50% of games lately. Form 6-4 vs 7-3. Games played in last 3 days: 66 vs 66. Venue altitude 1,546 m. Model 34%, blended with the market 29%, price 25%. Sharp sportsbook price (Pinnacle) says 26%.",
-   "start_est": "2026-09-19T23:00:00+00:00",
-   "close_price": 0.255,
-   "sharp_prob": 0.2645,
-   "sharp_source": "Pinnacle",
    "research": "",
    "sources": [],
    "expert_lean": "none"
@@ -1038,38 +1123,6 @@
    "expert_lean": "none"
   },
   {
-   "id": "KXLIGAMXGAME-26SEP19ATLPUM-PUM",
-   "event": "KXLIGAMXGAME-26SEP19ATLPUM",
-   "sport": "Soccer",
-   "model_key": "soccer",
-   "tour": "Liga MX",
-   "tournament": "Atlas vs Pumas UNAM",
-   "matchup": "Atlas vs Pumas UNAM",
-   "surface": "",
-   "pick": "Pumas UNAM to win",
-   "opponent": "",
-   "market": "Pumas UNAM to win",
-   "price": 0.32,
-   "model_prob": 0.353,
-   "raw_prob": 0.387,
-   "edge": 0.018,
-   "tier": "W",
-   "units": 0.5,
-   "made": "2026-09-19T16:08:49.619994+00:00",
-   "expected_end": "2026-09-20T02:00:00+00:00",
-   "status": "pending",
-   "latest_price": 0.295,
-   "pnl": null,
-   "why": "Ratings 1437 (Atlas, home) vs 1551 (UNAM Pumas). Share of chances lately (xG or shots on target) 50% vs 50%. Goal difference last 6: -4 vs +1. Last played Sep 13 vs Sep 14. Model gives the away 39%. Blended with the market that's 34% vs a 32% price. Sharp sportsbook price (Pinnacle) says 31%.",
-   "start_est": "2026-09-19T23:30:00+00:00",
-   "close_price": 0.295,
-   "sharp_prob": 0.3053,
-   "sharp_source": "Pinnacle",
-   "research": "",
-   "sources": [],
-   "expert_lean": "none"
-  },
-  {
    "id": "KXLALIGAGAME-26SEP20DEPRBB-RBB",
    "event": "KXLALIGAGAME-26SEP20DEPRBB",
    "sport": "Soccer",
@@ -1090,11 +1143,11 @@
    "made": "2026-09-19T16:08:49.619994+00:00",
    "expected_end": "2026-09-20T19:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.48,
+   "latest_price": 0.475,
    "pnl": null,
    "why": "Ratings 1527 (La Coruna, home) vs 1791 (Betis). Share of chances lately (xG or shots on target) 44% vs 47%. Goal difference last 6: +2 vs +2. Last played Sep 16 vs Sep 17. Model gives the away 55%. Blended with the market that's 50% vs a 48% price. Sharp sportsbook price (Pinnacle) says 47%.",
    "start_est": "2026-09-20T17:00:00+00:00",
-   "close_price": 0.48,
+   "close_price": 0.475,
    "sharp_prob": 0.4698,
    "sharp_source": "Pinnacle",
    "research": "",
@@ -1198,8 +1251,8 @@
    "expected_end": "2026-09-20T06:00:00+00:00",
    "start_est": "2026-09-20T02:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.65,
-   "close_price": 0.65,
+   "latest_price": 0.66,
+   "close_price": 0.66,
    "pnl": null,
    "why": "Projected score margin -22.0 (home) and total 54.7. Model gives \"No: Oregon St. wins by over 23.5 points\" 100%. Blended with the market that's 74% vs a 66% price.",
    "trend": -0.01,
@@ -1276,8 +1329,8 @@
    "expected_end": "2026-09-20T20:00:00+00:00",
    "start_est": "2026-09-20T16:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.655,
-   "close_price": 0.655,
+   "latest_price": 0.66,
+   "close_price": 0.66,
    "pnl": null,
    "why": "Rashod Bateman: 11 a game lately (last 12 games). Model gives \"Rashod Bateman: under 50\" 99%. Blended with the market that's 75% vs a 67% price.",
    "trend": -0.005,
@@ -1315,8 +1368,8 @@
    "expected_end": "2026-09-20T05:30:00+00:00",
    "start_est": "2026-09-20T01:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.33,
-   "close_price": 0.33,
+   "latest_price": 0.26,
+   "close_price": 0.26,
    "pnl": null,
    "why": "Projected score margin +10.3 (home) and total 25.5. Model gives \"No: Arizona wins 1H by over 13.5 points\" 61%. Blended with the market that's 36% vs a 29% price. Price up 2\u00a2 in the last 12 hours.",
    "trend": 0.02,
@@ -1354,8 +1407,8 @@
    "expected_end": "2026-09-20T20:00:00+00:00",
    "start_est": "2026-09-20T16:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.41,
-   "close_price": 0.41,
+   "latest_price": 0.415,
+   "close_price": 0.415,
    "pnl": null,
    "why": "Kayshon Boutte: 1.77 a game lately (last 12 games). Model gives \"Kayshon Boutte: under 3\" 74%. Blended with the market that's 50% vs a 42% price.",
    "trend": 0.0,
@@ -1783,8 +1836,8 @@
    "expected_end": "2026-09-20T05:30:00+00:00",
    "start_est": "2026-09-20T01:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.425,
-   "close_price": 0.425,
+   "latest_price": 0.435,
+   "close_price": 0.435,
    "pnl": null,
    "why": "Projected score margin -20.1 (home) and total 55.2. Model gives \"Sacramento St. over 13.5 points scored\" 63%. Blended with the market that's 47% vs a 42% price.",
    "trend": 0.0,
@@ -1822,8 +1875,8 @@
    "expected_end": "2026-09-20T15:30:00+00:00",
    "start_est": "2026-09-20T13:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.255,
-   "close_price": 0.255,
+   "latest_price": 0.26,
+   "close_price": 0.26,
    "pnl": null,
    "why": "Expected goals 1.42 vs 2.79 (4.21 total). Model gives \"Eindhoven wins by more than 1.5 goals\" 46%. Blended with the market that's 31% vs a 26% price.",
    "trend": -0.005,
@@ -1861,8 +1914,8 @@
    "expected_end": "2026-09-20T18:30:00+00:00",
    "start_est": "2026-09-20T16:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.385,
-   "close_price": 0.385,
+   "latest_price": 0.38,
+   "close_price": 0.38,
    "pnl": null,
    "why": "Expected goals 0.91 vs 1.53 (2.44 total). Model gives \"Under 2.5 goals scored\" 56%. Blended with the market that's 43% vs a 39% price.",
    "trend": 0.0,
@@ -1914,6 +1967,72 @@
   }
  ],
  "watch_history": [
+  {
+   "id": "KXLIGAMXGAME-26SEP19ATLPUM-PUM",
+   "event": "KXLIGAMXGAME-26SEP19ATLPUM",
+   "sport": "Soccer",
+   "model_key": "soccer",
+   "tour": "Liga MX",
+   "tournament": "Atlas vs Pumas UNAM",
+   "matchup": "Atlas vs Pumas UNAM",
+   "surface": "",
+   "pick": "Pumas UNAM to win",
+   "opponent": "",
+   "market": "Pumas UNAM to win",
+   "price": 0.32,
+   "model_prob": 0.353,
+   "raw_prob": 0.387,
+   "edge": 0.018,
+   "tier": "W",
+   "units": 0.5,
+   "made": "2026-09-19T16:08:49.619994+00:00",
+   "expected_end": "2026-09-20T02:00:00+00:00",
+   "status": "loss",
+   "latest_price": 0.295,
+   "pnl": -0.52,
+   "why": "Ratings 1437 (Atlas, home) vs 1551 (UNAM Pumas). Share of chances lately (xG or shots on target) 50% vs 50%. Goal difference last 6: -4 vs +1. Last played Sep 13 vs Sep 14. Model gives the away 39%. Blended with the market that's 34% vs a 32% price. Sharp sportsbook price (Pinnacle) says 31%.",
+   "start_est": "2026-09-19T23:30:00+00:00",
+   "close_price": 0.295,
+   "sharp_prob": 0.3053,
+   "sharp_source": "Pinnacle",
+   "research": "",
+   "sources": [],
+   "expert_lean": "none",
+   "graded": "2026-09-20T01:18:50.165922+00:00"
+  },
+  {
+   "id": "KXWTAMATCH-26SEP19STEJOV-STE",
+   "event": "KXWTAMATCH-26SEP19STEJOV",
+   "sport": "Tennis",
+   "model_key": "tennis",
+   "tour": "WTA",
+   "tournament": "2026 WTA Guadalajara",
+   "matchup": "2026 WTA Guadalajara",
+   "surface": "hard",
+   "pick": "Peyton Stearns",
+   "opponent": "Iva Jovic",
+   "market": "Peyton Stearns to win",
+   "price": 0.25,
+   "model_prob": 0.291,
+   "raw_prob": 0.335,
+   "edge": 0.028,
+   "tier": "W",
+   "units": 0.5,
+   "made": "2026-09-19T16:08:49.619994+00:00",
+   "expected_end": "2026-09-20T02:00:00+00:00",
+   "status": "loss",
+   "latest_price": 0.255,
+   "pnl": -0.53,
+   "why": "Elo 1676 vs 1853 on hard. Won 50% vs 50% of games lately. Form 6-4 vs 7-3. Games played in last 3 days: 66 vs 66. Venue altitude 1,546 m. Model 34%, blended with the market 29%, price 25%. Sharp sportsbook price (Pinnacle) says 26%.",
+   "start_est": "2026-09-19T23:00:00+00:00",
+   "close_price": 0.255,
+   "sharp_prob": 0.2645,
+   "sharp_source": "Pinnacle",
+   "research": "",
+   "sources": [],
+   "expert_lean": "none",
+   "graded": "2026-09-20T01:18:49.767798+00:00"
+  },
   {
    "id": "KXLIGUE1GAME-26SEP19ANGEST-ANG",
    "event": "KXLIGUE1GAME-26SEP19ANGEST",
@@ -2092,6 +2211,17 @@
    "clv": -0.005,
    "clv_picks": 1
   },
+  "MLB": {
+   "picks": 0,
+   "wins": 0,
+   "losses": 0,
+   "units": 0,
+   "staked": 0,
+   "roi": 0.0,
+   "beat_price": null,
+   "clv": null,
+   "clv_picks": 0
+  },
   "WTA": {
    "picks": 1,
    "wins": 1,
@@ -2105,6 +2235,17 @@
   }
  },
  "by_sport": {
+  "Baseball": {
+   "picks": 0,
+   "wins": 0,
+   "losses": 0,
+   "units": 0,
+   "staked": 0,
+   "roi": 0.0,
+   "beat_price": null,
+   "clv": null,
+   "clv_picks": 0
+  },
   "Tennis": {
    "picks": 3,
    "wins": 3,
@@ -2146,5 +2287,14 @@
   }
  ],
  "reports": [],
- "changelog": []
+ "changelog": [
+  {
+   "date": "2026-09-20",
+   "change": "cfb:team_total: trust in the model vs the market moved from 25% to 100% after 164 finished markets"
+  },
+  {
+   "date": "2026-09-20",
+   "change": "cfb:spread_1q: trust in the model vs the market moved from 25% to 60% after 274 finished markets"
+  }
+ ]
 }
