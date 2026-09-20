@@ -1,5 +1,5 @@
 {
- "version": 7,
+ "version": 8,
  "min_edge": 0.03,
  "kelly_fraction": 0.125,
  "max_units": 8.0,
@@ -62,12 +62,14 @@
   "cfb": 96
  },
  "start_offset": {
-  "tennis": 3,
-  "soccer": 2.5,
+  "tennis": 4,
+  "soccer": 3.5,
   "mlb": 3,
-  "nfl": 4,
-  "cfb": 4
+  "nfl": 6,
+  "cfb": 4.5
  },
+ "start_buffer_min": 10,
+ "live_jump": 0.1,
  "sharp_weight": 0.7,
  "min_edge_no_sharp": 0.05,
  "watch_edge": 0.015,

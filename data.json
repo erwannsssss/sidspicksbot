@@ -1,6 +1,6 @@
 {
- "updated": "2026-09-20T04:25:04.936627+00:00",
- "status_note": "Last run found 0 new pick(s) and graded 5.",
+ "updated": "2026-09-20T05:20:19.066618+00:00",
+ "status_note": "Last run found 1 new pick(s) and graded 1.",
  "bankroll": 112.26,
  "protection": {
   "bankroll": 112.26,
@@ -9,7 +9,7 @@
   "paused": false
  },
  "settings": {
-  "version": 7,
+  "version": 8,
   "min_edge": 0.03,
   "kelly_fraction": 0.125,
   "max_units": 8.0,
@@ -72,12 +72,14 @@
    "cfb": 96
   },
   "start_offset": {
-   "tennis": 3,
-   "soccer": 2.5,
+   "tennis": 4,
+   "soccer": 3.5,
    "mlb": 3,
-   "nfl": 4,
-   "cfb": 4
+   "nfl": 6,
+   "cfb": 4.5
   },
+  "start_buffer_min": 10,
+  "live_jump": 0.1,
   "sharp_weight": 0.7,
   "min_edge_no_sharp": 0.05,
   "watch_edge": 0.015,
@@ -199,11 +201,50 @@
    "expected_end": "2026-09-21T02:20:00+00:00",
    "start_est": "2026-09-20T23:20:00+00:00",
    "status": "pending",
-   "latest_price": 0.34,
-   "close_price": 0.34,
+   "latest_price": 0.335,
+   "close_price": 0.335,
    "pnl": null,
    "why": "Projected runs 4.4 (home) vs 7.0 (11.4 total). Park factor 1.00. Forecast 81F, wind 5 mph. Model gives \"Over 9.5 runs scored\" 59%. Blended with the market that's 46% vs a 34% price.",
    "trend": 0.01,
+   "new_market": false,
+   "trust": 0.5,
+   "sharp_prob": null,
+   "research": "",
+   "sources": [],
+   "expert_lean": "none"
+  },
+  {
+   "id": "KXMLBTOTAL-26SEP201510SEACOL-15",
+   "ticker": "KXMLBTOTAL-26SEP201510SEACOL-15",
+   "side": "yes",
+   "event": "KXMLBTOTAL-26SEP201510SEACOL",
+   "game": "26SEP201510SEACOL",
+   "sport": "Baseball",
+   "model_key": "mlb",
+   "mtype": "total",
+   "line": 14.5,
+   "tour": "MLB",
+   "tournament": "Seattle Mariners at Colorado Rockies",
+   "matchup": "Seattle Mariners at Colorado Rockies",
+   "surface": "",
+   "pick": "Over 14.5 runs scored",
+   "opponent": "",
+   "market": "Over 14.5 runs scored",
+   "price": 0.25,
+   "model_prob": 0.358,
+   "raw_prob": 0.477,
+   "edge": 0.095,
+   "tier": "A",
+   "units": 1.5,
+   "made": "2026-09-20T05:18:02.788509+00:00",
+   "expected_end": "2026-09-20T22:10:00+00:00",
+   "start_est": "2026-09-20T19:10:00+00:00",
+   "status": "pending",
+   "latest_price": 0.25,
+   "close_price": null,
+   "pnl": null,
+   "why": "Projected runs 6.4 (home) vs 8.6 (15.0 total). Park factor 1.28. Forecast 71F, wind 9 mph. Model gives \"Over 14.5 runs scored\" 48%. Blended with the market that's 36% vs a 25% price.",
+   "trend": 0.0,
    "new_market": false,
    "trust": 0.5,
    "sharp_prob": null,
@@ -502,67 +543,67 @@
     "confidence_fix": false
    },
    "soccer:winner": {
-    "finished": 57,
+    "finished": 63,
     "trust": 0.25,
     "confidence_fix": false
    },
    "soccer:btts_1h": {
-    "finished": 36,
+    "finished": 38,
     "trust": 0.25,
     "confidence_fix": false
    },
    "soccer:spread_1h": {
-    "finished": 68,
+    "finished": 72,
     "trust": 0.25,
     "confidence_fix": false
    },
    "soccer:total_1h": {
-    "finished": 108,
+    "finished": 114,
     "trust": 0.25,
     "confidence_fix": false
    },
    "soccer:btts_2h": {
-    "finished": 28,
+    "finished": 32,
     "trust": 0.25,
     "confidence_fix": false
    },
    "soccer:spread_2h": {
-    "finished": 56,
+    "finished": 64,
     "trust": 0.25,
     "confidence_fix": false
    },
    "soccer:total_2h": {
-    "finished": 84,
+    "finished": 96,
     "trust": 0.25,
     "confidence_fix": false
    },
    "soccer:btts": {
-    "finished": 40,
+    "finished": 42,
     "trust": 0.25,
     "confidence_fix": false
    },
    "soccer:first_to_score": {
-    "finished": 86,
+    "finished": 90,
     "trust": 0.25,
     "confidence_fix": false
    },
    "soccer:correct_score": {
-    "finished": 504,
+    "finished": 526,
     "trust": 1.0,
     "confidence_fix": false
    },
    "soccer:spread": {
-    "finished": 122,
+    "finished": 134,
     "trust": 0.25,
     "confidence_fix": false
    },
    "soccer:team_total": {
-    "finished": 210,
+    "finished": 228,
     "trust": 0.25,
     "confidence_fix": false
    },
    "soccer:total": {
-    "finished": 208,
+    "finished": 222,
     "trust": 0.25,
     "confidence_fix": false
    },
@@ -577,47 +618,57 @@
     "confidence_fix": false
    },
    "mlb:total": {
-    "finished": 212,
-    "trust": 0.6,
+    "finished": 218,
+    "trust": 0.5,
     "confidence_fix": false
    },
    "mlb:winner": {
-    "finished": 18,
+    "finished": 20,
     "trust": 0.5,
     "confidence_fix": false
    },
    "mlb:spread": {
-    "finished": 108,
+    "finished": 120,
     "trust": 0.25,
     "confidence_fix": false
    },
    "mlb:team_total": {
-    "finished": 250,
-    "trust": 0.25,
+    "finished": 278,
+    "trust": 0.9,
     "confidence_fix": false
    },
    "mlb:prop_ks": {
-    "finished": 230,
-    "trust": 0.6,
+    "finished": 258,
+    "trust": 0.5,
     "confidence_fix": false
    },
+   "mlb:prop_hit": {
+    "finished": 870,
+    "trust": 0.25,
+    "confidence_fix": true
+   },
    "mlb:prop_hr": {
-    "finished": 310,
+    "finished": 346,
     "trust": 0.25,
     "confidence_fix": false
    },
    "mlb:prop_tb": {
-    "finished": 1228,
+    "finished": 1358,
     "trust": 0.25,
     "confidence_fix": true
    },
    "mlb:prop_hrr": {
-    "finished": 1564,
+    "finished": 1740,
     "trust": 0.25,
     "confidence_fix": true
    },
-   "mlb:prop_hit": {
-    "finished": 708,
+   "cfb:spread_1h": {
+    "finished": 1134,
+    "trust": 0.25,
+    "confidence_fix": false
+   },
+   "cfb:total_1h": {
+    "finished": 696,
     "trust": 0.25,
     "confidence_fix": true
    },
@@ -636,54 +687,59 @@
     "trust": 0.5,
     "confidence_fix": false
    },
-   "cfb:team_total": {
-    "finished": 1010,
-    "trust": 0.3,
-    "confidence_fix": true
-   },
-   "cfb:spread_1h": {
-    "finished": 966,
-    "trust": 0.4,
-    "confidence_fix": false
-   },
-   "cfb:total_1h": {
-    "finished": 600,
-    "trust": 0.25,
-    "confidence_fix": true
-   },
    "cfb:period_winner_2q": {
-    "finished": 56,
+    "finished": 60,
     "trust": 0.25,
     "confidence_fix": false
    },
    "cfb:spread_2q": {
-    "finished": 332,
-    "trust": 0.5,
-    "confidence_fix": false
+    "finished": 352,
+    "trust": 0.6,
+    "confidence_fix": true
    },
    "cfb:total_2q": {
-    "finished": 284,
-    "trust": 0.8,
+    "finished": 306,
+    "trust": 0.7,
+    "confidence_fix": false
+   },
+   "cfb:team_total": {
+    "finished": 1068,
+    "trust": 0.3,
+    "confidence_fix": false
+   },
+   "cfb:period_winner_3q": {
+    "finished": 56,
+    "trust": 0.25,
+    "confidence_fix": false
+   },
+   "cfb:spread_3q": {
+    "finished": 298,
+    "trust": 0.25,
+    "confidence_fix": false
+   },
+   "cfb:total_3q": {
+    "finished": 288,
+    "trust": 0.9,
+    "confidence_fix": false
+   },
+   "cfb:winner": {
+    "finished": 56,
+    "trust": 0.25,
+    "confidence_fix": false
+   },
+   "cfb:spread": {
+    "finished": 1576,
+    "trust": 0.25,
+    "confidence_fix": true
+   },
+   "cfb:total": {
+    "finished": 1236,
+    "trust": 0.5,
     "confidence_fix": false
    },
    "cfb:period_winner_2h": {
     "finished": 52,
     "trust": 0.25,
-    "confidence_fix": false
-   },
-   "cfb:period_winner_3q": {
-    "finished": 52,
-    "trust": 0.25,
-    "confidence_fix": false
-   },
-   "cfb:spread_3q": {
-    "finished": 274,
-    "trust": 0.25,
-    "confidence_fix": false
-   },
-   "cfb:total_3q": {
-    "finished": 268,
-    "trust": 1.0,
     "confidence_fix": false
    },
    "cfb:period_winner_4q": {
@@ -700,41 +756,26 @@
     "finished": 280,
     "trust": 0.25,
     "confidence_fix": false
-   },
-   "cfb:spread": {
-    "finished": 1446,
-    "trust": 0.25,
-    "confidence_fix": true
-   },
-   "cfb:total": {
-    "finished": 1126,
-    "trust": 0.6,
-    "confidence_fix": false
-   },
-   "cfb:winner": {
-    "finished": 46,
-    "trust": 0.25,
-    "confidence_fix": false
    }
   },
   "price_trend": {
    "flat": {
-    "markets": 9894,
+    "markets": 11106,
     "hit_vs_price": -0.0
    },
    "falling": {
-    "markets": 407,
-    "hit_vs_price": 0.021
+    "markets": 447,
+    "hit_vs_price": 0.015
    },
    "rising": {
-    "markets": 413,
+    "markets": 451,
     "hit_vs_price": -0.014
    }
   }
  },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "tracker": {
-  "tracked": 9850,
+  "tracked": 10305,
   "series": 3827,
   "movers": []
  },
@@ -840,31 +881,31 @@
    "holdout": {
     "matches": 650,
     "rating_log_loss": 0.6281,
-    "model_log_loss": 0.6202,
+    "model_log_loss": 0.6236,
     "rating_accuracy": 0.657,
-    "model_accuracy": 0.654
+    "model_accuracy": 0.652
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6012,
-    "model_log_loss": 0.6202,
+    "model_log_loss": 0.6236,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 650
    },
    "backtest": {
-    "bets": 15,
-    "wins": 4,
-    "units": -11.5,
-    "roi": -0.419
+    "bets": 18,
+    "wins": 6,
+    "units": -8.0,
+    "roi": -0.247
    },
    "weights": {
-    "home_field": 0.256,
-    "rating": 1.522,
-    "rest": 0.232,
-    "point_diff_form": 0.217,
-    "qb_change": 0.346,
-    "epa": 0.17
+    "home_field": 0.255,
+    "rating": 1.536,
+    "rest": 0.228,
+    "point_diff_form": 0.228,
+    "qb_change": 0.296,
+    "epa": 0.165
    },
    "matches": 4380,
    "totals": {
@@ -949,15 +990,15 @@
    "clv_picks": 0
   },
   "watch": {
-   "picks": 14,
-   "wins": 5,
+   "picks": 15,
+   "wins": 6,
    "losses": 9,
-   "units": -1.21,
-   "staked": 7.0,
-   "roi": -0.173,
-   "beat_price": 0.214,
+   "units": -0.88,
+   "staked": 7.5,
+   "roi": -0.117,
+   "beat_price": 0.2,
    "clv": -0.0058,
-   "clv_picks": 12
+   "clv_picks": 13
   }
  },
  "by_expert_lean": {
@@ -1019,15 +1060,15 @@
    "clv_picks": 0
   },
   "W": {
-   "picks": 14,
-   "wins": 5,
+   "picks": 15,
+   "wins": 6,
    "losses": 9,
-   "units": -1.21,
-   "staked": 7.0,
-   "roi": -0.173,
-   "beat_price": 0.214,
+   "units": -0.88,
+   "staked": 7.5,
+   "roi": -0.117,
+   "beat_price": 0.2,
    "clv": -0.0058,
-   "clv_picks": 12
+   "clv_picks": 13
   }
  },
  "watch_open": [
@@ -1658,45 +1699,6 @@
    "expert_lean": "none"
   },
   {
-   "id": "KXMLBHRR-26SEP192040MIASD-SDSTAYLOR-1",
-   "ticker": "KXMLBHRR-26SEP192040MIASD-SDSTAYLOR-1",
-   "side": "yes",
-   "event": "KXMLBHRR-26SEP192040MIASD",
-   "game": "26SEP192040MIASD",
-   "sport": "Baseball",
-   "model_key": "mlb",
-   "mtype": "prop_hrr",
-   "line": 0.5,
-   "tour": "MLB",
-   "tournament": "Miami Marlins at San Diego Padres",
-   "matchup": "Miami Marlins at San Diego Padres",
-   "surface": "",
-   "pick": "Samad Taylor: 1+",
-   "opponent": "",
-   "market": "Samad Taylor: 1+",
-   "price": 0.59,
-   "model_prob": 0.729,
-   "raw_prob": 0.874,
-   "edge": 0.122,
-   "tier": "W",
-   "units": 0.5,
-   "made": "2026-09-20T00:02:10.400126+00:00",
-   "expected_end": "2026-09-20T03:40:00+00:00",
-   "start_est": "2026-09-20T00:40:00+00:00",
-   "status": "pending",
-   "latest_price": 0.585,
-   "close_price": 0.585,
-   "pnl": null,
-   "why": "Samad Taylor: 2.05 a game this season over 40 games (adjusted 2.07). Model gives \"Samad Taylor: 1+\" 87%. Blended with the market that's 66% vs a 59% price.",
-   "trend": 0.0,
-   "new_market": false,
-   "trust": 0.25,
-   "sharp_prob": null,
-   "research": "",
-   "sources": [],
-   "expert_lean": "none"
-  },
-  {
    "id": "KXSCOTTISHPREMSPREAD-26SEP20CELRFC-CEL2",
    "ticker": "KXSCOTTISHPREMSPREAD-26SEP20CELRFC-CEL2",
    "side": "yes",
@@ -1932,6 +1934,46 @@
   }
  ],
  "watch_history": [
+  {
+   "id": "KXMLBHRR-26SEP192040MIASD-SDSTAYLOR-1",
+   "ticker": "KXMLBHRR-26SEP192040MIASD-SDSTAYLOR-1",
+   "side": "yes",
+   "event": "KXMLBHRR-26SEP192040MIASD",
+   "game": "26SEP192040MIASD",
+   "sport": "Baseball",
+   "model_key": "mlb",
+   "mtype": "prop_hrr",
+   "line": 0.5,
+   "tour": "MLB",
+   "tournament": "Miami Marlins at San Diego Padres",
+   "matchup": "Miami Marlins at San Diego Padres",
+   "surface": "",
+   "pick": "Samad Taylor: 1+",
+   "opponent": "",
+   "market": "Samad Taylor: 1+",
+   "price": 0.59,
+   "model_prob": 0.729,
+   "raw_prob": 0.874,
+   "edge": 0.122,
+   "tier": "W",
+   "units": 0.5,
+   "made": "2026-09-20T00:02:10.400126+00:00",
+   "expected_end": "2026-09-20T03:40:00+00:00",
+   "start_est": "2026-09-20T00:40:00+00:00",
+   "status": "win",
+   "latest_price": 0.585,
+   "close_price": 0.585,
+   "pnl": 0.33,
+   "why": "Samad Taylor: 2.05 a game this season over 40 games (adjusted 2.07). Model gives \"Samad Taylor: 1+\" 87%. Blended with the market that's 66% vs a 59% price.",
+   "trend": 0.0,
+   "new_market": false,
+   "trust": 0.25,
+   "sharp_prob": null,
+   "research": "",
+   "sources": [],
+   "expert_lean": "none",
+   "graded": "2026-09-20T05:18:01.853436+00:00"
+  },
   {
    "id": "KXMLBKS-26SEP192110SFLAD-LADTSKUBAL29-6:no",
    "ticker": "KXMLBKS-26SEP192110SFLAD-LADTSKUBAL29-6",
@@ -2551,6 +2593,18 @@
  ],
  "reports": [],
  "changelog": [
+  {
+   "date": "2026-09-20",
+   "change": "cfb:total_2q: trust in the model vs the market moved from 80% to 70% after 306 finished markets"
+  },
+  {
+   "date": "2026-09-20",
+   "change": "cfb:spread_1h: trust in the model vs the market moved from 40% to 25% after 1134 finished markets"
+  },
+  {
+   "date": "2026-09-20",
+   "change": "mlb:team_total: trust in the model vs the market moved from 25% to 90% after 278 finished markets"
+  },
   {
    "date": "2026-09-20",
    "change": "cfb:spread_2q: trust in the model vs the market moved from 80% to 50% after 332 finished markets"
