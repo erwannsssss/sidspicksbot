@@ -8,9 +8,9 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: "run = normal run, ask = reply even with no new picks, weekly = weekly report"
+        description: "run = normal run, ask = reply even with no new picks, weekly = weekly report, grade = only check finished picks"
         type: choice
-        options: [run, ask, weekly]
+        options: [run, ask, weekly, grade]
         default: run
 
 permissions:
@@ -33,6 +33,7 @@ jobs:
 
       - name: Install
         run: pip install -r requirements.txt
+        # (the quick "grade" check from /refresh still needs these; it just skips rebuilding the models)
 
       - name: Run agent
         env:
