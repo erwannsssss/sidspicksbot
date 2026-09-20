@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-20T03:37:18.564166+00:00",
+ "updated": "2026-09-20T03:49:42.492641+00:00",
  "status_note": "Last run found 0 new pick(s) and graded 0.",
  "bankroll": 112.26,
  "protection": {
@@ -567,22 +567,22 @@
     "confidence_fix": false
    },
    "mlb:spread_f5": {
-    "finished": 80,
+    "finished": 88,
     "trust": 0.25,
     "confidence_fix": false
    },
    "mlb:total_f5": {
-    "finished": 128,
+    "finished": 142,
     "trust": 0.25,
     "confidence_fix": false
    },
    "mlb:total": {
-    "finished": 200,
-    "trust": 0.6,
+    "finished": 208,
+    "trust": 0.5,
     "confidence_fix": false
    },
    "mlb:winner": {
-    "finished": 14,
+    "finished": 16,
     "trust": 0.5,
     "confidence_fix": false
    },
@@ -592,32 +592,32 @@
     "confidence_fix": false
    },
    "mlb:team_total": {
-    "finished": 196,
+    "finished": 224,
     "trust": 0.25,
     "confidence_fix": false
    },
    "mlb:prop_ks": {
-    "finished": 186,
+    "finished": 214,
+    "trust": 0.4,
+    "confidence_fix": false
+   },
+   "mlb:prop_hit": {
+    "finished": 538,
     "trust": 0.5,
     "confidence_fix": false
    },
    "mlb:prop_hr": {
-    "finished": 238,
+    "finished": 274,
     "trust": 0.25,
     "confidence_fix": false
    },
    "mlb:prop_tb": {
-    "finished": 816,
+    "finished": 964,
     "trust": 0.25,
     "confidence_fix": true
    },
-   "mlb:prop_hit": {
-    "finished": 442,
-    "trust": 0.9,
-    "confidence_fix": true
-   },
    "mlb:prop_hrr": {
-    "finished": 890,
+    "finished": 1060,
     "trust": 0.25,
     "confidence_fix": true
    },
@@ -632,17 +632,17 @@
     "confidence_fix": false
    },
    "cfb:team_total": {
-    "finished": 932,
+    "finished": 978,
+    "trust": 0.4,
+    "confidence_fix": true
+   },
+   "cfb:spread_1h": {
+    "finished": 882,
     "trust": 0.3,
     "confidence_fix": false
    },
-   "cfb:spread_1h": {
-    "finished": 838,
-    "trust": 0.25,
-    "confidence_fix": false
-   },
    "cfb:total_1h": {
-    "finished": 520,
+    "finished": 550,
     "trust": 0.3,
     "confidence_fix": true
    },
@@ -652,7 +652,7 @@
     "confidence_fix": false
    },
    "cfb:period_winner_2h": {
-    "finished": 44,
+    "finished": 52,
     "trust": 0.25,
     "confidence_fix": false
    },
@@ -687,54 +687,54 @@
     "confidence_fix": false
    },
    "cfb:period_winner_4q": {
-    "finished": 44,
+    "finished": 52,
     "trust": 0.25,
     "confidence_fix": false
    },
    "cfb:spread_4q": {
-    "finished": 240,
+    "finished": 282,
     "trust": 1.0,
     "confidence_fix": false
    },
    "cfb:total_4q": {
-    "finished": 238,
+    "finished": 280,
     "trust": 0.25,
     "confidence_fix": false
    },
    "cfb:spread": {
-    "finished": 1180,
+    "finished": 1342,
     "trust": 0.25,
     "confidence_fix": true
    },
    "cfb:total": {
-    "finished": 918,
-    "trust": 0.6,
+    "finished": 1016,
+    "trust": 0.5,
     "confidence_fix": true
    },
    "cfb:winner": {
-    "finished": 34,
+    "finished": 40,
     "trust": 0.25,
     "confidence_fix": false
    }
   },
   "price_trend": {
    "flat": {
-    "markets": 8101,
+    "markets": 8740,
     "hit_vs_price": -0.0
    },
    "falling": {
-    "markets": 233,
-    "hit_vs_price": 0.078
+    "markets": 256,
+    "hit_vs_price": 0.059
    },
    "rising": {
-    "markets": 234,
-    "hit_vs_price": -0.069
+    "markets": 258,
+    "hit_vs_price": -0.053
    }
   }
  },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "tracker": {
-  "tracked": 8614,
+  "tracked": 8945,
   "series": 3827,
   "movers": []
  },
@@ -840,31 +840,31 @@
    "holdout": {
     "matches": 650,
     "rating_log_loss": 0.6281,
-    "model_log_loss": 0.6236,
+    "model_log_loss": 0.623,
     "rating_accuracy": 0.657,
-    "model_accuracy": 0.654
+    "model_accuracy": 0.652
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6012,
-    "model_log_loss": 0.6236,
+    "model_log_loss": 0.623,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 650
    },
    "backtest": {
-    "bets": 16,
-    "wins": 5,
-    "units": -8.9,
-    "roi": -0.3
+    "bets": 17,
+    "wins": 6,
+    "units": -6.0,
+    "roi": -0.197
    },
    "weights": {
-    "home_field": 0.256,
-    "rating": 1.53,
-    "rest": 0.236,
-    "point_diff_form": 0.226,
-    "qb_change": 0.31,
-    "epa": 0.165
+    "home_field": 0.255,
+    "rating": 1.522,
+    "rest": 0.231,
+    "point_diff_form": 0.229,
+    "qb_change": 0.305,
+    "epa": 0.167
    },
    "matches": 4380,
    "totals": {
@@ -1178,11 +1178,11 @@
    "made": "2026-09-19T16:08:49.619994+00:00",
    "expected_end": "2026-09-20T16:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.295,
+   "latest_price": 0.3,
    "pnl": null,
    "why": "Ratings 1830 (Bournemouth, home) vs 1864 (Liverpool). Share of chances lately (xG or shots on target) 54% vs 53%. Goal difference last 6: -1 vs +3. Last played Sep 12 vs Sep 12. Model gives the home 41%. Blended with the market that's 33% vs a 31% price. Sharp sportsbook price (Pinnacle) says 30%.",
    "start_est": "2026-09-20T13:30:00+00:00",
-   "close_price": 0.295,
+   "close_price": 0.3,
    "sharp_prob": 0.301,
    "sharp_source": "Pinnacle",
    "research": "",
@@ -2546,6 +2546,14 @@
  ],
  "reports": [],
  "changelog": [
+  {
+   "date": "2026-09-20",
+   "change": "cfb:team_total: trust in the model vs the market moved from 30% to 40% after 978 finished markets"
+  },
+  {
+   "date": "2026-09-20",
+   "change": "mlb:prop_hit: trust in the model vs the market moved from 90% to 50% after 538 finished markets"
+  },
   {
    "date": "2026-09-20",
    "change": "cfb:team_total: trust in the model vs the market moved from 40% to 30% after 932 finished markets"

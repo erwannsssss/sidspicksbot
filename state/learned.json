@@ -16,19 +16,19 @@
   "soccer:total": 0.25,
   "mlb:spread_f5": 0.25,
   "mlb:total_f5": 0.25,
-  "mlb:total": 0.6,
+  "mlb:total": 0.5,
   "mlb:winner": 0.5,
   "mlb:spread": 0.25,
   "mlb:team_total": 0.25,
-  "mlb:prop_ks": 0.5,
+  "mlb:prop_ks": 0.4,
+  "mlb:prop_hit": 0.5,
   "mlb:prop_hr": 0.25,
   "mlb:prop_tb": 0.25,
-  "mlb:prop_hit": 0.9,
   "mlb:prop_hrr": 0.25,
   "cfb:spread_1q": 0.8,
   "cfb:total_1q": 0.25,
-  "cfb:team_total": 0.3,
-  "cfb:spread_1h": 0.25,
+  "cfb:team_total": 0.4,
+  "cfb:spread_1h": 0.3,
   "cfb:total_1h": 0.3,
   "cfb:period_winner_1q": 0.25,
   "cfb:period_winner_2h": 0.25,
@@ -42,7 +42,7 @@
   "cfb:spread_4q": 1.0,
   "cfb:total_4q": 0.25,
   "cfb:spread": 0.25,
-  "cfb:total": 0.6,
+  "cfb:total": 0.5,
   "cfb:winner": 0.25
  },
  "trust_league": {
@@ -54,18 +54,18 @@
   "soccer:correct_score|Brasileirao": 1.0,
   "mlb:spread_f5|MLB": 0.25,
   "mlb:total_f5|MLB": 0.25,
-  "mlb:total|MLB": 0.6,
+  "mlb:total|MLB": 0.5,
   "mlb:spread|MLB": 0.25,
   "mlb:team_total|MLB": 0.25,
-  "mlb:prop_ks|MLB": 0.5,
+  "mlb:prop_ks|MLB": 0.4,
+  "mlb:prop_hit|MLB": 0.5,
   "mlb:prop_hr|MLB": 0.25,
   "mlb:prop_tb|MLB": 0.25,
-  "mlb:prop_hit|MLB": 0.9,
   "mlb:prop_hrr|MLB": 0.25,
   "cfb:spread_1q|College Football": 0.8,
   "cfb:total_1q|College Football": 0.25,
-  "cfb:team_total|College Football": 0.3,
-  "cfb:spread_1h|College Football": 0.25,
+  "cfb:team_total|College Football": 0.4,
+  "cfb:spread_1h|College Football": 0.3,
   "cfb:total_1h|College Football": 0.3,
   "cfb:spread_2q|College Football": 0.8,
   "cfb:total_2q|College Football": 0.9,
@@ -74,36 +74,36 @@
   "cfb:spread_4q|College Football": 1.0,
   "cfb:total_4q|College Football": 0.25,
   "cfb:spread|College Football": 0.25,
-  "cfb:total|College Football": 0.6
+  "cfb:total|College Football": 0.5
  },
  "calib": {
   "mlb:prop_tb": [
-   -0.0,
-   0.789
-  ],
-  "mlb:prop_hit": [
-   -0.005,
-   0.894
+   -0.001,
+   0.774
   ],
   "mlb:prop_hrr": [
-   -0.001,
-   0.839
+   0.002,
+   0.826
+  ],
+  "cfb:team_total": [
+   0.004,
+   1.074
   ],
   "cfb:total_1h": [
    0.0,
-   1.089
+   1.127
   ],
   "cfb:spread_2q": [
    0.011,
    0.822
   ],
   "cfb:spread": [
-   0.005,
-   1.163
+   -0.0,
+   1.232
   ],
   "cfb:total": [
    -0.0,
-   0.94
+   0.874
   ]
  },
  "counts": {
@@ -121,36 +121,36 @@
   "soccer:spread": 110,
   "soccer:team_total": 180,
   "soccer:total": 182,
-  "mlb:spread_f5": 80,
-  "mlb:total_f5": 128,
-  "mlb:total": 200,
-  "mlb:winner": 14,
+  "mlb:spread_f5": 88,
+  "mlb:total_f5": 142,
+  "mlb:total": 208,
+  "mlb:winner": 16,
   "mlb:spread": 96,
-  "mlb:team_total": 196,
-  "mlb:prop_ks": 186,
-  "mlb:prop_hr": 238,
-  "mlb:prop_tb": 816,
-  "mlb:prop_hit": 442,
-  "mlb:prop_hrr": 890,
+  "mlb:team_total": 224,
+  "mlb:prop_ks": 214,
+  "mlb:prop_hit": 538,
+  "mlb:prop_hr": 274,
+  "mlb:prop_tb": 964,
+  "mlb:prop_hrr": 1060,
   "cfb:spread_1q": 296,
   "cfb:total_1q": 286,
-  "cfb:team_total": 932,
-  "cfb:spread_1h": 838,
-  "cfb:total_1h": 520,
+  "cfb:team_total": 978,
+  "cfb:spread_1h": 882,
+  "cfb:total_1h": 550,
   "cfb:period_winner_1q": 52,
-  "cfb:period_winner_2h": 44,
+  "cfb:period_winner_2h": 52,
   "cfb:period_winner_2q": 52,
   "cfb:spread_2q": 308,
   "cfb:total_2q": 262,
   "cfb:period_winner_3q": 52,
   "cfb:spread_3q": 274,
   "cfb:total_3q": 268,
-  "cfb:period_winner_4q": 44,
-  "cfb:spread_4q": 240,
-  "cfb:total_4q": 238,
-  "cfb:spread": 1180,
-  "cfb:total": 918,
-  "cfb:winner": 34
+  "cfb:period_winner_4q": 52,
+  "cfb:spread_4q": 282,
+  "cfb:total_4q": 280,
+  "cfb:spread": 1342,
+  "cfb:total": 1016,
+  "cfb:winner": 40
  },
- "updated": "2026-09-20T03:33:04.553108+00:00"
+ "updated": "2026-09-20T03:45:24.399907+00:00"
 }
