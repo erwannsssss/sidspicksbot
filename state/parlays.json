@@ -61,8 +61,8 @@
   "model_prob": 0.4515,
   "ev": 0.206,
   "payout_units": 1.7,
-  "status": "pending",
-  "pnl": null,
+  "status": "win",
+  "pnl": 1.67,
   "legs": [
    {
     "id": "KXNCAAFSPREAD-26SEP19UTSATEX-TEX34:no",
@@ -74,7 +74,8 @@
     "price": 0.6,
     "model_prob": 0.678,
     "edge": 0.061,
-    "expected_end": "2026-09-20T03:00:00+00:00"
+    "expected_end": "2026-09-20T03:00:00+00:00",
+    "result": "win"
    },
    {
     "id": "KXNCAAFSPREAD-26SEP19KENNTENN-TENN39:no",
@@ -86,7 +87,101 @@
     "price": 0.59,
     "model_prob": 0.666,
     "edge": 0.059,
-    "expected_end": "2026-09-20T02:45:00+00:00"
+    "expected_end": "2026-09-20T02:45:00+00:00",
+    "result": "win"
+   }
+  ],
+  "graded": "2026-09-20T03:25:15.985234+00:00"
+ },
+ {
+  "id": "PARLAY-202609200325-1",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-09-20T03:25:16.811465+00:00",
+  "units": 1.0,
+  "price": 0.1936,
+  "model_prob": 0.3782,
+  "ev": 0.953,
+  "payout_units": 4.2,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXNFLPASSTDS-26SEP20SEAARI-SEADLOCK2-2:no",
+    "ticker": "KXNFLPASSTDS-26SEP20SEAARI-SEADLOCK2-2",
+    "side": "no",
+    "market": "Drew Lock: under 2",
+    "matchup": "SEA at ARI",
+    "sport": "Football",
+    "price": 0.63,
+    "model_prob": 0.792,
+    "edge": 0.146,
+    "expected_end": "2026-09-20T23:25:00+00:00"
+   },
+   {
+    "id": "KXNFLRECYDS-26SEP20NOBAL-BALRBATEMAN7-50:no",
+    "ticker": "KXNFLRECYDS-26SEP20NOBAL-BALRBATEMAN7-50",
+    "side": "no",
+    "market": "Rashod Bateman: under 50",
+    "matchup": "NO at BAL",
+    "sport": "Football",
+    "price": 0.67,
+    "model_prob": 0.829,
+    "edge": 0.143,
+    "expected_end": "2026-09-20T20:00:00+00:00"
+   },
+   {
+    "id": "KXNFLREC-26SEP20CINHOU-HOUKBOUTTE14-3:no",
+    "ticker": "KXNFLREC-26SEP20CINHOU-HOUKBOUTTE14-3",
+    "side": "no",
+    "market": "Kayshon Boutte: under 3",
+    "matchup": "CIN at HOU",
+    "sport": "Football",
+    "price": 0.42,
+    "model_prob": 0.576,
+    "edge": 0.139,
+    "expected_end": "2026-09-20T20:00:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": "PARLAY-202609200325-2",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-09-20T03:25:16.811524+00:00",
+  "units": 1.0,
+  "price": 0.1883,
+  "model_prob": 0.3184,
+  "ev": 0.691,
+  "payout_units": 4.3,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXNFLPASSYDS-26SEP20WASDAL-WASJDANIELS5-200:no",
+    "ticker": "KXNFLPASSYDS-26SEP20WASDAL-WASJDANIELS5-200",
+    "side": "no",
+    "market": "Jayden Daniels: under 200",
+    "matchup": "WAS at DAL",
+    "sport": "Football",
+    "price": 0.37,
+    "model_prob": 0.522,
+    "edge": 0.136,
+    "expected_end": "2026-09-20T23:25:00+00:00"
+   },
+   {
+    "id": "KXSERIEASPREAD-26SEP20ACMLEC-ACM2:no",
+    "ticker": "KXSERIEASPREAD-26SEP20ACMLEC-ACM2",
+    "side": "no",
+    "market": "No: Milan wins by more than 1.5 goals",
+    "matchup": "Milan vs Lecce",
+    "sport": "Soccer",
+    "price": 0.47,
+    "model_prob": 0.61,
+    "edge": 0.123,
+    "expected_end": "2026-09-20T21:45:00+00:00"
    }
   ]
  }
