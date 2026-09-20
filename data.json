@@ -1,6 +1,6 @@
 {
- "updated": "2026-09-20T02:14:22.935182+00:00",
- "status_note": "Last run found 1 new pick(s) and graded 1.",
+ "updated": "2026-09-20T02:24:58.234774+00:00",
+ "status_note": "Last run found 0 new pick(s) and graded 0.",
  "bankroll": 112.26,
  "protection": {
   "bankroll": 112.26,
@@ -160,8 +160,8 @@
    "expected_end": "2026-09-20T13:00:00+00:00",
    "start_est": "2026-09-20T10:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.49,
-   "close_price": null,
+   "latest_price": 0.485,
+   "close_price": 0.485,
    "pnl": null,
    "why": "Elo 1782 vs 1658 on hard. Won 50% vs 50% of games lately. Form 7-3 vs 5-5. Games played in last 3 days: 44 vs 66. Model 63%, blended with the market 56%, price 49%.",
    "trend": -0.01,
@@ -289,7 +289,8 @@
       "price": 0.66,
       "model_prob": 0.738,
       "edge": 0.062,
-      "expected_end": "2026-09-20T02:15:00+00:00"
+      "expected_end": "2026-09-20T02:15:00+00:00",
+      "result": "win"
      },
      {
       "id": "KXNCAAFSPREAD-26SEP19MONTORST-ORST24:no",
@@ -441,7 +442,7 @@
     "confidence_fix": false
    },
    "mlb:total": {
-    "finished": 104,
+    "finished": 106,
     "trust": 0.25,
     "confidence_fix": false
    },
@@ -526,44 +527,59 @@
     "confidence_fix": false
    },
    "cfb:team_total": {
-    "finished": 164,
-    "trust": 1.0,
-    "confidence_fix": false
+    "finished": 378,
+    "trust": 0.25,
+    "confidence_fix": true
    },
    "cfb:period_winner_3q": {
-    "finished": 24,
+    "finished": 28,
     "trust": 0.25,
     "confidence_fix": false
    },
    "cfb:spread_3q": {
-    "finished": 126,
+    "finished": 148,
     "trust": 0.25,
     "confidence_fix": false
    },
    "cfb:total_3q": {
-    "finished": 120,
+    "finished": 140,
+    "trust": 0.25,
+    "confidence_fix": false
+   },
+   "cfb:winner": {
+    "finished": 4,
+    "trust": 0.25,
+    "confidence_fix": false
+   },
+   "cfb:spread": {
+    "finished": 126,
+    "trust": 0.25,
+    "confidence_fix": false
+   },
+   "cfb:total": {
+    "finished": 114,
     "trust": 0.25,
     "confidence_fix": false
    }
   },
   "price_trend": {
    "flat": {
-    "markets": 4346,
+    "markets": 4552,
     "hit_vs_price": 0.0
    },
    "rising": {
-    "markets": 123,
-    "hit_vs_price": -0.063
+    "markets": 127,
+    "hit_vs_price": -0.06
    },
    "falling": {
-    "markets": 121,
-    "hit_vs_price": 0.057
+    "markets": 125,
+    "hit_vs_price": 0.055
    }
   }
  },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "tracker": {
-  "tracked": 4673,
+  "tracked": 5166,
   "series": 3827,
   "movers": []
  },
@@ -669,14 +685,14 @@
    "holdout": {
     "matches": 650,
     "rating_log_loss": 0.6281,
-    "model_log_loss": 0.6209,
+    "model_log_loss": 0.6227,
     "rating_accuracy": 0.657,
-    "model_accuracy": 0.648
+    "model_accuracy": 0.651
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6012,
-    "model_log_loss": 0.6209,
+    "model_log_loss": 0.6227,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 650
@@ -684,16 +700,16 @@
    "backtest": {
     "bets": 15,
     "wins": 4,
-    "units": -11.5,
-    "roi": -0.419
+    "units": -12.0,
+    "roi": -0.429
    },
    "weights": {
-    "home_field": 0.255,
-    "rating": 1.522,
+    "home_field": 0.257,
+    "rating": 1.523,
     "rest": 0.236,
-    "point_diff_form": 0.222,
-    "qb_change": 0.334,
-    "epa": 0.17
+    "point_diff_form": 0.226,
+    "qb_change": 0.325,
+    "epa": 0.167
    },
    "matches": 4380,
    "totals": {
@@ -1537,8 +1553,8 @@
    "expected_end": "2026-09-20T23:25:00+00:00",
    "start_est": "2026-09-20T19:25:00+00:00",
    "status": "pending",
-   "latest_price": 0.375,
-   "close_price": 0.375,
+   "latest_price": 0.37,
+   "close_price": 0.37,
    "pnl": null,
    "why": "Jayden Daniels: 165 a game lately (last 8 games). Model gives \"Jayden Daniels: under 200\" 68%. Blended with the market that's 44% vs a 37% price.",
    "trend": 0.0,
@@ -2373,6 +2389,10 @@
  ],
  "reports": [],
  "changelog": [
+  {
+   "date": "2026-09-20",
+   "change": "cfb:team_total: trust in the model vs the market moved from 100% to 25% after 378 finished markets"
+  },
   {
    "date": "2026-09-20",
    "change": "cfb:total_2q: trust in the model vs the market moved from 25% to 90% after 262 finished markets"
