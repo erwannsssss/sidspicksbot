@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-20T07:15:23.097813+00:00",
+ "updated": "2026-09-20T07:24:14.811891+00:00",
  "status_note": "Last run found 0 new pick(s) and graded 0.",
  "bankroll": 112.26,
  "protection": {
@@ -162,8 +162,8 @@
    "expected_end": "2026-09-20T13:00:00+00:00",
    "start_est": "2026-09-20T10:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.455,
-   "close_price": 0.455,
+   "latest_price": 0.465,
+   "close_price": 0.465,
    "pnl": null,
    "why": "Elo 1782 vs 1658 on hard. Won 50% vs 50% of games lately. Form 7-3 vs 5-5. Games played in last 3 days: 44 vs 66. Model 63%, blended with the market 56%, price 49%.",
    "trend": -0.01,
@@ -943,7 +943,7 @@
  },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "tracker": {
-  "tracked": 21595,
+  "tracked": 22458,
   "series": 3827,
   "movers": []
  },
@@ -1049,30 +1049,30 @@
    "holdout": {
     "matches": 650,
     "rating_log_loss": 0.6281,
-    "model_log_loss": 0.6201,
+    "model_log_loss": 0.6228,
     "rating_accuracy": 0.657,
-    "model_accuracy": 0.648
+    "model_accuracy": 0.657
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6012,
-    "model_log_loss": 0.6201,
+    "model_log_loss": 0.6228,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 650
    },
    "backtest": {
-    "bets": 16,
-    "wins": 5,
-    "units": -8.7,
-    "roi": -0.304
+    "bets": 18,
+    "wins": 6,
+    "units": -8.0,
+    "roi": -0.247
    },
    "weights": {
-    "home_field": 0.257,
-    "rating": 1.523,
-    "rest": 0.231,
-    "point_diff_form": 0.221,
-    "qb_change": 0.33,
+    "home_field": 0.255,
+    "rating": 1.52,
+    "rest": 0.233,
+    "point_diff_form": 0.228,
+    "qb_change": 0.301,
     "epa": 0.169
    },
    "matches": 4380,
