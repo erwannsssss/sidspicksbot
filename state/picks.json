@@ -161,16 +161,17 @@
   "units": 0.5,
   "made": "2026-09-19T16:08:49.619994+00:00",
   "expected_end": "2026-09-20T23:05:00+00:00",
-  "status": "pending",
+  "status": "loss",
   "latest_price": 0.435,
-  "pnl": null,
+  "pnl": -0.52,
   "why": "Ratings 1582 vs 1568, on the road. Net EPA per play lately +0.24 vs +0.00. Point differential last 5: +75 vs +2. Days of rest 7 vs 6. Model gives JAX 55%. Blended with the market that's 45% vs a 42% price.",
   "start_est": "2026-09-20T19:05:00+00:00",
   "close_price": 0.435,
   "sharp_prob": null,
   "research": "",
   "sources": [],
-  "expert_lean": "none"
+  "expert_lean": "none",
+  "graded": "2026-09-20T23:18:48.409667+00:00"
  },
  {
   "id": "KXSERIEAGAME-26SEP19VENLAZ-LAZ",
@@ -1552,10 +1553,10 @@
   "made": "2026-09-20T01:18:52.415808+00:00",
   "expected_end": "2026-09-20T23:10:00+00:00",
   "start_est": "2026-09-20T20:10:00+00:00",
-  "status": "pending",
+  "status": "loss",
   "latest_price": 0.365,
   "close_price": 0.365,
-  "pnl": null,
+  "pnl": -0.52,
   "why": "Projected runs 3.7 (home) vs 5.2 (8.9 total). Park factor 1.03. Model gives \"New York Y wins by over 1.5 runs\" 48%. Blended with the market that's 41% vs a 39% price. Sharp sportsbook price (Pinnacle) says 46%.",
   "trend": 0.01,
   "new_market": false,
@@ -1566,7 +1567,8 @@
   "research": "",
   "sources": [],
   "expert_lean": "none",
-  "prechecked": true
+  "prechecked": true,
+  "graded": "2026-09-20T23:18:48.637764+00:00"
  },
  {
   "id": "KXATPCHALLENGERMATCH-26SEP20SAIMON-MON",
