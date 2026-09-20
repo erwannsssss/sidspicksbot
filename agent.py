@@ -1191,6 +1191,26 @@ def write_dashboard(picks, s, reports, changelog, status_note, taken, engines):
 
 
 # ---------------------------------------------------------------- main
+def kickoff_text(p):
+    """Start time in US Eastern, like 'Sun 4:10 PM ET'."""
+    t = parse_time(p.get("start_est"))
+    if not t:
+        return ""
+    et = t - timedelta(hours=4 if 3 <= t.month <= 10 else 5)  # rough daylight-saving switch
+    return et.strftime("%a %-I:%M %p ET")
+
+
+def watch_line(p):
+    """A watchlist pick described fully enough to bet on it yourself."""
+    game = p.get("matchup") or p.get("tournament") or ""
+    if p.get("opponent") and p.get("sport") == "Tennis":
+        game = f"vs {p['opponent']}, {p.get('tournament', '')}"
+    when = kickoff_text(p)
+    return (f"• <b>{html.escape(p['market'])}</b> at {p['price'] * 100:.0f}¢ (edge +{p['edge']:.1%})\n"
+            f"   {html.escape(p.get('sport', ''))}, {html.escape(p.get('tour', ''))}: {html.escape(game)}"
+            + (f", {when}" if when else ""))
+
+
 def results_message(graded, taken, s):
     def line(p):
         mark = '✅' if p['status'] == 'win' else '❌' if p['status'] == 'loss' else '➖'
@@ -1405,9 +1425,7 @@ def main():
                  buttons=[[{"text": "✅ I took this", "callback_data": f"t|{p['id']}|{round(p['price'] * 100)}"},
                            {"text": "Skip", "callback_data": f"s|{p['id']}"}]])
     if watch_new:
-        telegram(f"<b>Watchlist</b> (smaller edges, practice only)\n"
-                 + "\n".join(f"• {html.escape(p['market'])} at {p['price'] * 100:.0f}¢, edge +{p['edge']:.1%} "
-                              f"({html.escape(p.get('sport', ''))})" for p in watch_new))
+        telegram(f"<b>Watchlist</b> (smaller edges, practice only)\n\n" + "\n\n".join(watch_line(p) for p in watch_new))
     gaps = [p for p in new if p.get("price_gap")]
     if gaps:
         telegram("<b>Price gaps</b> (Kalshi cheaper than sharp sportsbooks)\n" + "\n".join(

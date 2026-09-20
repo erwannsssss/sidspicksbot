@@ -268,8 +268,9 @@ function renderWatch(){
   $("watchSum").textContent = (w && w.picks ? `Single picks: ${w.wins}-${w.losses}, ${u(w.units)}, ROI ${pct(w.roi)}` : "No graded watchlist picks yet.")
     + (ps && ps.picks ? `. Parlays: ${ps.wins}-${ps.losses}, ${u(ps.units)}. Watchlist total ${u((w && w.picks ? w.units : 0) + ps.units)}` : "");
   const open = bySport(DATA.watch_open || []);
-  $("watch").innerHTML = open.length ? open.map(p => `<div class="item"><div>${esc(p.market)} <span class="meta">${cents(p.price)}</span>
-    <div class="meta">${esc(p.sport)}, ${esc(p.tour)}, edge +${(p.edge * 100).toFixed(1)}%</div></div><span class="tier tW">Watch</span></div>`).join("")
+  $("watch").innerHTML = open.length ? open.map(p => `<div class="item"><div><strong style="font-weight:600">${esc(p.market)}</strong> <span class="meta">${cents(p.price)}</span>
+    <div class="meta">${esc(p.sport)}, ${esc(p.tour)}: ${esc(p.opponent ? "vs " + p.opponent + ", " + (p.tournament || "") : (p.matchup || p.tournament || ""))}</div>
+    ${startText(p)}<div class="meta">Edge +${(p.edge * 100).toFixed(1)}%</div></div><span class="tier tW">Watch</span></div>`).join("")
     : '<p class="empty" style="margin:8px 0 0">Nothing on the watchlist right now.</p>';
 }
 
