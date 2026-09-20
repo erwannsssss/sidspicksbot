@@ -321,9 +321,9 @@
   "units": 0.5,
   "made": "2026-09-19T16:08:49.619994+00:00",
   "expected_end": "2026-09-20T16:00:00+00:00",
-  "status": "pending",
+  "status": "loss",
   "latest_price": 0.295,
-  "pnl": null,
+  "pnl": -0.52,
   "why": "Ratings 1830 (Bournemouth, home) vs 1864 (Liverpool). Share of chances lately (xG or shots on target) 54% vs 53%. Goal difference last 6: -1 vs +3. Last played Sep 12 vs Sep 12. Model gives the home 41%. Blended with the market that's 33% vs a 31% price. Sharp sportsbook price (Pinnacle) says 30%.",
   "start_est": "2026-09-20T13:30:00+00:00",
   "close_price": 0.295,
@@ -331,7 +331,8 @@
   "sharp_source": "Pinnacle",
   "research": "",
   "sources": [],
-  "expert_lean": "none"
+  "expert_lean": "none",
+  "graded": "2026-09-20T15:19:39.195020+00:00"
  },
  {
   "id": "KXNFLGAME-26SEP20NOBAL-NO",
@@ -1301,10 +1302,10 @@
   "made": "2026-09-20T00:02:10.400126+00:00",
   "expected_end": "2026-09-20T16:00:00+00:00",
   "start_est": "2026-09-20T13:30:00+00:00",
-  "status": "pending",
+  "status": "loss",
   "latest_price": 0.265,
   "close_price": 0.265,
-  "pnl": null,
+  "pnl": -0.52,
   "why": "Expected goals 2.78 vs 0.88 (3.66 total). Model gives \"Leeds United wins by more than 1.5 goals\" 56%. Blended with the market that's 38% vs a 33% price.",
   "trend": 0.0,
   "new_market": false,
@@ -1312,7 +1313,8 @@
   "sharp_prob": null,
   "research": "",
   "sources": [],
-  "expert_lean": "none"
+  "expert_lean": "none",
+  "graded": "2026-09-20T15:19:39.793134+00:00"
  },
  {
   "id": "KXSERIEABTTS-26SEP20FROCOM-BTTS:no",
@@ -1340,10 +1342,10 @@
   "made": "2026-09-20T00:02:10.400126+00:00",
   "expected_end": "2026-09-20T16:00:00+00:00",
   "start_est": "2026-09-20T13:30:00+00:00",
-  "status": "pending",
+  "status": "win",
   "latest_price": 0.085,
   "close_price": 0.085,
-  "pnl": null,
+  "pnl": 0.76,
   "why": "Expected goals 0.69 vs 1.64 (2.32 total). Model gives \"No: Both Teams To Score\" 60%. Blended with the market that's 44% vs a 39% price.",
   "trend": 0.0,
   "new_market": false,
@@ -1351,7 +1353,8 @@
   "sharp_prob": null,
   "research": "",
   "sources": [],
-  "expert_lean": "none"
+  "expert_lean": "none",
+  "graded": "2026-09-20T15:19:39.845956+00:00"
  },
  {
   "id": "KXNCAAFTEAMTOTAL-26SEP19NDSUSAC-SAC14",
@@ -1419,10 +1422,10 @@
   "made": "2026-09-20T00:02:10.400126+00:00",
   "expected_end": "2026-09-20T15:30:00+00:00",
   "start_est": "2026-09-20T13:00:00+00:00",
-  "status": "pending",
+  "status": "loss",
   "latest_price": 0.245,
   "close_price": 0.245,
-  "pnl": null,
+  "pnl": -0.53,
   "why": "Expected goals 1.42 vs 2.79 (4.21 total). Model gives \"Eindhoven wins by more than 1.5 goals\" 46%. Blended with the market that's 31% vs a 26% price.",
   "trend": -0.005,
   "new_market": false,
@@ -1430,7 +1433,8 @@
   "sharp_prob": null,
   "research": "",
   "sources": [],
-  "expert_lean": "none"
+  "expert_lean": "none",
+  "graded": "2026-09-20T15:19:39.900671+00:00"
  },
  {
   "id": "KXEPLTOTAL-26SEP20FULMUN-3:no",
@@ -1459,8 +1463,8 @@
   "expected_end": "2026-09-20T18:30:00+00:00",
   "start_est": "2026-09-20T16:00:00+00:00",
   "status": "pending",
-  "latest_price": 0.385,
-  "close_price": 0.385,
+  "latest_price": 0.395,
+  "close_price": 0.395,
   "pnl": null,
   "why": "Expected goals 0.91 vs 1.53 (2.44 total). Model gives \"Under 2.5 goals scored\" 56%. Blended with the market that's 43% vs a 39% price.",
   "trend": 0.0,
