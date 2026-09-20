@@ -1,6 +1,6 @@
 {
- "updated": "2026-09-20T12:29:32.560408+00:00",
- "status_note": "Last run found 0 new pick(s) and graded 0.",
+ "updated": "2026-09-20T13:23:37.893757+00:00",
+ "status_note": "Last run found 0 new pick(s) and graded 1.",
  "bankroll": 112.26,
  "protection": {
   "bankroll": 112.26,
@@ -240,8 +240,8 @@
    "expected_end": "2026-09-20T22:10:00+00:00",
    "start_est": "2026-09-20T19:10:00+00:00",
    "status": "pending",
-   "latest_price": 0.24,
-   "close_price": 0.24,
+   "latest_price": 0.235,
+   "close_price": 0.235,
    "pnl": null,
    "why": "Projected runs 6.4 (home) vs 8.6 (15.0 total). Park factor 1.28. Forecast 71F, wind 9 mph. Model gives \"Over 14.5 runs scored\" 48%. Blended with the market that's 36% vs a 25% price.",
    "trend": 0.0,
@@ -618,98 +618,98 @@
  "learning": {
   "groups": {
    "tennis:winner": {
-    "finished": 16,
-    "games": 8,
+    "finished": 22,
+    "games": 11,
     "trust": 0.5,
     "confidence_fix": false,
-    "last": "2026-09-20T08:30:00+00:00"
+    "last": "2026-09-20T10:10:00+00:00"
    },
    "soccer:winner": {
-    "finished": 78,
-    "games": 26,
+    "finished": 87,
+    "games": 29,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-09-20T10:15:00+00:00"
+    "last": "2026-09-20T11:00:00+00:00"
    },
    "soccer:btts_1h": {
-    "finished": 46,
-    "games": 23,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-20T10:15:00+00:00"
-   },
-   "soccer:spread_1h": {
-    "finished": 86,
-    "games": 23,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-20T10:15:00+00:00"
-   },
-   "soccer:total_1h": {
-    "finished": 138,
-    "games": 23,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-20T10:15:00+00:00"
-   },
-   "soccer:btts": {
     "finished": 52,
     "games": 26,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-09-20T10:15:00+00:00"
+    "last": "2026-09-20T11:00:00+00:00"
    },
-   "soccer:spread": {
-    "finished": 168,
+   "soccer:spread_1h": {
+    "finished": 98,
     "games": 26,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-09-20T10:15:00+00:00"
+    "last": "2026-09-20T11:00:00+00:00"
    },
-   "soccer:total": {
-    "finished": 280,
+   "soccer:total_1h": {
+    "finished": 156,
     "games": 26,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-09-20T10:15:00+00:00"
+    "last": "2026-09-20T11:00:00+00:00"
    },
    "soccer:btts_2h": {
-    "finished": 34,
-    "games": 17,
+    "finished": 36,
+    "games": 18,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-09-20T03:30:00+00:00"
+    "last": "2026-09-20T10:30:00+00:00"
    },
    "soccer:spread_2h": {
-    "finished": 68,
-    "games": 17,
+    "finished": 72,
+    "games": 18,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-09-20T03:30:00+00:00"
+    "last": "2026-09-20T10:30:00+00:00"
    },
    "soccer:total_2h": {
-    "finished": 102,
-    "games": 17,
+    "finished": 108,
+    "games": 18,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-09-20T03:30:00+00:00"
+    "last": "2026-09-20T10:30:00+00:00"
+   },
+   "soccer:btts": {
+    "finished": 58,
+    "games": 29,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-20T11:00:00+00:00"
+   },
+   "soccer:correct_score": {
+    "finished": 600,
+    "games": 21,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-20T10:30:00+00:00"
+   },
+   "soccer:spread": {
+    "finished": 186,
+    "games": 29,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-20T11:00:00+00:00"
+   },
+   "soccer:team_total": {
+    "finished": 252,
+    "games": 21,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-20T10:30:00+00:00"
+   },
+   "soccer:total": {
+    "finished": 314,
+    "games": 29,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-20T11:00:00+00:00"
    },
    "soccer:first_to_score": {
     "finished": 96,
-    "games": 20,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-20T03:30:00+00:00"
-   },
-   "soccer:correct_score": {
-    "finished": 584,
-    "games": 20,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-20T03:30:00+00:00"
-   },
-   "soccer:team_total": {
-    "finished": 240,
     "games": 20,
     "trust": 0.25,
     "confidence_fix": false,
@@ -928,46 +928,46 @@
   },
   "price_trend": {
    "flat": {
-    "markets": 12727,
+    "markets": 12864,
     "hit_vs_price": 0.0
    },
    "falling": {
-    "markets": 504,
-    "hit_vs_price": 0.01
+    "markets": 510,
+    "hit_vs_price": 0.008
    },
    "rising": {
-    "markets": 510,
-    "hit_vs_price": -0.011
+    "markets": 516,
+    "hit_vs_price": -0.009
    }
   }
  },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "tracker": {
-  "tracked": 23192,
+  "tracked": 23228,
   "series": 3827,
   "movers": []
  },
  "models": {
   "tennis": {
-   "matches": 19497,
-   "training_rows": 13333,
+   "matches": 19506,
+   "training_rows": 13337,
    "holdout": {
     "from": "2026-08-16",
-    "matches": 2000,
-    "elo_log_loss": 0.659,
-    "model_log_loss": 0.6517,
+    "matches": 2001,
+    "elo_log_loss": 0.6591,
+    "model_log_loss": 0.6519,
     "elo_accuracy": 0.62,
     "model_accuracy": 0.629
    },
    "using": "full",
    "weights": {
-    "elo": 1.746,
+    "elo": 1.745,
     "dominance": 0.0,
     "rank": 0.0,
-    "h2h": 0.431,
-    "form": -1.107,
-    "fatigue_games": -0.203,
-    "fatigue_matches": 0.047,
+    "h2h": 0.434,
+    "form": -1.103,
+    "fatigue_games": -0.204,
+    "fatigue_matches": 0.048,
     "rest": 0.017,
     "travel": 0.132,
     "altitude": 0.0,
@@ -1049,31 +1049,31 @@
    "holdout": {
     "matches": 650,
     "rating_log_loss": 0.6281,
-    "model_log_loss": 0.6239,
+    "model_log_loss": 0.6218,
     "rating_accuracy": 0.657,
-    "model_accuracy": 0.652
+    "model_accuracy": 0.654
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6012,
-    "model_log_loss": 0.6239,
+    "model_log_loss": 0.6218,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 650
    },
    "backtest": {
-    "bets": 17,
-    "wins": 6,
-    "units": -5.5,
-    "roi": -0.184
+    "bets": 15,
+    "wins": 4,
+    "units": -10.4,
+    "roi": -0.372
    },
    "weights": {
-    "home_field": 0.254,
-    "rating": 1.534,
-    "rest": 0.233,
-    "point_diff_form": 0.229,
-    "qb_change": 0.285,
-    "epa": 0.169
+    "home_field": 0.257,
+    "rating": 1.525,
+    "rest": 0.241,
+    "point_diff_form": 0.227,
+    "qb_change": 0.346,
+    "epa": 0.165
    },
    "matches": 4380,
    "totals": {
@@ -1158,15 +1158,15 @@
    "clv_picks": 0
   },
   "watch": {
-   "picks": 19,
+   "picks": 20,
    "wins": 8,
-   "losses": 11,
-   "units": -0.67,
-   "staked": 9.5,
-   "roi": -0.071,
-   "beat_price": 0.263,
-   "clv": -0.0044,
-   "clv_picks": 17
+   "losses": 12,
+   "units": -1.2,
+   "staked": 10.0,
+   "roi": -0.12,
+   "beat_price": 0.3,
+   "clv": -0.0039,
+   "clv_picks": 18
   }
  },
  "by_expert_lean": {
@@ -1228,15 +1228,15 @@
    "clv_picks": 0
   },
   "W": {
-   "picks": 19,
+   "picks": 20,
    "wins": 8,
-   "losses": 11,
-   "units": -0.67,
-   "staked": 9.5,
-   "roi": -0.071,
-   "beat_price": 0.263,
-   "clv": -0.0044,
-   "clv_picks": 17
+   "losses": 12,
+   "units": -1.2,
+   "staked": 10.0,
+   "roi": -0.12,
+   "beat_price": 0.3,
+   "clv": -0.0039,
+   "clv_picks": 18
   }
  },
  "watch_open": [
@@ -1387,11 +1387,11 @@
    "made": "2026-09-19T16:08:49.619994+00:00",
    "expected_end": "2026-09-20T16:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.315,
+   "latest_price": 0.295,
    "pnl": null,
    "why": "Ratings 1830 (Bournemouth, home) vs 1864 (Liverpool). Share of chances lately (xG or shots on target) 54% vs 53%. Goal difference last 6: -1 vs +3. Last played Sep 12 vs Sep 12. Model gives the home 41%. Blended with the market that's 33% vs a 31% price. Sharp sportsbook price (Pinnacle) says 30%.",
    "start_est": "2026-09-20T13:30:00+00:00",
-   "close_price": 0.315,
+   "close_price": 0.295,
    "sharp_prob": 0.301,
    "sharp_source": "Pinnacle",
    "research": "",
@@ -1737,50 +1737,11 @@
    "expected_end": "2026-09-20T21:45:00+00:00",
    "start_est": "2026-09-20T19:15:00+00:00",
    "status": "pending",
-   "latest_price": 0.465,
-   "close_price": 0.465,
+   "latest_price": 0.455,
+   "close_price": 0.455,
    "pnl": null,
    "why": "Expected goals 1.47 vs 0.97 (2.44 total). Model gives \"No: Milan wins by more than 1.5 goals\" 76%. Blended with the market that's 54% vs a 47% price.",
    "trend": 0.0,
-   "new_market": false,
-   "trust": 0.25,
-   "sharp_prob": null,
-   "research": "",
-   "sources": [],
-   "expert_lean": "none"
-  },
-  {
-   "id": "KXSCOTTISHPREMSPREAD-26SEP20CELRFC-CEL2",
-   "ticker": "KXSCOTTISHPREMSPREAD-26SEP20CELRFC-CEL2",
-   "side": "yes",
-   "event": "KXSCOTTISHPREMSPREAD-26SEP20CELRFC",
-   "game": "26SEP20CELRFC",
-   "sport": "Soccer",
-   "model_key": "soccer",
-   "mtype": "spread",
-   "line": 1.5,
-   "tour": "Scottish Premiership",
-   "tournament": "Celtic vs Rangers",
-   "matchup": "Celtic vs Rangers",
-   "surface": "",
-   "pick": "Celtic wins by more than 1.5 goals",
-   "opponent": "",
-   "market": "Celtic wins by more than 1.5 goals",
-   "price": 0.22,
-   "model_prob": 0.337,
-   "raw_prob": 0.459,
-   "edge": 0.105,
-   "tier": "W",
-   "units": 0.5,
-   "made": "2026-09-20T00:02:10.400126+00:00",
-   "expected_end": "2026-09-20T14:00:00+00:00",
-   "start_est": "2026-09-20T11:30:00+00:00",
-   "status": "pending",
-   "latest_price": 0.225,
-   "close_price": 0.225,
-   "pnl": null,
-   "why": "Expected goals 2.29 vs 0.88 (3.18 total). Model gives \"Celtic wins by more than 1.5 goals\" 46%. Blended with the market that's 28% vs a 22% price.",
-   "trend": -0.01,
    "new_market": false,
    "trust": 0.25,
    "sharp_prob": null,
@@ -1815,8 +1776,8 @@
    "expected_end": "2026-09-20T16:00:00+00:00",
    "start_est": "2026-09-20T13:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.325,
-   "close_price": 0.325,
+   "latest_price": 0.265,
+   "close_price": 0.265,
    "pnl": null,
    "why": "Expected goals 2.78 vs 0.88 (3.66 total). Model gives \"Leeds United wins by more than 1.5 goals\" 56%. Blended with the market that's 38% vs a 33% price.",
    "trend": 0.0,
@@ -1854,8 +1815,8 @@
    "expected_end": "2026-09-20T16:00:00+00:00",
    "start_est": "2026-09-20T13:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.375,
-   "close_price": 0.375,
+   "latest_price": 0.085,
+   "close_price": 0.085,
    "pnl": null,
    "why": "Expected goals 0.69 vs 1.64 (2.32 total). Model gives \"No: Both Teams To Score\" 60%. Blended with the market that's 44% vs a 39% price.",
    "trend": 0.0,
@@ -1946,6 +1907,46 @@
   }
  ],
  "watch_history": [
+  {
+   "id": "KXSCOTTISHPREMSPREAD-26SEP20CELRFC-CEL2",
+   "ticker": "KXSCOTTISHPREMSPREAD-26SEP20CELRFC-CEL2",
+   "side": "yes",
+   "event": "KXSCOTTISHPREMSPREAD-26SEP20CELRFC",
+   "game": "26SEP20CELRFC",
+   "sport": "Soccer",
+   "model_key": "soccer",
+   "mtype": "spread",
+   "line": 1.5,
+   "tour": "Scottish Premiership",
+   "tournament": "Celtic vs Rangers",
+   "matchup": "Celtic vs Rangers",
+   "surface": "",
+   "pick": "Celtic wins by more than 1.5 goals",
+   "opponent": "",
+   "market": "Celtic wins by more than 1.5 goals",
+   "price": 0.22,
+   "model_prob": 0.337,
+   "raw_prob": 0.459,
+   "edge": 0.105,
+   "tier": "W",
+   "units": 0.5,
+   "made": "2026-09-20T00:02:10.400126+00:00",
+   "expected_end": "2026-09-20T14:00:00+00:00",
+   "start_est": "2026-09-20T11:30:00+00:00",
+   "status": "loss",
+   "latest_price": 0.225,
+   "close_price": 0.225,
+   "pnl": -0.53,
+   "why": "Expected goals 2.29 vs 0.88 (3.18 total). Model gives \"Celtic wins by more than 1.5 goals\" 46%. Blended with the market that's 28% vs a 22% price.",
+   "trend": -0.01,
+   "new_market": false,
+   "trust": 0.25,
+   "sharp_prob": null,
+   "research": "",
+   "sources": [],
+   "expert_lean": "none",
+   "graded": "2026-09-20T13:19:42.722502+00:00"
+  },
   {
    "id": "KXNCAAFSPREAD-26SEP19MONTORST-ORST24:no",
    "ticker": "KXNCAAFSPREAD-26SEP19MONTORST-ORST24",
