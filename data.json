@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-20T05:20:19.066618+00:00",
+ "updated": "2026-09-20T05:53:23.305290+00:00",
  "status_note": "Last run found 1 new pick(s) and graded 1.",
  "bankroll": 112.26,
  "protection": {
@@ -240,11 +240,50 @@
    "expected_end": "2026-09-20T22:10:00+00:00",
    "start_est": "2026-09-20T19:10:00+00:00",
    "status": "pending",
-   "latest_price": 0.25,
-   "close_price": null,
+   "latest_price": 0.24,
+   "close_price": 0.24,
    "pnl": null,
    "why": "Projected runs 6.4 (home) vs 8.6 (15.0 total). Park factor 1.28. Forecast 71F, wind 9 mph. Model gives \"Over 14.5 runs scored\" 48%. Blended with the market that's 36% vs a 25% price.",
    "trend": 0.0,
+   "new_market": false,
+   "trust": 0.5,
+   "sharp_prob": null,
+   "research": "",
+   "sources": [],
+   "expert_lean": "none"
+  },
+  {
+   "id": "KXDAVISCUPMATCH-26SEP20MEDBUT-BUT",
+   "ticker": "KXDAVISCUPMATCH-26SEP20MEDBUT-BUT",
+   "side": "yes",
+   "event": "KXDAVISCUPMATCH-26SEP20MEDBUT",
+   "game": "26SEP20MEDBUT",
+   "sport": "Tennis",
+   "model_key": "tennis",
+   "mtype": "winner",
+   "line": null,
+   "tour": "Davis Cup",
+   "tournament": "2026 Davis Cup round",
+   "matchup": "2026 Davis Cup round",
+   "surface": "hard",
+   "pick": "Edas Butvilas",
+   "opponent": "Hamad Medjedovic",
+   "market": "Edas Butvilas to win",
+   "price": 0.21,
+   "model_prob": 0.319,
+   "raw_prob": 0.434,
+   "edge": 0.098,
+   "tier": "A",
+   "units": 1.5,
+   "made": "2026-09-20T05:49:37.278012+00:00",
+   "expected_end": "2026-09-20T16:20:00+00:00",
+   "start_est": "2026-09-20T12:20:00+00:00",
+   "status": "pending",
+   "latest_price": 0.21,
+   "close_price": null,
+   "pnl": null,
+   "why": "Elo 1629 vs 1640 on hard. Won 50% vs 50% of games lately. Form 6-4 vs 3-7. Games played in last 3 days: 22 vs 22. Model 43%, blended with the market 32%, price 21%.",
+   "trend": 0.009,
    "new_market": false,
    "trust": 0.5,
    "sharp_prob": null,
@@ -538,73 +577,78 @@
  "learning": {
   "groups": {
    "tennis:winner": {
-    "finished": 4,
+    "finished": 6,
     "trust": 0.5,
     "confidence_fix": false
    },
    "soccer:winner": {
-    "finished": 63,
+    "finished": 66,
     "trust": 0.25,
     "confidence_fix": false
    },
    "soccer:btts_1h": {
-    "finished": 38,
+    "finished": 40,
     "trust": 0.25,
     "confidence_fix": false
    },
    "soccer:spread_1h": {
-    "finished": 72,
+    "finished": 76,
     "trust": 0.25,
     "confidence_fix": false
    },
    "soccer:total_1h": {
-    "finished": 114,
+    "finished": 120,
     "trust": 0.25,
     "confidence_fix": false
    },
    "soccer:btts_2h": {
-    "finished": 32,
+    "finished": 34,
     "trust": 0.25,
     "confidence_fix": false
    },
    "soccer:spread_2h": {
-    "finished": 64,
+    "finished": 68,
     "trust": 0.25,
     "confidence_fix": false
    },
    "soccer:total_2h": {
-    "finished": 96,
+    "finished": 102,
     "trust": 0.25,
     "confidence_fix": false
    },
    "soccer:btts": {
-    "finished": 42,
+    "finished": 44,
     "trust": 0.25,
     "confidence_fix": false
    },
    "soccer:first_to_score": {
-    "finished": 90,
+    "finished": 96,
     "trust": 0.25,
     "confidence_fix": false
    },
    "soccer:correct_score": {
-    "finished": 526,
+    "finished": 584,
     "trust": 1.0,
     "confidence_fix": false
    },
    "soccer:spread": {
-    "finished": 134,
+    "finished": 142,
     "trust": 0.25,
     "confidence_fix": false
    },
    "soccer:team_total": {
-    "finished": 228,
+    "finished": 240,
     "trust": 0.25,
     "confidence_fix": false
    },
    "soccer:total": {
-    "finished": 222,
+    "finished": 234,
     "trust": 0.25,
+    "confidence_fix": false
+   },
+   "mlb:winner": {
+    "finished": 22,
+    "trust": 0.5,
     "confidence_fix": false
    },
    "mlb:spread_f5": {
@@ -617,48 +661,43 @@
     "trust": 0.25,
     "confidence_fix": false
    },
-   "mlb:total": {
-    "finished": 218,
-    "trust": 0.5,
-    "confidence_fix": false
-   },
-   "mlb:winner": {
-    "finished": 20,
-    "trust": 0.5,
-    "confidence_fix": false
-   },
    "mlb:spread": {
-    "finished": 120,
+    "finished": 132,
     "trust": 0.25,
     "confidence_fix": false
    },
    "mlb:team_total": {
-    "finished": 278,
-    "trust": 0.9,
+    "finished": 306,
+    "trust": 0.7,
+    "confidence_fix": false
+   },
+   "mlb:total": {
+    "finished": 222,
+    "trust": 0.5,
     "confidence_fix": false
    },
    "mlb:prop_ks": {
-    "finished": 258,
+    "finished": 286,
     "trust": 0.5,
     "confidence_fix": false
    },
    "mlb:prop_hit": {
-    "finished": 870,
-    "trust": 0.25,
-    "confidence_fix": true
-   },
-   "mlb:prop_hr": {
-    "finished": 346,
+    "finished": 952,
     "trust": 0.25,
     "confidence_fix": false
    },
+   "mlb:prop_hr": {
+    "finished": 382,
+    "trust": 0.25,
+    "confidence_fix": true
+   },
    "mlb:prop_tb": {
-    "finished": 1358,
+    "finished": 1486,
     "trust": 0.25,
     "confidence_fix": true
    },
    "mlb:prop_hrr": {
-    "finished": 1740,
+    "finished": 1916,
     "trust": 0.25,
     "confidence_fix": true
    },
@@ -703,9 +742,9 @@
     "confidence_fix": false
    },
    "cfb:team_total": {
-    "finished": 1068,
+    "finished": 1118,
     "trust": 0.3,
-    "confidence_fix": false
+    "confidence_fix": true
    },
    "cfb:period_winner_3q": {
     "finished": 56,
@@ -723,18 +762,18 @@
     "confidence_fix": false
    },
    "cfb:winner": {
-    "finished": 56,
+    "finished": 58,
     "trust": 0.25,
     "confidence_fix": false
    },
    "cfb:spread": {
-    "finished": 1576,
+    "finished": 1624,
     "trust": 0.25,
     "confidence_fix": true
    },
    "cfb:total": {
-    "finished": 1236,
-    "trust": 0.5,
+    "finished": 1274,
+    "trust": 0.4,
     "confidence_fix": false
    },
    "cfb:period_winner_2h": {
@@ -760,44 +799,44 @@
   },
   "price_trend": {
    "flat": {
-    "markets": 11106,
-    "hit_vs_price": -0.0
+    "markets": 11784,
+    "hit_vs_price": 0.0
    },
    "falling": {
-    "markets": 447,
-    "hit_vs_price": 0.015
+    "markets": 464,
+    "hit_vs_price": 0.009
    },
    "rising": {
-    "markets": 451,
-    "hit_vs_price": -0.014
+    "markets": 471,
+    "hit_vs_price": -0.01
    }
   }
  },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "tracker": {
-  "tracked": 10305,
+  "tracked": 13996,
   "series": 3827,
   "movers": []
  },
  "models": {
   "tennis": {
-   "matches": 19457,
-   "training_rows": 13314,
+   "matches": 19460,
+   "training_rows": 13317,
    "holdout": {
     "from": "2026-08-15",
     "matches": 1998,
-    "elo_log_loss": 0.6594,
-    "model_log_loss": 0.6515,
+    "elo_log_loss": 0.6596,
+    "model_log_loss": 0.6517,
     "elo_accuracy": 0.62,
-    "model_accuracy": 0.627
+    "model_accuracy": 0.626
    },
    "using": "full",
    "weights": {
     "elo": 1.744,
     "dominance": 0.0,
     "rank": 0.0,
-    "h2h": 0.429,
-    "form": -1.105,
+    "h2h": 0.43,
+    "form": -1.106,
     "fatigue_games": -0.204,
     "fatigue_matches": 0.047,
     "rest": 0.017,
@@ -881,31 +920,31 @@
    "holdout": {
     "matches": 650,
     "rating_log_loss": 0.6281,
-    "model_log_loss": 0.6236,
+    "model_log_loss": 0.6205,
     "rating_accuracy": 0.657,
-    "model_accuracy": 0.652
+    "model_accuracy": 0.657
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6012,
-    "model_log_loss": 0.6236,
+    "model_log_loss": 0.6205,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 650
    },
    "backtest": {
-    "bets": 18,
-    "wins": 6,
-    "units": -8.0,
-    "roi": -0.247
+    "bets": 16,
+    "wins": 5,
+    "units": -8.4,
+    "roi": -0.288
    },
    "weights": {
     "home_field": 0.255,
-    "rating": 1.536,
-    "rest": 0.228,
-    "point_diff_form": 0.228,
-    "qb_change": 0.296,
-    "epa": 0.165
+    "rating": 1.534,
+    "rest": 0.233,
+    "point_diff_form": 0.218,
+    "qb_change": 0.346,
+    "epa": 0.167
    },
    "matches": 4380,
    "totals": {
@@ -990,15 +1029,15 @@
    "clv_picks": 0
   },
   "watch": {
-   "picks": 15,
-   "wins": 6,
+   "picks": 16,
+   "wins": 7,
    "losses": 9,
-   "units": -0.88,
-   "staked": 7.5,
-   "roi": -0.117,
-   "beat_price": 0.2,
-   "clv": -0.0058,
-   "clv_picks": 13
+   "units": -0.55,
+   "staked": 8.0,
+   "roi": -0.069,
+   "beat_price": 0.188,
+   "clv": -0.0068,
+   "clv_picks": 14
   }
  },
  "by_expert_lean": {
@@ -1060,15 +1099,15 @@
    "clv_picks": 0
   },
   "W": {
-   "picks": 15,
-   "wins": 6,
+   "picks": 16,
+   "wins": 7,
    "losses": 9,
-   "units": -0.88,
-   "staked": 7.5,
-   "roi": -0.117,
-   "beat_price": 0.2,
-   "clv": -0.0058,
-   "clv_picks": 13
+   "units": -0.55,
+   "staked": 8.0,
+   "roi": -0.069,
+   "beat_price": 0.188,
+   "clv": -0.0068,
+   "clv_picks": 14
   }
  },
  "watch_open": [
@@ -1187,11 +1226,11 @@
    "made": "2026-09-19T16:08:49.619994+00:00",
    "expected_end": "2026-09-20T22:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.255,
+   "latest_price": 0.258,
    "pnl": null,
    "why": "Ratings 1537 (Corinthians, home) vs 1640 (Fluminense). Share of chances lately (xG or shots on target) 50% vs 50%. Goal difference last 6: -3 vs +1. Last played Sep 13 vs Sep 12. Model gives the away 37%. Blended with the market that's 29% vs a 26% price. Sharp sportsbook price (Pinnacle) says 26%.",
    "start_est": "2026-09-20T19:30:00+00:00",
-   "close_price": 0.255,
+   "close_price": 0.258,
    "sharp_prob": 0.2554,
    "sharp_source": "Pinnacle",
    "research": "",
@@ -1381,45 +1420,6 @@
    "why": "Ratings 1571 vs 1554, on the road. Net EPA per play lately +0.08 vs +0.04. Point differential last 5: +54 vs +16. Model gives MIN 41%. Blended with the market that's 35% vs a 34% price.",
    "start_est": "2026-09-20T16:00:00+00:00",
    "close_price": 0.335,
-   "sharp_prob": null,
-   "research": "",
-   "sources": [],
-   "expert_lean": "none"
-  },
-  {
-   "id": "KXNCAAFTEAMTOTAL-26SEP19SDAKBSU-BSU46:no",
-   "ticker": "KXNCAAFTEAMTOTAL-26SEP19SDAKBSU-BSU46",
-   "side": "no",
-   "event": "KXNCAAFTEAMTOTAL-26SEP19SDAKBSU",
-   "game": "26SEP19SDAKBSU",
-   "sport": "Football",
-   "model_key": "cfb",
-   "mtype": "team_total",
-   "line": 45.5,
-   "tour": "College Football",
-   "tournament": "South Dakota at Boise State",
-   "matchup": "South Dakota at Boise State",
-   "surface": "",
-   "pick": "Boise St. under 45.5 points scored",
-   "opponent": "",
-   "market": "Boise St. under 45.5 points scored",
-   "price": 0.59,
-   "model_prob": 0.757,
-   "raw_prob": 0.933,
-   "edge": 0.15,
-   "tier": "W",
-   "units": 0.5,
-   "made": "2026-09-20T00:02:10.400126+00:00",
-   "expected_end": "2026-09-20T05:00:00+00:00",
-   "start_est": "2026-09-20T01:00:00+00:00",
-   "status": "pending",
-   "latest_price": 0.57,
-   "close_price": 0.57,
-   "pnl": null,
-   "why": "Projected score margin -2.7 (home) and total 56.9. Model gives \"Boise St. under 45.5 points scored\" 93%. Blended with the market that's 67% vs a 59% price.",
-   "trend": 0.0,
-   "new_market": false,
-   "trust": 0.25,
    "sharp_prob": null,
    "research": "",
    "sources": [],
@@ -1647,8 +1647,8 @@
    "expected_end": "2026-09-20T23:25:00+00:00",
    "start_est": "2026-09-20T19:25:00+00:00",
    "status": "pending",
-   "latest_price": 0.365,
-   "close_price": 0.365,
+   "latest_price": 0.355,
+   "close_price": 0.355,
    "pnl": null,
    "why": "Jayden Daniels: 165 a game lately (last 8 games). Model gives \"Jayden Daniels: under 200\" 68%. Blended with the market that's 44% vs a 37% price.",
    "trend": 0.0,
@@ -1725,8 +1725,8 @@
    "expected_end": "2026-09-20T14:00:00+00:00",
    "start_est": "2026-09-20T11:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.215,
-   "close_price": 0.215,
+   "latest_price": 0.225,
+   "close_price": 0.225,
    "pnl": null,
    "why": "Expected goals 2.29 vs 0.88 (3.18 total). Model gives \"Celtic wins by more than 1.5 goals\" 46%. Blended with the market that's 28% vs a 22% price.",
    "trend": -0.01,
@@ -1934,6 +1934,46 @@
   }
  ],
  "watch_history": [
+  {
+   "id": "KXNCAAFTEAMTOTAL-26SEP19SDAKBSU-BSU46:no",
+   "ticker": "KXNCAAFTEAMTOTAL-26SEP19SDAKBSU-BSU46",
+   "side": "no",
+   "event": "KXNCAAFTEAMTOTAL-26SEP19SDAKBSU",
+   "game": "26SEP19SDAKBSU",
+   "sport": "Football",
+   "model_key": "cfb",
+   "mtype": "team_total",
+   "line": 45.5,
+   "tour": "College Football",
+   "tournament": "South Dakota at Boise State",
+   "matchup": "South Dakota at Boise State",
+   "surface": "",
+   "pick": "Boise St. under 45.5 points scored",
+   "opponent": "",
+   "market": "Boise St. under 45.5 points scored",
+   "price": 0.59,
+   "model_prob": 0.757,
+   "raw_prob": 0.933,
+   "edge": 0.15,
+   "tier": "W",
+   "units": 0.5,
+   "made": "2026-09-20T00:02:10.400126+00:00",
+   "expected_end": "2026-09-20T05:00:00+00:00",
+   "start_est": "2026-09-20T01:00:00+00:00",
+   "status": "win",
+   "latest_price": 0.57,
+   "close_price": 0.57,
+   "pnl": 0.33,
+   "why": "Projected score margin -2.7 (home) and total 56.9. Model gives \"Boise St. under 45.5 points scored\" 93%. Blended with the market that's 67% vs a 59% price.",
+   "trend": 0.0,
+   "new_market": false,
+   "trust": 0.25,
+   "sharp_prob": null,
+   "research": "",
+   "sources": [],
+   "expert_lean": "none",
+   "graded": "2026-09-20T05:49:34.885951+00:00"
+  },
   {
    "id": "KXMLBHRR-26SEP192040MIASD-SDSTAYLOR-1",
    "ticker": "KXMLBHRR-26SEP192040MIASD-SDSTAYLOR-1",
@@ -2516,6 +2556,17 @@
    "clv": -0.005,
    "clv_picks": 1
   },
+  "Davis Cup": {
+   "picks": 0,
+   "wins": 0,
+   "losses": 0,
+   "units": 0,
+   "staked": 0,
+   "roi": 0.0,
+   "beat_price": null,
+   "clv": null,
+   "clv_picks": 0
+  },
   "MLB": {
    "picks": 0,
    "wins": 0,
@@ -2593,6 +2644,10 @@
  ],
  "reports": [],
  "changelog": [
+  {
+   "date": "2026-09-20",
+   "change": "mlb:team_total: trust in the model vs the market moved from 90% to 70% after 306 finished markets"
+  },
   {
    "date": "2026-09-20",
    "change": "cfb:total_2q: trust in the model vs the market moved from 80% to 70% after 306 finished markets"
