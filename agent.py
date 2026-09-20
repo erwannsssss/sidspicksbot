@@ -713,8 +713,6 @@ def make_picks(engines, picks, s, research_cache, sharp, obs, learned):
         main_ok = bar <= p["edge"] <= s["max_edge"] and not against and not s["paused"] and not unproven \
             and p["model_prob"] >= s["min_main_prob"]
         if main_ok:
-            legs.append({k: v for k, v in p.items() if not k.startswith("_")})  # parlays use only pick-quality legs
-        if main_ok:
             p["tier"] = tier_of(p["edge"])
             p["units"] = max(size_units(p["model_prob"], p_eff, s), 0.5)
             if used_today + p["units"] > s["daily_unit_cap"] or league_used[p["tour"]] + p["units"] > s["league_daily_cap"]:
@@ -755,6 +753,7 @@ def make_picks(engines, picks, s, research_cache, sharp, obs, learned):
         used_today += p["units"]
         league_used[p["tour"]] += p["units"]
         new.append(p)
+    legs = [dict(p) for p in new]  # parlays are built from this run's recommended and watchlist picks
     return new, legs
 
 
@@ -772,10 +771,12 @@ def build_parlays(legs, parlays, s):
     used = {leg["id"] for x in made_today for leg in x["legs"]}
     pool, seen = [], set()
     for L in sorted(legs, key=lambda L: L["edge"], reverse=True):
-        if L["edge"] >= s["parlay_leg_edge"] and L["game"] not in seen and L["id"] not in used \
-                and parse_time(L["start_est"]) > now_utc() + timedelta(minutes=30):
+        game = L.get("game") or L.get("event")
+        start = parse_time(L.get("start_est")) or (parse_time(L["expected_end"]) - timedelta(hours=3))
+        if L.get("edge", 0) >= s["parlay_leg_edge"] and game not in seen and L["id"] not in used \
+                and start > now_utc() + timedelta(minutes=30):
             pool.append(L)
-            seen.add(L["game"])
+            seen.add(game)
     pool = pool[:10]
     options = []
     for n in range(2, s["parlay_max_legs"] + 1):
@@ -796,6 +797,7 @@ def build_parlays(legs, parlays, s):
         taken_legs |= {L["id"] for L in combo}
         out.append({
             "id": f"PARLAY-{now_utc().strftime('%Y%m%d%H%M')}-{len(out) + 1}", "tier": "P", "sport": "Parlay",
+            "kind": "recommended" if all(L.get("tier") != "W" for L in combo) else "watchlist",
             "made": now_utc().isoformat(), "units": s["parlay_units"], "price": round(cost, 4),
             "model_prob": round(prob, 4), "ev": round(ev, 3), "payout_units": round(s["parlay_units"] * (1 / cost - 1), 1),
             "status": "pending", "pnl": None,
@@ -906,12 +908,13 @@ def grade_picks(picks, s):
 def your_version(p, taken, s):
     """A pick as you actually traded it: your own price if you logged one."""
     t = taken.get(p["id"])
-    pr = t.get("price") if isinstance(t, dict) else None
-    if not pr or p["status"] not in ("win", "loss"):
-        return p
-    q = dict(p, price=pr)
-    fee_units = p["units"] * s["fee_rate"] * (1 - pr)
-    q["pnl"] = round(p["units"] * (1 - pr) / pr - fee_units, 2) if p["status"] == "win" else round(-p["units"] - fee_units, 2)
+    pr = (t.get("price") if isinstance(t, dict) else None) or p["price"]
+    un = (t.get("units") if isinstance(t, dict) else None) or p["units"]
+    q = dict(p, price=pr, units=un)
+    if p["status"] not in ("win", "loss") or (pr == p["price"] and un == p["units"]):
+        return q
+    fee_units = un * s["fee_rate"] * (1 - pr)
+    q["pnl"] = round(un * (1 - pr) / pr - fee_units, 2) if p["status"] == "win" else round(-un - fee_units, 2)
     return q
 
 
@@ -1138,7 +1141,8 @@ def write_dashboard(picks, s, reports, changelog, status_note, taken, engines):
                            paused=s["paused"]),
         "settings": s,
         "open": [p for p in picks if p["status"] == "pending"],
-        "history": [dict(p, your_pnl=your_version(p, taken, s)["pnl"], your_price=your_version(p, taken, s)["price"])
+        "history": [dict(p, your_pnl=your_version(p, taken, s)["pnl"], your_price=your_version(p, taken, s)["price"],
+                         your_units=your_version(p, taken, s)["units"])
                     if taken.get(p["id"]) else p for p in sorted(done, key=lambda p: p.get("graded", ""), reverse=True)],
         "parlays": {"open": [x for x in (_PARLAYS[0] if _PARLAYS else []) if x["status"] == "pending"],
                     "done": sorted([x for x in (_PARLAYS[0] if _PARLAYS else []) if x["status"] != "pending"],
@@ -1303,11 +1307,13 @@ def main():
     for x in p_graded:
         telegram(f"{'🎉' if x['status'] == 'win' else '❌' if x['status'] == 'loss' else '➖'} Parlay "
                  f"({len(x['legs'])} legs) {x['status']}: {x['pnl']:+g}u")
-    new_parlays = build_parlays(legs, parlays, s)
+    open_legs = [dict(p) for p in picks if p["status"] == "pending" and p.get("model_prob") and p.get("price")]
+    new_parlays = build_parlays(legs + open_legs, parlays, s)
     parlays.extend(new_parlays)
     save_json(PARLAYS_FILE, parlays)
     for x in new_parlays:
-        telegram(f"<b>Parlay idea</b> ({len(x['legs'])} legs, {x['units']:g}u to win {x['payout_units']:g}u)\n"
+        telegram(f"<b>{'Parlay (all legs recommended)' if x.get('kind') == 'recommended' else 'Watchlist parlay'}</b> "
+                 f"({len(x['legs'])} legs, {x['units']:g}u to win {x['payout_units']:g}u, practice only)\n"
                  + "\n".join(f"• {html.escape(L['market'])} at {L['price'] * 100:.0f}¢ ({html.escape(L['sport'])}: "
                               f"{html.escape(L['matchup'])})" for L in x["legs"])
                  + f"\n\nModel's chance it hits: {x['model_prob']:.1%}. Expected value +{x['ev']:.0%} if the model is right."
