@@ -1,6 +1,6 @@
 {
- "updated": "2026-09-20T06:33:58.375775+00:00",
- "status_note": "Quick check graded 0 pick(s) and 0 parlay(s).",
+ "updated": "2026-09-20T06:55:16.428227+00:00",
+ "status_note": "Last run found 0 new pick(s) and graded 1.",
  "bankroll": 112.26,
  "protection": {
   "bankroll": 112.26,
@@ -201,8 +201,8 @@
    "expected_end": "2026-09-21T02:20:00+00:00",
    "start_est": "2026-09-20T23:20:00+00:00",
    "status": "pending",
-   "latest_price": 0.335,
-   "close_price": 0.335,
+   "latest_price": 0.34,
+   "close_price": 0.34,
    "pnl": null,
    "why": "Projected runs 4.4 (home) vs 7.0 (11.4 total). Park factor 1.00. Forecast 81F, wind 5 mph. Model gives \"Over 9.5 runs scored\" 59%. Blended with the market that's 46% vs a 34% price.",
    "trend": 0.01,
@@ -413,58 +413,6 @@
  "parlays": {
   "open": [
    {
-    "id": "PARLAY-202609192138-1",
-    "tier": "P",
-    "sport": "Parlay",
-    "made": "2026-09-19T21:38:29.825505+00:00",
-    "units": 1.0,
-    "price": 0.2994,
-    "model_prob": 0.3893,
-    "ev": 0.3,
-    "payout_units": 2.3,
-    "status": "pending",
-    "pnl": null,
-    "legs": [
-     {
-      "id": "KXNFLPASSTDS-26SEP20SEAARI-SEADLOCK2-2:no",
-      "ticker": "KXNFLPASSTDS-26SEP20SEAARI-SEADLOCK2-2",
-      "side": "no",
-      "market": "Drew Lock: under 2",
-      "matchup": "SEA at ARI",
-      "sport": "Football",
-      "price": 0.63,
-      "model_prob": 0.709,
-      "edge": 0.062,
-      "expected_end": "2026-09-20T23:25:00+00:00"
-     },
-     {
-      "id": "KXNCAAFSPREAD-26SEP19UNDNEB-NEB34:no",
-      "ticker": "KXNCAAFSPREAD-26SEP19UNDNEB-NEB34",
-      "side": "no",
-      "market": "No: Nebraska wins by over 33.5 points",
-      "matchup": "North Dakota at Nebraska",
-      "sport": "Football",
-      "price": 0.66,
-      "model_prob": 0.738,
-      "edge": 0.062,
-      "expected_end": "2026-09-20T02:15:00+00:00",
-      "result": "win"
-     },
-     {
-      "id": "KXNCAAFSPREAD-26SEP19MONTORST-ORST24:no",
-      "ticker": "KXNCAAFSPREAD-26SEP19MONTORST-ORST24",
-      "side": "no",
-      "market": "No: Oregon St. wins by over 23.5 points",
-      "matchup": "Montana at Oregon State",
-      "sport": "Football",
-      "price": 0.67,
-      "model_prob": 0.744,
-      "edge": 0.059,
-      "expected_end": "2026-09-20T06:00:00+00:00"
-     }
-    ]
-   },
-   {
     "id": "PARLAY-202609200325-1",
     "tier": "P",
     "sport": "Parlay",
@@ -559,6 +507,60 @@
   ],
   "done": [
    {
+    "id": "PARLAY-202609192138-1",
+    "tier": "P",
+    "sport": "Parlay",
+    "made": "2026-09-19T21:38:29.825505+00:00",
+    "units": 1.0,
+    "price": 0.2994,
+    "model_prob": 0.3893,
+    "ev": 0.3,
+    "payout_units": 2.3,
+    "status": "loss",
+    "pnl": -1.0,
+    "legs": [
+     {
+      "id": "KXNFLPASSTDS-26SEP20SEAARI-SEADLOCK2-2:no",
+      "ticker": "KXNFLPASSTDS-26SEP20SEAARI-SEADLOCK2-2",
+      "side": "no",
+      "market": "Drew Lock: under 2",
+      "matchup": "SEA at ARI",
+      "sport": "Football",
+      "price": 0.63,
+      "model_prob": 0.709,
+      "edge": 0.062,
+      "expected_end": "2026-09-20T23:25:00+00:00"
+     },
+     {
+      "id": "KXNCAAFSPREAD-26SEP19UNDNEB-NEB34:no",
+      "ticker": "KXNCAAFSPREAD-26SEP19UNDNEB-NEB34",
+      "side": "no",
+      "market": "No: Nebraska wins by over 33.5 points",
+      "matchup": "North Dakota at Nebraska",
+      "sport": "Football",
+      "price": 0.66,
+      "model_prob": 0.738,
+      "edge": 0.062,
+      "expected_end": "2026-09-20T02:15:00+00:00",
+      "result": "win"
+     },
+     {
+      "id": "KXNCAAFSPREAD-26SEP19MONTORST-ORST24:no",
+      "ticker": "KXNCAAFSPREAD-26SEP19MONTORST-ORST24",
+      "side": "no",
+      "market": "No: Oregon St. wins by over 23.5 points",
+      "matchup": "Montana at Oregon State",
+      "sport": "Football",
+      "price": 0.67,
+      "model_prob": 0.744,
+      "edge": 0.059,
+      "expected_end": "2026-09-20T06:00:00+00:00",
+      "result": "loss"
+     }
+    ],
+    "graded": "2026-09-20T06:54:36.275689+00:00"
+   },
+   {
     "id": "PARLAY-202609192138-2",
     "tier": "P",
     "sport": "Parlay",
@@ -602,12 +604,12 @@
    }
   ],
   "summary": {
-   "picks": 1,
+   "picks": 2,
    "wins": 1,
-   "losses": 0,
-   "units": 1.67,
-   "staked": 1.0,
-   "roi": 1.67,
+   "losses": 1,
+   "units": 0.67,
+   "staked": 2.0,
+   "roi": 0.335,
    "beat_price": null,
    "clv": null,
    "clv_picks": 0
@@ -616,11 +618,11 @@
  "learning": {
   "groups": {
    "tennis:winner": {
-    "finished": 8,
-    "games": 4,
+    "finished": 12,
+    "games": 6,
     "trust": 0.5,
     "confidence_fix": false,
-    "last": "2026-09-20T03:00:00+00:00"
+    "last": "2026-09-20T04:10:00+00:00"
    },
    "soccer:winner": {
     "finished": 66,
@@ -790,6 +792,13 @@
     "confidence_fix": false,
     "last": "2026-09-20T01:38:00+00:00"
    },
+   "cfb:winner": {
+    "finished": 66,
+    "games": 33,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-20T02:00:00+00:00"
+   },
    "cfb:spread_1h": {
     "finished": 1134,
     "games": 29,
@@ -820,6 +829,13 @@
    },
    "cfb:total_1q": {
     "finished": 306,
+    "games": 15,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-20T02:00:00+00:00"
+   },
+   "cfb:period_winner_2h": {
+    "finished": 60,
     "games": 15,
     "trust": 0.25,
     "confidence_fix": false,
@@ -867,93 +883,79 @@
     "confidence_fix": false,
     "last": "2026-09-20T02:00:00+00:00"
    },
+   "cfb:period_winner_4q": {
+    "finished": 60,
+    "games": 15,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-20T02:00:00+00:00"
+   },
+   "cfb:spread_4q": {
+    "finished": 326,
+    "games": 15,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-20T02:00:00+00:00"
+   },
+   "cfb:total_4q": {
+    "finished": 322,
+    "games": 15,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-20T02:00:00+00:00"
+   },
+   "cfb:spread": {
+    "finished": 1954,
+    "games": 46,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-20T02:00:00+00:00"
+   },
    "cfb:team_total": {
-    "finished": 1212,
+    "finished": 1274,
     "games": 29,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-09-20T02:00:00+00:00"
    },
-   "cfb:period_winner_2h": {
-    "finished": 56,
-    "games": 14,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-20T01:30:00+00:00"
-   },
-   "cfb:period_winner_4q": {
-    "finished": 56,
-    "games": 14,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-20T01:30:00+00:00"
-   },
-   "cfb:spread_4q": {
-    "finished": 306,
-    "games": 14,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-20T01:30:00+00:00"
-   },
-   "cfb:total_4q": {
-    "finished": 300,
-    "games": 14,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-20T01:30:00+00:00"
-   },
-   "cfb:spread": {
-    "finished": 1784,
-    "games": 43,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-20T01:30:00+00:00"
-   },
    "cfb:total": {
-    "finished": 1410,
-    "games": 43,
+    "finished": 1524,
+    "games": 46,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-09-20T01:30:00+00:00"
-   },
-   "cfb:winner": {
-    "finished": 60,
-    "games": 30,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-20T01:00:00+00:00"
+    "last": "2026-09-20T02:00:00+00:00"
    }
   },
   "price_trend": {
    "flat": {
-    "markets": 12231,
+    "markets": 12609,
     "hit_vs_price": 0.0
    },
    "falling": {
-    "markets": 484,
-    "hit_vs_price": 0.009
+    "markets": 498,
+    "hit_vs_price": 0.008
    },
    "rising": {
-    "markets": 490,
-    "hit_vs_price": -0.011
+    "markets": 504,
+    "hit_vs_price": -0.01
    }
   }
  },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "tracker": {
-  "tracked": 21108,
+  "tracked": 21536,
   "series": 3827,
   "movers": []
  },
  "models": {
   "tennis": {
-   "matches": 19461,
-   "training_rows": 13318,
+   "matches": 19463,
+   "training_rows": 13320,
    "holdout": {
     "from": "2026-08-15",
     "matches": 1998,
-    "elo_log_loss": 0.6597,
-    "model_log_loss": 0.6518,
+    "elo_log_loss": 0.6592,
+    "model_log_loss": 0.6514,
     "elo_accuracy": 0.62,
     "model_accuracy": 0.627
    },
@@ -962,14 +964,14 @@
     "elo": 1.744,
     "dominance": 0.0,
     "rank": 0.0,
-    "h2h": 0.429,
-    "form": -1.106,
+    "h2h": 0.432,
+    "form": -1.105,
     "fatigue_games": -0.204,
     "fatigue_matches": 0.047,
     "rest": 0.017,
     "travel": 0.132,
     "altitude": 0.0,
-    "best_of_5": 0.44
+    "best_of_5": 0.439
    },
    "sport": "Tennis",
    "label": "Tennis",
@@ -1047,31 +1049,31 @@
    "holdout": {
     "matches": 650,
     "rating_log_loss": 0.6281,
-    "model_log_loss": 0.6222,
+    "model_log_loss": 0.6205,
     "rating_accuracy": 0.657,
-    "model_accuracy": 0.651
+    "model_accuracy": 0.654
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6012,
-    "model_log_loss": 0.6222,
+    "model_log_loss": 0.6205,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 650
    },
    "backtest": {
-    "bets": 16,
-    "wins": 5,
-    "units": -8.1,
-    "roi": -0.276
+    "bets": 14,
+    "wins": 3,
+    "units": -14.1,
+    "roi": -0.521
    },
    "weights": {
-    "home_field": 0.256,
-    "rating": 1.529,
-    "rest": 0.228,
-    "point_diff_form": 0.23,
-    "qb_change": 0.285,
-    "epa": 0.167
+    "home_field": 0.257,
+    "rating": 1.534,
+    "rest": 0.23,
+    "point_diff_form": 0.219,
+    "qb_change": 0.353,
+    "epa": 0.165
    },
    "matches": 4380,
    "totals": {
@@ -1156,15 +1158,15 @@
    "clv_picks": 0
   },
   "watch": {
-   "picks": 18,
+   "picks": 19,
    "wins": 8,
-   "losses": 10,
-   "units": -0.16,
-   "staked": 9.0,
-   "roi": -0.018,
-   "beat_price": 0.278,
-   "clv": -0.0047,
-   "clv_picks": 16
+   "losses": 11,
+   "units": -0.67,
+   "staked": 9.5,
+   "roi": -0.071,
+   "beat_price": 0.263,
+   "clv": -0.0044,
+   "clv_picks": 17
   }
  },
  "by_expert_lean": {
@@ -1226,15 +1228,15 @@
    "clv_picks": 0
   },
   "W": {
-   "picks": 18,
+   "picks": 19,
    "wins": 8,
-   "losses": 10,
-   "units": -0.16,
-   "staked": 9.0,
-   "roi": -0.018,
-   "beat_price": 0.278,
-   "clv": -0.0047,
-   "clv_picks": 16
+   "losses": 11,
+   "units": -0.67,
+   "staked": 9.5,
+   "roi": -0.071,
+   "beat_price": 0.263,
+   "clv": -0.0044,
+   "clv_picks": 17
   }
  },
  "watch_open": [
@@ -1547,45 +1549,6 @@
    "why": "Ratings 1571 vs 1554, on the road. Net EPA per play lately +0.08 vs +0.04. Point differential last 5: +54 vs +16. Model gives MIN 41%. Blended with the market that's 35% vs a 34% price.",
    "start_est": "2026-09-20T16:00:00+00:00",
    "close_price": 0.335,
-   "sharp_prob": null,
-   "research": "",
-   "sources": [],
-   "expert_lean": "none"
-  },
-  {
-   "id": "KXNCAAFSPREAD-26SEP19MONTORST-ORST24:no",
-   "ticker": "KXNCAAFSPREAD-26SEP19MONTORST-ORST24",
-   "side": "no",
-   "event": "KXNCAAFSPREAD-26SEP19MONTORST",
-   "game": "26SEP19MONTORST",
-   "sport": "Football",
-   "model_key": "cfb",
-   "mtype": "spread",
-   "line": 23.5,
-   "tour": "College Football",
-   "tournament": "Montana at Oregon State",
-   "matchup": "Montana at Oregon State",
-   "surface": "",
-   "pick": "No: Oregon St. wins by over 23.5 points",
-   "opponent": "",
-   "market": "No: Oregon St. wins by over 23.5 points",
-   "price": 0.66,
-   "model_prob": 0.824,
-   "raw_prob": 0.998,
-   "edge": 0.148,
-   "tier": "W",
-   "units": 0.5,
-   "made": "2026-09-20T00:02:10.400126+00:00",
-   "expected_end": "2026-09-20T06:00:00+00:00",
-   "start_est": "2026-09-20T02:00:00+00:00",
-   "status": "pending",
-   "latest_price": 0.66,
-   "close_price": 0.66,
-   "pnl": null,
-   "why": "Projected score margin -22.0 (home) and total 54.7. Model gives \"No: Oregon St. wins by over 23.5 points\" 100%. Blended with the market that's 74% vs a 66% price.",
-   "trend": -0.01,
-   "new_market": false,
-   "trust": 0.25,
    "sharp_prob": null,
    "research": "",
    "sources": [],
@@ -1983,6 +1946,46 @@
   }
  ],
  "watch_history": [
+  {
+   "id": "KXNCAAFSPREAD-26SEP19MONTORST-ORST24:no",
+   "ticker": "KXNCAAFSPREAD-26SEP19MONTORST-ORST24",
+   "side": "no",
+   "event": "KXNCAAFSPREAD-26SEP19MONTORST",
+   "game": "26SEP19MONTORST",
+   "sport": "Football",
+   "model_key": "cfb",
+   "mtype": "spread",
+   "line": 23.5,
+   "tour": "College Football",
+   "tournament": "Montana at Oregon State",
+   "matchup": "Montana at Oregon State",
+   "surface": "",
+   "pick": "No: Oregon St. wins by over 23.5 points",
+   "opponent": "",
+   "market": "No: Oregon St. wins by over 23.5 points",
+   "price": 0.66,
+   "model_prob": 0.824,
+   "raw_prob": 0.998,
+   "edge": 0.148,
+   "tier": "W",
+   "units": 0.5,
+   "made": "2026-09-20T00:02:10.400126+00:00",
+   "expected_end": "2026-09-20T06:00:00+00:00",
+   "start_est": "2026-09-20T02:00:00+00:00",
+   "status": "loss",
+   "latest_price": 0.66,
+   "close_price": 0.66,
+   "pnl": -0.51,
+   "why": "Projected score margin -22.0 (home) and total 54.7. Model gives \"No: Oregon St. wins by over 23.5 points\" 100%. Blended with the market that's 74% vs a 66% price.",
+   "trend": -0.01,
+   "new_market": false,
+   "trust": 0.25,
+   "sharp_prob": null,
+   "research": "",
+   "sources": [],
+   "expert_lean": "none",
+   "graded": "2026-09-20T06:50:52.070206+00:00"
+  },
   {
    "id": "KXNCAAFTEAMTOTAL-26SEP19NDSUSAC-SAC14",
    "ticker": "KXNCAAFTEAMTOTAL-26SEP19NDSUSAC-SAC14",

@@ -9,8 +9,8 @@
   "model_prob": 0.3893,
   "ev": 0.3,
   "payout_units": 2.3,
-  "status": "pending",
-  "pnl": null,
+  "status": "loss",
+  "pnl": -1.0,
   "legs": [
    {
     "id": "KXNFLPASSTDS-26SEP20SEAARI-SEADLOCK2-2:no",
@@ -47,9 +47,11 @@
     "price": 0.67,
     "model_prob": 0.744,
     "edge": 0.059,
-    "expected_end": "2026-09-20T06:00:00+00:00"
+    "expected_end": "2026-09-20T06:00:00+00:00",
+    "result": "loss"
    }
-  ]
+  ],
+  "graded": "2026-09-20T06:54:36.275689+00:00"
  },
  {
   "id": "PARLAY-202609192138-2",

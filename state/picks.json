@@ -785,10 +785,10 @@
   "made": "2026-09-20T00:02:10.400126+00:00",
   "expected_end": "2026-09-20T06:00:00+00:00",
   "start_est": "2026-09-20T02:00:00+00:00",
-  "status": "pending",
+  "status": "loss",
   "latest_price": 0.66,
   "close_price": 0.66,
-  "pnl": null,
+  "pnl": -0.51,
   "why": "Projected score margin -22.0 (home) and total 54.7. Model gives \"No: Oregon St. wins by over 23.5 points\" 100%. Blended with the market that's 74% vs a 66% price.",
   "trend": -0.01,
   "new_market": false,
@@ -796,7 +796,8 @@
   "sharp_prob": null,
   "research": "",
   "sources": [],
-  "expert_lean": "none"
+  "expert_lean": "none",
+  "graded": "2026-09-20T06:50:52.070206+00:00"
  },
  {
   "id": "KXNFLPASSTDS-26SEP20SEAARI-SEADLOCK2-2:no",
@@ -1615,8 +1616,8 @@
   "expected_end": "2026-09-21T02:20:00+00:00",
   "start_est": "2026-09-20T23:20:00+00:00",
   "status": "pending",
-  "latest_price": 0.335,
-  "close_price": 0.335,
+  "latest_price": 0.34,
+  "close_price": 0.34,
   "pnl": null,
   "why": "Projected runs 4.4 (home) vs 7.0 (11.4 total). Park factor 1.00. Forecast 81F, wind 5 mph. Model gives \"Over 9.5 runs scored\" 59%. Blended with the market that's 46% vs a 34% price.",
   "trend": 0.01,
