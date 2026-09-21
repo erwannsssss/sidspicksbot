@@ -1,6 +1,6 @@
 {
- "updated": "2026-09-21T18:25:42.725954+00:00",
- "status_note": "Last run found 0 new pick(s) and graded 0.",
+ "updated": "2026-09-21T19:21:44.923851+00:00",
+ "status_note": "Last run found 1 new pick(s) and graded 0.",
  "bankroll": 104.94,
  "protection": {
   "bankroll": 104.94,
@@ -809,7 +809,7 @@
  "learning": {
   "groups": {
    "mlb:prop_tb": {
-    "finished": 3462,
+    "finished": 3454,
     "games": 26,
     "trust": 0.25,
     "confidence_fix": false,
@@ -1301,7 +1301,7 @@
   },
   "price_trend": {
    "flat": {
-    "markets": 28974,
+    "markets": 28966,
     "hit_vs_price": 0.0
    },
    "rising": {
@@ -1316,7 +1316,7 @@
  },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "tracker": {
-  "tracked": 25932,
+  "tracked": 26183,
   "series": 3828,
   "movers": [
    {
@@ -1443,8 +1443,8 @@
  },
  "models": {
   "tennis": {
-   "matches": 19630,
-   "training_rows": 13414,
+   "matches": 19634,
+   "training_rows": 13415,
    "holdout": {
     "from": "2026-08-17",
     "matches": 2013,
@@ -1455,17 +1455,17 @@
    },
    "using": "full",
    "weights": {
-    "elo": 2.014,
+    "elo": 2.015,
     "dominance": 0.0,
     "rank": 0.0,
     "h2h": 0.449,
-    "form": -0.515,
+    "form": -0.517,
     "fatigue_games": -0.216,
     "fatigue_matches": 0.086,
     "rest": 0.012,
-    "travel": 0.14,
+    "travel": 0.139,
     "altitude": 0.0,
-    "best_of_5": 0.595
+    "best_of_5": 0.594
    },
    "sport": "Tennis",
    "label": "Tennis",
@@ -1543,31 +1543,31 @@
    "holdout": {
     "matches": 652,
     "rating_log_loss": 0.6293,
-    "model_log_loss": 0.6214,
+    "model_log_loss": 0.624,
     "rating_accuracy": 0.656,
-    "model_accuracy": 0.653
+    "model_accuracy": 0.644
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6041,
-    "model_log_loss": 0.6214,
+    "model_log_loss": 0.624,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 652
    },
    "backtest": {
-    "bets": 15,
+    "bets": 16,
     "wins": 4,
-    "units": -12.0,
-    "roi": -0.429
+    "units": -14.0,
+    "roi": -0.467
    },
    "weights": {
-    "home_field": 0.251,
-    "rating": 1.521,
-    "rest": 0.231,
-    "point_diff_form": 0.218,
-    "qb_change": 0.347,
-    "epa": 0.172
+    "home_field": 0.252,
+    "rating": 1.524,
+    "rest": 0.238,
+    "point_diff_form": 0.227,
+    "qb_change": 0.313,
+    "epa": 0.167
    },
    "matches": 4394,
    "totals": {
@@ -1761,8 +1761,8 @@
    "expected_end": "2026-09-22T06:15:00+00:00",
    "start_est": "2026-09-22T00:15:00+00:00",
    "status": "pending",
-   "latest_price": 0.43,
-   "close_price": 0.43,
+   "latest_price": 0.415,
+   "close_price": 0.415,
    "pnl": null,
    "why": "Davante Adams: 3.74 a game lately (last 12 games). Model gives \"Davante Adams: under 5\" 68%. Blended with the market that's 48% vs a 42% price. Price down 12\u00a2 in the last 12 hours.",
    "trend": -0.125,
@@ -2036,8 +2036,8 @@
    "expected_end": "2026-09-22T04:45:00+00:00",
    "start_est": "2026-09-22T01:45:00+00:00",
    "status": "pending",
-   "latest_price": 0.335,
-   "close_price": 0.335,
+   "latest_price": 0.325,
+   "close_price": 0.325,
    "pnl": null,
    "why": "Brooks Lee: 0.95 a game this season over 150 games (adjusted 0.95). Model gives \"Brooks Lee: under 1\" 39%. Blended with the market that's 38% vs a 34% price.",
    "trend": 0.01,
@@ -2123,6 +2123,45 @@
    "trust": 0.25,
    "sharp_prob": 0.297,
    "sharp_source": "Pinnacle",
+   "research": "",
+   "sources": [],
+   "expert_lean": "none"
+  },
+  {
+   "id": "KXNCAAFTOTAL-26SEP25ARMYTEM-50",
+   "ticker": "KXNCAAFTOTAL-26SEP25ARMYTEM-50",
+   "side": "yes",
+   "event": "KXNCAAFTOTAL-26SEP25ARMYTEM",
+   "game": "26SEP25ARMYTEM",
+   "sport": "Football",
+   "model_key": "cfb",
+   "mtype": "total",
+   "line": 49.5,
+   "tour": "College Football",
+   "tournament": "Army at Temple",
+   "matchup": "Army at Temple",
+   "surface": "",
+   "pick": "Over 49.5 points scored",
+   "opponent": "",
+   "market": "Over 49.5 points scored",
+   "price": 0.45,
+   "model_prob": 0.518,
+   "raw_prob": 0.591,
+   "edge": 0.051,
+   "tier": "W",
+   "units": 0.5,
+   "made": "2026-09-21T19:19:30.685043+00:00",
+   "expected_end": "2026-09-25T23:00:00+00:00",
+   "start_est": "2026-09-25T20:00:00+00:00",
+   "status": "pending",
+   "latest_price": 0.45,
+   "close_price": null,
+   "pnl": null,
+   "why": "Projected score margin -5.3 (home) and total 53.4. Model gives \"Over 49.5 points scored\" 59%. Blended with the market that's 48% vs a 45% price.",
+   "trend": 0.0,
+   "new_market": true,
+   "trust": 0.25,
+   "sharp_prob": null,
    "research": "",
    "sources": [],
    "expert_lean": "none"
