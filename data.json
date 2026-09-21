@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-21T13:23:08.712871+00:00",
+ "updated": "2026-09-21T14:23:51.264102+00:00",
  "status_note": "Last run found 0 new pick(s) and graded 0.",
  "bankroll": 104.94,
  "protection": {
@@ -808,15 +808,8 @@
  },
  "learning": {
   "groups": {
-   "mlb:prop_ks": {
-    "finished": 652,
-    "games": 26,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-20T23:20:00+00:00"
-   },
    "mlb:prop_hit": {
-    "finished": 2226,
+    "finished": 2163,
     "games": 26,
     "trust": 0.25,
     "confidence_fix": false,
@@ -1046,12 +1039,19 @@
     "confidence_fix": false,
     "last": "2026-09-20T23:20:00+00:00"
    },
+   "mlb:prop_ks": {
+    "finished": 628,
+    "games": 25,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-20T23:20:00+00:00"
+   },
    "tennis:winner": {
-    "finished": 88,
-    "games": 44,
+    "finished": 94,
+    "games": 47,
     "trust": 0.5,
     "confidence_fix": false,
-    "last": "2026-09-21T09:20:00+00:00"
+    "last": "2026-09-21T11:00:00+00:00"
    },
    "soccer:btts_1h": {
     "finished": 122,
@@ -1301,11 +1301,11 @@
   },
   "price_trend": {
    "flat": {
-    "markets": 29125,
+    "markets": 29045,
     "hit_vs_price": 0.0
    },
    "rising": {
-    "markets": 2494,
+    "markets": 2493,
     "hit_vs_price": -0.005
    },
    "falling": {
@@ -1316,7 +1316,7 @@
  },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "tracker": {
-  "tracked": 25726,
+  "tracked": 25758,
   "series": 3828,
   "movers": [
    {
@@ -1443,15 +1443,15 @@
  },
  "models": {
   "tennis": {
-   "matches": 19594,
-   "training_rows": 13387,
+   "matches": 19602,
+   "training_rows": 13393,
    "holdout": {
     "from": "2026-08-16",
     "matches": 2009,
-    "elo_log_loss": 0.6588,
+    "elo_log_loss": 0.6589,
     "model_log_loss": 0.6575,
-    "elo_accuracy": 0.606,
-    "model_accuracy": 0.608
+    "elo_accuracy": 0.607,
+    "model_accuracy": 0.607
    },
    "using": "full",
    "weights": {
@@ -1459,13 +1459,13 @@
     "dominance": 0.0,
     "rank": 0.0,
     "h2h": 0.451,
-    "form": -0.519,
+    "form": -0.516,
     "fatigue_games": -0.217,
     "fatigue_matches": 0.087,
     "rest": 0.014,
     "travel": 0.138,
     "altitude": 0.0,
-    "best_of_5": 0.597
+    "best_of_5": 0.596
    },
    "sport": "Tennis",
    "label": "Tennis",
@@ -1543,31 +1543,31 @@
    "holdout": {
     "matches": 652,
     "rating_log_loss": 0.6293,
-    "model_log_loss": 0.6212,
+    "model_log_loss": 0.6231,
     "rating_accuracy": 0.656,
-    "model_accuracy": 0.649
+    "model_accuracy": 0.653
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6041,
-    "model_log_loss": 0.6212,
+    "model_log_loss": 0.6231,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 652
    },
    "backtest": {
-    "bets": 16,
-    "wins": 5,
-    "units": -8.4,
-    "roi": -0.288
+    "bets": 15,
+    "wins": 4,
+    "units": -11.4,
+    "roi": -0.394
    },
    "weights": {
-    "home_field": 0.253,
-    "rating": 1.519,
-    "rest": 0.241,
-    "point_diff_form": 0.222,
-    "qb_change": 0.342,
-    "epa": 0.17
+    "home_field": 0.251,
+    "rating": 1.516,
+    "rest": 0.238,
+    "point_diff_form": 0.227,
+    "qb_change": 0.351,
+    "epa": 0.165
    },
    "matches": 4394,
    "totals": {
@@ -1761,8 +1761,8 @@
    "expected_end": "2026-09-22T06:15:00+00:00",
    "start_est": "2026-09-22T00:15:00+00:00",
    "status": "pending",
-   "latest_price": 0.43,
-   "close_price": 0.43,
+   "latest_price": 0.425,
+   "close_price": 0.425,
    "pnl": null,
    "why": "Davante Adams: 3.74 a game lately (last 12 games). Model gives \"Davante Adams: under 5\" 68%. Blended with the market that's 48% vs a 42% price. Price down 12\u00a2 in the last 12 hours.",
    "trend": -0.125,
@@ -1919,8 +1919,8 @@
    "expected_end": "2026-09-24T04:30:00+00:00",
    "start_est": "2026-09-24T01:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.79,
-   "close_price": 0.79,
+   "latest_price": 0.795,
+   "close_price": 0.795,
    "pnl": null,
    "why": "Expected goals 1.44 vs 1.22 (2.66 total). Model gives \"Under 4.5 goals scored\" 87%. Blended with the market that's 81% vs a 80% price.",
    "trend": 0.0,
@@ -1958,8 +1958,8 @@
    "expected_end": "2026-09-22T01:40:00+00:00",
    "start_est": "2026-09-21T22:40:00+00:00",
    "status": "pending",
-   "latest_price": 0.46,
-   "close_price": 0.46,
+   "latest_price": 0.47,
+   "close_price": 0.47,
    "pnl": null,
    "why": "CJ Abrams: 2.29 a game this season over 146 games (adjusted 2.27). Model gives \"CJ Abrams: 2+\" 66%. Blended with the market that's 55% vs a 49% price. Price up 3\u00a2 in the last 12 hours.",
    "trend": 0.03,
