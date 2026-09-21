@@ -1,6 +1,6 @@
 {
- "updated": "2026-09-21T07:24:33.807783+00:00",
- "status_note": "Last run found 1 new pick(s) and graded 0.",
+ "updated": "2026-09-21T12:27:01.684670+00:00",
+ "status_note": "Last run found 0 new pick(s) and graded 1.",
  "bankroll": 104.94,
  "protection": {
   "bankroll": 104.94,
@@ -809,7 +809,7 @@
  "learning": {
   "groups": {
    "cfb:total": {
-    "finished": 980,
+    "finished": 968,
     "games": 29,
     "trust": 0.25,
     "confidence_fix": false,
@@ -1061,11 +1061,11 @@
     "last": "2026-09-20T02:00:00+00:00"
    },
    "tennis:winner": {
-    "finished": 62,
-    "games": 31,
+    "finished": 84,
+    "games": 42,
     "trust": 0.5,
     "confidence_fix": false,
-    "last": "2026-09-21T02:00:00+00:00"
+    "last": "2026-09-21T09:00:00+00:00"
    },
    "soccer:btts_1h": {
     "finished": 122,
@@ -1301,22 +1301,22 @@
   },
   "price_trend": {
    "flat": {
-    "markets": 29195,
+    "markets": 29207,
     "hit_vs_price": 0.0
    },
    "rising": {
-    "markets": 2489,
+    "markets": 2494,
     "hit_vs_price": -0.005
    },
    "falling": {
-    "markets": 2477,
+    "markets": 2482,
     "hit_vs_price": 0.003
    }
   }
  },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "tracker": {
-  "tracked": 25440,
+  "tracked": 25483,
   "series": 3828,
   "movers": [
    {
@@ -1443,29 +1443,29 @@
  },
  "models": {
   "tennis": {
-   "matches": 19563,
-   "training_rows": 13368,
+   "matches": 19587,
+   "training_rows": 13384,
    "holdout": {
     "from": "2026-08-16",
-    "matches": 2006,
-    "elo_log_loss": 0.6623,
-    "model_log_loss": 0.6531,
-    "elo_accuracy": 0.616,
-    "model_accuracy": 0.625
+    "matches": 2008,
+    "elo_log_loss": 0.6624,
+    "model_log_loss": 0.6536,
+    "elo_accuracy": 0.615,
+    "model_accuracy": 0.624
    },
    "using": "full",
    "weights": {
-    "elo": 1.741,
+    "elo": 1.74,
     "dominance": 0.0,
     "rank": 0.0,
-    "h2h": 0.432,
-    "form": -1.111,
-    "fatigue_games": -0.205,
-    "fatigue_matches": 0.05,
+    "h2h": 0.435,
+    "form": -1.106,
+    "fatigue_games": -0.206,
+    "fatigue_matches": 0.052,
     "rest": 0.016,
     "travel": 0.133,
     "altitude": 0.0,
-    "best_of_5": 0.444
+    "best_of_5": 0.442
    },
    "sport": "Tennis",
    "label": "Tennis",
@@ -1543,14 +1543,14 @@
    "holdout": {
     "matches": 652,
     "rating_log_loss": 0.6296,
-    "model_log_loss": 0.6235,
+    "model_log_loss": 0.6237,
     "rating_accuracy": 0.656,
     "model_accuracy": 0.652
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6044,
-    "model_log_loss": 0.6235,
+    "model_log_loss": 0.6237,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 652
@@ -1562,12 +1562,12 @@
     "roi": -0.372
    },
    "weights": {
-    "home_field": 0.252,
-    "rating": 1.521,
-    "rest": 0.232,
-    "point_diff_form": 0.222,
-    "qb_change": 0.339,
-    "epa": 0.166
+    "home_field": 0.251,
+    "rating": 1.523,
+    "rest": 0.229,
+    "point_diff_form": 0.217,
+    "qb_change": 0.344,
+    "epa": 0.169
    },
    "matches": 4393,
    "totals": {
@@ -1652,15 +1652,15 @@
    "clv_picks": 4
   },
   "watch": {
-   "picks": 41,
+   "picks": 42,
    "wins": 17,
-   "losses": 24,
-   "units": 1.47,
-   "staked": 20.5,
-   "roi": 0.072,
-   "beat_price": 0.244,
-   "clv": -0.0139,
-   "clv_picks": 39
+   "losses": 25,
+   "units": 0.95,
+   "staked": 21.0,
+   "roi": 0.045,
+   "beat_price": 0.238,
+   "clv": -0.0137,
+   "clv_picks": 40
   }
  },
  "by_expert_lean": {
@@ -1722,15 +1722,15 @@
    "clv_picks": 1
   },
   "W": {
-   "picks": 41,
+   "picks": 42,
    "wins": 17,
-   "losses": 24,
-   "units": 1.47,
-   "staked": 20.5,
-   "roi": 0.072,
-   "beat_price": 0.244,
-   "clv": -0.0139,
-   "clv_picks": 39
+   "losses": 25,
+   "units": 0.95,
+   "staked": 21.0,
+   "roi": 0.045,
+   "beat_price": 0.238,
+   "clv": -0.0137,
+   "clv_picks": 40
   }
  },
  "watch_open": [
@@ -1761,8 +1761,8 @@
    "expected_end": "2026-09-22T06:15:00+00:00",
    "start_est": "2026-09-22T00:15:00+00:00",
    "status": "pending",
-   "latest_price": 0.43,
-   "close_price": 0.43,
+   "latest_price": 0.435,
+   "close_price": 0.435,
    "pnl": null,
    "why": "Davante Adams: 3.74 a game lately (last 12 games). Model gives \"Davante Adams: under 5\" 68%. Blended with the market that's 48% vs a 42% price. Price down 12\u00a2 in the last 12 hours.",
    "trend": -0.125,
@@ -1809,46 +1809,6 @@
    "trust": 0.5,
    "sharp_prob": 0.4998,
    "sharp_source": "17 books",
-   "research": "",
-   "sources": [],
-   "expert_lean": "none"
-  },
-  {
-   "id": "KXWTAMATCH-26SEP20GIBFER-FER",
-   "ticker": "KXWTAMATCH-26SEP20GIBFER-FER",
-   "side": "yes",
-   "event": "KXWTAMATCH-26SEP20GIBFER",
-   "game": "26SEP20GIBFER",
-   "sport": "Tennis",
-   "model_key": "tennis",
-   "mtype": "winner",
-   "line": null,
-   "tour": "WTA",
-   "tournament": "2026 WTA Singapore",
-   "matchup": "2026 WTA Singapore",
-   "surface": "hard",
-   "pick": "Fiona Ferro",
-   "opponent": "Talia Gibson",
-   "market": "Fiona Ferro to win",
-   "price": 0.4,
-   "model_prob": 0.454,
-   "raw_prob": 0.513,
-   "edge": 0.037,
-   "tier": "W",
-   "units": 0.5,
-   "made": "2026-09-21T00:28:25.502826+00:00",
-   "expected_end": "2026-09-21T06:00:00+00:00",
-   "start_est": "2026-09-21T02:00:00+00:00",
-   "status": "pending",
-   "latest_price": 0.395,
-   "close_price": 0.395,
-   "pnl": null,
-   "why": "Elo 1693 vs 1593 on hard. Won 50% vs 50% of games lately. Form 8-2 vs 3-7. Model 51%, blended with the market 45%, price 40%. Price down 6\u00a2 in the last 12 hours. Sharp sportsbook price (Pinnacle) says 40%.",
-   "trend": -0.058,
-   "new_market": false,
-   "trust": 0.5,
-   "sharp_prob": 0.402,
-   "sharp_source": "Pinnacle",
    "research": "",
    "sources": [],
    "expert_lean": "none"
@@ -1959,8 +1919,8 @@
    "expected_end": "2026-09-24T04:30:00+00:00",
    "start_est": "2026-09-24T01:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.8,
-   "close_price": 0.8,
+   "latest_price": 0.79,
+   "close_price": 0.79,
    "pnl": null,
    "why": "Expected goals 1.44 vs 1.22 (2.66 total). Model gives \"Under 4.5 goals scored\" 87%. Blended with the market that's 81% vs a 80% price.",
    "trend": 0.0,
@@ -1998,8 +1958,8 @@
    "expected_end": "2026-09-22T01:40:00+00:00",
    "start_est": "2026-09-21T22:40:00+00:00",
    "status": "pending",
-   "latest_price": 0.475,
-   "close_price": 0.475,
+   "latest_price": 0.46,
+   "close_price": 0.46,
    "pnl": null,
    "why": "CJ Abrams: 2.29 a game this season over 146 games (adjusted 2.27). Model gives \"CJ Abrams: 2+\" 66%. Blended with the market that's 55% vs a 49% price. Price up 3\u00a2 in the last 12 hours.",
    "trend": 0.03,
@@ -2037,8 +1997,8 @@
    "expected_end": "2026-09-22T01:00:00+00:00",
    "start_est": "2026-09-21T22:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.28,
-   "close_price": 0.28,
+   "latest_price": 0.275,
+   "close_price": 0.275,
    "pnl": null,
    "why": "Ratings 1489 (Barracas Central, home) vs 1557 (Ind. Rivadavia). Share of chances lately (xG or shots on target) 50% vs 50%. Goal difference last 6: -4 vs +0. Last played Sep 14 vs Sep 12. Model gives the home 38%. Blended with the market that's 31% vs a 29% price. Sharp sportsbook price (Pinnacle) says 28%.",
    "trend": 0.001,
@@ -2077,8 +2037,8 @@
    "expected_end": "2026-09-22T01:35:00+00:00",
    "start_est": "2026-09-21T22:35:00+00:00",
    "status": "pending",
-   "latest_price": 0.5,
-   "close_price": 0.5,
+   "latest_price": 0.495,
+   "close_price": 0.495,
    "pnl": null,
    "why": "Vladimir Guerrero Jr.: 1.89 a game this season over 141 games (adjusted 1.92). Model gives \"Vladimir Guerrero Jr.: 2+\" 57%. Blended with the market that's 51% vs a 47% price.",
    "trend": -0.01,
@@ -2116,8 +2076,8 @@
    "expected_end": "2026-09-22T04:45:00+00:00",
    "start_est": "2026-09-22T01:45:00+00:00",
    "status": "pending",
-   "latest_price": 0.34,
-   "close_price": null,
+   "latest_price": 0.33,
+   "close_price": 0.33,
    "pnl": null,
    "why": "Brooks Lee: 0.95 a game this season over 150 games (adjusted 0.95). Model gives \"Brooks Lee: under 1\" 39%. Blended with the market that's 38% vs a 34% price.",
    "trend": 0.01,
@@ -2130,6 +2090,47 @@
   }
  ],
  "watch_history": [
+  {
+   "id": "KXWTAMATCH-26SEP20GIBFER-FER",
+   "ticker": "KXWTAMATCH-26SEP20GIBFER-FER",
+   "side": "yes",
+   "event": "KXWTAMATCH-26SEP20GIBFER",
+   "game": "26SEP20GIBFER",
+   "sport": "Tennis",
+   "model_key": "tennis",
+   "mtype": "winner",
+   "line": null,
+   "tour": "WTA",
+   "tournament": "2026 WTA Singapore",
+   "matchup": "2026 WTA Singapore",
+   "surface": "hard",
+   "pick": "Fiona Ferro",
+   "opponent": "Talia Gibson",
+   "market": "Fiona Ferro to win",
+   "price": 0.4,
+   "model_prob": 0.454,
+   "raw_prob": 0.513,
+   "edge": 0.037,
+   "tier": "W",
+   "units": 0.5,
+   "made": "2026-09-21T00:28:25.502826+00:00",
+   "expected_end": "2026-09-21T06:00:00+00:00",
+   "start_est": "2026-09-21T02:00:00+00:00",
+   "status": "loss",
+   "latest_price": 0.395,
+   "close_price": 0.395,
+   "pnl": -0.52,
+   "why": "Elo 1693 vs 1593 on hard. Won 50% vs 50% of games lately. Form 8-2 vs 3-7. Model 51%, blended with the market 45%, price 40%. Price down 6\u00a2 in the last 12 hours. Sharp sportsbook price (Pinnacle) says 40%.",
+   "trend": -0.058,
+   "new_market": false,
+   "trust": 0.5,
+   "sharp_prob": 0.402,
+   "sharp_source": "Pinnacle",
+   "research": "",
+   "sources": [],
+   "expert_lean": "none",
+   "graded": "2026-09-21T12:24:47.276780+00:00"
+  },
   {
    "id": "KXWTAMATCH-26SEP20KORSAW-SAW",
    "ticker": "KXWTAMATCH-26SEP20KORSAW-SAW",
