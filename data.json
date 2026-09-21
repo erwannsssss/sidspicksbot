@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-21T02:55:04.233026+00:00",
+ "updated": "2026-09-21T03:24:03.356364+00:00",
  "status_note": "Last run found 0 new pick(s) and graded 0.",
  "bankroll": 106.52,
  "protection": {
@@ -803,7 +803,7 @@
  "learning": {
   "groups": {
    "cfb:total": {
-    "finished": 1059,
+    "finished": 1057,
     "games": 32,
     "trust": 0.25,
     "confidence_fix": false,
@@ -950,11 +950,11 @@
     "last": "2026-09-21T00:30:00+00:00"
    },
    "soccer:spread": {
-    "finished": 624,
+    "finished": 626,
     "games": 98,
     "trust": 0.37,
     "confidence_fix": true,
-    "last": "2026-09-21T00:30:00+00:00"
+    "last": "2026-09-21T01:00:00+00:00"
    },
    "mlb:winner": {
     "finished": 52,
@@ -1111,7 +1111,7 @@
     "last": "2026-09-21T00:00:00+00:00"
    },
    "nfl:total": {
-    "finished": 494,
+    "finished": 504,
     "games": 14,
     "trust": 0.25,
     "confidence_fix": false,
@@ -1139,7 +1139,7 @@
     "last": "2026-09-21T00:20:00+00:00"
    },
    "nfl:team_total": {
-    "finished": 646,
+    "finished": 652,
     "games": 14,
     "trust": 0.25,
     "confidence_fix": false,
@@ -1160,7 +1160,7 @@
     "last": "2026-09-21T00:20:00+00:00"
    },
    "nfl:prop_rec": {
-    "finished": 1492,
+    "finished": 1506,
     "games": 14,
     "trust": 0.25,
     "confidence_fix": false,
@@ -1295,7 +1295,7 @@
   },
   "price_trend": {
    "flat": {
-    "markets": 28579,
+    "markets": 28609,
     "hit_vs_price": 0.0
    },
    "rising": {
@@ -1537,31 +1537,31 @@
    "holdout": {
     "matches": 652,
     "rating_log_loss": 0.6296,
-    "model_log_loss": 0.6227,
+    "model_log_loss": 0.6256,
     "rating_accuracy": 0.656,
-    "model_accuracy": 0.647
+    "model_accuracy": 0.64
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6044,
-    "model_log_loss": 0.6227,
+    "model_log_loss": 0.6256,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 652
    },
    "backtest": {
-    "bets": 15,
-    "wins": 4,
-    "units": -12.0,
-    "roi": -0.429
+    "bets": 17,
+    "wins": 5,
+    "units": -10.9,
+    "roi": -0.345
    },
    "weights": {
     "home_field": 0.252,
-    "rating": 1.518,
-    "rest": 0.238,
-    "point_diff_form": 0.219,
-    "qb_change": 0.341,
-    "epa": 0.171
+    "rating": 1.528,
+    "rest": 0.239,
+    "point_diff_form": 0.227,
+    "qb_change": 0.307,
+    "epa": 0.163
    },
    "matches": 4393,
    "totals": {
@@ -1755,8 +1755,8 @@
    "expected_end": "2026-09-22T06:15:00+00:00",
    "start_est": "2026-09-22T00:15:00+00:00",
    "status": "pending",
-   "latest_price": 0.415,
-   "close_price": 0.415,
+   "latest_price": 0.42,
+   "close_price": 0.42,
    "pnl": null,
    "why": "Davante Adams: 3.74 a game lately (last 12 games). Model gives \"Davante Adams: under 5\" 68%. Blended with the market that's 48% vs a 42% price. Price down 12\u00a2 in the last 12 hours.",
    "trend": -0.125,
