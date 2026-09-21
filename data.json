@@ -1,6 +1,6 @@
 {
- "updated": "2026-09-21T06:30:22.805129+00:00",
- "status_note": "Last run found 0 new pick(s) and graded 1.",
+ "updated": "2026-09-21T07:24:33.807783+00:00",
+ "status_note": "Last run found 1 new pick(s) and graded 0.",
  "bankroll": 104.94,
  "protection": {
   "bankroll": 104.94,
@@ -809,7 +809,7 @@
  "learning": {
   "groups": {
    "cfb:total": {
-    "finished": 988,
+    "finished": 980,
     "games": 29,
     "trust": 0.25,
     "confidence_fix": false,
@@ -1316,9 +1316,17 @@
  },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "tracker": {
-  "tracked": 25430,
+  "tracked": 25440,
   "series": 3828,
   "movers": [
+   {
+    "ticker": "KXNFLFFWEEKLEAD-2026W2WR-JSMITHNJIGBA11",
+    "series": "KXNFLFFWEEKLEAD",
+    "title": "Jaxon Smith-Njigba",
+    "move": 0.905,
+    "price": 0.93,
+    "close": "2026-09-22T03:59:00+00:00"
+   },
    {
     "ticker": "KXDIMAYORSPREAD-26SEP20FORJUN-JUN3",
     "series": "KXDIMAYORSPREAD",
@@ -1344,12 +1352,36 @@
     "close": "2026-09-23T06:00:00+00:00"
    },
    {
+    "ticker": "KXNFLFFWEEKTOP-2026W2TET5-JFERGUSON87",
+    "series": "KXNFLFFWEEKTOP",
+    "title": "Jake Ferguson",
+    "move": 0.69,
+    "price": 0.805,
+    "close": "2026-09-22T03:59:00+00:00"
+   },
+   {
+    "ticker": "KXNFLFFWEEKTOP-2026W2TET5-TKELCE87",
+    "series": "KXNFLFFWEEKTOP",
+    "title": "Travis Kelce",
+    "move": 0.66,
+    "price": 0.8,
+    "close": "2026-09-22T03:59:00+00:00"
+   },
+   {
     "ticker": "KXDIMAYORSPREAD-26SEP20FORJUN-JUN2",
     "series": "KXDIMAYORSPREAD",
     "title": "Junior wins by more than 1.5 goals",
     "move": 0.65,
     "price": 0.8,
     "close": "2026-09-22T19:00:00+00:00"
+   },
+   {
+    "ticker": "KXNFLFFWEEKTOP-2026W2WRT5-JSMITHNJIGBA11",
+    "series": "KXNFLFFWEEKTOP",
+    "title": "Jaxon Smith-Njigba",
+    "move": 0.65,
+    "price": 0.81,
+    "close": "2026-09-22T03:59:00+00:00"
    },
    {
     "ticker": "KXBUNDESLIGATEAMTOTAL-26SEP20PADTSG-PAD2",
@@ -1360,12 +1392,36 @@
     "close": "2026-09-22T23:30:00+00:00"
    },
    {
+    "ticker": "KXNFLFFWEEKTOP-2026W2RBT5-JTAYLOR28",
+    "series": "KXNFLFFWEEKTOP",
+    "title": "Jonathan Taylor",
+    "move": 0.625,
+    "price": 0.795,
+    "close": "2026-09-22T03:59:00+00:00"
+   },
+   {
     "ticker": "KXDIMAYORGAME-26SEP20FORJUN-JUN",
     "series": "KXDIMAYORGAME",
     "title": "Junior",
     "move": 0.615,
     "price": 0.995,
     "close": "2026-09-22T19:00:00+00:00"
+   },
+   {
+    "ticker": "KXNFLFFWEEKTOP-2026W2WRT5-CLAMB88",
+    "series": "KXNFLFFWEEKTOP",
+    "title": "CeeDee Lamb",
+    "move": 0.6,
+    "price": 0.805,
+    "close": "2026-09-22T03:59:00+00:00"
+   },
+   {
+    "ticker": "KXNFLFFWEEKTOP-2026W2QBT5-DPRESCOTT4",
+    "series": "KXNFLFFWEEKTOP",
+    "title": "Dak Prescott",
+    "move": 0.595,
+    "price": 0.805,
+    "close": "2026-09-22T03:59:00+00:00"
    },
    {
     "ticker": "KXECULPBTTS-26SEP20TECDSC-BTTS",
@@ -1376,80 +1432,24 @@
     "close": "2026-09-22T18:30:00+00:00"
    },
    {
-    "ticker": "KXECULPGAME-26SEP20TECDSC-TIE",
-    "series": "KXECULPGAME",
-    "title": "Tie",
-    "move": 0.53,
-    "price": 0.83,
-    "close": "2026-09-22T20:00:00+00:00"
-   },
-   {
-    "ticker": "KXBUNDESLIGAGAME-26SEP20PADTSG-PAD",
-    "series": "KXBUNDESLIGAGAME",
-    "title": "Paderborn",
-    "move": 0.525,
-    "price": 0.735,
-    "close": "2026-09-22T23:30:00+00:00"
-   },
-   {
-    "ticker": "KXDIMAYORTOTAL-26SEP20FORJUN-5",
-    "series": "KXDIMAYORTOTAL",
-    "title": "Over 4.5 goals scored",
-    "move": 0.51,
-    "price": 0.625,
-    "close": "2026-09-22T19:00:00+00:00"
-   },
-   {
-    "ticker": "KXCS2TOTALMAPS-26SEP201300BLABAKS-3",
-    "series": "KXCS2TOTALMAPS",
-    "title": "Over 2.5 maps",
-    "move": 0.505,
-    "price": 0.995,
-    "close": "2026-09-22T17:00:00+00:00"
-   },
-   {
-    "ticker": "KXBBLSPREAD-26SEP201200BRBBAY-BAY3",
-    "series": "KXBBLSPREAD",
-    "title": "Bayern Munich wins by over 2.5 points",
-    "move": 0.5,
-    "price": 0.995,
-    "close": "2026-09-22T16:00:00+00:00"
-   },
-   {
-    "ticker": "KXLIGAMX2HTOTAL-26SEP20PACTIJ-1",
-    "series": "KXLIGAMX2HTOTAL",
-    "title": "Over 0.5 2H goals scored",
-    "move": 0.5,
-    "price": 0.995,
-    "close": "2026-09-23T00:00:00+00:00"
-   },
-   {
-    "ticker": "KXBBLTOTAL-26SEP201200BRBBAY-130",
-    "series": "KXBBLTOTAL",
-    "title": "Over 129.5 points scored",
-    "move": 0.495,
-    "price": 0.995,
-    "close": "2026-09-22T16:00:00+00:00"
-   },
-   {
-    "ticker": "KXBBLTOTAL-26SEP201200BRBBAY-120",
-    "series": "KXBBLTOTAL",
-    "title": "Over 119.5 points scored",
-    "move": 0.495,
-    "price": 0.995,
-    "close": "2026-09-22T16:00:00+00:00"
+    "ticker": "KXNFLFFWEEKLEAD-2026W2RB-JTAYLOR28",
+    "series": "KXNFLFFWEEKLEAD",
+    "title": "Jonathan Taylor",
+    "move": 0.545,
+    "price": 0.575,
+    "close": "2026-09-22T03:59:00+00:00"
    }
   ]
  },
  "models": {
   "tennis": {
-   "matches": 19562,
-   "training_rows": 13367,
+   "matches": 19563,
+   "training_rows": 13368,
    "holdout": {
     "from": "2026-08-16",
     "matches": 2006,
-    "elo_log_loss": 0.6625,
-    "model_log_loss": 0.6533,
+    "elo_log_loss": 0.6623,
+    "model_log_loss": 0.6531,
     "elo_accuracy": 0.616,
     "model_accuracy": 0.625
    },
@@ -1459,9 +1459,9 @@
     "dominance": 0.0,
     "rank": 0.0,
     "h2h": 0.432,
-    "form": -1.113,
+    "form": -1.111,
     "fatigue_games": -0.205,
-    "fatigue_matches": 0.051,
+    "fatigue_matches": 0.05,
     "rest": 0.016,
     "travel": 0.133,
     "altitude": 0.0,
@@ -1543,31 +1543,31 @@
    "holdout": {
     "matches": 652,
     "rating_log_loss": 0.6296,
-    "model_log_loss": 0.6239,
+    "model_log_loss": 0.6235,
     "rating_accuracy": 0.656,
-    "model_accuracy": 0.65
+    "model_accuracy": 0.652
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6044,
-    "model_log_loss": 0.6239,
+    "model_log_loss": 0.6235,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 652
    },
    "backtest": {
-    "bets": 17,
-    "wins": 5,
-    "units": -10.7,
-    "roi": -0.35
+    "bets": 15,
+    "wins": 4,
+    "units": -10.4,
+    "roi": -0.372
    },
    "weights": {
-    "home_field": 0.251,
-    "rating": 1.52,
-    "rest": 0.238,
-    "point_diff_form": 0.225,
-    "qb_change": 0.317,
-    "epa": 0.17
+    "home_field": 0.252,
+    "rating": 1.521,
+    "rest": 0.232,
+    "point_diff_form": 0.222,
+    "qb_change": 0.339,
+    "epa": 0.166
    },
    "matches": 4393,
    "totals": {
@@ -1959,8 +1959,8 @@
    "expected_end": "2026-09-24T04:30:00+00:00",
    "start_est": "2026-09-24T01:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.795,
-   "close_price": 0.795,
+   "latest_price": 0.8,
+   "close_price": 0.8,
    "pnl": null,
    "why": "Expected goals 1.44 vs 1.22 (2.66 total). Model gives \"Under 4.5 goals scored\" 87%. Blended with the market that's 81% vs a 80% price.",
    "trend": 0.0,
@@ -1998,8 +1998,8 @@
    "expected_end": "2026-09-22T01:40:00+00:00",
    "start_est": "2026-09-21T22:40:00+00:00",
    "status": "pending",
-   "latest_price": 0.485,
-   "close_price": 0.485,
+   "latest_price": 0.475,
+   "close_price": 0.475,
    "pnl": null,
    "why": "CJ Abrams: 2.29 a game this season over 146 games (adjusted 2.27). Model gives \"CJ Abrams: 2+\" 66%. Blended with the market that's 55% vs a 49% price. Price up 3\u00a2 in the last 12 hours.",
    "trend": 0.03,
@@ -2084,6 +2084,45 @@
    "trend": -0.01,
    "new_market": false,
    "trust": 0.39,
+   "sharp_prob": null,
+   "research": "",
+   "sources": [],
+   "expert_lean": "none"
+  },
+  {
+   "id": "KXMLBHIT-26SEP212145MINSF-MINBLEE22-1:no",
+   "ticker": "KXMLBHIT-26SEP212145MINSF-MINBLEE22-1",
+   "side": "no",
+   "event": "KXMLBHIT-26SEP212145MINSF",
+   "game": "26SEP212145MINSF",
+   "sport": "Baseball",
+   "model_key": "mlb",
+   "mtype": "prop_hit",
+   "line": 0.5,
+   "tour": "MLB",
+   "tournament": "Minnesota Twins at San Francisco Giants",
+   "matchup": "Minnesota Twins at San Francisco Giants",
+   "surface": "",
+   "pick": "Brooks Lee: under 1",
+   "opponent": "",
+   "market": "Brooks Lee: under 1",
+   "price": 0.34,
+   "model_prob": 0.383,
+   "raw_prob": 0.388,
+   "edge": 0.027,
+   "tier": "W",
+   "units": 0.5,
+   "made": "2026-09-21T07:22:32.266477+00:00",
+   "expected_end": "2026-09-22T04:45:00+00:00",
+   "start_est": "2026-09-22T01:45:00+00:00",
+   "status": "pending",
+   "latest_price": 0.34,
+   "close_price": null,
+   "pnl": null,
+   "why": "Brooks Lee: 0.95 a game this season over 150 games (adjusted 0.95). Model gives \"Brooks Lee: under 1\" 39%. Blended with the market that's 38% vs a 34% price.",
+   "trend": 0.01,
+   "new_market": false,
+   "trust": 0.91,
    "sharp_prob": null,
    "research": "",
    "sources": [],
