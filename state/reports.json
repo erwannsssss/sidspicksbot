@@ -1,1 +1,527 @@
-[]
+[
+ {
+  "week_ending": "2026-09-21",
+  "week": {
+   "picks": 50,
+   "wins": 20,
+   "losses": 30,
+   "units": 5.89,
+   "staked": 37.0,
+   "roi": 0.159,
+   "beat_price": 0.22,
+   "clv": -0.0135,
+   "clv_picks": 47
+  },
+  "all_time": {
+   "picks": 50,
+   "wins": 20,
+   "losses": 30,
+   "units": 5.89,
+   "staked": 37.0,
+   "roi": 0.159,
+   "beat_price": 0.22,
+   "clv": -0.0135,
+   "clv_picks": 47
+  },
+  "by_tier": {
+   "A": {
+    "picks": 4,
+    "wins": 1,
+    "losses": 3,
+    "units": -1.06,
+    "staked": 8.0,
+    "roi": -0.132,
+    "beat_price": 0.0,
+    "clv": -0.0117,
+    "clv_picks": 3
+   },
+   "B": {
+    "picks": 3,
+    "wins": 2,
+    "losses": 1,
+    "units": 6.52,
+    "staked": 7.5,
+    "roi": 0.869,
+    "beat_price": 0.333,
+    "clv": -0.0083,
+    "clv_picks": 3
+   },
+   "C": {
+    "picks": 1,
+    "wins": 0,
+    "losses": 1,
+    "units": -0.52,
+    "staked": 0.5,
+    "roi": -1.04,
+    "beat_price": 0.0,
+    "clv": -0.025,
+    "clv_picks": 1
+   },
+   "W": {
+    "picks": 42,
+    "wins": 17,
+    "losses": 25,
+    "units": 0.95,
+    "staked": 21.0,
+    "roi": 0.045,
+    "beat_price": 0.238,
+    "clv": -0.0137,
+    "clv_picks": 40
+   }
+  },
+  "by_tour": {
+   "ATP Challenger": {
+    "picks": 3,
+    "wins": 2,
+    "losses": 1,
+    "units": 6.34,
+    "staked": 7.5,
+    "roi": 0.845,
+    "beat_price": 0.0,
+    "clv": -0.015,
+    "clv_picks": 2
+   },
+   "Argentina Primera": {
+    "picks": 1,
+    "wins": 0,
+    "losses": 1,
+    "units": -0.52,
+    "staked": 0.5,
+    "roi": -1.04,
+    "beat_price": 1.0,
+    "clv": 0.005,
+    "clv_picks": 1
+   },
+   "Belgian Pro League": {
+    "picks": 1,
+    "wins": 0,
+    "losses": 1,
+    "units": -0.52,
+    "staked": 0.5,
+    "roi": -1.04,
+    "beat_price": 0.0,
+    "clv": -0.015,
+    "clv_picks": 1
+   },
+   "Brasileirao": {
+    "picks": 1,
+    "wins": 1,
+    "losses": 0,
+    "units": 1.33,
+    "staked": 0.5,
+    "roi": 2.66,
+    "beat_price": 0.0,
+    "clv": -0.033,
+    "clv_picks": 1
+   },
+   "College Football": {
+    "picks": 5,
+    "wins": 2,
+    "losses": 3,
+    "units": -0.31,
+    "staked": 2.5,
+    "roi": -0.124,
+    "beat_price": 0.4,
+    "clv": -0.006,
+    "clv_picks": 5
+   },
+   "Eredivisie": {
+    "picks": 1,
+    "wins": 0,
+    "losses": 1,
+    "units": -0.53,
+    "staked": 0.5,
+    "roi": -1.06,
+    "beat_price": 0.0,
+    "clv": -0.015,
+    "clv_picks": 1
+   },
+   "La Liga": {
+    "picks": 3,
+    "wins": 1,
+    "losses": 2,
+    "units": -0.53,
+    "staked": 1.5,
+    "roi": -0.353,
+    "beat_price": 0.333,
+    "clv": 0.005,
+    "clv_picks": 3
+   },
+   "Liga MX": {
+    "picks": 2,
+    "wins": 0,
+    "losses": 2,
+    "units": -1.04,
+    "staked": 1.0,
+    "roi": -1.04,
+    "beat_price": 0.0,
+    "clv": -0.015,
+    "clv_picks": 2
+   },
+   "Ligue 1": {
+    "picks": 1,
+    "wins": 1,
+    "losses": 0,
+    "units": 0.57,
+    "staked": 0.5,
+    "roi": 1.14,
+    "beat_price": 0.0,
+    "clv": 0.0,
+    "clv_picks": 1
+   },
+   "MLB": {
+    "picks": 9,
+    "wins": 4,
+    "losses": 5,
+    "units": -2.5,
+    "staked": 7.0,
+    "roi": -0.357,
+    "beat_price": 0.0,
+    "clv": -0.0107,
+    "clv_picks": 7
+   },
+   "MLS": {
+    "picks": 1,
+    "wins": 0,
+    "losses": 1,
+    "units": -0.52,
+    "staked": 0.5,
+    "roi": -1.04,
+    "beat_price": 0.0,
+    "clv": -0.005,
+    "clv_picks": 1
+   },
+   "NFL": {
+    "picks": 10,
+    "wins": 5,
+    "losses": 5,
+    "units": 2.95,
+    "staked": 5.0,
+    "roi": 0.59,
+    "beat_price": 0.2,
+    "clv": -0.002,
+    "clv_picks": 10
+   },
+   "Premier League": {
+    "picks": 3,
+    "wins": 1,
+    "losses": 2,
+    "units": -0.28,
+    "staked": 1.5,
+    "roi": -0.187,
+    "beat_price": 0.333,
+    "clv": -0.025,
+    "clv_picks": 3
+   },
+   "Scottish Premiership": {
+    "picks": 1,
+    "wins": 0,
+    "losses": 1,
+    "units": -0.53,
+    "staked": 0.5,
+    "roi": -1.06,
+    "beat_price": 1.0,
+    "clv": 0.005,
+    "clv_picks": 1
+   },
+   "Serie A": {
+    "picks": 3,
+    "wins": 2,
+    "losses": 1,
+    "units": 0.76,
+    "staked": 1.5,
+    "roi": 0.507,
+    "beat_price": 0.333,
+    "clv": -0.1083,
+    "clv_picks": 3
+   },
+   "WTA": {
+    "picks": 5,
+    "wins": 1,
+    "losses": 4,
+    "units": 1.22,
+    "staked": 6.0,
+    "roi": 0.203,
+    "beat_price": 0.4,
+    "clv": -0.001,
+    "clv_picks": 5
+   }
+  },
+  "by_sport": {
+   "Baseball": {
+    "picks": 9,
+    "wins": 4,
+    "losses": 5,
+    "units": -2.5,
+    "staked": 7.0,
+    "roi": -0.357,
+    "beat_price": 0.0,
+    "clv": -0.0107,
+    "clv_picks": 7
+   },
+   "Football": {
+    "picks": 15,
+    "wins": 7,
+    "losses": 8,
+    "units": 2.64,
+    "staked": 7.5,
+    "roi": 0.352,
+    "beat_price": 0.267,
+    "clv": -0.0033,
+    "clv_picks": 15
+   },
+   "Soccer": {
+    "picks": 18,
+    "wins": 6,
+    "losses": 12,
+    "units": -1.81,
+    "staked": 9.0,
+    "roi": -0.201,
+    "beat_price": 0.278,
+    "clv": -0.0263,
+    "clv_picks": 18
+   },
+   "Tennis": {
+    "picks": 8,
+    "wins": 3,
+    "losses": 5,
+    "units": 7.56,
+    "staked": 13.5,
+    "roi": 0.56,
+    "beat_price": 0.25,
+    "clv": -0.005,
+    "clv_picks": 7
+   }
+  },
+  "by_expert_lean": {
+   "null": {
+    "picks": 3,
+    "wins": 3,
+    "losses": 0,
+    "units": 12.26,
+    "staked": 9.0,
+    "roi": 1.362,
+    "beat_price": 0.333,
+    "clv": 0.0,
+    "clv_picks": 2
+   },
+   "none": {
+    "picks": 47,
+    "wins": 17,
+    "losses": 30,
+    "units": -6.37,
+    "staked": 28.0,
+    "roi": -0.228,
+    "beat_price": 0.213,
+    "clv": -0.0141,
+    "clv_picks": 45
+   }
+  },
+  "yours_week": {
+   "picks": 4,
+   "wins": 0,
+   "losses": 4,
+   "units": -6.52,
+   "staked": 6.23,
+   "roi": -1.047,
+   "beat_price": 0.25,
+   "clv": 0.005,
+   "clv_picks": 4
+  },
+  "calibration": {
+   "20-30%": {
+    "n": 6,
+    "hit": 0.5
+   },
+   "30-40%": {
+    "n": 8,
+    "hit": 0.25
+   },
+   "40-50%": {
+    "n": 14,
+    "hit": 0.214
+   },
+   "50-60%": {
+    "n": 14,
+    "hit": 0.571
+   },
+   "60-70%": {
+    "n": 2,
+    "hit": 0.5
+   },
+   "70-80%": {
+    "n": 4,
+    "hit": 0.75
+   },
+   "80-90%": {
+    "n": 2,
+    "hit": 0.0
+   }
+  },
+  "changes": [
+   "Elo speed changed from 1.0 to 0.6 (prediction error 0.6683 to 0.6631 on recent matches)"
+  ],
+  "models": {
+   "tennis": {
+    "matches": 19594,
+    "training_rows": 13387,
+    "holdout": {
+     "from": "2026-08-16",
+     "matches": 2009,
+     "elo_log_loss": 0.6621,
+     "model_log_loss": 0.6536,
+     "elo_accuracy": 0.615,
+     "model_accuracy": 0.624
+    },
+    "using": "full",
+    "weights": {
+     "elo": 1.742,
+     "dominance": 0.0,
+     "rank": 0.0,
+     "h2h": 0.435,
+     "form": -1.106,
+     "fatigue_games": -0.205,
+     "fatigue_matches": 0.052,
+     "rest": 0.017,
+     "travel": 0.133,
+     "altitude": 0.0,
+     "best_of_5": 0.441
+    }
+   },
+   "soccer": {
+    "matches": 81550,
+    "from_kalshi": 188,
+    "training_rows": 79683,
+    "totals_bias": -0.002,
+    "totals": {
+     "matches": 6537,
+     "model_log_loss": 0.6978,
+     "market_log_loss": 0.6706,
+     "best_weight": 0.0
+    },
+    "holdout": {
+     "matches": 11953,
+     "rating_log_loss": 1.011,
+     "model_log_loss": 1.0093,
+     "rating_accuracy": 0.499,
+     "model_accuracy": 0.503
+    },
+    "using": "full",
+    "market": {
+     "market_log_loss": 0.9912,
+     "model_log_loss": 1.0096,
+     "best_weight": 0.0,
+     "backtest_weight": 0.25,
+     "matches": 11766
+    },
+    "backtest": {
+     "bets": 72,
+     "wins": 23,
+     "units": 12.0,
+     "roi": 0.11
+    },
+    "weights": {
+     "rating": 1.609,
+     "chance_quality": 0.397,
+     "goal_diff_form": 0.028,
+     "rest": -0.068
+    },
+    "goals_scale": 0.984
+   },
+   "mlb": {
+    "training_rows": 14616,
+    "holdout": {
+     "matches": 2193,
+     "rating_log_loss": 0.685,
+     "model_log_loss": 0.6834,
+     "rating_accuracy": 0.55,
+     "model_accuracy": 0.563
+    },
+    "using": "full",
+    "weights": {
+     "home_field": 0.127,
+     "rating": 1.531,
+     "starting_pitcher": 0.081,
+     "run_diff_form": 0.017,
+     "rest": 0.055,
+     "pitcher_fip": 0.111
+    },
+    "matches": 14695,
+    "runs_scale": 1.013
+   },
+   "nfl": {
+    "training_rows": 4343,
+    "holdout": {
+     "matches": 652,
+     "rating_log_loss": 0.6293,
+     "model_log_loss": 0.6212,
+     "rating_accuracy": 0.656,
+     "model_accuracy": 0.649
+    },
+    "using": "full",
+    "market": {
+     "market_log_loss": 0.6041,
+     "model_log_loss": 0.6212,
+     "best_weight": 0.0,
+     "backtest_weight": 0.25,
+     "matches": 652
+    },
+    "backtest": {
+     "bets": 16,
+     "wins": 5,
+     "units": -8.4,
+     "roi": -0.288
+    },
+    "weights": {
+     "home_field": 0.253,
+     "rating": 1.519,
+     "rest": 0.241,
+     "point_diff_form": 0.222,
+     "qb_change": 0.342,
+     "epa": 0.17
+    },
+    "matches": 4394,
+    "totals": {
+     "matches": 640,
+     "model_log_loss": 0.7167,
+     "market_log_loss": 0.6931,
+     "best_weight": 0.0
+    }
+   },
+   "cfb": {
+    "training_rows": 28032,
+    "holdout": {
+     "matches": 4205,
+     "rating_log_loss": 0.4969,
+     "model_log_loss": 0.4962,
+     "rating_accuracy": 0.752,
+     "model_accuracy": 0.753
+    },
+    "using": "rating",
+    "market": {
+     "market_log_loss": 0.4917,
+     "model_log_loss": 0.5583,
+     "best_weight": 0.0,
+     "backtest_weight": 0.25,
+     "matches": 1031
+    },
+    "backtest": {
+     "bets": 65,
+     "wins": 32,
+     "units": 51.3,
+     "roi": 0.407
+    },
+    "weights": {
+     "home_field": 0.365,
+     "rating": 3.581,
+     "rest": 0.0,
+     "point_diff_form": 0.0,
+     "qb_change": 0.0,
+     "epa": 0.0
+    },
+    "matches": 29110
+   }
+  },
+  "ai_note": "AI reflection unavailable this week."
+ }
+]
