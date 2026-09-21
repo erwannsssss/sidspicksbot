@@ -243,8 +243,8 @@
   "model_prob": 0.1967,
   "ev": 0.446,
   "payout_units": 6.4,
-  "status": "pending",
-  "pnl": null,
+  "status": "loss",
+  "pnl": -1.0,
   "legs": [
    {
     "id": "KXWTAMATCH-26SEP20VOLKAL-KAL",
@@ -256,7 +256,8 @@
     "price": 0.26,
     "model_prob": 0.365,
     "edge": 0.092,
-    "expected_end": "2026-09-21T06:00:00+00:00"
+    "expected_end": "2026-09-21T06:00:00+00:00",
+    "result": "loss"
    },
    {
     "id": "KXWTAMATCH-26SEP21HUNGAR-HUN",
@@ -270,6 +271,7 @@
     "edge": 0.042,
     "expected_end": "2026-09-21T14:40:00+00:00"
    }
-  ]
+  ],
+  "graded": "2026-09-21T05:21:48.943319+00:00"
  }
 ]
