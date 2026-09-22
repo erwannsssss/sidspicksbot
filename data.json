@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-22T18:27:21.279974+00:00",
+ "updated": "2026-09-22T19:12:45.479952+00:00",
  "status_note": "Last run found 0 new pick(s) and graded 0.",
  "bankroll": 108.38,
  "protection": {
@@ -1181,48 +1181,6 @@
  },
  "learning": {
   "groups": {
-   "soccer:correct_score": {
-    "finished": 661,
-    "games": 22,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-21T02:30:00+00:00"
-   },
-   "tennis:winner": {
-    "finished": 238,
-    "games": 119,
-    "trust": 0.36,
-    "confidence_fix": false,
-    "last": "2026-09-22T14:30:00+00:00"
-   },
-   "soccer:spread": {
-    "finished": 370,
-    "games": 57,
-    "trust": 0.45,
-    "confidence_fix": false,
-    "last": "2026-09-22T00:15:00+00:00"
-   },
-   "soccer:winner": {
-    "finished": 168,
-    "games": 56,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-22T00:15:00+00:00"
-   },
-   "soccer:btts_1h": {
-    "finished": 52,
-    "games": 26,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-21T02:10:00+00:00"
-   },
-   "soccer:spread_1h": {
-    "finished": 98,
-    "games": 26,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-21T02:10:00+00:00"
-   },
    "soccer:total_1h": {
     "finished": 156,
     "games": 26,
@@ -1265,6 +1223,20 @@
     "confidence_fix": false,
     "last": "2026-09-21T02:10:00+00:00"
    },
+   "soccer:correct_score": {
+    "finished": 658,
+    "games": 20,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-21T02:30:00+00:00"
+   },
+   "soccer:spread": {
+    "finished": 368,
+    "games": 56,
+    "trust": 0.45,
+    "confidence_fix": false,
+    "last": "2026-09-22T00:15:00+00:00"
+   },
    "soccer:team_total": {
     "finished": 240,
     "games": 20,
@@ -1278,6 +1250,34 @@
     "trust": 0.27,
     "confidence_fix": false,
     "last": "2026-09-22T00:15:00+00:00"
+   },
+   "tennis:winner": {
+    "finished": 238,
+    "games": 119,
+    "trust": 0.36,
+    "confidence_fix": false,
+    "last": "2026-09-22T16:00:00+00:00"
+   },
+   "soccer:winner": {
+    "finished": 165,
+    "games": 55,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-22T00:15:00+00:00"
+   },
+   "soccer:btts_1h": {
+    "finished": 50,
+    "games": 25,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-21T02:10:00+00:00"
+   },
+   "soccer:spread_1h": {
+    "finished": 94,
+    "games": 25,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-21T02:10:00+00:00"
    },
    "nfl:total": {
     "finished": 554,
@@ -1469,18 +1469,18 @@
     "last": "2026-09-22T01:45:00+00:00"
    },
    "mlb:spread_f5": {
-    "finished": 144,
-    "games": 18,
+    "finished": 152,
+    "games": 19,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-09-22T01:45:00+00:00"
+    "last": "2026-09-22T17:05:00+00:00"
    },
    "mlb:total_f5": {
-    "finished": 246,
-    "games": 18,
+    "finished": 260,
+    "games": 19,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-09-22T01:45:00+00:00"
+    "last": "2026-09-22T17:05:00+00:00"
    },
    "mlb:spread": {
     "finished": 216,
@@ -1497,11 +1497,11 @@
     "last": "2026-09-22T01:45:00+00:00"
    },
    "mlb:total": {
-    "finished": 382,
-    "games": 18,
+    "finished": 384,
+    "games": 19,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-09-22T01:45:00+00:00"
+    "last": "2026-09-22T17:05:00+00:00"
    },
    "mlb:prop_ks": {
     "finished": 428,
@@ -1541,40 +1541,24 @@
   },
   "price_trend": {
    "rising": {
-    "markets": 2146,
+    "markets": 2155,
     "hit_vs_price": -0.005
    },
    "falling": {
-    "markets": 2145,
-    "hit_vs_price": 0.003
+    "markets": 2155,
+    "hit_vs_price": 0.002
    },
    "flat": {
-    "markets": 17198,
+    "markets": 17192,
     "hit_vs_price": 0.0
    }
   }
  },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "tracker": {
-  "tracked": 30498,
+  "tracked": 30500,
   "series": 3854,
   "movers": [
-   {
-    "ticker": "KXDIMAYORSPREAD-26SEP20FORJUN-JUN3",
-    "series": "KXDIMAYORSPREAD",
-    "title": "Junior wins by more than 2.5 goals",
-    "move": 0.74,
-    "price": 0.79,
-    "close": "2026-09-22T19:00:00+00:00"
-   },
-   {
-    "ticker": "KXDIMAYORTOTAL-26SEP20FORJUN-4",
-    "series": "KXDIMAYORTOTAL",
-    "title": "Over 3.5 goals scored",
-    "move": 0.74,
-    "price": 0.995,
-    "close": "2026-09-22T19:00:00+00:00"
-   },
    {
     "ticker": "KXLIGAMXTEAMTOTAL-26SEP20PACTIJ-TIJ2",
     "series": "KXLIGAMXTEAMTOTAL",
@@ -1584,36 +1568,12 @@
     "close": "2026-09-23T06:00:00+00:00"
    },
    {
-    "ticker": "KXDIMAYORSPREAD-26SEP20FORJUN-JUN2",
-    "series": "KXDIMAYORSPREAD",
-    "title": "Junior wins by more than 1.5 goals",
-    "move": 0.65,
-    "price": 0.8,
-    "close": "2026-09-22T19:00:00+00:00"
-   },
-   {
     "ticker": "KXBUNDESLIGATEAMTOTAL-26SEP20PADTSG-PAD2",
     "series": "KXBUNDESLIGATEAMTOTAL",
     "title": "Paderborn over 1.5 goals",
     "move": 0.64,
     "price": 0.995,
     "close": "2026-09-22T23:30:00+00:00"
-   },
-   {
-    "ticker": "KXDIMAYORGAME-26SEP20FORJUN-JUN",
-    "series": "KXDIMAYORGAME",
-    "title": "Junior",
-    "move": 0.615,
-    "price": 0.995,
-    "close": "2026-09-22T19:00:00+00:00"
-   },
-   {
-    "ticker": "KXECULPBTTS-26SEP20TECDSC-BTTS",
-    "series": "KXECULPBTTS",
-    "title": "Both Teams To Score",
-    "move": 0.555,
-    "price": 0.995,
-    "close": "2026-09-22T18:30:00+00:00"
    },
    {
     "ticker": "KXECULPGAME-26SEP20TECDSC-TIE",
@@ -1632,14 +1592,6 @@
     "close": "2026-09-22T23:30:00+00:00"
    },
    {
-    "ticker": "KXDIMAYORTOTAL-26SEP20FORJUN-5",
-    "series": "KXDIMAYORTOTAL",
-    "title": "Over 4.5 goals scored",
-    "move": 0.51,
-    "price": 0.625,
-    "close": "2026-09-22T19:00:00+00:00"
-   },
-   {
     "ticker": "KXLIGAMX2HTOTAL-26SEP20PACTIJ-1",
     "series": "KXLIGAMX2HTOTAL",
     "title": "Over 0.5 2H goals scored",
@@ -1656,14 +1608,6 @@
     "close": "2026-09-22T23:30:00+00:00"
    },
    {
-    "ticker": "KXECULPTOTAL-26SEP20TECDSC-6",
-    "series": "KXECULPTOTAL",
-    "title": "Over 5.5 goals scored",
-    "move": -0.49,
-    "price": 0.005,
-    "close": "2026-09-22T18:30:00+00:00"
-   },
-   {
     "ticker": "KXARGNACBSPREAD-26SEP20COLALA-ALA3",
     "series": "KXARGNACBSPREAD",
     "title": "Los Andes wins by more than 2.5 goals",
@@ -1678,28 +1622,84 @@
     "move": -0.48,
     "price": 0.015,
     "close": "2026-09-22T20:00:00+00:00"
+   },
+   {
+    "ticker": "KXARGNACBTOTAL-26SEP20CFEALB-6",
+    "series": "KXARGNACBTOTAL",
+    "title": "Over 5.5 goals scored",
+    "move": -0.48,
+    "price": 0.015,
+    "close": "2026-09-22T20:00:00+00:00"
+   },
+   {
+    "ticker": "KXARGNACBTOTAL-26SEP20COLALA-6",
+    "series": "KXARGNACBTOTAL",
+    "title": "Over 5.5 goals scored",
+    "move": -0.48,
+    "price": 0.015,
+    "close": "2026-09-22T19:30:00+00:00"
+   },
+   {
+    "ticker": "KXWNBAOT-26SEP21ATLNY-1",
+    "series": "KXWNBAOT",
+    "title": "1+ overtime periods",
+    "move": -0.475,
+    "price": 0.045,
+    "close": "2026-09-24T00:00:00+00:00"
+   },
+   {
+    "ticker": "KXARGNACBSPREAD-26SEP20SMACAC-CAC3",
+    "series": "KXARGNACBSPREAD",
+    "title": "Colegiales wins by more than 2.5 goals",
+    "move": -0.47,
+    "price": 0.01,
+    "close": "2026-09-22T20:00:00+00:00"
+   },
+   {
+    "ticker": "KXARGNACBSPREAD-26SEP20CFEALB-ALB3",
+    "series": "KXARGNACBSPREAD",
+    "title": "Almirante Brown wins by more than 2.5 goals",
+    "move": -0.47,
+    "price": 0.015,
+    "close": "2026-09-22T20:00:00+00:00"
+   },
+   {
+    "ticker": "KXARGNACBTOTAL-26SEP20SMACAC-6",
+    "series": "KXARGNACBTOTAL",
+    "title": "Over 5.5 goals scored",
+    "move": -0.47,
+    "price": 0.015,
+    "close": "2026-09-22T20:00:00+00:00"
+   },
+   {
+    "ticker": "KXARGNACBSPREAD-26SEP20CACDDB-DDB3",
+    "series": "KXARGNACBSPREAD",
+    "title": "Defensores wins by more than 2.5 goals",
+    "move": -0.465,
+    "price": 0.02,
+    "close": "2026-09-22T20:00:00+00:00"
    }
   ]
  },
  "models": {
   "tennis": {
-   "matches": 19756,
-   "training_rows": 13518,
+   "matches": 19757,
+   "training_rows": 13519,
    "holdout": {
     "from": "2026-08-18",
     "matches": 2028,
-    "elo_log_loss": 0.6605,
-    "model_log_loss": 0.6568,
-    "elo_accuracy": 0.607,
+    "elo_log_loss": 0.6603,
+    "model_log_loss": 0.6567,
+    "elo_accuracy": 0.608,
     "model_accuracy": 0.61
    },
    "using": "full",
    "weights": {
-    "elo": 2.037,
+    "elo": 2.039,
     "dominance": 0.0,
     "rank": 0.0,
     "h2h": 0.456,
-    "form": -0.559,
+    "form": -0.562,
     "fatigue_games": -0.219,
     "fatigue_matches": 0.095,
     "rest": 0.018,
@@ -1783,31 +1783,31 @@
    "holdout": {
     "matches": 652,
     "rating_log_loss": 0.6289,
-    "model_log_loss": 0.6244,
+    "model_log_loss": 0.6225,
     "rating_accuracy": 0.656,
-    "model_accuracy": 0.646
+    "model_accuracy": 0.649
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6035,
-    "model_log_loss": 0.6244,
+    "model_log_loss": 0.6225,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 652
    },
    "backtest": {
-    "bets": 17,
+    "bets": 16,
     "wins": 5,
-    "units": -10.9,
-    "roi": -0.345
+    "units": -9.2,
+    "roi": -0.316
    },
    "weights": {
     "home_field": 0.252,
-    "rating": 1.534,
-    "rest": 0.227,
-    "point_diff_form": 0.221,
-    "qb_change": 0.311,
-    "epa": 0.168
+    "rating": 1.533,
+    "rest": 0.235,
+    "point_diff_form": 0.219,
+    "qb_change": 0.312,
+    "epa": 0.169
    },
    "matches": 4395,
    "totals": {
@@ -2352,8 +2352,8 @@
    "expected_end": "2026-09-23T01:40:00+00:00",
    "start_est": "2026-09-22T22:40:00+00:00",
    "status": "pending",
-   "latest_price": 0.445,
-   "close_price": 0.445,
+   "latest_price": 0.435,
+   "close_price": 0.435,
    "pnl": null,
    "why": "Dustin May: 4.72 a game this season over 29 games (adjusted 4.79). Model gives \"Dustin May: 4+\" 66%. Blended with the market that's 56% vs a 48% price.",
    "trend": 0.005,
@@ -2430,8 +2430,8 @@
    "expected_end": "2026-09-23T01:45:00+00:00",
    "start_est": "2026-09-22T22:45:00+00:00",
    "status": "pending",
-   "latest_price": 0.445,
-   "close_price": 0.445,
+   "latest_price": 0.435,
+   "close_price": 0.435,
    "pnl": null,
    "why": "Projected runs 1.9 (home) vs 2.8 (4.7 total). Park factor 1.06. Model gives \"Over 3.5 runs in the first 5 innings\" 63%. Blended with the market that's 51% vs a 48% price.",
    "trend": 0.01,
@@ -2547,8 +2547,8 @@
    "expected_end": "2026-09-26T02:00:00+00:00",
    "start_est": "2026-09-25T23:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.14,
-   "close_price": 0.14,
+   "latest_price": 0.19,
+   "close_price": 0.19,
    "pnl": null,
    "why": "Ratings 1500 vs 1631, at home. Point differential last 5: -2 vs -19. Model gives Brown 31%. Blended with the market that's 24% vs a 23% price. Price down 2\u00a2 in the last 12 hours.",
    "trend": -0.02,
@@ -2743,8 +2743,8 @@
    "expected_end": "2026-09-23T02:15:00+00:00",
    "start_est": "2026-09-22T23:15:00+00:00",
    "status": "pending",
-   "latest_price": 0.22,
-   "close_price": 0.22,
+   "latest_price": 0.225,
+   "close_price": 0.225,
    "pnl": null,
    "why": "JR Ritchie: 6.44 a game this season over 9 games (adjusted 6.00). Model gives \"JR Ritchie: 7+\" 39%. Blended with the market that's 28% vs a 22% price. Price up 3\u00a2 in the last 12 hours.",
    "trend": 0.03,
