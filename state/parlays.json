@@ -287,8 +287,8 @@
   "model_prob": 0.3073,
   "ev": 0.582,
   "payout_units": 4.1,
-  "status": "pending",
-  "pnl": null,
+  "status": "loss",
+  "pnl": -1.0,
   "legs": [
    {
     "id": "KXATPMATCH-26SEP22SVRSEK-SEK",
@@ -300,7 +300,8 @@
     "price": 0.23,
     "model_prob": 0.359,
     "edge": 0.116,
-    "expected_end": "2026-09-22T07:00:00+00:00"
+    "expected_end": "2026-09-22T07:00:00+00:00",
+    "result": "loss"
    },
    {
     "id": "KXMLBKS-26SEP222140LAAATH-ATHBBASSO66-2",
@@ -314,7 +315,8 @@
     "edge": 0.054,
     "expected_end": "2026-09-23T04:40:00+00:00"
    }
-  ]
+  ],
+  "graded": "2026-09-22T07:23:38.452573+00:00"
  },
  {
   "id": "PARLAY-202609220029-2",
@@ -327,8 +329,8 @@
   "model_prob": 0.2904,
   "ev": 0.436,
   "payout_units": 3.9,
-  "status": "pending",
-  "pnl": null,
+  "status": "loss",
+  "pnl": -1.0,
   "legs": [
    {
     "id": "KXATPMATCH-26SEP22MULPAV-PAV",
@@ -340,7 +342,8 @@
     "price": 0.39,
     "model_prob": 0.514,
     "edge": 0.107,
-    "expected_end": "2026-09-22T08:00:00+00:00"
+    "expected_end": "2026-09-22T08:00:00+00:00",
+    "result": "loss"
    },
    {
     "id": "KXMLBKS-26SEP221840MILPHI-MILDMAY3-4",
@@ -354,6 +357,7 @@
     "edge": 0.067,
     "expected_end": "2026-09-23T01:40:00+00:00"
    }
-  ]
+  ],
+  "graded": "2026-09-22T07:23:38.577556+00:00"
  }
 ]
