@@ -1,11 +1,11 @@
 {
- "updated": "2026-09-22T13:24:23.077694+00:00",
- "status_note": "Last run found 0 new pick(s) and graded 0.",
- "bankroll": 106.33,
+ "updated": "2026-09-22T14:24:07.416053+00:00",
+ "status_note": "Last run found 0 new pick(s) and graded 1.",
+ "bankroll": 108.18,
  "protection": {
-  "bankroll": 106.33,
+  "bankroll": 108.18,
   "peak": 112.26,
-  "drawdown": 0.053,
+  "drawdown": 0.036,
   "paused": false
  },
  "settings": {
@@ -250,7 +250,9 @@
    "research": "",
    "sources": [],
    "expert_lean": "none"
-  },
+  }
+ ],
+ "history": [
   {
    "id": "KXATPCHALLENGERMATCH-26SEP22ECHMAS-MAS",
    "ticker": "KXATPCHALLENGERMATCH-26SEP22ECHMAS-MAS",
@@ -277,10 +279,10 @@
    "made": "2026-09-22T03:21:23.903528+00:00",
    "expected_end": "2026-09-22T13:20:00+00:00",
    "start_est": "2026-09-22T09:20:00+00:00",
-   "status": "pending",
+   "status": "win",
    "latest_price": 0.445,
    "close_price": 0.445,
-   "pnl": null,
+   "pnl": 1.85,
    "why": "Elo 1569 vs 1470 on hard. Won 50% vs 50% of games lately. Form 7-3 vs 6-4. Games played in last 3 days: 44 vs 44. Model 62%, blended with the market 52%, price 44%.",
    "trend": 0.018,
    "new_market": false,
@@ -288,10 +290,9 @@
    "sharp_prob": null,
    "research": "",
    "sources": [],
-   "expert_lean": "none"
-  }
- ],
- "history": [
+   "expert_lean": "none",
+   "graded": "2026-09-22T14:21:45.817073+00:00"
+  },
   {
    "id": "KXATPCHALLENGERMATCH-26SEP22JORWEN-JOR",
    "ticker": "KXATPCHALLENGERMATCH-26SEP22JORWEN-JOR",
@@ -1175,7 +1176,7 @@
  "learning": {
   "groups": {
    "cfb:total": {
-    "finished": 319,
+    "finished": 311,
     "games": 9,
     "trust": 0.25,
     "confidence_fix": false,
@@ -1476,11 +1477,11 @@
     "last": "2026-09-20T02:00:00+00:00"
    },
    "tennis:winner": {
-    "finished": 218,
-    "games": 109,
+    "finished": 230,
+    "games": 115,
     "trust": 0.37,
     "confidence_fix": false,
-    "last": "2026-09-22T08:40:00+00:00"
+    "last": "2026-09-22T12:00:00+00:00"
    },
    "nfl:total": {
     "finished": 554,
@@ -1667,16 +1668,16 @@
   },
   "price_trend": {
    "flat": {
-    "markets": 24606,
+    "markets": 24604,
     "hit_vs_price": 0.0
    },
    "rising": {
-    "markets": 2580,
+    "markets": 2583,
     "hit_vs_price": -0.007
    },
    "falling": {
-    "markets": 2568,
-    "hit_vs_price": 0.005
+    "markets": 2571,
+    "hit_vs_price": 0.004
    }
   }
  },
@@ -1809,29 +1810,29 @@
  },
  "models": {
   "tennis": {
-   "matches": 19708,
-   "training_rows": 13478,
+   "matches": 19720,
+   "training_rows": 13488,
    "holdout": {
     "from": "2026-08-18",
-    "matches": 2022,
-    "elo_log_loss": 0.6594,
-    "model_log_loss": 0.6571,
+    "matches": 2024,
+    "elo_log_loss": 0.659,
+    "model_log_loss": 0.6564,
     "elo_accuracy": 0.608,
     "model_accuracy": 0.61
    },
    "using": "full",
    "weights": {
-    "elo": 2.032,
+    "elo": 2.036,
     "dominance": 0.0,
     "rank": 0.0,
     "h2h": 0.463,
-    "form": -0.544,
-    "fatigue_games": -0.219,
+    "form": -0.551,
+    "fatigue_games": -0.221,
     "fatigue_matches": 0.095,
-    "rest": 0.017,
+    "rest": 0.015,
     "travel": 0.138,
     "altitude": 0.0,
-    "best_of_5": 0.586
+    "best_of_5": 0.585
    },
    "sport": "Tennis",
    "label": "Tennis",
@@ -1881,64 +1882,64 @@
    "trust": 0.25
   },
   "mlb": {
-   "training_rows": 14618,
+   "training_rows": 14619,
    "holdout": {
     "matches": 2193,
     "rating_log_loss": 0.6849,
     "model_log_loss": 0.6833,
     "rating_accuracy": 0.551,
-    "model_accuracy": 0.563
+    "model_accuracy": 0.562
    },
    "using": "full",
    "weights": {
     "home_field": 0.128,
-    "rating": 1.53,
+    "rating": 1.531,
     "starting_pitcher": 0.081,
     "run_diff_form": 0.017,
     "rest": 0.051,
     "pitcher_fip": 0.11
    },
-   "matches": 14697,
+   "matches": 14698,
    "runs_scale": 1.014,
    "sport": "Baseball",
    "label": "MLB",
    "trust": 0.5
   },
   "nfl": {
-   "training_rows": 4343,
+   "training_rows": 4344,
    "holdout": {
     "matches": 652,
-    "rating_log_loss": 0.6293,
-    "model_log_loss": 0.6242,
+    "rating_log_loss": 0.6289,
+    "model_log_loss": 0.6252,
     "rating_accuracy": 0.656,
     "model_accuracy": 0.647
    },
    "using": "full",
    "market": {
-    "market_log_loss": 0.6041,
-    "model_log_loss": 0.6242,
+    "market_log_loss": 0.6035,
+    "model_log_loss": 0.6252,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 652
    },
    "backtest": {
-    "bets": 17,
-    "wins": 6,
-    "units": -6.0,
-    "roi": -0.197
+    "bets": 16,
+    "wins": 4,
+    "units": -14.0,
+    "roi": -0.467
    },
    "weights": {
-    "home_field": 0.252,
-    "rating": 1.527,
-    "rest": 0.23,
-    "point_diff_form": 0.226,
-    "qb_change": 0.291,
-    "epa": 0.171
+    "home_field": 0.251,
+    "rating": 1.531,
+    "rest": 0.238,
+    "point_diff_form": 0.217,
+    "qb_change": 0.316,
+    "epa": 0.168
    },
-   "matches": 4394,
+   "matches": 4395,
    "totals": {
-    "matches": 640,
-    "model_log_loss": 0.7167,
+    "matches": 641,
+    "model_log_loss": 0.7168,
     "market_log_loss": 0.6931,
     "best_weight": 0.0
    },
@@ -1985,26 +1986,26 @@
  },
  "summary": {
   "all": {
-   "picks": 12,
-   "wins": 5,
+   "picks": 13,
+   "wins": 6,
    "losses": 7,
-   "units": 6.33,
-   "staked": 24.5,
-   "roi": 0.258,
-   "beat_price": 0.167,
-   "clv": -0.0055,
-   "clv_picks": 11
+   "units": 8.18,
+   "staked": 26.0,
+   "roi": 0.315,
+   "beat_price": 0.231,
+   "clv": -0.0046,
+   "clv_picks": 12
   },
   "week": {
-   "picks": 12,
-   "wins": 5,
+   "picks": 13,
+   "wins": 6,
    "losses": 7,
-   "units": 6.33,
-   "staked": 24.5,
-   "roi": 0.258,
-   "beat_price": 0.167,
-   "clv": -0.0055,
-   "clv_picks": 11
+   "units": 8.18,
+   "staked": 26.0,
+   "roi": 0.315,
+   "beat_price": 0.231,
+   "clv": -0.0046,
+   "clv_picks": 12
   },
   "yours": {
    "picks": 4,
@@ -2042,15 +2043,15 @@
    "clv_picks": 2
   },
   "none": {
-   "picks": 9,
-   "wins": 2,
+   "picks": 10,
+   "wins": 3,
    "losses": 7,
-   "units": -5.93,
-   "staked": 15.5,
-   "roi": -0.383,
-   "beat_price": 0.111,
-   "clv": -0.0067,
-   "clv_picks": 9
+   "units": -4.08,
+   "staked": 17.0,
+   "roi": -0.24,
+   "beat_price": 0.2,
+   "clv": -0.0055,
+   "clv_picks": 10
   }
  },
  "by_tier": {
@@ -2066,15 +2067,15 @@
    "clv_picks": 7
   },
   "B": {
-   "picks": 3,
-   "wins": 2,
+   "picks": 4,
+   "wins": 3,
    "losses": 1,
-   "units": 6.52,
-   "staked": 7.5,
-   "roi": 0.869,
-   "beat_price": 0.333,
-   "clv": -0.0083,
-   "clv_picks": 3
+   "units": 8.37,
+   "staked": 9.0,
+   "roi": 0.93,
+   "beat_price": 0.5,
+   "clv": -0.005,
+   "clv_picks": 4
   },
   "C": {
    "picks": 1,
@@ -2283,8 +2284,8 @@
    "expected_end": "2026-09-23T04:40:00+00:00",
    "start_est": "2026-09-23T01:40:00+00:00",
    "status": "pending",
-   "latest_price": 0.695,
-   "close_price": 0.695,
+   "latest_price": 0.685,
+   "close_price": 0.685,
    "pnl": null,
    "why": "Projected runs 4.4 (home) vs 3.1 (7.4 total). Park factor 0.92. Model gives \"No: Houston wins by over 1.5 runs\" 79%. Blended with the market that's 70% vs a 68% price.",
    "trend": 0.005,
@@ -2322,8 +2323,8 @@
    "expected_end": "2026-09-23T02:40:00+00:00",
    "start_est": "2026-09-22T23:40:00+00:00",
    "status": "pending",
-   "latest_price": 0.335,
-   "close_price": 0.335,
+   "latest_price": 0.355,
+   "close_price": 0.355,
    "pnl": null,
    "why": "Ratings 1489 vs 1556 on the road. Starters Janson Junk (last season FIP 3.40, team allows 5.1 runs in his recent starts) vs TBD (4.50, 4.5). Run differential last 10: -11 vs +22. Model gives Miami Marlins 42%. Blended with the market that's 38% vs a 35% price.",
    "trend": -0.003,
@@ -2439,8 +2440,8 @@
    "expected_end": "2026-09-22T20:05:00+00:00",
    "start_est": "2026-09-22T17:05:00+00:00",
    "status": "pending",
-   "latest_price": 0.455,
-   "close_price": 0.455,
+   "latest_price": 0.445,
+   "close_price": 0.445,
    "pnl": null,
    "why": "Projected runs 4.6 (home) vs 4.6 (9.3 total). Park factor 1.02. Forecast 70F, wind 6 mph. Model gives \"Over 7.5 runs scored\" 61%. Blended with the market that's 48% vs a 45% price.",
    "trend": 0.005,
@@ -2478,8 +2479,8 @@
    "expected_end": "2026-09-23T01:40:00+00:00",
    "start_est": "2026-09-22T22:40:00+00:00",
    "status": "pending",
-   "latest_price": 0.465,
-   "close_price": 0.465,
+   "latest_price": 0.445,
+   "close_price": 0.445,
    "pnl": null,
    "why": "Dustin May: 4.72 a game this season over 29 games (adjusted 4.79). Model gives \"Dustin May: 4+\" 66%. Blended with the market that's 56% vs a 48% price.",
    "trend": 0.005,
@@ -2517,8 +2518,8 @@
    "expected_end": "2026-09-23T04:40:00+00:00",
    "start_est": "2026-09-23T01:40:00+00:00",
    "status": "pending",
-   "latest_price": 0.825,
-   "close_price": 0.825,
+   "latest_price": 0.82,
+   "close_price": 0.82,
    "pnl": null,
    "why": "Brady Basso: 4.67 a game this season over 6 games (adjusted 4.91). Model gives \"Brady Basso: 2+\" 93%. Blended with the market that's 85% vs a 79% price. Price up 37\u00a2 in the last 12 hours.",
    "trend": 0.37,
@@ -2556,8 +2557,8 @@
    "expected_end": "2026-09-23T01:45:00+00:00",
    "start_est": "2026-09-22T22:45:00+00:00",
    "status": "pending",
-   "latest_price": 0.45,
-   "close_price": 0.45,
+   "latest_price": 0.455,
+   "close_price": 0.455,
    "pnl": null,
    "why": "Projected runs 1.9 (home) vs 2.8 (4.7 total). Park factor 1.06. Model gives \"Over 3.5 runs in the first 5 innings\" 63%. Blended with the market that's 51% vs a 48% price.",
    "trend": 0.01,
@@ -2673,8 +2674,8 @@
    "expected_end": "2026-09-26T02:00:00+00:00",
    "start_est": "2026-09-25T23:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.23,
-   "close_price": 0.23,
+   "latest_price": 0.24,
+   "close_price": 0.24,
    "pnl": null,
    "why": "Ratings 1500 vs 1631, at home. Point differential last 5: -2 vs -19. Model gives Brown 31%. Blended with the market that's 24% vs a 23% price. Price down 2\u00a2 in the last 12 hours.",
    "trend": -0.02,
@@ -2751,8 +2752,8 @@
    "expected_end": "2026-09-23T03:05:00+00:00",
    "start_est": "2026-09-23T00:05:00+00:00",
    "status": "pending",
-   "latest_price": 0.535,
-   "close_price": 0.535,
+   "latest_price": 0.545,
+   "close_price": 0.545,
    "pnl": null,
    "why": "Projected runs 5.0 (home) vs 4.8 (9.8 total). Park factor 0.98. Model gives \"Over 7.5 runs scored\" 65%. Blended with the market that's 55% vs a 53% price. Price up 2\u00a2 in the last 12 hours.",
    "trend": 0.02,
@@ -2790,8 +2791,8 @@
    "expected_end": "2026-09-23T05:10:00+00:00",
    "start_est": "2026-09-23T02:10:00+00:00",
    "status": "pending",
-   "latest_price": 0.465,
-   "close_price": 0.465,
+   "latest_price": 0.485,
+   "close_price": 0.485,
    "pnl": null,
    "why": "Projected runs 5.3 (home) vs 5.3 (10.6 total). Park factor 0.98. Forecast 70F, wind 6 mph. Model gives \"Over 8.5 runs scored\" 63%. Blended with the market that's 51% vs a 49% price. Price down 2\u00a2 in the last 12 hours. Sharp sportsbook price (5 books) says 48%.",
    "trend": -0.02,
@@ -2869,8 +2870,8 @@
    "expected_end": "2026-09-23T02:15:00+00:00",
    "start_est": "2026-09-22T23:15:00+00:00",
    "status": "pending",
-   "latest_price": 0.21,
-   "close_price": 0.21,
+   "latest_price": 0.215,
+   "close_price": 0.215,
    "pnl": null,
    "why": "JR Ritchie: 6.44 a game this season over 9 games (adjusted 6.00). Model gives \"JR Ritchie: 7+\" 39%. Blended with the market that's 28% vs a 22% price. Price up 3\u00a2 in the last 12 hours.",
    "trend": 0.03,
@@ -4916,15 +4917,15 @@
    "clv_picks": 2
   },
   "ATP Challenger": {
-   "picks": 4,
-   "wins": 3,
+   "picks": 5,
+   "wins": 4,
    "losses": 1,
-   "units": 9.94,
-   "staked": 9.0,
-   "roi": 1.104,
-   "beat_price": 0.0,
-   "clv": -0.01,
-   "clv_picks": 3
+   "units": 11.79,
+   "staked": 10.5,
+   "roi": 1.123,
+   "beat_price": 0.2,
+   "clv": -0.0062,
+   "clv_picks": 4
   },
   "Davis Cup": {
    "picks": 0,
@@ -4984,15 +4985,15 @@
    "clv_picks": 3
   },
   "Tennis": {
-   "picks": 9,
-   "wins": 5,
+   "picks": 10,
+   "wins": 6,
    "losses": 4,
-   "units": 10.52,
-   "staked": 20.5,
-   "roi": 0.513,
-   "beat_price": 0.222,
-   "clv": -0.0006,
-   "clv_picks": 8
+   "units": 12.37,
+   "staked": 22.0,
+   "roi": 0.562,
+   "beat_price": 0.3,
+   "clv": 0.0,
+   "clv_picks": 9
   }
  },
  "calibration": {
@@ -5005,8 +5006,8 @@
    "hit": 0.333
   },
   "50-60%": {
-   "n": 4,
-   "hit": 0.5
+   "n": 5,
+   "hit": 0.6
   },
   "60-70%": {
    "n": 1,
@@ -5069,6 +5070,10 @@
   {
    "t": "2026-09-22",
    "v": 106.33
+  },
+  {
+   "t": "2026-09-22",
+   "v": 108.18
   }
  ],
  "reports": [
