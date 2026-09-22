@@ -1,6 +1,6 @@
 {
- "updated": "2026-09-22T05:22:51.943471+00:00",
- "status_note": "Last run found 1 new pick(s) and graded 1.",
+ "updated": "2026-09-22T06:29:14.076173+00:00",
+ "status_note": "Last run found 0 new pick(s) and graded 0.",
  "bankroll": 104.94,
  "protection": {
   "bankroll": 104.94,
@@ -438,7 +438,7 @@
    "start_est": "2026-09-22T07:00:00+00:00",
    "status": "pending",
    "latest_price": 0.29,
-   "close_price": null,
+   "close_price": 0.29,
    "pnl": null,
    "why": "Elo 1523 vs 1631 on hard. Won 50% vs 50% of games lately. Form 1-9 vs 6-4. Games played in last 3 days: 0 vs 22. Travelled 7,082 vs 0 km since last match. Model 50%, blended with the market 39%, price 29%.",
    "trend": -0.018,
@@ -447,7 +447,8 @@
    "sharp_prob": null,
    "research": "",
    "sources": [],
-   "expert_lean": "none"
+   "expert_lean": "none",
+   "prechecked": true
   }
  ],
  "history": [
@@ -1166,142 +1167,135 @@
  },
  "learning": {
   "groups": {
-   "cfb:total_1h": {
-    "finished": 257,
-    "games": 11,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-20T02:00:00+00:00"
-   },
-   "cfb:spread_4q": {
-    "finished": 92,
-    "games": 5,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-20T02:00:00+00:00"
-   },
-   "tennis:winner": {
-    "finished": 148,
-    "games": 74,
-    "trust": 0.5,
-    "confidence_fix": false,
-    "last": "2026-09-21T21:10:00+00:00"
-   },
-   "cfb:winner": {
-    "finished": 22,
-    "games": 11,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-20T02:00:00+00:00"
-   },
-   "cfb:spread": {
-    "finished": 696,
-    "games": 17,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-20T02:00:00+00:00"
-   },
-   "cfb:total": {
-    "finished": 550,
-    "games": 17,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-20T02:00:00+00:00"
-   },
    "cfb:spread_1h": {
-    "finished": 418,
+    "finished": 354,
     "games": 10,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-09-20T02:00:00+00:00"
    },
+   "cfb:total_1h": {
+    "finished": 230,
+    "games": 9,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-20T02:00:00+00:00"
+   },
    "cfb:period_winner_1q": {
-    "finished": 16,
-    "games": 4,
+    "finished": 12,
+    "games": 3,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-09-20T02:00:00+00:00"
    },
    "cfb:spread_1q": {
-    "finished": 86,
-    "games": 4,
+    "finished": 62,
+    "games": 3,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-09-20T02:00:00+00:00"
    },
    "cfb:total_1q": {
-    "finished": 82,
-    "games": 4,
+    "finished": 62,
+    "games": 3,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-09-20T02:00:00+00:00"
    },
    "cfb:period_winner_2h": {
-    "finished": 16,
-    "games": 4,
+    "finished": 12,
+    "games": 3,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-09-20T02:00:00+00:00"
    },
    "cfb:period_winner_2q": {
-    "finished": 16,
-    "games": 4,
+    "finished": 12,
+    "games": 3,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-09-20T02:00:00+00:00"
    },
    "cfb:spread_2q": {
-    "finished": 98,
-    "games": 4,
+    "finished": 72,
+    "games": 3,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-09-20T02:00:00+00:00"
    },
    "cfb:total_2q": {
-    "finished": 84,
-    "games": 4,
+    "finished": 66,
+    "games": 3,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-09-20T02:00:00+00:00"
    },
    "cfb:period_winner_3q": {
-    "finished": 16,
-    "games": 4,
+    "finished": 12,
+    "games": 3,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-09-20T02:00:00+00:00"
    },
    "cfb:spread_3q": {
-    "finished": 86,
-    "games": 4,
+    "finished": 62,
+    "games": 3,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-09-20T02:00:00+00:00"
    },
    "cfb:total_3q": {
-    "finished": 84,
-    "games": 4,
+    "finished": 62,
+    "games": 3,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-09-20T02:00:00+00:00"
    },
    "cfb:period_winner_4q": {
-    "finished": 16,
+    "finished": 12,
+    "games": 3,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-20T02:00:00+00:00"
+   },
+   "cfb:spread_4q": {
+    "finished": 66,
     "games": 4,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-09-20T02:00:00+00:00"
    },
    "cfb:total_4q": {
-    "finished": 86,
-    "games": 4,
+    "finished": 64,
+    "games": 3,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-20T02:00:00+00:00"
+   },
+   "cfb:spread": {
+    "finished": 518,
+    "games": 11,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-09-20T02:00:00+00:00"
    },
    "cfb:team_total": {
-    "finished": 456,
+    "finished": 414,
     "games": 10,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-20T02:00:00+00:00"
+   },
+   "cfb:total": {
+    "finished": 386,
+    "games": 11,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-20T02:00:00+00:00"
+   },
+   "cfb:winner": {
+    "finished": 12,
+    "games": 6,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-09-20T02:00:00+00:00"
@@ -1473,6 +1467,13 @@
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-09-22T00:15:00+00:00"
+   },
+   "tennis:winner": {
+    "finished": 150,
+    "games": 75,
+    "trust": 0.39,
+    "confidence_fix": false,
+    "last": "2026-09-22T03:00:00+00:00"
    },
    "nfl:total": {
     "finished": 554,
@@ -1659,22 +1660,22 @@
   },
   "price_trend": {
    "flat": {
-    "markets": 25798,
+    "markets": 25161,
     "hit_vs_price": 0.0
    },
-   "falling": {
-    "markets": 2582,
-    "hit_vs_price": 0.005
-   },
    "rising": {
-    "markets": 2593,
-    "hit_vs_price": -0.007
+    "markets": 2573,
+    "hit_vs_price": -0.008
+   },
+   "falling": {
+    "markets": 2561,
+    "hit_vs_price": 0.005
    }
   }
  },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "tracker": {
-  "tracked": 27420,
+  "tracked": 27510,
   "series": 3854,
   "movers": [
    {
@@ -1801,29 +1802,29 @@
  },
  "models": {
   "tennis": {
-   "matches": 19651,
-   "training_rows": 13428,
+   "matches": 19655,
+   "training_rows": 13431,
    "holdout": {
     "from": "2026-08-17",
     "matches": 2015,
-    "elo_log_loss": 0.6593,
-    "model_log_loss": 0.658,
-    "elo_accuracy": 0.606,
-    "model_accuracy": 0.607
+    "elo_log_loss": 0.6592,
+    "model_log_loss": 0.6578,
+    "elo_accuracy": 0.607,
+    "model_accuracy": 0.608
    },
    "using": "full",
    "weights": {
-    "elo": 2.017,
+    "elo": 2.02,
     "dominance": 0.0,
     "rank": 0.0,
-    "h2h": 0.454,
-    "form": -0.52,
-    "fatigue_games": -0.216,
+    "h2h": 0.459,
+    "form": -0.525,
+    "fatigue_games": -0.215,
     "fatigue_matches": 0.088,
-    "rest": 0.013,
-    "travel": 0.139,
+    "rest": 0.014,
+    "travel": 0.138,
     "altitude": 0.0,
-    "best_of_5": 0.593
+    "best_of_5": 0.591
    },
    "sport": "Tennis",
    "label": "Tennis",
@@ -1901,31 +1902,31 @@
    "holdout": {
     "matches": 652,
     "rating_log_loss": 0.6293,
-    "model_log_loss": 0.626,
+    "model_log_loss": 0.6237,
     "rating_accuracy": 0.656,
-    "model_accuracy": 0.646
+    "model_accuracy": 0.65
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6041,
-    "model_log_loss": 0.626,
+    "model_log_loss": 0.6237,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 652
    },
    "backtest": {
-    "bets": 14,
-    "wins": 3,
-    "units": -13.6,
-    "roi": -0.512
+    "bets": 16,
+    "wins": 4,
+    "units": -12.4,
+    "roi": -0.414
    },
    "weights": {
-    "home_field": 0.251,
-    "rating": 1.523,
-    "rest": 0.238,
-    "point_diff_form": 0.222,
-    "qb_change": 0.316,
-    "epa": 0.169
+    "home_field": 0.253,
+    "rating": 1.53,
+    "rest": 0.24,
+    "point_diff_form": 0.22,
+    "qb_change": 0.333,
+    "epa": 0.168
    },
    "matches": 4394,
    "totals": {
@@ -1942,9 +1943,9 @@
    "training_rows": 28032,
    "holdout": {
     "matches": 4205,
-    "rating_log_loss": 0.4969,
-    "model_log_loss": 0.4962,
-    "rating_accuracy": 0.752,
+    "rating_log_loss": 0.4968,
+    "model_log_loss": 0.4961,
+    "rating_accuracy": 0.753,
     "model_accuracy": 0.753
    },
    "using": "rating",
@@ -2237,8 +2238,8 @@
    "expected_end": "2026-09-25T06:15:00+00:00",
    "start_est": "2026-09-25T00:15:00+00:00",
    "status": "pending",
-   "latest_price": 0.465,
-   "close_price": 0.465,
+   "latest_price": 0.46,
+   "close_price": 0.46,
    "pnl": null,
    "why": "Projected score margin +7.4 (home) and total 46.1. Model gives \"Over 45.5 points scored\" 52%. Blended with the market that's 46% vs a 44% price.",
    "trend": -0.01,
@@ -2510,8 +2511,8 @@
    "expected_end": "2026-09-23T01:40:00+00:00",
    "start_est": "2026-09-22T22:40:00+00:00",
    "status": "pending",
-   "latest_price": 0.495,
-   "close_price": 0.495,
+   "latest_price": 0.5,
+   "close_price": 0.5,
    "pnl": null,
    "why": "Dustin May: 4.72 a game this season over 29 games (adjusted 4.79). Model gives \"Dustin May: 4+\" 66%. Blended with the market that's 56% vs a 48% price.",
    "trend": 0.005,
@@ -2549,8 +2550,8 @@
    "expected_end": "2026-09-23T04:40:00+00:00",
    "start_est": "2026-09-23T01:40:00+00:00",
    "status": "pending",
-   "latest_price": 0.805,
-   "close_price": 0.805,
+   "latest_price": 0.8,
+   "close_price": 0.8,
    "pnl": null,
    "why": "Brady Basso: 4.67 a game this season over 6 games (adjusted 4.91). Model gives \"Brady Basso: 2+\" 93%. Blended with the market that's 85% vs a 79% price. Price up 37\u00a2 in the last 12 hours.",
    "trend": 0.37,
@@ -2588,8 +2589,8 @@
    "expected_end": "2026-09-23T01:45:00+00:00",
    "start_est": "2026-09-22T22:45:00+00:00",
    "status": "pending",
-   "latest_price": 0.46,
-   "close_price": 0.46,
+   "latest_price": 0.455,
+   "close_price": 0.455,
    "pnl": null,
    "why": "Projected runs 1.9 (home) vs 2.8 (4.7 total). Park factor 1.06. Model gives \"Over 3.5 runs in the first 5 innings\" 63%. Blended with the market that's 51% vs a 48% price.",
    "trend": 0.01,
@@ -2900,8 +2901,8 @@
    "expected_end": "2026-09-23T03:05:00+00:00",
    "start_est": "2026-09-23T00:05:00+00:00",
    "status": "pending",
-   "latest_price": 0.52,
-   "close_price": 0.52,
+   "latest_price": 0.515,
+   "close_price": 0.515,
    "pnl": null,
    "why": "Projected runs 5.0 (home) vs 4.8 (9.8 total). Park factor 0.98. Model gives \"Over 7.5 runs scored\" 65%. Blended with the market that's 55% vs a 53% price. Price up 2\u00a2 in the last 12 hours.",
    "trend": 0.02,
@@ -3018,8 +3019,8 @@
    "expected_end": "2026-09-23T02:15:00+00:00",
    "start_est": "2026-09-22T23:15:00+00:00",
    "status": "pending",
-   "latest_price": 0.21,
-   "close_price": 0.21,
+   "latest_price": 0.205,
+   "close_price": 0.205,
    "pnl": null,
    "why": "JR Ritchie: 6.44 a game this season over 9 games (adjusted 6.00). Model gives \"JR Ritchie: 7+\" 39%. Blended with the market that's 28% vs a 22% price. Price up 3\u00a2 in the last 12 hours.",
    "trend": 0.03,
@@ -5568,6 +5569,10 @@
  ],
  "changelog": [
   {
+   "date": "2026-09-22",
+   "change": "tennis:winner: trust in the model vs the market moved from 50% to 39% after 150 finished markets"
+  },
+  {
    "date": "2026-09-21",
    "change": "Elo speed changed from 1.0 to 0.6 (prediction error 0.6683 to 0.6631 on recent matches)"
   },
@@ -5682,10 +5687,6 @@
   {
    "date": "2026-09-20",
    "change": "cfb:team_total: trust in the model vs the market moved from 30% to 40% after 978 finished markets"
-  },
-  {
-   "date": "2026-09-20",
-   "change": "mlb:prop_hit: trust in the model vs the market moved from 90% to 50% after 538 finished markets"
   }
  ]
 }
