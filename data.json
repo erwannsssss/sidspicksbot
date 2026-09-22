@@ -1,11 +1,11 @@
 {
- "updated": "2026-09-22T07:24:15.348917+00:00",
- "status_note": "Last run found 0 new pick(s) and graded 3.",
- "bankroll": 100.22,
+ "updated": "2026-09-22T12:29:21.837013+00:00",
+ "status_note": "Last run found 0 new pick(s) and graded 5.",
+ "bankroll": 106.33,
  "protection": {
-  "bankroll": 100.22,
+  "bankroll": 106.33,
   "peak": 112.26,
-  "drawdown": 0.107,
+  "drawdown": 0.053,
   "paused": false
  },
  "settings": {
@@ -132,46 +132,6 @@
    "research": "",
    "sources": [],
    "expert_lean": "none"
-  },
-  {
-   "id": "KXWTAMATCH-26SEP20CHAKEN-CHA",
-   "ticker": "KXWTAMATCH-26SEP20CHAKEN-CHA",
-   "side": "yes",
-   "event": "KXWTAMATCH-26SEP20CHAKEN",
-   "game": "26SEP20CHAKEN",
-   "sport": "Tennis",
-   "model_key": "tennis",
-   "mtype": "winner",
-   "line": null,
-   "tour": "WTA",
-   "tournament": "2026 WTA Seoul",
-   "matchup": "2026 WTA Seoul",
-   "surface": "hard",
-   "pick": "Alina Charaeva",
-   "opponent": "Sofia Kenin",
-   "market": "Alina Charaeva to win",
-   "price": 0.49,
-   "model_prob": 0.613,
-   "raw_prob": 0.736,
-   "edge": 0.106,
-   "tier": "A",
-   "units": 2.5,
-   "made": "2026-09-21T00:28:25.502826+00:00",
-   "expected_end": "2026-09-21T06:00:00+00:00",
-   "start_est": "2026-09-21T02:00:00+00:00",
-   "status": "pending",
-   "latest_price": 0.485,
-   "close_price": 0.485,
-   "pnl": null,
-   "why": "Elo 1630 vs 1391 on hard. Won 50% vs 50% of games lately. Form 5-5 vs 3-7. Games played in last 3 days: 22 vs 0. Travelled 18,342 vs 0 km since last match. Model 74%, blended with the market 61%, price 49%. Price down 2\u00a2 in the last 12 hours.",
-   "trend": -0.023,
-   "new_market": false,
-   "trust": 0.5,
-   "sharp_prob": null,
-   "research": "",
-   "sources": [],
-   "expert_lean": "none",
-   "prechecked": true
   },
   {
    "id": "KXATPMATCH-26SEP21BELMAJ-BEL",
@@ -329,7 +289,9 @@
    "research": "",
    "sources": [],
    "expert_lean": "none"
-  },
+  }
+ ],
+ "history": [
   {
    "id": "KXATPCHALLENGERMATCH-26SEP22JORWEN-JOR",
    "ticker": "KXATPCHALLENGERMATCH-26SEP22JORWEN-JOR",
@@ -356,10 +318,10 @@
    "made": "2026-09-22T05:20:09.653665+00:00",
    "expected_end": "2026-09-22T11:00:00+00:00",
    "start_est": "2026-09-22T07:00:00+00:00",
-   "status": "pending",
+   "status": "win",
    "latest_price": 0.29,
    "close_price": 0.29,
-   "pnl": null,
+   "pnl": 3.6,
    "why": "Elo 1523 vs 1631 on hard. Won 50% vs 50% of games lately. Form 1-9 vs 6-4. Games played in last 3 days: 0 vs 22. Travelled 7,082 vs 0 km since last match. Model 50%, blended with the market 39%, price 29%.",
    "trend": -0.018,
    "new_market": false,
@@ -368,10 +330,50 @@
    "research": "",
    "sources": [],
    "expert_lean": "none",
-   "prechecked": true
-  }
- ],
- "history": [
+   "prechecked": true,
+   "graded": "2026-09-22T12:26:29.686272+00:00"
+  },
+  {
+   "id": "KXWTAMATCH-26SEP20CHAKEN-CHA",
+   "ticker": "KXWTAMATCH-26SEP20CHAKEN-CHA",
+   "side": "yes",
+   "event": "KXWTAMATCH-26SEP20CHAKEN",
+   "game": "26SEP20CHAKEN",
+   "sport": "Tennis",
+   "model_key": "tennis",
+   "mtype": "winner",
+   "line": null,
+   "tour": "WTA",
+   "tournament": "2026 WTA Seoul",
+   "matchup": "2026 WTA Seoul",
+   "surface": "hard",
+   "pick": "Alina Charaeva",
+   "opponent": "Sofia Kenin",
+   "market": "Alina Charaeva to win",
+   "price": 0.49,
+   "model_prob": 0.613,
+   "raw_prob": 0.736,
+   "edge": 0.106,
+   "tier": "A",
+   "units": 2.5,
+   "made": "2026-09-21T00:28:25.502826+00:00",
+   "expected_end": "2026-09-21T06:00:00+00:00",
+   "start_est": "2026-09-21T02:00:00+00:00",
+   "status": "win",
+   "latest_price": 0.485,
+   "close_price": 0.485,
+   "pnl": 2.51,
+   "why": "Elo 1630 vs 1391 on hard. Won 50% vs 50% of games lately. Form 5-5 vs 3-7. Games played in last 3 days: 22 vs 0. Travelled 18,342 vs 0 km since last match. Model 74%, blended with the market 61%, price 49%. Price down 2\u00a2 in the last 12 hours.",
+   "trend": -0.023,
+   "new_market": false,
+   "trust": 0.5,
+   "sharp_prob": null,
+   "research": "",
+   "sources": [],
+   "expert_lean": "none",
+   "prechecked": true,
+   "graded": "2026-09-22T12:26:27.370596+00:00"
+  },
   {
    "id": "KXATPMATCH-26SEP22SVRSEK-SEK",
    "ticker": "KXATPMATCH-26SEP22SVRSEK-SEK",
@@ -1173,7 +1175,7 @@
  "learning": {
   "groups": {
    "cfb:spread_1q": {
-    "finished": 60,
+    "finished": 44,
     "games": 3,
     "trust": 0.25,
     "confidence_fix": false,
@@ -1474,11 +1476,11 @@
     "last": "2026-09-20T02:00:00+00:00"
    },
    "tennis:winner": {
-    "finished": 158,
-    "games": 79,
-    "trust": 0.39,
+    "finished": 216,
+    "games": 108,
+    "trust": 0.37,
     "confidence_fix": false,
-    "last": "2026-09-22T04:00:00+00:00"
+    "last": "2026-09-22T08:40:00+00:00"
    },
    "nfl:total": {
     "finished": 554,
@@ -1665,22 +1667,22 @@
   },
   "price_trend": {
    "flat": {
-    "markets": 25115,
+    "markets": 25125,
     "hit_vs_price": 0.0
    },
    "rising": {
-    "markets": 2575,
-    "hit_vs_price": -0.008
+    "markets": 2591,
+    "hit_vs_price": -0.007
    },
    "falling": {
-    "markets": 2563,
+    "markets": 2579,
     "hit_vs_price": 0.005
    }
   }
  },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "tracker": {
-  "tracked": 30320,
+  "tracked": 30373,
   "series": 3854,
   "movers": [
    {
@@ -1807,59 +1809,59 @@
  },
  "models": {
   "tennis": {
-   "matches": 19660,
-   "training_rows": 13436,
+   "matches": 19704,
+   "training_rows": 13474,
    "holdout": {
-    "from": "2026-08-17",
-    "matches": 2016,
-    "elo_log_loss": 0.6595,
-    "model_log_loss": 0.658,
-    "elo_accuracy": 0.607,
-    "model_accuracy": 0.608
+    "from": "2026-08-18",
+    "matches": 2022,
+    "elo_log_loss": 0.6593,
+    "model_log_loss": 0.6571,
+    "elo_accuracy": 0.608,
+    "model_accuracy": 0.61
    },
    "using": "full",
    "weights": {
-    "elo": 2.021,
+    "elo": 2.03,
     "dominance": 0.0,
     "rank": 0.0,
-    "h2h": 0.458,
-    "form": -0.529,
-    "fatigue_games": -0.216,
-    "fatigue_matches": 0.089,
-    "rest": 0.015,
-    "travel": 0.137,
+    "h2h": 0.463,
+    "form": -0.541,
+    "fatigue_games": -0.219,
+    "fatigue_matches": 0.094,
+    "rest": 0.016,
+    "travel": 0.138,
     "altitude": 0.0,
-    "best_of_5": 0.591
+    "best_of_5": 0.587
    },
    "sport": "Tennis",
    "label": "Tennis",
    "trust": 0.5
   },
   "soccer": {
-   "matches": 81550,
+   "matches": 81755,
    "from_kalshi": 188,
-   "training_rows": 79683,
+   "training_rows": 79887,
    "totals_bias": -0.002,
    "totals": {
-    "matches": 6537,
+    "matches": 6553,
     "model_log_loss": 0.6978,
-    "market_log_loss": 0.6706,
+    "market_log_loss": 0.6703,
     "best_weight": 0.0
    },
    "holdout": {
-    "matches": 11953,
-    "rating_log_loss": 1.011,
-    "model_log_loss": 1.0093,
+    "matches": 11984,
+    "rating_log_loss": 1.0117,
+    "model_log_loss": 1.01,
     "rating_accuracy": 0.499,
-    "model_accuracy": 0.503
+    "model_accuracy": 0.502
    },
    "using": "full",
    "market": {
-    "market_log_loss": 0.9912,
-    "model_log_loss": 1.0096,
+    "market_log_loss": 0.9916,
+    "model_log_loss": 1.0104,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
-    "matches": 11766
+    "matches": 11797
    },
    "backtest": {
     "bets": 72,
@@ -1868,12 +1870,12 @@
     "roi": 0.11
    },
    "weights": {
-    "rating": 1.609,
-    "chance_quality": 0.397,
-    "goal_diff_form": 0.028,
-    "rest": -0.068
+    "rating": 1.607,
+    "chance_quality": 0.396,
+    "goal_diff_form": 0.029,
+    "rest": -0.063
    },
-   "goals_scale": 0.984,
+   "goals_scale": 0.987,
    "sport": "Soccer",
    "label": "Soccer",
    "trust": 0.25
@@ -1907,31 +1909,31 @@
    "holdout": {
     "matches": 652,
     "rating_log_loss": 0.6293,
-    "model_log_loss": 0.6239,
+    "model_log_loss": 0.6237,
     "rating_accuracy": 0.656,
-    "model_accuracy": 0.647
+    "model_accuracy": 0.646
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6041,
-    "model_log_loss": 0.6239,
+    "model_log_loss": 0.6237,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 652
    },
    "backtest": {
-    "bets": 15,
-    "wins": 4,
-    "units": -11.5,
-    "roi": -0.419
+    "bets": 17,
+    "wins": 5,
+    "units": -10.9,
+    "roi": -0.345
    },
    "weights": {
-    "home_field": 0.254,
-    "rating": 1.522,
-    "rest": 0.238,
-    "point_diff_form": 0.219,
+    "home_field": 0.253,
+    "rating": 1.524,
+    "rest": 0.24,
+    "point_diff_form": 0.226,
     "qb_change": 0.318,
-    "epa": 0.172
+    "epa": 0.167
    },
    "matches": 4394,
    "totals": {
@@ -1983,26 +1985,26 @@
  },
  "summary": {
   "all": {
-   "picks": 10,
-   "wins": 3,
+   "picks": 12,
+   "wins": 5,
    "losses": 7,
-   "units": 0.22,
-   "staked": 20.5,
-   "roi": 0.011,
-   "beat_price": 0.2,
-   "clv": -0.0061,
-   "clv_picks": 9
+   "units": 6.33,
+   "staked": 24.5,
+   "roi": 0.258,
+   "beat_price": 0.167,
+   "clv": -0.0055,
+   "clv_picks": 11
   },
   "week": {
-   "picks": 10,
-   "wins": 3,
+   "picks": 12,
+   "wins": 5,
    "losses": 7,
-   "units": 0.22,
-   "staked": 20.5,
-   "roi": 0.011,
-   "beat_price": 0.2,
-   "clv": -0.0061,
-   "clv_picks": 9
+   "units": 6.33,
+   "staked": 24.5,
+   "roi": 0.258,
+   "beat_price": 0.167,
+   "clv": -0.0055,
+   "clv_picks": 11
   },
   "yours": {
    "picks": 4,
@@ -2016,15 +2018,15 @@
    "clv_picks": 4
   },
   "watch": {
-   "picks": 49,
-   "wins": 19,
-   "losses": 30,
-   "units": 0.82,
-   "staked": 24.5,
-   "roi": 0.033,
-   "beat_price": 0.224,
-   "clv": -0.0129,
-   "clv_picks": 47
+   "picks": 52,
+   "wins": 20,
+   "losses": 32,
+   "units": 0.24,
+   "staked": 26.0,
+   "roi": 0.009,
+   "beat_price": 0.212,
+   "clv": -0.0125,
+   "clv_picks": 50
   }
  },
  "by_expert_lean": {
@@ -2040,28 +2042,28 @@
    "clv_picks": 2
   },
   "none": {
-   "picks": 7,
-   "wins": 0,
+   "picks": 9,
+   "wins": 2,
    "losses": 7,
-   "units": -12.04,
-   "staked": 11.5,
-   "roi": -1.047,
-   "beat_price": 0.143,
-   "clv": -0.0079,
-   "clv_picks": 7
+   "units": -5.93,
+   "staked": 15.5,
+   "roi": -0.383,
+   "beat_price": 0.111,
+   "clv": -0.0067,
+   "clv_picks": 9
   }
  },
  "by_tier": {
   "A": {
-   "picks": 6,
-   "wins": 1,
+   "picks": 8,
+   "wins": 3,
    "losses": 5,
-   "units": -5.78,
-   "staked": 12.5,
-   "roi": -0.462,
-   "beat_price": 0.167,
-   "clv": -0.001,
-   "clv_picks": 5
+   "units": 0.33,
+   "staked": 16.5,
+   "roi": 0.02,
+   "beat_price": 0.125,
+   "clv": -0.0014,
+   "clv_picks": 7
   },
   "B": {
    "picks": 3,
@@ -2086,15 +2088,15 @@
    "clv_picks": 1
   },
   "W": {
-   "picks": 49,
-   "wins": 19,
-   "losses": 30,
-   "units": 0.82,
-   "staked": 24.5,
-   "roi": 0.033,
-   "beat_price": 0.224,
-   "clv": -0.0129,
-   "clv_picks": 47
+   "picks": 52,
+   "wins": 20,
+   "losses": 32,
+   "units": 0.24,
+   "staked": 26.0,
+   "roi": 0.009,
+   "beat_price": 0.212,
+   "clv": -0.0125,
+   "clv_picks": 50
   }
  },
  "watch_open": [
@@ -2125,54 +2127,14 @@
    "expected_end": "2026-09-25T02:30:00+00:00",
    "start_est": "2026-09-24T23:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.425,
-   "close_price": 0.425,
+   "latest_price": 0.43,
+   "close_price": 0.43,
    "pnl": null,
    "why": "Projected score margin -0.4 (home) and total 57.6. Model gives \"Over 54.5 points scored\" 57%. Blended with the market that's 47% vs a 45% price.",
    "trend": -0.005,
    "new_market": false,
    "trust": 0.25,
    "sharp_prob": null,
-   "research": "",
-   "sources": [],
-   "expert_lean": "none"
-  },
-  {
-   "id": "KXWTAMATCH-26SEP20VEKWAN-WAN",
-   "ticker": "KXWTAMATCH-26SEP20VEKWAN-WAN",
-   "side": "yes",
-   "event": "KXWTAMATCH-26SEP20VEKWAN",
-   "game": "26SEP20VEKWAN",
-   "sport": "Tennis",
-   "model_key": "tennis",
-   "mtype": "winner",
-   "line": null,
-   "tour": "WTA",
-   "tournament": "2026 WTA Singapore",
-   "matchup": "2026 WTA Singapore",
-   "surface": "hard",
-   "pick": "Xinyu Wang",
-   "opponent": "Donna Vekic",
-   "market": "Xinyu Wang to win",
-   "price": 0.51,
-   "model_prob": 0.548,
-   "raw_prob": 0.581,
-   "edge": 0.02,
-   "tier": "W",
-   "units": 0.5,
-   "made": "2026-09-21T00:28:25.502826+00:00",
-   "expected_end": "2026-09-21T06:00:00+00:00",
-   "start_est": "2026-09-21T02:00:00+00:00",
-   "status": "pending",
-   "latest_price": 0.505,
-   "close_price": 0.505,
-   "pnl": null,
-   "why": "Elo 1694 vs 1619 on hard. Won 50% vs 50% of games lately. Form 6-4 vs 4-6. Head to head 1-0. Model 58%, blended with the market 55%, price 51%. Sharp sportsbook price (Pinnacle) says 51%.",
-   "trend": -0.005,
-   "new_market": false,
-   "trust": 0.5,
-   "sharp_prob": 0.5065,
-   "sharp_source": "Pinnacle",
    "research": "",
    "sources": [],
    "expert_lean": "none"
@@ -2204,8 +2166,8 @@
    "expected_end": "2026-09-24T04:30:00+00:00",
    "start_est": "2026-09-24T01:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.805,
-   "close_price": 0.805,
+   "latest_price": 0.795,
+   "close_price": 0.795,
    "pnl": null,
    "why": "Expected goals 1.44 vs 1.22 (2.66 total). Model gives \"Under 4.5 goals scored\" 87%. Blended with the market that's 81% vs a 80% price.",
    "trend": 0.0,
@@ -2243,8 +2205,8 @@
    "expected_end": "2026-09-25T06:15:00+00:00",
    "start_est": "2026-09-25T00:15:00+00:00",
    "status": "pending",
-   "latest_price": 0.46,
-   "close_price": 0.46,
+   "latest_price": 0.455,
+   "close_price": 0.455,
    "pnl": null,
    "why": "Projected score margin +7.4 (home) and total 46.1. Model gives \"Over 45.5 points scored\" 52%. Blended with the market that's 46% vs a 44% price.",
    "trend": -0.01,
@@ -2477,8 +2439,8 @@
    "expected_end": "2026-09-22T20:05:00+00:00",
    "start_est": "2026-09-22T17:05:00+00:00",
    "status": "pending",
-   "latest_price": 0.435,
-   "close_price": 0.435,
+   "latest_price": 0.455,
+   "close_price": 0.455,
    "pnl": null,
    "why": "Projected runs 4.6 (home) vs 4.6 (9.3 total). Park factor 1.02. Forecast 70F, wind 6 mph. Model gives \"Over 7.5 runs scored\" 61%. Blended with the market that's 48% vs a 45% price.",
    "trend": 0.005,
@@ -2516,8 +2478,8 @@
    "expected_end": "2026-09-23T01:40:00+00:00",
    "start_est": "2026-09-22T22:40:00+00:00",
    "status": "pending",
-   "latest_price": 0.5,
-   "close_price": 0.5,
+   "latest_price": 0.485,
+   "close_price": 0.485,
    "pnl": null,
    "why": "Dustin May: 4.72 a game this season over 29 games (adjusted 4.79). Model gives \"Dustin May: 4+\" 66%. Blended with the market that's 56% vs a 48% price.",
    "trend": 0.005,
@@ -2555,8 +2517,8 @@
    "expected_end": "2026-09-23T04:40:00+00:00",
    "start_est": "2026-09-23T01:40:00+00:00",
    "status": "pending",
-   "latest_price": 0.805,
-   "close_price": 0.805,
+   "latest_price": 0.815,
+   "close_price": 0.815,
    "pnl": null,
    "why": "Brady Basso: 4.67 a game this season over 6 games (adjusted 4.91). Model gives \"Brady Basso: 2+\" 93%. Blended with the market that's 85% vs a 79% price. Price up 37\u00a2 in the last 12 hours.",
    "trend": 0.37,
@@ -2601,45 +2563,6 @@
    "trend": 0.01,
    "new_market": false,
    "trust": 0.25,
-   "sharp_prob": null,
-   "research": "",
-   "sources": [],
-   "expert_lean": "none"
-  },
-  {
-   "id": "KXATPMATCH-26SEP22WEBMAT-WEB",
-   "ticker": "KXATPMATCH-26SEP22WEBMAT-WEB",
-   "side": "yes",
-   "event": "KXATPMATCH-26SEP22WEBMAT",
-   "game": "26SEP22WEBMAT",
-   "sport": "Tennis",
-   "model_key": "tennis",
-   "mtype": "winner",
-   "line": null,
-   "tour": "ATP",
-   "tournament": "2026 ATP Hangzhou",
-   "matchup": "2026 ATP Hangzhou",
-   "surface": "hard",
-   "pick": "Arthur Weber",
-   "opponent": "Hayato Matsuoka",
-   "market": "Arthur Weber to win",
-   "price": 0.36,
-   "model_prob": 0.422,
-   "raw_prob": 0.492,
-   "edge": 0.046,
-   "tier": "W",
-   "units": 0.5,
-   "made": "2026-09-22T00:27:17.570900+00:00",
-   "expected_end": "2026-09-22T07:00:00+00:00",
-   "start_est": "2026-09-22T03:00:00+00:00",
-   "status": "pending",
-   "latest_price": 0.355,
-   "close_price": 0.355,
-   "pnl": null,
-   "why": "Elo 1541 vs 1565 on hard. Won 50% vs 50% of games lately. Form 5-5 vs 6-4. Travelled 2,488 vs 1,052 km since last match. Model 49%, blended with the market 42%, price 36%.",
-   "trend": -0.001,
-   "new_market": false,
-   "trust": 0.5,
    "sharp_prob": null,
    "research": "",
    "sources": [],
@@ -2724,45 +2647,6 @@
    "expert_lean": "none"
   },
   {
-   "id": "KXATPMATCH-26SEP22SUNDEL-DEL",
-   "ticker": "KXATPMATCH-26SEP22SUNDEL-DEL",
-   "side": "yes",
-   "event": "KXATPMATCH-26SEP22SUNDEL",
-   "game": "26SEP22SUNDEL",
-   "sport": "Tennis",
-   "model_key": "tennis",
-   "mtype": "winner",
-   "line": null,
-   "tour": "ATP",
-   "tournament": "2026 ATP Hangzhou",
-   "matchup": "2026 ATP Hangzhou",
-   "surface": "hard",
-   "pick": "Matthew Dellavedova",
-   "opponent": "Fajing Sun",
-   "market": "Matthew Dellavedova to win",
-   "price": 0.38,
-   "model_prob": 0.421,
-   "raw_prob": 0.465,
-   "edge": 0.025,
-   "tier": "W",
-   "units": 0.5,
-   "made": "2026-09-22T00:27:17.570900+00:00",
-   "expected_end": "2026-09-22T07:00:00+00:00",
-   "start_est": "2026-09-22T03:00:00+00:00",
-   "status": "pending",
-   "latest_price": 0.375,
-   "close_price": 0.375,
-   "pnl": null,
-   "why": "Elo 1495 vs 1540 on hard. Won 50% vs 50% of games lately. Form 4-6 vs 5-5. Travelled 2,488 vs 1,052 km since last match. Model 47%, blended with the market 42%, price 38%. Price down 4\u00a2 in the last 12 hours.",
-   "trend": -0.042,
-   "new_market": false,
-   "trust": 0.5,
-   "sharp_prob": null,
-   "research": "",
-   "sources": [],
-   "expert_lean": "none"
-  },
-  {
    "id": "KXNCAAFGAME-26SEP25HARVBRWN-BRWN",
    "ticker": "KXNCAAFGAME-26SEP25HARVBRWN-BRWN",
    "side": "yes",
@@ -2789,8 +2673,8 @@
    "expected_end": "2026-09-26T02:00:00+00:00",
    "start_est": "2026-09-25T23:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.24,
-   "close_price": 0.24,
+   "latest_price": 0.205,
+   "close_price": 0.205,
    "pnl": null,
    "why": "Ratings 1500 vs 1631, at home. Point differential last 5: -2 vs -19. Model gives Brown 31%. Blended with the market that's 24% vs a 23% price. Price down 2\u00a2 in the last 12 hours.",
    "trend": -0.02,
@@ -2867,8 +2751,8 @@
    "expected_end": "2026-09-23T03:05:00+00:00",
    "start_est": "2026-09-23T00:05:00+00:00",
    "status": "pending",
-   "latest_price": 0.515,
-   "close_price": 0.515,
+   "latest_price": 0.525,
+   "close_price": 0.525,
    "pnl": null,
    "why": "Projected runs 5.0 (home) vs 4.8 (9.8 total). Park factor 0.98. Model gives \"Over 7.5 runs scored\" 65%. Blended with the market that's 55% vs a 53% price. Price up 2\u00a2 in the last 12 hours.",
    "trend": 0.02,
@@ -2985,8 +2869,8 @@
    "expected_end": "2026-09-23T02:15:00+00:00",
    "start_est": "2026-09-22T23:15:00+00:00",
    "status": "pending",
-   "latest_price": 0.205,
-   "close_price": 0.205,
+   "latest_price": 0.21,
+   "close_price": 0.21,
    "pnl": null,
    "why": "JR Ritchie: 6.44 a game this season over 9 games (adjusted 6.00). Model gives \"JR Ritchie: 7+\" 39%. Blended with the market that's 28% vs a 22% price. Price up 3\u00a2 in the last 12 hours.",
    "trend": 0.03,
@@ -2999,6 +2883,127 @@
   }
  ],
  "watch_history": [
+  {
+   "id": "KXATPMATCH-26SEP22SUNDEL-DEL",
+   "ticker": "KXATPMATCH-26SEP22SUNDEL-DEL",
+   "side": "yes",
+   "event": "KXATPMATCH-26SEP22SUNDEL",
+   "game": "26SEP22SUNDEL",
+   "sport": "Tennis",
+   "model_key": "tennis",
+   "mtype": "winner",
+   "line": null,
+   "tour": "ATP",
+   "tournament": "2026 ATP Hangzhou",
+   "matchup": "2026 ATP Hangzhou",
+   "surface": "hard",
+   "pick": "Matthew Dellavedova",
+   "opponent": "Fajing Sun",
+   "market": "Matthew Dellavedova to win",
+   "price": 0.38,
+   "model_prob": 0.421,
+   "raw_prob": 0.465,
+   "edge": 0.025,
+   "tier": "W",
+   "units": 0.5,
+   "made": "2026-09-22T00:27:17.570900+00:00",
+   "expected_end": "2026-09-22T07:00:00+00:00",
+   "start_est": "2026-09-22T03:00:00+00:00",
+   "status": "loss",
+   "latest_price": 0.375,
+   "close_price": 0.375,
+   "pnl": -0.52,
+   "why": "Elo 1495 vs 1540 on hard. Won 50% vs 50% of games lately. Form 4-6 vs 5-5. Travelled 2,488 vs 1,052 km since last match. Model 47%, blended with the market 42%, price 38%. Price down 4\u00a2 in the last 12 hours.",
+   "trend": -0.042,
+   "new_market": false,
+   "trust": 0.5,
+   "sharp_prob": null,
+   "research": "",
+   "sources": [],
+   "expert_lean": "none",
+   "graded": "2026-09-22T12:26:28.847616+00:00"
+  },
+  {
+   "id": "KXATPMATCH-26SEP22WEBMAT-WEB",
+   "ticker": "KXATPMATCH-26SEP22WEBMAT-WEB",
+   "side": "yes",
+   "event": "KXATPMATCH-26SEP22WEBMAT",
+   "game": "26SEP22WEBMAT",
+   "sport": "Tennis",
+   "model_key": "tennis",
+   "mtype": "winner",
+   "line": null,
+   "tour": "ATP",
+   "tournament": "2026 ATP Hangzhou",
+   "matchup": "2026 ATP Hangzhou",
+   "surface": "hard",
+   "pick": "Arthur Weber",
+   "opponent": "Hayato Matsuoka",
+   "market": "Arthur Weber to win",
+   "price": 0.36,
+   "model_prob": 0.422,
+   "raw_prob": 0.492,
+   "edge": 0.046,
+   "tier": "W",
+   "units": 0.5,
+   "made": "2026-09-22T00:27:17.570900+00:00",
+   "expected_end": "2026-09-22T07:00:00+00:00",
+   "start_est": "2026-09-22T03:00:00+00:00",
+   "status": "loss",
+   "latest_price": 0.355,
+   "close_price": 0.355,
+   "pnl": -0.52,
+   "why": "Elo 1541 vs 1565 on hard. Won 50% vs 50% of games lately. Form 5-5 vs 6-4. Travelled 2,488 vs 1,052 km since last match. Model 49%, blended with the market 42%, price 36%.",
+   "trend": -0.001,
+   "new_market": false,
+   "trust": 0.5,
+   "sharp_prob": null,
+   "research": "",
+   "sources": [],
+   "expert_lean": "none",
+   "graded": "2026-09-22T12:26:28.600331+00:00"
+  },
+  {
+   "id": "KXWTAMATCH-26SEP20VEKWAN-WAN",
+   "ticker": "KXWTAMATCH-26SEP20VEKWAN-WAN",
+   "side": "yes",
+   "event": "KXWTAMATCH-26SEP20VEKWAN",
+   "game": "26SEP20VEKWAN",
+   "sport": "Tennis",
+   "model_key": "tennis",
+   "mtype": "winner",
+   "line": null,
+   "tour": "WTA",
+   "tournament": "2026 WTA Singapore",
+   "matchup": "2026 WTA Singapore",
+   "surface": "hard",
+   "pick": "Xinyu Wang",
+   "opponent": "Donna Vekic",
+   "market": "Xinyu Wang to win",
+   "price": 0.51,
+   "model_prob": 0.548,
+   "raw_prob": 0.581,
+   "edge": 0.02,
+   "tier": "W",
+   "units": 0.5,
+   "made": "2026-09-21T00:28:25.502826+00:00",
+   "expected_end": "2026-09-21T06:00:00+00:00",
+   "start_est": "2026-09-21T02:00:00+00:00",
+   "status": "win",
+   "latest_price": 0.505,
+   "close_price": 0.505,
+   "pnl": 0.46,
+   "why": "Elo 1694 vs 1619 on hard. Won 50% vs 50% of games lately. Form 6-4 vs 4-6. Head to head 1-0. Model 58%, blended with the market 55%, price 51%. Sharp sportsbook price (Pinnacle) says 51%.",
+   "trend": -0.005,
+   "new_market": false,
+   "trust": 0.5,
+   "sharp_prob": 0.5065,
+   "sharp_source": "Pinnacle",
+   "research": "",
+   "sources": [],
+   "expert_lean": "none",
+   "graded": "2026-09-22T12:26:27.530329+00:00"
+  },
   {
    "id": "KXATPMATCH-26SEP22BARILA-BAR",
    "ticker": "KXATPMATCH-26SEP22BARILA-BAR",
@@ -4911,15 +4916,15 @@
    "clv_picks": 2
   },
   "ATP Challenger": {
-   "picks": 3,
-   "wins": 2,
+   "picks": 4,
+   "wins": 3,
    "losses": 1,
-   "units": 6.34,
-   "staked": 7.5,
-   "roi": 0.845,
+   "units": 9.94,
+   "staked": 9.0,
+   "roi": 1.104,
    "beat_price": 0.0,
-   "clv": -0.015,
-   "clv_picks": 2
+   "clv": -0.01,
+   "clv_picks": 3
   },
   "Davis Cup": {
    "picks": 0,
@@ -4944,15 +4949,15 @@
    "clv_picks": 3
   },
   "WTA": {
-   "picks": 2,
-   "wins": 1,
+   "picks": 3,
+   "wins": 2,
    "losses": 1,
-   "units": 2.79,
-   "staked": 4.5,
-   "roi": 0.62,
-   "beat_price": 0.5,
-   "clv": 0.0,
-   "clv_picks": 2
+   "units": 5.3,
+   "staked": 7.0,
+   "roi": 0.757,
+   "beat_price": 0.333,
+   "clv": -0.0017,
+   "clv_picks": 3
   },
   "WTA Challenger": {
    "picks": 0,
@@ -4979,21 +4984,21 @@
    "clv_picks": 3
   },
   "Tennis": {
-   "picks": 7,
-   "wins": 3,
+   "picks": 9,
+   "wins": 5,
    "losses": 4,
-   "units": 4.41,
-   "staked": 16.5,
-   "roi": 0.267,
-   "beat_price": 0.286,
-   "clv": 0.0,
-   "clv_picks": 6
+   "units": 10.52,
+   "staked": 20.5,
+   "roi": 0.513,
+   "beat_price": 0.222,
+   "clv": -0.0006,
+   "clv_picks": 8
   }
  },
  "calibration": {
   "30-40%": {
-   "n": 3,
-   "hit": 0.0
+   "n": 4,
+   "hit": 0.25
   },
   "40-50%": {
    "n": 3,
@@ -5002,6 +5007,10 @@
   "50-60%": {
    "n": 4,
    "hit": 0.5
+  },
+  "60-70%": {
+   "n": 1,
+   "hit": 1.0
   }
  },
  "curve": [
@@ -5052,6 +5061,14 @@
   {
    "t": "2026-09-22",
    "v": 100.22
+  },
+  {
+   "t": "2026-09-22",
+   "v": 102.73
+  },
+  {
+   "t": "2026-09-22",
+   "v": 106.33
   }
  ],
  "reports": [
