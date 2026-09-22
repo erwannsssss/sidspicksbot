@@ -203,8 +203,8 @@
   "model_prob": 0.3353,
   "ev": 0.512,
   "payout_units": 3.5,
-  "status": "pending",
-  "pnl": null,
+  "status": "loss",
+  "pnl": -1.0,
   "legs": [
    {
     "id": "KXNFLREC-26SEP21NYGLAR-LARDADAMS17-5:no",
@@ -216,7 +216,8 @@
     "price": 0.42,
     "model_prob": 0.547,
     "edge": 0.11,
-    "expected_end": "2026-09-22T06:15:00+00:00"
+    "expected_end": "2026-09-22T06:15:00+00:00",
+    "result": "loss"
    },
    {
     "id": "KXWTAMATCH-26SEP20CHAKEN-CHA",
@@ -230,7 +231,8 @@
     "edge": 0.106,
     "expected_end": "2026-09-21T06:00:00+00:00"
    }
-  ]
+  ],
+  "graded": "2026-09-22T02:22:48.863605+00:00"
  },
  {
   "id": "PARLAY-202609210029-2",
