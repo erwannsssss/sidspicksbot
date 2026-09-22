@@ -273,5 +273,85 @@
    }
   ],
   "graded": "2026-09-21T05:21:48.943319+00:00"
+ },
+ {
+  "id": "PARLAY-202609220029-1",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-09-22T00:29:46.306537+00:00",
+  "units": 1.0,
+  "price": 0.1943,
+  "model_prob": 0.3073,
+  "ev": 0.582,
+  "payout_units": 4.1,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXATPMATCH-26SEP22SVRSEK-SEK",
+    "ticker": "KXATPMATCH-26SEP22SVRSEK-SEK",
+    "side": "yes",
+    "market": "Philip Sekulic to win",
+    "matchup": "2026 ATP Hangzhou",
+    "sport": "Tennis",
+    "price": 0.23,
+    "model_prob": 0.359,
+    "edge": 0.116,
+    "expected_end": "2026-09-22T07:00:00+00:00"
+   },
+   {
+    "id": "KXMLBKS-26SEP222140LAAATH-ATHBBASSO66-2",
+    "ticker": "KXMLBKS-26SEP222140LAAATH-ATHBBASSO66-2",
+    "side": "yes",
+    "market": "Brady Basso: 2+",
+    "matchup": "Los Angeles Angels at Athletics",
+    "sport": "Baseball",
+    "price": 0.79,
+    "model_prob": 0.856,
+    "edge": 0.054,
+    "expected_end": "2026-09-23T04:40:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": "PARLAY-202609220029-2",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-09-22T00:29:46.306575+00:00",
+  "units": 1.0,
+  "price": 0.2023,
+  "model_prob": 0.2904,
+  "ev": 0.436,
+  "payout_units": 3.9,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXATPMATCH-26SEP22MULPAV-PAV",
+    "ticker": "KXATPMATCH-26SEP22MULPAV-PAV",
+    "side": "yes",
+    "market": "Luka Pavlovic to win",
+    "matchup": "2026 ATP Chengdu",
+    "sport": "Tennis",
+    "price": 0.39,
+    "model_prob": 0.514,
+    "edge": 0.107,
+    "expected_end": "2026-09-22T08:00:00+00:00"
+   },
+   {
+    "id": "KXMLBKS-26SEP221840MILPHI-MILDMAY3-4",
+    "ticker": "KXMLBKS-26SEP221840MILPHI-MILDMAY3-4",
+    "side": "yes",
+    "market": "Dustin May: 4+",
+    "matchup": "Milwaukee Brewers at Philadelphia Phillies",
+    "sport": "Baseball",
+    "price": 0.48,
+    "model_prob": 0.565,
+    "edge": 0.067,
+    "expected_end": "2026-09-23T01:40:00+00:00"
+   }
+  ]
  }
 ]
