@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-23T07:23:58.602713+00:00",
+ "updated": "2026-09-23T12:30:35.047783+00:00",
  "status_note": "Last run found 0 new pick(s) and graded 0.",
  "bankroll": 106.81,
  "protection": {
@@ -1359,22 +1359,8 @@
  },
  "learning": {
   "groups": {
-   "mlb:prop_hit": {
-    "finished": 2156,
-    "games": 28,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-23T02:10:00+00:00"
-   },
-   "mlb:prop_hr": {
-    "finished": 912,
-    "games": 28,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-23T02:10:00+00:00"
-   },
    "mlb:prop_tb": {
-    "finished": 3426,
+    "finished": 3394,
     "games": 28,
     "trust": 0.25,
     "confidence_fix": false,
@@ -1382,6 +1368,20 @@
    },
    "mlb:prop_hrr": {
     "finished": 4496,
+    "games": 28,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-23T02:10:00+00:00"
+   },
+   "mlb:prop_hit": {
+    "finished": 2128,
+    "games": 28,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-23T02:10:00+00:00"
+   },
+   "mlb:prop_hr": {
+    "finished": 894,
     "games": 28,
     "trust": 0.25,
     "confidence_fix": false,
@@ -1556,11 +1556,11 @@
     "last": "2026-09-22T00:15:00+00:00"
    },
    "tennis:winner": {
-    "finished": 278,
-    "games": 139,
+    "finished": 306,
+    "games": 153,
     "trust": 0.35,
-    "confidence_fix": false,
-    "last": "2026-09-23T04:00:00+00:00"
+    "confidence_fix": true,
+    "last": "2026-09-23T09:00:00+00:00"
    },
    "nfl:total_2h": {
     "finished": 190,
@@ -1718,25 +1718,33 @@
    }
   },
   "price_trend": {
+   "flat": {
+    "markets": 12234,
+    "hit_vs_price": 0.0
+   },
    "rising": {
-    "markets": 1818,
-    "hit_vs_price": -0.025
+    "markets": 1819,
+    "hit_vs_price": -0.026
    },
    "falling": {
-    "markets": 1825,
-    "hit_vs_price": 0.024
-   },
-   "flat": {
-    "markets": 12252,
-    "hit_vs_price": 0.0
+    "markets": 1826,
+    "hit_vs_price": 0.025
    }
   }
  },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "tracker": {
-  "tracked": 32864,
+  "tracked": 33033,
   "series": 3873,
   "movers": [
+   {
+    "ticker": "KXKBOGAME-26SEP230530NCDKTW-NCD",
+    "series": "KXKBOGAME",
+    "title": "NC Dinos",
+    "move": 0.645,
+    "price": 0.985,
+    "close": "2026-09-25T09:30:00+00:00"
+   },
    {
     "ticker": "KXUCLWGAME-26SEP22JUVSLB-SLB",
     "series": "KXUCLWGAME",
@@ -1754,6 +1762,30 @@
     "close": "2026-09-24T19:00:00+00:00"
    },
    {
+    "ticker": "KXKBOGAME-26SEP230530NCDKTW-KTW",
+    "series": "KXKBOGAME",
+    "title": "KT Wiz",
+    "move": -0.52,
+    "price": 0.02,
+    "close": "2026-09-25T09:30:00+00:00"
+   },
+   {
+    "ticker": "KXKBORFI-26SEP230530NCDKTW-Y",
+    "series": "KXKBORFI",
+    "title": "Yes",
+    "move": 0.515,
+    "price": 0.995,
+    "close": "2026-09-25T09:30:00+00:00"
+   },
+   {
+    "ticker": "KXKBORFI-26SEP230530KIADOO-Y",
+    "series": "KXKBORFI",
+    "title": "Yes",
+    "move": 0.515,
+    "price": 0.995,
+    "close": "2026-09-25T09:30:00+00:00"
+   },
+   {
     "ticker": "KXCS2TOTALMAPS-26SEP222100ZOMBLAG-3",
     "series": "KXCS2TOTALMAPS",
     "title": "Over 2.5 maps",
@@ -1762,126 +1794,94 @@
     "close": "2026-09-25T01:00:00+00:00"
    },
    {
-    "ticker": "KXWNBAOT-26SEP22TORCHI-1",
-    "series": "KXWNBAOT",
-    "title": "1+ overtime periods",
-    "move": -0.485,
-    "price": 0.035,
-    "close": "2026-09-25T00:00:00+00:00"
+    "ticker": "KXKBOGAME-26SEP230530LOTHAN-LOT",
+    "series": "KXKBOGAME",
+    "title": "Lotte Giants",
+    "move": 0.5,
+    "price": 0.925,
+    "close": "2026-09-25T09:30:00+00:00"
    },
    {
-    "ticker": "KXWNBAOT-26SEP22CONNWSH-1",
-    "series": "KXWNBAOT",
-    "title": "1+ overtime periods",
-    "move": -0.485,
-    "price": 0.015,
-    "close": "2026-09-24T23:30:00+00:00"
+    "ticker": "KXKBOTOTAL-26SEP230530NCDKTW-12",
+    "series": "KXKBOTOTAL",
+    "title": "Over 11.5 runs scored",
+    "move": 0.5,
+    "price": 0.995,
+    "close": "2026-09-25T09:30:00+00:00"
    },
    {
-    "ticker": "KXWNBAOT-26SEP21ATLNY-1",
-    "series": "KXWNBAOT",
-    "title": "1+ overtime periods",
-    "move": -0.475,
-    "price": 0.045,
-    "close": "2026-09-24T00:00:00+00:00"
+    "ticker": "KXKBOTOTAL-26SEP230530NCDKTW-8",
+    "series": "KXKBOTOTAL",
+    "title": "Over 7.5 runs scored",
+    "move": 0.495,
+    "price": 0.995,
+    "close": "2026-09-25T09:30:00+00:00"
    },
    {
-    "ticker": "KXVIDEOAI-26SEP25-BYTE",
-    "series": "KXVIDEOAI",
-    "title": "ByteDance",
-    "move": -0.465,
-    "price": 0.025,
-    "close": "2026-09-25T14:00:00+00:00"
+    "ticker": "KXKBOTOTAL-26SEP230530NCDKTW-6",
+    "series": "KXKBOTOTAL",
+    "title": "Over 5.5 runs scored",
+    "move": 0.495,
+    "price": 0.995,
+    "close": "2026-09-25T09:30:00+00:00"
    },
    {
-    "ticker": "KXNFLTEAMYDS-26SEP21NYGLAR-NYG450",
-    "series": "KXNFLTEAMYDS",
-    "title": "New York G: 450+",
-    "move": -0.46,
-    "price": 0.035,
-    "close": "2026-09-24T00:15:00+00:00"
+    "ticker": "KXKBOTOTAL-26SEP230530NCDKTW-10",
+    "series": "KXKBOTOTAL",
+    "title": "Over 9.5 runs scored",
+    "move": 0.495,
+    "price": 0.995,
+    "close": "2026-09-25T09:30:00+00:00"
    },
    {
-    "ticker": "KXWNBAOT-26SEP21DALPHX-1",
-    "series": "KXWNBAOT",
-    "title": "1+ overtime periods",
-    "move": -0.46,
-    "price": 0.05,
-    "close": "2026-09-24T02:00:00+00:00"
+    "ticker": "KXKBOTOTAL-26SEP230530LOTHAN-8",
+    "series": "KXKBOTOTAL",
+    "title": "Over 7.5 runs scored",
+    "move": 0.495,
+    "price": 0.995,
+    "close": "2026-09-25T09:30:00+00:00"
    },
    {
-    "ticker": "KXLOLGAME-26SEP220200BLGJKOIA-BLGJ",
-    "series": "KXLOLGAME",
-    "title": "Bilibili Gaming Junior",
-    "move": -0.46,
-    "price": 0.11,
-    "close": "2026-09-24T06:00:00+00:00"
+    "ticker": "KXKBOTOTAL-26SEP230530LOTHAN-10",
+    "series": "KXKBOTOTAL",
+    "title": "Over 9.5 runs scored",
+    "move": 0.495,
+    "price": 0.995,
+    "close": "2026-09-25T09:30:00+00:00"
    },
    {
-    "ticker": "KXNCAAWVMATCH-26SEP221200AMCCSOU-AMCC",
-    "series": "KXNCAAWVMATCH",
-    "title": "Texas AM Corpus-Christi",
-    "move": 0.455,
-    "price": 0.94,
-    "close": "2026-09-24T16:00:00+00:00"
-   },
-   {
-    "ticker": "KXLOLGAME-26SEP220200BLGJKOIA-KOIA",
-    "series": "KXLOLGAME",
-    "title": "Movistar KOI F\u00e9nix",
-    "move": 0.45,
-    "price": 0.885,
-    "close": "2026-09-24T06:00:00+00:00"
-   },
-   {
-    "ticker": "KXNHLTOTAL-26SEP22TBNSH-2",
-    "series": "KXNHLTOTAL",
-    "title": "Over 1.5 goals scored",
-    "move": 0.45,
-    "price": 0.975,
-    "close": "2026-09-25T00:00:00+00:00"
-   },
-   {
-    "ticker": "KXNHLTOTAL-26SEP22CBJBUF-2",
-    "series": "KXNHLTOTAL",
-    "title": "Over 1.5 goals scored",
-    "move": 0.45,
-    "price": 0.975,
-    "close": "2026-09-24T23:00:00+00:00"
-   },
-   {
-    "ticker": "KXNHLTOTAL-26SEP22PHIBOS-2",
-    "series": "KXNHLTOTAL",
-    "title": "Over 1.5 goals scored",
-    "move": 0.45,
-    "price": 0.975,
-    "close": "2026-09-24T23:00:00+00:00"
+    "ticker": "KXKBOGAME-26SEP230530LOTHAN-HAN",
+    "series": "KXKBOGAME",
+    "title": "Hanwha Eagles",
+    "move": -0.49,
+    "price": 0.075,
+    "close": "2026-09-25T09:30:00+00:00"
    }
   ]
  },
  "models": {
   "tennis": {
-   "matches": 19785,
-   "training_rows": 13543,
+   "matches": 19803,
+   "training_rows": 13558,
    "holdout": {
-    "from": "2026-08-18",
-    "matches": 2032,
-    "elo_log_loss": 0.6616,
-    "model_log_loss": 0.658,
+    "from": "2026-08-19",
+    "matches": 2034,
+    "elo_log_loss": 0.662,
+    "model_log_loss": 0.6586,
     "elo_accuracy": 0.607,
     "model_accuracy": 0.609
    },
    "using": "full",
    "weights": {
-    "elo": 2.042,
+    "elo": 2.043,
     "dominance": 0.0,
     "rank": 0.0,
-    "h2h": 0.449,
+    "h2h": 0.443,
     "form": -0.573,
     "fatigue_games": -0.218,
-    "fatigue_matches": 0.096,
-    "rest": 0.018,
-    "travel": 0.14,
+    "fatigue_matches": 0.093,
+    "rest": 0.017,
+    "travel": 0.139,
     "altitude": 0.0,
     "best_of_5": 0.588
    },
@@ -1961,31 +1961,31 @@
    "holdout": {
     "matches": 652,
     "rating_log_loss": 0.6289,
-    "model_log_loss": 0.6225,
+    "model_log_loss": 0.6259,
     "rating_accuracy": 0.656,
-    "model_accuracy": 0.647
+    "model_accuracy": 0.646
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6035,
-    "model_log_loss": 0.6225,
+    "model_log_loss": 0.6259,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 652
    },
    "backtest": {
-    "bets": 17,
-    "wins": 6,
-    "units": -5.0,
-    "roi": -0.161
+    "bets": 16,
+    "wins": 4,
+    "units": -14.0,
+    "roi": -0.467
    },
    "weights": {
     "home_field": 0.252,
-    "rating": 1.532,
-    "rest": 0.236,
-    "point_diff_form": 0.222,
-    "qb_change": 0.286,
-    "epa": 0.17
+    "rating": 1.529,
+    "rest": 0.235,
+    "point_diff_form": 0.219,
+    "qb_change": 0.298,
+    "epa": 0.171
    },
    "matches": 4395,
    "totals": {
@@ -2218,8 +2218,8 @@
    "expected_end": "2026-09-24T04:30:00+00:00",
    "start_est": "2026-09-24T01:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.795,
-   "close_price": 0.795,
+   "latest_price": 0.775,
+   "close_price": 0.775,
    "pnl": null,
    "why": "Expected goals 1.44 vs 1.22 (2.66 total). Model gives \"Under 4.5 goals scored\" 87%. Blended with the market that's 81% vs a 80% price.",
    "trend": 0.0,
@@ -2257,8 +2257,8 @@
    "expected_end": "2026-09-25T06:15:00+00:00",
    "start_est": "2026-09-25T00:15:00+00:00",
    "status": "pending",
-   "latest_price": 0.435,
-   "close_price": 0.435,
+   "latest_price": 0.425,
+   "close_price": 0.425,
    "pnl": null,
    "why": "Projected score margin +7.4 (home) and total 46.1. Model gives \"Over 45.5 points scored\" 52%. Blended with the market that's 46% vs a 44% price.",
    "trend": -0.01,
@@ -2413,8 +2413,8 @@
    "expected_end": "2026-09-26T02:00:00+00:00",
    "start_est": "2026-09-25T23:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.17,
-   "close_price": 0.17,
+   "latest_price": 0.175,
+   "close_price": 0.175,
    "pnl": null,
    "why": "Ratings 1500 vs 1631, at home. Point differential last 5: -2 vs -19. Model gives Brown 31%. Blended with the market that's 24% vs a 23% price. Price down 2\u00a2 in the last 12 hours.",
    "trend": -0.02,
@@ -2452,8 +2452,8 @@
    "expected_end": "2026-09-26T05:30:00+00:00",
    "start_est": "2026-09-26T02:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.545,
-   "close_price": 0.545,
+   "latest_price": 0.54,
+   "close_price": 0.54,
    "pnl": null,
    "why": "Projected score margin -5.0 (home) and total 51.3. Model gives \"No: California wins by over 2.5 points\" 68%. Blended with the market that's 58% vs a 55% price.",
    "trend": 0.0,
@@ -2766,8 +2766,8 @@
    "expected_end": "2026-09-26T20:00:00+00:00",
    "start_est": "2026-09-26T16:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.325,
-   "close_price": 0.325,
+   "latest_price": 0.33,
+   "close_price": 0.33,
    "pnl": null,
    "why": "Projected score margin +13.9 (home) and total 50.0. Model gives \"No: Ohio St. wins by over 20.5 points\" 66%. Blended with the market that's 41% vs a 34% price.",
    "trend": -0.005,
@@ -3359,8 +3359,8 @@
    "expected_end": "2026-09-24T01:40:00+00:00",
    "start_est": "2026-09-23T22:40:00+00:00",
    "status": "pending",
-   "latest_price": 0.605,
-   "close_price": 0.605,
+   "latest_price": 0.6,
+   "close_price": 0.6,
    "pnl": null,
    "why": "Projected runs 4.1 (home) vs 6.1 (10.2 total). Park factor 1.03. Forecast 63F, wind 14 mph. Model gives \"Over 6.5 runs scored\" 77%. Blended with the market that's 65% vs a 62% price.",
    "trend": -0.005,
