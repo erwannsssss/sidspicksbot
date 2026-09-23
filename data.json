@@ -1,6 +1,6 @@
 {
- "updated": "2026-09-23T02:23:53.874926+00:00",
- "status_note": "Last run found 0 new pick(s) and graded 3.",
+ "updated": "2026-09-23T03:23:53.937436+00:00",
+ "status_note": "Last run found 0 new pick(s) and graded 2.",
  "bankroll": 108.38,
  "protection": {
   "bankroll": 108.38,
@@ -1314,43 +1314,8 @@
  },
  "learning": {
   "groups": {
-   "nfl:total_4q": {
-    "finished": 143,
-    "games": 8,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-22T00:15:00+00:00"
-   },
-   "nfl:spread": {
-    "finished": 410,
-    "games": 9,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-22T00:15:00+00:00"
-   },
-   "nfl:team_total": {
-    "finished": 392,
-    "games": 9,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-22T02:15:00+00:00"
-   },
-   "nfl:total": {
-    "finished": 298,
-    "games": 10,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-22T00:15:00+00:00"
-   },
-   "nfl:prop_passyds": {
-    "finished": 280,
-    "games": 8,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-22T00:15:00+00:00"
-   },
    "nfl:prop_recyds": {
-    "finished": 1144,
+    "finished": 1066,
     "games": 15,
     "trust": 0.25,
     "confidence_fix": false,
@@ -1383,6 +1348,13 @@
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-09-22T00:15:00+00:00"
+   },
+   "nfl:team_total": {
+    "finished": 348,
+    "games": 8,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-22T02:15:00+00:00"
    },
    "nfl:total_2q": {
     "finished": 146,
@@ -1433,12 +1405,26 @@
     "confidence_fix": false,
     "last": "2026-09-21T02:10:00+00:00"
    },
+   "nfl:total": {
+    "finished": 264,
+    "games": 9,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-22T00:15:00+00:00"
+   },
    "tennis:winner": {
     "finished": 268,
     "games": 134,
     "trust": 0.36,
     "confidence_fix": false,
     "last": "2026-09-22T20:30:00+00:00"
+   },
+   "nfl:spread": {
+    "finished": 360,
+    "games": 8,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-22T00:15:00+00:00"
    },
    "nfl:total_1h": {
     "finished": 148,
@@ -1448,81 +1434,81 @@
     "last": "2026-09-22T00:15:00+00:00"
    },
    "mlb:winner": {
-    "finished": 50,
-    "games": 25,
+    "finished": 56,
+    "games": 28,
     "trust": 0.5,
     "confidence_fix": false,
-    "last": "2026-09-22T23:15:00+00:00"
+    "last": "2026-09-23T00:40:00+00:00"
    },
    "mlb:spread_f5": {
-    "finished": 224,
-    "games": 28,
+    "finished": 232,
+    "games": 29,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-09-23T00:05:00+00:00"
+    "last": "2026-09-23T00:40:00+00:00"
    },
    "mlb:total_f5": {
-    "finished": 386,
-    "games": 28,
+    "finished": 400,
+    "games": 29,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-09-23T00:05:00+00:00"
+    "last": "2026-09-23T00:40:00+00:00"
    },
    "mlb:spread": {
-    "finished": 300,
-    "games": 25,
+    "finished": 336,
+    "games": 28,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-09-22T23:15:00+00:00"
+    "last": "2026-09-23T00:40:00+00:00"
    },
    "mlb:team_total": {
-    "finished": 672,
-    "games": 24,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-22T23:15:00+00:00"
-   },
-   "mlb:total": {
-    "finished": 576,
-    "games": 28,
+    "finished": 756,
+    "games": 27,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-09-23T00:05:00+00:00"
    },
-   "mlb:prop_ks": {
-    "finished": 610,
-    "games": 24,
+   "mlb:total": {
+    "finished": 606,
+    "games": 29,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-09-22T23:15:00+00:00"
+    "last": "2026-09-23T00:40:00+00:00"
+   },
+   "mlb:prop_ks": {
+    "finished": 688,
+    "games": 27,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-23T00:40:00+00:00"
    },
    "mlb:prop_hit": {
-    "finished": 1956,
-    "games": 24,
+    "finished": 2106,
+    "games": 26,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-09-22T23:15:00+00:00"
+    "last": "2026-09-22T23:40:00+00:00"
    },
    "mlb:prop_hr": {
-    "finished": 816,
-    "games": 24,
+    "finished": 896,
+    "games": 27,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-09-22T23:15:00+00:00"
+    "last": "2026-09-23T00:05:00+00:00"
    },
    "mlb:prop_tb": {
-    "finished": 3052,
-    "games": 24,
+    "finished": 3330,
+    "games": 26,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-09-22T23:15:00+00:00"
+    "last": "2026-09-22T23:40:00+00:00"
    },
    "mlb:prop_hrr": {
-    "finished": 3988,
-    "games": 24,
+    "finished": 4392,
+    "games": 26,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-09-22T23:15:00+00:00"
+    "last": "2026-09-22T23:40:00+00:00"
    },
    "soccer:winner": {
     "finished": 75,
@@ -1670,26 +1656,40 @@
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-09-22T00:15:00+00:00"
+   },
+   "nfl:total_4q": {
+    "finished": 140,
+    "games": 7,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-22T00:15:00+00:00"
+   },
+   "nfl:prop_passyds": {
+    "finished": 248,
+    "games": 7,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-22T00:15:00+00:00"
    }
   },
   "price_trend": {
    "flat": {
-    "markets": 12063,
+    "markets": 12679,
     "hit_vs_price": 0.0
    },
    "rising": {
-    "markets": 2166,
-    "hit_vs_price": -0.007
+    "markets": 2307,
+    "hit_vs_price": -0.009
    },
    "falling": {
-    "markets": 2173,
-    "hit_vs_price": 0.005
+    "markets": 2314,
+    "hit_vs_price": 0.008
    }
   }
  },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "tracker": {
-  "tracked": 32202,
+  "tracked": 32240,
   "series": 3873,
   "movers": [
    {
@@ -1888,25 +1888,25 @@
    "trust": 0.25
   },
   "mlb": {
-   "training_rows": 14619,
+   "training_rows": 14629,
    "holdout": {
-    "matches": 2193,
-    "rating_log_loss": 0.6849,
-    "model_log_loss": 0.6833,
-    "rating_accuracy": 0.551,
+    "matches": 2195,
+    "rating_log_loss": 0.685,
+    "model_log_loss": 0.6834,
+    "rating_accuracy": 0.55,
     "model_accuracy": 0.562
    },
    "using": "full",
    "weights": {
-    "home_field": 0.128,
-    "rating": 1.531,
-    "starting_pitcher": 0.081,
+    "home_field": 0.127,
+    "rating": 1.53,
+    "starting_pitcher": 0.082,
     "run_diff_form": 0.017,
-    "rest": 0.051,
-    "pitcher_fip": 0.11
+    "rest": 0.053,
+    "pitcher_fip": 0.111
    },
-   "matches": 14698,
-   "runs_scale": 1.014,
+   "matches": 14708,
+   "runs_scale": 1.013,
    "sport": "Baseball",
    "label": "MLB",
    "trust": 0.5
@@ -1916,31 +1916,31 @@
    "holdout": {
     "matches": 652,
     "rating_log_loss": 0.6289,
-    "model_log_loss": 0.6216,
+    "model_log_loss": 0.6215,
     "rating_accuracy": 0.656,
-    "model_accuracy": 0.649
+    "model_accuracy": 0.647
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6035,
-    "model_log_loss": 0.6216,
+    "model_log_loss": 0.6215,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 652
    },
    "backtest": {
-    "bets": 15,
-    "wins": 4,
-    "units": -12.0,
-    "roi": -0.429
+    "bets": 16,
+    "wins": 5,
+    "units": -8.4,
+    "roi": -0.288
    },
    "weights": {
-    "home_field": 0.252,
-    "rating": 1.522,
-    "rest": 0.233,
-    "point_diff_form": 0.214,
-    "qb_change": 0.346,
-    "epa": 0.171
+    "home_field": 0.254,
+    "rating": 1.519,
+    "rest": 0.24,
+    "point_diff_form": 0.217,
+    "qb_change": 0.337,
+    "epa": 0.17
    },
    "matches": 4395,
    "totals": {
@@ -2025,15 +2025,15 @@
    "clv_picks": 4
   },
   "watch": {
-   "picks": 59,
+   "picks": 61,
    "wins": 23,
-   "losses": 36,
-   "units": 0.75,
-   "staked": 29.5,
-   "roi": 0.025,
-   "beat_price": 0.22,
+   "losses": 38,
+   "units": -0.29,
+   "staked": 30.5,
+   "roi": -0.01,
+   "beat_price": 0.213,
    "clv": -0.0139,
-   "clv_picks": 57
+   "clv_picks": 58
   }
  },
  "by_expert_lean": {
@@ -2095,15 +2095,15 @@
    "clv_picks": 1
   },
   "W": {
-   "picks": 59,
+   "picks": 61,
    "wins": 23,
-   "losses": 36,
-   "units": 0.75,
-   "staked": 29.5,
-   "roi": 0.025,
-   "beat_price": 0.22,
+   "losses": 38,
+   "units": -0.29,
+   "staked": 30.5,
+   "roi": -0.01,
+   "beat_price": 0.213,
    "clv": -0.0139,
-   "clv_picks": 57
+   "clv_picks": 58
   }
  },
  "watch_open": [
@@ -2485,8 +2485,8 @@
    "expected_end": "2026-09-26T02:00:00+00:00",
    "start_est": "2026-09-25T23:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.175,
-   "close_price": 0.175,
+   "latest_price": 0.17,
+   "close_price": 0.17,
    "pnl": null,
    "why": "Ratings 1500 vs 1631, at home. Point differential last 5: -2 vs -19. Model gives Brown 31%. Blended with the market that's 24% vs a 23% price. Price down 2\u00a2 in the last 12 hours.",
    "trend": -0.02,
@@ -2577,45 +2577,6 @@
    "expert_lean": "none"
   },
   {
-   "id": "KXMLBKS-26SEP221940CWSKC-KCDLYNCH41-4",
-   "ticker": "KXMLBKS-26SEP221940CWSKC-KCDLYNCH41-4",
-   "side": "yes",
-   "event": "KXMLBKS-26SEP221940CWSKC",
-   "game": "26SEP221940CWSKC",
-   "sport": "Baseball",
-   "model_key": "mlb",
-   "mtype": "prop_ks",
-   "line": 3.5,
-   "tour": "MLB",
-   "tournament": "Chicago White Sox at Kansas City Royals",
-   "matchup": "Chicago White Sox at Kansas City Royals",
-   "surface": "",
-   "pick": "Daniel Lynch: 4+",
-   "opponent": "",
-   "market": "Daniel Lynch: 4+",
-   "price": 0.47,
-   "model_prob": 0.628,
-   "raw_prob": 0.791,
-   "edge": 0.14,
-   "tier": "W",
-   "units": 0.5,
-   "made": "2026-09-22T04:21:01.265653+00:00",
-   "expected_end": "2026-09-23T02:40:00+00:00",
-   "start_est": "2026-09-22T23:40:00+00:00",
-   "status": "pending",
-   "latest_price": 0.455,
-   "close_price": 0.455,
-   "pnl": null,
-   "why": "Daniel Lynch IV: 6.50 a game this season over 8 games (adjusted 6.00). Model gives \"Daniel Lynch: 4+\" 79%. Blended with the market that's 60% vs a 47% price.",
-   "trend": 0.0,
-   "new_market": true,
-   "trust": 0.42,
-   "sharp_prob": null,
-   "research": "",
-   "sources": [],
-   "expert_lean": "none"
-  },
-  {
    "id": "KXNCAAFSPREAD-26SEP26TEXTENN-TEX3:no",
    "ticker": "KXNCAAFSPREAD-26SEP26TEXTENN-TEX3",
    "side": "no",
@@ -2681,8 +2642,8 @@
    "expected_end": "2026-09-26T03:00:00+00:00",
    "start_est": "2026-09-26T00:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.285,
-   "close_price": 0.285,
+   "latest_price": 0.3,
+   "close_price": 0.3,
    "pnl": null,
    "why": "Projected score margin +20.9 (home) and total 51.9. Model gives \"Over 57.5 points scored\" 37%. Blended with the market that's 30% vs a 29% price.",
    "trend": -0.01,
@@ -2885,45 +2846,6 @@
    "trend": -0.01,
    "new_market": false,
    "trust": 0.25,
-   "sharp_prob": null,
-   "research": "",
-   "sources": [],
-   "expert_lean": "none"
-  },
-  {
-   "id": "KXMLBKS-26SEP222040AZCOL-COLKFREELAND21-4",
-   "ticker": "KXMLBKS-26SEP222040AZCOL-COLKFREELAND21-4",
-   "side": "yes",
-   "event": "KXMLBKS-26SEP222040AZCOL",
-   "game": "26SEP222040AZCOL",
-   "sport": "Baseball",
-   "model_key": "mlb",
-   "mtype": "prop_ks",
-   "line": 3.5,
-   "tour": "MLB",
-   "tournament": "Arizona Diamondbacks at Colorado Rockies",
-   "matchup": "Arizona Diamondbacks at Colorado Rockies",
-   "surface": "",
-   "pick": "Kyle Freeland: 4+",
-   "opponent": "",
-   "market": "Kyle Freeland: 4+",
-   "price": 0.3,
-   "model_prob": 0.455,
-   "raw_prob": 0.615,
-   "edge": 0.14,
-   "tier": "W",
-   "units": 0.5,
-   "made": "2026-09-23T00:26:17.945064+00:00",
-   "expected_end": "2026-09-23T03:40:00+00:00",
-   "start_est": "2026-09-23T00:40:00+00:00",
-   "status": "pending",
-   "latest_price": 0.3,
-   "close_price": null,
-   "pnl": null,
-   "why": "Kyle Freeland: 4.33 a game this season over 24 games (adjusted 4.48). Model gives \"Kyle Freeland: 4+\" 62%. Blended with the market that's 44% vs a 30% price.",
-   "trend": -0.01,
-   "new_market": false,
-   "trust": 0.46,
    "sharp_prob": null,
    "research": "",
    "sources": [],
@@ -3350,8 +3272,8 @@
    "expected_end": "2026-09-26T20:00:00+00:00",
    "start_est": "2026-09-26T19:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.495,
-   "close_price": 0.495,
+   "latest_price": 0.5,
+   "close_price": 0.5,
    "pnl": null,
    "why": "Projected score margin -5.6 (home) and total 55.6. Model gives \"Over 48.5 points scored\" 66%. Blended with the market that's 53% vs a 50% price.",
    "trend": 0.0,
@@ -3642,6 +3564,86 @@
   }
  ],
  "watch_history": [
+  {
+   "id": "KXMLBKS-26SEP222040AZCOL-COLKFREELAND21-4",
+   "ticker": "KXMLBKS-26SEP222040AZCOL-COLKFREELAND21-4",
+   "side": "yes",
+   "event": "KXMLBKS-26SEP222040AZCOL",
+   "game": "26SEP222040AZCOL",
+   "sport": "Baseball",
+   "model_key": "mlb",
+   "mtype": "prop_ks",
+   "line": 3.5,
+   "tour": "MLB",
+   "tournament": "Arizona Diamondbacks at Colorado Rockies",
+   "matchup": "Arizona Diamondbacks at Colorado Rockies",
+   "surface": "",
+   "pick": "Kyle Freeland: 4+",
+   "opponent": "",
+   "market": "Kyle Freeland: 4+",
+   "price": 0.3,
+   "model_prob": 0.455,
+   "raw_prob": 0.615,
+   "edge": 0.14,
+   "tier": "W",
+   "units": 0.5,
+   "made": "2026-09-23T00:26:17.945064+00:00",
+   "expected_end": "2026-09-23T03:40:00+00:00",
+   "start_est": "2026-09-23T00:40:00+00:00",
+   "status": "loss",
+   "latest_price": 0.3,
+   "close_price": null,
+   "pnl": -0.52,
+   "why": "Kyle Freeland: 4.33 a game this season over 24 games (adjusted 4.48). Model gives \"Kyle Freeland: 4+\" 62%. Blended with the market that's 44% vs a 30% price.",
+   "trend": -0.01,
+   "new_market": false,
+   "trust": 0.46,
+   "sharp_prob": null,
+   "research": "",
+   "sources": [],
+   "expert_lean": "none",
+   "graded": "2026-09-23T03:21:35.466514+00:00"
+  },
+  {
+   "id": "KXMLBKS-26SEP221940CWSKC-KCDLYNCH41-4",
+   "ticker": "KXMLBKS-26SEP221940CWSKC-KCDLYNCH41-4",
+   "side": "yes",
+   "event": "KXMLBKS-26SEP221940CWSKC",
+   "game": "26SEP221940CWSKC",
+   "sport": "Baseball",
+   "model_key": "mlb",
+   "mtype": "prop_ks",
+   "line": 3.5,
+   "tour": "MLB",
+   "tournament": "Chicago White Sox at Kansas City Royals",
+   "matchup": "Chicago White Sox at Kansas City Royals",
+   "surface": "",
+   "pick": "Daniel Lynch: 4+",
+   "opponent": "",
+   "market": "Daniel Lynch: 4+",
+   "price": 0.47,
+   "model_prob": 0.628,
+   "raw_prob": 0.791,
+   "edge": 0.14,
+   "tier": "W",
+   "units": 0.5,
+   "made": "2026-09-22T04:21:01.265653+00:00",
+   "expected_end": "2026-09-23T02:40:00+00:00",
+   "start_est": "2026-09-22T23:40:00+00:00",
+   "status": "loss",
+   "latest_price": 0.455,
+   "close_price": 0.455,
+   "pnl": -0.52,
+   "why": "Daniel Lynch IV: 6.50 a game this season over 8 games (adjusted 6.00). Model gives \"Daniel Lynch: 4+\" 79%. Blended with the market that's 60% vs a 47% price.",
+   "trend": 0.0,
+   "new_market": true,
+   "trust": 0.42,
+   "sharp_prob": null,
+   "research": "",
+   "sources": [],
+   "expert_lean": "none",
+   "graded": "2026-09-23T03:21:35.079426+00:00"
+  },
   {
    "id": "KXMLBKS-26SEP221915CINATL-ATLJRITCHIE60-7",
    "ticker": "KXMLBKS-26SEP221915CINATL-ATLJRITCHIE60-7",
