@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-24T20:26:49.738784+00:00",
+ "updated": "2026-09-24T21:11:02.468259+00:00",
  "status_note": "Last run found 0 new pick(s) and graded 0.",
  "bankroll": 105.66,
  "protection": {
@@ -1884,78 +1884,78 @@
  "learning": {
   "groups": {
    "mlb:prop_hrr": {
-    "finished": 1218,
+    "finished": 1156,
     "games": 8,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-09-24T16:35:00+00:00"
-   },
-   "mlb:prop_hit": {
-    "finished": 630,
-    "games": 8,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-24T16:35:00+00:00"
-   },
-   "mlb:prop_tb": {
-    "finished": 926,
-    "games": 8,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-24T16:35:00+00:00"
-   },
-   "mlb:prop_ks": {
-    "finished": 168,
-    "games": 7,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-24T16:35:00+00:00"
+    "last": "2026-09-24T18:20:00+00:00"
    },
    "mlb:prop_hr": {
-    "finished": 238,
+    "finished": 234,
     "games": 8,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-09-24T16:35:00+00:00"
+    "last": "2026-09-24T18:20:00+00:00"
    },
    "mlb:winner": {
-    "finished": 12,
-    "games": 6,
+    "finished": 14,
+    "games": 7,
     "trust": 0.5,
     "confidence_fix": false,
-    "last": "2026-09-24T16:35:00+00:00"
+    "last": "2026-09-24T18:20:00+00:00"
    },
    "mlb:spread_f5": {
     "finished": 64,
     "games": 8,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-09-24T18:20:00+00:00"
+    "last": "2026-09-24T18:35:00+00:00"
    },
    "mlb:total_f5": {
     "finished": 108,
     "games": 8,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-09-24T18:20:00+00:00"
+    "last": "2026-09-24T18:35:00+00:00"
    },
    "mlb:spread": {
-    "finished": 72,
-    "games": 6,
+    "finished": 84,
+    "games": 7,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-09-24T16:35:00+00:00"
+    "last": "2026-09-24T18:20:00+00:00"
    },
    "mlb:team_total": {
-    "finished": 168,
-    "games": 6,
+    "finished": 196,
+    "games": 7,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-09-24T16:35:00+00:00"
+    "last": "2026-09-24T18:20:00+00:00"
    },
    "mlb:total": {
-    "finished": 140,
+    "finished": 146,
     "games": 8,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-24T18:35:00+00:00"
+   },
+   "mlb:prop_hit": {
+    "finished": 574,
+    "games": 7,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-24T18:20:00+00:00"
+   },
+   "mlb:prop_tb": {
+    "finished": 880,
+    "games": 7,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-24T18:20:00+00:00"
+   },
+   "mlb:prop_ks": {
+    "finished": 186,
+    "games": 7,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-09-24T18:20:00+00:00"
@@ -2052,31 +2052,31 @@
     "last": "2026-09-24T01:00:00+00:00"
    },
    "tennis:winner": {
-    "finished": 64,
-    "games": 32,
+    "finished": 70,
+    "games": 35,
     "trust": 0.5,
     "confidence_fix": false,
     "last": "2026-09-24T18:00:00+00:00"
    }
   },
   "price_trend": {
-   "flat": {
-    "markets": 1766,
-    "hit_vs_price": -0.001
+   "falling": {
+    "markets": 607,
+    "hit_vs_price": 0.012
    },
    "rising": {
-    "markets": 647,
-    "hit_vs_price": -0.023
+    "markets": 611,
+    "hit_vs_price": -0.009
    },
-   "falling": {
-    "markets": 640,
-    "hit_vs_price": 0.026
+   "flat": {
+    "markets": 1639,
+    "hit_vs_price": -0.001
    }
   }
  },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "tracker": {
-  "tracked": 41872,
+  "tracked": 44793,
   "series": 3895,
   "movers": [
    {
@@ -2203,25 +2203,25 @@
  },
  "models": {
   "tennis": {
-   "matches": 19890,
-   "training_rows": 13639,
+   "matches": 19893,
+   "training_rows": 13642,
    "holdout": {
     "from": "2026-08-20",
-    "matches": 2046,
-    "elo_log_loss": 0.6619,
+    "matches": 2047,
+    "elo_log_loss": 0.662,
     "model_log_loss": 0.6593,
-    "elo_accuracy": 0.607,
-    "model_accuracy": 0.61
+    "elo_accuracy": 0.606,
+    "model_accuracy": 0.609
    },
    "using": "full",
    "weights": {
-    "elo": 2.038,
+    "elo": 2.035,
     "dominance": 0.0,
     "rank": 0.0,
     "h2h": 0.441,
-    "form": -0.55,
-    "fatigue_games": -0.207,
-    "fatigue_matches": 0.089,
+    "form": -0.545,
+    "fatigue_games": -0.209,
+    "fatigue_matches": 0.09,
     "rest": 0.021,
     "travel": 0.141,
     "altitude": 0.0,
@@ -2303,31 +2303,31 @@
    "holdout": {
     "matches": 652,
     "rating_log_loss": 0.6289,
-    "model_log_loss": 0.6223,
+    "model_log_loss": 0.6258,
     "rating_accuracy": 0.656,
-    "model_accuracy": 0.653
+    "model_accuracy": 0.649
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6035,
-    "model_log_loss": 0.6223,
+    "model_log_loss": 0.6258,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 652
    },
    "backtest": {
-    "bets": 16,
-    "wins": 5,
-    "units": -9.2,
-    "roi": -0.316
+    "bets": 15,
+    "wins": 4,
+    "units": -10.4,
+    "roi": -0.372
    },
    "weights": {
     "home_field": 0.252,
-    "rating": 1.53,
-    "rest": 0.233,
-    "point_diff_form": 0.225,
-    "qb_change": 0.311,
-    "epa": 0.168
+    "rating": 1.526,
+    "rest": 0.231,
+    "point_diff_form": 0.219,
+    "qb_change": 0.324,
+    "epa": 0.171
    },
    "matches": 4395,
    "totals": {
@@ -2560,8 +2560,8 @@
    "expected_end": "2026-09-25T06:15:00+00:00",
    "start_est": "2026-09-25T00:15:00+00:00",
    "status": "pending",
-   "latest_price": 0.415,
-   "close_price": 0.415,
+   "latest_price": 0.425,
+   "close_price": 0.425,
    "pnl": null,
    "why": "Projected score margin +7.4 (home) and total 46.1. Model gives \"Over 45.5 points scored\" 52%. Blended with the market that's 46% vs a 44% price.",
    "trend": -0.01,
@@ -2716,8 +2716,8 @@
    "expected_end": "2026-09-26T05:30:00+00:00",
    "start_est": "2026-09-26T02:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.555,
-   "close_price": 0.555,
+   "latest_price": 0.56,
+   "close_price": 0.56,
    "pnl": null,
    "why": "Projected score margin -5.0 (home) and total 51.3. Model gives \"No: California wins by over 2.5 points\" 68%. Blended with the market that's 58% vs a 55% price.",
    "trend": 0.0,
@@ -3030,8 +3030,8 @@
    "expected_end": "2026-09-26T20:00:00+00:00",
    "start_est": "2026-09-26T16:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.33,
-   "close_price": 0.33,
+   "latest_price": 0.32,
+   "close_price": 0.32,
    "pnl": null,
    "why": "Projected score margin +13.9 (home) and total 50.0. Model gives \"No: Ohio St. wins by over 20.5 points\" 66%. Blended with the market that's 41% vs a 34% price.",
    "trend": -0.005,
@@ -3384,8 +3384,8 @@
    "expected_end": "2026-09-26T04:00:00+00:00",
    "start_est": "2026-09-26T00:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.27,
-   "close_price": 0.27,
+   "latest_price": 0.275,
+   "close_price": 0.275,
    "pnl": null,
    "why": "Ratings 1434 (Atlante, home) vs 1483 (Monterrey). Share of chances lately (xG or shots on target) 50% vs 50%. Goal difference last 6: -5 vs +4. Last played Sep 19 vs Sep 20. Model gives the home 38%. Blended with the market that's 29% vs a 26% price. Sharp sportsbook price (Pinnacle) says 26%.",
    "trend": 0.0,
@@ -3503,8 +3503,8 @@
    "expected_end": "2026-09-26T22:30:00+00:00",
    "start_est": "2026-09-26T19:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.225,
-   "close_price": 0.225,
+   "latest_price": 0.235,
+   "close_price": 0.235,
    "pnl": null,
    "why": "Projected score margin +8.0 (home) and total 52.1. Model gives \"No: Marshall wins by over 11.5 points\" 59%. Blended with the market that's 32% vs a 25% price.",
    "trend": 0.0,
@@ -3542,8 +3542,8 @@
    "expected_end": "2026-09-28T02:25:00+00:00",
    "start_est": "2026-09-27T20:25:00+00:00",
    "status": "pending",
-   "latest_price": 0.5,
-   "close_price": 0.5,
+   "latest_price": 0.51,
+   "close_price": 0.51,
    "pnl": null,
    "why": "Lamar Jackson: 26 a game lately (last 12 games). Model gives \"Lamar Jackson: under 40\" 84%. Blended with the market that's 60% vs a 53% price.",
    "trend": 0.005,
@@ -3659,8 +3659,8 @@
    "expected_end": "2026-09-26T19:00:00+00:00",
    "start_est": "2026-09-26T16:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.355,
-   "close_price": 0.355,
+   "latest_price": 0.385,
+   "close_price": 0.385,
    "pnl": null,
    "why": "Projected score margin +23.4 (home) and total 49.3. Model gives \"Under 60.5 points scored\" 74%. Blended with the market that's 53% vs a 46% price. Price down 4\u00a2 in the last 12 hours.",
    "trend": -0.035,
@@ -3776,8 +3776,8 @@
    "expected_end": "2026-09-27T23:00:00+00:00",
    "start_est": "2026-09-27T17:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.51,
-   "close_price": 0.51,
+   "latest_price": 0.505,
+   "close_price": 0.505,
    "pnl": null,
    "why": "De'Von Achane: 81 a game lately (last 12 games). Model gives \"De'Von Achane: 60+\" 72%. Blended with the market that's 56% vs a 51% price. Price up 24\u00a2 in the last 12 hours.",
    "trend": 0.235,
@@ -3972,8 +3972,8 @@
    "expected_end": "2026-09-27T23:00:00+00:00",
    "start_est": "2026-09-27T17:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.355,
-   "close_price": 0.355,
+   "latest_price": 0.35,
+   "close_price": 0.35,
    "pnl": null,
    "why": "Projected score margin +2.6 (home) and total 11.3. Model gives \"Over 10.5 1Q points scored\" 55%. Blended with the market that's 40% vs a 35% price.",
    "trend": 0.0,
@@ -4050,8 +4050,8 @@
    "expected_end": "2026-09-26T20:00:00+00:00",
    "start_est": "2026-09-26T19:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.385,
-   "close_price": 0.385,
+   "latest_price": 0.41,
+   "close_price": 0.41,
    "pnl": null,
    "why": "Projected score margin +5.7 (home) and total 55.6. Model gives \"Under 57.5 points scored\" 55%. Blended with the market that's 42% vs a 39% price. Price down 7\u00a2 in the last 12 hours.",
    "trend": -0.07,
