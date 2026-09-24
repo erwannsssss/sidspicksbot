@@ -1,6 +1,6 @@
 {
- "updated": "2026-09-24T01:24:04.841199+00:00",
- "status_note": "Last run found 0 new pick(s) and graded 1.",
+ "updated": "2026-09-24T02:24:48.894064+00:00",
+ "status_note": "Last run found 0 new pick(s) and graded 0.",
  "bankroll": 106.81,
  "protection": {
   "bankroll": 106.81,
@@ -334,7 +334,8 @@
    "sharp_prob": null,
    "research": "",
    "sources": [],
-   "expert_lean": "none"
+   "expert_lean": "none",
+   "prechecked": true
   },
   {
    "id": "KXWTAMATCH-26SEP23OSTPRE-PRE",
@@ -1704,103 +1705,103 @@
  },
  "learning": {
   "groups": {
-   "mlb:prop_tb": {
-    "finished": 1172,
-    "games": 10,
+   "mlb:prop_hrr": {
+    "finished": 2305,
+    "games": 15,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-09-23T19:45:00+00:00"
-   },
-   "mlb:prop_ks": {
-    "finished": 194,
-    "games": 9,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-23T19:45:00+00:00"
+    "last": "2026-09-23T23:15:00+00:00"
    },
    "mlb:prop_hit": {
-    "finished": 754,
-    "games": 10,
+    "finished": 1128,
+    "games": 15,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-09-23T19:45:00+00:00"
+    "last": "2026-09-23T23:15:00+00:00"
+   },
+   "mlb:prop_tb": {
+    "finished": 1706,
+    "games": 15,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-23T23:15:00+00:00"
    },
    "mlb:prop_hr": {
-    "finished": 310,
-    "games": 10,
+    "finished": 506,
+    "games": 15,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-09-23T19:45:00+00:00"
-   },
-   "mlb:prop_hrr": {
-    "finished": 1542,
-    "games": 10,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-23T19:45:00+00:00"
+    "last": "2026-09-23T23:40:00+00:00"
    },
    "mlb:winner": {
-    "finished": 18,
-    "games": 9,
+    "finished": 30,
+    "games": 15,
     "trust": 0.5,
     "confidence_fix": false,
-    "last": "2026-09-23T22:35:00+00:00"
+    "last": "2026-09-23T23:40:00+00:00"
    },
    "mlb:spread_f5": {
-    "finished": 104,
-    "games": 13,
+    "finished": 128,
+    "games": 16,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-09-23T23:15:00+00:00"
+    "last": "2026-09-24T00:05:00+00:00"
    },
    "mlb:spread": {
-    "finished": 96,
-    "games": 8,
+    "finished": 168,
+    "games": 14,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-09-23T19:45:00+00:00"
+    "last": "2026-09-23T23:40:00+00:00"
    },
    "mlb:team_total": {
-    "finished": 224,
-    "games": 8,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-23T19:45:00+00:00"
-   },
-   "mlb:total": {
-    "finished": 224,
-    "games": 12,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-23T23:15:00+00:00"
-   },
-   "mlb:total_f5": {
-    "finished": 180,
+    "finished": 364,
     "games": 13,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-09-23T23:15:00+00:00"
    },
+   "mlb:total": {
+    "finished": 314,
+    "games": 16,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-24T00:05:00+00:00"
+   },
+   "mlb:total_f5": {
+    "finished": 222,
+    "games": 16,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-24T00:05:00+00:00"
+   },
+   "mlb:prop_ks": {
+    "finished": 332,
+    "games": 14,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-23T23:40:00+00:00"
+   },
    "tennis:winner": {
-    "finished": 72,
-    "games": 36,
+    "finished": 74,
+    "games": 37,
     "trust": 0.5,
     "confidence_fix": false,
-    "last": "2026-09-23T18:10:00+00:00"
+    "last": "2026-09-23T20:30:00+00:00"
    }
   },
   "price_trend": {
    "flat": {
-    "markets": 2084,
+    "markets": 2938,
     "hit_vs_price": 0.0
    },
    "falling": {
-    "markets": 531,
-    "hit_vs_price": 0.011
+    "markets": 877,
+    "hit_vs_price": 0.001
    },
    "rising": {
-    "markets": 537,
-    "hit_vs_price": -0.011
+    "markets": 882,
+    "hit_vs_price": -0.0
    }
   }
  },
@@ -1933,23 +1934,23 @@
  },
  "models": {
   "tennis": {
-   "matches": 19830,
-   "training_rows": 13581,
+   "matches": 19831,
+   "training_rows": 13582,
    "holdout": {
     "from": "2026-08-19",
     "matches": 2038,
-    "elo_log_loss": 0.662,
+    "elo_log_loss": 0.6621,
     "model_log_loss": 0.6586,
     "elo_accuracy": 0.605,
     "model_accuracy": 0.608
    },
    "using": "full",
    "weights": {
-    "elo": 2.04,
+    "elo": 2.039,
     "dominance": 0.0,
     "rank": 0.0,
     "h2h": 0.45,
-    "form": -0.559,
+    "form": -0.558,
     "fatigue_games": -0.214,
     "fatigue_matches": 0.093,
     "rest": 0.019,
@@ -2033,31 +2034,31 @@
    "holdout": {
     "matches": 652,
     "rating_log_loss": 0.6289,
-    "model_log_loss": 0.625,
+    "model_log_loss": 0.6246,
     "rating_accuracy": 0.656,
-    "model_accuracy": 0.647
+    "model_accuracy": 0.649
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6035,
-    "model_log_loss": 0.625,
+    "model_log_loss": 0.6246,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 652
    },
    "backtest": {
-    "bets": 15,
-    "wins": 4,
-    "units": -11.5,
-    "roi": -0.419
+    "bets": 17,
+    "wins": 5,
+    "units": -10.4,
+    "roi": -0.334
    },
    "weights": {
-    "home_field": 0.251,
-    "rating": 1.531,
-    "rest": 0.235,
-    "point_diff_form": 0.224,
-    "qb_change": 0.315,
-    "epa": 0.167
+    "home_field": 0.252,
+    "rating": 1.529,
+    "rest": 0.237,
+    "point_diff_form": 0.22,
+    "qb_change": 0.323,
+    "epa": 0.169
    },
    "matches": 4395,
    "totals": {
@@ -2602,8 +2603,8 @@
    "expected_end": "2026-09-26T03:00:00+00:00",
    "start_est": "2026-09-26T00:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.31,
-   "close_price": 0.31,
+   "latest_price": 0.305,
+   "close_price": 0.305,
    "pnl": null,
    "why": "Projected score margin +20.9 (home) and total 51.9. Model gives \"Over 57.5 points scored\" 37%. Blended with the market that's 30% vs a 29% price.",
    "trend": -0.01,
@@ -2641,8 +2642,8 @@
    "expected_end": "2026-09-26T20:00:00+00:00",
    "start_est": "2026-09-26T19:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.275,
-   "close_price": 0.275,
+   "latest_price": 0.28,
+   "close_price": 0.28,
    "pnl": null,
    "why": "Ratings 1642 vs 1632, at home. Point differential last 5: +86 vs +14. Model gives Western Michigan 61%. Blended with the market that's 36% vs a 29% price. Sharp sportsbook price (Pinnacle) says 29%.",
    "trend": 0.0,
@@ -2838,8 +2839,8 @@
    "expected_end": "2026-09-26T20:00:00+00:00",
    "start_est": "2026-09-26T16:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.335,
-   "close_price": 0.335,
+   "latest_price": 0.33,
+   "close_price": 0.33,
    "pnl": null,
    "why": "Projected score margin +13.9 (home) and total 50.0. Model gives \"No: Ohio St. wins by over 20.5 points\" 66%. Blended with the market that's 41% vs a 34% price.",
    "trend": -0.005,
@@ -3153,8 +3154,8 @@
    "expected_end": "2026-09-26T20:00:00+00:00",
    "start_est": "2026-09-26T19:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.485,
-   "close_price": 0.485,
+   "latest_price": 0.475,
+   "close_price": 0.475,
    "pnl": null,
    "why": "Projected score margin -5.6 (home) and total 55.6. Model gives \"Over 48.5 points scored\" 66%. Blended with the market that's 53% vs a 50% price.",
    "trend": 0.0,
@@ -3390,8 +3391,8 @@
    "expected_end": "2026-09-28T02:25:00+00:00",
    "start_est": "2026-09-27T20:25:00+00:00",
    "status": "pending",
-   "latest_price": 0.525,
-   "close_price": 0.525,
+   "latest_price": 0.52,
+   "close_price": 0.52,
    "pnl": null,
    "why": "Lamar Jackson: 26 a game lately (last 12 games). Model gives \"Lamar Jackson: under 40\" 84%. Blended with the market that's 60% vs a 53% price.",
    "trend": 0.005,
@@ -3507,8 +3508,8 @@
    "expected_end": "2026-09-26T19:00:00+00:00",
    "start_est": "2026-09-26T16:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.455,
-   "close_price": 0.455,
+   "latest_price": 0.445,
+   "close_price": 0.445,
    "pnl": null,
    "why": "Projected score margin +23.4 (home) and total 49.3. Model gives \"Under 60.5 points scored\" 74%. Blended with the market that's 53% vs a 46% price. Price down 4\u00a2 in the last 12 hours.",
    "trend": -0.035,
@@ -3663,8 +3664,8 @@
    "expected_end": "2026-09-27T23:00:00+00:00",
    "start_est": "2026-09-27T17:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.505,
-   "close_price": 0.505,
+   "latest_price": 0.51,
+   "close_price": 0.51,
    "pnl": null,
    "why": "De'Von Achane: 81 a game lately (last 12 games). Model gives \"De'Von Achane: 60+\" 72%. Blended with the market that's 56% vs a 51% price. Price up 24\u00a2 in the last 12 hours.",
    "trend": 0.235,
@@ -3741,8 +3742,8 @@
    "expected_end": "2026-09-28T02:05:00+00:00",
    "start_est": "2026-09-27T20:05:00+00:00",
    "status": "pending",
-   "latest_price": 0.565,
-   "close_price": 0.565,
+   "latest_price": 0.56,
+   "close_price": 0.56,
    "pnl": null,
    "why": "Jordan Addison: 22 a game lately (last 12 games). Model gives \"Jordan Addison: under 40\" 80%. Blended with the market that's 62% vs a 58% price. Price down 2\u00a2 in the last 12 hours.",
    "trend": -0.025,
@@ -3780,8 +3781,8 @@
    "expected_end": "2026-09-27T23:00:00+00:00",
    "start_est": "2026-09-27T17:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.37,
-   "close_price": 0.37,
+   "latest_price": 0.38,
+   "close_price": 0.38,
    "pnl": null,
    "why": "Projected score margin -4.2 (home) and total 49.1. Model gives \"HOU Texans over 24.5 points scored\" 59%. Blended with the market that's 42% vs a 38% price.",
    "trend": -0.01,
@@ -3858,8 +3859,8 @@
    "expected_end": "2026-09-27T02:30:00+00:00",
    "start_est": "2026-09-26T23:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.205,
-   "close_price": 0.205,
+   "latest_price": 0.215,
+   "close_price": 0.215,
    "pnl": null,
    "why": "Ratings 1539 vs 1626, at home. Point differential last 5: +37 vs +53. Days of rest 7 vs 6. Model gives Washington State 40%. Blended with the market that's 25% vs a 21% price. Sharp sportsbook price (Pinnacle) says 22%.",
    "trend": -0.008,
@@ -3898,8 +3899,8 @@
    "expected_end": "2026-09-27T23:00:00+00:00",
    "start_est": "2026-09-27T17:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.345,
-   "close_price": 0.345,
+   "latest_price": 0.36,
+   "close_price": 0.36,
    "pnl": null,
    "why": "Projected score margin +2.6 (home) and total 11.3. Model gives \"Over 10.5 1Q points scored\" 55%. Blended with the market that's 40% vs a 35% price.",
    "trend": 0.0,
