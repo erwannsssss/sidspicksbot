@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-24T13:27:26.556267+00:00",
+ "updated": "2026-09-24T14:26:52.005396+00:00",
  "status_note": "Last run found 0 new pick(s) and graded 0.",
  "bankroll": 104.0,
  "protection": {
@@ -1843,15 +1843,8 @@
  },
  "learning": {
   "groups": {
-   "mlb:prop_tb": {
-    "finished": 1479,
-    "games": 12,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-24T02:10:00+00:00"
-   },
    "mlb:prop_hrr": {
-    "finished": 1982,
+    "finished": 1969,
     "games": 12,
     "trust": 0.25,
     "confidence_fix": false,
@@ -1908,6 +1901,13 @@
    },
    "mlb:prop_hr": {
     "finished": 396,
+    "games": 12,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-24T02:10:00+00:00"
+   },
+   "mlb:prop_tb": {
+    "finished": 1462,
     "games": 12,
     "trust": 0.25,
     "confidence_fix": false,
@@ -2012,31 +2012,31 @@
     "last": "2026-09-24T01:00:00+00:00"
    },
    "tennis:winner": {
-    "finished": 40,
-    "games": 20,
+    "finished": 44,
+    "games": 22,
     "trust": 0.5,
     "confidence_fix": false,
-    "last": "2026-09-24T10:00:00+00:00"
+    "last": "2026-09-24T11:00:00+00:00"
    }
   },
   "price_trend": {
    "falling": {
-    "markets": 964,
-    "hit_vs_price": 0.011
+    "markets": 951,
+    "hit_vs_price": 0.012
    },
    "rising": {
-    "markets": 965,
+    "markets": 952,
     "hit_vs_price": -0.009
    },
    "flat": {
     "markets": 2637,
-    "hit_vs_price": -0.0
+    "hit_vs_price": -0.001
    }
   }
  },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "tracker": {
-  "tracked": 40395,
+  "tracked": 40823,
   "series": 3895,
   "movers": [
    {
@@ -2086,6 +2086,14 @@
     "move": 0.515,
     "price": 0.995,
     "close": "2026-09-25T09:30:00+00:00"
+   },
+   {
+    "ticker": "KXCS2TOTALMAPS-26SEP240630EXRBLA-3",
+    "series": "KXCS2TOTALMAPS",
+    "title": "Over 2.5 maps",
+    "move": 0.51,
+    "price": 0.995,
+    "close": "2026-09-26T10:30:00+00:00"
    },
    {
     "ticker": "KXCS2TOTALMAPS-26SEP222100ZOMBLAG-3",
@@ -2150,42 +2158,34 @@
     "move": 0.495,
     "price": 0.995,
     "close": "2026-09-25T09:30:00+00:00"
-   },
-   {
-    "ticker": "KXNCAAWVMATCH-26SEP231900MIZZNEB-NEB",
-    "series": "KXNCAAWVMATCH",
-    "title": "Nebraska",
-    "move": 0.495,
-    "price": 0.985,
-    "close": "2026-09-25T23:00:00+00:00"
    }
   ]
  },
  "models": {
   "tennis": {
-   "matches": 19869,
-   "training_rows": 13619,
+   "matches": 19875,
+   "training_rows": 13625,
    "holdout": {
-    "from": "2026-08-19",
-    "matches": 2043,
-    "elo_log_loss": 0.6608,
-    "model_log_loss": 0.6584,
-    "elo_accuracy": 0.608,
-    "model_accuracy": 0.611
+    "from": "2026-08-20",
+    "matches": 2044,
+    "elo_log_loss": 0.6612,
+    "model_log_loss": 0.6588,
+    "elo_accuracy": 0.607,
+    "model_accuracy": 0.61
    },
    "using": "full",
    "weights": {
-    "elo": 2.039,
+    "elo": 2.036,
     "dominance": 0.0,
     "rank": 0.0,
     "h2h": 0.445,
-    "form": -0.551,
+    "form": -0.549,
     "fatigue_games": -0.207,
-    "fatigue_matches": 0.089,
+    "fatigue_matches": 0.09,
     "rest": 0.021,
     "travel": 0.141,
     "altitude": 0.0,
-    "best_of_5": 0.583
+    "best_of_5": 0.586
    },
    "sport": "Tennis",
    "label": "Tennis",
@@ -2263,30 +2263,30 @@
    "holdout": {
     "matches": 652,
     "rating_log_loss": 0.6289,
-    "model_log_loss": 0.6244,
+    "model_log_loss": 0.6228,
     "rating_accuracy": 0.656,
-    "model_accuracy": 0.647
+    "model_accuracy": 0.646
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6035,
-    "model_log_loss": 0.6244,
+    "model_log_loss": 0.6228,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 652
    },
    "backtest": {
-    "bets": 18,
-    "wins": 6,
-    "units": -7.0,
-    "roi": -0.212
+    "bets": 16,
+    "wins": 5,
+    "units": -8.4,
+    "roi": -0.288
    },
    "weights": {
-    "home_field": 0.252,
-    "rating": 1.532,
-    "rest": 0.231,
-    "point_diff_form": 0.231,
-    "qb_change": 0.249,
+    "home_field": 0.253,
+    "rating": 1.525,
+    "rest": 0.236,
+    "point_diff_form": 0.219,
+    "qb_change": 0.323,
     "epa": 0.17
    },
    "matches": 4395,
@@ -2637,8 +2637,8 @@
    "expected_end": "2026-09-26T02:00:00+00:00",
    "start_est": "2026-09-25T23:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.19,
-   "close_price": 0.19,
+   "latest_price": 0.195,
+   "close_price": 0.195,
    "pnl": null,
    "why": "Ratings 1500 vs 1631, at home. Point differential last 5: -2 vs -19. Model gives Brown 31%. Blended with the market that's 24% vs a 23% price. Price down 2\u00a2 in the last 12 hours.",
    "trend": -0.02,
@@ -2793,8 +2793,8 @@
    "expected_end": "2026-09-26T20:00:00+00:00",
    "start_est": "2026-09-26T19:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.275,
-   "close_price": 0.275,
+   "latest_price": 0.28,
+   "close_price": 0.28,
    "pnl": null,
    "why": "Ratings 1642 vs 1632, at home. Point differential last 5: +86 vs +14. Model gives Western Michigan 61%. Blended with the market that's 36% vs a 29% price. Sharp sportsbook price (Pinnacle) says 29%.",
    "trend": 0.0,
@@ -2872,8 +2872,8 @@
    "expected_end": "2026-09-26T20:00:00+00:00",
    "start_est": "2026-09-26T23:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.495,
-   "close_price": 0.495,
+   "latest_price": 0.505,
+   "close_price": 0.505,
    "pnl": null,
    "why": "Projected score margin +15.7 (home) and total 51.4. Model gives \"West Virginia wins by over 1.5 points\" 81%. Blended with the market that's 57% vs a 50% price.",
    "trend": 0.0,
@@ -3029,8 +3029,8 @@
    "expected_end": "2026-09-26T20:00:00+00:00",
    "start_est": "2026-09-26T20:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.48,
-   "close_price": 0.48,
+   "latest_price": 0.485,
+   "close_price": 0.485,
    "pnl": null,
    "why": "Projected score margin -4.5 (home) and total 54.7. Model gives \"No: Houston wins by over 17.5 points\" 79%. Blended with the market that's 55% vs a 48% price.",
    "trend": 0.0,
@@ -3147,8 +3147,8 @@
    "expected_end": "2026-09-26T20:00:00+00:00",
    "start_est": "2026-09-26T19:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.445,
-   "close_price": 0.445,
+   "latest_price": 0.45,
+   "close_price": 0.45,
    "pnl": null,
    "why": "Projected score margin +0.3 (home) and total 48.8. Model gives \"Over 40.5 points scored\" 69%. Blended with the market that's 51% vs a 45% price.",
    "trend": -0.005,
@@ -3502,8 +3502,8 @@
    "expected_end": "2026-09-28T02:25:00+00:00",
    "start_est": "2026-09-27T20:25:00+00:00",
    "status": "pending",
-   "latest_price": 0.52,
-   "close_price": 0.52,
+   "latest_price": 0.505,
+   "close_price": 0.505,
    "pnl": null,
    "why": "Lamar Jackson: 26 a game lately (last 12 games). Model gives \"Lamar Jackson: under 40\" 84%. Blended with the market that's 60% vs a 53% price.",
    "trend": 0.005,
