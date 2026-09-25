@@ -1,6 +1,6 @@
 {
- "updated": "2026-09-25T01:24:54.205459+00:00",
- "status_note": "Last run found 1 new pick(s) and graded 0.",
+ "updated": "2026-09-25T02:24:34.153825+00:00",
+ "status_note": "Last run found 0 new pick(s) and graded 0.",
  "bankroll": 105.66,
  "protection": {
   "bankroll": 105.66,
@@ -199,8 +199,8 @@
    "expected_end": "2026-09-25T10:50:00+00:00",
    "start_est": "2026-09-25T06:50:00+00:00",
    "status": "pending",
-   "latest_price": 0.265,
-   "close_price": 0.265,
+   "latest_price": 0.255,
+   "close_price": 0.255,
    "pnl": null,
    "why": "Elo 1627 vs 1640 on hard. Won 50% vs 50% of games lately. Form 5-5 vs 6-4. Games played in last 3 days: 22 vs 0. Model 45%, blended with the market 36%, price 28%.",
    "trend": -0.017,
@@ -238,8 +238,8 @@
    "expected_end": "2026-09-25T12:00:00+00:00",
    "start_est": "2026-09-25T08:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.37,
-   "close_price": null,
+   "latest_price": 0.365,
+   "close_price": 0.365,
    "pnl": null,
    "why": "Elo 1598 vs 1586 on hard. Won 50% vs 50% of games lately. Form 8-2 vs 8-2. Games played in last 3 days: 44 vs 44. Model 51%, blended with the market 44%, price 37%.",
    "trend": -0.014,
@@ -2116,61 +2116,19 @@
  },
  "learning": {
   "groups": {
-   "mlb:team_total": {
-    "finished": 111,
-    "games": 4,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-24T22:05:00+00:00"
-   },
-   "mlb:total": {
-    "finished": 132,
-    "games": 7,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-24T23:15:00+00:00"
-   },
-   "mlb:prop_ks": {
-    "finished": 94,
-    "games": 4,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-24T22:05:00+00:00"
-   },
-   "mlb:prop_hit": {
-    "finished": 340,
-    "games": 4,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-24T22:05:00+00:00"
-   },
-   "mlb:prop_hr": {
-    "finished": 134,
-    "games": 4,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-24T22:05:00+00:00"
-   },
-   "mlb:prop_tb": {
-    "finished": 530,
-    "games": 4,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-24T22:05:00+00:00"
-   },
    "mlb:prop_hrr": {
-    "finished": 704,
-    "games": 4,
+    "finished": 748,
+    "games": 5,
     "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-24T22:05:00+00:00"
-   },
-   "mlb:winner": {
-    "finished": 8,
-    "games": 4,
-    "trust": 0.5,
     "confidence_fix": false,
     "last": "2026-09-24T22:45:00+00:00"
+   },
+   "mlb:winner": {
+    "finished": 12,
+    "games": 6,
+    "trust": 0.5,
+    "confidence_fix": false,
+    "last": "2026-09-24T23:15:00+00:00"
    },
    "mlb:spread_f5": {
     "finished": 48,
@@ -2187,7 +2145,49 @@
     "last": "2026-09-24T23:15:00+00:00"
    },
    "mlb:spread": {
-    "finished": 48,
+    "finished": 72,
+    "games": 6,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-24T23:15:00+00:00"
+   },
+   "mlb:team_total": {
+    "finished": 168,
+    "games": 6,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-24T23:15:00+00:00"
+   },
+   "mlb:total": {
+    "finished": 124,
+    "games": 6,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-24T23:15:00+00:00"
+   },
+   "mlb:prop_ks": {
+    "finished": 142,
+    "games": 6,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-24T23:15:00+00:00"
+   },
+   "mlb:prop_hit": {
+    "finished": 338,
+    "games": 4,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-24T22:45:00+00:00"
+   },
+   "mlb:prop_hr": {
+    "finished": 132,
+    "games": 4,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-24T22:45:00+00:00"
+   },
+   "mlb:prop_tb": {
+    "finished": 524,
     "games": 4,
     "trust": 0.25,
     "confidence_fix": false,
@@ -2199,147 +2199,245 @@
     "trust": 0.5,
     "confidence_fix": false,
     "last": "2026-09-24T20:00:00+00:00"
+   },
+   "cfb:team_total": {
+    "finished": 10,
+    "games": 1,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-24T23:30:00+00:00"
+   },
+   "cfb:spread_1h": {
+    "finished": 42,
+    "games": 1,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-24T23:30:00+00:00"
+   },
+   "cfb:total_1h": {
+    "finished": 28,
+    "games": 1,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-24T23:30:00+00:00"
+   },
+   "nfl:team_total": {
+    "finished": 10,
+    "games": 1,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-25T00:15:00+00:00"
+   },
+   "nfl:prop_passtds": {
+    "finished": 4,
+    "games": 1,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-25T00:15:00+00:00"
+   },
+   "nfl:prop_rec": {
+    "finished": 10,
+    "games": 1,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-25T00:15:00+00:00"
+   },
+   "nfl:spread_1h": {
+    "finished": 30,
+    "games": 1,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-25T00:15:00+00:00"
+   },
+   "nfl:total_1h": {
+    "finished": 22,
+    "games": 1,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-25T00:15:00+00:00"
+   },
+   "nfl:period_winner_1q": {
+    "finished": 4,
+    "games": 1,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-25T00:15:00+00:00"
+   },
+   "nfl:spread_1q": {
+    "finished": 18,
+    "games": 1,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-25T00:15:00+00:00"
+   },
+   "nfl:total_1q": {
+    "finished": 18,
+    "games": 1,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-25T00:15:00+00:00"
+   },
+   "nfl:period_winner_2q": {
+    "finished": 4,
+    "games": 1,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-25T00:15:00+00:00"
+   },
+   "nfl:spread_2q": {
+    "finished": 20,
+    "games": 1,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-25T00:15:00+00:00"
+   },
+   "nfl:total_2q": {
+    "finished": 20,
+    "games": 1,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-25T00:15:00+00:00"
    }
   },
   "price_trend": {
+   "flat": {
+    "markets": 1305,
+    "hit_vs_price": -0.001
+   },
    "rising": {
-    "markets": 194,
-    "hit_vs_price": 0.087
+    "markets": 283,
+    "hit_vs_price": 0.006
    },
    "falling": {
-    "markets": 190,
-    "hit_vs_price": -0.08
-   },
-   "flat": {
-    "markets": 827,
-    "hit_vs_price": -0.002
+    "markets": 280,
+    "hit_vs_price": -0.003
    }
   }
  },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "tracker": {
-  "tracked": 55207,
+  "tracked": 55270,
   "series": 3911,
   "movers": [
    {
-    "ticker": "KXKBOGAME-26SEP230530NCDKTW-NCD",
-    "series": "KXKBOGAME",
-    "title": "NC Dinos",
-    "move": 0.645,
-    "price": 0.985,
-    "close": "2026-09-25T09:30:00+00:00"
-   },
-   {
-    "ticker": "KXKBOGAME-26SEP230530NCDKTW-KTW",
-    "series": "KXKBOGAME",
-    "title": "KT Wiz",
-    "move": -0.52,
-    "price": 0.02,
-    "close": "2026-09-25T09:30:00+00:00"
-   },
-   {
-    "ticker": "KXKBORFI-26SEP230530NCDKTW-Y",
-    "series": "KXKBORFI",
-    "title": "Yes",
-    "move": 0.515,
-    "price": 0.995,
-    "close": "2026-09-25T09:30:00+00:00"
-   },
-   {
-    "ticker": "KXKBORFI-26SEP230530KIADOO-Y",
-    "series": "KXKBORFI",
-    "title": "Yes",
-    "move": 0.515,
-    "price": 0.995,
-    "close": "2026-09-25T09:30:00+00:00"
-   },
-   {
-    "ticker": "KXNFL1HTEAMTOTAL-26SEP24ATLGB-ATL10",
-    "series": "KXNFL1HTEAMTOTAL",
-    "title": "Atlanta over 9.5 1H points scored",
-    "move": 0.515,
+    "ticker": "KXNFLRSHYDS-26SEP24ATLGB-ATLBROBINSON7-150",
+    "series": "KXNFLRSHYDS",
+    "title": "Bijan Robinson: 150+",
+    "move": 0.95,
     "price": 0.995,
     "close": "2026-09-27T00:15:00+00:00"
    },
    {
-    "ticker": "KXCS2TOTALMAPS-26SEP240630EXRBLA-3",
-    "series": "KXCS2TOTALMAPS",
-    "title": "Over 2.5 maps",
-    "move": 0.51,
+    "ticker": "KXNFLRSHYDS-26SEP24ATLGB-ATLBROBINSON7-140",
+    "series": "KXNFLRSHYDS",
+    "title": "Bijan Robinson: 140+",
+    "move": 0.92,
     "price": 0.995,
-    "close": "2026-09-26T10:30:00+00:00"
+    "close": "2026-09-27T00:15:00+00:00"
    },
    {
-    "ticker": "KXKBOGAME-26SEP230530LOTHAN-LOT",
-    "series": "KXKBOGAME",
-    "title": "Lotte Giants",
-    "move": 0.5,
-    "price": 0.925,
-    "close": "2026-09-25T09:30:00+00:00"
+    "ticker": "KXNFLRSHYDS-26SEP24ATLGB-ATLBROBINSON7-130",
+    "series": "KXNFLRSHYDS",
+    "title": "Bijan Robinson: 130+",
+    "move": 0.89,
+    "price": 0.995,
+    "close": "2026-09-27T00:15:00+00:00"
    },
    {
-    "ticker": "KXKBOTOTAL-26SEP230530NCDKTW-12",
-    "series": "KXKBOTOTAL",
-    "title": "Over 11.5 runs scored",
-    "move": 0.5,
+    "ticker": "KXNFLRSHYDS-26SEP24ATLGB-ATLBROBINSON7-120",
+    "series": "KXNFLRSHYDS",
+    "title": "Bijan Robinson: 120+",
+    "move": 0.84,
     "price": 0.995,
-    "close": "2026-09-25T09:30:00+00:00"
+    "close": "2026-09-27T00:15:00+00:00"
    },
    {
-    "ticker": "KXNCAAWVMATCH-26SEP241900UMDPUR-PUR",
-    "series": "KXNCAAWVMATCH",
-    "title": "Purdue",
-    "move": 0.5,
+    "ticker": "KXNFLTD-26SEP24ATLGB-ATLBROBINSON15-1",
+    "series": "KXNFLTD",
+    "title": "Brian Robinson: 1+",
+    "move": 0.84,
     "price": 0.995,
-    "close": "2026-09-26T23:00:00+00:00"
+    "close": "2026-09-27T00:15:00+00:00"
    },
    {
-    "ticker": "KXNCAAWVMATCH-26SEP241800MOHBGSU-BGSU",
-    "series": "KXNCAAWVMATCH",
-    "title": "Bowling Green",
-    "move": 0.5,
+    "ticker": "KXNFLRSHYDS-26SEP24ATLGB-ATLBROBINSON7-110",
+    "series": "KXNFLRSHYDS",
+    "title": "Bijan Robinson: 110+",
+    "move": 0.79,
     "price": 0.995,
-    "close": "2026-09-26T22:00:00+00:00"
+    "close": "2026-09-27T00:15:00+00:00"
    },
    {
-    "ticker": "KXKBOTOTAL-26SEP230530NCDKTW-8",
-    "series": "KXKBOTOTAL",
-    "title": "Over 7.5 runs scored",
-    "move": 0.495,
+    "ticker": "KXNFLRSHYDS-26SEP24ATLGB-ATLBROBINSON15-40",
+    "series": "KXNFLRSHYDS",
+    "title": "Brian Robinson: 40+",
+    "move": 0.785,
     "price": 0.995,
-    "close": "2026-09-25T09:30:00+00:00"
+    "close": "2026-09-27T00:15:00+00:00"
    },
    {
-    "ticker": "KXKBOTOTAL-26SEP230530NCDKTW-6",
-    "series": "KXKBOTOTAL",
-    "title": "Over 5.5 runs scored",
-    "move": 0.495,
-    "price": 0.995,
-    "close": "2026-09-25T09:30:00+00:00"
+    "ticker": "KXNFLRRYDS-26SEP24ATLGB-ATLBROBINSON7-180",
+    "series": "KXNFLRRYDS",
+    "title": "Bijan Robinson: 180+",
+    "move": 0.78,
+    "price": 0.89,
+    "close": "2026-09-27T00:15:00+00:00"
    },
    {
-    "ticker": "KXKBOTOTAL-26SEP230530NCDKTW-10",
-    "series": "KXKBOTOTAL",
-    "title": "Over 9.5 runs scored",
-    "move": 0.495,
-    "price": 0.995,
-    "close": "2026-09-25T09:30:00+00:00"
+    "ticker": "KXNFLRSHYDS-26SEP24ATLGB-ATLBROBINSON7-160",
+    "series": "KXNFLRSHYDS",
+    "title": "Bijan Robinson: 160+",
+    "move": 0.78,
+    "price": 0.81,
+    "close": "2026-09-27T00:15:00+00:00"
    },
    {
-    "ticker": "KXKBOTOTAL-26SEP230530LOTHAN-8",
-    "series": "KXKBOTOTAL",
-    "title": "Over 7.5 runs scored",
-    "move": 0.495,
-    "price": 0.995,
-    "close": "2026-09-25T09:30:00+00:00"
+    "ticker": "KXNFLRSHYDS-26SEP24ATLGB-ATLBROBINSON15-50",
+    "series": "KXNFLRSHYDS",
+    "title": "Brian Robinson: 50+",
+    "move": 0.77,
+    "price": 0.88,
+    "close": "2026-09-27T00:15:00+00:00"
    },
    {
-    "ticker": "KXKBOTOTAL-26SEP230530LOTHAN-10",
-    "series": "KXKBOTOTAL",
-    "title": "Over 9.5 runs scored",
-    "move": 0.495,
+    "ticker": "KXNFLRACE-26SEP24ATLGB-21-ATL",
+    "series": "KXNFLRACE",
+    "title": "Atlanta reaches 21 points first",
+    "move": 0.765,
     "price": 0.995,
-    "close": "2026-09-25T09:30:00+00:00"
+    "close": "2026-09-27T00:15:00+00:00"
+   },
+   {
+    "ticker": "KXNFLTEAMYDS-26SEP24ATLGB-ATL350",
+    "series": "KXNFLTEAMYDS",
+    "title": "Atlanta: 350+",
+    "move": 0.735,
+    "price": 0.985,
+    "close": "2026-09-27T00:15:00+00:00"
+   },
+   {
+    "ticker": "KXNFLRRYDS-26SEP24ATLGB-ATLBROBINSON7-155",
+    "series": "KXNFLRRYDS",
+    "title": "Bijan Robinson: 155+",
+    "move": 0.73,
+    "price": 0.995,
+    "close": "2026-09-27T00:15:00+00:00"
+   },
+   {
+    "ticker": "KXNFLRSHYDS-26SEP24ATLGB-ATLBROBINSON7-100",
+    "series": "KXNFLRSHYDS",
+    "title": "Bijan Robinson: 100+",
+    "move": 0.72,
+    "price": 0.995,
+    "close": "2026-09-27T00:15:00+00:00"
+   },
+   {
+    "ticker": "KXNFLSPREAD-26SEP24ATLGB-ATL6",
+    "series": "KXNFLSPREAD",
+    "title": "ATL Falcons wins by over 5.5 points",
+    "move": 0.655,
+    "price": 0.835,
+    "close": "2026-09-27T00:15:00+00:00"
    }
   ]
  },
@@ -2445,31 +2543,31 @@
    "holdout": {
     "matches": 652,
     "rating_log_loss": 0.6289,
-    "model_log_loss": 0.6224,
+    "model_log_loss": 0.6241,
     "rating_accuracy": 0.656,
-    "model_accuracy": 0.647
+    "model_accuracy": 0.649
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6035,
-    "model_log_loss": 0.6224,
+    "model_log_loss": 0.6241,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 652
    },
    "backtest": {
-    "bets": 16,
-    "wins": 4,
-    "units": -13.5,
-    "roi": -0.458
+    "bets": 17,
+    "wins": 5,
+    "units": -10.4,
+    "roi": -0.334
    },
    "weights": {
     "home_field": 0.252,
-    "rating": 1.53,
-    "rest": 0.239,
-    "point_diff_form": 0.223,
-    "qb_change": 0.34,
-    "epa": 0.165
+    "rating": 1.531,
+    "rest": 0.233,
+    "point_diff_form": 0.22,
+    "qb_change": 0.31,
+    "epa": 0.171
    },
    "matches": 4395,
    "totals": {
@@ -2741,8 +2839,8 @@
    "expected_end": "2026-09-25T23:00:00+00:00",
    "start_est": "2026-09-25T20:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.46,
-   "close_price": 0.46,
+   "latest_price": 0.455,
+   "close_price": 0.455,
    "pnl": null,
    "why": "Projected score margin -5.3 (home) and total 53.4. Model gives \"Over 49.5 points scored\" 59%. Blended with the market that's 48% vs a 45% price.",
    "trend": 0.0,
@@ -3762,8 +3860,8 @@
    "expected_end": "2026-09-26T19:45:00+00:00",
    "start_est": "2026-09-26T16:45:00+00:00",
    "status": "pending",
-   "latest_price": 0.4,
-   "close_price": 0.4,
+   "latest_price": 0.385,
+   "close_price": 0.385,
    "pnl": null,
    "why": "Projected score margin +9.3 (home) and total 55.0. Model gives \"No: Kentucky wins by over 16.5 points\" 67%. Blended with the market that's 46% vs a 39% price.",
    "trend": -0.015,
@@ -3801,8 +3899,8 @@
    "expected_end": "2026-09-26T19:00:00+00:00",
    "start_est": "2026-09-26T16:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.375,
-   "close_price": 0.375,
+   "latest_price": 0.405,
+   "close_price": 0.405,
    "pnl": null,
    "why": "Projected score margin +23.4 (home) and total 49.3. Model gives \"Under 60.5 points scored\" 74%. Blended with the market that's 53% vs a 46% price. Price down 4\u00a2 in the last 12 hours.",
    "trend": -0.035,
@@ -3918,8 +4016,8 @@
    "expected_end": "2026-09-27T23:00:00+00:00",
    "start_est": "2026-09-27T17:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.505,
-   "close_price": 0.505,
+   "latest_price": 0.5,
+   "close_price": 0.5,
    "pnl": null,
    "why": "De'Von Achane: 81 a game lately (last 12 games). Model gives \"De'Von Achane: 60+\" 72%. Blended with the market that's 56% vs a 51% price. Price up 24\u00a2 in the last 12 hours.",
    "trend": 0.235,
@@ -4270,8 +4368,8 @@
    "expected_end": "2026-09-28T02:25:00+00:00",
    "start_est": "2026-09-27T20:25:00+00:00",
    "status": "pending",
-   "latest_price": 0.5,
-   "close_price": 0.5,
+   "latest_price": 0.51,
+   "close_price": 0.51,
    "pnl": null,
    "why": "Juwan Johnson: 61 a game lately (last 12 games). Model gives \"Juwan Johnson: 35+\" 83%. Blended with the market that's 58% vs a 50% price.",
    "trend": 0.015,
@@ -4387,8 +4485,8 @@
    "expected_end": "2026-09-26T20:00:00+00:00",
    "start_est": "2026-09-26T16:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.475,
-   "close_price": 0.475,
+   "latest_price": 0.49,
+   "close_price": 0.49,
    "pnl": null,
    "why": "Projected score margin -4.4 (home) and total 54.2. Model gives \"Boston College over 16.5 points scored\" 75%. Blended with the market that's 54% vs a 48% price.",
    "trend": 0.01,
@@ -4621,8 +4719,8 @@
    "expected_end": "2026-09-27T05:30:00+00:00",
    "start_est": "2026-09-27T02:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.355,
-   "close_price": 0.355,
+   "latest_price": 0.35,
+   "close_price": 0.35,
    "pnl": null,
    "why": "Expected goals 1.13 vs 1.00 (2.13 total). Model gives \"No: Both Teams To Score\" 57%. Blended with the market that's 41% vs a 36% price.",
    "trend": -0.005,
@@ -4934,8 +5032,8 @@
    "expected_end": "2026-09-25T10:00:00+00:00",
    "start_est": "2026-09-25T06:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.625,
-   "close_price": 0.625,
+   "latest_price": 0.635,
+   "close_price": 0.635,
    "pnl": null,
    "why": "Elo 1678 vs 1480 on hard. Won 50% vs 50% of games lately. Form 7-3 vs 4-6. Games played in last 3 days: 0 vs 66. Model 79%, blended with the market 71%, price 63%. Price down 3\u00a2 in the last 12 hours.",
    "trend": -0.027,
