@@ -1,9 +1,5 @@
 {
  "trust": {
-  "cfb:total": 0.25,
-  "cfb:team_total": 0.25,
-  "cfb:spread_1h": 0.25,
-  "cfb:total_1h": 0.25,
   "nfl:winner": 0.25,
   "nfl:spread": 0.25,
   "nfl:total": 0.25,
@@ -57,11 +53,7 @@
  },
  "calib": {},
  "counts": {
-  "cfb:total": 10,
-  "cfb:team_total": 42,
-  "cfb:spread_1h": 42,
-  "cfb:total_1h": 28,
-  "nfl:winner": 2,
+  "nfl:winner": 1,
   "nfl:spread": 54,
   "nfl:total": 38,
   "nfl:team_total": 56,
@@ -87,7 +79,7 @@
   "nfl:period_winner_4q": 4,
   "nfl:spread_4q": 22,
   "nfl:total_4q": 20,
-  "tennis:winner": 28,
+  "tennis:winner": 34,
   "mlb:winner": 6,
   "mlb:spread_f5": 24,
   "mlb:total_f5": 40,
@@ -101,10 +93,6 @@
   "mlb:prop_hrr": 518
  },
  "games": {
-  "cfb:total": 1,
-  "cfb:team_total": 1,
-  "cfb:spread_1h": 1,
-  "cfb:total_1h": 1,
   "nfl:winner": 1,
   "nfl:spread": 1,
   "nfl:total": 1,
@@ -131,7 +119,7 @@
   "nfl:period_winner_4q": 1,
   "nfl:spread_4q": 1,
   "nfl:total_4q": 1,
-  "tennis:winner": 14,
+  "tennis:winner": 17,
   "mlb:winner": 3,
   "mlb:spread_f5": 3,
   "mlb:total_f5": 3,
@@ -145,10 +133,6 @@
   "mlb:prop_hrr": 3
  },
  "last": {
-  "cfb:total": "2026-09-24T23:30:00+00:00",
-  "cfb:team_total": "2026-09-24T23:30:00+00:00",
-  "cfb:spread_1h": "2026-09-24T23:30:00+00:00",
-  "cfb:total_1h": "2026-09-24T23:30:00+00:00",
   "nfl:winner": "2026-09-25T00:15:00+00:00",
   "nfl:spread": "2026-09-25T00:15:00+00:00",
   "nfl:total": "2026-09-25T00:15:00+00:00",
@@ -175,7 +159,7 @@
   "nfl:period_winner_4q": "2026-09-25T00:15:00+00:00",
   "nfl:spread_4q": "2026-09-25T00:15:00+00:00",
   "nfl:total_4q": "2026-09-25T00:15:00+00:00",
-  "tennis:winner": "2026-09-25T10:30:00+00:00",
+  "tennis:winner": "2026-09-25T11:00:00+00:00",
   "mlb:winner": "2026-09-25T02:10:00+00:00",
   "mlb:spread_f5": "2026-09-25T02:10:00+00:00",
   "mlb:total_f5": "2026-09-25T02:10:00+00:00",
@@ -188,5 +172,5 @@
   "mlb:prop_tb": "2026-09-25T02:10:00+00:00",
   "mlb:prop_hrr": "2026-09-25T02:10:00+00:00"
  },
- "updated": "2026-09-25T13:23:01.440044+00:00"
+ "updated": "2026-09-25T14:23:02.390454+00:00"
 }
