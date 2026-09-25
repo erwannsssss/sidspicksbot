@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-25T03:25:32.088770+00:00",
+ "updated": "2026-09-25T04:24:20.240920+00:00",
  "status_note": "Last run found 0 new pick(s) and graded 1.",
  "bankroll": 105.66,
  "protection": {
@@ -131,7 +131,8 @@
    "sharp_prob": null,
    "research": "",
    "sources": [],
-   "expert_lean": "none"
+   "expert_lean": "none",
+   "prechecked": true
   },
   {
    "id": "KXATPMATCH-26SEP24MARDAN-DAN",
@@ -199,8 +200,8 @@
    "expected_end": "2026-09-25T10:50:00+00:00",
    "start_est": "2026-09-25T06:50:00+00:00",
    "status": "pending",
-   "latest_price": 0.255,
-   "close_price": 0.255,
+   "latest_price": 0.265,
+   "close_price": 0.265,
    "pnl": null,
    "why": "Elo 1627 vs 1640 on hard. Won 50% vs 50% of games lately. Form 5-5 vs 6-4. Games played in last 3 days: 22 vs 0. Model 45%, blended with the market 36%, price 28%.",
    "trend": -0.017,
@@ -2116,61 +2117,19 @@
  },
  "learning": {
   "groups": {
-   "mlb:prop_hit": {
-    "finished": 393,
-    "games": 5,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-24T23:15:00+00:00"
-   },
-   "mlb:prop_tb": {
-    "finished": 624,
-    "games": 5,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-24T23:15:00+00:00"
-   },
-   "mlb:prop_hr": {
-    "finished": 156,
-    "games": 5,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-24T23:15:00+00:00"
-   },
-   "mlb:prop_hrr": {
-    "finished": 830,
-    "games": 5,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-24T23:15:00+00:00"
-   },
-   "tennis:winner": {
-    "finished": 2,
-    "games": 1,
-    "trust": 0.5,
-    "confidence_fix": false,
-    "last": "2026-09-24T20:00:00+00:00"
-   },
-   "mlb:winner": {
-    "finished": 8,
-    "games": 4,
-    "trust": 0.5,
-    "confidence_fix": false,
-    "last": "2026-09-24T23:15:00+00:00"
-   },
    "mlb:spread_f5": {
-    "finished": 32,
-    "games": 4,
+    "finished": 49,
+    "games": 7,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-09-24T23:15:00+00:00"
+    "last": "2026-09-25T02:10:00+00:00"
    },
    "mlb:total_f5": {
-    "finished": 54,
-    "games": 4,
+    "finished": 94,
+    "games": 7,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-09-24T23:15:00+00:00"
+    "last": "2026-09-25T02:10:00+00:00"
    },
    "mlb:spread": {
     "finished": 48,
@@ -2187,11 +2146,11 @@
     "last": "2026-09-24T23:15:00+00:00"
    },
    "mlb:total": {
-    "finished": 82,
-    "games": 4,
+    "finished": 112,
+    "games": 6,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-09-24T23:15:00+00:00"
+    "last": "2026-09-25T01:40:00+00:00"
    },
    "mlb:prop_ks": {
     "finished": 88,
@@ -2200,8 +2159,64 @@
     "confidence_fix": false,
     "last": "2026-09-24T23:15:00+00:00"
    },
+   "mlb:prop_hit": {
+    "finished": 318,
+    "games": 4,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-24T23:15:00+00:00"
+   },
+   "mlb:prop_hr": {
+    "finished": 128,
+    "games": 4,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-24T23:15:00+00:00"
+   },
+   "mlb:prop_tb": {
+    "finished": 504,
+    "games": 4,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-24T23:15:00+00:00"
+   },
+   "mlb:prop_hrr": {
+    "finished": 690,
+    "games": 4,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-24T23:15:00+00:00"
+   },
+   "mlb:winner": {
+    "finished": 6,
+    "games": 3,
+    "trust": 0.5,
+    "confidence_fix": false,
+    "last": "2026-09-24T23:15:00+00:00"
+   },
+   "cfb:winner": {
+    "finished": 2,
+    "games": 1,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-24T23:30:00+00:00"
+   },
+   "cfb:spread": {
+    "finished": 52,
+    "games": 1,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-24T23:30:00+00:00"
+   },
+   "cfb:total": {
+    "finished": 38,
+    "games": 1,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-24T23:30:00+00:00"
+   },
    "cfb:team_total": {
-    "finished": 16,
+    "finished": 42,
     "games": 1,
     "trust": 0.25,
     "confidence_fix": false,
@@ -2221,29 +2236,71 @@
     "confidence_fix": false,
     "last": "2026-09-24T23:30:00+00:00"
    },
+   "nfl:winner": {
+    "finished": 2,
+    "games": 1,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-25T00:15:00+00:00"
+   },
+   "nfl:spread": {
+    "finished": 54,
+    "games": 1,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-25T00:15:00+00:00"
+   },
    "nfl:total": {
-    "finished": 24,
+    "finished": 38,
     "games": 1,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-09-25T00:15:00+00:00"
    },
    "nfl:team_total": {
-    "finished": 28,
+    "finished": 56,
+    "games": 1,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-25T00:15:00+00:00"
+   },
+   "nfl:prop_passyds": {
+    "finished": 36,
+    "games": 1,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-25T00:15:00+00:00"
+   },
+   "nfl:prop_recyds": {
+    "finished": 174,
+    "games": 1,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-25T00:15:00+00:00"
+   },
+   "nfl:prop_rshyds": {
+    "finished": 100,
     "games": 1,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-09-25T00:15:00+00:00"
    },
    "nfl:prop_passtds": {
-    "finished": 6,
+    "finished": 16,
+    "games": 1,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-25T00:15:00+00:00"
+   },
+   "nfl:prop_rryds": {
+    "finished": 12,
     "games": 1,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-09-25T00:15:00+00:00"
    },
    "nfl:prop_rec": {
-    "finished": 34,
+    "finished": 146,
     "games": 1,
     "trust": 0.25,
     "confidence_fix": false,
@@ -2279,6 +2336,20 @@
    },
    "nfl:total_1q": {
     "finished": 18,
+    "games": 1,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-25T00:15:00+00:00"
+   },
+   "nfl:spread_2h": {
+    "finished": 30,
+    "games": 1,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-25T00:15:00+00:00"
+   },
+   "nfl:total_2h": {
+    "finished": 26,
     "games": 1,
     "trust": 0.25,
     "confidence_fix": false,
@@ -2325,26 +2396,47 @@
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-09-25T00:15:00+00:00"
+   },
+   "nfl:period_winner_4q": {
+    "finished": 4,
+    "games": 1,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-25T00:15:00+00:00"
+   },
+   "nfl:spread_4q": {
+    "finished": 22,
+    "games": 1,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-25T00:15:00+00:00"
+   },
+   "nfl:total_4q": {
+    "finished": 20,
+    "games": 1,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-25T00:15:00+00:00"
    }
   },
   "price_trend": {
-   "flat": {
-    "markets": 1420,
-    "hit_vs_price": -0.001
-   },
    "rising": {
-    "markets": 299,
-    "hit_vs_price": 0.031
+    "markets": 375,
+    "hit_vs_price": 0.057
+   },
+   "flat": {
+    "markets": 2073,
+    "hit_vs_price": -0.0
    },
    "falling": {
-    "markets": 296,
-    "hit_vs_price": -0.03
+    "markets": 377,
+    "hit_vs_price": -0.055
    }
   }
  },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "tracker": {
-  "tracked": 55602,
+  "tracked": 55629,
   "series": 3911,
   "movers": [
    {
@@ -2471,7 +2563,7 @@
  },
  "models": {
   "tennis": {
-   "matches": 19895,
+   "matches": 19896,
    "training_rows": 13644,
    "holdout": {
     "from": "2026-08-20",
@@ -2571,31 +2663,31 @@
    "holdout": {
     "matches": 652,
     "rating_log_loss": 0.6289,
-    "model_log_loss": 0.6246,
+    "model_log_loss": 0.6223,
     "rating_accuracy": 0.656,
-    "model_accuracy": 0.647
+    "model_accuracy": 0.652
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6035,
-    "model_log_loss": 0.6246,
+    "model_log_loss": 0.6223,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 652
    },
    "backtest": {
-    "bets": 16,
-    "wins": 5,
-    "units": -8.4,
-    "roi": -0.288
+    "bets": 15,
+    "wins": 4,
+    "units": -12.0,
+    "roi": -0.429
    },
    "weights": {
-    "home_field": 0.252,
-    "rating": 1.536,
+    "home_field": 0.251,
+    "rating": 1.525,
     "rest": 0.238,
-    "point_diff_form": 0.221,
-    "qb_change": 0.31,
-    "epa": 0.166
+    "point_diff_form": 0.212,
+    "qb_change": 0.336,
+    "epa": 0.172
    },
    "matches": 4395,
    "totals": {
@@ -2680,15 +2772,15 @@
    "clv_picks": 8
   },
   "watch": {
-   "picks": 77,
+   "picks": 78,
    "wins": 33,
-   "losses": 44,
-   "units": 3.33,
-   "staked": 38.5,
-   "roi": 0.086,
-   "beat_price": 0.195,
-   "clv": -0.0125,
-   "clv_picks": 72
+   "losses": 45,
+   "units": 2.81,
+   "staked": 39.0,
+   "roi": 0.072,
+   "beat_price": 0.192,
+   "clv": -0.0133,
+   "clv_picks": 73
   }
  },
  "by_expert_lean": {
@@ -2750,57 +2842,18 @@
    "clv_picks": 2
   },
   "W": {
-   "picks": 77,
+   "picks": 78,
    "wins": 33,
-   "losses": 44,
-   "units": 3.33,
-   "staked": 38.5,
-   "roi": 0.086,
-   "beat_price": 0.195,
-   "clv": -0.0125,
-   "clv_picks": 72
+   "losses": 45,
+   "units": 2.81,
+   "staked": 39.0,
+   "roi": 0.072,
+   "beat_price": 0.192,
+   "clv": -0.0133,
+   "clv_picks": 73
   }
  },
  "watch_open": [
-  {
-   "id": "KXNCAAFTOTAL-26SEP24LIBCCAR-55",
-   "ticker": "KXNCAAFTOTAL-26SEP24LIBCCAR-55",
-   "side": "yes",
-   "event": "KXNCAAFTOTAL-26SEP24LIBCCAR",
-   "game": "26SEP24LIBCCAR",
-   "sport": "Football",
-   "model_key": "cfb",
-   "mtype": "total",
-   "line": 54.5,
-   "tour": "College Football",
-   "tournament": "Liberty at Coastal Carolina",
-   "matchup": "Liberty at Coastal Carolina",
-   "surface": "",
-   "pick": "Over 54.5 points scored",
-   "opponent": "",
-   "market": "Over 54.5 points scored",
-   "price": 0.45,
-   "model_prob": 0.504,
-   "raw_prob": 0.573,
-   "edge": 0.037,
-   "tier": "W",
-   "units": 0.5,
-   "made": "2026-09-21T00:28:25.502826+00:00",
-   "expected_end": "2026-09-25T02:30:00+00:00",
-   "start_est": "2026-09-24T23:30:00+00:00",
-   "status": "pending",
-   "latest_price": 0.385,
-   "close_price": 0.385,
-   "pnl": null,
-   "why": "Projected score margin -0.4 (home) and total 57.6. Model gives \"Over 54.5 points scored\" 57%. Blended with the market that's 47% vs a 45% price.",
-   "trend": -0.005,
-   "new_market": false,
-   "trust": 0.25,
-   "sharp_prob": null,
-   "research": "",
-   "sources": [],
-   "expert_lean": "none"
-  },
   {
    "id": "KXNCAAFTOTAL-26SEP25ARMYTEM-50",
    "ticker": "KXNCAAFTOTAL-26SEP25ARMYTEM-50",
@@ -2945,8 +2998,8 @@
    "expected_end": "2026-09-26T05:30:00+00:00",
    "start_est": "2026-09-26T02:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.56,
-   "close_price": 0.56,
+   "latest_price": 0.555,
+   "close_price": 0.555,
    "pnl": null,
    "why": "Projected score margin -5.0 (home) and total 51.3. Model gives \"No: California wins by over 2.5 points\" 68%. Blended with the market that's 58% vs a 55% price.",
    "trend": 0.0,
@@ -3102,8 +3155,8 @@
    "expected_end": "2026-09-26T20:00:00+00:00",
    "start_est": "2026-09-27T01:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.51,
-   "close_price": 0.51,
+   "latest_price": 0.515,
+   "close_price": 0.515,
    "pnl": null,
    "why": "Projected score margin +19.2 (home) and total 56.9. Model gives \"No: SMU wins by over 34.5 points\" 83%. Blended with the market that's 59% vs a 51% price.",
    "trend": 0.0,
@@ -3259,8 +3312,8 @@
    "expected_end": "2026-09-26T20:00:00+00:00",
    "start_est": "2026-09-26T16:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.32,
-   "close_price": 0.32,
+   "latest_price": 0.33,
+   "close_price": 0.33,
    "pnl": null,
    "why": "Projected score margin +13.9 (home) and total 50.0. Model gives \"No: Ohio St. wins by over 20.5 points\" 66%. Blended with the market that's 41% vs a 34% price.",
    "trend": -0.005,
@@ -3771,8 +3824,8 @@
    "expected_end": "2026-09-28T02:25:00+00:00",
    "start_est": "2026-09-27T20:25:00+00:00",
    "status": "pending",
-   "latest_price": 0.51,
-   "close_price": 0.51,
+   "latest_price": 0.515,
+   "close_price": 0.515,
    "pnl": null,
    "why": "Lamar Jackson: 26 a game lately (last 12 games). Model gives \"Lamar Jackson: under 40\" 84%. Blended with the market that's 60% vs a 53% price.",
    "trend": 0.005,
@@ -4122,8 +4175,8 @@
    "expected_end": "2026-09-26T20:00:00+00:00",
    "start_est": "2026-09-26T17:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.205,
-   "close_price": 0.205,
+   "latest_price": 0.21,
+   "close_price": 0.21,
    "pnl": null,
    "why": "Ratings 1369 vs 1448, at home. Point differential last 5: -55 vs -94. Days of rest 7 vs 13. Model gives Davidson 41%. Blended with the market that's 26% vs a 22% price. Price up 4\u00a2 in the last 12 hours.",
    "trend": 0.04,
@@ -4357,8 +4410,8 @@
    "expected_end": "2026-09-28T02:25:00+00:00",
    "start_est": "2026-09-27T20:25:00+00:00",
    "status": "pending",
-   "latest_price": 0.505,
-   "close_price": 0.505,
+   "latest_price": 0.515,
+   "close_price": 0.515,
    "pnl": null,
    "why": "Juwan Johnson: 61 a game lately (last 12 games). Model gives \"Juwan Johnson: 35+\" 83%. Blended with the market that's 58% vs a 50% price.",
    "trend": 0.015,
@@ -4435,8 +4488,8 @@
    "expected_end": "2026-09-27T23:00:00+00:00",
    "start_est": "2026-09-27T17:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.485,
-   "close_price": 0.485,
+   "latest_price": 0.49,
+   "close_price": 0.49,
    "pnl": null,
    "why": "Ladd McConkey: 3.18 a game lately (last 12 games). Model gives \"Ladd McConkey: under 5\" 78%. Blended with the market that's 57% vs a 50% price. Price down 3\u00a2 in the last 12 hours.",
    "trend": -0.03,
@@ -4513,8 +4566,8 @@
    "expected_end": "2026-09-28T02:05:00+00:00",
    "start_est": "2026-09-27T20:05:00+00:00",
    "status": "pending",
-   "latest_price": 0.22,
-   "close_price": 0.22,
+   "latest_price": 0.23,
+   "close_price": 0.23,
    "pnl": null,
    "why": "Michael Wilson: 70 a game lately (last 12 games). Model gives \"Michael Wilson: 70+\" 50%. Blended with the market that's 29% vs a 24% price.",
    "trend": -0.015,
@@ -4747,8 +4800,8 @@
    "expected_end": "2026-09-26T19:00:00+00:00",
    "start_est": "2026-09-26T16:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.365,
-   "close_price": 0.365,
+   "latest_price": 0.375,
+   "close_price": 0.375,
    "pnl": null,
    "why": "Projected score margin -0.3 (home) and total 51.7. Model gives \"No: Marist wins by over 3.5 points\" 60%. Blended with the market that's 42% vs a 38% price. Price up 2\u00a2 in the last 12 hours.",
    "trend": 0.02,
@@ -5021,8 +5074,8 @@
    "expected_end": "2026-09-25T10:00:00+00:00",
    "start_est": "2026-09-25T06:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.635,
-   "close_price": 0.635,
+   "latest_price": 0.64,
+   "close_price": 0.64,
    "pnl": null,
    "why": "Elo 1678 vs 1480 on hard. Won 50% vs 50% of games lately. Form 7-3 vs 4-6. Games played in last 3 days: 0 vs 66. Model 79%, blended with the market 71%, price 63%. Price down 3\u00a2 in the last 12 hours.",
    "trend": -0.027,
@@ -5114,6 +5167,46 @@
   }
  ],
  "watch_history": [
+  {
+   "id": "KXNCAAFTOTAL-26SEP24LIBCCAR-55",
+   "ticker": "KXNCAAFTOTAL-26SEP24LIBCCAR-55",
+   "side": "yes",
+   "event": "KXNCAAFTOTAL-26SEP24LIBCCAR",
+   "game": "26SEP24LIBCCAR",
+   "sport": "Football",
+   "model_key": "cfb",
+   "mtype": "total",
+   "line": 54.5,
+   "tour": "College Football",
+   "tournament": "Liberty at Coastal Carolina",
+   "matchup": "Liberty at Coastal Carolina",
+   "surface": "",
+   "pick": "Over 54.5 points scored",
+   "opponent": "",
+   "market": "Over 54.5 points scored",
+   "price": 0.45,
+   "model_prob": 0.504,
+   "raw_prob": 0.573,
+   "edge": 0.037,
+   "tier": "W",
+   "units": 0.5,
+   "made": "2026-09-21T00:28:25.502826+00:00",
+   "expected_end": "2026-09-25T02:30:00+00:00",
+   "start_est": "2026-09-24T23:30:00+00:00",
+   "status": "loss",
+   "latest_price": 0.385,
+   "close_price": 0.385,
+   "pnl": -0.52,
+   "why": "Projected score margin -0.4 (home) and total 57.6. Model gives \"Over 54.5 points scored\" 57%. Blended with the market that's 47% vs a 45% price.",
+   "trend": -0.005,
+   "new_market": false,
+   "trust": 0.25,
+   "sharp_prob": null,
+   "research": "",
+   "sources": [],
+   "expert_lean": "none",
+   "graded": "2026-09-25T04:22:09.915164+00:00"
+  },
   {
    "id": "KXNFLTOTAL-26SEP24ATLGB-46",
    "ticker": "KXNFLTOTAL-26SEP24ATLGB-46",
