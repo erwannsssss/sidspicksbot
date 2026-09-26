@@ -671,5 +671,121 @@
     "expected_end": "2026-09-26T20:00:00+00:00"
    }
   ]
+ },
+ {
+  "id": "PARLAY-202609260030-1",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-09-26T00:30:36.373986+00:00",
+  "units": 1.0,
+  "price": 0.1007,
+  "model_prob": 0.2458,
+  "ev": 1.44,
+  "payout_units": 8.9,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXNFLRECYDS-26SEP27LVNO-NOJJOHNSON83-35",
+    "ticker": "KXNFLRECYDS-26SEP27LVNO-NOJJOHNSON83-35",
+    "side": "yes",
+    "market": "Juwan Johnson: 35+",
+    "matchup": "LV at NO",
+    "sport": "Football",
+    "price": 0.5,
+    "model_prob": 0.664,
+    "edge": 0.147,
+    "expected_end": "2026-09-28T02:25:00+00:00"
+   },
+   {
+    "id": "KXNCAAFSPREAD-26SEP26VANAUB-AUB11:no",
+    "ticker": "KXNCAAFSPREAD-26SEP26VANAUB-AUB11",
+    "side": "no",
+    "market": "No: Auburn wins by over 10.5 points",
+    "matchup": "Vanderbilt at Auburn",
+    "sport": "Football",
+    "price": 0.55,
+    "model_prob": 0.711,
+    "edge": 0.144,
+    "expected_end": "2026-09-26T20:00:00+00:00"
+   },
+   {
+    "id": "KXNFLRSHYDS-26SEP27BALDAL-BALLJACKSON8-40:no",
+    "ticker": "KXNFLRSHYDS-26SEP27BALDAL-BALLJACKSON8-40",
+    "side": "no",
+    "market": "Lamar Jackson: under 40",
+    "matchup": "BAL at DAL",
+    "sport": "Football",
+    "price": 0.53,
+    "model_prob": 0.685,
+    "edge": 0.137,
+    "expected_end": "2026-09-28T02:25:00+00:00"
+   },
+   {
+    "id": "KXNCAAFSPREAD-26SEP26HCUUNT-UNT42:no",
+    "ticker": "KXNCAAFSPREAD-26SEP26HCUUNT-UNT42",
+    "side": "no",
+    "market": "No: North Texas wins by over 41.5 points",
+    "matchup": "Houston Christian at North Texas",
+    "sport": "Football",
+    "price": 0.61,
+    "model_prob": 0.76,
+    "edge": 0.133,
+    "expected_end": "2026-09-27T02:30:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": "PARLAY-202609260030-2",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-09-26T00:30:36.374079+00:00",
+  "units": 1.0,
+  "price": 0.1358,
+  "model_prob": 0.2761,
+  "ev": 1.033,
+  "payout_units": 6.4,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXNCAAFSPREAD-26SEP26MOSUSMU-SMU35:no",
+    "ticker": "KXNCAAFSPREAD-26SEP26MOSUSMU-SMU35",
+    "side": "no",
+    "market": "No: SMU wins by over 34.5 points",
+    "matchup": "Missouri State at SMU",
+    "sport": "Football",
+    "price": 0.51,
+    "model_prob": 0.667,
+    "edge": 0.14,
+    "expected_end": "2026-09-26T20:00:00+00:00"
+   },
+   {
+    "id": "KXNCAAFSPREAD-26SEP26OKSTWVU-WVU2",
+    "ticker": "KXNCAAFSPREAD-26SEP26OKSTWVU-WVU2",
+    "side": "yes",
+    "market": "West Virginia wins by over 1.5 points",
+    "matchup": "Oklahoma State at West Virginia",
+    "sport": "Football",
+    "price": 0.5,
+    "model_prob": 0.654,
+    "edge": 0.136,
+    "expected_end": "2026-09-26T20:00:00+00:00"
+   },
+   {
+    "id": "KXNCAAFSPREAD-26SEP26HOUGASO-HOU18:no",
+    "ticker": "KXNCAAFSPREAD-26SEP26HOUGASO-HOU18",
+    "side": "no",
+    "market": "No: Houston wins by over 17.5 points",
+    "matchup": "Houston at Georgia Southern",
+    "sport": "Football",
+    "price": 0.48,
+    "model_prob": 0.633,
+    "edge": 0.135,
+    "expected_end": "2026-09-26T20:00:00+00:00"
+   }
+  ]
  }
 ]
