@@ -1,9 +1,57 @@
 {
- "trust": {},
+ "trust": {
+  "mlb:total_f5": 0.25,
+  "mlb:total": 0.25,
+  "cfb:spread_1h": 0.25,
+  "cfb:total_1h": 0.25,
+  "cfb:period_winner_1q": 0.25,
+  "cfb:spread_1q": 0.25,
+  "cfb:total_1q": 0.25,
+  "cfb:period_winner_2q": 0.25,
+  "cfb:spread_2q": 0.25,
+  "cfb:total_2q": 0.25,
+  "mlb:spread_f5": 0.25
+ },
  "trust_league": {},
  "calib": {},
- "counts": {},
- "games": {},
- "last": {},
- "updated": "2026-09-26T01:18:52.214701+00:00"
+ "counts": {
+  "mlb:total_f5": 18,
+  "mlb:total": 22,
+  "cfb:spread_1h": 44,
+  "cfb:total_1h": 28,
+  "cfb:period_winner_1q": 4,
+  "cfb:spread_1q": 28,
+  "cfb:total_1q": 22,
+  "cfb:period_winner_2q": 4,
+  "cfb:spread_2q": 28,
+  "cfb:total_2q": 22,
+  "mlb:spread_f5": 8
+ },
+ "games": {
+  "mlb:total_f5": 2,
+  "mlb:total": 2,
+  "cfb:spread_1h": 1,
+  "cfb:total_1h": 1,
+  "cfb:period_winner_1q": 1,
+  "cfb:spread_1q": 1,
+  "cfb:total_1q": 1,
+  "cfb:period_winner_2q": 1,
+  "cfb:spread_2q": 1,
+  "cfb:total_2q": 1,
+  "mlb:spread_f5": 1
+ },
+ "last": {
+  "mlb:total_f5": "2026-09-26T00:10:00+00:00",
+  "mlb:total": "2026-09-26T00:10:00+00:00",
+  "cfb:spread_1h": "2026-09-26T00:00:00+00:00",
+  "cfb:total_1h": "2026-09-26T00:00:00+00:00",
+  "cfb:period_winner_1q": "2026-09-26T00:00:00+00:00",
+  "cfb:spread_1q": "2026-09-26T00:00:00+00:00",
+  "cfb:total_1q": "2026-09-26T00:00:00+00:00",
+  "cfb:period_winner_2q": "2026-09-26T00:00:00+00:00",
+  "cfb:spread_2q": "2026-09-26T00:00:00+00:00",
+  "cfb:total_2q": "2026-09-26T00:00:00+00:00",
+  "mlb:spread_f5": "2026-09-26T00:10:00+00:00"
+ },
+ "updated": "2026-09-26T02:20:27.223238+00:00"
 }
