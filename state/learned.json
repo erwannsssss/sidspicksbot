@@ -1,10 +1,10 @@
 {
  "trust": {
-  "mlb:total": 0.25,
   "mlb:total_f5": 0.25,
   "mlb:spread_f5": 0.25,
   "mlb:spread": 0.25,
   "mlb:team_total": 0.25,
+  "mlb:total": 0.25,
   "mlb:prop_ks": 0.25,
   "mlb:prop_hit": 0.25,
   "mlb:prop_hr": 0.25,
@@ -46,8 +46,8 @@
   "soccer:team_total": 0.25
  },
  "trust_league": {
-  "mlb:total|MLB": 0.39,
   "mlb:team_total|MLB": 0.41,
+  "mlb:total|MLB": 0.38,
   "mlb:prop_ks|MLB": 0.25,
   "mlb:prop_hit|MLB": 0.64,
   "mlb:prop_hr|MLB": 0.27,
@@ -57,17 +57,17 @@
  },
  "calib": {},
  "counts": {
-  "mlb:total": 66,
-  "mlb:total_f5": 52,
+  "mlb:total_f5": 48,
   "mlb:spread_f5": 24,
   "mlb:spread": 36,
   "mlb:team_total": 84,
+  "mlb:total": 60,
   "mlb:prop_ks": 102,
   "mlb:prop_hit": 332,
   "mlb:prop_hr": 140,
   "mlb:prop_tb": 528,
   "mlb:prop_hrr": 682,
-  "tennis:winner": 22,
+  "tennis:winner": 24,
   "mlb:winner": 4,
   "cfb:winner": 2,
   "cfb:spread_1h": 42,
@@ -103,17 +103,17 @@
   "soccer:team_total": 12
  },
  "games": {
-  "mlb:total": 4,
   "mlb:total_f5": 4,
   "mlb:spread_f5": 3,
   "mlb:spread": 3,
   "mlb:team_total": 3,
+  "mlb:total": 3,
   "mlb:prop_ks": 4,
   "mlb:prop_hit": 4,
   "mlb:prop_hr": 4,
   "mlb:prop_tb": 4,
   "mlb:prop_hrr": 4,
-  "tennis:winner": 11,
+  "tennis:winner": 12,
   "mlb:winner": 2,
   "cfb:winner": 1,
   "cfb:spread_1h": 1,
@@ -149,11 +149,11 @@
   "soccer:team_total": 1
  },
  "last": {
-  "mlb:total": "2026-09-26T02:15:00+00:00",
   "mlb:total_f5": "2026-09-26T02:15:00+00:00",
   "mlb:spread_f5": "2026-09-26T02:15:00+00:00",
   "mlb:spread": "2026-09-26T02:15:00+00:00",
   "mlb:team_total": "2026-09-26T02:15:00+00:00",
+  "mlb:total": "2026-09-26T02:15:00+00:00",
   "mlb:prop_ks": "2026-09-26T02:15:00+00:00",
   "mlb:prop_hit": "2026-09-26T02:15:00+00:00",
   "mlb:prop_hr": "2026-09-26T02:15:00+00:00",
@@ -194,5 +194,5 @@
   "soccer:correct_score": "2026-09-26T02:30:00+00:00",
   "soccer:team_total": "2026-09-26T02:30:00+00:00"
  },
- "updated": "2026-09-26T14:20:11.947635+00:00"
+ "updated": "2026-09-26T15:20:25.217010+00:00"
 }
