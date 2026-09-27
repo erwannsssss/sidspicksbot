@@ -5430,10 +5430,10 @@
   "made": "2026-09-24T00:27:54.732582+00:00",
   "expected_end": "2026-09-27T23:00:00+00:00",
   "start_est": "2026-09-27T17:00:00+00:00",
-  "status": "pending",
+  "status": "loss",
   "latest_price": 0.345,
   "close_price": 0.345,
-  "pnl": null,
+  "pnl": -0.52,
   "why": "Projected score margin +2.6 (home) and total 11.3. Model gives \"Over 10.5 1Q points scored\" 55%. Blended with the market that's 40% vs a 35% price.",
   "trend": 0.0,
   "new_market": false,
@@ -5441,7 +5441,8 @@
   "sharp_prob": null,
   "research": "",
   "sources": [],
-  "expert_lean": "none"
+  "expert_lean": "none",
+  "graded": "2026-09-27T18:23:12.243123+00:00"
  },
  {
   "id": "KXNFLTOTAL-26SEP27TENNYG-45",
@@ -7317,10 +7318,10 @@
   "made": "2026-09-26T00:26:59.454440+00:00",
   "expected_end": "2026-09-27T23:00:00+00:00",
   "start_est": "2026-09-27T17:00:00+00:00",
-  "status": "pending",
+  "status": "loss",
   "latest_price": 0.625,
   "close_price": 0.625,
-  "pnl": null,
+  "pnl": -0.51,
   "why": "Aaron Rodgers: 0.63 a game lately (last 12 games). Model gives \"Aaron Rodgers: under 2\" 87%. Blended with the market that's 72% vs a 67% price.",
   "trend": 0.0,
   "new_market": false,
@@ -7328,7 +7329,8 @@
   "sharp_prob": null,
   "research": "",
   "sources": [],
-  "expert_lean": "none"
+  "expert_lean": "none",
+  "graded": "2026-09-27T18:23:12.840633+00:00"
  },
  {
   "id": "KXNCAAFSPREAD-26SEP26WISPSU-PSU15",
@@ -8336,7 +8338,8 @@
   "sharp_prob": null,
   "research": "",
   "sources": [],
-  "expert_lean": "none"
+  "expert_lean": "none",
+  "prechecked": true
  },
  {
   "id": "KXATPMATCH-26SEP27MARJAC-JAC",
@@ -8763,8 +8766,8 @@
   "expected_end": "2026-09-27T22:10:00+00:00",
   "start_est": "2026-09-27T19:10:00+00:00",
   "status": "pending",
-  "latest_price": 0.495,
-  "close_price": 0.495,
+  "latest_price": 0.46,
+  "close_price": 0.46,
   "pnl": null,
   "why": "Parker Messick: 6.16 a game this season over 31 games (adjusted 6.03). Model gives \"Parker Messick: 4+\" 79%. Blended with the market that's 57% vs a 49% price.",
   "trend": 0.0,

@@ -1,6 +1,6 @@
 {
- "updated": "2026-09-27T17:23:48.264421+00:00",
- "status_note": "Last run found 0 new pick(s) and graded 0.",
+ "updated": "2026-09-27T18:27:28.143325+00:00",
+ "status_note": "Last run found 0 new pick(s) and graded 2.",
  "bankroll": 95.45,
  "protection": {
   "bankroll": 95.45,
@@ -131,7 +131,8 @@
    "sharp_prob": null,
    "research": "",
    "sources": [],
-   "expert_lean": "none"
+   "expert_lean": "none",
+   "prechecked": true
   }
  ],
  "history": [
@@ -2961,135 +2962,37 @@
  },
  "learning": {
   "groups": {
-   "cfb:total_3q": {
-    "finished": 487,
-    "games": 23,
+   "cfb:total": {
+    "finished": 2197,
+    "games": 69,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-09-27T03:00:00+00:00"
    },
-   "cfb:period_winner_4q": {
-    "finished": 92,
-    "games": 23,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-27T03:00:00+00:00"
-   },
-   "cfb:total_4q": {
-    "finished": 504,
-    "games": 23,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-27T03:00:00+00:00"
-   },
-   "cfb:team_total": {
-    "finished": 1888,
-    "games": 41,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-27T03:00:00+00:00"
-   },
-   "cfb:winner": {
-    "finished": 142,
-    "games": 71,
+   "cfb:spread": {
+    "finished": 2950,
+    "games": 69,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-09-27T03:00:00+00:00"
    },
    "cfb:spread_1h": {
-    "finished": 1690,
-    "games": 40,
+    "finished": 1560,
+    "games": 37,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-09-27T03:00:00+00:00"
    },
    "cfb:total_1h": {
-    "finished": 1112,
-    "games": 40,
-    "trust": 0.44,
-    "confidence_fix": false,
-    "last": "2026-09-27T03:00:00+00:00"
-   },
-   "cfb:spread": {
-    "finished": 3326,
-    "games": 79,
+    "finished": 1026,
+    "games": 37,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-09-27T03:00:00+00:00"
    },
-   "cfb:total": {
-    "finished": 2472,
-    "games": 79,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-27T03:00:00+00:00"
-   },
-   "cfb:period_winner_2h": {
-    "finished": 88,
-    "games": 22,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-27T03:00:00+00:00"
-   },
-   "cfb:spread_4q": {
-    "finished": 462,
-    "games": 22,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-27T03:00:00+00:00"
-   },
-   "cfb:period_winner_1q": {
-    "finished": 88,
-    "games": 22,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-27T03:00:00+00:00"
-   },
-   "cfb:spread_1q": {
-    "finished": 460,
-    "games": 22,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-27T03:00:00+00:00"
-   },
-   "cfb:total_1q": {
-    "finished": 478,
-    "games": 22,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-27T03:00:00+00:00"
-   },
-   "cfb:period_winner_2q": {
-    "finished": 88,
-    "games": 22,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-27T03:00:00+00:00"
-   },
-   "cfb:spread_2q": {
-    "finished": 482,
-    "games": 22,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-27T03:00:00+00:00"
-   },
-   "cfb:total_2q": {
-    "finished": 482,
-    "games": 22,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-27T03:00:00+00:00"
-   },
-   "cfb:period_winner_3q": {
-    "finished": 88,
-    "games": 22,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-27T03:00:00+00:00"
-   },
-   "cfb:spread_3q": {
-    "finished": 464,
-    "games": 22,
+   "cfb:team_total": {
+    "finished": 1740,
+    "games": 37,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-09-27T03:00:00+00:00"
@@ -3171,9 +3074,107 @@
     "confidence_fix": false,
     "last": "2026-09-27T01:40:00+00:00"
    },
+   "cfb:winner": {
+    "finished": 124,
+    "games": 62,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-27T03:00:00+00:00"
+   },
+   "cfb:period_winner_2h": {
+    "finished": 84,
+    "games": 21,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-27T03:00:00+00:00"
+   },
+   "cfb:period_winner_1q": {
+    "finished": 84,
+    "games": 21,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-27T03:00:00+00:00"
+   },
+   "cfb:spread_1q": {
+    "finished": 432,
+    "games": 21,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-27T03:00:00+00:00"
+   },
+   "cfb:total_1q": {
+    "finished": 456,
+    "games": 21,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-27T03:00:00+00:00"
+   },
+   "cfb:period_winner_2q": {
+    "finished": 84,
+    "games": 21,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-27T03:00:00+00:00"
+   },
+   "cfb:spread_2q": {
+    "finished": 452,
+    "games": 21,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-27T03:00:00+00:00"
+   },
+   "cfb:total_2q": {
+    "finished": 460,
+    "games": 21,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-27T03:00:00+00:00"
+   },
+   "cfb:period_winner_3q": {
+    "finished": 84,
+    "games": 21,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-27T03:00:00+00:00"
+   },
+   "cfb:spread_3q": {
+    "finished": 436,
+    "games": 21,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-27T03:00:00+00:00"
+   },
+   "cfb:total_3q": {
+    "finished": 458,
+    "games": 21,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-27T03:00:00+00:00"
+   },
+   "cfb:period_winner_4q": {
+    "finished": 84,
+    "games": 21,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-27T03:00:00+00:00"
+   },
+   "cfb:spread_4q": {
+    "finished": 434,
+    "games": 21,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-27T03:00:00+00:00"
+   },
+   "cfb:total_4q": {
+    "finished": 460,
+    "games": 21,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-27T03:00:00+00:00"
+   },
    "tennis:winner": {
-    "finished": 58,
-    "games": 29,
+    "finished": 60,
+    "games": 30,
     "trust": 0.5,
     "confidence_fix": false,
     "last": "2026-09-27T13:00:00+00:00"
@@ -3271,25 +3272,65 @@
    }
   },
   "price_trend": {
+   "flat": {
+    "markets": 13549,
+    "hit_vs_price": 0.0
+   },
    "rising": {
-    "markets": 2765,
-    "hit_vs_price": 0.001
+    "markets": 2537,
+    "hit_vs_price": 0.006
    },
    "falling": {
-    "markets": 2774,
-    "hit_vs_price": -0.003
-   },
-   "flat": {
-    "markets": 14369,
-    "hit_vs_price": 0.0
+    "markets": 2538,
+    "hit_vs_price": -0.008
    }
   }
  },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "tracker": {
-  "tracked": 87724,
+  "tracked": 88484,
   "series": 3916,
   "movers": [
+   {
+    "ticker": "KXNFLRECYDS-26SEP27CINPIT-PITRWILSON14-60",
+    "series": "KXNFLRECYDS",
+    "title": "Roman Wilson: 60+",
+    "move": 0.89,
+    "price": 0.975,
+    "close": "2026-09-29T17:00:00+00:00"
+   },
+   {
+    "ticker": "KXNFLRSHYDS-26SEP27KCMIA-MIAOGORDON0-25",
+    "series": "KXNFLRSHYDS",
+    "title": "Ollie Gordon II: 25+",
+    "move": 0.87,
+    "price": 0.995,
+    "close": "2026-09-29T17:00:00+00:00"
+   },
+   {
+    "ticker": "KXNFLRECYDS-26SEP27CINPIT-PITRWILSON14-50",
+    "series": "KXNFLRECYDS",
+    "title": "Roman Wilson: 50+",
+    "move": 0.85,
+    "price": 0.995,
+    "close": "2026-09-29T17:00:00+00:00"
+   },
+   {
+    "ticker": "KXNFLRECYDS-26SEP27KCMIA-MIACBELL18-50",
+    "series": "KXNFLRECYDS",
+    "title": "Chris Bell: 50+",
+    "move": 0.85,
+    "price": 0.995,
+    "close": "2026-09-29T17:00:00+00:00"
+   },
+   {
+    "ticker": "KXNFLRECYDS-26SEP27CARCLE-CARTTREMBLE82-25",
+    "series": "KXNFLRECYDS",
+    "title": "Tommy Tremble: 25+",
+    "move": 0.845,
+    "price": 0.975,
+    "close": "2026-09-29T17:00:00+00:00"
+   },
    {
     "ticker": "KXCHINAAI-26SEP28-ALIB",
     "series": "KXCHINAAI",
@@ -3307,6 +3348,30 @@
     "close": "2026-09-28T14:00:00+00:00"
    },
    {
+    "ticker": "KXNFLRECYDS-26SEP27SEAWAS-SEAABARNER88-40",
+    "series": "KXNFLRECYDS",
+    "title": "AJ Barner: 40+",
+    "move": 0.795,
+    "price": 0.995,
+    "close": "2026-09-29T17:00:00+00:00"
+   },
+   {
+    "ticker": "KXNFLRSHYDS-26SEP27KCMIA-MIAOGORDON0-20",
+    "series": "KXNFLRSHYDS",
+    "title": "Ollie Gordon II: 20+",
+    "move": 0.795,
+    "price": 0.995,
+    "close": "2026-09-29T17:00:00+00:00"
+   },
+   {
+    "ticker": "KXNFLRSHYDS-26SEP27LACBUF-LACKMITCHELL34-30",
+    "series": "KXNFLRSHYDS",
+    "title": "Keaton Mitchell: 30+",
+    "move": 0.785,
+    "price": 0.985,
+    "close": "2026-09-29T17:00:00+00:00"
+   },
+   {
     "ticker": "KXNFL1QTOTAL-26SEP27CINPIT-14",
     "series": "KXNFL1QTOTAL",
     "title": "Over 13.5 points",
@@ -3315,128 +3380,64 @@
     "close": "2026-09-29T17:00:00+00:00"
    },
    {
-    "ticker": "KXCOPADELREYSCORE-26SEP26ATLBAZ-ATL2BAZ0",
-    "series": "KXCOPADELREYSCORE",
-    "title": "Atletico Calatayud wins 2-0",
-    "move": 0.76,
-    "price": 0.995,
-    "close": "2026-09-28T22:00:00+00:00"
-   },
-   {
-    "ticker": "KXNFL1QTOTAL-26SEP27CINPIT-11",
-    "series": "KXNFL1QTOTAL",
-    "title": "Over 10.5 points",
-    "move": 0.72,
+    "ticker": "KXNFLRECYDS-26SEP27KCMIA-MIACBELL18-40",
+    "series": "KXNFLRECYDS",
+    "title": "Chris Bell: 40+",
+    "move": 0.78,
     "price": 0.995,
     "close": "2026-09-29T17:00:00+00:00"
    },
    {
-    "ticker": "KXNFL1QBTTS-26SEP27CINPIT-Y",
-    "series": "KXNFL1QBTTS",
-    "title": "Both teams score",
-    "move": 0.635,
+    "ticker": "KXNFLPASSTDS-26SEP27SEAWAS-WASMMARIOTA8-2",
+    "series": "KXNFLPASSTDS",
+    "title": "Marcus Mariota: 2+",
+    "move": 0.77,
     "price": 0.995,
     "close": "2026-09-29T17:00:00+00:00"
    },
    {
-    "ticker": "KXNFL1Q-26SEP27NYJDET-TIE",
-    "series": "KXNFL1Q",
-    "title": "Tie",
-    "move": 0.63,
-    "price": 0.825,
-    "close": "2026-09-29T17:00:00+00:00"
-   },
-   {
-    "ticker": "KXAFCONTEAMTOTAL-26SEP25NGRMAD-MAD1",
-    "series": "KXAFCONTEAMTOTAL",
-    "title": "Madagascar over 0.5 goals",
-    "move": 0.625,
-    "price": 0.995,
-    "close": "2026-09-27T22:00:00+00:00"
-   },
-   {
-    "ticker": "KXAFCONTEAMTOTAL-26SEP25NIGLES-NIG2",
-    "series": "KXAFCONTEAMTOTAL",
-    "title": "Niger over 1.5 goals",
-    "move": 0.56,
-    "price": 0.995,
-    "close": "2026-09-27T21:00:00+00:00"
-   },
-   {
-    "ticker": "KXNFL1QTOTAL-26SEP27CINPIT-8",
-    "series": "KXNFL1QTOTAL",
-    "title": "Over 7.5 points",
-    "move": 0.535,
+    "ticker": "KXNFLRECYDS-26SEP27CINPIT-PITRWILSON14-40",
+    "series": "KXNFLRECYDS",
+    "title": "Roman Wilson: 40+",
+    "move": 0.765,
     "price": 0.995,
     "close": "2026-09-29T17:00:00+00:00"
    },
    {
-    "ticker": "KXBRASILEIROBGAME-26SEP26GGOGOI-GOI",
-    "series": "KXBRASILEIROBGAME",
-    "title": "AC Goianiense",
-    "move": 0.53,
-    "price": 0.84,
-    "close": "2026-09-28T21:30:00+00:00"
-   },
-   {
-    "ticker": "KXNFL1QSPREAD-26SEP27LACBUF-LAC4",
-    "series": "KXNFL1QSPREAD",
-    "title": "LA Chargers wins by over 3.5 points",
-    "move": 0.53,
-    "price": 0.715,
+    "ticker": "KXNFLRSHYDS-26SEP27KCMIA-MIAOGORDON0-30",
+    "series": "KXNFLRSHYDS",
+    "title": "Ollie Gordon II: 30+",
+    "move": 0.765,
+    "price": 0.85,
     "close": "2026-09-29T17:00:00+00:00"
-   },
-   {
-    "ticker": "KXNFL1QTOTAL-26SEP27NYJDET-8",
-    "series": "KXNFL1QTOTAL",
-    "title": "Over 7.5 points",
-    "move": -0.53,
-    "price": 0.02,
-    "close": "2026-09-29T17:00:00+00:00"
-   },
-   {
-    "ticker": "KXNFL1QTOTAL-26SEP27CARCLE-4",
-    "series": "KXNFL1QTOTAL",
-    "title": "Over 3.5 points",
-    "move": -0.53,
-    "price": 0.215,
-    "close": "2026-09-29T17:00:00+00:00"
-   },
-   {
-    "ticker": "KXNCAAFTOTAL-26SEP25CLEMCAL-44",
-    "series": "KXNCAAFTOTAL",
-    "title": "Over 43.5 points scored",
-    "move": -0.52,
-    "price": 0.16,
-    "close": "2026-09-28T02:30:00+00:00"
    }
   ]
  },
  "models": {
   "tennis": {
-   "matches": 20049,
-   "training_rows": 13767,
+   "matches": 20057,
+   "training_rows": 13773,
    "holdout": {
     "from": "2026-08-23",
     "matches": 2066,
-    "elo_log_loss": 0.6627,
-    "model_log_loss": 0.6601,
-    "elo_accuracy": 0.605,
+    "elo_log_loss": 0.6628,
+    "model_log_loss": 0.66,
+    "elo_accuracy": 0.604,
     "model_accuracy": 0.61
    },
    "using": "full",
    "weights": {
-    "elo": 2.027,
+    "elo": 2.025,
     "dominance": 0.0,
     "rank": 0.0,
     "h2h": 0.457,
-    "form": -0.54,
-    "fatigue_games": -0.214,
-    "fatigue_matches": 0.084,
+    "form": -0.538,
+    "fatigue_games": -0.215,
+    "fatigue_matches": 0.085,
     "rest": 0.013,
-    "travel": 0.14,
+    "travel": 0.141,
     "altitude": 0.0,
-    "best_of_5": 0.591
+    "best_of_5": 0.592
    },
    "sport": "Tennis",
    "label": "Tennis",
@@ -3514,31 +3515,31 @@
    "holdout": {
     "matches": 652,
     "rating_log_loss": 0.6301,
-    "model_log_loss": 0.6257,
+    "model_log_loss": 0.6246,
     "rating_accuracy": 0.653,
-    "model_accuracy": 0.643
+    "model_accuracy": 0.644
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6045,
-    "model_log_loss": 0.6257,
+    "model_log_loss": 0.6246,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 652
    },
    "backtest": {
     "bets": 17,
-    "wins": 5,
-    "units": -10.4,
-    "roi": -0.334
+    "wins": 6,
+    "units": -4.5,
+    "roi": -0.147
    },
    "weights": {
     "home_field": 0.251,
-    "rating": 1.52,
-    "rest": 0.235,
-    "point_diff_form": 0.223,
-    "qb_change": 0.313,
-    "epa": 0.167
+    "rating": 1.528,
+    "rest": 0.24,
+    "point_diff_form": 0.227,
+    "qb_change": 0.276,
+    "epa": 0.17
    },
    "matches": 4396,
    "totals": {
@@ -3623,15 +3624,15 @@
    "clv_picks": 14
   },
   "watch": {
-   "picks": 151,
+   "picks": 153,
    "wins": 59,
-   "losses": 92,
-   "units": -4.73,
-   "staked": 75.5,
-   "roi": -0.063,
-   "beat_price": 0.252,
-   "clv": -0.0093,
-   "clv_picks": 145
+   "losses": 94,
+   "units": -5.76,
+   "staked": 76.5,
+   "roi": -0.075,
+   "beat_price": 0.248,
+   "clv": -0.0095,
+   "clv_picks": 147
   }
  },
  "by_expert_lean": {
@@ -3693,15 +3694,15 @@
    "clv_picks": 3
   },
   "W": {
-   "picks": 151,
+   "picks": 153,
    "wins": 59,
-   "losses": 92,
-   "units": -4.73,
-   "staked": 75.5,
-   "roi": -0.063,
-   "beat_price": 0.252,
-   "clv": -0.0093,
-   "clv_picks": 145
+   "losses": 94,
+   "units": -5.76,
+   "staked": 76.5,
+   "roi": -0.075,
+   "beat_price": 0.248,
+   "clv": -0.0095,
+   "clv_picks": 147
   }
  },
  "watch_open": [
@@ -3893,45 +3894,6 @@
    "pnl": null,
    "why": "Projected score margin -4.2 (home) and total 49.1. Model gives \"HOU Texans over 24.5 points scored\" 59%. Blended with the market that's 42% vs a 38% price.",
    "trend": -0.01,
-   "new_market": false,
-   "trust": 0.25,
-   "sharp_prob": null,
-   "research": "",
-   "sources": [],
-   "expert_lean": "none"
-  },
-  {
-   "id": "KXNFL1QTOTAL-26SEP27NYJDET-11",
-   "ticker": "KXNFL1QTOTAL-26SEP27NYJDET-11",
-   "side": "yes",
-   "event": "KXNFL1QTOTAL-26SEP27NYJDET",
-   "game": "26SEP27NYJDET",
-   "sport": "Football",
-   "model_key": "nfl",
-   "mtype": "total_1q",
-   "line": 10.5,
-   "tour": "NFL",
-   "tournament": "NYJ at DET",
-   "matchup": "NYJ at DET",
-   "surface": "",
-   "pick": "Over 10.5 1Q points scored",
-   "opponent": "",
-   "market": "Over 10.5 1Q points scored",
-   "price": 0.35,
-   "model_prob": 0.446,
-   "raw_prob": 0.547,
-   "edge": 0.08,
-   "tier": "W",
-   "units": 0.5,
-   "made": "2026-09-24T00:27:54.732582+00:00",
-   "expected_end": "2026-09-27T23:00:00+00:00",
-   "start_est": "2026-09-27T17:00:00+00:00",
-   "status": "pending",
-   "latest_price": 0.345,
-   "close_price": 0.345,
-   "pnl": null,
-   "why": "Projected score margin +2.6 (home) and total 11.3. Model gives \"Over 10.5 1Q points scored\" 55%. Blended with the market that's 40% vs a 35% price.",
-   "trend": 0.0,
    "new_market": false,
    "trust": 0.25,
    "sharp_prob": null,
@@ -4205,45 +4167,6 @@
    "pnl": null,
    "why": "Terrance Ferguson: 1.73 a game lately (last 12 games). Model gives \"Terrance Ferguson: under 6\" 99%. Blended with the market that's 81% vs a 76% price. Price down 6\u00a2 in the last 12 hours.",
    "trend": -0.055,
-   "new_market": false,
-   "trust": 0.25,
-   "sharp_prob": null,
-   "research": "",
-   "sources": [],
-   "expert_lean": "none"
-  },
-  {
-   "id": "KXNFLPASSTDS-26SEP27CINPIT-PITARODGERS8-2:no",
-   "ticker": "KXNFLPASSTDS-26SEP27CINPIT-PITARODGERS8-2",
-   "side": "no",
-   "event": "KXNFLPASSTDS-26SEP27CINPIT",
-   "game": "26SEP27CINPIT",
-   "sport": "Football",
-   "model_key": "nfl",
-   "mtype": "prop_passtds",
-   "line": 1.5,
-   "tour": "NFL",
-   "tournament": "CIN at PIT",
-   "matchup": "CIN at PIT",
-   "surface": "",
-   "pick": "Aaron Rodgers: under 2",
-   "opponent": "",
-   "market": "Aaron Rodgers: under 2",
-   "price": 0.67,
-   "model_prob": 0.767,
-   "raw_prob": 0.87,
-   "edge": 0.082,
-   "tier": "W",
-   "units": 0.5,
-   "made": "2026-09-26T00:26:59.454440+00:00",
-   "expected_end": "2026-09-27T23:00:00+00:00",
-   "start_est": "2026-09-27T17:00:00+00:00",
-   "status": "pending",
-   "latest_price": 0.625,
-   "close_price": 0.625,
-   "pnl": null,
-   "why": "Aaron Rodgers: 0.63 a game lately (last 12 games). Model gives \"Aaron Rodgers: under 2\" 87%. Blended with the market that's 72% vs a 67% price.",
-   "trend": 0.0,
    "new_market": false,
    "trust": 0.25,
    "sharp_prob": null,
@@ -4633,8 +4556,8 @@
    "expected_end": "2026-09-27T22:10:00+00:00",
    "start_est": "2026-09-27T19:10:00+00:00",
    "status": "pending",
-   "latest_price": 0.495,
-   "close_price": 0.495,
+   "latest_price": 0.46,
+   "close_price": 0.46,
    "pnl": null,
    "why": "Parker Messick: 6.16 a game this season over 31 games (adjusted 6.03). Model gives \"Parker Messick: 4+\" 79%. Blended with the market that's 57% vs a 49% price.",
    "trend": 0.0,
@@ -4726,6 +4649,86 @@
   }
  ],
  "watch_history": [
+  {
+   "id": "KXNFLPASSTDS-26SEP27CINPIT-PITARODGERS8-2:no",
+   "ticker": "KXNFLPASSTDS-26SEP27CINPIT-PITARODGERS8-2",
+   "side": "no",
+   "event": "KXNFLPASSTDS-26SEP27CINPIT",
+   "game": "26SEP27CINPIT",
+   "sport": "Football",
+   "model_key": "nfl",
+   "mtype": "prop_passtds",
+   "line": 1.5,
+   "tour": "NFL",
+   "tournament": "CIN at PIT",
+   "matchup": "CIN at PIT",
+   "surface": "",
+   "pick": "Aaron Rodgers: under 2",
+   "opponent": "",
+   "market": "Aaron Rodgers: under 2",
+   "price": 0.67,
+   "model_prob": 0.767,
+   "raw_prob": 0.87,
+   "edge": 0.082,
+   "tier": "W",
+   "units": 0.5,
+   "made": "2026-09-26T00:26:59.454440+00:00",
+   "expected_end": "2026-09-27T23:00:00+00:00",
+   "start_est": "2026-09-27T17:00:00+00:00",
+   "status": "loss",
+   "latest_price": 0.625,
+   "close_price": 0.625,
+   "pnl": -0.51,
+   "why": "Aaron Rodgers: 0.63 a game lately (last 12 games). Model gives \"Aaron Rodgers: under 2\" 87%. Blended with the market that's 72% vs a 67% price.",
+   "trend": 0.0,
+   "new_market": false,
+   "trust": 0.25,
+   "sharp_prob": null,
+   "research": "",
+   "sources": [],
+   "expert_lean": "none",
+   "graded": "2026-09-27T18:23:12.840633+00:00"
+  },
+  {
+   "id": "KXNFL1QTOTAL-26SEP27NYJDET-11",
+   "ticker": "KXNFL1QTOTAL-26SEP27NYJDET-11",
+   "side": "yes",
+   "event": "KXNFL1QTOTAL-26SEP27NYJDET",
+   "game": "26SEP27NYJDET",
+   "sport": "Football",
+   "model_key": "nfl",
+   "mtype": "total_1q",
+   "line": 10.5,
+   "tour": "NFL",
+   "tournament": "NYJ at DET",
+   "matchup": "NYJ at DET",
+   "surface": "",
+   "pick": "Over 10.5 1Q points scored",
+   "opponent": "",
+   "market": "Over 10.5 1Q points scored",
+   "price": 0.35,
+   "model_prob": 0.446,
+   "raw_prob": 0.547,
+   "edge": 0.08,
+   "tier": "W",
+   "units": 0.5,
+   "made": "2026-09-24T00:27:54.732582+00:00",
+   "expected_end": "2026-09-27T23:00:00+00:00",
+   "start_est": "2026-09-27T17:00:00+00:00",
+   "status": "loss",
+   "latest_price": 0.345,
+   "close_price": 0.345,
+   "pnl": -0.52,
+   "why": "Projected score margin +2.6 (home) and total 11.3. Model gives \"Over 10.5 1Q points scored\" 55%. Blended with the market that's 40% vs a 35% price.",
+   "trend": 0.0,
+   "new_market": false,
+   "trust": 0.25,
+   "sharp_prob": null,
+   "research": "",
+   "sources": [],
+   "expert_lean": "none",
+   "graded": "2026-09-27T18:23:12.243123+00:00"
+  },
   {
    "id": "KXWTACHALLENGERMATCH-26SEP27MARGRA-MAR",
    "ticker": "KXWTACHALLENGERMATCH-26SEP27MARGRA-MAR",
@@ -11621,6 +11624,10 @@
  ],
  "changelog": [
   {
+   "date": "2026-09-27",
+   "change": "cfb:total_1h: trust in the model vs the market moved from 44% to 25% after 1026 finished markets"
+  },
+  {
    "date": "2026-09-23",
    "change": "tennis:winner: trust in the model vs the market moved from 37% to 50% after 94 finished markets"
   },
@@ -11735,10 +11742,6 @@
   {
    "date": "2026-09-20",
    "change": "cfb:spread_1h: trust in the model vs the market moved from 40% to 25% after 1134 finished markets"
-  },
-  {
-   "date": "2026-09-20",
-   "change": "mlb:team_total: trust in the model vs the market moved from 25% to 90% after 278 finished markets"
   }
  ]
 }
