@@ -1,6 +1,6 @@
 {
- "updated": "2026-09-27T15:24:49.032322+00:00",
- "status_note": "Last run found 0 new pick(s) and graded 0.",
+ "updated": "2026-09-27T16:24:43.588235+00:00",
+ "status_note": "Last run found 0 new pick(s) and graded 1.",
  "bankroll": 95.45,
  "protection": {
   "bankroll": 95.45,
@@ -121,8 +121,8 @@
    "expected_end": "2026-09-27T22:05:00+00:00",
    "start_est": "2026-09-27T19:05:00+00:00",
    "status": "pending",
-   "latest_price": 0.305,
-   "close_price": 0.305,
+   "latest_price": 0.31,
+   "close_price": 0.31,
    "pnl": null,
    "why": "Ratings 1450 vs 1578 with home field. Run differential last 10: -9 vs +23. Model gives San Francisco Giants 41%. Blended with the market that's 33% vs a 27% price.",
    "trend": 0.002,
@@ -2961,15 +2961,8 @@
  },
  "learning": {
   "groups": {
-   "mlb:prop_ks": {
-    "finished": 267,
-    "games": 11,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-27T01:40:00+00:00"
-   },
    "mlb:prop_hit": {
-    "finished": 1058,
+    "finished": 1045,
     "games": 12,
     "trust": 0.25,
     "confidence_fix": false,
@@ -3004,11 +2997,11 @@
     "last": "2026-09-27T01:40:00+00:00"
    },
    "tennis:winner": {
-    "finished": 52,
-    "games": 26,
+    "finished": 60,
+    "games": 30,
     "trust": 0.5,
     "confidence_fix": false,
-    "last": "2026-09-27T12:00:00+00:00"
+    "last": "2026-09-27T13:00:00+00:00"
    },
    "cfb:winner": {
     "finished": 146,
@@ -3178,6 +3171,13 @@
     "confidence_fix": false,
     "last": "2026-09-27T01:40:00+00:00"
    },
+   "mlb:prop_ks": {
+    "finished": 256,
+    "games": 10,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-27T01:40:00+00:00"
+   },
    "soccer:winner": {
     "finished": 51,
     "games": 17,
@@ -3271,17 +3271,17 @@
    }
   },
   "price_trend": {
-   "flat": {
-    "markets": 14737,
-    "hit_vs_price": 0.0
-   },
    "falling": {
-    "markets": 2869,
+    "markets": 2866,
     "hit_vs_price": -0.004
    },
+   "flat": {
+    "markets": 14728,
+    "hit_vs_price": 0.0
+   },
    "rising": {
-    "markets": 2856,
-    "hit_vs_price": 0.001
+    "markets": 2852,
+    "hit_vs_price": 0.002
    }
   }
  },
@@ -3315,14 +3315,6 @@
     "close": "2026-09-28T22:00:00+00:00"
    },
    {
-    "ticker": "KXAFCONBTTS-26SEP25NGRMAD-BTTS",
-    "series": "KXAFCONBTTS",
-    "title": "Both Teams To Score",
-    "move": 0.635,
-    "price": 0.915,
-    "close": "2026-09-27T16:00:00+00:00"
-   },
-   {
     "ticker": "KXCS2TOTALMAPS-26SEP251300WCNRG-3",
     "series": "KXCS2TOTALMAPS",
     "title": "Over 2.5 maps",
@@ -3337,22 +3329,6 @@
     "move": 0.625,
     "price": 0.995,
     "close": "2026-09-27T22:00:00+00:00"
-   },
-   {
-    "ticker": "KXAFCON1H-26SEP25MAWSSD-TIE",
-    "series": "KXAFCON1H",
-    "title": "Tie 1st Half",
-    "move": -0.61,
-    "price": 0.08,
-    "close": "2026-09-27T16:00:00+00:00"
-   },
-   {
-    "ticker": "KXAFCON1H-26SEP25MAWSSD-MAW",
-    "series": "KXAFCON1H",
-    "title": "Malawi wins 1st Half",
-    "move": 0.585,
-    "price": 0.905,
-    "close": "2026-09-27T16:00:00+00:00"
    },
    {
     "ticker": "KXAFCONTEAMTOTAL-26SEP25NIGLES-NIG2",
@@ -3387,14 +3363,6 @@
     "close": "2026-09-27T17:00:00+00:00"
    },
    {
-    "ticker": "KXAFCONTOTAL-26SEP25NGRMAD-1",
-    "series": "KXAFCONTOTAL",
-    "title": "Over 0.5 goals scored",
-    "move": 0.505,
-    "price": 0.995,
-    "close": "2026-09-27T16:00:00+00:00"
-   },
-   {
     "ticker": "KXNCAAFTEAMTOTAL-26SEP25CLEMCAL-CAL20",
     "series": "KXNCAAFTEAMTOTAL",
     "title": "California over 19.5 points scored",
@@ -3409,34 +3377,66 @@
     "move": 0.5,
     "price": 0.995,
     "close": "2026-09-27T22:00:00+00:00"
+   },
+   {
+    "ticker": "KXAFCONTEAMTOTAL-26SEP25RWALBR-RWA1",
+    "series": "KXAFCONTEAMTOTAL",
+    "title": "Rwanda over 0.5 goals",
+    "move": 0.5,
+    "price": 0.995,
+    "close": "2026-09-27T22:00:00+00:00"
+   },
+   {
+    "ticker": "KXAFCONTEAMTOTAL-26SEP25MAWSSD-MAW1",
+    "series": "KXAFCONTEAMTOTAL",
+    "title": "Malawi over 0.5 goals",
+    "move": 0.5,
+    "price": 0.995,
+    "close": "2026-09-27T22:00:00+00:00"
+   },
+   {
+    "ticker": "KXAFCONTEAMTOTAL-26SEP25GAMSOM-GAM1",
+    "series": "KXAFCONTEAMTOTAL",
+    "title": "Gambia over 0.5 goals",
+    "move": 0.5,
+    "price": 0.995,
+    "close": "2026-09-27T22:00:00+00:00"
+   },
+   {
+    "ticker": "KXEFLL1TOTAL-26SEP26NOCBLP-1",
+    "series": "KXEFLL1TOTAL",
+    "title": "Over 0.5 goals scored",
+    "move": 0.495,
+    "price": 0.995,
+    "close": "2026-09-28T14:00:00+00:00"
    }
   ]
  },
  "models": {
   "tennis": {
-   "matches": 20034,
-   "training_rows": 13759,
+   "matches": 20044,
+   "training_rows": 13766,
    "holdout": {
     "from": "2026-08-23",
-    "matches": 2064,
-    "elo_log_loss": 0.6623,
-    "model_log_loss": 0.6599,
-    "elo_accuracy": 0.606,
-    "model_accuracy": 0.611
+    "matches": 2065,
+    "elo_log_loss": 0.6627,
+    "model_log_loss": 0.66,
+    "elo_accuracy": 0.605,
+    "model_accuracy": 0.61
    },
    "using": "full",
    "weights": {
-    "elo": 2.03,
+    "elo": 2.029,
     "dominance": 0.0,
     "rank": 0.0,
     "h2h": 0.457,
-    "form": -0.542,
+    "form": -0.543,
     "fatigue_games": -0.214,
-    "fatigue_matches": 0.085,
-    "rest": 0.014,
-    "travel": 0.139,
+    "fatigue_matches": 0.084,
+    "rest": 0.013,
+    "travel": 0.14,
     "altitude": 0.0,
-    "best_of_5": 0.589
+    "best_of_5": 0.591
    },
    "sport": "Tennis",
    "label": "Tennis",
@@ -3514,31 +3514,31 @@
    "holdout": {
     "matches": 652,
     "rating_log_loss": 0.6301,
-    "model_log_loss": 0.6261,
+    "model_log_loss": 0.6241,
     "rating_accuracy": 0.653,
-    "model_accuracy": 0.643
+    "model_accuracy": 0.646
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6045,
-    "model_log_loss": 0.6261,
+    "model_log_loss": 0.6241,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 652
    },
    "backtest": {
-    "bets": 16,
+    "bets": 15,
     "wins": 4,
-    "units": -13.5,
-    "roi": -0.458
+    "units": -12.0,
+    "roi": -0.429
    },
    "weights": {
-    "home_field": 0.252,
-    "rating": 1.525,
-    "rest": 0.235,
-    "point_diff_form": 0.223,
-    "qb_change": 0.305,
-    "epa": 0.17
+    "home_field": 0.251,
+    "rating": 1.526,
+    "rest": 0.238,
+    "point_diff_form": 0.225,
+    "qb_change": 0.323,
+    "epa": 0.167
    },
    "matches": 4396,
    "totals": {
@@ -3552,37 +3552,37 @@
    "trust": 0.25
   },
   "cfb": {
-   "training_rows": 28279,
+   "training_rows": 28312,
    "holdout": {
-    "matches": 4242,
-    "rating_log_loss": 0.4963,
-    "model_log_loss": 0.4955,
-    "rating_accuracy": 0.753,
-    "model_accuracy": 0.753
+    "matches": 4247,
+    "rating_log_loss": 0.4971,
+    "model_log_loss": 0.4963,
+    "rating_accuracy": 0.752,
+    "model_accuracy": 0.752
    },
    "using": "rating",
    "market": {
-    "market_log_loss": 0.4872,
-    "model_log_loss": 0.5567,
+    "market_log_loss": 0.4891,
+    "model_log_loss": 0.5594,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
-    "matches": 1074
+    "matches": 1086
    },
    "backtest": {
-    "bets": 70,
+    "bets": 73,
     "wins": 32,
-    "units": 44.7,
-    "roi": 0.321
+    "units": 39.7,
+    "roi": 0.275
    },
    "weights": {
-    "home_field": 0.366,
-    "rating": 3.585,
+    "home_field": 0.364,
+    "rating": 3.584,
     "rest": 0.0,
     "point_diff_form": 0.0,
     "qb_change": 0.0,
     "epa": 0.0
    },
-   "matches": 29359,
+   "matches": 29393,
    "sport": "Football",
    "label": "College football",
    "trust": 0.25
@@ -3623,15 +3623,15 @@
    "clv_picks": 14
   },
   "watch": {
-   "picks": 150,
+   "picks": 151,
    "wins": 59,
-   "losses": 91,
-   "units": -4.21,
-   "staked": 75.0,
-   "roi": -0.056,
-   "beat_price": 0.253,
+   "losses": 92,
+   "units": -4.73,
+   "staked": 75.5,
+   "roi": -0.063,
+   "beat_price": 0.252,
    "clv": -0.0093,
-   "clv_picks": 144
+   "clv_picks": 145
   }
  },
  "by_expert_lean": {
@@ -3693,15 +3693,15 @@
    "clv_picks": 3
   },
   "W": {
-   "picks": 150,
+   "picks": 151,
    "wins": 59,
-   "losses": 91,
-   "units": -4.21,
-   "staked": 75.0,
-   "roi": -0.056,
-   "beat_price": 0.253,
+   "losses": 92,
+   "units": -4.73,
+   "staked": 75.5,
+   "roi": -0.063,
+   "beat_price": 0.252,
    "clv": -0.0093,
-   "clv_picks": 144
+   "clv_picks": 145
   }
  },
  "watch_open": [
@@ -3849,8 +3849,8 @@
    "expected_end": "2026-09-28T02:05:00+00:00",
    "start_est": "2026-09-27T20:05:00+00:00",
    "status": "pending",
-   "latest_price": 0.545,
-   "close_price": 0.545,
+   "latest_price": 0.555,
+   "close_price": 0.555,
    "pnl": null,
    "why": "Jordan Addison: 22 a game lately (last 12 games). Model gives \"Jordan Addison: under 40\" 80%. Blended with the market that's 62% vs a 58% price. Price down 2\u00a2 in the last 12 hours.",
    "trend": -0.025,
@@ -3888,8 +3888,8 @@
    "expected_end": "2026-09-27T23:00:00+00:00",
    "start_est": "2026-09-27T17:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.36,
-   "close_price": 0.36,
+   "latest_price": 0.355,
+   "close_price": 0.355,
    "pnl": null,
    "why": "Projected score margin -4.2 (home) and total 49.1. Model gives \"HOU Texans over 24.5 points scored\" 59%. Blended with the market that's 42% vs a 38% price.",
    "trend": -0.01,
@@ -3966,8 +3966,8 @@
    "expected_end": "2026-09-27T23:00:00+00:00",
    "start_est": "2026-09-27T17:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.295,
-   "close_price": 0.295,
+   "latest_price": 0.305,
+   "close_price": 0.305,
    "pnl": null,
    "why": "Projected score margin +7.0 (home) and total 45.3. Forecast 56F, wind 13 mph, rain 0.7 mm. Model gives \"Over 44.5 points scored\" 52%. Blended with the market that's 37% vs a 33% price.",
    "trend": -0.01,
@@ -4005,8 +4005,8 @@
    "expected_end": "2026-09-28T02:25:00+00:00",
    "start_est": "2026-09-27T20:25:00+00:00",
    "status": "pending",
-   "latest_price": 0.505,
-   "close_price": 0.505,
+   "latest_price": 0.515,
+   "close_price": 0.515,
    "pnl": null,
    "why": "Juwan Johnson: 61 a game lately (last 12 games). Model gives \"Juwan Johnson: 35+\" 83%. Blended with the market that's 58% vs a 50% price.",
    "trend": 0.015,
@@ -4044,8 +4044,8 @@
    "expected_end": "2026-09-27T23:00:00+00:00",
    "start_est": "2026-09-27T17:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.5,
-   "close_price": 0.5,
+   "latest_price": 0.495,
+   "close_price": 0.495,
    "pnl": null,
    "why": "Quinshon Judkins: 38 a game lately (last 12 games). Model gives \"Quinshon Judkins: under 60\" 83%. Blended with the market that's 60% vs a 53% price. Price down 2\u00a2 in the last 12 hours.",
    "trend": -0.02,
@@ -4200,8 +4200,8 @@
    "expected_end": "2026-09-28T06:20:00+00:00",
    "start_est": "2026-09-28T00:20:00+00:00",
    "status": "pending",
-   "latest_price": 0.74,
-   "close_price": 0.74,
+   "latest_price": 0.75,
+   "close_price": 0.75,
    "pnl": null,
    "why": "Terrance Ferguson: 1.73 a game lately (last 12 games). Model gives \"Terrance Ferguson: under 6\" 99%. Blended with the market that's 81% vs a 76% price. Price down 6\u00a2 in the last 12 hours.",
    "trend": -0.055,
@@ -4239,8 +4239,8 @@
    "expected_end": "2026-09-27T23:00:00+00:00",
    "start_est": "2026-09-27T17:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.635,
-   "close_price": 0.635,
+   "latest_price": 0.625,
+   "close_price": 0.625,
    "pnl": null,
    "why": "Aaron Rodgers: 0.63 a game lately (last 12 games). Model gives \"Aaron Rodgers: under 2\" 87%. Blended with the market that's 72% vs a 67% price.",
    "trend": 0.0,
@@ -4278,8 +4278,8 @@
    "expected_end": "2026-09-29T06:15:00+00:00",
    "start_est": "2026-09-29T00:15:00+00:00",
    "status": "pending",
-   "latest_price": 0.22,
-   "close_price": 0.22,
+   "latest_price": 0.205,
+   "close_price": 0.205,
    "pnl": null,
    "why": "Colston Loveland: 49 a game lately (last 12 games). Model gives \"Colston Loveland: 60+\" 40%. Blended with the market that's 24% vs a 21% price.",
    "trend": 0.015,
@@ -4395,8 +4395,8 @@
    "expected_end": "2026-09-27T21:00:00+00:00",
    "start_est": "2026-09-27T17:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.48,
-   "close_price": 0.48,
+   "latest_price": 0.485,
+   "close_price": 0.485,
    "pnl": null,
    "why": "Ratings 1550 (UNAM Pumas, home) vs 1416 (Atl. San Luis). Share of chances lately (xG or shots on target) 50% vs 50%. Goal difference last 6: -3 vs -4. Last played Sep 20 vs Sep 20. Model gives the home 57%. Blended with the market that's 51% vs a 49% price. Sharp sportsbook price (Pinnacle) says 48%.",
    "trend": 0.002,
@@ -4513,8 +4513,8 @@
    "expected_end": "2026-09-27T22:10:00+00:00",
    "start_est": "2026-09-27T19:10:00+00:00",
    "status": "pending",
-   "latest_price": 0.505,
-   "close_price": 0.505,
+   "latest_price": 0.485,
+   "close_price": 0.485,
    "pnl": null,
    "why": "Projected runs 5.8 (home) vs 4.2 (10.0 total). Park factor 1.00. Forecast 65F, wind 6 mph. Model gives \"Over 8.5 runs scored\" 58%. Blended with the market that's 54% vs a 49% price. Sharp sportsbook price (Pinnacle) says 48%.",
    "trend": 0.005,
@@ -4553,8 +4553,8 @@
    "expected_end": "2026-09-27T22:10:00+00:00",
    "start_est": "2026-09-27T19:10:00+00:00",
    "status": "pending",
-   "latest_price": 0.425,
-   "close_price": 0.425,
+   "latest_price": 0.415,
+   "close_price": 0.415,
    "pnl": null,
    "why": "Ratings 1550 vs 1526 with home field. Starters TBD (last season FIP 4.50, team allows 4.5 runs in his recent starts) vs Michael Soroka (4.20, 4.0). Run differential last 10: +10 vs +15. Model gives San Diego Padres 54%. Blended with the market that's 50% vs a 46% price. Price down 9\u00a2 in the last 12 hours. Sharp sportsbook price (Pinnacle) says 53%.",
    "trend": -0.09,
@@ -4594,8 +4594,8 @@
    "expected_end": "2026-09-27T22:07:00+00:00",
    "start_est": "2026-09-27T19:07:00+00:00",
    "status": "pending",
-   "latest_price": 0.185,
-   "close_price": 0.185,
+   "latest_price": 0.19,
+   "close_price": 0.19,
    "pnl": null,
    "why": "Brandon Williamson: 4.12 a game this season over 8 games (adjusted 4.54). Model gives \"Brandon Williamson: 5+\" 46%. Blended with the market that's 28% vs a 23% price. Price down 22\u00a2 in the last 12 hours.",
    "trend": -0.215,
@@ -4640,45 +4640,6 @@
    "trend": 0.0,
    "new_market": true,
    "trust": 0.27,
-   "sharp_prob": null,
-   "research": "",
-   "sources": [],
-   "expert_lean": "none"
-  },
-  {
-   "id": "KXWTACHALLENGERMATCH-26SEP27MARGRA-MAR",
-   "ticker": "KXWTACHALLENGERMATCH-26SEP27MARGRA-MAR",
-   "side": "yes",
-   "event": "KXWTACHALLENGERMATCH-26SEP27MARGRA",
-   "game": "26SEP27MARGRA",
-   "sport": "Tennis",
-   "model_key": "tennis",
-   "mtype": "winner",
-   "line": null,
-   "tour": "WTA Challenger",
-   "tournament": "2026 WTA 125K Tolentino",
-   "matchup": "2026 WTA 125K Tolentino",
-   "surface": "hard",
-   "pick": "Guiomar Maristany Zuleta de Reales",
-   "opponent": "Julia Grabher",
-   "market": "Guiomar Maristany Zuleta de Reales to win",
-   "price": 0.53,
-   "model_prob": 0.563,
-   "raw_prob": 0.6,
-   "edge": 0.015,
-   "tier": "W",
-   "units": 0.5,
-   "made": "2026-09-27T05:20:16.141419+00:00",
-   "expected_end": "2026-09-27T16:40:00+00:00",
-   "start_est": "2026-09-27T12:40:00+00:00",
-   "status": "pending",
-   "latest_price": 0.525,
-   "close_price": 0.525,
-   "pnl": null,
-   "why": "Elo 1612 vs 1555 on hard. Won 50% vs 50% of games lately. Form 8-2 vs 7-3. Games played in last 3 days: 44 vs 66. Model 60%, blended with the market 56%, price 53%.",
-   "trend": -0.01,
-   "new_market": false,
-   "trust": 0.5,
    "sharp_prob": null,
    "research": "",
    "sources": [],
@@ -4765,6 +4726,46 @@
   }
  ],
  "watch_history": [
+  {
+   "id": "KXWTACHALLENGERMATCH-26SEP27MARGRA-MAR",
+   "ticker": "KXWTACHALLENGERMATCH-26SEP27MARGRA-MAR",
+   "side": "yes",
+   "event": "KXWTACHALLENGERMATCH-26SEP27MARGRA",
+   "game": "26SEP27MARGRA",
+   "sport": "Tennis",
+   "model_key": "tennis",
+   "mtype": "winner",
+   "line": null,
+   "tour": "WTA Challenger",
+   "tournament": "2026 WTA 125K Tolentino",
+   "matchup": "2026 WTA 125K Tolentino",
+   "surface": "hard",
+   "pick": "Guiomar Maristany Zuleta de Reales",
+   "opponent": "Julia Grabher",
+   "market": "Guiomar Maristany Zuleta de Reales to win",
+   "price": 0.53,
+   "model_prob": 0.563,
+   "raw_prob": 0.6,
+   "edge": 0.015,
+   "tier": "W",
+   "units": 0.5,
+   "made": "2026-09-27T05:20:16.141419+00:00",
+   "expected_end": "2026-09-27T16:40:00+00:00",
+   "start_est": "2026-09-27T12:40:00+00:00",
+   "status": "loss",
+   "latest_price": 0.525,
+   "close_price": 0.525,
+   "pnl": -0.52,
+   "why": "Elo 1612 vs 1555 on hard. Won 50% vs 50% of games lately. Form 8-2 vs 7-3. Games played in last 3 days: 44 vs 66. Model 60%, blended with the market 56%, price 53%.",
+   "trend": -0.01,
+   "new_market": false,
+   "trust": 0.5,
+   "sharp_prob": null,
+   "research": "",
+   "sources": [],
+   "expert_lean": "none",
+   "graded": "2026-09-27T16:21:27.672891+00:00"
+  },
   {
    "id": "KXATPMATCH-26SEP27MULDAV-MUL",
    "ticker": "KXATPMATCH-26SEP27MULDAV-MUL",
