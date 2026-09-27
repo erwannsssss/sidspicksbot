@@ -822,8 +822,8 @@
   "model_prob": 0.2669,
   "ev": 1.227,
   "payout_units": 7.3,
-  "status": "pending",
-  "pnl": null,
+  "status": "loss",
+  "pnl": -1.0,
   "legs": [
    {
     "id": "KXNFLRECYDS-26SEP27LVNO-NOJJOHNSON83-35",
@@ -859,7 +859,8 @@
     "price": 0.53,
     "model_prob": 0.676,
     "edge": 0.129,
-    "expected_end": "2026-09-27T23:00:00+00:00"
+    "expected_end": "2026-09-27T23:00:00+00:00",
+    "result": "loss"
    },
    {
     "id": "KXNFLREC-26SEP27LARDEN-LARTFERGUSON18-6:no",
@@ -873,7 +874,8 @@
     "edge": 0.095,
     "expected_end": "2026-09-28T06:20:00+00:00"
    }
-  ]
+  ],
+  "graded": "2026-09-27T21:21:16.461877+00:00"
  },
  {
   "id": "PARLAY-202609270031-2",
@@ -886,8 +888,8 @@
   "model_prob": 0.423,
   "ev": 0.493,
   "payout_units": 2.5,
-  "status": "pending",
-  "pnl": null,
+  "status": "win",
+  "pnl": 2.53,
   "legs": [
    {
     "id": "KXNFLREC-26SEP27LACBUF-LACLMCCONKEY15-5:no",
@@ -899,7 +901,8 @@
     "price": 0.5,
     "model_prob": 0.639,
     "edge": 0.122,
-    "expected_end": "2026-09-27T23:00:00+00:00"
+    "expected_end": "2026-09-27T23:00:00+00:00",
+    "result": "win"
    },
    {
     "id": "KXMLBKS-26SEP262140HOUATH-ATHJPERKINS50-5",
@@ -914,6 +917,7 @@
     "expected_end": "2026-09-27T04:40:00+00:00",
     "result": "win"
    }
-  ]
+  ],
+  "graded": "2026-09-27T21:21:16.524265+00:00"
  }
 ]
