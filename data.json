@@ -1,11 +1,11 @@
 {
- "updated": "2026-09-27T13:24:23.577484+00:00",
- "status_note": "Last run found 0 new pick(s) and graded 0.",
- "bankroll": 96.49,
+ "updated": "2026-09-27T14:22:47.454562+00:00",
+ "status_note": "Last run found 0 new pick(s) and graded 1.",
+ "bankroll": 95.45,
  "protection": {
-  "bankroll": 96.49,
+  "bankroll": 95.45,
   "peak": 112.26,
-  "drawdown": 0.14,
+  "drawdown": 0.15,
   "paused": false
  },
  "settings": {
@@ -95,46 +95,6 @@
  },
  "open": [
   {
-   "id": "KXATPMATCH-26SEP27HARHUR-HAR",
-   "ticker": "KXATPMATCH-26SEP27HARHUR-HAR",
-   "side": "yes",
-   "event": "KXATPMATCH-26SEP27HARHUR",
-   "game": "26SEP27HARHUR",
-   "sport": "Tennis",
-   "model_key": "tennis",
-   "mtype": "winner",
-   "line": null,
-   "tour": "ATP",
-   "tournament": "2026 ATP Chengdu",
-   "matchup": "2026 ATP Chengdu",
-   "surface": "hard",
-   "pick": "Lloyd Harris",
-   "opponent": "Hubert Hurkacz",
-   "market": "Lloyd Harris to win",
-   "price": 0.36,
-   "model_prob": 0.479,
-   "raw_prob": 0.598,
-   "edge": 0.103,
-   "tier": "A",
-   "units": 1.0,
-   "made": "2026-09-26T15:20:32.748809+00:00",
-   "expected_end": "2026-09-27T11:30:00+00:00",
-   "start_est": "2026-09-27T07:30:00+00:00",
-   "status": "pending",
-   "latest_price": 0.385,
-   "close_price": 0.385,
-   "pnl": null,
-   "why": "Elo 1773 vs 1676 on hard. Won 50% vs 50% of games lately. Form 8-2 vs 8-2. Games played in last 3 days: 66 vs 44. Model 60%, blended with the market 48%, price 36%.",
-   "trend": -0.019,
-   "new_market": false,
-   "trust": 0.5,
-   "sharp_prob": null,
-   "research": "",
-   "sources": [],
-   "expert_lean": "none",
-   "prechecked": true
-  },
-  {
    "id": "KXMLBGAME-26SEP271505LADSF-SF",
    "ticker": "KXMLBGAME-26SEP271505LADSF-SF",
    "side": "yes",
@@ -175,6 +135,47 @@
   }
  ],
  "history": [
+  {
+   "id": "KXATPMATCH-26SEP27HARHUR-HAR",
+   "ticker": "KXATPMATCH-26SEP27HARHUR-HAR",
+   "side": "yes",
+   "event": "KXATPMATCH-26SEP27HARHUR",
+   "game": "26SEP27HARHUR",
+   "sport": "Tennis",
+   "model_key": "tennis",
+   "mtype": "winner",
+   "line": null,
+   "tour": "ATP",
+   "tournament": "2026 ATP Chengdu",
+   "matchup": "2026 ATP Chengdu",
+   "surface": "hard",
+   "pick": "Lloyd Harris",
+   "opponent": "Hubert Hurkacz",
+   "market": "Lloyd Harris to win",
+   "price": 0.36,
+   "model_prob": 0.479,
+   "raw_prob": 0.598,
+   "edge": 0.103,
+   "tier": "A",
+   "units": 1.0,
+   "made": "2026-09-26T15:20:32.748809+00:00",
+   "expected_end": "2026-09-27T11:30:00+00:00",
+   "start_est": "2026-09-27T07:30:00+00:00",
+   "status": "loss",
+   "latest_price": 0.385,
+   "close_price": 0.385,
+   "pnl": -1.04,
+   "why": "Elo 1773 vs 1676 on hard. Won 50% vs 50% of games lately. Form 8-2 vs 8-2. Games played in last 3 days: 66 vs 44. Model 60%, blended with the market 48%, price 36%.",
+   "trend": -0.019,
+   "new_market": false,
+   "trust": 0.5,
+   "sharp_prob": null,
+   "research": "",
+   "sources": [],
+   "expert_lean": "none",
+   "prechecked": true,
+   "graded": "2026-09-27T14:19:45.876257+00:00"
+  },
   {
    "id": "KXATPCHALLENGERMATCH-26SEP27ZAHPOL-POL",
    "ticker": "KXATPCHALLENGERMATCH-26SEP27ZAHPOL-POL",
@@ -2960,15 +2961,8 @@
  },
  "learning": {
   "groups": {
-   "mlb:spread": {
-    "finished": 133,
-    "games": 12,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-27T01:40:00+00:00"
-   },
    "mlb:team_total": {
-    "finished": 336,
+    "finished": 317,
     "games": 12,
     "trust": 0.25,
     "confidence_fix": false,
@@ -3024,11 +3018,11 @@
     "last": "2026-09-27T01:40:00+00:00"
    },
    "tennis:winner": {
-    "finished": 34,
-    "games": 17,
+    "finished": 44,
+    "games": 22,
     "trust": 0.5,
     "confidence_fix": false,
-    "last": "2026-09-27T09:00:00+00:00"
+    "last": "2026-09-27T11:30:00+00:00"
    },
    "cfb:winner": {
     "finished": 146,
@@ -3177,6 +3171,13 @@
     "confidence_fix": false,
     "last": "2026-09-27T01:40:00+00:00"
    },
+   "mlb:spread": {
+    "finished": 132,
+    "games": 11,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-27T01:40:00+00:00"
+   },
    "soccer:winner": {
     "finished": 51,
     "games": 17,
@@ -3271,16 +3272,16 @@
   },
   "price_trend": {
    "flat": {
-    "markets": 14753,
-    "hit_vs_price": 0.0
+    "markets": 14748,
+    "hit_vs_price": 0.001
    },
    "rising": {
-    "markets": 2867,
+    "markets": 2865,
     "hit_vs_price": 0.001
    },
    "falling": {
-    "markets": 2880,
-    "hit_vs_price": -0.003
+    "markets": 2877,
+    "hit_vs_price": -0.004
    }
   }
  },
@@ -3413,24 +3414,24 @@
  },
  "models": {
   "tennis": {
-   "matches": 20018,
-   "training_rows": 13747,
+   "matches": 20023,
+   "training_rows": 13752,
    "holdout": {
     "from": "2026-08-23",
     "matches": 2063,
-    "elo_log_loss": 0.6621,
-    "model_log_loss": 0.6598,
-    "elo_accuracy": 0.607,
-    "model_accuracy": 0.613
+    "elo_log_loss": 0.6618,
+    "model_log_loss": 0.6596,
+    "elo_accuracy": 0.606,
+    "model_accuracy": 0.612
    },
    "using": "full",
    "weights": {
-    "elo": 2.03,
+    "elo": 2.029,
     "dominance": 0.0,
     "rank": 0.0,
     "h2h": 0.456,
-    "form": -0.537,
-    "fatigue_games": -0.211,
+    "form": -0.535,
+    "fatigue_games": -0.212,
     "fatigue_matches": 0.084,
     "rest": 0.015,
     "travel": 0.141,
@@ -3513,31 +3514,31 @@
    "holdout": {
     "matches": 652,
     "rating_log_loss": 0.6301,
-    "model_log_loss": 0.6269,
+    "model_log_loss": 0.6264,
     "rating_accuracy": 0.653,
-    "model_accuracy": 0.647
+    "model_accuracy": 0.644
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6045,
-    "model_log_loss": 0.6269,
+    "model_log_loss": 0.6264,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 652
    },
    "backtest": {
-    "bets": 17,
-    "wins": 5,
-    "units": -11.2,
-    "roi": -0.36
+    "bets": 18,
+    "wins": 6,
+    "units": -7.5,
+    "roi": -0.235
    },
    "weights": {
-    "home_field": 0.25,
-    "rating": 1.517,
-    "rest": 0.234,
-    "point_diff_form": 0.231,
-    "qb_change": 0.285,
-    "epa": 0.172
+    "home_field": 0.252,
+    "rating": 1.528,
+    "rest": 0.242,
+    "point_diff_form": 0.227,
+    "qb_change": 0.29,
+    "epa": 0.167
    },
    "matches": 4396,
    "totals": {
@@ -3589,25 +3590,25 @@
  },
  "summary": {
   "all": {
-   "picks": 43,
+   "picks": 44,
    "wins": 14,
-   "losses": 29,
-   "units": -3.51,
-   "staked": 60.5,
-   "roi": -0.058,
-   "beat_price": 0.302,
-   "clv": -0.0032,
-   "clv_picks": 39
+   "losses": 30,
+   "units": -4.55,
+   "staked": 61.5,
+   "roi": -0.074,
+   "beat_price": 0.318,
+   "clv": -0.0025,
+   "clv_picks": 40
   },
   "week": {
    "picks": 40,
    "wins": 11,
    "losses": 29,
-   "units": -15.77,
-   "staked": 51.5,
-   "roi": -0.306,
-   "beat_price": 0.3,
-   "clv": -0.0034,
+   "units": -15.26,
+   "staked": 51.0,
+   "roi": -0.299,
+   "beat_price": 0.325,
+   "clv": -0.002,
    "clv_picks": 37
   },
   "yours": {
@@ -3646,28 +3647,28 @@
    "clv_picks": 2
   },
   "none": {
-   "picks": 40,
+   "picks": 41,
    "wins": 11,
-   "losses": 29,
-   "units": -15.77,
-   "staked": 51.5,
-   "roi": -0.306,
-   "beat_price": 0.3,
-   "clv": -0.0034,
-   "clv_picks": 37
+   "losses": 30,
+   "units": -16.81,
+   "staked": 52.5,
+   "roi": -0.32,
+   "beat_price": 0.317,
+   "clv": -0.0026,
+   "clv_picks": 38
   }
  },
  "by_tier": {
   "A": {
-   "picks": 13,
+   "picks": 14,
    "wins": 4,
-   "losses": 9,
-   "units": -2.71,
-   "staked": 26.0,
-   "roi": -0.104,
-   "beat_price": 0.077,
-   "clv": -0.0055,
-   "clv_picks": 11
+   "losses": 10,
+   "units": -3.75,
+   "staked": 27.0,
+   "roi": -0.139,
+   "beat_price": 0.143,
+   "clv": -0.0029,
+   "clv_picks": 12
   },
   "B": {
    "picks": 27,
@@ -3731,8 +3732,8 @@
    "expected_end": "2026-09-28T02:25:00+00:00",
    "start_est": "2026-09-27T20:25:00+00:00",
    "status": "pending",
-   "latest_price": 0.505,
-   "close_price": 0.505,
+   "latest_price": 0.5,
+   "close_price": 0.5,
    "pnl": null,
    "why": "Lamar Jackson: 26 a game lately (last 12 games). Model gives \"Lamar Jackson: under 40\" 84%. Blended with the market that's 60% vs a 53% price.",
    "trend": 0.005,
@@ -3770,8 +3771,8 @@
    "expected_end": "2026-09-27T23:00:00+00:00",
    "start_est": "2026-09-27T17:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.405,
-   "close_price": 0.405,
+   "latest_price": 0.415,
+   "close_price": 0.415,
    "pnl": null,
    "why": "Rhamondre Stevenson: 53 a game lately (last 12 games). Model gives \"Rhamondre Stevenson: 40+\" 70%. Blended with the market that's 52% vs a 46% price.",
    "trend": 0.0,
@@ -3848,8 +3849,8 @@
    "expected_end": "2026-09-28T02:05:00+00:00",
    "start_est": "2026-09-27T20:05:00+00:00",
    "status": "pending",
-   "latest_price": 0.55,
-   "close_price": 0.55,
+   "latest_price": 0.54,
+   "close_price": 0.54,
    "pnl": null,
    "why": "Jordan Addison: 22 a game lately (last 12 games). Model gives \"Jordan Addison: under 40\" 80%. Blended with the market that's 62% vs a 58% price. Price down 2\u00a2 in the last 12 hours.",
    "trend": -0.025,
@@ -4004,8 +4005,8 @@
    "expected_end": "2026-09-28T02:25:00+00:00",
    "start_est": "2026-09-27T20:25:00+00:00",
    "status": "pending",
-   "latest_price": 0.515,
-   "close_price": 0.515,
+   "latest_price": 0.505,
+   "close_price": 0.505,
    "pnl": null,
    "why": "Juwan Johnson: 61 a game lately (last 12 games). Model gives \"Juwan Johnson: 35+\" 83%. Blended with the market that's 58% vs a 50% price.",
    "trend": 0.015,
@@ -4043,8 +4044,8 @@
    "expected_end": "2026-09-27T23:00:00+00:00",
    "start_est": "2026-09-27T17:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.505,
-   "close_price": 0.505,
+   "latest_price": 0.495,
+   "close_price": 0.495,
    "pnl": null,
    "why": "Quinshon Judkins: 38 a game lately (last 12 games). Model gives \"Quinshon Judkins: under 60\" 83%. Blended with the market that's 60% vs a 53% price. Price down 2\u00a2 in the last 12 hours.",
    "trend": -0.02,
@@ -4082,8 +4083,8 @@
    "expected_end": "2026-09-27T23:00:00+00:00",
    "start_est": "2026-09-27T17:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.465,
-   "close_price": 0.465,
+   "latest_price": 0.455,
+   "close_price": 0.455,
    "pnl": null,
    "why": "Ladd McConkey: 3.18 a game lately (last 12 games). Model gives \"Ladd McConkey: under 5\" 78%. Blended with the market that's 57% vs a 50% price. Price down 3\u00a2 in the last 12 hours.",
    "trend": -0.03,
@@ -4121,8 +4122,8 @@
    "expected_end": "2026-09-28T02:05:00+00:00",
    "start_est": "2026-09-27T20:05:00+00:00",
    "status": "pending",
-   "latest_price": 0.235,
-   "close_price": 0.235,
+   "latest_price": 0.24,
+   "close_price": 0.24,
    "pnl": null,
    "why": "Michael Wilson: 70 a game lately (last 12 games). Model gives \"Michael Wilson: 70+\" 50%. Blended with the market that's 29% vs a 24% price.",
    "trend": -0.015,
@@ -4160,8 +4161,8 @@
    "expected_end": "2026-09-27T23:00:00+00:00",
    "start_est": "2026-09-27T17:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.36,
-   "close_price": 0.36,
+   "latest_price": 0.355,
+   "close_price": 0.355,
    "pnl": null,
    "why": "Rachaad White: 31 a game lately (last 12 games). Model gives \"Rachaad White: 25+\" 66%. Blended with the market that's 43% vs a 37% price. Price up 14\u00a2 in the last 12 hours.",
    "trend": 0.135,
@@ -4277,8 +4278,8 @@
    "expected_end": "2026-09-29T06:15:00+00:00",
    "start_est": "2026-09-29T00:15:00+00:00",
    "status": "pending",
-   "latest_price": 0.215,
-   "close_price": 0.215,
+   "latest_price": 0.22,
+   "close_price": 0.22,
    "pnl": null,
    "why": "Colston Loveland: 49 a game lately (last 12 games). Model gives \"Colston Loveland: 60+\" 40%. Blended with the market that's 24% vs a 21% price.",
    "trend": 0.015,
@@ -4473,8 +4474,8 @@
    "expected_end": "2026-09-27T22:10:00+00:00",
    "start_est": "2026-09-27T19:10:00+00:00",
    "status": "pending",
-   "latest_price": 0.46,
-   "close_price": 0.46,
+   "latest_price": 0.455,
+   "close_price": 0.455,
    "pnl": null,
    "why": "Projected runs 3.2 (home) vs 1.9 (5.1 total). Park factor 0.98. Model gives \"Over 3.5 runs in the first 5 innings\" 67%. Blended with the market that's 58% vs a 50% price.",
    "trend": -0.005,
@@ -4512,8 +4513,8 @@
    "expected_end": "2026-09-27T22:10:00+00:00",
    "start_est": "2026-09-27T19:10:00+00:00",
    "status": "pending",
-   "latest_price": 0.495,
-   "close_price": 0.495,
+   "latest_price": 0.505,
+   "close_price": 0.505,
    "pnl": null,
    "why": "Projected runs 5.8 (home) vs 4.2 (10.0 total). Park factor 1.00. Forecast 65F, wind 6 mph. Model gives \"Over 8.5 runs scored\" 58%. Blended with the market that's 54% vs a 49% price. Sharp sportsbook price (Pinnacle) says 48%.",
    "trend": 0.005,
@@ -4632,8 +4633,8 @@
    "expected_end": "2026-09-27T22:10:00+00:00",
    "start_est": "2026-09-27T19:10:00+00:00",
    "status": "pending",
-   "latest_price": 0.545,
-   "close_price": 0.545,
+   "latest_price": 0.515,
+   "close_price": 0.515,
    "pnl": null,
    "why": "Parker Messick: 6.16 a game this season over 31 games (adjusted 6.03). Model gives \"Parker Messick: 4+\" 79%. Blended with the market that's 57% vs a 49% price.",
    "trend": 0.0,
@@ -4710,8 +4711,8 @@
    "expected_end": "2026-09-27T22:10:00+00:00",
    "start_est": "2026-09-27T19:10:00+00:00",
    "status": "pending",
-   "latest_price": 0.455,
-   "close_price": 0.455,
+   "latest_price": 0.495,
+   "close_price": 0.495,
    "pnl": null,
    "why": "Ratings 1503 vs 1508 with home field. Starters River Ryan (last season FIP 4.50, team allows 2.8 runs in his recent starts) vs Jared Jones (4.50, 3.7). Run differential last 10: -7 vs +4. Model gives Detroit Tigers 53%. Blended with the market that's 49% vs a 46% price. Sharp sportsbook price (Pinnacle) says 45%.",
    "trend": -0.005,
@@ -4750,8 +4751,8 @@
    "expected_end": "2026-09-27T19:00:00+00:00",
    "start_est": "2026-09-27T15:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.515,
-   "close_price": 0.515,
+   "latest_price": 0.525,
+   "close_price": 0.525,
    "pnl": null,
    "why": "Elo 1648 vs 1588 on clay. Won 50% vs 50% of games lately. Form 9-1 vs 8-2. Games played in last 3 days: 44 vs 66. Model 60%, blended with the market 56%, price 53%.",
    "trend": 0.006,
@@ -10766,15 +10767,15 @@
  ],
  "by_tour": {
   "ATP": {
-   "picks": 12,
+   "picks": 13,
    "wins": 0,
-   "losses": 12,
-   "units": -18.33,
-   "staked": 17.5,
+   "losses": 13,
+   "units": -19.37,
+   "staked": 18.5,
    "roi": -1.047,
-   "beat_price": 0.25,
-   "clv": -0.0105,
-   "clv_picks": 11
+   "beat_price": 0.308,
+   "clv": -0.0075,
+   "clv_picks": 12
   },
   "ATP Challenger": {
    "picks": 11,
@@ -10867,15 +10868,15 @@
    "clv_picks": 1
   },
   "Tennis": {
-   "picks": 35,
+   "picks": 36,
    "wins": 12,
-   "losses": 23,
-   "units": 0.22,
-   "staked": 51.5,
-   "roi": 0.004,
-   "beat_price": 0.257,
-   "clv": -0.0042,
-   "clv_picks": 31
+   "losses": 24,
+   "units": -0.82,
+   "staked": 52.5,
+   "roi": -0.016,
+   "beat_price": 0.278,
+   "clv": -0.0033,
+   "clv_picks": 32
   }
  },
  "calibration": {
@@ -10888,8 +10889,8 @@
    "hit": 0.2
   },
   "40-50%": {
-   "n": 19,
-   "hit": 0.316
+   "n": 20,
+   "hit": 0.3
   },
   "50-60%": {
    "n": 9,
@@ -11084,6 +11085,10 @@
   {
    "t": "2026-09-27",
    "v": 96.49
+  },
+  {
+   "t": "2026-09-27",
+   "v": 95.45
   }
  ],
  "reports": [

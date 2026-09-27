@@ -1,6 +1,5 @@
 {
  "trust": {
-  "mlb:spread": 0.25,
   "mlb:team_total": 0.25,
   "mlb:total": 0.25,
   "mlb:total_f5": 0.25,
@@ -31,6 +30,7 @@
   "cfb:total_4q": 0.25,
   "mlb:winner": 0.5,
   "mlb:spread_f5": 0.25,
+  "mlb:spread": 0.25,
   "soccer:winner": 0.25,
   "soccer:btts": 0.25,
   "soccer:spread": 0.25,
@@ -46,8 +46,7 @@
   "soccer:team_total": 0.25
  },
  "trust_league": {
-  "mlb:spread|MLB": 0.25,
-  "mlb:team_total|MLB": 0.65,
+  "mlb:team_total|MLB": 0.64,
   "mlb:total|MLB": 0.6,
   "mlb:total_f5|MLB": 0.5,
   "mlb:prop_ks|MLB": 0.27,
@@ -75,6 +74,7 @@
   "cfb:period_winner_4q|College Football": 0.25,
   "cfb:total_4q|College Football": 0.72,
   "mlb:spread_f5|MLB": 0.25,
+  "mlb:spread|MLB": 0.25,
   "soccer:correct_score|Liga MX": 0.57,
   "soccer:spread|MLS": 0.25,
   "soccer:total|MLS": 0.25,
@@ -86,8 +86,7 @@
  },
  "calib": {},
  "counts": {
-  "mlb:spread": 133,
-  "mlb:team_total": 336,
+  "mlb:team_total": 317,
   "mlb:total": 256,
   "mlb:total_f5": 152,
   "mlb:prop_ks": 270,
@@ -95,7 +94,7 @@
   "mlb:prop_hr": 414,
   "mlb:prop_tb": 1634,
   "mlb:prop_hrr": 2096,
-  "tennis:winner": 34,
+  "tennis:winner": 44,
   "cfb:winner": 146,
   "cfb:spread_1h": 1730,
   "cfb:total_1h": 1142,
@@ -117,6 +116,7 @@
   "cfb:total_4q": 504,
   "mlb:winner": 22,
   "mlb:spread_f5": 88,
+  "mlb:spread": 132,
   "soccer:winner": 51,
   "soccer:btts": 34,
   "soccer:spread": 132,
@@ -132,7 +132,6 @@
   "soccer:team_total": 204
  },
  "games": {
-  "mlb:spread": 12,
   "mlb:team_total": 12,
   "mlb:total": 13,
   "mlb:total_f5": 12,
@@ -141,7 +140,7 @@
   "mlb:prop_hr": 12,
   "mlb:prop_tb": 12,
   "mlb:prop_hrr": 12,
-  "tennis:winner": 17,
+  "tennis:winner": 22,
   "cfb:winner": 73,
   "cfb:spread_1h": 41,
   "cfb:total_1h": 41,
@@ -163,6 +162,7 @@
   "cfb:total_4q": 23,
   "mlb:winner": 11,
   "mlb:spread_f5": 11,
+  "mlb:spread": 11,
   "soccer:winner": 17,
   "soccer:btts": 17,
   "soccer:spread": 17,
@@ -178,7 +178,6 @@
   "soccer:team_total": 17
  },
  "last": {
-  "mlb:spread": "2026-09-27T01:40:00+00:00",
   "mlb:team_total": "2026-09-27T01:40:00+00:00",
   "mlb:total": "2026-09-27T01:40:00+00:00",
   "mlb:total_f5": "2026-09-27T01:40:00+00:00",
@@ -187,7 +186,7 @@
   "mlb:prop_hr": "2026-09-27T01:40:00+00:00",
   "mlb:prop_tb": "2026-09-27T01:40:00+00:00",
   "mlb:prop_hrr": "2026-09-27T01:40:00+00:00",
-  "tennis:winner": "2026-09-27T09:00:00+00:00",
+  "tennis:winner": "2026-09-27T11:30:00+00:00",
   "cfb:winner": "2026-09-27T03:00:00+00:00",
   "cfb:spread_1h": "2026-09-27T03:00:00+00:00",
   "cfb:total_1h": "2026-09-27T03:00:00+00:00",
@@ -209,6 +208,7 @@
   "cfb:total_4q": "2026-09-27T03:00:00+00:00",
   "mlb:winner": "2026-09-27T01:40:00+00:00",
   "mlb:spread_f5": "2026-09-27T01:40:00+00:00",
+  "mlb:spread": "2026-09-27T01:40:00+00:00",
   "soccer:winner": "2026-09-27T02:00:00+00:00",
   "soccer:btts": "2026-09-27T02:00:00+00:00",
   "soccer:spread": "2026-09-27T02:00:00+00:00",
@@ -223,5 +223,5 @@
   "soccer:correct_score": "2026-09-27T02:00:00+00:00",
   "soccer:team_total": "2026-09-27T02:00:00+00:00"
  },
- "updated": "2026-09-27T13:20:05.266625+00:00"
+ "updated": "2026-09-27T14:19:43.949268+00:00"
 }
