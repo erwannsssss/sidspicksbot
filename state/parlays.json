@@ -384,7 +384,8 @@
     "price": 0.55,
     "model_prob": 0.711,
     "edge": 0.144,
-    "expected_end": "2026-09-26T20:00:00+00:00"
+    "expected_end": "2026-09-26T20:00:00+00:00",
+    "result": "win"
    },
    {
     "id": "KXNCAAFSPREAD-26SEP26MOSUSMU-SMU35:no",
@@ -478,7 +479,8 @@
     "price": 0.55,
     "model_prob": 0.711,
     "edge": 0.144,
-    "expected_end": "2026-09-26T20:00:00+00:00"
+    "expected_end": "2026-09-26T20:00:00+00:00",
+    "result": "win"
    },
    {
     "id": "KXNCAAFSPREAD-26SEP26MOSUSMU-SMU35:no",
@@ -542,7 +544,8 @@
     "price": 0.25,
     "model_prob": 0.411,
     "edge": 0.147,
-    "expected_end": "2026-09-26T22:30:00+00:00"
+    "expected_end": "2026-09-26T22:30:00+00:00",
+    "result": "win"
    },
    {
     "id": "KXNCAAFSPREAD-26SEP26OKSTWVU-WVU2",
@@ -594,7 +597,8 @@
     "price": 0.55,
     "model_prob": 0.711,
     "edge": 0.144,
-    "expected_end": "2026-09-26T20:00:00+00:00"
+    "expected_end": "2026-09-26T20:00:00+00:00",
+    "result": "win"
    },
    {
     "id": "KXNFLRSHYDS-26SEP27BALDAL-BALLJACKSON8-40:no",
@@ -670,7 +674,8 @@
     "price": 0.48,
     "model_prob": 0.633,
     "edge": 0.135,
-    "expected_end": "2026-09-26T20:00:00+00:00"
+    "expected_end": "2026-09-26T20:00:00+00:00",
+    "result": "win"
    }
   ]
  },
@@ -710,7 +715,8 @@
     "price": 0.55,
     "model_prob": 0.711,
     "edge": 0.144,
-    "expected_end": "2026-09-26T20:00:00+00:00"
+    "expected_end": "2026-09-26T20:00:00+00:00",
+    "result": "win"
    },
    {
     "id": "KXNFLRSHYDS-26SEP27BALDAL-BALLJACKSON8-40:no",
@@ -786,7 +792,112 @@
     "price": 0.48,
     "model_prob": 0.633,
     "edge": 0.135,
-    "expected_end": "2026-09-26T20:00:00+00:00"
+    "expected_end": "2026-09-26T20:00:00+00:00",
+    "result": "win"
+   }
+  ]
+ },
+ {
+  "id": "PARLAY-202609270031-1",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-09-27T00:31:03.477606+00:00",
+  "units": 1.0,
+  "price": 0.1198,
+  "model_prob": 0.2669,
+  "ev": 1.227,
+  "payout_units": 7.3,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXNFLRECYDS-26SEP27LVNO-NOJJOHNSON83-35",
+    "ticker": "KXNFLRECYDS-26SEP27LVNO-NOJJOHNSON83-35",
+    "side": "yes",
+    "market": "Juwan Johnson: 35+",
+    "matchup": "LV at NO",
+    "sport": "Football",
+    "price": 0.5,
+    "model_prob": 0.664,
+    "edge": 0.147,
+    "expected_end": "2026-09-28T02:25:00+00:00"
+   },
+   {
+    "id": "KXNFLRSHYDS-26SEP27BALDAL-BALLJACKSON8-40:no",
+    "ticker": "KXNFLRSHYDS-26SEP27BALDAL-BALLJACKSON8-40",
+    "side": "no",
+    "market": "Lamar Jackson: under 40",
+    "matchup": "BAL at DAL",
+    "sport": "Football",
+    "price": 0.53,
+    "model_prob": 0.685,
+    "edge": 0.137,
+    "expected_end": "2026-09-28T02:25:00+00:00"
+   },
+   {
+    "id": "KXNFLRSHYDS-26SEP27CARCLE-CLEQJUDKINS10-60:no",
+    "ticker": "KXNFLRSHYDS-26SEP27CARCLE-CLEQJUDKINS10-60",
+    "side": "no",
+    "market": "Quinshon Judkins: under 60",
+    "matchup": "CAR at CLE",
+    "sport": "Football",
+    "price": 0.53,
+    "model_prob": 0.676,
+    "edge": 0.129,
+    "expected_end": "2026-09-27T23:00:00+00:00"
+   },
+   {
+    "id": "KXNFLREC-26SEP27LARDEN-LARTFERGUSON18-6:no",
+    "ticker": "KXNFLREC-26SEP27LARDEN-LARTFERGUSON18-6",
+    "side": "no",
+    "market": "Terrance Ferguson: under 6",
+    "matchup": "LA at DEN",
+    "sport": "Football",
+    "price": 0.76,
+    "model_prob": 0.868,
+    "edge": 0.095,
+    "expected_end": "2026-09-28T06:20:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": "PARLAY-202609270031-2",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-09-27T00:31:03.477712+00:00",
+  "units": 1.0,
+  "price": 0.2833,
+  "model_prob": 0.423,
+  "ev": 0.493,
+  "payout_units": 2.5,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXNFLREC-26SEP27LACBUF-LACLMCCONKEY15-5:no",
+    "ticker": "KXNFLREC-26SEP27LACBUF-LACLMCCONKEY15-5",
+    "side": "no",
+    "market": "Ladd McConkey: under 5",
+    "matchup": "LAC at BUF",
+    "sport": "Football",
+    "price": 0.5,
+    "model_prob": 0.639,
+    "edge": 0.122,
+    "expected_end": "2026-09-27T23:00:00+00:00"
+   },
+   {
+    "id": "KXMLBKS-26SEP262140HOUATH-ATHJPERKINS50-5",
+    "ticker": "KXMLBKS-26SEP262140HOUATH-ATHJPERKINS50-5",
+    "side": "yes",
+    "market": "Jack Perkins: 5+",
+    "matchup": "Houston Astros at Athletics",
+    "sport": "Baseball",
+    "price": 0.53,
+    "model_prob": 0.662,
+    "edge": 0.114,
+    "expected_end": "2026-09-27T04:40:00+00:00"
    }
   ]
  }
