@@ -7406,8 +7406,8 @@
   "expected_end": "2026-09-29T06:15:00+00:00",
   "start_est": "2026-09-29T00:15:00+00:00",
   "status": "pending",
-  "latest_price": 0.2,
-  "close_price": 0.2,
+  "latest_price": 0.19,
+  "close_price": 0.19,
   "pnl": null,
   "why": "Colston Loveland: 49 a game lately (last 12 games). Model gives \"Colston Loveland: 60+\" 40%. Blended with the market that's 24% vs a 21% price.",
   "trend": 0.015,
@@ -8334,10 +8334,10 @@
   "made": "2026-09-27T00:29:27.070947+00:00",
   "expected_end": "2026-09-27T22:05:00+00:00",
   "start_est": "2026-09-27T19:05:00+00:00",
-  "status": "pending",
+  "status": "loss",
   "latest_price": 0.305,
   "close_price": 0.305,
-  "pnl": null,
+  "pnl": -1.05,
   "why": "Ratings 1450 vs 1578 with home field. Run differential last 10: -9 vs +23. Model gives San Francisco Giants 41%. Blended with the market that's 33% vs a 27% price.",
   "trend": 0.002,
   "new_market": false,
@@ -8346,7 +8346,8 @@
   "research": "",
   "sources": [],
   "expert_lean": "none",
-  "prechecked": true
+  "prechecked": true,
+  "graded": "2026-09-27T22:20:09.488281+00:00"
  },
  {
   "id": "KXATPMATCH-26SEP27MARJAC-JAC",
@@ -8654,10 +8655,10 @@
   "made": "2026-09-27T03:21:41.817760+00:00",
   "expected_end": "2026-09-27T22:10:00+00:00",
   "start_est": "2026-09-27T19:10:00+00:00",
-  "status": "pending",
+  "status": "loss",
   "latest_price": 0.485,
   "close_price": 0.485,
-  "pnl": null,
+  "pnl": -0.52,
   "why": "Projected runs 5.8 (home) vs 4.2 (10.0 total). Park factor 1.00. Forecast 65F, wind 6 mph. Model gives \"Over 8.5 runs scored\" 58%. Blended with the market that's 54% vs a 49% price. Sharp sportsbook price (Pinnacle) says 48%.",
   "trend": 0.005,
   "new_market": false,
@@ -8666,7 +8667,8 @@
   "sharp_source": "Pinnacle",
   "research": "",
   "sources": [],
-  "expert_lean": "none"
+  "expert_lean": "none",
+  "graded": "2026-09-27T22:20:09.781964+00:00"
  },
  {
   "id": "KXMLBGAME-26SEP271510AZSD-SD",
@@ -8694,10 +8696,10 @@
   "made": "2026-09-27T03:21:41.817760+00:00",
   "expected_end": "2026-09-27T22:10:00+00:00",
   "start_est": "2026-09-27T19:10:00+00:00",
-  "status": "pending",
+  "status": "win",
   "latest_price": 0.415,
   "close_price": 0.415,
-  "pnl": null,
+  "pnl": 0.57,
   "why": "Ratings 1550 vs 1526 with home field. Starters TBD (last season FIP 4.50, team allows 4.5 runs in his recent starts) vs Michael Soroka (4.20, 4.0). Run differential last 10: +10 vs +15. Model gives San Diego Padres 54%. Blended with the market that's 50% vs a 46% price. Price down 9\u00a2 in the last 12 hours. Sharp sportsbook price (Pinnacle) says 53%.",
   "trend": -0.09,
   "new_market": false,
@@ -8707,7 +8709,8 @@
   "price_gap": 0.053,
   "research": "",
   "sources": [],
-  "expert_lean": "none"
+  "expert_lean": "none",
+  "graded": "2026-09-27T22:20:09.861690+00:00"
  },
  {
   "id": "KXMLBKS-26SEP271507CINTOR-CINBWILLIAMSON55-5",
@@ -8735,10 +8738,10 @@
   "made": "2026-09-27T04:21:33.038959+00:00",
   "expected_end": "2026-09-27T22:07:00+00:00",
   "start_est": "2026-09-27T19:07:00+00:00",
-  "status": "pending",
+  "status": "loss",
   "latest_price": 0.2,
   "close_price": 0.2,
-  "pnl": null,
+  "pnl": -0.53,
   "why": "Brandon Williamson: 4.12 a game this season over 8 games (adjusted 4.54). Model gives \"Brandon Williamson: 5+\" 46%. Blended with the market that's 28% vs a 23% price. Price down 22\u00a2 in the last 12 hours.",
   "trend": -0.215,
   "new_market": false,
@@ -8746,7 +8749,8 @@
   "sharp_prob": null,
   "research": "",
   "sources": [],
-  "expert_lean": "none"
+  "expert_lean": "none",
+  "graded": "2026-09-27T22:20:09.966585+00:00"
  },
  {
   "id": "KXMLBKS-26SEP271510CLEKC-CLEPMESSICK77-4",
@@ -8774,10 +8778,10 @@
   "made": "2026-09-27T05:20:16.141419+00:00",
   "expected_end": "2026-09-27T22:10:00+00:00",
   "start_est": "2026-09-27T19:10:00+00:00",
-  "status": "pending",
+  "status": "loss",
   "latest_price": 0.46,
   "close_price": 0.46,
-  "pnl": null,
+  "pnl": -0.52,
   "why": "Parker Messick: 6.16 a game this season over 31 games (adjusted 6.03). Model gives \"Parker Messick: 4+\" 79%. Blended with the market that's 57% vs a 49% price.",
   "trend": 0.0,
   "new_market": true,
@@ -8785,7 +8789,8 @@
   "sharp_prob": null,
   "research": "",
   "sources": [],
-  "expert_lean": "none"
+  "expert_lean": "none",
+  "graded": "2026-09-27T22:20:10.074270+00:00"
  },
  {
   "id": "KXWTACHALLENGERMATCH-26SEP27MARGRA-MAR",
@@ -8893,10 +8898,10 @@
   "made": "2026-09-27T06:25:52.117225+00:00",
   "expected_end": "2026-09-27T22:10:00+00:00",
   "start_est": "2026-09-27T19:10:00+00:00",
-  "status": "pending",
+  "status": "loss",
   "latest_price": 0.515,
   "close_price": 0.515,
-  "pnl": null,
+  "pnl": -0.52,
   "why": "Ratings 1503 vs 1508 with home field. Starters River Ryan (last season FIP 4.50, team allows 2.8 runs in his recent starts) vs Jared Jones (4.50, 3.7). Run differential last 10: -7 vs +4. Model gives Detroit Tigers 53%. Blended with the market that's 49% vs a 46% price. Sharp sportsbook price (Pinnacle) says 45%.",
   "trend": -0.005,
   "new_market": false,
@@ -8905,7 +8910,8 @@
   "sharp_source": "Pinnacle",
   "research": "",
   "sources": [],
-  "expert_lean": "none"
+  "expert_lean": "none",
+  "graded": "2026-09-27T22:20:10.154472+00:00"
  },
  {
   "id": "KXATPCHALLENGERMATCH-26SEP27BARMEN-MEN",
@@ -8933,10 +8939,10 @@
   "made": "2026-09-27T07:20:44.288936+00:00",
   "expected_end": "2026-09-27T19:00:00+00:00",
   "start_est": "2026-09-27T15:00:00+00:00",
-  "status": "pending",
+  "status": "loss",
   "latest_price": 0.525,
   "close_price": 0.525,
-  "pnl": null,
+  "pnl": -0.52,
   "why": "Elo 1648 vs 1588 on clay. Won 50% vs 50% of games lately. Form 9-1 vs 8-2. Games played in last 3 days: 44 vs 66. Model 60%, blended with the market 56%, price 53%.",
   "trend": 0.006,
   "new_market": false,
@@ -8944,7 +8950,8 @@
   "sharp_prob": null,
   "research": "",
   "sources": [],
-  "expert_lean": "none"
+  "expert_lean": "none",
+  "graded": "2026-09-27T22:20:10.234125+00:00"
  },
  {
   "id": "KXATPMATCH-26SEP27JACRUB-JAC",
