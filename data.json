@@ -1,6 +1,6 @@
 {
- "updated": "2026-09-28T06:32:15.818658+00:00",
- "status_note": "Last run found 0 new pick(s) and graded 1.",
+ "updated": "2026-09-28T07:25:56.788032+00:00",
+ "status_note": "Last run found 0 new pick(s) and graded 0.",
  "bankroll": 94.4,
  "protection": {
   "bankroll": 94.4,
@@ -3245,23 +3245,16 @@
  },
  "learning": {
   "groups": {
-   "cfb:total": {
-    "finished": 1941,
-    "games": 64,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-27T03:00:00+00:00"
-   },
-   "cfb:team_total": {
-    "finished": 1402,
-    "games": 34,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-27T03:00:00+00:00"
-   },
    "cfb:spread": {
-    "finished": 2546,
+    "finished": 2541,
     "games": 64,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-27T03:00:00+00:00"
+   },
+   "cfb:total": {
+    "finished": 1904,
+    "games": 63,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-09-27T03:00:00+00:00"
@@ -3283,6 +3276,13 @@
    "cfb:total_1h": {
     "finished": 806,
     "games": 29,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-27T03:00:00+00:00"
+   },
+   "cfb:team_total": {
+    "finished": 1392,
+    "games": 34,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-09-27T03:00:00+00:00"
@@ -3737,23 +3737,23 @@
    }
   },
   "price_trend": {
-   "flat": {
-    "markets": 24198,
-    "hit_vs_price": -0.0
+   "rising": {
+    "markets": 3570,
+    "hit_vs_price": 0.011
    },
    "falling": {
-    "markets": 3588,
+    "markets": 3585,
     "hit_vs_price": -0.011
    },
-   "rising": {
-    "markets": 3572,
-    "hit_vs_price": 0.012
+   "flat": {
+    "markets": 24151,
+    "hit_vs_price": -0.0
    }
   }
  },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "tracker": {
-  "tracked": 91054,
+  "tracked": 91442,
   "series": 3921,
   "movers": [
    {
@@ -3880,13 +3880,13 @@
  },
  "models": {
   "tennis": {
-   "matches": 20100,
-   "training_rows": 13798,
+   "matches": 20105,
+   "training_rows": 13800,
    "holdout": {
     "from": "2026-08-24",
     "matches": 2070,
-    "elo_log_loss": 0.6612,
-    "model_log_loss": 0.6585,
+    "elo_log_loss": 0.6611,
+    "model_log_loss": 0.6584,
     "elo_accuracy": 0.606,
     "model_accuracy": 0.611
    },
@@ -3897,12 +3897,12 @@
     "rank": 0.0,
     "h2h": 0.46,
     "form": -0.536,
-    "fatigue_games": -0.214,
-    "fatigue_matches": 0.082,
-    "rest": 0.01,
+    "fatigue_games": -0.213,
+    "fatigue_matches": 0.083,
+    "rest": 0.011,
     "travel": 0.145,
     "altitude": 0.0,
-    "best_of_5": 0.586
+    "best_of_5": 0.587
    },
    "sport": "Tennis",
    "label": "Tennis",
@@ -3980,14 +3980,14 @@
    "holdout": {
     "matches": 654,
     "rating_log_loss": 0.6295,
-    "model_log_loss": 0.6277,
+    "model_log_loss": 0.6248,
     "rating_accuracy": 0.653,
-    "model_accuracy": 0.645
+    "model_accuracy": 0.648
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6041,
-    "model_log_loss": 0.6277,
+    "model_log_loss": 0.6248,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 654
@@ -3995,16 +3995,16 @@
    "backtest": {
     "bets": 16,
     "wins": 5,
-    "units": -8.7,
-    "roi": -0.304
+    "units": -8.1,
+    "roi": -0.276
    },
    "weights": {
-    "home_field": 0.255,
-    "rating": 1.527,
-    "rest": 0.24,
-    "point_diff_form": 0.236,
-    "qb_change": 0.285,
-    "epa": 0.161
+    "home_field": 0.254,
+    "rating": 1.526,
+    "rest": 0.236,
+    "point_diff_form": 0.235,
+    "qb_change": 0.265,
+    "epa": 0.164
    },
    "matches": 4409,
    "totals": {
@@ -4432,8 +4432,8 @@
    "expected_end": "2026-10-02T03:00:00+00:00",
    "start_est": "2026-10-02T00:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.455,
-   "close_price": 0.455,
+   "latest_price": 0.46,
+   "close_price": 0.46,
    "pnl": null,
    "why": "Ratings 1496 vs 1383, on the road. Point differential last 5: -67 vs -21. Model gives Western Kentucky 66%. Blended with the market that's 51% vs a 47% price. Price down 2\u00a2 in the last 12 hours. Sharp sportsbook price (Pinnacle) says 45%.",
    "trend": -0.022,
