@@ -1,6 +1,6 @@
 {
- "updated": "2026-09-28T04:25:43.180279+00:00",
- "status_note": "Last run found 0 new pick(s) and graded 1.",
+ "updated": "2026-09-28T05:24:56.736120+00:00",
+ "status_note": "Last run found 1 new pick(s) and graded 0.",
  "bankroll": 94.4,
  "protection": {
   "bankroll": 94.4,
@@ -2289,7 +2289,8 @@
       "price": 0.27,
       "model_prob": 0.35,
       "edge": 0.067,
-      "expected_end": "2026-09-28T06:00:00+00:00"
+      "expected_end": "2026-09-28T06:00:00+00:00",
+      "result": "win"
      },
      {
       "id": "KXNCAAFSPREAD-26OCT01UNTTLSA-UNT8",
@@ -3244,7 +3245,7 @@
  "learning": {
   "groups": {
    "cfb:team_total": {
-    "finished": 1437,
+    "finished": 1411,
     "games": 35,
     "trust": 0.25,
     "confidence_fix": false,
@@ -3377,11 +3378,11 @@
     "last": "2026-09-27T03:00:00+00:00"
    },
    "tennis:winner": {
-    "finished": 74,
-    "games": 37,
+    "finished": 78,
+    "games": 39,
     "trust": 0.5,
     "confidence_fix": false,
-    "last": "2026-09-28T01:00:00+00:00"
+    "last": "2026-09-28T02:00:00+00:00"
    },
    "mlb:winner": {
     "finished": 48,
@@ -3461,11 +3462,11 @@
     "last": "2026-09-27T19:10:00+00:00"
    },
    "soccer:winner": {
-    "finished": 60,
-    "games": 20,
+    "finished": 63,
+    "games": 21,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-09-28T00:30:00+00:00"
+    "last": "2026-09-28T02:30:00+00:00"
    },
    "soccer:btts": {
     "finished": 40,
@@ -3496,11 +3497,11 @@
     "last": "2026-09-28T00:30:00+00:00"
    },
    "soccer:spread_1h": {
-    "finished": 80,
-    "games": 20,
+    "finished": 84,
+    "games": 21,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-09-28T00:30:00+00:00"
+    "last": "2026-09-28T02:30:00+00:00"
    },
    "soccer:total_1h": {
     "finished": 120,
@@ -3517,11 +3518,11 @@
     "last": "2026-09-28T00:30:00+00:00"
    },
    "soccer:spread_2h": {
-    "finished": 80,
-    "games": 20,
+    "finished": 84,
+    "games": 21,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-09-28T00:30:00+00:00"
+    "last": "2026-09-28T02:30:00+00:00"
    },
    "soccer:total_2h": {
     "finished": 120,
@@ -3545,11 +3546,11 @@
     "last": "2026-09-28T00:30:00+00:00"
    },
    "soccer:team_total": {
-    "finished": 240,
-    "games": 20,
+    "finished": 252,
+    "games": 21,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-09-28T00:30:00+00:00"
+    "last": "2026-09-28T02:30:00+00:00"
    },
    "nfl:winner": {
     "finished": 28,
@@ -3736,22 +3737,22 @@
   },
   "price_trend": {
    "flat": {
-    "markets": 24159,
+    "markets": 24154,
     "hit_vs_price": -0.0
    },
    "falling": {
-    "markets": 3567,
-    "hit_vs_price": -0.01
+    "markets": 3570,
+    "hit_vs_price": -0.011
    },
    "rising": {
-    "markets": 3551,
+    "markets": 3554,
     "hit_vs_price": 0.011
    }
   }
  },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "tracker": {
-  "tracked": 91028,
+  "tracked": 91051,
   "series": 3921,
   "movers": [
    {
@@ -3878,29 +3879,29 @@
  },
  "models": {
   "tennis": {
-   "matches": 20082,
-   "training_rows": 13787,
+   "matches": 20090,
+   "training_rows": 13789,
    "holdout": {
     "from": "2026-08-24",
     "matches": 2069,
-    "elo_log_loss": 0.662,
-    "model_log_loss": 0.6594,
+    "elo_log_loss": 0.6618,
+    "model_log_loss": 0.6592,
     "elo_accuracy": 0.605,
-    "model_accuracy": 0.61
+    "model_accuracy": 0.611
    },
    "using": "full",
    "weights": {
-    "elo": 2.027,
+    "elo": 2.029,
     "dominance": 0.0,
     "rank": 0.0,
-    "h2h": 0.463,
+    "h2h": 0.462,
     "form": -0.538,
-    "fatigue_games": -0.213,
+    "fatigue_games": -0.212,
     "fatigue_matches": 0.083,
     "rest": 0.011,
     "travel": 0.144,
     "altitude": 0.0,
-    "best_of_5": 0.59
+    "best_of_5": 0.588
    },
    "sport": "Tennis",
    "label": "Tennis",
@@ -3978,31 +3979,31 @@
    "holdout": {
     "matches": 654,
     "rating_log_loss": 0.6295,
-    "model_log_loss": 0.6247,
+    "model_log_loss": 0.6255,
     "rating_accuracy": 0.653,
     "model_accuracy": 0.645
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6041,
-    "model_log_loss": 0.6247,
+    "model_log_loss": 0.6255,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 654
    },
    "backtest": {
-    "bets": 17,
-    "wins": 6,
-    "units": -6.0,
-    "roi": -0.197
+    "bets": 16,
+    "wins": 5,
+    "units": -9.2,
+    "roi": -0.316
    },
    "weights": {
-    "home_field": 0.254,
-    "rating": 1.534,
-    "rest": 0.236,
-    "point_diff_form": 0.227,
-    "qb_change": 0.301,
-    "epa": 0.162
+    "home_field": 0.253,
+    "rating": 1.532,
+    "rest": 0.241,
+    "point_diff_form": 0.229,
+    "qb_change": 0.284,
+    "epa": 0.163
    },
    "matches": 4409,
    "totals": {
@@ -4065,15 +4066,15 @@
    "clv_picks": 41
   },
   "week": {
-   "picks": 38,
+   "picks": 37,
    "wins": 11,
-   "losses": 27,
-   "units": -12.12,
-   "staked": 48.0,
-   "roi": -0.253,
-   "beat_price": 0.368,
-   "clv": 0.0004,
-   "clv_picks": 35
+   "losses": 26,
+   "units": -10.54,
+   "staked": 46.5,
+   "roi": -0.227,
+   "beat_price": 0.378,
+   "clv": 0.0006,
+   "clv_picks": 34
   },
   "yours": {
    "picks": 15,
@@ -4478,6 +4479,46 @@
    "trust": 0.25,
    "sharp_prob": 0.4524,
    "sharp_source": "Pinnacle",
+   "research": "",
+   "sources": [],
+   "expert_lean": "none"
+  },
+  {
+   "id": "KXMLSGAME-26SEP30NYRBSTL-TIE",
+   "ticker": "KXMLSGAME-26SEP30NYRBSTL-TIE",
+   "side": "yes",
+   "event": "KXMLSGAME-26SEP30NYRBSTL",
+   "game": "26SEP30NYRBSTL",
+   "sport": "Soccer",
+   "model_key": "soccer",
+   "mtype": "winner",
+   "line": null,
+   "tour": "MLS",
+   "tournament": "New York RB vs Saint Louis",
+   "matchup": "New York RB vs Saint Louis",
+   "surface": "",
+   "pick": "Draw",
+   "opponent": "",
+   "market": "Draw",
+   "price": 0.22,
+   "model_prob": 0.25,
+   "raw_prob": 0.286,
+   "edge": 0.018,
+   "tier": "W",
+   "units": 0.5,
+   "made": "2026-09-28T05:22:46.639840+00:00",
+   "expected_end": "2026-10-01T02:30:00+00:00",
+   "start_est": "2026-09-30T23:00:00+00:00",
+   "status": "pending",
+   "latest_price": 0.22,
+   "close_price": null,
+   "pnl": null,
+   "why": "Ratings 1394 (New York Red Bulls, home) vs 1519 (St. Louis City). Share of chances lately (xG or shots on target) 50% vs 50%. Goal difference last 6: -2 vs +7. Last played Sep 19 vs Sep 20. Model gives the draw 29%. Blended with the market that's 23% vs a 22% price. Sharp sportsbook price (12 books) says 23%.",
+   "trend": -0.005,
+   "new_market": false,
+   "trust": 0.25,
+   "sharp_prob": 0.2289,
+   "sharp_source": "12 books",
    "research": "",
    "sources": [],
    "expert_lean": "none"
