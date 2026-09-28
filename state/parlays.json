@@ -919,5 +919,85 @@
    }
   ],
   "graded": "2026-09-27T21:21:16.524265+00:00"
+ },
+ {
+  "id": "PARLAY-202609280031-1",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-09-28T00:31:48.972621+00:00",
+  "units": 1.0,
+  "price": 0.0652,
+  "model_prob": 0.1123,
+  "ev": 0.722,
+  "payout_units": 14.3,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXATPMATCH-26SEP28CUIALT-CUI",
+    "ticker": "KXATPMATCH-26SEP28CUIALT-CUI",
+    "side": "yes",
+    "market": "Jie Cui to win",
+    "matchup": "2026 ATP Beijing",
+    "sport": "Tennis",
+    "price": 0.28,
+    "model_prob": 0.378,
+    "edge": 0.084,
+    "expected_end": "2026-09-28T09:30:00+00:00"
+   },
+   {
+    "id": "KXNFLRECYDS-26SEP28PHICHI-CHICLOVELAND84-60",
+    "ticker": "KXNFLRECYDS-26SEP28PHICHI-CHICLOVELAND84-60",
+    "side": "yes",
+    "market": "Colston Loveland: 60+",
+    "matchup": "PHI at CHI",
+    "sport": "Football",
+    "price": 0.21,
+    "model_prob": 0.297,
+    "edge": 0.076,
+    "expected_end": "2026-09-29T06:15:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": "PARLAY-202609280031-2",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-09-28T00:31:48.972654+00:00",
+  "units": 1.0,
+  "price": 0.0717,
+  "model_prob": 0.1099,
+  "ev": 0.532,
+  "payout_units": 12.9,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXLIGAMXSPREAD-26SEP27NCXAME-AME2",
+    "ticker": "KXLIGAMXSPREAD-26SEP27NCXAME-AME2",
+    "side": "yes",
+    "market": "America wins by more than 1.5 goals",
+    "matchup": "Necaxa vs America",
+    "sport": "Soccer",
+    "price": 0.27,
+    "model_prob": 0.35,
+    "edge": 0.067,
+    "expected_end": "2026-09-28T06:00:00+00:00"
+   },
+   {
+    "id": "KXNCAAFSPREAD-26OCT01UNTTLSA-UNT8",
+    "ticker": "KXNCAAFSPREAD-26OCT01UNTTLSA-UNT8",
+    "side": "yes",
+    "market": "North Texas wins by over 7.5 points",
+    "matchup": "North Texas at Tulsa",
+    "sport": "Football",
+    "price": 0.24,
+    "model_prob": 0.314,
+    "edge": 0.061,
+    "expected_end": "2026-10-02T04:00:00+00:00"
+   }
+  ]
  }
 ]
