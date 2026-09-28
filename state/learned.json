@@ -1,6 +1,5 @@
 {
  "trust": {
-  "cfb:spread_1q": 0.25,
   "cfb:total_1q": 0.25,
   "cfb:period_winner_2q": 0.25,
   "cfb:spread_2q": 0.25,
@@ -12,6 +11,7 @@
   "cfb:spread_4q": 0.25,
   "cfb:total_4q": 0.25,
   "cfb:period_winner_1q": 0.25,
+  "cfb:spread_1q": 0.25,
   "cfb:spread": 0.25,
   "cfb:team_total": 0.25,
   "cfb:spread_1h": 0.25,
@@ -19,7 +19,7 @@
   "cfb:winner": 0.25,
   "cfb:total": 0.25,
   "cfb:period_winner_2h": 0.25,
-  "tennis:winner": 0.39,
+  "tennis:winner": 0.38,
   "mlb:winner": 0.5,
   "mlb:spread_f5": 0.25,
   "mlb:total_f5": 0.25,
@@ -72,7 +72,6 @@
   "nfl:prop_rec": 0.25
  },
  "trust_league": {
-  "cfb:spread_1q|College Football": 0.25,
   "cfb:total_1q|College Football": 0.69,
   "cfb:period_winner_2q|College Football": 0.25,
   "cfb:spread_2q|College Football": 0.25,
@@ -84,6 +83,7 @@
   "cfb:spread_4q|College Football": 0.25,
   "cfb:total_4q|College Football": 0.7,
   "cfb:period_winner_1q|College Football": 0.26,
+  "cfb:spread_1q|College Football": 0.25,
   "cfb:spread|College Football": 0.25,
   "cfb:team_total|College Football": 0.25,
   "cfb:spread_1h|College Football": 0.25,
@@ -91,7 +91,7 @@
   "cfb:winner|College Football": 0.25,
   "cfb:total|College Football": 0.25,
   "cfb:period_winner_2h|College Football": 0.25,
-  "tennis:winner|ATP Challenger": 0.36,
+  "tennis:winner|ATP Challenger": 0.35,
   "mlb:spread_f5|MLB": 0.25,
   "mlb:total_f5|MLB": 0.63,
   "mlb:spread|MLB": 0.25,
@@ -136,8 +136,7 @@
  },
  "calib": {},
  "counts": {
-  "cfb:spread_1q": 395,
-  "cfb:total_1q": 436,
+  "cfb:total_1q": 431,
   "cfb:period_winner_2q": 80,
   "cfb:spread_2q": 434,
   "cfb:total_2q": 438,
@@ -148,6 +147,7 @@
   "cfb:spread_4q": 415,
   "cfb:total_4q": 439,
   "cfb:period_winner_1q": 76,
+  "cfb:spread_1q": 394,
   "cfb:spread": 2272,
   "cfb:team_total": 1338,
   "cfb:spread_1h": 1184,
@@ -155,7 +155,7 @@
   "cfb:winner": 100,
   "cfb:total": 1666,
   "cfb:period_winner_2h": 64,
-  "tennis:winner": 164,
+  "tennis:winner": 172,
   "mlb:winner": 48,
   "mlb:spread_f5": 184,
   "mlb:total_f5": 310,
@@ -208,7 +208,6 @@
   "nfl:prop_rec": 1902
  },
  "games": {
-  "cfb:spread_1q": 21,
   "cfb:total_1q": 20,
   "cfb:period_winner_2q": 20,
   "cfb:spread_2q": 21,
@@ -220,6 +219,7 @@
   "cfb:spread_4q": 21,
   "cfb:total_4q": 21,
   "cfb:period_winner_1q": 19,
+  "cfb:spread_1q": 20,
   "cfb:spread": 55,
   "cfb:team_total": 32,
   "cfb:spread_1h": 28,
@@ -227,7 +227,7 @@
   "cfb:winner": 50,
   "cfb:total": 54,
   "cfb:period_winner_2h": 16,
-  "tennis:winner": 82,
+  "tennis:winner": 86,
   "mlb:winner": 24,
   "mlb:spread_f5": 23,
   "mlb:total_f5": 23,
@@ -280,7 +280,6 @@
   "nfl:prop_rec": 14
  },
  "last": {
-  "cfb:spread_1q": "2026-09-27T03:00:00+00:00",
   "cfb:total_1q": "2026-09-27T03:00:00+00:00",
   "cfb:period_winner_2q": "2026-09-27T03:00:00+00:00",
   "cfb:spread_2q": "2026-09-27T03:00:00+00:00",
@@ -292,6 +291,7 @@
   "cfb:spread_4q": "2026-09-27T03:00:00+00:00",
   "cfb:total_4q": "2026-09-27T03:00:00+00:00",
   "cfb:period_winner_1q": "2026-09-27T03:00:00+00:00",
+  "cfb:spread_1q": "2026-09-27T03:00:00+00:00",
   "cfb:spread": "2026-09-27T03:00:00+00:00",
   "cfb:team_total": "2026-09-27T03:00:00+00:00",
   "cfb:spread_1h": "2026-09-27T03:00:00+00:00",
@@ -299,7 +299,7 @@
   "cfb:winner": "2026-09-27T03:00:00+00:00",
   "cfb:total": "2026-09-27T03:00:00+00:00",
   "cfb:period_winner_2h": "2026-09-27T03:00:00+00:00",
-  "tennis:winner": "2026-09-28T13:30:00+00:00",
+  "tennis:winner": "2026-09-28T14:10:00+00:00",
   "mlb:winner": "2026-09-27T19:10:00+00:00",
   "mlb:spread_f5": "2026-09-27T19:10:00+00:00",
   "mlb:total_f5": "2026-09-27T19:10:00+00:00",
@@ -351,5 +351,5 @@
   "nfl:prop_rryds": "2026-09-28T00:20:00+00:00",
   "nfl:prop_rec": "2026-09-28T00:20:00+00:00"
  },
- "updated": "2026-09-28T16:25:51.141518+00:00"
+ "updated": "2026-09-28T17:22:06.169220+00:00"
 }
