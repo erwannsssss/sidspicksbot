@@ -1,6 +1,6 @@
 {
- "updated": "2026-09-29T12:31:35.047295+00:00",
- "status_note": "Last run found 1 new pick(s) and graded 1.",
+ "updated": "2026-09-29T13:28:56.189497+00:00",
+ "status_note": "Last run found 1 new pick(s) and graded 0.",
  "bankroll": 96.1,
  "protection": {
   "bankroll": 96.1,
@@ -121,8 +121,8 @@
    "expected_end": "2026-10-02T04:00:00+00:00",
    "start_est": "2026-10-02T01:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.235,
-   "close_price": 0.235,
+   "latest_price": 0.225,
+   "close_price": 0.225,
    "pnl": null,
    "why": "Projected score margin -10.1 (home) and total 57.6. Model gives \"North Texas wins by over 7.5 points\" 57%. Blended with the market that's 31% vs a 24% price.",
    "trend": 0.0,
@@ -366,6 +366,45 @@
    "trend": -0.008,
    "new_market": false,
    "trust": 0.32,
+   "sharp_prob": null,
+   "research": "",
+   "sources": [],
+   "expert_lean": "none"
+  },
+  {
+   "id": "KXATPMATCH-26SEP29ETCTSI-ETC",
+   "ticker": "KXATPMATCH-26SEP29ETCTSI-ETC",
+   "side": "yes",
+   "event": "KXATPMATCH-26SEP29ETCTSI",
+   "game": "26SEP29ETCTSI",
+   "sport": "Tennis",
+   "model_key": "tennis",
+   "mtype": "winner",
+   "line": null,
+   "tour": "ATP",
+   "tournament": "2026 ATP Tokyo",
+   "matchup": "2026 ATP Tokyo",
+   "surface": "hard",
+   "pick": "Tomas Martin Etcheverry",
+   "opponent": "Stefanos Tsitsipas",
+   "market": "Tomas Martin Etcheverry to win",
+   "price": 0.29,
+   "model_prob": 0.358,
+   "raw_prob": 0.498,
+   "edge": 0.053,
+   "tier": "B",
+   "units": 0.5,
+   "made": "2026-09-29T13:26:42.290194+00:00",
+   "expected_end": "2026-09-30T05:00:00+00:00",
+   "start_est": "2026-09-30T01:00:00+00:00",
+   "status": "pending",
+   "latest_price": 0.29,
+   "close_price": null,
+   "pnl": null,
+   "why": "Elo 1559 vs 1691 on hard. Won 50% vs 50% of games lately. Form 4-6 vs 8-2. Games played in last 3 days: 0 vs 44. Travelled 1,914 vs 0 km since last match. Model 50%, blended with the market 36%, price 29%.",
+   "trend": 0.0,
+   "new_market": false,
+   "trust": 0.34,
    "sharp_prob": null,
    "research": "",
    "sources": [],
@@ -3651,15 +3690,8 @@
  },
  "learning": {
   "groups": {
-   "mlb:prop_tb": {
-    "finished": 2770,
-    "games": 21,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-27T19:10:00+00:00"
-   },
    "mlb:prop_hrr": {
-    "finished": 3544,
+    "finished": 3501,
     "games": 21,
     "trust": 0.25,
     "confidence_fix": false,
@@ -3668,6 +3700,13 @@
    "mlb:total_f5": {
     "finished": 294,
     "games": 22,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-27T19:10:00+00:00"
+   },
+   "mlb:prop_tb": {
+    "finished": 2753,
+    "games": 21,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-09-27T19:10:00+00:00"
@@ -3855,11 +3894,11 @@
     "last": "2026-09-27T03:00:00+00:00"
    },
    "tennis:winner": {
-    "finished": 264,
-    "games": 132,
+    "finished": 274,
+    "games": 137,
     "trust": 0.36,
     "confidence_fix": false,
-    "last": "2026-09-29T09:10:00+00:00"
+    "last": "2026-09-29T10:30:00+00:00"
    },
    "soccer:winner": {
     "finished": 63,
@@ -4144,22 +4183,22 @@
   },
   "price_trend": {
    "flat": {
-    "markets": 23166,
+    "markets": 23127,
     "hit_vs_price": -0.0
    },
    "rising": {
-    "markets": 3223,
+    "markets": 3217,
     "hit_vs_price": 0.012
    },
    "falling": {
-    "markets": 3236,
-    "hit_vs_price": -0.011
+    "markets": 3231,
+    "hit_vs_price": -0.012
    }
   }
  },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "tracker": {
-  "tracked": 93280,
+  "tracked": 93599,
   "series": 3932,
   "movers": [
    {
@@ -4286,29 +4325,29 @@
  },
  "models": {
   "tennis": {
-   "matches": 20248,
-   "training_rows": 13918,
+   "matches": 20254,
+   "training_rows": 13924,
    "holdout": {
     "from": "2026-08-25",
-    "matches": 2088,
-    "elo_log_loss": 0.6566,
-    "model_log_loss": 0.6526,
+    "matches": 2089,
+    "elo_log_loss": 0.6565,
+    "model_log_loss": 0.6524,
     "elo_accuracy": 0.61,
     "model_accuracy": 0.615
    },
    "using": "full",
    "weights": {
-    "elo": 2.05,
+    "elo": 2.053,
     "dominance": 0.0,
     "rank": 0.0,
-    "h2h": 0.455,
-    "form": -0.554,
-    "fatigue_games": -0.212,
-    "fatigue_matches": 0.081,
-    "rest": 0.011,
+    "h2h": 0.454,
+    "form": -0.559,
+    "fatigue_games": -0.211,
+    "fatigue_matches": 0.08,
+    "rest": 0.012,
     "travel": 0.146,
     "altitude": 0.0,
-    "best_of_5": 0.577
+    "best_of_5": 0.575
    },
    "sport": "Tennis",
    "label": "Tennis",
@@ -4386,14 +4425,14 @@
    "holdout": {
     "matches": 654,
     "rating_log_loss": 0.6293,
-    "model_log_loss": 0.6249,
+    "model_log_loss": 0.6248,
     "rating_accuracy": 0.653,
-    "model_accuracy": 0.647
+    "model_accuracy": 0.648
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6044,
-    "model_log_loss": 0.6249,
+    "model_log_loss": 0.6248,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 654
@@ -4401,16 +4440,16 @@
    "backtest": {
     "bets": 17,
     "wins": 6,
-    "units": -5.0,
-    "roi": -0.161
+    "units": -4.5,
+    "roi": -0.147
    },
    "weights": {
-    "home_field": 0.254,
-    "rating": 1.532,
-    "rest": 0.238,
-    "point_diff_form": 0.235,
-    "qb_change": 0.275,
-    "epa": 0.162
+    "home_field": 0.255,
+    "rating": 1.526,
+    "rest": 0.244,
+    "point_diff_form": 0.233,
+    "qb_change": 0.274,
+    "epa": 0.163
    },
    "matches": 4410,
    "totals": {
@@ -4762,8 +4801,8 @@
    "expected_end": "2026-09-30T00:00:00+00:00",
    "start_est": "2026-09-29T21:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.465,
-   "close_price": 0.465,
+   "latest_price": 0.475,
+   "close_price": 0.475,
    "pnl": null,
    "why": "Projected runs 4.9 (home) vs 5.6 (10.5 total). Park factor 0.99. Model gives \"Over 8.5 runs scored\" 62%. Blended with the market that's 57% vs a 46% price.",
    "trend": 0.0,
@@ -4840,8 +4879,8 @@
    "expected_end": "2026-09-30T05:00:00+00:00",
    "start_est": "2026-09-30T02:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.465,
-   "close_price": 0.465,
+   "latest_price": 0.455,
+   "close_price": 0.455,
    "pnl": null,
    "why": "Projected runs 5.5 (home) vs 4.7 (10.2 total). Park factor 0.95. Forecast 75F, wind 2 mph. Model gives \"Over 7.5 runs scored\" 68%. Blended with the market that's 62% vs a 46% price.",
    "trend": 0.0,
@@ -4919,8 +4958,8 @@
    "expected_end": "2026-10-03T03:00:00+00:00",
    "start_est": "2026-10-03T00:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.46,
-   "close_price": 0.46,
+   "latest_price": 0.465,
+   "close_price": 0.465,
    "pnl": null,
    "why": "Projected score margin -2.6 (home) and total 50.6. Model gives \"Over 46.5 points scored\" 60%. Blended with the market that's 49% vs a 47% price.",
    "trend": 0.0,
@@ -5075,8 +5114,8 @@
    "expected_end": "2026-10-03T02:00:00+00:00",
    "start_est": "2026-10-02T23:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.395,
-   "close_price": 0.395,
+   "latest_price": 0.385,
+   "close_price": 0.385,
    "pnl": null,
    "why": "Ratings 1641 vs 1586, on the road. Point differential last 5: +117 vs +89. Model gives Pittsburgh 53%. Blended with the market that's 43% vs a 40% price. Sharp sportsbook price (Pinnacle) says 39%.",
    "trend": 0.0,
@@ -5115,8 +5154,8 @@
    "expected_end": "2026-10-03T05:30:00+00:00",
    "start_est": "2026-10-03T01:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.895,
-   "close_price": 0.895,
+   "latest_price": 0.89,
+   "close_price": 0.89,
    "pnl": null,
    "why": "Ratings 1774 vs 1390, on the road. Point differential last 5: +113 vs -85. Days of rest 5 vs 13. Model gives Montana State 96%. Blended with the market that's 88% vs a 87% price.",
    "trend": 0.0,
@@ -5154,8 +5193,8 @@
    "expected_end": "2026-10-02T04:30:00+00:00",
    "start_est": "2026-10-02T01:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.365,
-   "close_price": 0.365,
+   "latest_price": 0.36,
+   "close_price": 0.36,
    "pnl": null,
    "why": "Expected goals 2.08 vs 1.02 (3.10 total). Model gives \"No: Both Teams To Score\" 44%. Blended with the market that's 38% vs a 37% price.",
    "trend": 0.005,

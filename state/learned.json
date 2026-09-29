@@ -1,8 +1,8 @@
 {
  "trust": {
-  "mlb:prop_tb": 0.25,
   "mlb:prop_hrr": 0.25,
   "mlb:total_f5": 0.25,
+  "mlb:prop_tb": 0.25,
   "mlb:prop_hit": 0.25,
   "mlb:spread_f5": 0.25,
   "mlb:spread": 0.25,
@@ -72,9 +72,9 @@
   "nfl:prop_rec": 0.25
  },
  "trust_league": {
-  "mlb:prop_tb|MLB": 0.3,
   "mlb:prop_hrr|MLB": 0.25,
   "mlb:total_f5|MLB": 0.62,
+  "mlb:prop_tb|MLB": 0.3,
   "mlb:prop_hit|MLB": 0.89,
   "mlb:spread_f5|MLB": 0.25,
   "mlb:spread|MLB": 0.25,
@@ -141,9 +141,9 @@
  },
  "calib": {},
  "counts": {
-  "mlb:prop_tb": 2770,
-  "mlb:prop_hrr": 3544,
+  "mlb:prop_hrr": 3501,
   "mlb:total_f5": 294,
+  "mlb:prop_tb": 2753,
   "mlb:prop_hit": 1800,
   "mlb:spread_f5": 168,
   "mlb:spread": 252,
@@ -170,7 +170,7 @@
   "cfb:period_winner_4q": 60,
   "cfb:spread_4q": 310,
   "cfb:total_4q": 330,
-  "tennis:winner": 264,
+  "tennis:winner": 274,
   "soccer:winner": 63,
   "soccer:btts": 42,
   "soccer:spread": 160,
@@ -213,9 +213,9 @@
   "nfl:prop_rec": 2046
  },
  "games": {
-  "mlb:prop_tb": 21,
   "mlb:prop_hrr": 21,
   "mlb:total_f5": 22,
+  "mlb:prop_tb": 21,
   "mlb:prop_hit": 21,
   "mlb:spread_f5": 21,
   "mlb:spread": 21,
@@ -242,7 +242,7 @@
   "cfb:period_winner_4q": 15,
   "cfb:spread_4q": 15,
   "cfb:total_4q": 15,
-  "tennis:winner": 132,
+  "tennis:winner": 137,
   "soccer:winner": 21,
   "soccer:btts": 21,
   "soccer:spread": 21,
@@ -285,9 +285,9 @@
   "nfl:prop_rec": 15
  },
  "last": {
-  "mlb:prop_tb": "2026-09-27T19:10:00+00:00",
   "mlb:prop_hrr": "2026-09-27T19:10:00+00:00",
   "mlb:total_f5": "2026-09-27T19:10:00+00:00",
+  "mlb:prop_tb": "2026-09-27T19:10:00+00:00",
   "mlb:prop_hit": "2026-09-27T19:10:00+00:00",
   "mlb:spread_f5": "2026-09-27T19:10:00+00:00",
   "mlb:spread": "2026-09-27T19:10:00+00:00",
@@ -314,7 +314,7 @@
   "cfb:period_winner_4q": "2026-09-27T03:00:00+00:00",
   "cfb:spread_4q": "2026-09-27T03:00:00+00:00",
   "cfb:total_4q": "2026-09-27T03:00:00+00:00",
-  "tennis:winner": "2026-09-29T09:10:00+00:00",
+  "tennis:winner": "2026-09-29T10:30:00+00:00",
   "soccer:winner": "2026-09-28T02:30:00+00:00",
   "soccer:btts": "2026-09-28T02:30:00+00:00",
   "soccer:spread": "2026-09-28T02:30:00+00:00",
@@ -356,5 +356,5 @@
   "nfl:prop_rryds": "2026-09-29T00:15:00+00:00",
   "nfl:prop_rec": "2026-09-29T00:15:00+00:00"
  },
- "updated": "2026-09-29T12:29:23.226488+00:00"
+ "updated": "2026-09-29T13:26:40.142770+00:00"
 }
