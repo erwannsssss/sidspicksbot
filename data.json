@@ -1,11 +1,11 @@
 {
- "updated": "2026-09-29T04:25:24.919140+00:00",
+ "updated": "2026-09-29T05:24:51.603082+00:00",
  "status_note": "Last run found 0 new pick(s) and graded 1.",
- "bankroll": 93.56,
+ "bankroll": 94.25,
  "protection": {
-  "bankroll": 93.56,
+  "bankroll": 94.25,
   "peak": 112.26,
-  "drawdown": 0.167,
+  "drawdown": 0.16,
   "paused": false
  },
  "settings": {
@@ -132,46 +132,6 @@
    "research": "",
    "sources": [],
    "expert_lean": "none"
-  },
-  {
-   "id": "KXATPMATCH-26SEP28MACGEA-GEA",
-   "ticker": "KXATPMATCH-26SEP28MACGEA-GEA",
-   "side": "yes",
-   "event": "KXATPMATCH-26SEP28MACGEA",
-   "game": "26SEP28MACGEA",
-   "sport": "Tennis",
-   "model_key": "tennis",
-   "mtype": "winner",
-   "line": null,
-   "tour": "ATP",
-   "tournament": "2026 ATP Beijing",
-   "matchup": "2026 ATP Beijing",
-   "surface": "hard",
-   "pick": "Arthur Gea",
-   "opponent": "Tomas Machac",
-   "market": "Arthur Gea to win",
-   "price": 0.58,
-   "model_prob": 0.65,
-   "raw_prob": 0.722,
-   "edge": 0.053,
-   "tier": "B",
-   "units": 1.0,
-   "made": "2026-09-28T12:29:19.513490+00:00",
-   "expected_end": "2026-09-29T05:00:00+00:00",
-   "start_est": "2026-09-29T01:00:00+00:00",
-   "status": "pending",
-   "latest_price": 0.575,
-   "close_price": 0.575,
-   "pnl": null,
-   "why": "Elo 1758 vs 1572 on hard. Won 50% vs 50% of games lately. Form 8-2 vs 4-6. Head to head 1-0. Games played in last 3 days: 22 vs 22. Model 72%, blended with the market 65%, price 58%. Price up 7\u00a2 in the last 12 hours.",
-   "trend": 0.07,
-   "new_market": false,
-   "trust": 0.5,
-   "sharp_prob": null,
-   "research": "",
-   "sources": [],
-   "expert_lean": "none",
-   "prechecked": true
   },
   {
    "id": "KXATPCHALLENGERMATCH-26SEP28MELZAR-ZAR",
@@ -374,6 +334,47 @@
   }
  ],
  "history": [
+  {
+   "id": "KXATPMATCH-26SEP28MACGEA-GEA",
+   "ticker": "KXATPMATCH-26SEP28MACGEA-GEA",
+   "side": "yes",
+   "event": "KXATPMATCH-26SEP28MACGEA",
+   "game": "26SEP28MACGEA",
+   "sport": "Tennis",
+   "model_key": "tennis",
+   "mtype": "winner",
+   "line": null,
+   "tour": "ATP",
+   "tournament": "2026 ATP Beijing",
+   "matchup": "2026 ATP Beijing",
+   "surface": "hard",
+   "pick": "Arthur Gea",
+   "opponent": "Tomas Machac",
+   "market": "Arthur Gea to win",
+   "price": 0.58,
+   "model_prob": 0.65,
+   "raw_prob": 0.722,
+   "edge": 0.053,
+   "tier": "B",
+   "units": 1.0,
+   "made": "2026-09-28T12:29:19.513490+00:00",
+   "expected_end": "2026-09-29T05:00:00+00:00",
+   "start_est": "2026-09-29T01:00:00+00:00",
+   "status": "win",
+   "latest_price": 0.575,
+   "close_price": 0.575,
+   "pnl": 0.69,
+   "why": "Elo 1758 vs 1572 on hard. Won 50% vs 50% of games lately. Form 8-2 vs 4-6. Head to head 1-0. Games played in last 3 days: 22 vs 22. Model 72%, blended with the market 65%, price 58%. Price up 7\u00a2 in the last 12 hours.",
+   "trend": 0.07,
+   "new_market": false,
+   "trust": 0.5,
+   "sharp_prob": null,
+   "research": "",
+   "sources": [],
+   "expert_lean": "none",
+   "prechecked": true,
+   "graded": "2026-09-29T05:22:50.083800+00:00"
+  },
   {
    "id": "KXATPMATCH-26SEP28MEDSAF-SAF",
    "ticker": "KXATPMATCH-26SEP28MEDSAF-SAF",
@@ -3572,7 +3573,7 @@
  "learning": {
   "groups": {
    "mlb:prop_tb": {
-    "finished": 2836,
+    "finished": 2826,
     "games": 22,
     "trust": 0.25,
     "confidence_fix": false,
@@ -3782,9 +3783,9 @@
     "last": "2026-09-27T03:00:00+00:00"
    },
    "tennis:winner": {
-    "finished": 200,
-    "games": 100,
-    "trust": 0.38,
+    "finished": 210,
+    "games": 105,
+    "trust": 0.37,
     "confidence_fix": false,
     "last": "2026-09-29T02:00:00+00:00"
    },
@@ -4064,22 +4065,22 @@
   },
   "price_trend": {
    "flat": {
-    "markets": 23238,
+    "markets": 23242,
     "hit_vs_price": -0.0
    },
    "falling": {
-    "markets": 3235,
+    "markets": 3238,
     "hit_vs_price": -0.011
    },
    "rising": {
-    "markets": 3222,
-    "hit_vs_price": 0.011
+    "markets": 3225,
+    "hit_vs_price": 0.012
    }
   }
  },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "tracker": {
-  "tracked": 92822,
+  "tracked": 92852,
   "series": 3932,
   "movers": [
    {
@@ -4206,29 +4207,29 @@
  },
  "models": {
   "tennis": {
-   "matches": 20195,
-   "training_rows": 13873,
+   "matches": 20205,
+   "training_rows": 13881,
    "holdout": {
     "from": "2026-08-24",
-    "matches": 2081,
-    "elo_log_loss": 0.659,
-    "model_log_loss": 0.6554,
-    "elo_accuracy": 0.609,
-    "model_accuracy": 0.614
+    "matches": 2083,
+    "elo_log_loss": 0.6577,
+    "model_log_loss": 0.6542,
+    "elo_accuracy": 0.611,
+    "model_accuracy": 0.616
    },
    "using": "full",
    "weights": {
-    "elo": 2.04,
+    "elo": 2.039,
     "dominance": 0.0,
     "rank": 0.0,
-    "h2h": 0.461,
-    "form": -0.55,
-    "fatigue_games": -0.212,
-    "fatigue_matches": 0.082,
+    "h2h": 0.463,
+    "form": -0.544,
+    "fatigue_games": -0.213,
+    "fatigue_matches": 0.081,
     "rest": 0.01,
     "travel": 0.144,
     "altitude": 0.0,
-    "best_of_5": 0.583
+    "best_of_5": 0.582
    },
    "sport": "Tennis",
    "label": "Tennis",
@@ -4306,31 +4307,31 @@
    "holdout": {
     "matches": 654,
     "rating_log_loss": 0.6293,
-    "model_log_loss": 0.6287,
+    "model_log_loss": 0.6249,
     "rating_accuracy": 0.653,
-    "model_accuracy": 0.648
+    "model_accuracy": 0.65
    },
-   "using": "rating",
+   "using": "full",
    "market": {
     "market_log_loss": 0.6044,
-    "model_log_loss": 0.6293,
+    "model_log_loss": 0.6249,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 654
    },
    "backtest": {
-    "bets": 31,
-    "wins": 7,
-    "units": -22.0,
-    "roi": -0.4
+    "bets": 18,
+    "wins": 6,
+    "units": -7.5,
+    "roi": -0.235
    },
    "weights": {
-    "home_field": 0.246,
-    "rating": 2.159,
-    "rest": 0.0,
-    "point_diff_form": 0.0,
-    "qb_change": 0.0,
-    "epa": 0.0
+    "home_field": 0.254,
+    "rating": 1.529,
+    "rest": 0.242,
+    "point_diff_form": 0.234,
+    "qb_change": 0.3,
+    "epa": 0.16
    },
    "matches": 4410,
    "totals": {
@@ -4382,26 +4383,26 @@
  },
  "summary": {
   "all": {
-   "picks": 49,
-   "wins": 15,
+   "picks": 50,
+   "wins": 16,
    "losses": 34,
-   "units": -6.44,
-   "staked": 65.0,
-   "roi": -0.099,
-   "beat_price": 0.306,
-   "clv": -0.0021,
-   "clv_picks": 45
+   "units": -5.75,
+   "staked": 66.0,
+   "roi": -0.087,
+   "beat_price": 0.3,
+   "clv": -0.0022,
+   "clv_picks": 46
   },
   "week": {
-   "picks": 41,
-   "wins": 12,
+   "picks": 42,
+   "wins": 13,
    "losses": 29,
-   "units": -11.38,
-   "staked": 49.0,
-   "roi": -0.232,
-   "beat_price": 0.341,
-   "clv": -0.0003,
-   "clv_picks": 38
+   "units": -10.69,
+   "staked": 50.0,
+   "roi": -0.214,
+   "beat_price": 0.333,
+   "clv": -0.0004,
+   "clv_picks": 39
   },
   "yours": {
    "picks": 15,
@@ -4439,15 +4440,15 @@
    "clv_picks": 2
   },
   "none": {
-   "picks": 46,
-   "wins": 12,
+   "picks": 47,
+   "wins": 13,
    "losses": 34,
-   "units": -18.7,
-   "staked": 56.0,
-   "roi": -0.334,
-   "beat_price": 0.304,
-   "clv": -0.0022,
-   "clv_picks": 43
+   "units": -18.01,
+   "staked": 57.0,
+   "roi": -0.316,
+   "beat_price": 0.298,
+   "clv": -0.0023,
+   "clv_picks": 44
   }
  },
  "by_tier": {
@@ -4463,15 +4464,15 @@
    "clv_picks": 14
   },
   "B": {
-   "picks": 30,
-   "wins": 9,
+   "picks": 31,
+   "wins": 10,
    "losses": 21,
-   "units": -2.1,
-   "staked": 34.5,
-   "roi": -0.061,
-   "beat_price": 0.367,
-   "clv": -0.0009,
-   "clv_picks": 28
+   "units": -1.41,
+   "staked": 35.5,
+   "roi": -0.04,
+   "beat_price": 0.355,
+   "clv": -0.001,
+   "clv_picks": 29
   },
   "C": {
    "picks": 3,
@@ -4524,8 +4525,8 @@
    "expected_end": "2026-10-02T03:15:00+00:00",
    "start_est": "2026-10-02T00:15:00+00:00",
    "status": "pending",
-   "latest_price": 0.495,
-   "close_price": 0.495,
+   "latest_price": 0.485,
+   "close_price": 0.485,
    "pnl": null,
    "why": "Projected score margin -0.5 (home) and total 41.6. Forecast 75F, wind 11 mph, rain 0.3 mm. Model gives \"Over 38.5 points\" 59%. Blended with the market that's 51% vs a 49% price.",
    "trend": 0.01,
@@ -4799,8 +4800,8 @@
    "expected_end": "2026-10-03T02:00:00+00:00",
    "start_est": "2026-10-02T23:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.285,
-   "close_price": 0.285,
+   "latest_price": 0.28,
+   "close_price": 0.28,
    "pnl": null,
    "why": "Ratings 1509 vs 1542, at home. Point differential last 5: +2 vs +41. Days of rest 6 vs 7. Model gives Delaware 52%. Blended with the market that's 34% vs a 29% price. Sharp sportsbook price (Pinnacle) says 30%.",
    "trend": 0.0,
@@ -5035,8 +5036,8 @@
    "expected_end": "2026-10-03T05:30:00+00:00",
    "start_est": "2026-10-03T01:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.875,
-   "close_price": 0.875,
+   "latest_price": 0.88,
+   "close_price": 0.88,
    "pnl": null,
    "why": "Ratings 1774 vs 1390, on the road. Point differential last 5: +113 vs -85. Days of rest 5 vs 13. Model gives Montana State 96%. Blended with the market that's 88% vs a 87% price.",
    "trend": 0.0,
@@ -12375,15 +12376,15 @@
  ],
  "by_tour": {
   "ATP": {
-   "picks": 16,
-   "wins": 1,
+   "picks": 17,
+   "wins": 2,
    "losses": 15,
-   "units": -19.68,
-   "staked": 20.5,
-   "roi": -0.96,
-   "beat_price": 0.25,
-   "clv": -0.0077,
-   "clv_picks": 15
+   "units": -18.99,
+   "staked": 21.5,
+   "roi": -0.883,
+   "beat_price": 0.235,
+   "clv": -0.0075,
+   "clv_picks": 16
   },
   "ATP Challenger": {
    "picks": 12,
@@ -12476,15 +12477,15 @@
    "clv_picks": 1
   },
   "Tennis": {
-   "picks": 40,
-   "wins": 13,
+   "picks": 41,
+   "wins": 14,
    "losses": 27,
-   "units": -1.66,
-   "staked": 55.0,
-   "roi": -0.03,
-   "beat_price": 0.25,
+   "units": -0.97,
+   "staked": 56.0,
+   "roi": -0.017,
+   "beat_price": 0.244,
    "clv": -0.0038,
-   "clv_picks": 36
+   "clv_picks": 37
   }
  },
  "calibration": {
@@ -12505,7 +12506,7 @@
    "hit": 0.556
   },
   "60-70%": {
-   "n": 1,
+   "n": 2,
    "hit": 1.0
   }
  },
@@ -12717,6 +12718,10 @@
   {
    "t": "2026-09-28",
    "v": 93.56
+  },
+  {
+   "t": "2026-09-29",
+   "v": 94.25
   }
  ],
  "reports": [
