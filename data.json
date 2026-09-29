@@ -1,6 +1,6 @@
 {
- "updated": "2026-09-29T00:30:52.057246+00:00",
- "status_note": "Last run found 6 new pick(s) and graded 0.",
+ "updated": "2026-09-29T01:22:45.047183+00:00",
+ "status_note": "Last run found 0 new pick(s) and graded 0.",
  "bankroll": 93.56,
  "protection": {
   "bankroll": 93.56,
@@ -121,8 +121,8 @@
    "expected_end": "2026-10-02T04:00:00+00:00",
    "start_est": "2026-10-02T01:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.245,
-   "close_price": 0.245,
+   "latest_price": 0.24,
+   "close_price": 0.24,
    "pnl": null,
    "why": "Projected score margin -10.1 (home) and total 57.6. Model gives \"North Texas wins by over 7.5 points\" 57%. Blended with the market that's 31% vs a 24% price.",
    "trend": 0.0,
@@ -3569,36 +3569,8 @@
  },
  "learning": {
   "groups": {
-   "mlb:total": {
-    "finished": 472,
-    "games": 23,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-27T19:10:00+00:00"
-   },
-   "mlb:total_f5": {
-    "finished": 304,
-    "games": 23,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-27T19:10:00+00:00"
-   },
-   "mlb:prop_ks": {
-    "finished": 524,
-    "games": 20,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-27T19:10:00+00:00"
-   },
-   "mlb:prop_hit": {
-    "finished": 1906,
-    "games": 22,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-27T19:10:00+00:00"
-   },
    "mlb:prop_hr": {
-    "finished": 754,
+    "finished": 750,
     "games": 22,
     "trust": 0.25,
     "confidence_fix": false,
@@ -3618,6 +3590,13 @@
     "confidence_fix": false,
     "last": "2026-09-27T19:10:00+00:00"
    },
+   "mlb:prop_hit": {
+    "finished": 1888,
+    "games": 22,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-27T19:10:00+00:00"
+   },
    "mlb:winner": {
     "finished": 46,
     "games": 23,
@@ -3627,6 +3606,13 @@
    },
    "mlb:spread_f5": {
     "finished": 176,
+    "games": 22,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-27T19:10:00+00:00"
+   },
+   "mlb:total_f5": {
+    "finished": 296,
     "games": 22,
     "trust": 0.25,
     "confidence_fix": false,
@@ -3642,6 +3628,20 @@
    "mlb:team_total": {
     "finished": 616,
     "games": 22,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-27T19:10:00+00:00"
+   },
+   "mlb:total": {
+    "finished": 470,
+    "games": 22,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-27T19:10:00+00:00"
+   },
+   "mlb:prop_ks": {
+    "finished": 498,
+    "games": 19,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-09-27T19:10:00+00:00"
@@ -3780,8 +3780,8 @@
     "last": "2026-09-27T03:00:00+00:00"
    },
    "tennis:winner": {
-    "finished": 192,
-    "games": 96,
+    "finished": 194,
+    "games": 97,
     "trust": 0.38,
     "confidence_fix": false,
     "last": "2026-09-28T17:40:00+00:00"
@@ -4061,24 +4061,24 @@
    }
   },
   "price_trend": {
+   "flat": {
+    "markets": 22586,
+    "hit_vs_price": -0.0
+   },
    "falling": {
-    "markets": 3182,
-    "hit_vs_price": -0.015
+    "markets": 3168,
+    "hit_vs_price": -0.014
    },
    "rising": {
-    "markets": 3169,
-    "hit_vs_price": 0.015
-   },
-   "flat": {
-    "markets": 22611,
-    "hit_vs_price": -0.0
+    "markets": 3154,
+    "hit_vs_price": 0.014
    }
   }
  },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "tracker": {
-  "tracked": 92279,
-  "series": 3921,
+  "tracked": 92533,
+  "series": 3932,
   "movers": [
    {
     "ticker": "KXNFLFIRSTTD-26SEP28PHICHI-CHILBURDEN10",
@@ -4204,15 +4204,15 @@
  },
  "models": {
   "tennis": {
-   "matches": 20191,
-   "training_rows": 13869,
+   "matches": 20192,
+   "training_rows": 13870,
    "holdout": {
     "from": "2026-08-24",
     "matches": 2081,
-    "elo_log_loss": 0.6592,
-    "model_log_loss": 0.6554,
+    "elo_log_loss": 0.6591,
+    "model_log_loss": 0.6553,
     "elo_accuracy": 0.608,
-    "model_accuracy": 0.613
+    "model_accuracy": 0.614
    },
    "using": "full",
    "weights": {
@@ -4304,30 +4304,30 @@
    "holdout": {
     "matches": 654,
     "rating_log_loss": 0.6293,
-    "model_log_loss": 0.6244,
+    "model_log_loss": 0.6252,
     "rating_accuracy": 0.653,
     "model_accuracy": 0.65
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6044,
-    "model_log_loss": 0.6244,
+    "model_log_loss": 0.6252,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 654
    },
    "backtest": {
     "bets": 16,
-    "wins": 5,
-    "units": -9.2,
-    "roi": -0.316
+    "wins": 4,
+    "units": -12.4,
+    "roi": -0.414
    },
    "weights": {
-    "home_field": 0.253,
-    "rating": 1.529,
-    "rest": 0.235,
-    "point_diff_form": 0.234,
-    "qb_change": 0.298,
+    "home_field": 0.254,
+    "rating": 1.531,
+    "rest": 0.238,
+    "point_diff_form": 0.227,
+    "qb_change": 0.332,
     "epa": 0.159
    },
    "matches": 4410,
@@ -4561,8 +4561,8 @@
    "expected_end": "2026-10-02T03:15:00+00:00",
    "start_est": "2026-10-02T00:15:00+00:00",
    "status": "pending",
-   "latest_price": 0.485,
-   "close_price": 0.485,
+   "latest_price": 0.495,
+   "close_price": 0.495,
    "pnl": null,
    "why": "Projected score margin -0.5 (home) and total 41.6. Forecast 75F, wind 11 mph, rain 0.3 mm. Model gives \"Over 38.5 points\" 59%. Blended with the market that's 51% vs a 49% price.",
    "trend": 0.01,
@@ -4758,8 +4758,8 @@
    "expected_end": "2026-09-30T03:00:00+00:00",
    "start_est": "2026-09-30T00:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.285,
-   "close_price": 0.285,
+   "latest_price": 0.28,
+   "close_price": 0.28,
    "pnl": null,
    "why": "Ceddanne Rafaela: 1.73 a game this season over 138 games (adjusted 1.70). Model gives \"Ceddanne Rafaela: 2+\" 51%. Blended with the market that's 34% vs a 28% price.",
    "trend": 0.0,
@@ -5071,8 +5071,8 @@
    "expected_end": "2026-10-03T02:00:00+00:00",
    "start_est": "2026-10-02T23:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.4,
-   "close_price": null,
+   "latest_price": 0.395,
+   "close_price": 0.395,
    "pnl": null,
    "why": "Ratings 1641 vs 1586, on the road. Point differential last 5: +117 vs +89. Model gives Pittsburgh 53%. Blended with the market that's 43% vs a 40% price. Sharp sportsbook price (Pinnacle) says 39%.",
    "trend": 0.0,
