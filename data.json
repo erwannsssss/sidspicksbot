@@ -1,6 +1,6 @@
 {
- "updated": "2026-09-29T20:25:55.456493+00:00",
- "status_note": "Last run found 0 new pick(s) and graded 0.",
+ "updated": "2026-09-29T21:24:50.479289+00:00",
+ "status_note": "Last run found 1 new pick(s) and graded 1.",
  "bankroll": 96.61,
  "protection": {
   "bankroll": 96.61,
@@ -515,8 +515,8 @@
    "expected_end": "2026-09-30T08:20:00+00:00",
    "start_est": "2026-09-30T04:20:00+00:00",
    "status": "pending",
-   "latest_price": 0.585,
-   "close_price": 0.585,
+   "latest_price": 0.595,
+   "close_price": 0.595,
    "pnl": null,
    "why": "Elo 1635 vs 1429 on hard. Won 50% vs 50% of games lately. Form 6-4 vs 3-7. Games played in last 3 days: 44 vs 44. Model 72%, blended with the market 67%, price 58%.",
    "trend": 0.019,
@@ -2891,7 +2891,8 @@
       "price": 0.41,
       "model_prob": 0.577,
       "edge": 0.15,
-      "expected_end": "2026-09-29T21:00:00+00:00"
+      "expected_end": "2026-09-29T21:00:00+00:00",
+      "result": "win"
      },
      {
       "id": "KXMLBTOTAL-26SEP292200CHCSD-8",
@@ -3929,7 +3930,7 @@
  "learning": {
   "groups": {
    "cfb:spread_1h": {
-    "finished": 398,
+    "finished": 388,
     "games": 10,
     "trust": 0.25,
     "confidence_fix": false,
@@ -4153,11 +4154,11 @@
     "last": "2026-09-28T02:30:00+00:00"
    },
    "mlb:winner": {
-    "finished": 32,
-    "games": 16,
+    "finished": 34,
+    "games": 17,
     "trust": 0.5,
     "confidence_fix": false,
-    "last": "2026-09-27T19:10:00+00:00"
+    "last": "2026-09-29T18:00:00+00:00"
    },
    "mlb:spread_f5": {
     "finished": 136,
@@ -4167,21 +4168,21 @@
     "last": "2026-09-29T18:00:00+00:00"
    },
    "mlb:spread": {
-    "finished": 192,
-    "games": 16,
+    "finished": 204,
+    "games": 17,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-09-27T19:10:00+00:00"
+    "last": "2026-09-29T18:00:00+00:00"
    },
    "mlb:team_total": {
-    "finished": 448,
-    "games": 16,
+    "finished": 476,
+    "games": 17,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-09-27T19:10:00+00:00"
+    "last": "2026-09-29T18:00:00+00:00"
    },
    "mlb:total": {
-    "finished": 348,
+    "finished": 362,
     "games": 17,
     "trust": 0.25,
     "confidence_fix": false,
@@ -4195,43 +4196,43 @@
     "last": "2026-09-29T18:00:00+00:00"
    },
    "mlb:prop_ks": {
-    "finished": 366,
-    "games": 14,
+    "finished": 398,
+    "games": 15,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-09-27T19:10:00+00:00"
+    "last": "2026-09-29T18:00:00+00:00"
    },
    "mlb:prop_hit": {
-    "finished": 1290,
-    "games": 15,
+    "finished": 1364,
+    "games": 16,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-09-27T19:10:00+00:00"
+    "last": "2026-09-29T18:00:00+00:00"
    },
    "mlb:prop_hr": {
-    "finished": 514,
-    "games": 15,
+    "finished": 548,
+    "games": 16,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-09-27T19:10:00+00:00"
+    "last": "2026-09-29T18:00:00+00:00"
    },
    "mlb:prop_tb": {
-    "finished": 1986,
-    "games": 15,
+    "finished": 2110,
+    "games": 16,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-09-27T19:10:00+00:00"
+    "last": "2026-09-29T18:00:00+00:00"
    },
    "mlb:prop_hrr": {
-    "finished": 2498,
-    "games": 15,
+    "finished": 2658,
+    "games": 16,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-09-27T19:10:00+00:00"
+    "last": "2026-09-29T18:00:00+00:00"
    },
    "tennis:winner": {
-    "finished": 320,
-    "games": 160,
+    "finished": 322,
+    "games": 161,
     "trust": 0.35,
     "confidence_fix": true,
     "last": "2026-09-29T17:10:00+00:00"
@@ -4421,22 +4422,22 @@
   },
   "price_trend": {
    "flat": {
-    "markets": 17522,
+    "markets": 17748,
     "hit_vs_price": -0.0
    },
-   "rising": {
-    "markets": 2135,
-    "hit_vs_price": 0.023
-   },
    "falling": {
-    "markets": 2147,
+    "markets": 2172,
     "hit_vs_price": -0.019
+   },
+   "rising": {
+    "markets": 2162,
+    "hit_vs_price": 0.022
    }
   }
  },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "tracker": {
-  "tracked": 94383,
+  "tracked": 94490,
   "series": 3932,
   "movers": [
    {
@@ -4563,29 +4564,29 @@
  },
  "models": {
   "tennis": {
-   "matches": 20286,
-   "training_rows": 13955,
+   "matches": 20288,
+   "training_rows": 13957,
    "holdout": {
     "from": "2026-08-25",
     "matches": 2094,
-    "elo_log_loss": 0.6558,
-    "model_log_loss": 0.651,
+    "elo_log_loss": 0.6559,
+    "model_log_loss": 0.6507,
     "elo_accuracy": 0.612,
-    "model_accuracy": 0.615
+    "model_accuracy": 0.617
    },
    "using": "full",
    "weights": {
-    "elo": 2.057,
+    "elo": 2.056,
     "dominance": 0.0,
     "rank": 0.0,
     "h2h": 0.452,
-    "form": -0.564,
-    "fatigue_games": -0.211,
-    "fatigue_matches": 0.083,
+    "form": -0.562,
+    "fatigue_games": -0.212,
+    "fatigue_matches": 0.082,
     "rest": 0.016,
     "travel": 0.146,
     "altitude": 0.0,
-    "best_of_5": 0.573
+    "best_of_5": 0.574
    },
    "sport": "Tennis",
    "label": "Tennis",
@@ -4663,31 +4664,31 @@
    "holdout": {
     "matches": 654,
     "rating_log_loss": 0.63,
-    "model_log_loss": 0.6246,
+    "model_log_loss": 0.6258,
     "rating_accuracy": 0.653,
-    "model_accuracy": 0.645
+    "model_accuracy": 0.641
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6053,
-    "model_log_loss": 0.6246,
+    "model_log_loss": 0.6258,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 654
    },
    "backtest": {
-    "bets": 18,
-    "wins": 6,
-    "units": -6.0,
-    "roi": -0.187
+    "bets": 16,
+    "wins": 5,
+    "units": -8.7,
+    "roi": -0.304
    },
    "weights": {
-    "home_field": 0.255,
-    "rating": 1.529,
-    "rest": 0.24,
-    "point_diff_form": 0.239,
-    "qb_change": 0.264,
-    "epa": 0.16
+    "home_field": 0.256,
+    "rating": 1.527,
+    "rest": 0.243,
+    "point_diff_form": 0.232,
+    "qb_change": 0.31,
+    "epa": 0.159
    },
    "matches": 4411,
    "totals": {
@@ -4772,15 +4773,15 @@
    "clv_picks": 14
   },
   "watch": {
-   "picks": 181,
-   "wins": 67,
+   "picks": 182,
+   "wins": 68,
    "losses": 114,
-   "units": -10.32,
-   "staked": 90.5,
-   "roi": -0.114,
-   "beat_price": 0.232,
+   "units": -9.62,
+   "staked": 91.0,
+   "roi": -0.106,
+   "beat_price": 0.231,
    "clv": -0.0102,
-   "clv_picks": 171
+   "clv_picks": 172
   }
  },
  "by_expert_lean": {
@@ -4842,15 +4843,15 @@
    "clv_picks": 3
   },
   "W": {
-   "picks": 181,
-   "wins": 67,
+   "picks": 182,
+   "wins": 68,
    "losses": 114,
-   "units": -10.32,
-   "staked": 90.5,
-   "roi": -0.114,
-   "beat_price": 0.232,
+   "units": -9.62,
+   "staked": 91.0,
+   "roi": -0.106,
+   "beat_price": 0.231,
    "clv": -0.0102,
-   "clv_picks": 171
+   "clv_picks": 172
   }
  },
  "watch_open": [
@@ -4974,45 +4975,6 @@
    "expert_lean": "none"
   },
   {
-   "id": "KXMLBTOTAL-26SEP291400PHIATL-8",
-   "ticker": "KXMLBTOTAL-26SEP291400PHIATL-8",
-   "side": "yes",
-   "event": "KXMLBTOTAL-26SEP291400PHIATL",
-   "game": "26SEP291400PHIATL",
-   "sport": "Baseball",
-   "model_key": "mlb",
-   "mtype": "total",
-   "line": 7.5,
-   "tour": "MLB",
-   "tournament": "Philadelphia Phillies at Atlanta Braves",
-   "matchup": "Philadelphia Phillies at Atlanta Braves",
-   "surface": "",
-   "pick": "Over 7.5 runs scored",
-   "opponent": "",
-   "market": "Over 7.5 runs scored",
-   "price": 0.41,
-   "model_prob": 0.577,
-   "raw_prob": 0.643,
-   "edge": 0.15,
-   "tier": "W",
-   "units": 0.5,
-   "made": "2026-09-28T12:29:19.513490+00:00",
-   "expected_end": "2026-09-29T21:00:00+00:00",
-   "start_est": "2026-09-29T18:00:00+00:00",
-   "status": "pending",
-   "latest_price": 0.405,
-   "close_price": 0.405,
-   "pnl": null,
-   "why": "Projected runs 5.3 (home) vs 4.3 (9.7 total). Park factor 1.01. Forecast 84F, wind 4 mph. Model gives \"Over 7.5 runs scored\" 64%. Blended with the market that's 58% vs a 41% price.",
-   "trend": 0.0,
-   "new_market": true,
-   "trust": 0.72,
-   "sharp_prob": null,
-   "research": "",
-   "sources": [],
-   "expert_lean": "none"
-  },
-  {
    "id": "KXMLBTOTAL-26SEP291700CWSHOU-9",
    "ticker": "KXMLBTOTAL-26SEP291700CWSHOU-9",
    "side": "yes",
@@ -5078,8 +5040,8 @@
    "expected_end": "2026-09-30T03:00:00+00:00",
    "start_est": "2026-09-30T00:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.285,
-   "close_price": 0.285,
+   "latest_price": 0.3,
+   "close_price": 0.3,
    "pnl": null,
    "why": "Ceddanne Rafaela: 1.73 a game this season over 138 games (adjusted 1.70). Model gives \"Ceddanne Rafaela: 2+\" 51%. Blended with the market that's 34% vs a 28% price.",
    "trend": 0.0,
@@ -5509,8 +5471,8 @@
    "expected_end": "2026-10-03T19:00:00+00:00",
    "start_est": "2026-10-03T16:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.42,
-   "close_price": 0.42,
+   "latest_price": 0.425,
+   "close_price": 0.425,
    "pnl": null,
    "why": "Projected score margin -0.6 (home) and total 51.7. Model gives \"Over 48.5 points scored\" 58%. Blended with the market that's 46% vs a 42% price.",
    "trend": 0.0,
@@ -5874,9 +5836,88 @@
    "research": "",
    "sources": [],
    "expert_lean": "none"
+  },
+  {
+   "id": "KXMLBF5SPREAD-26SEP301400PHIATL-PHI2:no",
+   "ticker": "KXMLBF5SPREAD-26SEP301400PHIATL-PHI2",
+   "side": "no",
+   "event": "KXMLBF5SPREAD-26SEP301400PHIATL",
+   "game": "26SEP301400PHIATL",
+   "sport": "Baseball",
+   "model_key": "mlb",
+   "mtype": "spread_f5",
+   "line": 1.5,
+   "tour": "MLB",
+   "tournament": "Philadelphia Phillies at Atlanta Braves",
+   "matchup": "Philadelphia Phillies at Atlanta Braves",
+   "surface": "",
+   "pick": "No: Philadelphia wins by over 1.5 runs",
+   "opponent": "",
+   "market": "No: Philadelphia wins by over 1.5 runs",
+   "price": 0.64,
+   "model_prob": 0.699,
+   "raw_prob": 0.764,
+   "edge": 0.043,
+   "tier": "W",
+   "units": 0.5,
+   "made": "2026-09-29T21:22:15.336025+00:00",
+   "expected_end": "2026-09-30T21:00:00+00:00",
+   "start_est": "2026-09-30T18:00:00+00:00",
+   "status": "pending",
+   "latest_price": 0.64,
+   "close_price": null,
+   "pnl": null,
+   "why": "Projected runs 2.3 (home) vs 2.1 (4.4 total). Park factor 1.01. Forecast 87F, wind 7 mph. Model gives \"No: Philadelphia wins by over 1.5 runs\" 76%. Blended with the market that's 67% vs a 64% price.",
+   "trend": 0.0,
+   "new_market": true,
+   "trust": 0.25,
+   "sharp_prob": null,
+   "research": "",
+   "sources": [],
+   "expert_lean": "none"
   }
  ],
  "watch_history": [
+  {
+   "id": "KXMLBTOTAL-26SEP291400PHIATL-8",
+   "ticker": "KXMLBTOTAL-26SEP291400PHIATL-8",
+   "side": "yes",
+   "event": "KXMLBTOTAL-26SEP291400PHIATL",
+   "game": "26SEP291400PHIATL",
+   "sport": "Baseball",
+   "model_key": "mlb",
+   "mtype": "total",
+   "line": 7.5,
+   "tour": "MLB",
+   "tournament": "Philadelphia Phillies at Atlanta Braves",
+   "matchup": "Philadelphia Phillies at Atlanta Braves",
+   "surface": "",
+   "pick": "Over 7.5 runs scored",
+   "opponent": "",
+   "market": "Over 7.5 runs scored",
+   "price": 0.41,
+   "model_prob": 0.577,
+   "raw_prob": 0.643,
+   "edge": 0.15,
+   "tier": "W",
+   "units": 0.5,
+   "made": "2026-09-28T12:29:19.513490+00:00",
+   "expected_end": "2026-09-29T21:00:00+00:00",
+   "start_est": "2026-09-29T18:00:00+00:00",
+   "status": "win",
+   "latest_price": 0.405,
+   "close_price": 0.405,
+   "pnl": 0.7,
+   "why": "Projected runs 5.3 (home) vs 4.3 (9.7 total). Park factor 1.01. Forecast 84F, wind 4 mph. Model gives \"Over 7.5 runs scored\" 64%. Blended with the market that's 58% vs a 41% price.",
+   "trend": 0.0,
+   "new_market": true,
+   "trust": 0.72,
+   "sharp_prob": null,
+   "research": "",
+   "sources": [],
+   "expert_lean": "none",
+   "graded": "2026-09-29T21:22:11.694974+00:00"
+  },
   {
    "id": "KXNFLRECYDS-26SEP28PHICHI-CHICLOVELAND84-60",
    "ticker": "KXNFLRECYDS-26SEP28PHICHI-CHICLOVELAND84-60",
