@@ -1001,5 +1001,85 @@
     "expected_end": "2026-10-02T04:00:00+00:00"
    }
   ]
+ },
+ {
+  "id": "PARLAY-202609290030-1",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-09-29T00:30:14.397135+00:00",
+  "units": 1.0,
+  "price": 0.2038,
+  "model_prob": 0.3566,
+  "ev": 0.75,
+  "payout_units": 3.9,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXMLBTOTAL-26SEP291400PHIATL-8",
+    "ticker": "KXMLBTOTAL-26SEP291400PHIATL-8",
+    "side": "yes",
+    "market": "Over 7.5 runs scored",
+    "matchup": "Philadelphia Phillies at Atlanta Braves",
+    "sport": "Baseball",
+    "price": 0.41,
+    "model_prob": 0.577,
+    "edge": 0.15,
+    "expected_end": "2026-09-29T21:00:00+00:00"
+   },
+   {
+    "id": "KXMLBTOTAL-26SEP292200CHCSD-8",
+    "ticker": "KXMLBTOTAL-26SEP292200CHCSD-8",
+    "side": "yes",
+    "market": "Over 7.5 runs scored",
+    "matchup": "Chicago Cubs at San Diego Padres",
+    "sport": "Baseball",
+    "price": 0.46,
+    "model_prob": 0.618,
+    "edge": 0.14,
+    "expected_end": "2026-09-30T05:00:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": "PARLAY-202609290030-2",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-09-29T00:30:14.397187+00:00",
+  "units": 1.0,
+  "price": 0.1453,
+  "model_prob": 0.2284,
+  "ev": 0.572,
+  "payout_units": 5.9,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXNCAAFGAME-26OCT02LIBDEL-DEL",
+    "ticker": "KXNCAAFGAME-26OCT02LIBDEL-DEL",
+    "side": "yes",
+    "market": "Delaware to win",
+    "matchup": "Liberty at Delaware",
+    "sport": "Football",
+    "price": 0.29,
+    "model_prob": 0.4,
+    "edge": 0.095,
+    "expected_end": "2026-10-03T02:00:00+00:00"
+   },
+   {
+    "id": "KXMLBTOTAL-26SEP291700CWSHOU-9",
+    "ticker": "KXMLBTOTAL-26SEP291700CWSHOU-9",
+    "side": "yes",
+    "market": "Over 8.5 runs scored",
+    "matchup": "Chicago White Sox at Houston Astros",
+    "sport": "Baseball",
+    "price": 0.46,
+    "model_prob": 0.571,
+    "edge": 0.093,
+    "expected_end": "2026-09-30T00:00:00+00:00"
+   }
+  ]
  }
 ]

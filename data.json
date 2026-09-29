@@ -1,6 +1,6 @@
 {
- "updated": "2026-09-28T23:22:54.370045+00:00",
- "status_note": "Last run found 2 new pick(s) and graded 0.",
+ "updated": "2026-09-29T00:30:52.057246+00:00",
+ "status_note": "Last run found 6 new pick(s) and graded 0.",
  "bankroll": 93.56,
  "protection": {
   "bankroll": 93.56,
@@ -121,8 +121,8 @@
    "expected_end": "2026-10-02T04:00:00+00:00",
    "start_est": "2026-10-02T01:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.24,
-   "close_price": 0.24,
+   "latest_price": 0.245,
+   "close_price": 0.245,
    "pnl": null,
    "why": "Projected score margin -10.1 (home) and total 57.6. Model gives \"North Texas wins by over 7.5 points\" 57%. Blended with the market that's 31% vs a 24% price.",
    "trend": 0.0,
@@ -160,8 +160,8 @@
    "expected_end": "2026-09-29T05:00:00+00:00",
    "start_est": "2026-09-29T01:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.57,
-   "close_price": 0.57,
+   "latest_price": 0.575,
+   "close_price": 0.575,
    "pnl": null,
    "why": "Elo 1758 vs 1572 on hard. Won 50% vs 50% of games lately. Form 8-2 vs 4-6. Head to head 1-0. Games played in last 3 days: 22 vs 22. Model 72%, blended with the market 65%, price 58%. Price up 7\u00a2 in the last 12 hours.",
    "trend": 0.07,
@@ -320,11 +320,51 @@
    "expected_end": "2026-09-29T05:00:00+00:00",
    "start_est": "2026-09-29T01:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.45,
-   "close_price": null,
+   "latest_price": 0.445,
+   "close_price": 0.445,
    "pnl": null,
    "why": "Elo 1614 vs 1457 on hard. Won 50% vs 50% of games lately. Form 5-5 vs 2-8. Travelled 1,517 vs 1,517 km since last match. Model 67%, blended with the market 53%, price 45%.",
    "trend": -0.004,
+   "new_market": false,
+   "trust": 0.38,
+   "sharp_prob": null,
+   "research": "",
+   "sources": [],
+   "expert_lean": "none",
+   "prechecked": true
+  },
+  {
+   "id": "KXATPMATCH-26SEP28GRIRUB-GRI",
+   "ticker": "KXATPMATCH-26SEP28GRIRUB-GRI",
+   "side": "yes",
+   "event": "KXATPMATCH-26SEP28GRIRUB",
+   "game": "26SEP28GRIRUB",
+   "sport": "Tennis",
+   "model_key": "tennis",
+   "mtype": "winner",
+   "line": null,
+   "tour": "ATP",
+   "tournament": "2026 ATP Beijing",
+   "matchup": "2026 ATP Beijing",
+   "surface": "hard",
+   "pick": "Tallon Griekspoor",
+   "opponent": "Andrey Rublev",
+   "market": "Tallon Griekspoor to win",
+   "price": 0.34,
+   "model_prob": 0.406,
+   "raw_prob": 0.52,
+   "edge": 0.051,
+   "tier": "B",
+   "units": 0.5,
+   "made": "2026-09-29T00:29:00.262787+00:00",
+   "expected_end": "2026-09-29T05:00:00+00:00",
+   "start_est": "2026-09-29T01:00:00+00:00",
+   "status": "pending",
+   "latest_price": 0.34,
+   "close_price": null,
+   "pnl": null,
+   "why": "Elo 1596 vs 1680 on hard. Won 50% vs 50% of games lately. Form 4-6 vs 6-4. Head to head 1-0. Games played in last 3 days: 0 vs 44. Travelled 1,517 vs 1,122 km since last match. Model 52%, blended with the market 41%, price 34%.",
+   "trend": -0.001,
    "new_market": false,
    "trust": 0.38,
    "sharp_prob": null,
@@ -2510,6 +2550,86 @@
       "expected_end": "2026-10-02T04:00:00+00:00"
      }
     ]
+   },
+   {
+    "id": "PARLAY-202609290030-1",
+    "tier": "P",
+    "sport": "Parlay",
+    "kind": "watchlist",
+    "made": "2026-09-29T00:30:14.397135+00:00",
+    "units": 1.0,
+    "price": 0.2038,
+    "model_prob": 0.3566,
+    "ev": 0.75,
+    "payout_units": 3.9,
+    "status": "pending",
+    "pnl": null,
+    "legs": [
+     {
+      "id": "KXMLBTOTAL-26SEP291400PHIATL-8",
+      "ticker": "KXMLBTOTAL-26SEP291400PHIATL-8",
+      "side": "yes",
+      "market": "Over 7.5 runs scored",
+      "matchup": "Philadelphia Phillies at Atlanta Braves",
+      "sport": "Baseball",
+      "price": 0.41,
+      "model_prob": 0.577,
+      "edge": 0.15,
+      "expected_end": "2026-09-29T21:00:00+00:00"
+     },
+     {
+      "id": "KXMLBTOTAL-26SEP292200CHCSD-8",
+      "ticker": "KXMLBTOTAL-26SEP292200CHCSD-8",
+      "side": "yes",
+      "market": "Over 7.5 runs scored",
+      "matchup": "Chicago Cubs at San Diego Padres",
+      "sport": "Baseball",
+      "price": 0.46,
+      "model_prob": 0.618,
+      "edge": 0.14,
+      "expected_end": "2026-09-30T05:00:00+00:00"
+     }
+    ]
+   },
+   {
+    "id": "PARLAY-202609290030-2",
+    "tier": "P",
+    "sport": "Parlay",
+    "kind": "watchlist",
+    "made": "2026-09-29T00:30:14.397187+00:00",
+    "units": 1.0,
+    "price": 0.1453,
+    "model_prob": 0.2284,
+    "ev": 0.572,
+    "payout_units": 5.9,
+    "status": "pending",
+    "pnl": null,
+    "legs": [
+     {
+      "id": "KXNCAAFGAME-26OCT02LIBDEL-DEL",
+      "ticker": "KXNCAAFGAME-26OCT02LIBDEL-DEL",
+      "side": "yes",
+      "market": "Delaware to win",
+      "matchup": "Liberty at Delaware",
+      "sport": "Football",
+      "price": 0.29,
+      "model_prob": 0.4,
+      "edge": 0.095,
+      "expected_end": "2026-10-03T02:00:00+00:00"
+     },
+     {
+      "id": "KXMLBTOTAL-26SEP291700CWSHOU-9",
+      "ticker": "KXMLBTOTAL-26SEP291700CWSHOU-9",
+      "side": "yes",
+      "market": "Over 8.5 runs scored",
+      "matchup": "Chicago White Sox at Houston Astros",
+      "sport": "Baseball",
+      "price": 0.46,
+      "model_prob": 0.571,
+      "edge": 0.093,
+      "expected_end": "2026-09-30T00:00:00+00:00"
+     }
+    ]
    }
   ],
   "done": [
@@ -3449,128 +3569,16 @@
  },
  "learning": {
   "groups": {
-   "cfb:period_winner_2q": {
-    "finished": 64,
-    "games": 16,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-27T03:00:00+00:00"
-   },
-   "cfb:spread_2q": {
-    "finished": 350,
-    "games": 16,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-27T03:00:00+00:00"
-   },
-   "cfb:total_2q": {
-    "finished": 352,
-    "games": 16,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-27T03:00:00+00:00"
-   },
-   "cfb:period_winner_3q": {
-    "finished": 64,
-    "games": 16,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-27T03:00:00+00:00"
-   },
-   "cfb:spread_3q": {
-    "finished": 334,
-    "games": 16,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-27T03:00:00+00:00"
-   },
-   "cfb:total_3q": {
-    "finished": 352,
-    "games": 16,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-27T03:00:00+00:00"
-   },
-   "cfb:period_winner_4q": {
-    "finished": 64,
-    "games": 16,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-27T03:00:00+00:00"
-   },
-   "cfb:spread_4q": {
-    "finished": 332,
-    "games": 16,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-27T03:00:00+00:00"
-   },
-   "cfb:total_4q": {
-    "finished": 352,
-    "games": 16,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-27T03:00:00+00:00"
-   },
-   "cfb:spread_1q": {
-    "finished": 314,
-    "games": 16,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-27T03:00:00+00:00"
-   },
-   "cfb:team_total": {
-    "finished": 1234,
-    "games": 27,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-27T03:00:00+00:00"
-   },
-   "tennis:winner": {
-    "finished": 194,
-    "games": 97,
-    "trust": 0.38,
-    "confidence_fix": false,
-    "last": "2026-09-28T17:40:00+00:00"
-   },
-   "mlb:winner": {
-    "finished": 48,
-    "games": 24,
-    "trust": 0.5,
-    "confidence_fix": false,
-    "last": "2026-09-27T19:10:00+00:00"
-   },
-   "mlb:spread_f5": {
-    "finished": 184,
+   "mlb:total": {
+    "finished": 472,
     "games": 23,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-09-27T19:10:00+00:00"
    },
    "mlb:total_f5": {
-    "finished": 310,
+    "finished": 304,
     "games": 23,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-27T19:10:00+00:00"
-   },
-   "mlb:spread": {
-    "finished": 276,
-    "games": 23,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-27T19:10:00+00:00"
-   },
-   "mlb:team_total": {
-    "finished": 644,
-    "games": 23,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-27T19:10:00+00:00"
-   },
-   "mlb:total": {
-    "finished": 492,
-    "games": 24,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-09-27T19:10:00+00:00"
@@ -3610,6 +3618,34 @@
     "confidence_fix": false,
     "last": "2026-09-27T19:10:00+00:00"
    },
+   "mlb:winner": {
+    "finished": 46,
+    "games": 23,
+    "trust": 0.5,
+    "confidence_fix": false,
+    "last": "2026-09-27T19:10:00+00:00"
+   },
+   "mlb:spread_f5": {
+    "finished": 176,
+    "games": 22,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-27T19:10:00+00:00"
+   },
+   "mlb:spread": {
+    "finished": 264,
+    "games": 22,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-27T19:10:00+00:00"
+   },
+   "mlb:team_total": {
+    "finished": 616,
+    "games": 22,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-27T19:10:00+00:00"
+   },
    "cfb:winner": {
     "finished": 90,
     "games": 45,
@@ -3638,6 +3674,13 @@
     "confidence_fix": false,
     "last": "2026-09-27T03:00:00+00:00"
    },
+   "cfb:team_total": {
+    "finished": 1232,
+    "games": 26,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-27T03:00:00+00:00"
+   },
    "cfb:total": {
     "finished": 1502,
     "games": 48,
@@ -3659,12 +3702,89 @@
     "confidence_fix": false,
     "last": "2026-09-27T03:00:00+00:00"
    },
+   "cfb:spread_1q": {
+    "finished": 310,
+    "games": 15,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-27T03:00:00+00:00"
+   },
    "cfb:total_1q": {
     "finished": 330,
     "games": 15,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-09-27T03:00:00+00:00"
+   },
+   "cfb:period_winner_2q": {
+    "finished": 60,
+    "games": 15,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-27T03:00:00+00:00"
+   },
+   "cfb:spread_2q": {
+    "finished": 322,
+    "games": 15,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-27T03:00:00+00:00"
+   },
+   "cfb:total_2q": {
+    "finished": 330,
+    "games": 15,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-27T03:00:00+00:00"
+   },
+   "cfb:period_winner_3q": {
+    "finished": 60,
+    "games": 15,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-27T03:00:00+00:00"
+   },
+   "cfb:spread_3q": {
+    "finished": 312,
+    "games": 15,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-27T03:00:00+00:00"
+   },
+   "cfb:total_3q": {
+    "finished": 330,
+    "games": 15,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-27T03:00:00+00:00"
+   },
+   "cfb:period_winner_4q": {
+    "finished": 60,
+    "games": 15,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-27T03:00:00+00:00"
+   },
+   "cfb:spread_4q": {
+    "finished": 310,
+    "games": 15,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-27T03:00:00+00:00"
+   },
+   "cfb:total_4q": {
+    "finished": 330,
+    "games": 15,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-27T03:00:00+00:00"
+   },
+   "tennis:winner": {
+    "finished": 192,
+    "games": 96,
+    "trust": 0.38,
+    "confidence_fix": false,
+    "last": "2026-09-28T17:40:00+00:00"
    },
    "soccer:winner": {
     "finished": 63,
@@ -3941,25 +4061,33 @@
    }
   },
   "price_trend": {
-   "flat": {
-    "markets": 22754,
-    "hit_vs_price": -0.0
-   },
    "falling": {
-    "markets": 3227,
-    "hit_vs_price": -0.016
+    "markets": 3182,
+    "hit_vs_price": -0.015
    },
    "rising": {
-    "markets": 3213,
-    "hit_vs_price": 0.017
+    "markets": 3169,
+    "hit_vs_price": 0.015
+   },
+   "flat": {
+    "markets": 22611,
+    "hit_vs_price": -0.0
    }
   }
  },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "tracker": {
-  "tracked": 92231,
+  "tracked": 92279,
   "series": 3921,
   "movers": [
+   {
+    "ticker": "KXNFLFIRSTTD-26SEP28PHICHI-CHILBURDEN10",
+    "series": "KXNFLFIRSTTD",
+    "title": "Luther Burden III",
+    "move": 0.96,
+    "price": 0.995,
+    "close": "2026-10-01T00:15:00+00:00"
+   },
    {
     "ticker": "KXNFLTD-26SEP27SEAWAS-SEAESAUBERT81-1",
     "series": "KXNFLTD",
@@ -4009,12 +4137,36 @@
     "close": "2026-09-29T17:00:00+00:00"
    },
    {
+    "ticker": "KXNFLFFWEEKLEAD-2026W3TE-BBOWERS89",
+    "series": "KXNFLFFWEEKLEAD",
+    "title": "Brock Bowers",
+    "move": 0.845,
+    "price": 0.895,
+    "close": "2026-09-29T03:59:00+00:00"
+   },
+   {
     "ticker": "KXNFLRECYDS-26SEP27CARCLE-CARTTREMBLE82-25",
     "series": "KXNFLRECYDS",
     "title": "Tommy Tremble: 25+",
     "move": 0.845,
     "price": 0.975,
     "close": "2026-09-29T17:00:00+00:00"
+   },
+   {
+    "ticker": "KXNFLFFWEEKTOP-2026W3TET5-BBOWERS89",
+    "series": "KXNFLFFWEEKTOP",
+    "title": "Brock Bowers",
+    "move": 0.83,
+    "price": 0.99,
+    "close": "2026-09-29T03:59:00+00:00"
+   },
+   {
+    "ticker": "KXNFLFFWEEKTOP-2026W3RBT5-KWILLIAMS23",
+    "series": "KXNFLFFWEEKTOP",
+    "title": "Kyren Williams",
+    "move": 0.815,
+    "price": 0.875,
+    "close": "2026-09-29T03:59:00+00:00"
    },
    {
     "ticker": "KXNFLRECYDS-26SEP27SEAWAS-SEAABARNER88-40",
@@ -4041,44 +4193,12 @@
     "close": "2026-09-29T17:00:00+00:00"
    },
    {
-    "ticker": "KXNFLRSHYDS-26SEP27LACBUF-LACKMITCHELL34-30",
-    "series": "KXNFLRSHYDS",
-    "title": "Keaton Mitchell: 30+",
+    "ticker": "KXNFLFFWEEKLEAD-2026W3ALL-JGIBBS0",
+    "series": "KXNFLFFWEEKLEAD",
+    "title": "Jahmyr Gibbs",
     "move": 0.785,
-    "price": 0.985,
-    "close": "2026-09-29T17:00:00+00:00"
-   },
-   {
-    "ticker": "KXNFL1QTOTAL-26SEP27CINPIT-14",
-    "series": "KXNFL1QTOTAL",
-    "title": "Over 13.5 points",
-    "move": 0.78,
-    "price": 0.995,
-    "close": "2026-09-29T17:00:00+00:00"
-   },
-   {
-    "ticker": "KXNFLRECYDS-26SEP27KCMIA-MIACBELL18-40",
-    "series": "KXNFLRECYDS",
-    "title": "Chris Bell: 40+",
-    "move": 0.78,
-    "price": 0.995,
-    "close": "2026-09-29T17:00:00+00:00"
-   },
-   {
-    "ticker": "KXNFLPASSTDS-26SEP27SEAWAS-WASMMARIOTA8-2",
-    "series": "KXNFLPASSTDS",
-    "title": "Marcus Mariota: 2+",
-    "move": 0.77,
-    "price": 0.995,
-    "close": "2026-09-29T17:00:00+00:00"
-   },
-   {
-    "ticker": "KXNFLRECYDS-26SEP27CINPIT-PITRWILSON14-40",
-    "series": "KXNFLRECYDS",
-    "title": "Roman Wilson: 40+",
-    "move": 0.765,
-    "price": 0.995,
-    "close": "2026-09-29T17:00:00+00:00"
+    "price": 0.86,
+    "close": "2026-09-29T03:59:00+00:00"
    }
   ]
  },
@@ -4184,14 +4304,14 @@
    "holdout": {
     "matches": 654,
     "rating_log_loss": 0.6293,
-    "model_log_loss": 0.6271,
+    "model_log_loss": 0.6244,
     "rating_accuracy": 0.653,
-    "model_accuracy": 0.645
+    "model_accuracy": 0.65
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6044,
-    "model_log_loss": 0.6271,
+    "model_log_loss": 0.6244,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 654
@@ -4199,16 +4319,16 @@
    "backtest": {
     "bets": 16,
     "wins": 5,
-    "units": -8.9,
-    "roi": -0.3
+    "units": -9.2,
+    "roi": -0.316
    },
    "weights": {
-    "home_field": 0.254,
-    "rating": 1.536,
-    "rest": 0.238,
-    "point_diff_form": 0.231,
-    "qb_change": 0.304,
-    "epa": 0.158
+    "home_field": 0.253,
+    "rating": 1.529,
+    "rest": 0.235,
+    "point_diff_form": 0.234,
+    "qb_change": 0.298,
+    "epa": 0.159
    },
    "matches": 4410,
    "totals": {
@@ -4756,14 +4876,210 @@
    "expected_end": "2026-10-03T03:00:00+00:00",
    "start_est": "2026-10-03T00:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.47,
-   "close_price": null,
+   "latest_price": 0.46,
+   "close_price": 0.46,
    "pnl": null,
    "why": "Projected score margin -2.6 (home) and total 50.6. Model gives \"Over 46.5 points scored\" 60%. Blended with the market that's 49% vs a 47% price.",
    "trend": 0.0,
    "new_market": true,
    "trust": 0.25,
    "sharp_prob": null,
+   "research": "",
+   "sources": [],
+   "expert_lean": "none"
+  },
+  {
+   "id": "KXATPMATCH-26SEP28TSIHIJ-HIJ",
+   "ticker": "KXATPMATCH-26SEP28TSIHIJ-HIJ",
+   "side": "yes",
+   "event": "KXATPMATCH-26SEP28TSIHIJ",
+   "game": "26SEP28TSIHIJ",
+   "sport": "Tennis",
+   "model_key": "tennis",
+   "mtype": "winner",
+   "line": null,
+   "tour": "ATP",
+   "tournament": "2026 ATP Tokyo",
+   "matchup": "2026 ATP Tokyo",
+   "surface": "hard",
+   "pick": "Rinky Hijikata",
+   "opponent": "Stefanos Tsitsipas",
+   "market": "Rinky Hijikata to win",
+   "price": 0.26,
+   "model_prob": 0.354,
+   "raw_prob": 0.454,
+   "edge": 0.081,
+   "tier": "W",
+   "units": 0.5,
+   "made": "2026-09-29T00:29:00.262787+00:00",
+   "expected_end": "2026-09-29T05:00:00+00:00",
+   "start_est": "2026-09-29T01:00:00+00:00",
+   "status": "pending",
+   "latest_price": 0.26,
+   "close_price": null,
+   "pnl": null,
+   "why": "Elo 1623 vs 1677 on hard. Won 50% vs 50% of games lately. Form 6-4 vs 7-3. Games played in last 3 days: 22 vs 22. Model 45%, blended with the market 33%, price 26%. Price down 5\u00a2 in the last 12 hours.",
+   "trend": -0.05,
+   "new_market": false,
+   "trust": 0.38,
+   "sharp_prob": null,
+   "research": "",
+   "sources": [],
+   "expert_lean": "none"
+  },
+  {
+   "id": "KXATPMATCH-26SEP28RUNJAC-JAC",
+   "ticker": "KXATPMATCH-26SEP28RUNJAC-JAC",
+   "side": "yes",
+   "event": "KXATPMATCH-26SEP28RUNJAC",
+   "game": "26SEP28RUNJAC",
+   "sport": "Tennis",
+   "model_key": "tennis",
+   "mtype": "winner",
+   "line": null,
+   "tour": "ATP",
+   "tournament": "2026 ATP Tokyo",
+   "matchup": "2026 ATP Tokyo",
+   "surface": "hard",
+   "pick": "Kyrian Jacquet",
+   "opponent": "Holger Rune",
+   "market": "Kyrian Jacquet to win",
+   "price": 0.35,
+   "model_prob": 0.424,
+   "raw_prob": 0.5,
+   "edge": 0.058,
+   "tier": "W",
+   "units": 0.5,
+   "made": "2026-09-29T00:29:00.262787+00:00",
+   "expected_end": "2026-09-29T05:00:00+00:00",
+   "start_est": "2026-09-29T01:00:00+00:00",
+   "status": "pending",
+   "latest_price": 0.35,
+   "close_price": null,
+   "pnl": null,
+   "why": "Elo 1639 vs 1646 on hard. Won 50% vs 50% of games lately. Form 6-4 vs 7-3. Games played in last 3 days: 44 vs 0. Travelled 1,914 vs 0 km since last match. Model 50%, blended with the market 41%, price 35%. Price down 13\u00a2 in the last 12 hours.",
+   "trend": -0.132,
+   "new_market": false,
+   "trust": 0.38,
+   "sharp_prob": null,
+   "research": "",
+   "sources": [],
+   "expert_lean": "none"
+  },
+  {
+   "id": "KXWTAMATCH-26SEP28SHEKUD-SHE",
+   "ticker": "KXWTAMATCH-26SEP28SHEKUD-SHE",
+   "side": "yes",
+   "event": "KXWTAMATCH-26SEP28SHEKUD",
+   "game": "26SEP28SHEKUD",
+   "sport": "Tennis",
+   "model_key": "tennis",
+   "mtype": "winner",
+   "line": null,
+   "tour": "WTA",
+   "tournament": "2026 WTA Beijing",
+   "matchup": "2026 WTA Beijing",
+   "surface": "hard",
+   "pick": "Mayar Sherif Ahmed Abdelaziz",
+   "opponent": "Polina Kudermetova",
+   "market": "Mayar Sherif Ahmed Abdelaziz to win",
+   "price": 0.37,
+   "model_prob": 0.441,
+   "raw_prob": 0.526,
+   "edge": 0.054,
+   "tier": "W",
+   "units": 0.5,
+   "made": "2026-09-29T00:29:00.262787+00:00",
+   "expected_end": "2026-09-29T05:00:00+00:00",
+   "start_est": "2026-09-29T01:00:00+00:00",
+   "status": "pending",
+   "latest_price": 0.37,
+   "close_price": null,
+   "pnl": null,
+   "why": "Elo 1648 vs 1547 on hard. Won 50% vs 50% of games lately. Form 7-3 vs 5-5. Head to head 0-1. Travelled 0 vs 953 km since last match. Model 53%, blended with the market 42%, price 37%.",
+   "trend": -0.001,
+   "new_market": false,
+   "trust": 0.38,
+   "sharp_prob": null,
+   "research": "",
+   "sources": [],
+   "expert_lean": "none"
+  },
+  {
+   "id": "KXWTAMATCH-26SEP28PREKOR-KOR",
+   "ticker": "KXWTAMATCH-26SEP28PREKOR-KOR",
+   "side": "yes",
+   "event": "KXWTAMATCH-26SEP28PREKOR",
+   "game": "26SEP28PREKOR",
+   "sport": "Tennis",
+   "model_key": "tennis",
+   "mtype": "winner",
+   "line": null,
+   "tour": "WTA",
+   "tournament": "2026 WTA Beijing",
+   "matchup": "2026 WTA Beijing",
+   "surface": "hard",
+   "pick": "Tamara Korpatsch",
+   "opponent": "Taylah Preston",
+   "market": "Tamara Korpatsch to win",
+   "price": 0.32,
+   "model_prob": 0.385,
+   "raw_prob": 0.451,
+   "edge": 0.05,
+   "tier": "W",
+   "units": 0.5,
+   "made": "2026-09-29T00:29:00.262787+00:00",
+   "expected_end": "2026-09-29T05:00:00+00:00",
+   "start_est": "2026-09-29T01:00:00+00:00",
+   "status": "pending",
+   "latest_price": 0.32,
+   "close_price": null,
+   "pnl": null,
+   "why": "Elo 1578 vs 1597 on hard. Won 50% vs 50% of games lately. Form 6-4 vs 6-4. Games played in last 3 days: 0 vs 22. Travelled 0 vs 953 km since last match. Model 45%, blended with the market 37%, price 32%.",
+   "trend": -0.017,
+   "new_market": false,
+   "trust": 0.38,
+   "sharp_prob": null,
+   "research": "",
+   "sources": [],
+   "expert_lean": "none"
+  },
+  {
+   "id": "KXNCAAFGAME-26OCT02PITTVT-PITT",
+   "ticker": "KXNCAAFGAME-26OCT02PITTVT-PITT",
+   "side": "yes",
+   "event": "KXNCAAFGAME-26OCT02PITTVT",
+   "game": "26OCT02PITTVT",
+   "sport": "Football",
+   "model_key": "cfb",
+   "mtype": "winner",
+   "line": null,
+   "tour": "College Football",
+   "tournament": "Pittsburgh at Virginia Tech",
+   "matchup": "Pittsburgh at Virginia Tech",
+   "surface": "",
+   "pick": "Pittsburgh to win",
+   "opponent": "",
+   "market": "Pittsburgh to win",
+   "price": 0.4,
+   "model_prob": 0.464,
+   "raw_prob": 0.534,
+   "edge": 0.047,
+   "tier": "W",
+   "units": 0.5,
+   "made": "2026-09-29T00:29:00.262787+00:00",
+   "expected_end": "2026-10-03T02:00:00+00:00",
+   "start_est": "2026-10-02T23:00:00+00:00",
+   "status": "pending",
+   "latest_price": 0.4,
+   "close_price": null,
+   "pnl": null,
+   "why": "Ratings 1641 vs 1586, on the road. Point differential last 5: +117 vs +89. Model gives Pittsburgh 53%. Blended with the market that's 43% vs a 40% price. Sharp sportsbook price (Pinnacle) says 39%.",
+   "trend": 0.0,
+   "new_market": false,
+   "trust": 0.25,
+   "sharp_prob": 0.3945,
+   "sharp_source": "Pinnacle",
    "research": "",
    "sources": [],
    "expert_lean": "none"
