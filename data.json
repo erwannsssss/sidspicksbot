@@ -1,6 +1,6 @@
 {
- "updated": "2026-09-29T01:22:45.047183+00:00",
- "status_note": "Last run found 0 new pick(s) and graded 0.",
+ "updated": "2026-09-29T02:22:36.115923+00:00",
+ "status_note": "Last run found 2 new pick(s) and graded 0.",
  "bankroll": 93.56,
  "protection": {
   "bankroll": 93.56,
@@ -3569,29 +3569,29 @@
  },
  "learning": {
   "groups": {
+   "mlb:prop_hit": {
+    "finished": 1838,
+    "games": 22,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-27T19:10:00+00:00"
+   },
    "mlb:prop_hr": {
-    "finished": 750,
+    "finished": 748,
     "games": 22,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-09-27T19:10:00+00:00"
    },
    "mlb:prop_tb": {
-    "finished": 2920,
+    "finished": 2892,
     "games": 22,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-09-27T19:10:00+00:00"
    },
    "mlb:prop_hrr": {
-    "finished": 3706,
-    "games": 22,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-27T19:10:00+00:00"
-   },
-   "mlb:prop_hit": {
-    "finished": 1888,
+    "finished": 3676,
     "games": 22,
     "trust": 0.25,
     "confidence_fix": false,
@@ -3885,39 +3885,39 @@
     "last": "2026-09-28T00:20:00+00:00"
    },
    "nfl:spread_1h": {
-    "finished": 434,
-    "games": 14,
+    "finished": 464,
+    "games": 15,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-09-28T00:20:00+00:00"
+    "last": "2026-09-29T00:15:00+00:00"
    },
    "nfl:total_1h": {
-    "finished": 336,
-    "games": 14,
+    "finished": 362,
+    "games": 15,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-09-28T00:20:00+00:00"
+    "last": "2026-09-29T00:15:00+00:00"
    },
    "nfl:period_winner_1q": {
-    "finished": 56,
-    "games": 14,
+    "finished": 60,
+    "games": 15,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-09-28T00:20:00+00:00"
+    "last": "2026-09-29T00:15:00+00:00"
    },
    "nfl:spread_1q": {
-    "finished": 274,
-    "games": 14,
+    "finished": 296,
+    "games": 15,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-09-28T00:20:00+00:00"
+    "last": "2026-09-29T00:15:00+00:00"
    },
    "nfl:total_1q": {
-    "finished": 236,
-    "games": 14,
+    "finished": 256,
+    "games": 15,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-09-28T00:20:00+00:00"
+    "last": "2026-09-29T00:15:00+00:00"
    },
    "nfl:spread_2h": {
     "finished": 436,
@@ -3934,25 +3934,25 @@
     "last": "2026-09-28T00:20:00+00:00"
    },
    "nfl:period_winner_2q": {
-    "finished": 56,
-    "games": 14,
+    "finished": 60,
+    "games": 15,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-09-28T00:20:00+00:00"
+    "last": "2026-09-29T00:15:00+00:00"
    },
    "nfl:spread_2q": {
-    "finished": 298,
-    "games": 14,
+    "finished": 320,
+    "games": 15,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-09-28T00:20:00+00:00"
+    "last": "2026-09-29T00:15:00+00:00"
    },
    "nfl:total_2q": {
-    "finished": 278,
-    "games": 14,
+    "finished": 298,
+    "games": 15,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-09-28T00:20:00+00:00"
+    "last": "2026-09-29T00:15:00+00:00"
    },
    "nfl:period_winner_3q": {
     "finished": 56,
@@ -4004,11 +4004,11 @@
     "last": "2026-09-28T00:20:00+00:00"
    },
    "nfl:team_total": {
-    "finished": 700,
-    "games": 14,
+    "finished": 706,
+    "games": 15,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-09-28T00:20:00+00:00"
+    "last": "2026-09-29T00:15:00+00:00"
    },
    "nfl:total": {
     "finished": 526,
@@ -4053,31 +4053,31 @@
     "last": "2026-09-28T00:20:00+00:00"
    },
    "nfl:prop_rec": {
-    "finished": 1902,
-    "games": 14,
+    "finished": 1926,
+    "games": 15,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-09-28T00:20:00+00:00"
+    "last": "2026-09-29T00:15:00+00:00"
    }
   },
   "price_trend": {
    "flat": {
-    "markets": 22586,
+    "markets": 22687,
     "hit_vs_price": -0.0
    },
    "falling": {
-    "markets": 3168,
-    "hit_vs_price": -0.014
+    "markets": 3176,
+    "hit_vs_price": -0.012
    },
    "rising": {
-    "markets": 3154,
-    "hit_vs_price": 0.014
+    "markets": 3163,
+    "hit_vs_price": 0.013
    }
   }
  },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "tracker": {
-  "tracked": 92533,
+  "tracked": 92762,
   "series": 3932,
   "movers": [
    {
@@ -4304,31 +4304,31 @@
    "holdout": {
     "matches": 654,
     "rating_log_loss": 0.6293,
-    "model_log_loss": 0.6252,
+    "model_log_loss": 0.6249,
     "rating_accuracy": 0.653,
-    "model_accuracy": 0.65
+    "model_accuracy": 0.644
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6044,
-    "model_log_loss": 0.6252,
+    "model_log_loss": 0.6249,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 654
    },
    "backtest": {
-    "bets": 16,
-    "wins": 4,
-    "units": -12.4,
-    "roi": -0.414
+    "bets": 17,
+    "wins": 5,
+    "units": -10.7,
+    "roi": -0.35
    },
    "weights": {
     "home_field": 0.254,
-    "rating": 1.531,
-    "rest": 0.238,
-    "point_diff_form": 0.227,
-    "qb_change": 0.332,
-    "epa": 0.159
+    "rating": 1.528,
+    "rest": 0.243,
+    "point_diff_form": 0.232,
+    "qb_change": 0.31,
+    "epa": 0.16
    },
    "matches": 4410,
    "totals": {
@@ -4719,8 +4719,8 @@
    "expected_end": "2026-09-30T00:00:00+00:00",
    "start_est": "2026-09-29T21:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.475,
-   "close_price": 0.475,
+   "latest_price": 0.465,
+   "close_price": 0.465,
    "pnl": null,
    "why": "Projected runs 4.9 (home) vs 5.6 (10.5 total). Park factor 0.99. Model gives \"Over 8.5 runs scored\" 62%. Blended with the market that's 57% vs a 46% price.",
    "trend": 0.0,
@@ -5080,6 +5080,84 @@
    "trust": 0.25,
    "sharp_prob": 0.3945,
    "sharp_source": "Pinnacle",
+   "research": "",
+   "sources": [],
+   "expert_lean": "none"
+  },
+  {
+   "id": "KXNCAAFGAME-26OCT02MTSTIDHO-MTST",
+   "ticker": "KXNCAAFGAME-26OCT02MTSTIDHO-MTST",
+   "side": "yes",
+   "event": "KXNCAAFGAME-26OCT02MTSTIDHO",
+   "game": "26OCT02MTSTIDHO",
+   "sport": "Football",
+   "model_key": "cfb",
+   "mtype": "winner",
+   "line": null,
+   "tour": "College Football",
+   "tournament": "Montana State at Idaho",
+   "matchup": "Montana State at Idaho",
+   "surface": "",
+   "pick": "Montana St. to win",
+   "opponent": "",
+   "market": "Montana St. to win",
+   "price": 0.87,
+   "model_prob": 0.908,
+   "raw_prob": 0.956,
+   "edge": 0.03,
+   "tier": "W",
+   "units": 0.5,
+   "made": "2026-09-29T02:20:33.847408+00:00",
+   "expected_end": "2026-10-03T05:30:00+00:00",
+   "start_est": "2026-10-03T01:30:00+00:00",
+   "status": "pending",
+   "latest_price": 0.87,
+   "close_price": null,
+   "pnl": null,
+   "why": "Ratings 1774 vs 1390, on the road. Point differential last 5: +113 vs -85. Days of rest 5 vs 13. Model gives Montana State 96%. Blended with the market that's 88% vs a 87% price.",
+   "trend": 0.0,
+   "new_market": true,
+   "trust": 0.25,
+   "sharp_prob": null,
+   "research": "",
+   "sources": [],
+   "expert_lean": "none"
+  },
+  {
+   "id": "KXMLSBTTS-26OCT01SEASKC-BTTS:no",
+   "ticker": "KXMLSBTTS-26OCT01SEASKC-BTTS",
+   "side": "no",
+   "event": "KXMLSBTTS-26OCT01SEASKC",
+   "game": "26OCT01SEASKC",
+   "sport": "Soccer",
+   "model_key": "soccer",
+   "mtype": "btts",
+   "line": null,
+   "tour": "MLS",
+   "tournament": "Seattle vs Kansas City",
+   "matchup": "Seattle vs Kansas City",
+   "surface": "",
+   "pick": "No: Both Teams To Score",
+   "opponent": "",
+   "market": "No: Both Teams To Score",
+   "price": 0.37,
+   "model_prob": 0.403,
+   "raw_prob": 0.441,
+   "edge": 0.017,
+   "tier": "W",
+   "units": 0.5,
+   "made": "2026-09-29T02:20:33.847408+00:00",
+   "expected_end": "2026-10-02T04:30:00+00:00",
+   "start_est": "2026-10-02T01:00:00+00:00",
+   "status": "pending",
+   "latest_price": 0.37,
+   "close_price": null,
+   "pnl": null,
+   "why": "Expected goals 2.08 vs 1.02 (3.10 total). Model gives \"No: Both Teams To Score\" 44%. Blended with the market that's 38% vs a 37% price.",
+   "trend": 0.005,
+   "new_market": false,
+   "trust": 0.25,
+   "sharp_prob": null,
    "research": "",
    "sources": [],
    "expert_lean": "none"
