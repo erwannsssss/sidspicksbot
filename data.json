@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-29T19:25:23.971433+00:00",
+ "updated": "2026-09-29T20:25:55.456493+00:00",
  "status_note": "Last run found 0 new pick(s) and graded 0.",
  "bankroll": 96.61,
  "protection": {
@@ -121,8 +121,8 @@
    "expected_end": "2026-10-02T04:00:00+00:00",
    "start_est": "2026-10-02T01:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.225,
-   "close_price": 0.225,
+   "latest_price": 0.235,
+   "close_price": 0.235,
    "pnl": null,
    "why": "Projected score margin -10.1 (home) and total 57.6. Model gives \"North Texas wins by over 7.5 points\" 57%. Blended with the market that's 31% vs a 24% price.",
    "trend": 0.0,
@@ -554,8 +554,8 @@
    "expected_end": "2026-09-30T01:10:00+00:00",
    "start_est": "2026-09-29T21:10:00+00:00",
    "status": "pending",
-   "latest_price": 0.59,
-   "close_price": 0.59,
+   "latest_price": 0.595,
+   "close_price": 0.595,
    "pnl": null,
    "why": "Elo 1738 vs 1556 on hard. Won 50% vs 50% of games lately. Form 7-3 vs 5-5. Travelled 3,394 vs 3,144 km since last match. Model 70%, blended with the market 67%, price 59%.",
    "trend": 0.015,
@@ -564,7 +564,8 @@
    "sharp_prob": null,
    "research": "",
    "sources": [],
-   "expert_lean": "none"
+   "expert_lean": "none",
+   "prechecked": true
   }
  ],
  "history": [
@@ -3927,72 +3928,44 @@
  },
  "learning": {
   "groups": {
-   "mlb:prop_tb": {
-    "finished": 2041,
-    "games": 16,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-27T19:10:00+00:00"
-   },
-   "mlb:prop_ks": {
-    "finished": 378,
-    "games": 15,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-27T19:10:00+00:00"
-   },
-   "mlb:prop_hr": {
-    "finished": 518,
-    "games": 16,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-27T19:10:00+00:00"
-   },
-   "mlb:prop_hrr": {
-    "finished": 2600,
-    "games": 16,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-27T19:10:00+00:00"
-   },
-   "cfb:winner": {
-    "finished": 34,
-    "games": 17,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-27T03:00:00+00:00"
-   },
    "cfb:spread_1h": {
-    "finished": 506,
-    "games": 12,
+    "finished": 398,
+    "games": 10,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-09-27T03:00:00+00:00"
    },
    "cfb:total_1h": {
-    "finished": 338,
-    "games": 12,
+    "finished": 278,
+    "games": 10,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-09-27T03:00:00+00:00"
    },
    "cfb:spread": {
-    "finished": 882,
-    "games": 19,
+    "finished": 768,
+    "games": 18,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-09-27T03:00:00+00:00"
    },
    "cfb:team_total": {
-    "finished": 558,
+    "finished": 461,
     "games": 12,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-09-27T03:00:00+00:00"
    },
    "cfb:total": {
-    "finished": 624,
-    "games": 19,
+    "finished": 548,
+    "games": 17,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-27T03:00:00+00:00"
+   },
+   "cfb:winner": {
+    "finished": 28,
+    "games": 14,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-09-27T03:00:00+00:00"
@@ -4187,11 +4160,11 @@
     "last": "2026-09-27T19:10:00+00:00"
    },
    "mlb:spread_f5": {
-    "finished": 128,
-    "games": 16,
+    "finished": 136,
+    "games": 17,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-09-27T19:10:00+00:00"
+    "last": "2026-09-29T18:00:00+00:00"
    },
    "mlb:spread": {
     "finished": 192,
@@ -4208,15 +4181,22 @@
     "last": "2026-09-27T19:10:00+00:00"
    },
    "mlb:total": {
-    "finished": 342,
-    "games": 16,
+    "finished": 348,
+    "games": 17,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-09-27T19:10:00+00:00"
+    "last": "2026-09-29T18:00:00+00:00"
    },
    "mlb:total_f5": {
-    "finished": 216,
-    "games": 16,
+    "finished": 230,
+    "games": 17,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-29T18:00:00+00:00"
+   },
+   "mlb:prop_ks": {
+    "finished": 366,
+    "games": 14,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-09-27T19:10:00+00:00"
@@ -4228,12 +4208,33 @@
     "confidence_fix": false,
     "last": "2026-09-27T19:10:00+00:00"
    },
+   "mlb:prop_hr": {
+    "finished": 514,
+    "games": 15,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-27T19:10:00+00:00"
+   },
+   "mlb:prop_tb": {
+    "finished": 1986,
+    "games": 15,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-27T19:10:00+00:00"
+   },
+   "mlb:prop_hrr": {
+    "finished": 2498,
+    "games": 15,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-27T19:10:00+00:00"
+   },
    "tennis:winner": {
-    "finished": 314,
-    "games": 157,
+    "finished": 320,
+    "games": 160,
     "trust": 0.35,
     "confidence_fix": true,
-    "last": "2026-09-29T14:20:00+00:00"
+    "last": "2026-09-29T17:10:00+00:00"
    },
    "nfl:winner": {
     "finished": 30,
@@ -4420,16 +4421,16 @@
   },
   "price_trend": {
    "flat": {
-    "markets": 17842,
+    "markets": 17522,
     "hit_vs_price": -0.0
    },
-   "falling": {
-    "markets": 2200,
-    "hit_vs_price": -0.015
-   },
    "rising": {
-    "markets": 2189,
-    "hit_vs_price": 0.017
+    "markets": 2135,
+    "hit_vs_price": 0.023
+   },
+   "falling": {
+    "markets": 2147,
+    "hit_vs_price": -0.019
    }
   }
  },
@@ -4562,29 +4563,29 @@
  },
  "models": {
   "tennis": {
-   "matches": 20283,
-   "training_rows": 13952,
+   "matches": 20286,
+   "training_rows": 13955,
    "holdout": {
     "from": "2026-08-25",
-    "matches": 2093,
-    "elo_log_loss": 0.6561,
-    "model_log_loss": 0.6513,
-    "elo_accuracy": 0.611,
+    "matches": 2094,
+    "elo_log_loss": 0.6558,
+    "model_log_loss": 0.651,
+    "elo_accuracy": 0.612,
     "model_accuracy": 0.615
    },
    "using": "full",
    "weights": {
-    "elo": 2.056,
+    "elo": 2.057,
     "dominance": 0.0,
     "rank": 0.0,
     "h2h": 0.452,
     "form": -0.564,
     "fatigue_games": -0.211,
-    "fatigue_matches": 0.082,
+    "fatigue_matches": 0.083,
     "rest": 0.016,
     "travel": 0.146,
     "altitude": 0.0,
-    "best_of_5": 0.574
+    "best_of_5": 0.573
    },
    "sport": "Tennis",
    "label": "Tennis",
@@ -4662,31 +4663,31 @@
    "holdout": {
     "matches": 654,
     "rating_log_loss": 0.63,
-    "model_log_loss": 0.625,
+    "model_log_loss": 0.6246,
     "rating_accuracy": 0.653,
-    "model_accuracy": 0.647
+    "model_accuracy": 0.645
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6053,
-    "model_log_loss": 0.625,
+    "model_log_loss": 0.6246,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 654
    },
    "backtest": {
-    "bets": 17,
+    "bets": 18,
     "wins": 6,
-    "units": -5.5,
-    "roi": -0.184
+    "units": -6.0,
+    "roi": -0.187
    },
    "weights": {
     "home_field": 0.255,
-    "rating": 1.535,
-    "rest": 0.243,
-    "point_diff_form": 0.229,
-    "qb_change": 0.306,
-    "epa": 0.161
+    "rating": 1.529,
+    "rest": 0.24,
+    "point_diff_form": 0.239,
+    "qb_change": 0.264,
+    "epa": 0.16
    },
    "matches": 4411,
    "totals": {
@@ -5077,8 +5078,8 @@
    "expected_end": "2026-09-30T03:00:00+00:00",
    "start_est": "2026-09-30T00:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.295,
-   "close_price": 0.295,
+   "latest_price": 0.285,
+   "close_price": 0.285,
    "pnl": null,
    "why": "Ceddanne Rafaela: 1.73 a game this season over 138 games (adjusted 1.70). Model gives \"Ceddanne Rafaela: 2+\" 51%. Blended with the market that's 34% vs a 28% price.",
    "trend": 0.0,
@@ -5508,8 +5509,8 @@
    "expected_end": "2026-10-03T19:00:00+00:00",
    "start_est": "2026-10-03T16:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.415,
-   "close_price": 0.415,
+   "latest_price": 0.42,
+   "close_price": 0.42,
    "pnl": null,
    "why": "Projected score margin -0.6 (home) and total 51.7. Model gives \"Over 48.5 points scored\" 58%. Blended with the market that's 46% vs a 42% price.",
    "trend": 0.0,
