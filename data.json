@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-29T03:25:10.021538+00:00",
+ "updated": "2026-09-29T04:25:24.919140+00:00",
  "status_note": "Last run found 0 new pick(s) and graded 1.",
  "bankroll": 93.56,
  "protection": {
@@ -2470,47 +2470,6 @@
  "parlays": {
   "open": [
    {
-    "id": "PARLAY-202609280031-1",
-    "tier": "P",
-    "sport": "Parlay",
-    "kind": "watchlist",
-    "made": "2026-09-28T00:31:48.972621+00:00",
-    "units": 1.0,
-    "price": 0.0652,
-    "model_prob": 0.1123,
-    "ev": 0.722,
-    "payout_units": 14.3,
-    "status": "pending",
-    "pnl": null,
-    "legs": [
-     {
-      "id": "KXATPMATCH-26SEP28CUIALT-CUI",
-      "ticker": "KXATPMATCH-26SEP28CUIALT-CUI",
-      "side": "yes",
-      "market": "Jie Cui to win",
-      "matchup": "2026 ATP Beijing",
-      "sport": "Tennis",
-      "price": 0.28,
-      "model_prob": 0.378,
-      "edge": 0.084,
-      "expected_end": "2026-09-28T09:30:00+00:00",
-      "result": "win"
-     },
-     {
-      "id": "KXNFLRECYDS-26SEP28PHICHI-CHICLOVELAND84-60",
-      "ticker": "KXNFLRECYDS-26SEP28PHICHI-CHICLOVELAND84-60",
-      "side": "yes",
-      "market": "Colston Loveland: 60+",
-      "matchup": "PHI at CHI",
-      "sport": "Football",
-      "price": 0.21,
-      "model_prob": 0.297,
-      "edge": 0.076,
-      "expected_end": "2026-09-29T06:15:00+00:00"
-     }
-    ]
-   },
-   {
     "id": "PARLAY-202609280031-2",
     "tier": "P",
     "sport": "Parlay",
@@ -2633,6 +2592,49 @@
    }
   ],
   "done": [
+   {
+    "id": "PARLAY-202609280031-1",
+    "tier": "P",
+    "sport": "Parlay",
+    "kind": "watchlist",
+    "made": "2026-09-28T00:31:48.972621+00:00",
+    "units": 1.0,
+    "price": 0.0652,
+    "model_prob": 0.1123,
+    "ev": 0.722,
+    "payout_units": 14.3,
+    "status": "loss",
+    "pnl": -1.0,
+    "legs": [
+     {
+      "id": "KXATPMATCH-26SEP28CUIALT-CUI",
+      "ticker": "KXATPMATCH-26SEP28CUIALT-CUI",
+      "side": "yes",
+      "market": "Jie Cui to win",
+      "matchup": "2026 ATP Beijing",
+      "sport": "Tennis",
+      "price": 0.28,
+      "model_prob": 0.378,
+      "edge": 0.084,
+      "expected_end": "2026-09-28T09:30:00+00:00",
+      "result": "win"
+     },
+     {
+      "id": "KXNFLRECYDS-26SEP28PHICHI-CHICLOVELAND84-60",
+      "ticker": "KXNFLRECYDS-26SEP28PHICHI-CHICLOVELAND84-60",
+      "side": "yes",
+      "market": "Colston Loveland: 60+",
+      "matchup": "PHI at CHI",
+      "sport": "Football",
+      "price": 0.21,
+      "model_prob": 0.297,
+      "edge": 0.076,
+      "expected_end": "2026-09-29T06:15:00+00:00",
+      "result": "loss"
+     }
+    ],
+    "graded": "2026-09-29T04:24:32.043141+00:00"
+   },
    {
     "id": "PARLAY-202609270031-2",
     "tier": "P",
@@ -3556,12 +3558,12 @@
    }
   ],
   "summary": {
-   "picks": 18,
+   "picks": 19,
    "wins": 2,
-   "losses": 16,
-   "units": -11.8,
-   "staked": 18.0,
-   "roi": -0.656,
+   "losses": 17,
+   "units": -12.8,
+   "staked": 19.0,
+   "roi": -0.674,
    "beat_price": null,
    "clv": null,
    "clv_picks": 0
@@ -3569,15 +3571,8 @@
  },
  "learning": {
   "groups": {
-   "mlb:prop_hr": {
-    "finished": 730,
-    "games": 22,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-27T19:10:00+00:00"
-   },
    "mlb:prop_tb": {
-    "finished": 2892,
+    "finished": 2836,
     "games": 22,
     "trust": 0.25,
     "confidence_fix": false,
@@ -3585,6 +3580,13 @@
    },
    "mlb:prop_hrr": {
     "finished": 3676,
+    "games": 22,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-27T19:10:00+00:00"
+   },
+   "mlb:prop_hr": {
+    "finished": 722,
     "games": 22,
     "trust": 0.25,
     "confidence_fix": false,
@@ -3780,11 +3782,11 @@
     "last": "2026-09-27T03:00:00+00:00"
    },
    "tennis:winner": {
-    "finished": 196,
-    "games": 98,
+    "finished": 200,
+    "games": 100,
     "trust": 0.38,
     "confidence_fix": false,
-    "last": "2026-09-29T01:00:00+00:00"
+    "last": "2026-09-29T02:00:00+00:00"
    },
    "soccer:winner": {
     "finished": 63,
@@ -4025,11 +4027,11 @@
     "last": "2026-09-29T00:15:00+00:00"
    },
    "nfl:prop_recyds": {
-    "finished": 2112,
-    "games": 14,
+    "finished": 2274,
+    "games": 15,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-09-28T00:20:00+00:00"
+    "last": "2026-09-29T00:15:00+00:00"
    },
    "nfl:prop_rshyds": {
     "finished": 1276,
@@ -4039,11 +4041,11 @@
     "last": "2026-09-29T00:15:00+00:00"
    },
    "nfl:prop_passtds": {
-    "finished": 190,
-    "games": 14,
+    "finished": 198,
+    "games": 15,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-09-28T00:20:00+00:00"
+    "last": "2026-09-29T00:15:00+00:00"
    },
    "nfl:prop_rryds": {
     "finished": 217,
@@ -4062,22 +4064,22 @@
   },
   "price_trend": {
    "flat": {
-    "markets": 23118,
+    "markets": 23238,
     "hit_vs_price": -0.0
    },
    "falling": {
-    "markets": 3216,
+    "markets": 3235,
     "hit_vs_price": -0.011
    },
    "rising": {
-    "markets": 3201,
-    "hit_vs_price": 0.012
+    "markets": 3222,
+    "hit_vs_price": 0.011
    }
   }
  },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "tracker": {
-  "tracked": 92794,
+  "tracked": 92822,
   "series": 3932,
   "movers": [
    {
@@ -4137,36 +4139,12 @@
     "close": "2026-09-29T17:00:00+00:00"
    },
    {
-    "ticker": "KXNFLFFWEEKLEAD-2026W3TE-BBOWERS89",
-    "series": "KXNFLFFWEEKLEAD",
-    "title": "Brock Bowers",
-    "move": 0.845,
-    "price": 0.895,
-    "close": "2026-09-29T03:59:00+00:00"
-   },
-   {
     "ticker": "KXNFLRECYDS-26SEP27CARCLE-CARTTREMBLE82-25",
     "series": "KXNFLRECYDS",
     "title": "Tommy Tremble: 25+",
     "move": 0.845,
     "price": 0.975,
     "close": "2026-09-29T17:00:00+00:00"
-   },
-   {
-    "ticker": "KXNFLFFWEEKTOP-2026W3TET5-BBOWERS89",
-    "series": "KXNFLFFWEEKTOP",
-    "title": "Brock Bowers",
-    "move": 0.83,
-    "price": 0.99,
-    "close": "2026-09-29T03:59:00+00:00"
-   },
-   {
-    "ticker": "KXNFLFFWEEKTOP-2026W3RBT5-KWILLIAMS23",
-    "series": "KXNFLFFWEEKTOP",
-    "title": "Kyren Williams",
-    "move": 0.815,
-    "price": 0.875,
-    "close": "2026-09-29T03:59:00+00:00"
    },
    {
     "ticker": "KXNFLRECYDS-26SEP27SEAWAS-SEAABARNER88-40",
@@ -4193,40 +4171,64 @@
     "close": "2026-09-29T17:00:00+00:00"
    },
    {
-    "ticker": "KXNFLFFWEEKLEAD-2026W3ALL-JGIBBS0",
-    "series": "KXNFLFFWEEKLEAD",
-    "title": "Jahmyr Gibbs",
+    "ticker": "KXNFLRSHYDS-26SEP27LACBUF-LACKMITCHELL34-30",
+    "series": "KXNFLRSHYDS",
+    "title": "Keaton Mitchell: 30+",
     "move": 0.785,
-    "price": 0.86,
-    "close": "2026-09-29T03:59:00+00:00"
+    "price": 0.985,
+    "close": "2026-09-29T17:00:00+00:00"
+   },
+   {
+    "ticker": "KXNFL1QTOTAL-26SEP27CINPIT-14",
+    "series": "KXNFL1QTOTAL",
+    "title": "Over 13.5 points",
+    "move": 0.78,
+    "price": 0.995,
+    "close": "2026-09-29T17:00:00+00:00"
+   },
+   {
+    "ticker": "KXNFLRECYDS-26SEP27KCMIA-MIACBELL18-40",
+    "series": "KXNFLRECYDS",
+    "title": "Chris Bell: 40+",
+    "move": 0.78,
+    "price": 0.995,
+    "close": "2026-09-29T17:00:00+00:00"
+   },
+   {
+    "ticker": "KXNFLPASSTDS-26SEP27SEAWAS-WASMMARIOTA8-2",
+    "series": "KXNFLPASSTDS",
+    "title": "Marcus Mariota: 2+",
+    "move": 0.77,
+    "price": 0.995,
+    "close": "2026-09-29T17:00:00+00:00"
    }
   ]
  },
  "models": {
   "tennis": {
-   "matches": 20193,
-   "training_rows": 13871,
+   "matches": 20195,
+   "training_rows": 13873,
    "holdout": {
     "from": "2026-08-24",
     "matches": 2081,
-    "elo_log_loss": 0.6591,
+    "elo_log_loss": 0.659,
     "model_log_loss": 0.6554,
-    "elo_accuracy": 0.608,
+    "elo_accuracy": 0.609,
     "model_accuracy": 0.614
    },
    "using": "full",
    "weights": {
-    "elo": 2.037,
+    "elo": 2.04,
     "dominance": 0.0,
     "rank": 0.0,
     "h2h": 0.461,
-    "form": -0.547,
+    "form": -0.55,
     "fatigue_games": -0.212,
     "fatigue_matches": 0.082,
-    "rest": 0.011,
+    "rest": 0.01,
     "travel": 0.144,
     "altitude": 0.0,
-    "best_of_5": 0.584
+    "best_of_5": 0.583
    },
    "sport": "Tennis",
    "label": "Tennis",
@@ -4304,31 +4306,31 @@
    "holdout": {
     "matches": 654,
     "rating_log_loss": 0.6293,
-    "model_log_loss": 0.6251,
+    "model_log_loss": 0.6287,
     "rating_accuracy": 0.653,
-    "model_accuracy": 0.65
+    "model_accuracy": 0.648
    },
-   "using": "full",
+   "using": "rating",
    "market": {
     "market_log_loss": 0.6044,
-    "model_log_loss": 0.6251,
+    "model_log_loss": 0.6293,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 654
    },
    "backtest": {
-    "bets": 16,
-    "wins": 5,
-    "units": -8.7,
-    "roi": -0.304
+    "bets": 31,
+    "wins": 7,
+    "units": -22.0,
+    "roi": -0.4
    },
    "weights": {
-    "home_field": 0.254,
-    "rating": 1.536,
-    "rest": 0.237,
-    "point_diff_form": 0.224,
-    "qb_change": 0.307,
-    "epa": 0.163
+    "home_field": 0.246,
+    "rating": 2.159,
+    "rest": 0.0,
+    "point_diff_form": 0.0,
+    "qb_change": 0.0,
+    "epa": 0.0
    },
    "matches": 4410,
    "totals": {
@@ -4413,15 +4415,15 @@
    "clv_picks": 14
   },
   "watch": {
-   "picks": 180,
+   "picks": 181,
    "wins": 67,
-   "losses": 113,
-   "units": -9.79,
-   "staked": 90.0,
-   "roi": -0.109,
-   "beat_price": 0.233,
-   "clv": -0.0101,
-   "clv_picks": 170
+   "losses": 114,
+   "units": -10.32,
+   "staked": 90.5,
+   "roi": -0.114,
+   "beat_price": 0.232,
+   "clv": -0.0102,
+   "clv_picks": 171
   }
  },
  "by_expert_lean": {
@@ -4483,57 +4485,18 @@
    "clv_picks": 3
   },
   "W": {
-   "picks": 180,
+   "picks": 181,
    "wins": 67,
-   "losses": 113,
-   "units": -9.79,
-   "staked": 90.0,
-   "roi": -0.109,
-   "beat_price": 0.233,
-   "clv": -0.0101,
-   "clv_picks": 170
+   "losses": 114,
+   "units": -10.32,
+   "staked": 90.5,
+   "roi": -0.114,
+   "beat_price": 0.232,
+   "clv": -0.0102,
+   "clv_picks": 171
   }
  },
  "watch_open": [
-  {
-   "id": "KXNFLRECYDS-26SEP28PHICHI-CHICLOVELAND84-60",
-   "ticker": "KXNFLRECYDS-26SEP28PHICHI-CHICLOVELAND84-60",
-   "side": "yes",
-   "event": "KXNFLRECYDS-26SEP28PHICHI",
-   "game": "26SEP28PHICHI",
-   "sport": "Football",
-   "model_key": "nfl",
-   "mtype": "prop_recyds",
-   "line": 59.5,
-   "tour": "NFL",
-   "tournament": "PHI at CHI",
-   "matchup": "PHI at CHI",
-   "surface": "",
-   "pick": "Colston Loveland: 60+",
-   "opponent": "",
-   "market": "Colston Loveland: 60+",
-   "price": 0.21,
-   "model_prob": 0.297,
-   "raw_prob": 0.404,
-   "edge": 0.076,
-   "tier": "W",
-   "units": 0.5,
-   "made": "2026-09-26T00:26:59.454440+00:00",
-   "expected_end": "2026-09-29T06:15:00+00:00",
-   "start_est": "2026-09-29T00:15:00+00:00",
-   "status": "pending",
-   "latest_price": 0.185,
-   "close_price": 0.185,
-   "pnl": null,
-   "why": "Colston Loveland: 49 a game lately (last 12 games). Model gives \"Colston Loveland: 60+\" 40%. Blended with the market that's 24% vs a 21% price.",
-   "trend": 0.015,
-   "new_market": false,
-   "trust": 0.25,
-   "sharp_prob": null,
-   "research": "",
-   "sources": [],
-   "expert_lean": "none"
-  },
   {
    "id": "KXNFLTOTAL-26OCT01PITCLE-39",
    "ticker": "KXNFLTOTAL-26OCT01PITCLE-39",
@@ -4758,8 +4721,8 @@
    "expected_end": "2026-09-30T03:00:00+00:00",
    "start_est": "2026-09-30T00:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.28,
-   "close_price": 0.28,
+   "latest_price": 0.29,
+   "close_price": 0.29,
    "pnl": null,
    "why": "Ceddanne Rafaela: 1.73 a game this season over 138 games (adjusted 1.70). Model gives \"Ceddanne Rafaela: 2+\" 51%. Blended with the market that's 34% vs a 28% price.",
    "trend": 0.0,
@@ -5072,8 +5035,8 @@
    "expected_end": "2026-10-03T05:30:00+00:00",
    "start_est": "2026-10-03T01:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.87,
-   "close_price": 0.87,
+   "latest_price": 0.875,
+   "close_price": 0.875,
    "pnl": null,
    "why": "Ratings 1774 vs 1390, on the road. Point differential last 5: +113 vs -85. Days of rest 5 vs 13. Model gives Montana State 96%. Blended with the market that's 88% vs a 87% price.",
    "trend": 0.0,
@@ -5125,6 +5088,46 @@
   }
  ],
  "watch_history": [
+  {
+   "id": "KXNFLRECYDS-26SEP28PHICHI-CHICLOVELAND84-60",
+   "ticker": "KXNFLRECYDS-26SEP28PHICHI-CHICLOVELAND84-60",
+   "side": "yes",
+   "event": "KXNFLRECYDS-26SEP28PHICHI",
+   "game": "26SEP28PHICHI",
+   "sport": "Football",
+   "model_key": "nfl",
+   "mtype": "prop_recyds",
+   "line": 59.5,
+   "tour": "NFL",
+   "tournament": "PHI at CHI",
+   "matchup": "PHI at CHI",
+   "surface": "",
+   "pick": "Colston Loveland: 60+",
+   "opponent": "",
+   "market": "Colston Loveland: 60+",
+   "price": 0.21,
+   "model_prob": 0.297,
+   "raw_prob": 0.404,
+   "edge": 0.076,
+   "tier": "W",
+   "units": 0.5,
+   "made": "2026-09-26T00:26:59.454440+00:00",
+   "expected_end": "2026-09-29T06:15:00+00:00",
+   "start_est": "2026-09-29T00:15:00+00:00",
+   "status": "loss",
+   "latest_price": 0.185,
+   "close_price": 0.185,
+   "pnl": -0.53,
+   "why": "Colston Loveland: 49 a game lately (last 12 games). Model gives \"Colston Loveland: 60+\" 40%. Blended with the market that's 24% vs a 21% price.",
+   "trend": 0.015,
+   "new_market": false,
+   "trust": 0.25,
+   "sharp_prob": null,
+   "research": "",
+   "sources": [],
+   "expert_lean": "none",
+   "graded": "2026-09-29T04:22:49.705069+00:00"
+  },
   {
    "id": "KXATPMATCH-26SEP28TSIHIJ-HIJ",
    "ticker": "KXATPMATCH-26SEP28TSIHIJ-HIJ",

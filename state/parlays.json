@@ -931,8 +931,8 @@
   "model_prob": 0.1123,
   "ev": 0.722,
   "payout_units": 14.3,
-  "status": "pending",
-  "pnl": null,
+  "status": "loss",
+  "pnl": -1.0,
   "legs": [
    {
     "id": "KXATPMATCH-26SEP28CUIALT-CUI",
@@ -957,9 +957,11 @@
     "price": 0.21,
     "model_prob": 0.297,
     "edge": 0.076,
-    "expected_end": "2026-09-29T06:15:00+00:00"
+    "expected_end": "2026-09-29T06:15:00+00:00",
+    "result": "loss"
    }
-  ]
+  ],
+  "graded": "2026-09-29T04:24:32.043141+00:00"
  },
  {
   "id": "PARLAY-202609280031-2",
