@@ -1,6 +1,6 @@
 {
- "updated": "2026-09-29T02:22:36.115923+00:00",
- "status_note": "Last run found 2 new pick(s) and graded 0.",
+ "updated": "2026-09-29T03:25:10.021538+00:00",
+ "status_note": "Last run found 0 new pick(s) and graded 1.",
  "bankroll": 93.56,
  "protection": {
   "bankroll": 93.56,
@@ -3569,15 +3569,8 @@
  },
  "learning": {
   "groups": {
-   "mlb:prop_hit": {
-    "finished": 1838,
-    "games": 22,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-27T19:10:00+00:00"
-   },
    "mlb:prop_hr": {
-    "finished": 748,
+    "finished": 730,
     "games": 22,
     "trust": 0.25,
     "confidence_fix": false,
@@ -3635,6 +3628,13 @@
    "mlb:total": {
     "finished": 470,
     "games": 22,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-27T19:10:00+00:00"
+   },
+   "mlb:prop_hit": {
+    "finished": 1826,
+    "games": 21,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-09-27T19:10:00+00:00"
@@ -3780,11 +3780,11 @@
     "last": "2026-09-27T03:00:00+00:00"
    },
    "tennis:winner": {
-    "finished": 194,
-    "games": 97,
+    "finished": 196,
+    "games": 98,
     "trust": 0.38,
     "confidence_fix": false,
-    "last": "2026-09-28T17:40:00+00:00"
+    "last": "2026-09-29T01:00:00+00:00"
    },
    "soccer:winner": {
     "finished": 63,
@@ -3878,11 +3878,11 @@
     "last": "2026-09-28T02:30:00+00:00"
    },
    "nfl:winner": {
-    "finished": 28,
-    "games": 14,
+    "finished": 30,
+    "games": 15,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-09-28T00:20:00+00:00"
+    "last": "2026-09-29T00:15:00+00:00"
    },
    "nfl:spread_1h": {
     "finished": 464,
@@ -3920,18 +3920,18 @@
     "last": "2026-09-29T00:15:00+00:00"
    },
    "nfl:spread_2h": {
-    "finished": 436,
-    "games": 14,
+    "finished": 466,
+    "games": 15,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-09-28T00:20:00+00:00"
+    "last": "2026-09-29T00:15:00+00:00"
    },
    "nfl:total_2h": {
-    "finished": 366,
-    "games": 14,
+    "finished": 392,
+    "games": 15,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-09-28T00:20:00+00:00"
+    "last": "2026-09-29T00:15:00+00:00"
    },
    "nfl:period_winner_2q": {
     "finished": 60,
@@ -3955,74 +3955,74 @@
     "last": "2026-09-29T00:15:00+00:00"
    },
    "nfl:period_winner_3q": {
-    "finished": 56,
-    "games": 14,
+    "finished": 60,
+    "games": 15,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-09-28T00:20:00+00:00"
+    "last": "2026-09-29T00:15:00+00:00"
    },
    "nfl:spread_3q": {
-    "finished": 298,
-    "games": 14,
+    "finished": 319,
+    "games": 15,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-09-28T00:20:00+00:00"
+    "last": "2026-09-29T00:15:00+00:00"
    },
    "nfl:total_3q": {
-    "finished": 258,
-    "games": 14,
+    "finished": 278,
+    "games": 15,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-09-28T00:20:00+00:00"
+    "last": "2026-09-29T00:15:00+00:00"
    },
    "nfl:period_winner_4q": {
-    "finished": 56,
-    "games": 14,
+    "finished": 60,
+    "games": 15,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-09-28T00:20:00+00:00"
+    "last": "2026-09-29T00:15:00+00:00"
    },
    "nfl:spread_4q": {
-    "finished": 300,
-    "games": 14,
+    "finished": 322,
+    "games": 15,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-09-28T00:20:00+00:00"
+    "last": "2026-09-29T00:15:00+00:00"
    },
    "nfl:total_4q": {
-    "finished": 278,
-    "games": 14,
+    "finished": 298,
+    "games": 15,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-09-28T00:20:00+00:00"
+    "last": "2026-09-29T00:15:00+00:00"
    },
    "nfl:spread": {
-    "finished": 714,
-    "games": 14,
+    "finished": 764,
+    "games": 15,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-09-28T00:20:00+00:00"
+    "last": "2026-09-29T00:15:00+00:00"
    },
    "nfl:team_total": {
-    "finished": 706,
+    "finished": 748,
     "games": 15,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-09-29T00:15:00+00:00"
    },
    "nfl:total": {
-    "finished": 526,
-    "games": 14,
+    "finished": 564,
+    "games": 15,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-09-28T00:20:00+00:00"
+    "last": "2026-09-29T00:15:00+00:00"
    },
    "nfl:prop_passyds": {
-    "finished": 428,
-    "games": 14,
+    "finished": 446,
+    "games": 15,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-09-28T00:20:00+00:00"
+    "last": "2026-09-29T00:15:00+00:00"
    },
    "nfl:prop_recyds": {
     "finished": 2112,
@@ -4032,11 +4032,11 @@
     "last": "2026-09-28T00:20:00+00:00"
    },
    "nfl:prop_rshyds": {
-    "finished": 1176,
-    "games": 14,
+    "finished": 1276,
+    "games": 15,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-09-28T00:20:00+00:00"
+    "last": "2026-09-29T00:15:00+00:00"
    },
    "nfl:prop_passtds": {
     "finished": 190,
@@ -4046,14 +4046,14 @@
     "last": "2026-09-28T00:20:00+00:00"
    },
    "nfl:prop_rryds": {
-    "finished": 199,
-    "games": 14,
+    "finished": 217,
+    "games": 15,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-09-28T00:20:00+00:00"
+    "last": "2026-09-29T00:15:00+00:00"
    },
    "nfl:prop_rec": {
-    "finished": 1926,
+    "finished": 2046,
     "games": 15,
     "trust": 0.25,
     "confidence_fix": false,
@@ -4062,22 +4062,22 @@
   },
   "price_trend": {
    "flat": {
-    "markets": 22687,
+    "markets": 23118,
     "hit_vs_price": -0.0
    },
    "falling": {
-    "markets": 3176,
-    "hit_vs_price": -0.012
+    "markets": 3216,
+    "hit_vs_price": -0.011
    },
    "rising": {
-    "markets": 3163,
-    "hit_vs_price": 0.013
+    "markets": 3201,
+    "hit_vs_price": 0.012
    }
   }
  },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "tracker": {
-  "tracked": 92762,
+  "tracked": 92794,
   "series": 3932,
   "movers": [
    {
@@ -4204,13 +4204,13 @@
  },
  "models": {
   "tennis": {
-   "matches": 20192,
-   "training_rows": 13870,
+   "matches": 20193,
+   "training_rows": 13871,
    "holdout": {
     "from": "2026-08-24",
     "matches": 2081,
     "elo_log_loss": 0.6591,
-    "model_log_loss": 0.6553,
+    "model_log_loss": 0.6554,
     "elo_accuracy": 0.608,
     "model_accuracy": 0.614
    },
@@ -4226,7 +4226,7 @@
     "rest": 0.011,
     "travel": 0.144,
     "altitude": 0.0,
-    "best_of_5": 0.585
+    "best_of_5": 0.584
    },
    "sport": "Tennis",
    "label": "Tennis",
@@ -4304,31 +4304,31 @@
    "holdout": {
     "matches": 654,
     "rating_log_loss": 0.6293,
-    "model_log_loss": 0.6249,
+    "model_log_loss": 0.6251,
     "rating_accuracy": 0.653,
-    "model_accuracy": 0.644
+    "model_accuracy": 0.65
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6044,
-    "model_log_loss": 0.6249,
+    "model_log_loss": 0.6251,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 654
    },
    "backtest": {
-    "bets": 17,
+    "bets": 16,
     "wins": 5,
-    "units": -10.7,
-    "roi": -0.35
+    "units": -8.7,
+    "roi": -0.304
    },
    "weights": {
     "home_field": 0.254,
-    "rating": 1.528,
-    "rest": 0.243,
-    "point_diff_form": 0.232,
-    "qb_change": 0.31,
-    "epa": 0.16
+    "rating": 1.536,
+    "rest": 0.237,
+    "point_diff_form": 0.224,
+    "qb_change": 0.307,
+    "epa": 0.163
    },
    "matches": 4410,
    "totals": {
@@ -4413,13 +4413,13 @@
    "clv_picks": 14
   },
   "watch": {
-   "picks": 179,
+   "picks": 180,
    "wins": 67,
-   "losses": 112,
-   "units": -9.26,
-   "staked": 89.5,
-   "roi": -0.103,
-   "beat_price": 0.235,
+   "losses": 113,
+   "units": -9.79,
+   "staked": 90.0,
+   "roi": -0.109,
+   "beat_price": 0.233,
    "clv": -0.0101,
    "clv_picks": 170
   }
@@ -4483,13 +4483,13 @@
    "clv_picks": 3
   },
   "W": {
-   "picks": 179,
+   "picks": 180,
    "wins": 67,
-   "losses": 112,
-   "units": -9.26,
-   "staked": 89.5,
-   "roi": -0.103,
-   "beat_price": 0.235,
+   "losses": 113,
+   "units": -9.79,
+   "staked": 90.0,
+   "roi": -0.109,
+   "beat_price": 0.233,
    "clv": -0.0101,
    "clv_picks": 170
   }
@@ -4680,8 +4680,8 @@
    "expected_end": "2026-09-29T21:00:00+00:00",
    "start_est": "2026-09-29T18:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.405,
-   "close_price": 0.405,
+   "latest_price": 0.395,
+   "close_price": 0.395,
    "pnl": null,
    "why": "Projected runs 5.3 (home) vs 4.3 (9.7 total). Park factor 1.01. Forecast 84F, wind 4 mph. Model gives \"Over 7.5 runs scored\" 64%. Blended with the market that's 58% vs a 41% price.",
    "trend": 0.0,
@@ -4889,45 +4889,6 @@
    "expert_lean": "none"
   },
   {
-   "id": "KXATPMATCH-26SEP28TSIHIJ-HIJ",
-   "ticker": "KXATPMATCH-26SEP28TSIHIJ-HIJ",
-   "side": "yes",
-   "event": "KXATPMATCH-26SEP28TSIHIJ",
-   "game": "26SEP28TSIHIJ",
-   "sport": "Tennis",
-   "model_key": "tennis",
-   "mtype": "winner",
-   "line": null,
-   "tour": "ATP",
-   "tournament": "2026 ATP Tokyo",
-   "matchup": "2026 ATP Tokyo",
-   "surface": "hard",
-   "pick": "Rinky Hijikata",
-   "opponent": "Stefanos Tsitsipas",
-   "market": "Rinky Hijikata to win",
-   "price": 0.26,
-   "model_prob": 0.354,
-   "raw_prob": 0.454,
-   "edge": 0.081,
-   "tier": "W",
-   "units": 0.5,
-   "made": "2026-09-29T00:29:00.262787+00:00",
-   "expected_end": "2026-09-29T05:00:00+00:00",
-   "start_est": "2026-09-29T01:00:00+00:00",
-   "status": "pending",
-   "latest_price": 0.26,
-   "close_price": null,
-   "pnl": null,
-   "why": "Elo 1623 vs 1677 on hard. Won 50% vs 50% of games lately. Form 6-4 vs 7-3. Games played in last 3 days: 22 vs 22. Model 45%, blended with the market 33%, price 26%. Price down 5\u00a2 in the last 12 hours.",
-   "trend": -0.05,
-   "new_market": false,
-   "trust": 0.38,
-   "sharp_prob": null,
-   "research": "",
-   "sources": [],
-   "expert_lean": "none"
-  },
-  {
    "id": "KXATPMATCH-26SEP28RUNJAC-JAC",
    "ticker": "KXATPMATCH-26SEP28RUNJAC-JAC",
    "side": "yes",
@@ -5112,7 +5073,7 @@
    "start_est": "2026-10-03T01:30:00+00:00",
    "status": "pending",
    "latest_price": 0.87,
-   "close_price": null,
+   "close_price": 0.87,
    "pnl": null,
    "why": "Ratings 1774 vs 1390, on the road. Point differential last 5: +113 vs -85. Days of rest 5 vs 13. Model gives Montana State 96%. Blended with the market that's 88% vs a 87% price.",
    "trend": 0.0,
@@ -5150,8 +5111,8 @@
    "expected_end": "2026-10-02T04:30:00+00:00",
    "start_est": "2026-10-02T01:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.37,
-   "close_price": null,
+   "latest_price": 0.365,
+   "close_price": 0.365,
    "pnl": null,
    "why": "Expected goals 2.08 vs 1.02 (3.10 total). Model gives \"No: Both Teams To Score\" 44%. Blended with the market that's 38% vs a 37% price.",
    "trend": 0.005,
@@ -5164,6 +5125,46 @@
   }
  ],
  "watch_history": [
+  {
+   "id": "KXATPMATCH-26SEP28TSIHIJ-HIJ",
+   "ticker": "KXATPMATCH-26SEP28TSIHIJ-HIJ",
+   "side": "yes",
+   "event": "KXATPMATCH-26SEP28TSIHIJ",
+   "game": "26SEP28TSIHIJ",
+   "sport": "Tennis",
+   "model_key": "tennis",
+   "mtype": "winner",
+   "line": null,
+   "tour": "ATP",
+   "tournament": "2026 ATP Tokyo",
+   "matchup": "2026 ATP Tokyo",
+   "surface": "hard",
+   "pick": "Rinky Hijikata",
+   "opponent": "Stefanos Tsitsipas",
+   "market": "Rinky Hijikata to win",
+   "price": 0.26,
+   "model_prob": 0.354,
+   "raw_prob": 0.454,
+   "edge": 0.081,
+   "tier": "W",
+   "units": 0.5,
+   "made": "2026-09-29T00:29:00.262787+00:00",
+   "expected_end": "2026-09-29T05:00:00+00:00",
+   "start_est": "2026-09-29T01:00:00+00:00",
+   "status": "loss",
+   "latest_price": 0.26,
+   "close_price": null,
+   "pnl": -0.53,
+   "why": "Elo 1623 vs 1677 on hard. Won 50% vs 50% of games lately. Form 6-4 vs 7-3. Games played in last 3 days: 22 vs 22. Model 45%, blended with the market 33%, price 26%. Price down 5\u00a2 in the last 12 hours.",
+   "trend": -0.05,
+   "new_market": false,
+   "trust": 0.38,
+   "sharp_prob": null,
+   "research": "",
+   "sources": [],
+   "expert_lean": "none",
+   "graded": "2026-09-29T03:22:51.143508+00:00"
+  },
   {
    "id": "KXATPMATCH-26SEP27VANROY-ROY",
    "ticker": "KXATPMATCH-26SEP27VANROY-ROY",
