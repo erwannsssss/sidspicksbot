@@ -1,6 +1,6 @@
 {
- "updated": "2026-09-29T13:28:56.189497+00:00",
- "status_note": "Last run found 1 new pick(s) and graded 0.",
+ "updated": "2026-09-29T14:25:56.681523+00:00",
+ "status_note": "Last run found 2 new pick(s) and graded 0.",
  "bankroll": 96.1,
  "protection": {
   "bankroll": 96.1,
@@ -398,13 +398,52 @@
    "expected_end": "2026-09-30T05:00:00+00:00",
    "start_est": "2026-09-30T01:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.29,
-   "close_price": null,
+   "latest_price": 0.285,
+   "close_price": 0.285,
    "pnl": null,
    "why": "Elo 1559 vs 1691 on hard. Won 50% vs 50% of games lately. Form 4-6 vs 8-2. Games played in last 3 days: 0 vs 44. Travelled 1,914 vs 0 km since last match. Model 50%, blended with the market 36%, price 29%.",
    "trend": 0.0,
    "new_market": false,
    "trust": 0.34,
+   "sharp_prob": null,
+   "research": "",
+   "sources": [],
+   "expert_lean": "none"
+  },
+  {
+   "id": "KXATPCHALLENGERMATCH-26SEP29SVAAND-AND",
+   "ticker": "KXATPCHALLENGERMATCH-26SEP29SVAAND-AND",
+   "side": "yes",
+   "event": "KXATPCHALLENGERMATCH-26SEP29SVAAND",
+   "game": "26SEP29SVAAND",
+   "sport": "Tennis",
+   "model_key": "tennis",
+   "mtype": "winner",
+   "line": null,
+   "tour": "ATP Challenger",
+   "tournament": "2026 ATP Challenger Columbus",
+   "matchup": "2026 ATP Challenger Columbus",
+   "surface": "hard",
+   "pick": "Andres Andrade",
+   "opponent": "Trevor Svajda",
+   "market": "Andres Andrade to win",
+   "price": 0.39,
+   "model_prob": 0.463,
+   "raw_prob": 0.612,
+   "edge": 0.056,
+   "tier": "B",
+   "units": 0.5,
+   "made": "2026-09-29T14:23:32.611259+00:00",
+   "expected_end": "2026-09-29T20:30:00+00:00",
+   "start_est": "2026-09-29T16:30:00+00:00",
+   "status": "pending",
+   "latest_price": 0.39,
+   "close_price": null,
+   "pnl": null,
+   "why": "Elo 1612 vs 1482 on hard. Won 50% vs 50% of games lately. Form 6-4 vs 4-6. Games played in last 3 days: 22 vs 0. Travelled 3,144 vs 3,144 km since last match. Model 61%, blended with the market 46%, price 39%.",
+   "trend": -0.017,
+   "new_market": false,
+   "trust": 0.32,
    "sharp_prob": null,
    "research": "",
    "sources": [],
@@ -3894,11 +3933,11 @@
     "last": "2026-09-27T03:00:00+00:00"
    },
    "tennis:winner": {
-    "finished": 274,
-    "games": 137,
-    "trust": 0.36,
+    "finished": 286,
+    "games": 143,
+    "trust": 0.35,
     "confidence_fix": false,
-    "last": "2026-09-29T10:30:00+00:00"
+    "last": "2026-09-29T11:00:00+00:00"
    },
    "soccer:winner": {
     "finished": 63,
@@ -4183,22 +4222,22 @@
   },
   "price_trend": {
    "flat": {
-    "markets": 23127,
+    "markets": 23133,
     "hit_vs_price": -0.0
    },
    "rising": {
-    "markets": 3217,
-    "hit_vs_price": 0.012
+    "markets": 3220,
+    "hit_vs_price": 0.013
    },
    "falling": {
-    "markets": 3231,
+    "markets": 3234,
     "hit_vs_price": -0.012
    }
   }
  },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "tracker": {
-  "tracked": 93599,
+  "tracked": 93740,
   "series": 3932,
   "movers": [
    {
@@ -4240,6 +4279,14 @@
     "move": 0.87,
     "price": 0.995,
     "close": "2026-09-29T17:00:00+00:00"
+   },
+   {
+    "ticker": "KXAFCONTOTAL-26SEP29MOZSDN-4",
+    "series": "KXAFCONTOTAL",
+    "title": "Over 3.5 goals scored",
+    "move": 0.865,
+    "price": 0.995,
+    "close": "2026-10-01T13:00:00+00:00"
    },
    {
     "ticker": "KXNFLRECYDS-26SEP27CINPIT-PITRWILSON14-50",
@@ -4290,6 +4337,14 @@
     "close": "2026-09-29T17:00:00+00:00"
    },
    {
+    "ticker": "KXAFCONSPREAD-26SEP29MOZSDN-MOZ2",
+    "series": "KXAFCONSPREAD",
+    "title": "Mozambique wins by more than 1.5 goals",
+    "move": 0.79,
+    "price": 0.98,
+    "close": "2026-10-01T13:00:00+00:00"
+   },
+   {
     "ticker": "KXNFLRSHYDS-26SEP27LACBUF-LACKMITCHELL34-30",
     "series": "KXNFLRSHYDS",
     "title": "Keaton Mitchell: 30+",
@@ -4304,50 +4359,34 @@
     "move": 0.78,
     "price": 0.995,
     "close": "2026-09-29T17:00:00+00:00"
-   },
-   {
-    "ticker": "KXNFLRECYDS-26SEP27KCMIA-MIACBELL18-40",
-    "series": "KXNFLRECYDS",
-    "title": "Chris Bell: 40+",
-    "move": 0.78,
-    "price": 0.995,
-    "close": "2026-09-29T17:00:00+00:00"
-   },
-   {
-    "ticker": "KXNFLPASSTDS-26SEP27SEAWAS-WASMMARIOTA8-2",
-    "series": "KXNFLPASSTDS",
-    "title": "Marcus Mariota: 2+",
-    "move": 0.77,
-    "price": 0.995,
-    "close": "2026-09-29T17:00:00+00:00"
    }
   ]
  },
  "models": {
   "tennis": {
-   "matches": 20254,
-   "training_rows": 13924,
+   "matches": 20261,
+   "training_rows": 13931,
    "holdout": {
     "from": "2026-08-25",
-    "matches": 2089,
-    "elo_log_loss": 0.6565,
-    "model_log_loss": 0.6524,
-    "elo_accuracy": 0.61,
-    "model_accuracy": 0.615
+    "matches": 2090,
+    "elo_log_loss": 0.6559,
+    "model_log_loss": 0.6517,
+    "elo_accuracy": 0.611,
+    "model_accuracy": 0.616
    },
    "using": "full",
    "weights": {
-    "elo": 2.053,
+    "elo": 2.056,
     "dominance": 0.0,
     "rank": 0.0,
-    "h2h": 0.454,
-    "form": -0.559,
+    "h2h": 0.456,
+    "form": -0.564,
     "fatigue_games": -0.211,
     "fatigue_matches": 0.08,
     "rest": 0.012,
-    "travel": 0.146,
+    "travel": 0.147,
     "altitude": 0.0,
-    "best_of_5": 0.575
+    "best_of_5": 0.574
    },
    "sport": "Tennis",
    "label": "Tennis",
@@ -4421,40 +4460,40 @@
    "trust": 0.5
   },
   "nfl": {
-   "training_rows": 4359,
+   "training_rows": 4360,
    "holdout": {
     "matches": 654,
-    "rating_log_loss": 0.6293,
-    "model_log_loss": 0.6248,
+    "rating_log_loss": 0.63,
+    "model_log_loss": 0.6256,
     "rating_accuracy": 0.653,
-    "model_accuracy": 0.648
+    "model_accuracy": 0.645
    },
    "using": "full",
    "market": {
-    "market_log_loss": 0.6044,
-    "model_log_loss": 0.6248,
+    "market_log_loss": 0.6053,
+    "model_log_loss": 0.6256,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 654
    },
    "backtest": {
-    "bets": 17,
-    "wins": 6,
-    "units": -4.5,
-    "roi": -0.147
+    "bets": 16,
+    "wins": 5,
+    "units": -8.9,
+    "roi": -0.3
    },
    "weights": {
-    "home_field": 0.255,
-    "rating": 1.526,
-    "rest": 0.244,
-    "point_diff_form": 0.233,
-    "qb_change": 0.274,
-    "epa": 0.163
+    "home_field": 0.257,
+    "rating": 1.527,
+    "rest": 0.242,
+    "point_diff_form": 0.235,
+    "qb_change": 0.319,
+    "epa": 0.159
    },
-   "matches": 4410,
+   "matches": 4411,
    "totals": {
     "matches": 643,
-    "model_log_loss": 0.7168,
+    "model_log_loss": 0.7172,
     "market_log_loss": 0.6931,
     "best_weight": 0.0
    },
@@ -4512,15 +4551,15 @@
    "clv_picks": 46
   },
   "week": {
-   "picks": 39,
-   "wins": 12,
+   "picks": 38,
+   "wins": 11,
    "losses": 27,
-   "units": -10.23,
-   "staked": 42.0,
-   "roi": -0.244,
-   "beat_price": 0.333,
-   "clv": -0.0011,
-   "clv_picks": 35
+   "units": -12.08,
+   "staked": 40.5,
+   "roi": -0.298,
+   "beat_price": 0.316,
+   "clv": -0.0013,
+   "clv_picks": 34
   },
   "yours": {
    "picks": 15,
@@ -4879,8 +4918,8 @@
    "expected_end": "2026-09-30T05:00:00+00:00",
    "start_est": "2026-09-30T02:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.455,
-   "close_price": 0.455,
+   "latest_price": 0.465,
+   "close_price": 0.465,
    "pnl": null,
    "why": "Projected runs 5.5 (home) vs 4.7 (10.2 total). Park factor 0.95. Forecast 75F, wind 2 mph. Model gives \"Over 7.5 runs scored\" 68%. Blended with the market that's 62% vs a 46% price.",
    "trend": 0.0,
@@ -4918,8 +4957,8 @@
    "expected_end": "2026-10-03T02:00:00+00:00",
    "start_est": "2026-10-02T23:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.285,
-   "close_price": 0.285,
+   "latest_price": 0.295,
+   "close_price": 0.295,
    "pnl": null,
    "why": "Ratings 1509 vs 1542, at home. Point differential last 5: +2 vs +41. Days of rest 6 vs 7. Model gives Delaware 52%. Blended with the market that's 34% vs a 29% price. Sharp sportsbook price (Pinnacle) says 30%.",
    "trend": 0.0,
@@ -5114,8 +5153,8 @@
    "expected_end": "2026-10-03T02:00:00+00:00",
    "start_est": "2026-10-02T23:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.385,
-   "close_price": 0.385,
+   "latest_price": 0.395,
+   "close_price": 0.395,
    "pnl": null,
    "why": "Ratings 1641 vs 1586, on the road. Point differential last 5: +117 vs +89. Model gives Pittsburgh 53%. Blended with the market that's 43% vs a 40% price. Sharp sportsbook price (Pinnacle) says 39%.",
    "trend": 0.0,
@@ -5154,8 +5193,8 @@
    "expected_end": "2026-10-03T05:30:00+00:00",
    "start_est": "2026-10-03T01:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.89,
-   "close_price": 0.89,
+   "latest_price": 0.895,
+   "close_price": 0.895,
    "pnl": null,
    "why": "Ratings 1774 vs 1390, on the road. Point differential last 5: +113 vs -85. Days of rest 5 vs 13. Model gives Montana State 96%. Blended with the market that's 88% vs a 87% price.",
    "trend": 0.0,
@@ -5200,6 +5239,45 @@
    "trend": 0.005,
    "new_market": false,
    "trust": 0.25,
+   "sharp_prob": null,
+   "research": "",
+   "sources": [],
+   "expert_lean": "none"
+  },
+  {
+   "id": "KXMLBGAME-26SEP301700CWSHOU-CWS",
+   "ticker": "KXMLBGAME-26SEP301700CWSHOU-CWS",
+   "side": "yes",
+   "event": "KXMLBGAME-26SEP301700CWSHOU",
+   "game": "26SEP301700CWSHOU",
+   "sport": "Baseball",
+   "model_key": "mlb",
+   "mtype": "winner",
+   "line": null,
+   "tour": "MLB",
+   "tournament": "Chicago White Sox at Houston Astros",
+   "matchup": "Chicago White Sox at Houston Astros",
+   "surface": "",
+   "pick": "Chicago WS to win",
+   "opponent": "",
+   "market": "Chicago WS to win",
+   "price": 0.4,
+   "model_prob": 0.434,
+   "raw_prob": 0.475,
+   "edge": 0.017,
+   "tier": "W",
+   "units": 0.5,
+   "made": "2026-09-29T14:23:32.611259+00:00",
+   "expected_end": "2026-10-01T00:00:00+00:00",
+   "start_est": "2026-09-30T21:00:00+00:00",
+   "status": "pending",
+   "latest_price": 0.4,
+   "close_price": null,
+   "pnl": null,
+   "why": "Ratings 1507 vs 1500 on the road. Run differential last 10: +22 vs +22. Model gives Chicago White Sox 48%. Blended with the market that's 43% vs a 40% price.",
+   "trend": 0.0,
+   "new_market": true,
+   "trust": 0.5,
    "sharp_prob": null,
    "research": "",
    "sources": [],
