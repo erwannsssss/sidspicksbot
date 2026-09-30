@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-30T06:30:35.817188+00:00",
+ "updated": "2026-09-30T07:27:20.752624+00:00",
  "status_note": "Last run found 0 new pick(s) and graded 0.",
  "bankroll": 98.04,
  "protection": {
@@ -398,8 +398,8 @@
    "expected_end": "2026-10-03T20:00:00+00:00",
    "start_est": "2026-10-03T19:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.285,
-   "close_price": 0.285,
+   "latest_price": 0.28,
+   "close_price": 0.28,
    "pnl": null,
    "why": "Projected score margin -1.4 (home) and total 48.7. Model gives \"No: Ohio St. wins by over 6.5 points\" 62%. Blended with the market that's 37% vs a 30% price.",
    "trend": 0.0,
@@ -4042,7 +4042,7 @@
  "learning": {
   "groups": {
    "mlb:prop_tb": {
-    "finished": 2188,
+    "finished": 2176,
     "games": 18,
     "trust": 0.25,
     "confidence_fix": false,
@@ -4294,8 +4294,8 @@
     "last": "2026-09-27T03:00:00+00:00"
    },
    "tennis:winner": {
-    "finished": 356,
-    "games": 178,
+    "finished": 362,
+    "games": 181,
     "trust": 0.34,
     "confidence_fix": true,
     "last": "2026-09-30T03:10:00+00:00"
@@ -4534,22 +4534,22 @@
   },
   "price_trend": {
    "flat": {
-    "markets": 15684,
+    "markets": 15688,
     "hit_vs_price": -0.0
    },
    "falling": {
-    "markets": 1760,
+    "markets": 1761,
     "hit_vs_price": -0.003
    },
    "rising": {
-    "markets": 1761,
+    "markets": 1762,
     "hit_vs_price": 0.007
    }
   }
  },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "tracker": {
-  "tracked": 96630,
+  "tracked": 97046,
   "series": 3941,
   "movers": [
    {
@@ -4676,29 +4676,29 @@
  },
  "models": {
   "tennis": {
-   "matches": 20310,
-   "training_rows": 13977,
+   "matches": 20315,
+   "training_rows": 13982,
    "holdout": {
     "from": "2026-08-25",
-    "matches": 2097,
-    "elo_log_loss": 0.6561,
-    "model_log_loss": 0.6508,
+    "matches": 2098,
+    "elo_log_loss": 0.6559,
+    "model_log_loss": 0.6503,
     "elo_accuracy": 0.612,
-    "model_accuracy": 0.619
+    "model_accuracy": 0.618
    },
    "using": "full",
    "weights": {
     "elo": 2.06,
     "dominance": 0.0,
     "rank": 0.0,
-    "h2h": 0.46,
+    "h2h": 0.461,
     "form": -0.573,
     "fatigue_games": -0.212,
     "fatigue_matches": 0.082,
-    "rest": 0.014,
-    "travel": 0.148,
+    "rest": 0.015,
+    "travel": 0.149,
     "altitude": 0.0,
-    "best_of_5": 0.574
+    "best_of_5": 0.573
    },
    "sport": "Tennis",
    "label": "Tennis",
@@ -4776,31 +4776,31 @@
    "holdout": {
     "matches": 654,
     "rating_log_loss": 0.63,
-    "model_log_loss": 0.6274,
+    "model_log_loss": 0.6287,
     "rating_accuracy": 0.653,
     "model_accuracy": 0.645
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6053,
-    "model_log_loss": 0.6274,
+    "model_log_loss": 0.6287,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 654
    },
    "backtest": {
-    "bets": 17,
-    "wins": 5,
-    "units": -10.1,
-    "roi": -0.322
+    "bets": 18,
+    "wins": 6,
+    "units": -7.0,
+    "roi": -0.212
    },
    "weights": {
-    "home_field": 0.255,
-    "rating": 1.533,
-    "rest": 0.236,
-    "point_diff_form": 0.235,
-    "qb_change": 0.259,
-    "epa": 0.161
+    "home_field": 0.254,
+    "rating": 1.527,
+    "rest": 0.244,
+    "point_diff_form": 0.243,
+    "qb_change": 0.249,
+    "epa": 0.159
    },
    "matches": 4411,
    "totals": {
@@ -5741,8 +5741,8 @@
    "expected_end": "2026-10-03T20:00:00+00:00",
    "start_est": "2026-10-03T16:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.455,
-   "close_price": 0.455,
+   "latest_price": 0.45,
+   "close_price": 0.45,
    "pnl": null,
    "why": "Projected score margin -18.1 (home) and total 51.2. Model gives \"Over 48.5 points scored\" 56%. Blended with the market that's 48% vs a 46% price.",
    "trend": 0.0,
@@ -6093,8 +6093,8 @@
    "expected_end": "2026-09-30T13:10:00+00:00",
    "start_est": "2026-09-30T09:10:00+00:00",
    "status": "pending",
-   "latest_price": 0.595,
-   "close_price": 0.595,
+   "latest_price": 0.585,
+   "close_price": 0.585,
    "pnl": null,
    "why": "Elo 1576 vs 1504 on hard. Won 50% vs 50% of games lately. Form 5-5 vs 5-5. Travelled 7,134 vs 0 km since last match. Model 66%, blended with the market 65%, price 60%. Price down 3\u00a2 in the last 12 hours.",
    "trend": -0.033,
@@ -6367,8 +6367,8 @@
    "expected_end": "2026-10-01T03:00:00+00:00",
    "start_est": "2026-10-01T00:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.355,
-   "close_price": 0.355,
+   "latest_price": 0.365,
+   "close_price": 0.365,
    "pnl": null,
    "why": "Projected runs 4.0 (home) vs 2.6 (6.7 total). Park factor 1.02. Forecast 65F, wind 4 mph. Model gives \"New York Y wins by over 1.5 runs\" 46%. Blended with the market that's 38% vs a 36% price. Sharp sportsbook price (Pinnacle) says 36%.",
    "trend": 0.0,
