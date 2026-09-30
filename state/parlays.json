@@ -1081,7 +1081,112 @@
     "price": 0.46,
     "model_prob": 0.571,
     "edge": 0.093,
-    "expected_end": "2026-09-30T00:00:00+00:00"
+    "expected_end": "2026-09-30T00:00:00+00:00",
+    "result": "win"
+   }
+  ]
+ },
+ {
+  "id": "PARLAY-202609300032-1",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-09-30T00:32:05.046224+00:00",
+  "units": 1.0,
+  "price": 0.1651,
+  "model_prob": 0.3164,
+  "ev": 0.916,
+  "payout_units": 5.1,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXNCAAFSPREAD-26OCT03TEMUSF-USF7",
+    "ticker": "KXNCAAFSPREAD-26OCT03TEMUSF-USF7",
+    "side": "yes",
+    "market": "South Florida wins by over 6.5 points",
+    "matchup": "Temple at South Florida",
+    "sport": "Football",
+    "price": 0.48,
+    "model_prob": 0.644,
+    "edge": 0.147,
+    "expected_end": "2026-10-03T20:00:00+00:00"
+   },
+   {
+    "id": "KXMLBTOTAL-26SEP292200CHCSD-8",
+    "ticker": "KXMLBTOTAL-26SEP292200CHCSD-8",
+    "side": "yes",
+    "market": "Over 7.5 runs scored",
+    "matchup": "Chicago Cubs at San Diego Padres",
+    "sport": "Baseball",
+    "price": 0.46,
+    "model_prob": 0.618,
+    "edge": 0.14,
+    "expected_end": "2026-09-30T05:00:00+00:00"
+   },
+   {
+    "id": "KXWTAMATCH-26SEP30JACFRE-FRE",
+    "ticker": "KXWTAMATCH-26SEP30JACFRE-FRE",
+    "side": "yes",
+    "market": "Magdalena Frech to win",
+    "matchup": "2026 WTA Beijing",
+    "sport": "Tennis",
+    "price": 0.68,
+    "model_prob": 0.795,
+    "edge": 0.1,
+    "expected_end": "2026-09-30T14:00:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": "PARLAY-202609300032-2",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-09-30T00:32:05.046335+00:00",
+  "units": 1.0,
+  "price": 0.1358,
+  "model_prob": 0.2325,
+  "ev": 0.712,
+  "payout_units": 6.4,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXNCAAFSPREAD-26OCT03VANUGA-UGA24:no",
+    "ticker": "KXNCAAFSPREAD-26OCT03VANUGA-UGA24",
+    "side": "no",
+    "market": "No: Georgia wins by over 23.5 points",
+    "matchup": "Vanderbilt at Georgia",
+    "sport": "Football",
+    "price": 0.48,
+    "model_prob": 0.604,
+    "edge": 0.106,
+    "expected_end": "2026-10-03T20:00:00+00:00"
+   },
+   {
+    "id": "KXNCAAFSPREAD-26OCT03MTUKU-KU19:no",
+    "ticker": "KXNCAAFSPREAD-26OCT03MTUKU-KU19",
+    "side": "no",
+    "market": "No: Kansas wins by over 18.5 points",
+    "matchup": "Middle Tennessee at Kansas",
+    "sport": "Football",
+    "price": 0.5,
+    "model_prob": 0.616,
+    "edge": 0.098,
+    "expected_end": "2026-10-03T20:00:00+00:00"
+   },
+   {
+    "id": "KXNCAAFSPREAD-26OCT03WYONDSU-NDSU19",
+    "ticker": "KXNCAAFSPREAD-26OCT03WYONDSU-NDSU19",
+    "side": "yes",
+    "market": "North Dakota St. wins by over 18.5 points",
+    "matchup": "Wyoming at North Dakota State",
+    "sport": "Football",
+    "price": 0.51,
+    "model_prob": 0.625,
+    "edge": 0.097,
+    "expected_end": "2026-10-03T22:30:00+00:00"
    }
   ]
  }
