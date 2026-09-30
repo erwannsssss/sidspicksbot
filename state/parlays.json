@@ -1015,8 +1015,8 @@
   "model_prob": 0.3566,
   "ev": 0.75,
   "payout_units": 3.9,
-  "status": "pending",
-  "pnl": null,
+  "status": "win",
+  "pnl": 3.91,
   "legs": [
    {
     "id": "KXMLBTOTAL-26SEP291400PHIATL-8",
@@ -1041,9 +1041,11 @@
     "price": 0.46,
     "model_prob": 0.618,
     "edge": 0.14,
-    "expected_end": "2026-09-30T05:00:00+00:00"
+    "expected_end": "2026-09-30T05:00:00+00:00",
+    "result": "win"
    }
-  ]
+  ],
+  "graded": "2026-09-30T04:25:23.875893+00:00"
  },
  {
   "id": "PARLAY-202609290030-2",
@@ -1122,7 +1124,8 @@
     "price": 0.46,
     "model_prob": 0.618,
     "edge": 0.14,
-    "expected_end": "2026-09-30T05:00:00+00:00"
+    "expected_end": "2026-09-30T05:00:00+00:00",
+    "result": "win"
    },
    {
     "id": "KXWTAMATCH-26SEP30JACFRE-FRE",
