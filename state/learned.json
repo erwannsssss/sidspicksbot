@@ -1,7 +1,7 @@
 {
  "trust": {
-  "nfl:prop_rryds": 0.25,
   "nfl:prop_rec": 0.25,
+  "nfl:prop_rryds": 0.25,
   "nfl:prop_recyds": 0.25,
   "nfl:prop_rshyds": 0.25,
   "nfl:team_total": 0.25,
@@ -40,7 +40,7 @@
   "mlb:prop_hr": 0.25,
   "mlb:prop_tb": 0.25,
   "mlb:prop_hrr": 0.25,
-  "tennis:winner": 0.34,
+  "tennis:winner": 0.33,
   "nfl:winner": 0.25,
   "nfl:spread_1h": 0.25,
   "nfl:period_winner_1q": 0.25,
@@ -53,8 +53,8 @@
   "nfl:total": 0.25
  },
  "trust_league": {
+  "nfl:prop_rec|NFL": 0.7,
   "nfl:prop_rryds|NFL": 0.25,
-  "nfl:prop_rec|NFL": 0.78,
   "nfl:prop_recyds|NFL": 0.45,
   "nfl:prop_rshyds|NFL": 0.25,
   "nfl:team_total|NFL": 0.62,
@@ -80,23 +80,23 @@
   "mlb:prop_hr|MLB": 0.25,
   "mlb:prop_tb|MLB": 0.47,
   "mlb:prop_hrr|MLB": 0.25,
-  "tennis:winner|ATP Challenger": 0.3,
+  "tennis:winner|ATP Challenger": 0.29,
   "nfl:spread_1h|NFL": 0.34,
   "nfl:total_2q|NFL": 0.25,
   "nfl:total_4q|NFL": 0.25,
   "nfl:spread|NFL": 0.63,
   "nfl:total|NFL": 0.25,
-  "tennis:winner|ATP": 0.32
+  "tennis:winner|ATP": 0.31
  },
  "calib": {
   "tennis:winner": [
-   -0.004,
-   1.371
+   0.006,
+   1.37
   ]
  },
  "counts": {
-  "nfl:prop_rryds": 154,
-  "nfl:prop_rec": 1318,
+  "nfl:prop_rec": 1283,
+  "nfl:prop_rryds": 145,
   "nfl:prop_recyds": 1356,
   "nfl:prop_rshyds": 801,
   "nfl:team_total": 300,
@@ -135,7 +135,7 @@
   "mlb:prop_hr": 542,
   "mlb:prop_tb": 2058,
   "mlb:prop_hrr": 2630,
-  "tennis:winner": 388,
+  "tennis:winner": 394,
   "nfl:winner": 12,
   "nfl:spread_1h": 182,
   "nfl:period_winner_1q": 24,
@@ -148,8 +148,8 @@
   "nfl:total": 228
  },
  "games": {
-  "nfl:prop_rryds": 12,
   "nfl:prop_rec": 15,
+  "nfl:prop_rryds": 11,
   "nfl:prop_recyds": 15,
   "nfl:prop_rshyds": 15,
   "nfl:team_total": 9,
@@ -188,7 +188,7 @@
   "mlb:prop_hr": 16,
   "mlb:prop_tb": 16,
   "mlb:prop_hrr": 16,
-  "tennis:winner": 194,
+  "tennis:winner": 197,
   "nfl:winner": 6,
   "nfl:spread_1h": 6,
   "nfl:period_winner_1q": 6,
@@ -201,8 +201,8 @@
   "nfl:total": 6
  },
  "last": {
-  "nfl:prop_rryds": "2026-09-29T00:15:00+00:00",
   "nfl:prop_rec": "2026-09-29T00:15:00+00:00",
+  "nfl:prop_rryds": "2026-09-29T00:15:00+00:00",
   "nfl:prop_recyds": "2026-09-29T00:15:00+00:00",
   "nfl:prop_rshyds": "2026-09-29T00:15:00+00:00",
   "nfl:team_total": "2026-09-29T00:15:00+00:00",
@@ -241,7 +241,7 @@
   "mlb:prop_hr": "2026-09-30T02:00:00+00:00",
   "mlb:prop_tb": "2026-09-30T02:00:00+00:00",
   "mlb:prop_hrr": "2026-09-30T02:00:00+00:00",
-  "tennis:winner": "2026-09-30T14:00:00+00:00",
+  "tennis:winner": "2026-09-30T15:10:00+00:00",
   "nfl:winner": "2026-09-29T00:15:00+00:00",
   "nfl:spread_1h": "2026-09-29T00:15:00+00:00",
   "nfl:period_winner_1q": "2026-09-29T00:15:00+00:00",
@@ -253,5 +253,5 @@
   "nfl:spread": "2026-09-29T00:15:00+00:00",
   "nfl:total": "2026-09-29T00:15:00+00:00"
  },
- "updated": "2026-09-30T17:23:12.247094+00:00"
+ "updated": "2026-09-30T18:25:04.788843+00:00"
 }
