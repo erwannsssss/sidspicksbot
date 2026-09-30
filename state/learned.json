@@ -1,7 +1,5 @@
 {
  "trust": {
-  "cfb:team_total": 0.25,
-  "cfb:total": 0.25,
   "cfb:spread": 0.25,
   "cfb:period_winner_2h": 0.25,
   "cfb:period_winner_1q": 0.25,
@@ -70,7 +68,7 @@
  },
  "trust_league": {
   "tennis:winner|ATP": 0.31,
-  "tennis:winner|ATP Challenger": 0.3,
+  "tennis:winner|ATP Challenger": 0.29,
   "nfl:spread_1h|NFL": 0.4,
   "nfl:total_1h|NFL": 0.25,
   "nfl:period_winner_1q|NFL": 0.25,
@@ -115,9 +113,7 @@
   ]
  },
  "counts": {
-  "cfb:team_total": 39,
-  "cfb:total": 38,
-  "cfb:spread": 6,
+  "cfb:spread": 3,
   "cfb:period_winner_2h": 4,
   "cfb:period_winner_1q": 4,
   "cfb:spread_1q": 20,
@@ -131,7 +127,7 @@
   "cfb:period_winner_4q": 4,
   "cfb:spread_4q": 20,
   "cfb:total_4q": 22,
-  "tennis:winner": 406,
+  "tennis:winner": 416,
   "nfl:winner": 30,
   "nfl:spread_1h": 464,
   "nfl:total_1h": 362,
@@ -184,8 +180,6 @@
   "mlb:prop_hrr": 2630
  },
  "games": {
-  "cfb:team_total": 1,
-  "cfb:total": 1,
   "cfb:spread": 1,
   "cfb:period_winner_2h": 1,
   "cfb:period_winner_1q": 1,
@@ -200,7 +194,7 @@
   "cfb:period_winner_4q": 1,
   "cfb:spread_4q": 1,
   "cfb:total_4q": 1,
-  "tennis:winner": 203,
+  "tennis:winner": 208,
   "nfl:winner": 15,
   "nfl:spread_1h": 15,
   "nfl:total_1h": 15,
@@ -253,8 +247,6 @@
   "mlb:prop_hrr": 16
  },
  "last": {
-  "cfb:team_total": "2026-09-27T03:00:00+00:00",
-  "cfb:total": "2026-09-27T03:00:00+00:00",
   "cfb:spread": "2026-09-27T03:00:00+00:00",
   "cfb:period_winner_2h": "2026-09-27T03:00:00+00:00",
   "cfb:period_winner_1q": "2026-09-27T03:00:00+00:00",
@@ -269,7 +261,7 @@
   "cfb:period_winner_4q": "2026-09-27T03:00:00+00:00",
   "cfb:spread_4q": "2026-09-27T03:00:00+00:00",
   "cfb:total_4q": "2026-09-27T03:00:00+00:00",
-  "tennis:winner": "2026-09-30T10:00:00+00:00",
+  "tennis:winner": "2026-09-30T10:20:00+00:00",
   "nfl:winner": "2026-09-29T00:15:00+00:00",
   "nfl:spread_1h": "2026-09-29T00:15:00+00:00",
   "nfl:total_1h": "2026-09-29T00:15:00+00:00",
@@ -321,5 +313,5 @@
   "mlb:prop_tb": "2026-09-30T02:00:00+00:00",
   "mlb:prop_hrr": "2026-09-30T02:00:00+00:00"
  },
- "updated": "2026-09-30T13:25:32.979992+00:00"
+ "updated": "2026-09-30T14:26:18.892150+00:00"
 }

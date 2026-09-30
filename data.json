@@ -1,6 +1,6 @@
 {
- "updated": "2026-09-30T13:27:43.756391+00:00",
- "status_note": "Last run found 0 new pick(s) and graded 1.",
+ "updated": "2026-09-30T14:28:30.470615+00:00",
+ "status_note": "Last run found 0 new pick(s) and graded 0.",
  "bankroll": 95.97,
  "protection": {
   "bankroll": 95.97,
@@ -4043,22 +4043,8 @@
  },
  "learning": {
   "groups": {
-   "cfb:team_total": {
-    "finished": 39,
-    "games": 1,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-27T03:00:00+00:00"
-   },
-   "cfb:total": {
-    "finished": 38,
-    "games": 1,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-27T03:00:00+00:00"
-   },
    "cfb:spread": {
-    "finished": 6,
+    "finished": 3,
     "games": 1,
     "trust": 0.25,
     "confidence_fix": false,
@@ -4156,11 +4142,11 @@
     "last": "2026-09-27T03:00:00+00:00"
    },
    "tennis:winner": {
-    "finished": 406,
-    "games": 203,
+    "finished": 416,
+    "games": 208,
     "trust": 0.33,
     "confidence_fix": true,
-    "last": "2026-09-30T10:00:00+00:00"
+    "last": "2026-09-30T10:20:00+00:00"
    },
    "nfl:winner": {
     "finished": 30,
@@ -4515,7 +4501,7 @@
   },
   "price_trend": {
    "flat": {
-    "markets": 14640,
+    "markets": 14569,
     "hit_vs_price": -0.0
    },
    "falling": {
@@ -4523,14 +4509,14 @@
     "hit_vs_price": -0.005
    },
    "rising": {
-    "markets": 1647,
-    "hit_vs_price": 0.009
+    "markets": 1648,
+    "hit_vs_price": 0.008
    }
   }
  },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "tracker": {
-  "tracked": 97850,
+  "tracked": 97967,
   "series": 3941,
   "movers": [
    {
@@ -4657,27 +4643,27 @@
  },
  "models": {
   "tennis": {
-   "matches": 20340,
-   "training_rows": 14007,
+   "matches": 20345,
+   "training_rows": 14012,
    "holdout": {
     "from": "2026-08-25",
     "matches": 2102,
-    "elo_log_loss": 0.6563,
-    "model_log_loss": 0.6511,
-    "elo_accuracy": 0.61,
+    "elo_log_loss": 0.6562,
+    "model_log_loss": 0.6509,
+    "elo_accuracy": 0.611,
     "model_accuracy": 0.618
    },
    "using": "full",
    "weights": {
-    "elo": 2.06,
+    "elo": 2.058,
     "dominance": 0.0,
     "rank": 0.0,
-    "h2h": 0.475,
-    "form": -0.58,
-    "fatigue_games": -0.211,
+    "h2h": 0.476,
+    "form": -0.577,
+    "fatigue_games": -0.212,
     "fatigue_matches": 0.082,
     "rest": 0.014,
-    "travel": 0.147,
+    "travel": 0.148,
     "altitude": 0.0,
     "best_of_5": 0.575
    },
@@ -4757,31 +4743,31 @@
    "holdout": {
     "matches": 654,
     "rating_log_loss": 0.63,
-    "model_log_loss": 0.6246,
+    "model_log_loss": 0.6253,
     "rating_accuracy": 0.653,
-    "model_accuracy": 0.642
+    "model_accuracy": 0.645
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6053,
-    "model_log_loss": 0.6246,
+    "model_log_loss": 0.6253,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 654
    },
    "backtest": {
-    "bets": 15,
-    "wins": 4,
-    "units": -11.5,
-    "roi": -0.419
+    "bets": 16,
+    "wins": 5,
+    "units": -8.4,
+    "roi": -0.288
    },
    "weights": {
-    "home_field": 0.254,
-    "rating": 1.524,
-    "rest": 0.24,
-    "point_diff_form": 0.223,
-    "qb_change": 0.326,
-    "epa": 0.163
+    "home_field": 0.256,
+    "rating": 1.527,
+    "rest": 0.239,
+    "point_diff_form": 0.23,
+    "qb_change": 0.324,
+    "epa": 0.16
    },
    "matches": 4411,
    "totals": {
@@ -5134,8 +5120,8 @@
    "expected_end": "2026-10-03T03:00:00+00:00",
    "start_est": "2026-10-03T00:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.47,
-   "close_price": 0.47,
+   "latest_price": 0.465,
+   "close_price": 0.465,
    "pnl": null,
    "why": "Projected score margin -2.6 (home) and total 50.6. Model gives \"Over 46.5 points scored\" 60%. Blended with the market that's 49% vs a 47% price.",
    "trend": 0.0,
@@ -5526,8 +5512,8 @@
    "expected_end": "2026-10-03T20:00:00+00:00",
    "start_est": "2026-10-03T20:15:00+00:00",
    "status": "pending",
-   "latest_price": 0.47,
-   "close_price": 0.47,
+   "latest_price": 0.475,
+   "close_price": 0.475,
    "pnl": null,
    "why": "Projected score margin +19.5 (home) and total 54.9. Model gives \"Illinois wins by over 10.5 points\" 71%. Blended with the market that's 53% vs a 48% price.",
    "trend": 0.0,
@@ -5565,8 +5551,8 @@
    "expected_end": "2026-10-03T20:00:00+00:00",
    "start_est": "2026-10-04T00:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.52,
-   "close_price": 0.52,
+   "latest_price": 0.515,
+   "close_price": 0.515,
    "pnl": null,
    "why": "Projected score margin +7.9 (home) and total 53.8. Model gives \"Over 47.5 points\" 64%. Blended with the market that's 55% vs a 53% price.",
    "trend": 0.0,
@@ -5683,8 +5669,8 @@
    "expected_end": "2026-10-03T20:00:00+00:00",
    "start_est": "2026-10-03T16:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.445,
-   "close_price": 0.445,
+   "latest_price": 0.45,
+   "close_price": 0.45,
    "pnl": null,
    "why": "Projected score margin -18.1 (home) and total 51.2. Model gives \"Over 48.5 points scored\" 56%. Blended with the market that's 48% vs a 46% price.",
    "trend": 0.0,
@@ -5996,8 +5982,8 @@
    "expected_end": "2026-10-03T20:00:00+00:00",
    "start_est": "2026-10-03T23:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.53,
-   "close_price": 0.53,
+   "latest_price": 0.54,
+   "close_price": 0.54,
    "pnl": null,
    "why": "Projected score margin -5.1 (home) and total 52.1. Model gives \"Over 46.5 points\" 63%. Blended with the market that's 58% vs a 51% price.",
    "trend": 0.0,
@@ -6114,8 +6100,8 @@
    "expected_end": "2026-10-03T20:00:00+00:00",
    "start_est": "2026-10-04T02:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.46,
-   "close_price": 0.46,
+   "latest_price": 0.465,
+   "close_price": 0.465,
    "pnl": null,
    "why": "Projected score margin +4.0 (home) and total 53.2. Model gives \"Over 50.5 points scored\" 56%. Blended with the market that's 52% vs a 47% price.",
    "trend": 0.0,
@@ -6311,8 +6297,8 @@
    "expected_end": "2026-10-04T16:30:00+00:00",
    "start_est": "2026-10-04T13:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.535,
-   "close_price": 0.535,
+   "latest_price": 0.545,
+   "close_price": 0.545,
    "pnl": null,
    "why": "Tyler Warren: 33 a game lately (last 12 games). Model gives \"Tyler Warren: under 50\" 81%. Blended with the market that's 64% vs a 55% price.",
    "trend": 0.0,
