@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-30T18:27:15.282824+00:00",
+ "updated": "2026-09-30T19:25:56.997301+00:00",
  "status_note": "Last run found 0 new pick(s) and graded 0.",
  "bankroll": 96.87,
  "protection": {
@@ -4045,29 +4045,15 @@
  },
  "learning": {
   "groups": {
-   "nfl:prop_rec": {
-    "finished": 1283,
-    "games": 15,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-29T00:15:00+00:00"
-   },
-   "nfl:prop_rryds": {
-    "finished": 145,
-    "games": 11,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-29T00:15:00+00:00"
-   },
    "nfl:prop_recyds": {
-    "finished": 1356,
+    "finished": 1242,
     "games": 15,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-09-29T00:15:00+00:00"
    },
-   "nfl:prop_rshyds": {
-    "finished": 801,
+   "nfl:prop_rec": {
+    "finished": 1084,
     "games": 15,
     "trust": 0.25,
     "confidence_fix": false,
@@ -4090,6 +4076,13 @@
    "nfl:prop_passtds": {
     "finished": 90,
     "games": 9,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-29T00:15:00+00:00"
+   },
+   "nfl:prop_rshyds": {
+    "finished": 755,
+    "games": 15,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-09-29T00:15:00+00:00"
@@ -4132,6 +4125,13 @@
    "nfl:total_2h": {
     "finished": 174,
     "games": 10,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-29T00:15:00+00:00"
+   },
+   "nfl:prop_rryds": {
+    "finished": 121,
+    "games": 9,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-09-29T00:15:00+00:00"
@@ -4326,8 +4326,8 @@
     "last": "2026-09-30T02:00:00+00:00"
    },
    "tennis:winner": {
-    "finished": 394,
-    "games": 197,
+    "finished": 396,
+    "games": 198,
     "trust": 0.33,
     "confidence_fix": true,
     "last": "2026-09-30T15:10:00+00:00"
@@ -4404,23 +4404,23 @@
    }
   },
   "price_trend": {
-   "flat": {
-    "markets": 8530,
-    "hit_vs_price": -0.001
-   },
    "rising": {
-    "markets": 1502,
-    "hit_vs_price": 0.003
+    "markets": 1481,
+    "hit_vs_price": 0.002
    },
    "falling": {
-    "markets": 1489,
-    "hit_vs_price": 0.001
+    "markets": 1465,
+    "hit_vs_price": 0.003
+   },
+   "flat": {
+    "markets": 8230,
+    "hit_vs_price": -0.001
    }
   }
  },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "tracker": {
-  "tracked": 98693,
+  "tracked": 99154,
   "series": 3941,
   "movers": [
    {
@@ -4547,25 +4547,25 @@
  },
  "models": {
   "tennis": {
-   "matches": 20364,
-   "training_rows": 14031,
+   "matches": 20366,
+   "training_rows": 14032,
    "holdout": {
     "from": "2026-08-26",
     "matches": 2105,
-    "elo_log_loss": 0.6562,
+    "elo_log_loss": 0.6561,
     "model_log_loss": 0.6506,
     "elo_accuracy": 0.611,
     "model_accuracy": 0.619
    },
    "using": "full",
    "weights": {
-    "elo": 2.062,
+    "elo": 2.06,
     "dominance": 0.0,
     "rank": 0.0,
     "h2h": 0.476,
-    "form": -0.583,
-    "fatigue_games": -0.21,
-    "fatigue_matches": 0.079,
+    "form": -0.58,
+    "fatigue_games": -0.211,
+    "fatigue_matches": 0.08,
     "rest": 0.015,
     "travel": 0.149,
     "altitude": 0.0,
@@ -4647,14 +4647,14 @@
    "holdout": {
     "matches": 654,
     "rating_log_loss": 0.63,
-    "model_log_loss": 0.6264,
+    "model_log_loss": 0.6272,
     "rating_accuracy": 0.653,
-    "model_accuracy": 0.642
+    "model_accuracy": 0.647
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6053,
-    "model_log_loss": 0.6264,
+    "model_log_loss": 0.6272,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 654
@@ -4666,12 +4666,12 @@
     "roi": -0.197
    },
    "weights": {
-    "home_field": 0.256,
-    "rating": 1.529,
+    "home_field": 0.254,
+    "rating": 1.533,
     "rest": 0.237,
-    "point_diff_form": 0.24,
-    "qb_change": 0.278,
-    "epa": 0.156
+    "point_diff_form": 0.233,
+    "qb_change": 0.289,
+    "epa": 0.161
    },
    "matches": 4411,
    "totals": {
@@ -5965,8 +5965,8 @@
    "expected_end": "2026-10-03T23:00:00+00:00",
    "start_est": "2026-10-03T20:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.47,
-   "close_price": 0.47,
+   "latest_price": 0.465,
+   "close_price": 0.465,
    "pnl": null,
    "why": "Projected score margin +22.8 (home) and total 52.7. Model gives \"Over 49.5 points\" 57%. Blended with the market that's 53% vs a 48% price.",
    "trend": 0.0,
@@ -6240,8 +6240,8 @@
    "expected_end": "2026-10-04T20:00:00+00:00",
    "start_est": "2026-10-04T17:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.575,
-   "close_price": 0.575,
+   "latest_price": 0.58,
+   "close_price": 0.58,
    "pnl": null,
    "why": "David Montgomery: 33 a game lately (last 12 games). Model gives \"David Montgomery: under 50\" 82%. Blended with the market that's 59% vs a 52% price.",
    "trend": 0.0,
@@ -6279,8 +6279,8 @@
    "expected_end": "2026-10-04T20:00:00+00:00",
    "start_est": "2026-10-04T17:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.52,
-   "close_price": 0.52,
+   "latest_price": 0.515,
+   "close_price": 0.515,
    "pnl": null,
    "why": "Mark Andrews: 29 a game lately (last 12 games). Model gives \"Mark Andrews: under 40\" 76%. Blended with the market that's 60% vs a 51% price.",
    "trend": 0.0,
