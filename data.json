@@ -1,11 +1,11 @@
 {
- "updated": "2026-10-01T05:26:31.375072+00:00",
- "status_note": "Last run found 0 new pick(s) and graded 5.",
- "bankroll": 96.87,
+ "updated": "2026-10-01T06:33:03.236437+00:00",
+ "status_note": "Last run found 0 new pick(s) and graded 1.",
+ "bankroll": 96.35,
  "protection": {
-  "bankroll": 96.87,
+  "bankroll": 96.35,
   "peak": 112.26,
-  "drawdown": 0.137,
+  "drawdown": 0.142,
   "paused": false
  },
  "settings": {
@@ -253,46 +253,6 @@
    "expert_lean": "none"
   },
   {
-   "id": "KXATPMATCH-26SEP29ETCTSI-ETC",
-   "ticker": "KXATPMATCH-26SEP29ETCTSI-ETC",
-   "side": "yes",
-   "event": "KXATPMATCH-26SEP29ETCTSI",
-   "game": "26SEP29ETCTSI",
-   "sport": "Tennis",
-   "model_key": "tennis",
-   "mtype": "winner",
-   "line": null,
-   "tour": "ATP",
-   "tournament": "2026 ATP Tokyo",
-   "matchup": "2026 ATP Tokyo",
-   "surface": "hard",
-   "pick": "Tomas Martin Etcheverry",
-   "opponent": "Stefanos Tsitsipas",
-   "market": "Tomas Martin Etcheverry to win",
-   "price": 0.29,
-   "model_prob": 0.358,
-   "raw_prob": 0.498,
-   "edge": 0.053,
-   "tier": "B",
-   "units": 0.5,
-   "made": "2026-09-29T13:26:42.290194+00:00",
-   "expected_end": "2026-09-30T05:00:00+00:00",
-   "start_est": "2026-09-30T01:00:00+00:00",
-   "status": "pending",
-   "latest_price": 0.285,
-   "close_price": 0.285,
-   "pnl": null,
-   "why": "Elo 1559 vs 1691 on hard. Won 50% vs 50% of games lately. Form 4-6 vs 8-2. Games played in last 3 days: 0 vs 44. Travelled 1,914 vs 0 km since last match. Model 50%, blended with the market 36%, price 29%.",
-   "trend": 0.0,
-   "new_market": false,
-   "trust": 0.34,
-   "sharp_prob": null,
-   "research": "",
-   "sources": [],
-   "expert_lean": "none",
-   "prechecked": true
-  },
-  {
    "id": "KXNCAAFSPREAD-26OCT03SYRCONN-SYR8:no",
    "ticker": "KXNCAAFSPREAD-26OCT03SYRCONN-SYR8",
    "side": "no",
@@ -372,6 +332,47 @@
   }
  ],
  "history": [
+  {
+   "id": "KXATPMATCH-26SEP29ETCTSI-ETC",
+   "ticker": "KXATPMATCH-26SEP29ETCTSI-ETC",
+   "side": "yes",
+   "event": "KXATPMATCH-26SEP29ETCTSI",
+   "game": "26SEP29ETCTSI",
+   "sport": "Tennis",
+   "model_key": "tennis",
+   "mtype": "winner",
+   "line": null,
+   "tour": "ATP",
+   "tournament": "2026 ATP Tokyo",
+   "matchup": "2026 ATP Tokyo",
+   "surface": "hard",
+   "pick": "Tomas Martin Etcheverry",
+   "opponent": "Stefanos Tsitsipas",
+   "market": "Tomas Martin Etcheverry to win",
+   "price": 0.29,
+   "model_prob": 0.358,
+   "raw_prob": 0.498,
+   "edge": 0.053,
+   "tier": "B",
+   "units": 0.5,
+   "made": "2026-09-29T13:26:42.290194+00:00",
+   "expected_end": "2026-09-30T05:00:00+00:00",
+   "start_est": "2026-09-30T01:00:00+00:00",
+   "status": "loss",
+   "latest_price": 0.285,
+   "close_price": 0.285,
+   "pnl": -0.52,
+   "why": "Elo 1559 vs 1691 on hard. Won 50% vs 50% of games lately. Form 4-6 vs 8-2. Games played in last 3 days: 0 vs 44. Travelled 1,914 vs 0 km since last match. Model 50%, blended with the market 36%, price 29%.",
+   "trend": 0.0,
+   "new_market": false,
+   "trust": 0.34,
+   "sharp_prob": null,
+   "research": "",
+   "sources": [],
+   "expert_lean": "none",
+   "prechecked": true,
+   "graded": "2026-10-01T06:30:22.701647+00:00"
+  },
   {
    "id": "KXWTAMATCH-26SEP30JACFRE-FRE",
    "ticker": "KXWTAMATCH-26SEP30JACFRE-FRE",
@@ -4149,15 +4150,8 @@
  },
  "learning": {
   "groups": {
-   "nfl:spread": {
-    "finished": 216,
-    "games": 5,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-09-29T00:15:00+00:00"
-   },
    "nfl:team_total": {
-    "finished": 254,
+    "finished": 213,
     "games": 6,
     "trust": 0.25,
     "confidence_fix": false,
@@ -4208,6 +4202,13 @@
    "nfl:total_3q": {
     "finished": 90,
     "games": 6,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-09-29T00:15:00+00:00"
+   },
+   "nfl:spread": {
+    "finished": 204,
+    "games": 5,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-09-29T00:15:00+00:00"
@@ -4423,11 +4424,11 @@
     "last": "2026-09-30T23:00:00+00:00"
    },
    "tennis:winner": {
-    "finished": 416,
-    "games": 208,
+    "finished": 426,
+    "games": 213,
     "trust": 0.33,
     "confidence_fix": true,
-    "last": "2026-10-01T02:00:00+00:00"
+    "last": "2026-10-01T03:10:00+00:00"
    },
    "mlb:winner": {
     "finished": 16,
@@ -4509,22 +4510,22 @@
   },
   "price_trend": {
    "flat": {
-    "markets": 6660,
-    "hit_vs_price": -0.0
+    "markets": 6621,
+    "hit_vs_price": 0.0
    },
    "rising": {
-    "markets": 851,
-    "hit_vs_price": 0.007
+    "markets": 848,
+    "hit_vs_price": 0.005
    },
    "falling": {
-    "markets": 828,
+    "markets": 827,
     "hit_vs_price": -0.005
    }
   }
  },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "tracker": {
-  "tracked": 100279,
+  "tracked": 100482,
   "series": 3942,
   "movers": [
    {
@@ -4651,29 +4652,29 @@
  },
  "models": {
   "tennis": {
-   "matches": 20380,
-   "training_rows": 14046,
+   "matches": 20387,
+   "training_rows": 14053,
    "holdout": {
     "from": "2026-08-26",
-    "matches": 2107,
-    "elo_log_loss": 0.6555,
+    "matches": 2108,
+    "elo_log_loss": 0.6554,
     "model_log_loss": 0.65,
     "elo_accuracy": 0.612,
     "model_accuracy": 0.621
    },
    "using": "full",
    "weights": {
-    "elo": 2.062,
+    "elo": 2.06,
     "dominance": 0.0,
     "rank": 0.0,
     "h2h": 0.481,
-    "form": -0.583,
-    "fatigue_games": -0.211,
-    "fatigue_matches": 0.083,
-    "rest": 0.015,
+    "form": -0.578,
+    "fatigue_games": -0.212,
+    "fatigue_matches": 0.082,
+    "rest": 0.014,
     "travel": 0.149,
     "altitude": 0.0,
-    "best_of_5": 0.574
+    "best_of_5": 0.573
    },
    "sport": "Tennis",
    "label": "Tennis",
@@ -4751,31 +4752,31 @@
    "holdout": {
     "matches": 654,
     "rating_log_loss": 0.63,
-    "model_log_loss": 0.6279,
+    "model_log_loss": 0.6257,
     "rating_accuracy": 0.653,
-    "model_accuracy": 0.641
+    "model_accuracy": 0.645
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6053,
-    "model_log_loss": 0.6279,
+    "model_log_loss": 0.6257,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 654
    },
    "backtest": {
-    "bets": 18,
+    "bets": 17,
     "wins": 6,
-    "units": -8.0,
-    "roi": -0.247
+    "units": -5.5,
+    "roi": -0.184
    },
    "weights": {
-    "home_field": 0.256,
-    "rating": 1.529,
-    "rest": 0.24,
-    "point_diff_form": 0.236,
-    "qb_change": 0.281,
-    "epa": 0.158
+    "home_field": 0.254,
+    "rating": 1.528,
+    "rest": 0.243,
+    "point_diff_form": 0.233,
+    "qb_change": 0.286,
+    "epa": 0.163
    },
    "matches": 4411,
    "totals": {
@@ -4827,26 +4828,26 @@
  },
  "summary": {
   "all": {
-   "picks": 58,
+   "picks": 59,
    "wins": 21,
-   "losses": 37,
-   "units": -3.13,
-   "staked": 73.0,
-   "roi": -0.043,
-   "beat_price": 0.31,
+   "losses": 38,
+   "units": -3.65,
+   "staked": 73.5,
+   "roi": -0.05,
+   "beat_price": 0.305,
    "clv": -0.0025,
-   "clv_picks": 52
+   "clv_picks": 53
   },
   "week": {
-   "picks": 40,
-   "wins": 14,
+   "picks": 39,
+   "wins": 13,
    "losses": 26,
-   "units": -7.85,
-   "staked": 40.5,
-   "roi": -0.194,
-   "beat_price": 0.325,
-   "clv": -0.0014,
-   "clv_picks": 35
+   "units": -9.64,
+   "staked": 38.0,
+   "roi": -0.254,
+   "beat_price": 0.333,
+   "clv": -0.001,
+   "clv_picks": 34
   },
   "yours": {
    "picks": 15,
@@ -4884,15 +4885,15 @@
    "clv_picks": 2
   },
   "none": {
-   "picks": 55,
+   "picks": 56,
    "wins": 18,
-   "losses": 37,
-   "units": -15.39,
-   "staked": 64.0,
-   "roi": -0.24,
-   "beat_price": 0.309,
+   "losses": 38,
+   "units": -15.91,
+   "staked": 64.5,
+   "roi": -0.247,
+   "beat_price": 0.304,
    "clv": -0.0026,
-   "clv_picks": 50
+   "clv_picks": 51
   }
  },
  "by_tier": {
@@ -4908,15 +4909,15 @@
    "clv_picks": 16
   },
   "B": {
-   "picks": 37,
+   "picks": 38,
    "wins": 14,
-   "losses": 23,
-   "units": 1.35,
-   "staked": 39.5,
-   "roi": 0.034,
-   "beat_price": 0.351,
-   "clv": -0.0015,
-   "clv_picks": 33
+   "losses": 24,
+   "units": 0.83,
+   "staked": 40.0,
+   "roi": 0.021,
+   "beat_price": 0.342,
+   "clv": -0.0016,
+   "clv_picks": 34
   },
   "C": {
    "picks": 3,
@@ -5402,8 +5403,8 @@
    "expected_end": "2026-10-03T20:00:00+00:00",
    "start_est": "2026-10-03T20:15:00+00:00",
    "status": "pending",
-   "latest_price": 0.46,
-   "close_price": 0.46,
+   "latest_price": 0.465,
+   "close_price": 0.465,
    "pnl": null,
    "why": "Projected score margin +19.5 (home) and total 54.9. Model gives \"Illinois wins by over 10.5 points\" 71%. Blended with the market that's 53% vs a 48% price.",
    "trend": 0.0,
@@ -5638,8 +5639,8 @@
    "expected_end": "2026-10-03T22:30:00+00:00",
    "start_est": "2026-10-03T19:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.5,
-   "close_price": 0.5,
+   "latest_price": 0.495,
+   "close_price": 0.495,
    "pnl": null,
    "why": "Projected score margin +29.3 (home) and total 45.7. Model gives \"North Dakota St. wins by over 18.5 points\" 75%. Blended with the market that's 56% vs a 51% price.",
    "trend": 0.01,
@@ -6030,8 +6031,8 @@
    "expected_end": "2026-10-04T16:30:00+00:00",
    "start_est": "2026-10-04T13:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.525,
-   "close_price": 0.525,
+   "latest_price": 0.515,
+   "close_price": 0.515,
    "pnl": null,
    "why": "Tyler Warren: 33 a game lately (last 12 games). Model gives \"Tyler Warren: under 50\" 81%. Blended with the market that's 64% vs a 55% price.",
    "trend": 0.0,
@@ -6459,8 +6460,8 @@
    "expected_end": "2026-10-04T20:00:00+00:00",
    "start_est": "2026-10-04T17:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.3,
-   "close_price": 0.3,
+   "latest_price": 0.295,
+   "close_price": 0.295,
    "pnl": null,
    "why": "Davante Adams: 87 a game lately (last 12 games). Model gives \"Davante Adams: 80+\" 55%. Blended with the market that's 45% vs a 35% price. Price down 11\u00a2 in the last 12 hours.",
    "trend": -0.11,
@@ -14874,15 +14875,15 @@
  ],
  "by_tour": {
   "ATP": {
-   "picks": 17,
+   "picks": 18,
    "wins": 2,
-   "losses": 15,
-   "units": -18.99,
-   "staked": 21.5,
-   "roi": -0.883,
-   "beat_price": 0.235,
-   "clv": -0.0075,
-   "clv_picks": 16
+   "losses": 16,
+   "units": -19.51,
+   "staked": 22.0,
+   "roi": -0.887,
+   "beat_price": 0.222,
+   "clv": -0.0074,
+   "clv_picks": 17
   },
   "ATP Challenger": {
    "picks": 17,
@@ -14975,15 +14976,15 @@
    "clv_picks": 1
   },
   "Tennis": {
-   "picks": 49,
+   "picks": 50,
    "wins": 19,
-   "losses": 30,
-   "units": 1.65,
-   "staked": 63.0,
-   "roi": 0.026,
-   "beat_price": 0.265,
+   "losses": 31,
+   "units": 1.13,
+   "staked": 63.5,
+   "roi": 0.018,
+   "beat_price": 0.26,
    "clv": -0.004,
-   "clv_picks": 43
+   "clv_picks": 44
   }
  },
  "calibration": {
@@ -14992,8 +14993,8 @@
    "hit": 0.2
   },
   "30-40%": {
-   "n": 16,
-   "hit": 0.188
+   "n": 17,
+   "hit": 0.176
   },
   "40-50%": {
    "n": 23,
@@ -15256,6 +15257,10 @@
   {
    "t": "2026-09-30",
    "v": 96.87
+  },
+  {
+   "t": "2026-10-01",
+   "v": 96.35
   }
  ],
  "reports": [
