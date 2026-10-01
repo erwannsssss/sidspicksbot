@@ -1193,5 +1193,109 @@
     "expected_end": "2026-10-03T22:30:00+00:00"
    }
   ]
+ },
+ {
+  "id": "PARLAY-202610010034-1",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-10-01T00:34:07.826554+00:00",
+  "units": 1.0,
+  "price": 0.1357,
+  "model_prob": 0.2702,
+  "ev": 0.992,
+  "payout_units": 6.4,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXNCAAFSPREAD-26OCT03TEMUSF-USF7",
+    "ticker": "KXNCAAFSPREAD-26OCT03TEMUSF-USF7",
+    "side": "yes",
+    "market": "South Florida wins by over 6.5 points",
+    "matchup": "Temple at South Florida",
+    "sport": "Football",
+    "price": 0.48,
+    "model_prob": 0.644,
+    "edge": 0.147,
+    "expected_end": "2026-10-03T20:00:00+00:00"
+   },
+   {
+    "id": "KXNFLRSHYDS-26OCT04DALHOU-HOUDMONTGOMERY32-50:no",
+    "ticker": "KXNFLRSHYDS-26OCT04DALHOU-HOUDMONTGOMERY32-50",
+    "side": "no",
+    "market": "David Montgomery: under 50",
+    "matchup": "DAL at HOU",
+    "sport": "Football",
+    "price": 0.52,
+    "model_prob": 0.665,
+    "edge": 0.128,
+    "expected_end": "2026-10-04T20:00:00+00:00"
+   },
+   {
+    "id": "KXNFLRECYDS-26OCT04NEBUF-BUFKCOLEMAN0-15",
+    "ticker": "KXNFLRECYDS-26OCT04NEBUF-BUFKCOLEMAN0-15",
+    "side": "yes",
+    "market": "Keon Coleman: 15+",
+    "matchup": "NE at BUF",
+    "sport": "Football",
+    "price": 0.49,
+    "model_prob": 0.631,
+    "edge": 0.123,
+    "expected_end": "2026-10-04T20:00:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": "PARLAY-202610010034-2",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-10-01T00:34:07.826624+00:00",
+  "units": 1.0,
+  "price": 0.1368,
+  "model_prob": 0.2498,
+  "ev": 0.826,
+  "payout_units": 6.3,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXNFLRSHYDS-26OCT04DENSF-SFBPURDY13-20",
+    "ticker": "KXNFLRSHYDS-26OCT04DENSF-SFBPURDY13-20",
+    "side": "yes",
+    "market": "Brock Purdy: 20+",
+    "matchup": "DEN at SF",
+    "sport": "Football",
+    "price": 0.44,
+    "model_prob": 0.58,
+    "edge": 0.123,
+    "expected_end": "2026-10-04T23:25:00+00:00"
+   },
+   {
+    "id": "KXNCAAFTOTAL-26OCT03RICHLAF-43",
+    "ticker": "KXNCAAFTOTAL-26OCT03RICHLAF-43",
+    "side": "yes",
+    "market": "Over 42.5 points",
+    "matchup": "Richmond at Lafayette",
+    "sport": "Football",
+    "price": 0.51,
+    "model_prob": 0.639,
+    "edge": 0.111,
+    "expected_end": "2026-10-03T19:30:00+00:00"
+   },
+   {
+    "id": "KXNFLRECYDS-26OCT04INDWAS-INDTWARREN84-50:no",
+    "ticker": "KXNFLRECYDS-26OCT04INDWAS-INDTWARREN84-50",
+    "side": "no",
+    "market": "Tyler Warren: under 50",
+    "matchup": "IND at WAS",
+    "sport": "Football",
+    "price": 0.55,
+    "model_prob": 0.674,
+    "edge": 0.106,
+    "expected_end": "2026-10-04T16:30:00+00:00"
+   }
+  ]
  }
 ]
