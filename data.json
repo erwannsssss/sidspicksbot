@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-02T16:26:04.328976+00:00",
+ "updated": "2026-10-02T17:26:57.927435+00:00",
  "status_note": "Last run found 0 new pick(s) and graded 0.",
  "bankroll": 93.82,
  "protection": {
@@ -4587,57 +4587,29 @@
  },
  "learning": {
   "groups": {
-   "nfl:prop_rshyds": {
-    "finished": 173,
-    "games": 2,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-02T00:15:00+00:00"
-   },
-   "nfl:prop_passtds": {
-    "finished": 22,
-    "games": 2,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-02T00:15:00+00:00"
-   },
-   "nfl:team_total": {
-    "finished": 52,
-    "games": 2,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-02T00:15:00+00:00"
-   },
-   "nfl:prop_recyds": {
-    "finished": 278,
-    "games": 2,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-02T00:15:00+00:00"
-   },
-   "nfl:total": {
-    "finished": 40,
-    "games": 2,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-02T00:15:00+00:00"
-   },
-   "nfl:total_1h": {
-    "finished": 28,
+   "nfl:prop_rec": {
+    "finished": 187,
     "games": 2,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-10-02T00:15:00+00:00"
    },
    "nfl:prop_rryds": {
-    "finished": 36,
+    "finished": 30,
     "games": 2,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-10-02T00:15:00+00:00"
    },
-   "nfl:prop_rec": {
-    "finished": 278,
+   "nfl:total_1h": {
+    "finished": 26,
+    "games": 2,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-02T00:15:00+00:00"
+   },
+   "nfl:prop_passtds": {
+    "finished": 16,
     "games": 2,
     "trust": 0.25,
     "confidence_fix": false,
@@ -4650,12 +4622,33 @@
     "confidence_fix": false,
     "last": "2026-10-02T00:15:00+00:00"
    },
-   "tennis:winner": {
-    "finished": 460,
-    "games": 230,
-    "trust": 0.33,
+   "nfl:team_total": {
+    "finished": 50,
+    "games": 2,
+    "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-02T12:30:00+00:00"
+    "last": "2026-10-02T00:15:00+00:00"
+   },
+   "nfl:prop_recyds": {
+    "finished": 192,
+    "games": 2,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-02T00:15:00+00:00"
+   },
+   "nfl:prop_rshyds": {
+    "finished": 102,
+    "games": 2,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-02T00:15:00+00:00"
+   },
+   "tennis:winner": {
+    "finished": 468,
+    "games": 234,
+    "trust": 0.32,
+    "confidence_fix": false,
+    "last": "2026-10-02T14:00:00+00:00"
    },
    "mlb:winner": {
     "finished": 18,
@@ -4881,6 +4874,13 @@
     "confidence_fix": false,
     "last": "2026-10-02T00:15:00+00:00"
    },
+   "nfl:total": {
+    "finished": 38,
+    "games": 1,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-02T00:15:00+00:00"
+   },
    "nfl:prop_passyds": {
     "finished": 32,
     "games": 1,
@@ -4988,23 +4988,23 @@
    }
   },
   "price_trend": {
-   "flat": {
-    "markets": 4321,
-    "hit_vs_price": -0.0
-   },
    "rising": {
-    "markets": 819,
-    "hit_vs_price": -0.007
+    "markets": 780,
+    "hit_vs_price": 0.002
    },
    "falling": {
-    "markets": 793,
-    "hit_vs_price": 0.008
+    "markets": 755,
+    "hit_vs_price": -0.001
+   },
+   "flat": {
+    "markets": 4160,
+    "hit_vs_price": -0.0
    }
   }
  },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "tracker": {
-  "tracked": 107108,
+  "tracked": 107365,
   "series": 3953,
   "movers": [
    {
@@ -5014,22 +5014,6 @@
     "move": -0.63,
     "price": 0.07,
     "close": "2026-10-04T01:00:00+00:00"
-   },
-   {
-    "ticker": "KXODIMATCH-26SEP300430WIIND-IND",
-    "series": "KXODIMATCH",
-    "title": "India",
-    "move": -0.515,
-    "price": 0.37,
-    "close": "2026-10-02T16:30:00+00:00"
-   },
-   {
-    "ticker": "KXODIMATCH-26SEP300430WIIND-WI",
-    "series": "KXODIMATCH",
-    "title": "West Indies",
-    "move": 0.505,
-    "price": 0.63,
-    "close": "2026-10-02T16:30:00+00:00"
    },
    {
     "ticker": "KXWNBA1QTOTAL-26OCT01INDLV-40",
@@ -5126,34 +5110,50 @@
     "move": -0.455,
     "price": 0.035,
     "close": "2026-10-04T01:00:00+00:00"
+   },
+   {
+    "ticker": "KXCONCACAFNLSPREAD-26OCT02KNACUB-KNA2",
+    "series": "KXCONCACAFNLSPREAD",
+    "title": "Saint Kitts & Nevis wins by more than 1.5 goals",
+    "move": -0.455,
+    "price": 0.045,
+    "close": "2026-10-04T21:00:00+00:00"
+   },
+   {
+    "ticker": "KXNCAAWVMATCH-26SEP301900NDLOU-ND",
+    "series": "KXNCAAWVMATCH",
+    "title": "Notre Dame",
+    "move": -0.45,
+    "price": 0.045,
+    "close": "2026-10-02T23:00:00+00:00"
    }
   ]
  },
  "models": {
   "tennis": {
-   "matches": 20486,
-   "training_rows": 14148,
+   "matches": 20490,
+   "training_rows": 14152,
    "holdout": {
     "from": "2026-08-27",
     "matches": 2123,
-    "elo_log_loss": 0.6553,
-    "model_log_loss": 0.6497,
+    "elo_log_loss": 0.6552,
+    "model_log_loss": 0.6493,
     "elo_accuracy": 0.611,
     "model_accuracy": 0.617
    },
    "using": "full",
    "weights": {
-    "elo": 2.054,
+    "elo": 2.049,
     "dominance": 0.0,
     "rank": 0.0,
-    "h2h": 0.478,
-    "form": -0.573,
-    "fatigue_games": -0.22,
-    "fatigue_matches": 0.091,
+    "h2h": 0.483,
+    "form": -0.568,
+    "fatigue_games": -0.221,
+    "fatigue_matches": 0.092,
     "rest": 0.015,
     "travel": 0.143,
     "altitude": 0.0,
-    "best_of_5": 0.576
+    "best_of_5": 0.578
    },
    "sport": "Tennis",
    "label": "Tennis",
@@ -5231,31 +5231,31 @@
    "holdout": {
     "matches": 655,
     "rating_log_loss": 0.6302,
-    "model_log_loss": 0.6249,
+    "model_log_loss": 0.6253,
     "rating_accuracy": 0.652,
-    "model_accuracy": 0.647
+    "model_accuracy": 0.649
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6056,
-    "model_log_loss": 0.6249,
+    "model_log_loss": 0.6253,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 655
    },
    "backtest": {
-    "bets": 17,
-    "wins": 6,
-    "units": -5.5,
-    "roi": -0.184
+    "bets": 15,
+    "wins": 3,
+    "units": -15.6,
+    "roi": -0.546
    },
    "weights": {
-    "home_field": 0.257,
-    "rating": 1.527,
-    "rest": 0.239,
-    "point_diff_form": 0.237,
-    "qb_change": 0.307,
-    "epa": 0.156
+    "home_field": 0.255,
+    "rating": 1.524,
+    "rest": 0.242,
+    "point_diff_form": 0.233,
+    "qb_change": 0.348,
+    "epa": 0.155
    },
    "matches": 4412,
    "totals": {
@@ -5489,8 +5489,8 @@
    "expected_end": "2026-10-03T03:00:00+00:00",
    "start_est": "2026-10-03T00:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.475,
-   "close_price": 0.475,
+   "latest_price": 0.485,
+   "close_price": 0.485,
    "pnl": null,
    "why": "Projected score margin -2.6 (home) and total 50.6. Model gives \"Over 46.5 points scored\" 60%. Blended with the market that's 49% vs a 47% price.",
    "trend": 0.0,
@@ -5646,8 +5646,8 @@
    "expected_end": "2026-10-03T20:00:00+00:00",
    "start_est": "2026-10-03T23:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.475,
-   "close_price": 0.475,
+   "latest_price": 0.465,
+   "close_price": 0.465,
    "pnl": null,
    "why": "Projected score margin +20.8 (home) and total 53.1. Model gives \"South Florida wins by over 6.5 points\" 81%. Blended with the market that's 56% vs a 48% price. Sharp sportsbook price (Pinnacle) says 49%.",
    "trend": 0.0,
@@ -5725,8 +5725,8 @@
    "expected_end": "2026-10-03T20:00:00+00:00",
    "start_est": "2026-10-03T16:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.465,
-   "close_price": 0.465,
+   "latest_price": 0.475,
+   "close_price": 0.475,
    "pnl": null,
    "why": "Projected score margin +8.4 (home) and total 54.1. Model gives \"No: Kansas wins by over 18.5 points\" 74%. Blended with the market that's 56% vs a 50% price.",
    "trend": 0.0,
@@ -6000,8 +6000,8 @@
    "expected_end": "2026-10-03T22:30:00+00:00",
    "start_est": "2026-10-03T19:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.465,
-   "close_price": 0.465,
+   "latest_price": 0.475,
+   "close_price": 0.475,
    "pnl": null,
    "why": "Projected score margin +29.3 (home) and total 45.7. Model gives \"North Dakota St. wins by over 18.5 points\" 75%. Blended with the market that's 56% vs a 51% price.",
    "trend": 0.01,
@@ -6117,8 +6117,8 @@
    "expected_end": "2026-10-03T20:00:00+00:00",
    "start_est": "2026-10-03T19:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.35,
-   "close_price": 0.35,
+   "latest_price": 0.355,
+   "close_price": 0.355,
    "pnl": null,
    "why": "Projected score margin +1.3 (home) and total 55.5. Model gives \"No: Florida wins by over 1.5 points\" 57%. Blended with the market that's 41% vs a 36% price.",
    "trend": -0.01,
@@ -6392,8 +6392,8 @@
    "expected_end": "2026-10-04T16:30:00+00:00",
    "start_est": "2026-10-04T13:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.525,
-   "close_price": 0.525,
+   "latest_price": 0.515,
+   "close_price": 0.515,
    "pnl": null,
    "why": "Tyler Warren: 33 a game lately (last 12 games). Model gives \"Tyler Warren: under 50\" 81%. Blended with the market that's 64% vs a 55% price.",
    "trend": 0.0,
@@ -6548,8 +6548,8 @@
    "expected_end": "2026-10-04T20:00:00+00:00",
    "start_est": "2026-10-04T17:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.47,
-   "close_price": 0.47,
+   "latest_price": 0.465,
+   "close_price": 0.465,
    "pnl": null,
    "why": "Keon Coleman: 30 a game lately (last 12 games). Model gives \"Keon Coleman: 15+\" 77%. Blended with the market that's 63% vs a 49% price. Price up 2\u00a2 in the last 12 hours.",
    "trend": 0.02,
@@ -6665,8 +6665,8 @@
    "expected_end": "2026-10-03T19:30:00+00:00",
    "start_est": "2026-10-03T16:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.515,
-   "close_price": 0.515,
+   "latest_price": 0.52,
+   "close_price": 0.52,
    "pnl": null,
    "why": "Projected score margin -5.6 (home) and total 55.5. Model gives \"Over 42.5 points\" 78%. Blended with the market that's 57% vs a 51% price.",
    "trend": 0.0,
@@ -6704,8 +6704,8 @@
    "expected_end": "2026-10-04T02:00:00+00:00",
    "start_est": "2026-10-03T23:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.53,
-   "close_price": 0.53,
+   "latest_price": 0.515,
+   "close_price": 0.515,
    "pnl": null,
    "why": "Projected score margin +8.2 (home) and total 57.8. Model gives \"No: South Dakota St. wins by over 2.5 points\" 75%. Blended with the market that's 54% vs a 48% price.",
    "trend": -0.015,
@@ -6782,8 +6782,8 @@
    "expected_end": "2026-10-04T20:00:00+00:00",
    "start_est": "2026-10-04T17:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.465,
-   "close_price": 0.465,
+   "latest_price": 0.475,
+   "close_price": 0.475,
    "pnl": null,
    "why": "Projected score margin -2.1 (home) and total 47.4. Forecast 68F, wind 4 mph, rain 0.0 mm. Model gives \"CIN Bengals under 26.5 points\" 65%. Blended with the market that's 58% vs a 47% price.",
    "trend": -0.01,
@@ -6860,8 +6860,8 @@
    "expected_end": "2026-10-04T23:25:00+00:00",
    "start_est": "2026-10-04T20:25:00+00:00",
    "status": "pending",
-   "latest_price": 0.365,
-   "close_price": 0.365,
+   "latest_price": 0.375,
+   "close_price": 0.375,
    "pnl": null,
    "why": "Projected score margin -2.1 (home) and total 41.0. Model gives \"Under 43.5 points\" 57%. Blended with the market that's 41% vs a 37% price.",
    "trend": 0.005,
@@ -6899,8 +6899,8 @@
    "expected_end": "2026-10-03T20:00:00+00:00",
    "start_est": "2026-10-03T19:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.325,
-   "close_price": 0.325,
+   "latest_price": 0.32,
+   "close_price": 0.32,
    "pnl": null,
    "why": "Projected score margin +16.7 (home) and total 49.9. Model gives \"Over 49.5 points\" 51%. Blended with the market that's 36% vs a 32% price.",
    "trend": -0.005,
@@ -7250,8 +7250,8 @@
    "expected_end": "2026-10-04T01:00:00+00:00",
    "start_est": "2026-10-03T22:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.46,
-   "close_price": 0.46,
+   "latest_price": 0.47,
+   "close_price": 0.47,
    "pnl": null,
    "why": "Projected score margin +2.4 (home) and total 56.4. Model gives \"No: Campbell wins by over 7.5 points\" 73%. Blended with the market that's 53% vs a 48% price. Price down 4\u00a2 in the last 12 hours.",
    "trend": -0.04,
@@ -7406,8 +7406,8 @@
    "expected_end": "2026-10-06T03:15:00+00:00",
    "start_est": "2026-10-06T00:15:00+00:00",
    "status": "pending",
-   "latest_price": 0.23,
-   "close_price": 0.23,
+   "latest_price": 0.235,
+   "close_price": 0.235,
    "pnl": null,
    "why": "Kyle Pitts: 38 a game lately (last 12 games). Model gives \"Kyle Pitts Sr.: 50+\" 39%. Blended with the market that's 27% vs a 22% price.",
    "trend": -0.015,
@@ -7445,8 +7445,8 @@
    "expected_end": "2026-10-03T19:00:00+00:00",
    "start_est": "2026-10-03T16:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.445,
-   "close_price": 0.445,
+   "latest_price": 0.45,
+   "close_price": 0.45,
    "pnl": null,
    "why": "Projected score margin +10.9 (home) and total 53.0. Model gives \"Over 47.5 points\" 63%. Blended with the market that's 49% vs a 46% price. Price down 6\u00a2 in the last 12 hours.",
    "trend": -0.055,
@@ -7523,8 +7523,8 @@
    "expected_end": "2026-10-04T03:00:00+00:00",
    "start_est": "2026-10-04T00:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.695,
-   "close_price": 0.695,
+   "latest_price": 0.7,
+   "close_price": 0.7,
    "pnl": null,
    "why": "Projected score margin -6.5 (home) and total 12.6. Model gives \"Indiana\" 79%. Blended with the market that's 71% vs a 69% price.",
    "trend": 0.0,
@@ -7602,8 +7602,8 @@
    "expected_end": "2026-10-03T20:00:00+00:00",
    "start_est": "2026-10-03T16:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.275,
-   "close_price": 0.275,
+   "latest_price": 0.265,
+   "close_price": 0.265,
    "pnl": null,
    "why": "Projected score margin +22.3 (home) and total 53.0. Model gives \"Under 46.5 points scored\" 35%. Blended with the market that's 29% vs a 28% price.",
    "trend": 0.0,
@@ -7641,8 +7641,8 @@
    "expected_end": "2026-10-03T20:00:00+00:00",
    "start_est": "2026-10-03T16:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.44,
-   "close_price": 0.44,
+   "latest_price": 0.435,
+   "close_price": 0.435,
    "pnl": null,
    "why": "Projected score margin -1.9 (home) and total 13.5. Model gives \"Alabama\" 59%. Blended with the market that's 47% vs a 45% price.",
    "trend": -0.005,
@@ -7719,8 +7719,8 @@
    "expected_end": "2026-10-03T20:00:00+00:00",
    "start_est": "2026-10-04T03:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.445,
-   "close_price": 0.445,
+   "latest_price": 0.455,
+   "close_price": 0.455,
    "pnl": null,
    "why": "Projected score margin +7.0 (home) and total 53.0. Model gives \"Under 54.5 points scored\" 54%. Blended with the market that's 47% vs a 45% price. Price down 2\u00a2 in the last 12 hours.",
    "trend": -0.02,
@@ -7797,8 +7797,8 @@
    "expected_end": "2026-10-03T20:00:00+00:00",
    "start_est": "2026-10-03T17:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.585,
-   "close_price": 0.585,
+   "latest_price": 0.59,
+   "close_price": 0.59,
    "pnl": null,
    "why": "Munetaka Murakami: 1.99 a game this season over 127 games (adjusted 2.01). Model gives \"Munetaka Murakami: 1+\" 87%. Blended with the market that's 64% vs a 58% price.",
    "trend": 0.0,
