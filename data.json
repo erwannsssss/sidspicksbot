@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-02T06:30:52.576359+00:00",
+ "updated": "2026-10-02T07:26:58.347306+00:00",
  "status_note": "Last run found 0 new pick(s) and graded 1.",
  "bankroll": 92.66,
  "protection": {
@@ -249,7 +249,8 @@
    "sharp_prob": null,
    "research": "",
    "sources": [],
-   "expert_lean": "none"
+   "expert_lean": "none",
+   "prechecked": true
   }
  ],
  "history": [
@@ -4585,7 +4586,7 @@
  "learning": {
   "groups": {
    "nfl:spread_1q": {
-    "finished": 36,
+    "finished": 32,
     "games": 2,
     "trust": 0.25,
     "confidence_fix": false,
@@ -4746,11 +4747,11 @@
     "last": "2026-10-02T00:15:00+00:00"
    },
    "tennis:winner": {
-    "finished": 406,
-    "games": 203,
+    "finished": 416,
+    "games": 208,
     "trust": 0.33,
     "confidence_fix": false,
-    "last": "2026-10-02T03:00:00+00:00"
+    "last": "2026-10-02T04:00:00+00:00"
    },
    "mlb:winner": {
     "finished": 18,
@@ -4986,22 +4987,22 @@
   },
   "price_trend": {
    "flat": {
-    "markets": 4695,
+    "markets": 4697,
     "hit_vs_price": -0.0
    },
    "rising": {
-    "markets": 818,
+    "markets": 820,
     "hit_vs_price": -0.009
    },
    "falling": {
-    "markets": 793,
-    "hit_vs_price": 0.01
+    "markets": 795,
+    "hit_vs_price": 0.009
    }
   }
  },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "tracker": {
-  "tracked": 105790,
+  "tracked": 105988,
   "series": 3953,
   "movers": [
    {
@@ -5061,6 +5062,14 @@
     "close": "2026-10-04T01:00:00+00:00"
    },
    {
+    "ticker": "KXDOTA2TOTALMAPS-26OCT012300XEIAP-3",
+    "series": "KXDOTA2TOTALMAPS",
+    "title": "Over 2.5 maps",
+    "move": 0.5,
+    "price": 0.995,
+    "close": "2026-10-04T03:00:00+00:00"
+   },
+   {
     "ticker": "KXWNBA1QTOTAL-26OCT01INDLV-43",
     "series": "KXWNBA1QTOTAL",
     "title": "Over 42.5 points",
@@ -5115,42 +5124,34 @@
     "move": 0.47,
     "price": 0.97,
     "close": "2026-10-04T01:00:00+00:00"
-   },
-   {
-    "ticker": "KXWNBATEAMTOTAL-26OCT01INDLV-LV84",
-    "series": "KXWNBATEAMTOTAL",
-    "title": "Las Vegas over 83.5 points",
-    "move": 0.47,
-    "price": 0.97,
-    "close": "2026-10-04T01:00:00+00:00"
    }
   ]
  },
  "models": {
   "tennis": {
-   "matches": 20456,
-   "training_rows": 14118,
+   "matches": 20461,
+   "training_rows": 14123,
    "holdout": {
     "from": "2026-08-26",
-    "matches": 2118,
-    "elo_log_loss": 0.656,
-    "model_log_loss": 0.6502,
-    "elo_accuracy": 0.61,
-    "model_accuracy": 0.616
+    "matches": 2119,
+    "elo_log_loss": 0.6556,
+    "model_log_loss": 0.6499,
+    "elo_accuracy": 0.611,
+    "model_accuracy": 0.617
    },
    "using": "full",
    "weights": {
-    "elo": 2.051,
+    "elo": 2.052,
     "dominance": 0.0,
     "rank": 0.0,
     "h2h": 0.482,
-    "form": -0.58,
-    "fatigue_games": -0.22,
+    "form": -0.579,
+    "fatigue_games": -0.221,
     "fatigue_matches": 0.091,
     "rest": 0.014,
     "travel": 0.143,
     "altitude": 0.0,
-    "best_of_5": 0.581
+    "best_of_5": 0.58
    },
    "sport": "Tennis",
    "label": "Tennis",
@@ -5228,31 +5229,31 @@
    "holdout": {
     "matches": 655,
     "rating_log_loss": 0.6302,
-    "model_log_loss": 0.6257,
+    "model_log_loss": 0.6269,
     "rating_accuracy": 0.652,
     "model_accuracy": 0.641
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6056,
-    "model_log_loss": 0.6257,
+    "model_log_loss": 0.6269,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 655
    },
    "backtest": {
-    "bets": 16,
-    "wins": 5,
-    "units": -9.2,
-    "roi": -0.316
+    "bets": 15,
+    "wins": 4,
+    "units": -12.0,
+    "roi": -0.429
    },
    "weights": {
     "home_field": 0.257,
-    "rating": 1.529,
-    "rest": 0.239,
-    "point_diff_form": 0.236,
-    "qb_change": 0.287,
-    "epa": 0.159
+    "rating": 1.521,
+    "rest": 0.243,
+    "point_diff_form": 0.242,
+    "qb_change": 0.319,
+    "epa": 0.154
    },
    "matches": 4412,
    "totals": {
@@ -5337,15 +5338,15 @@
    "clv_picks": 14
   },
   "watch": {
-   "picks": 203,
+   "picks": 204,
    "wins": 79,
-   "losses": 124,
-   "units": -8.7,
-   "staked": 101.5,
-   "roi": -0.086,
-   "beat_price": 0.256,
-   "clv": -0.009,
-   "clv_picks": 188
+   "losses": 125,
+   "units": -9.23,
+   "staked": 102.0,
+   "roi": -0.09,
+   "beat_price": 0.255,
+   "clv": -0.0089,
+   "clv_picks": 189
   }
  },
  "by_expert_lean": {
@@ -5407,15 +5408,15 @@
    "clv_picks": 3
   },
   "W": {
-   "picks": 203,
+   "picks": 204,
    "wins": 79,
-   "losses": 124,
-   "units": -8.7,
-   "staked": 101.5,
-   "roi": -0.086,
-   "beat_price": 0.256,
-   "clv": -0.009,
-   "clv_picks": 188
+   "losses": 125,
+   "units": -9.23,
+   "staked": 102.0,
+   "roi": -0.09,
+   "beat_price": 0.255,
+   "clv": -0.0089,
+   "clv_picks": 189
   }
  },
  "watch_open": [
@@ -5722,8 +5723,8 @@
    "expected_end": "2026-10-03T20:00:00+00:00",
    "start_est": "2026-10-03T16:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.465,
-   "close_price": 0.465,
+   "latest_price": 0.47,
+   "close_price": 0.47,
    "pnl": null,
    "why": "Projected score margin +8.4 (home) and total 54.1. Model gives \"No: Kansas wins by over 18.5 points\" 74%. Blended with the market that's 56% vs a 50% price.",
    "trend": 0.0,
@@ -5997,8 +5998,8 @@
    "expected_end": "2026-10-03T22:30:00+00:00",
    "start_est": "2026-10-03T19:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.47,
-   "close_price": 0.47,
+   "latest_price": 0.465,
+   "close_price": 0.465,
    "pnl": null,
    "why": "Projected score margin +29.3 (home) and total 45.7. Model gives \"North Dakota St. wins by over 18.5 points\" 75%. Blended with the market that's 56% vs a 51% price.",
    "trend": 0.01,
@@ -6584,8 +6585,8 @@
    "expected_end": "2026-10-04T23:25:00+00:00",
    "start_est": "2026-10-04T20:25:00+00:00",
    "status": "pending",
-   "latest_price": 0.42,
-   "close_price": 0.42,
+   "latest_price": 0.425,
+   "close_price": 0.425,
    "pnl": null,
    "why": "Brock Purdy: 27 a game lately (last 12 games). Model gives \"Brock Purdy: 20+\" 73%. Blended with the market that's 51% vs a 44% price.",
    "trend": 0.0,
@@ -6623,8 +6624,8 @@
    "expected_end": "2026-10-04T20:00:00+00:00",
    "start_est": "2026-10-04T17:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.33,
-   "close_price": 0.33,
+   "latest_price": 0.34,
+   "close_price": 0.34,
    "pnl": null,
    "why": "Projected score margin -1.4 (home) and total 46.0. Forecast 90F, wind 8 mph, rain 0.0 mm. Model gives \"TB Buccaneers over 20.5 points\" 57%. Blended with the market that's 49% vs a 35% price.",
    "trend": 0.005,
@@ -7299,45 +7300,6 @@
    "expert_lean": "none"
   },
   {
-   "id": "KXATPMATCH-26OCT01MOLKHA-MOL",
-   "ticker": "KXATPMATCH-26OCT01MOLKHA-MOL",
-   "side": "yes",
-   "event": "KXATPMATCH-26OCT01MOLKHA",
-   "game": "26OCT01MOLKHA",
-   "sport": "Tennis",
-   "model_key": "tennis",
-   "mtype": "winner",
-   "line": null,
-   "tour": "ATP",
-   "tournament": "2026 ATP Beijing",
-   "matchup": "2026 ATP Beijing",
-   "surface": "hard",
-   "pick": "Alex Molcan",
-   "opponent": "Karen Khachanov",
-   "market": "Alex Molcan to win",
-   "price": 0.22,
-   "model_prob": 0.311,
-   "raw_prob": 0.482,
-   "edge": 0.079,
-   "tier": "W",
-   "units": 0.5,
-   "made": "2026-10-02T00:30:39.920982+00:00",
-   "expected_end": "2026-10-02T06:00:00+00:00",
-   "start_est": "2026-10-02T02:00:00+00:00",
-   "status": "pending",
-   "latest_price": 0.215,
-   "close_price": 0.215,
-   "pnl": null,
-   "why": "Elo 1646 vs 1647 on hard. Won 50% vs 50% of games lately. Form 5-5 vs 6-4. Games played in last 3 days: 44 vs 22. Model 48%, blended with the market 25%, price 22%.",
-   "trend": 0.002,
-   "new_market": false,
-   "trust": 0.3,
-   "sharp_prob": null,
-   "research": "",
-   "sources": [],
-   "expert_lean": "none"
-  },
-  {
    "id": "KXWTAMATCH-26OCT01ZHEKAL-KAL",
    "ticker": "KXWTAMATCH-26OCT01ZHEKAL-KAL",
    "side": "yes",
@@ -7755,8 +7717,8 @@
    "expected_end": "2026-10-03T20:00:00+00:00",
    "start_est": "2026-10-03T19:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.5,
-   "close_price": 0.5,
+   "latest_price": 0.485,
+   "close_price": 0.485,
    "pnl": null,
    "why": "Projected score margin +2.4 (home) and total 12.4. Model gives \"Tennessee\" 62%. Blended with the market that's 53% vs a 51% price.",
    "trend": -0.005,
@@ -7794,8 +7756,8 @@
    "expected_end": "2026-10-03T20:00:00+00:00",
    "start_est": "2026-10-04T03:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.44,
-   "close_price": 0.44,
+   "latest_price": 0.445,
+   "close_price": 0.445,
    "pnl": null,
    "why": "Projected score margin +7.0 (home) and total 53.0. Model gives \"Under 54.5 points scored\" 54%. Blended with the market that's 47% vs a 45% price. Price down 2\u00a2 in the last 12 hours.",
    "trend": -0.02,
@@ -7847,6 +7809,46 @@
   }
  ],
  "watch_history": [
+  {
+   "id": "KXATPMATCH-26OCT01MOLKHA-MOL",
+   "ticker": "KXATPMATCH-26OCT01MOLKHA-MOL",
+   "side": "yes",
+   "event": "KXATPMATCH-26OCT01MOLKHA",
+   "game": "26OCT01MOLKHA",
+   "sport": "Tennis",
+   "model_key": "tennis",
+   "mtype": "winner",
+   "line": null,
+   "tour": "ATP",
+   "tournament": "2026 ATP Beijing",
+   "matchup": "2026 ATP Beijing",
+   "surface": "hard",
+   "pick": "Alex Molcan",
+   "opponent": "Karen Khachanov",
+   "market": "Alex Molcan to win",
+   "price": 0.22,
+   "model_prob": 0.311,
+   "raw_prob": 0.482,
+   "edge": 0.079,
+   "tier": "W",
+   "units": 0.5,
+   "made": "2026-10-02T00:30:39.920982+00:00",
+   "expected_end": "2026-10-02T06:00:00+00:00",
+   "start_est": "2026-10-02T02:00:00+00:00",
+   "status": "loss",
+   "latest_price": 0.215,
+   "close_price": 0.215,
+   "pnl": -0.53,
+   "why": "Elo 1646 vs 1647 on hard. Won 50% vs 50% of games lately. Form 5-5 vs 6-4. Games played in last 3 days: 44 vs 22. Model 48%, blended with the market 25%, price 22%.",
+   "trend": 0.002,
+   "new_market": false,
+   "trust": 0.3,
+   "sharp_prob": null,
+   "research": "",
+   "sources": [],
+   "expert_lean": "none",
+   "graded": "2026-10-02T07:24:27.855208+00:00"
+  },
   {
    "id": "KXNCAAFGAME-26OCT01WKUNMSU-WKU",
    "ticker": "KXNCAAFGAME-26OCT01WKUNMSU-WKU",
