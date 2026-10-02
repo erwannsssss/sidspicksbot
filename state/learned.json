@@ -1,6 +1,5 @@
 {
  "trust": {
-  "nfl:spread_1h": 0.25,
   "nfl:total_1h": 0.25,
   "nfl:period_winner_1q": 0.25,
   "nfl:spread_1q": 0.25,
@@ -25,7 +24,7 @@
   "nfl:prop_passtds": 0.25,
   "nfl:prop_rryds": 0.25,
   "nfl:prop_rec": 0.25,
-  "tennis:winner": 0.34,
+  "tennis:winner": 0.33,
   "mlb:winner": 0.5,
   "mlb:spread_f5": 0.25,
   "mlb:total_f5": 0.25,
@@ -56,7 +55,8 @@
   "cfb:spread": 0.25,
   "cfb:total": 0.25,
   "cfb:team_total": 0.25,
-  "nfl:winner": 0.25
+  "nfl:winner": 0.25,
+  "nfl:spread_1h": 0.25
  },
  "trust_league": {
   "nfl:spread|NFL": 0.44,
@@ -65,8 +65,8 @@
   "nfl:prop_recyds|NFL": 0.38,
   "nfl:prop_rshyds|NFL": 0.25,
   "nfl:prop_rec|NFL": 0.61,
-  "tennis:winner|ATP": 0.32,
-  "tennis:winner|WTA": 0.32,
+  "tennis:winner|ATP": 0.31,
+  "tennis:winner|WTA": 0.31,
   "tennis:winner|ATP Challenger": 0.32,
   "mlb:spread_f5|MLB": 0.4,
   "mlb:total_f5|MLB": 0.47,
@@ -79,12 +79,18 @@
   "mlb:prop_tb|MLB": 0.25,
   "mlb:prop_hrr|MLB": 0.25,
   "cfb:spread_1h|College Football": 0.25,
+  "cfb:spread|College Football": 0.25,
+  "cfb:total|College Football": 0.38,
   "cfb:team_total|College Football": 0.25
  },
- "calib": {},
+ "calib": {
+  "tennis:winner": [
+   0.007,
+   1.096
+  ]
+ },
  "counts": {
-  "nfl:spread_1h": 39,
-  "nfl:total_1h": 50,
+  "nfl:total_1h": 30,
   "nfl:period_winner_1q": 8,
   "nfl:spread_1q": 42,
   "nfl:total_1q": 34,
@@ -108,7 +114,7 @@
   "nfl:prop_passtds": 22,
   "nfl:prop_rryds": 36,
   "nfl:prop_rec": 278,
-  "tennis:winner": 388,
+  "tennis:winner": 394,
   "mlb:winner": 18,
   "mlb:spread_f5": 72,
   "mlb:total_f5": 126,
@@ -133,16 +139,16 @@
   "soccer:first_to_score": 10,
   "soccer:correct_score": 52,
   "soccer:team_total": 24,
-  "cfb:winner": 2,
+  "cfb:winner": 4,
   "cfb:spread_1h": 80,
   "cfb:total_1h": 56,
-  "cfb:spread": 52,
-  "cfb:total": 26,
-  "cfb:team_total": 74,
-  "nfl:winner": 2
+  "cfb:spread": 110,
+  "cfb:total": 64,
+  "cfb:team_total": 100,
+  "nfl:winner": 2,
+  "nfl:spread_1h": 28
  },
  "games": {
-  "nfl:spread_1h": 2,
   "nfl:total_1h": 2,
   "nfl:period_winner_1q": 2,
   "nfl:spread_1q": 2,
@@ -167,7 +173,7 @@
   "nfl:prop_passtds": 2,
   "nfl:prop_rryds": 2,
   "nfl:prop_rec": 2,
-  "tennis:winner": 194,
+  "tennis:winner": 197,
   "mlb:winner": 9,
   "mlb:spread_f5": 9,
   "mlb:total_f5": 9,
@@ -192,16 +198,16 @@
   "soccer:first_to_score": 2,
   "soccer:correct_score": 2,
   "soccer:team_total": 2,
-  "cfb:winner": 1,
+  "cfb:winner": 2,
   "cfb:spread_1h": 2,
   "cfb:total_1h": 2,
-  "cfb:spread": 1,
-  "cfb:total": 1,
+  "cfb:spread": 2,
+  "cfb:total": 2,
   "cfb:team_total": 2,
-  "nfl:winner": 1
+  "nfl:winner": 1,
+  "nfl:spread_1h": 1
  },
  "last": {
-  "nfl:spread_1h": "2026-10-02T00:15:00+00:00",
   "nfl:total_1h": "2026-10-02T00:15:00+00:00",
   "nfl:period_winner_1q": "2026-10-02T00:15:00+00:00",
   "nfl:spread_1q": "2026-10-02T00:15:00+00:00",
@@ -251,13 +257,14 @@
   "soccer:first_to_score": "2026-10-02T01:00:00+00:00",
   "soccer:correct_score": "2026-10-02T01:00:00+00:00",
   "soccer:team_total": "2026-10-02T01:00:00+00:00",
-  "cfb:winner": "2026-10-02T00:00:00+00:00",
+  "cfb:winner": "2026-10-02T01:00:00+00:00",
   "cfb:spread_1h": "2026-10-02T01:00:00+00:00",
   "cfb:total_1h": "2026-10-02T01:00:00+00:00",
-  "cfb:spread": "2026-10-02T00:00:00+00:00",
-  "cfb:total": "2026-10-02T00:00:00+00:00",
+  "cfb:spread": "2026-10-02T01:00:00+00:00",
+  "cfb:total": "2026-10-02T01:00:00+00:00",
   "cfb:team_total": "2026-10-02T01:00:00+00:00",
-  "nfl:winner": "2026-10-02T00:15:00+00:00"
+  "nfl:winner": "2026-10-02T00:15:00+00:00",
+  "nfl:spread_1h": "2026-10-02T00:15:00+00:00"
  },
- "updated": "2026-10-02T04:23:43.468049+00:00"
+ "updated": "2026-10-02T05:22:22.442338+00:00"
 }

@@ -1,11 +1,11 @@
 {
- "updated": "2026-10-02T04:27:26.780795+00:00",
- "status_note": "Last run found 1 new pick(s) and graded 2.",
- "bankroll": 94.22,
+ "updated": "2026-10-02T05:24:58.926711+00:00",
+ "status_note": "Last run found 0 new pick(s) and graded 1.",
+ "bankroll": 93.69,
  "protection": {
-  "bankroll": 94.22,
+  "bankroll": 93.69,
   "peak": 112.26,
-  "drawdown": 0.161,
+  "drawdown": 0.165,
   "paused": false
  },
  "settings": {
@@ -94,46 +94,6 @@
   "skip_expert_disagree": true
  },
  "open": [
-  {
-   "id": "KXNCAAFSPREAD-26OCT01UNTTLSA-UNT8",
-   "ticker": "KXNCAAFSPREAD-26OCT01UNTTLSA-UNT8",
-   "side": "yes",
-   "event": "KXNCAAFSPREAD-26OCT01UNTTLSA",
-   "game": "26OCT01UNTTLSA",
-   "sport": "Football",
-   "model_key": "cfb",
-   "mtype": "spread",
-   "line": 7.5,
-   "tour": "College Football",
-   "tournament": "North Texas at Tulsa",
-   "matchup": "North Texas at Tulsa",
-   "surface": "",
-   "pick": "North Texas wins by over 7.5 points",
-   "opponent": "",
-   "market": "North Texas wins by over 7.5 points",
-   "price": 0.24,
-   "model_prob": 0.314,
-   "raw_prob": 0.565,
-   "edge": 0.061,
-   "tier": "B",
-   "units": 0.5,
-   "made": "2026-09-28T00:30:35.829398+00:00",
-   "expected_end": "2026-10-02T04:00:00+00:00",
-   "start_est": "2026-10-02T01:00:00+00:00",
-   "status": "pending",
-   "latest_price": 0.295,
-   "close_price": 0.295,
-   "pnl": null,
-   "why": "Projected score margin -10.1 (home) and total 57.6. Model gives \"North Texas wins by over 7.5 points\" 57%. Blended with the market that's 31% vs a 24% price.",
-   "trend": 0.0,
-   "new_market": true,
-   "trust": 0.25,
-   "sharp_prob": null,
-   "research": "",
-   "sources": [],
-   "expert_lean": "none",
-   "alert_up": true
-  },
   {
    "id": "KXNCAAFSPREAD-26OCT03SYRCONN-SYR8:no",
    "ticker": "KXNCAAFSPREAD-26OCT03SYRCONN-SYR8",
@@ -333,6 +293,47 @@
   }
  ],
  "history": [
+  {
+   "id": "KXNCAAFSPREAD-26OCT01UNTTLSA-UNT8",
+   "ticker": "KXNCAAFSPREAD-26OCT01UNTTLSA-UNT8",
+   "side": "yes",
+   "event": "KXNCAAFSPREAD-26OCT01UNTTLSA",
+   "game": "26OCT01UNTTLSA",
+   "sport": "Football",
+   "model_key": "cfb",
+   "mtype": "spread",
+   "line": 7.5,
+   "tour": "College Football",
+   "tournament": "North Texas at Tulsa",
+   "matchup": "North Texas at Tulsa",
+   "surface": "",
+   "pick": "North Texas wins by over 7.5 points",
+   "opponent": "",
+   "market": "North Texas wins by over 7.5 points",
+   "price": 0.24,
+   "model_prob": 0.314,
+   "raw_prob": 0.565,
+   "edge": 0.061,
+   "tier": "B",
+   "units": 0.5,
+   "made": "2026-09-28T00:30:35.829398+00:00",
+   "expected_end": "2026-10-02T04:00:00+00:00",
+   "start_est": "2026-10-02T01:00:00+00:00",
+   "status": "loss",
+   "latest_price": 0.295,
+   "close_price": 0.295,
+   "pnl": -0.53,
+   "why": "Projected score margin -10.1 (home) and total 57.6. Model gives \"North Texas wins by over 7.5 points\" 57%. Blended with the market that's 31% vs a 24% price.",
+   "trend": 0.0,
+   "new_market": true,
+   "trust": 0.25,
+   "sharp_prob": null,
+   "research": "",
+   "sources": [],
+   "expert_lean": "none",
+   "alert_up": true,
+   "graded": "2026-10-02T05:22:22.490664+00:00"
+  },
   {
    "id": "KXWTAMATCH-26OCT01POTKRA-KRA",
    "ticker": "KXWTAMATCH-26OCT01POTKRA-KRA",
@@ -3161,47 +3162,6 @@
  "parlays": {
   "open": [
    {
-    "id": "PARLAY-202609280031-2",
-    "tier": "P",
-    "sport": "Parlay",
-    "kind": "watchlist",
-    "made": "2026-09-28T00:31:48.972654+00:00",
-    "units": 1.0,
-    "price": 0.0717,
-    "model_prob": 0.1099,
-    "ev": 0.532,
-    "payout_units": 12.9,
-    "status": "pending",
-    "pnl": null,
-    "legs": [
-     {
-      "id": "KXLIGAMXSPREAD-26SEP27NCXAME-AME2",
-      "ticker": "KXLIGAMXSPREAD-26SEP27NCXAME-AME2",
-      "side": "yes",
-      "market": "America wins by more than 1.5 goals",
-      "matchup": "Necaxa vs America",
-      "sport": "Soccer",
-      "price": 0.27,
-      "model_prob": 0.35,
-      "edge": 0.067,
-      "expected_end": "2026-09-28T06:00:00+00:00",
-      "result": "win"
-     },
-     {
-      "id": "KXNCAAFSPREAD-26OCT01UNTTLSA-UNT8",
-      "ticker": "KXNCAAFSPREAD-26OCT01UNTTLSA-UNT8",
-      "side": "yes",
-      "market": "North Texas wins by over 7.5 points",
-      "matchup": "North Texas at Tulsa",
-      "sport": "Football",
-      "price": 0.24,
-      "model_prob": 0.314,
-      "edge": 0.061,
-      "expected_end": "2026-10-02T04:00:00+00:00"
-     }
-    ]
-   },
-   {
     "id": "PARLAY-202609290030-2",
     "tier": "P",
     "sport": "Parlay",
@@ -3558,6 +3518,49 @@
    }
   ],
   "done": [
+   {
+    "id": "PARLAY-202609280031-2",
+    "tier": "P",
+    "sport": "Parlay",
+    "kind": "watchlist",
+    "made": "2026-09-28T00:31:48.972654+00:00",
+    "units": 1.0,
+    "price": 0.0717,
+    "model_prob": 0.1099,
+    "ev": 0.532,
+    "payout_units": 12.9,
+    "status": "loss",
+    "pnl": -1.0,
+    "legs": [
+     {
+      "id": "KXLIGAMXSPREAD-26SEP27NCXAME-AME2",
+      "ticker": "KXLIGAMXSPREAD-26SEP27NCXAME-AME2",
+      "side": "yes",
+      "market": "America wins by more than 1.5 goals",
+      "matchup": "Necaxa vs America",
+      "sport": "Soccer",
+      "price": 0.27,
+      "model_prob": 0.35,
+      "edge": 0.067,
+      "expected_end": "2026-09-28T06:00:00+00:00",
+      "result": "win"
+     },
+     {
+      "id": "KXNCAAFSPREAD-26OCT01UNTTLSA-UNT8",
+      "ticker": "KXNCAAFSPREAD-26OCT01UNTTLSA-UNT8",
+      "side": "yes",
+      "market": "North Texas wins by over 7.5 points",
+      "matchup": "North Texas at Tulsa",
+      "sport": "Football",
+      "price": 0.24,
+      "model_prob": 0.314,
+      "edge": 0.061,
+      "expected_end": "2026-10-02T04:00:00+00:00",
+      "result": "loss"
+     }
+    ],
+    "graded": "2026-10-02T05:24:09.287980+00:00"
+   },
    {
     "id": "PARLAY-202609290030-1",
     "tier": "P",
@@ -4567,12 +4570,12 @@
    }
   ],
   "summary": {
-   "picks": 20,
+   "picks": 21,
    "wins": 3,
-   "losses": 17,
-   "units": -8.89,
-   "staked": 20.0,
-   "roi": -0.445,
+   "losses": 18,
+   "units": -9.89,
+   "staked": 21.0,
+   "roi": -0.471,
    "beat_price": null,
    "clv": null,
    "clv_picks": 0
@@ -4580,15 +4583,8 @@
  },
  "learning": {
   "groups": {
-   "nfl:spread_1h": {
-    "finished": 39,
-    "games": 2,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-02T00:15:00+00:00"
-   },
    "nfl:total_1h": {
-    "finished": 50,
+    "finished": 30,
     "games": 2,
     "trust": 0.25,
     "confidence_fix": false,
@@ -4756,10 +4752,10 @@
     "last": "2026-10-02T00:15:00+00:00"
    },
    "tennis:winner": {
-    "finished": 388,
-    "games": 194,
-    "trust": 0.34,
-    "confidence_fix": false,
+    "finished": 394,
+    "games": 197,
+    "trust": 0.33,
+    "confidence_fix": true,
     "last": "2026-10-02T02:00:00+00:00"
    },
    "mlb:winner": {
@@ -4931,11 +4927,11 @@
     "last": "2026-10-02T01:00:00+00:00"
    },
    "cfb:winner": {
-    "finished": 2,
-    "games": 1,
+    "finished": 4,
+    "games": 2,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-02T00:00:00+00:00"
+    "last": "2026-10-02T01:00:00+00:00"
    },
    "cfb:spread_1h": {
     "finished": 80,
@@ -4952,21 +4948,21 @@
     "last": "2026-10-02T01:00:00+00:00"
    },
    "cfb:spread": {
-    "finished": 52,
-    "games": 1,
+    "finished": 110,
+    "games": 2,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-02T00:00:00+00:00"
+    "last": "2026-10-02T01:00:00+00:00"
    },
    "cfb:total": {
-    "finished": 26,
-    "games": 1,
+    "finished": 64,
+    "games": 2,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-02T00:00:00+00:00"
+    "last": "2026-10-02T01:00:00+00:00"
    },
    "cfb:team_total": {
-    "finished": 74,
+    "finished": 100,
     "games": 2,
     "trust": 0.25,
     "confidence_fix": false,
@@ -4978,26 +4974,33 @@
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-10-02T00:15:00+00:00"
+   },
+   "nfl:spread_1h": {
+    "finished": 28,
+    "games": 1,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-02T00:15:00+00:00"
    }
   },
   "price_trend": {
    "flat": {
-    "markets": 4673,
+    "markets": 4702,
     "hit_vs_price": -0.0
    },
    "rising": {
-    "markets": 780,
-    "hit_vs_price": -0.004
+    "markets": 815,
+    "hit_vs_price": -0.01
    },
    "falling": {
-    "markets": 754,
-    "hit_vs_price": 0.005
+    "markets": 789,
+    "hit_vs_price": 0.011
    }
   }
  },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "tracker": {
-  "tracked": 105283,
+  "tracked": 105327,
   "series": 3953,
   "movers": [
    {
@@ -5124,29 +5127,29 @@
  },
  "models": {
   "tennis": {
-   "matches": 20446,
-   "training_rows": 14108,
+   "matches": 20450,
+   "training_rows": 14112,
    "holdout": {
     "from": "2026-08-26",
     "matches": 2117,
-    "elo_log_loss": 0.6565,
-    "model_log_loss": 0.6504,
-    "elo_accuracy": 0.609,
-    "model_accuracy": 0.616
+    "elo_log_loss": 0.6556,
+    "model_log_loss": 0.6496,
+    "elo_accuracy": 0.61,
+    "model_accuracy": 0.617
    },
    "using": "full",
    "weights": {
-    "elo": 2.052,
+    "elo": 2.053,
     "dominance": 0.0,
     "rank": 0.0,
-    "h2h": 0.481,
-    "form": -0.583,
-    "fatigue_games": -0.218,
-    "fatigue_matches": 0.091,
-    "rest": 0.015,
+    "h2h": 0.483,
+    "form": -0.582,
+    "fatigue_games": -0.219,
+    "fatigue_matches": 0.092,
+    "rest": 0.016,
     "travel": 0.145,
     "altitude": 0.0,
-    "best_of_5": 0.581
+    "best_of_5": 0.58
    },
    "sport": "Tennis",
    "label": "Tennis",
@@ -5224,31 +5227,31 @@
    "holdout": {
     "matches": 654,
     "rating_log_loss": 0.63,
-    "model_log_loss": 0.6253,
+    "model_log_loss": 0.6242,
     "rating_accuracy": 0.653,
-    "model_accuracy": 0.644
+    "model_accuracy": 0.642
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6053,
-    "model_log_loss": 0.6253,
+    "model_log_loss": 0.6242,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 654
    },
    "backtest": {
-    "bets": 17,
+    "bets": 16,
     "wins": 5,
-    "units": -11.2,
-    "roi": -0.36
+    "units": -7.6,
+    "roi": -0.263
    },
    "weights": {
-    "home_field": 0.257,
-    "rating": 1.533,
-    "rest": 0.24,
+    "home_field": 0.256,
+    "rating": 1.528,
+    "rest": 0.241,
     "point_diff_form": 0.235,
-    "qb_change": 0.304,
-    "epa": 0.157
+    "qb_change": 0.292,
+    "epa": 0.161
    },
    "matches": 4411,
    "totals": {
@@ -5300,26 +5303,26 @@
  },
  "summary": {
   "all": {
-   "picks": 67,
+   "picks": 68,
    "wins": 23,
-   "losses": 44,
-   "units": -5.78,
-   "staked": 78.5,
-   "roi": -0.074,
-   "beat_price": 0.284,
-   "clv": -0.0026,
-   "clv_picks": 58
+   "losses": 45,
+   "units": -6.31,
+   "staked": 79.0,
+   "roi": -0.08,
+   "beat_price": 0.294,
+   "clv": -0.0016,
+   "clv_picks": 59
   },
   "week": {
-   "picks": 40,
+   "picks": 41,
    "wins": 13,
-   "losses": 27,
-   "units": -11.44,
-   "staked": 33.5,
-   "roi": -0.341,
-   "beat_price": 0.325,
-   "clv": -0.0008,
-   "clv_picks": 32
+   "losses": 28,
+   "units": -11.97,
+   "staked": 34.0,
+   "roi": -0.352,
+   "beat_price": 0.341,
+   "clv": 0.0009,
+   "clv_picks": 33
   },
   "yours": {
    "picks": 15,
@@ -5357,15 +5360,15 @@
    "clv_picks": 2
   },
   "none": {
-   "picks": 64,
+   "picks": 65,
    "wins": 20,
-   "losses": 44,
-   "units": -18.04,
-   "staked": 69.5,
-   "roi": -0.26,
-   "beat_price": 0.281,
-   "clv": -0.0027,
-   "clv_picks": 56
+   "losses": 45,
+   "units": -18.57,
+   "staked": 70.0,
+   "roi": -0.265,
+   "beat_price": 0.292,
+   "clv": -0.0017,
+   "clv_picks": 57
   }
  },
  "by_tier": {
@@ -5381,15 +5384,15 @@
    "clv_picks": 16
   },
   "B": {
-   "picks": 46,
+   "picks": 47,
    "wins": 16,
-   "losses": 30,
-   "units": -1.3,
-   "staked": 45.0,
-   "roi": -0.029,
-   "beat_price": 0.304,
-   "clv": -0.0018,
-   "clv_picks": 39
+   "losses": 31,
+   "units": -1.83,
+   "staked": 45.5,
+   "roi": -0.04,
+   "beat_price": 0.319,
+   "clv": -0.0004,
+   "clv_picks": 40
   },
   "C": {
    "picks": 3,
@@ -5482,8 +5485,8 @@
    "expected_end": "2026-10-03T03:00:00+00:00",
    "start_est": "2026-10-03T00:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.47,
-   "close_price": 0.47,
+   "latest_price": 0.475,
+   "close_price": 0.475,
    "pnl": null,
    "why": "Projected score margin -2.6 (home) and total 50.6. Model gives \"Over 46.5 points scored\" 60%. Blended with the market that's 49% vs a 47% price.",
    "trend": 0.0,
@@ -6306,8 +6309,8 @@
    "expected_end": "2026-10-03T20:00:00+00:00",
    "start_est": "2026-10-04T02:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.455,
-   "close_price": 0.455,
+   "latest_price": 0.45,
+   "close_price": 0.45,
    "pnl": null,
    "why": "Projected score margin +4.0 (home) and total 53.2. Model gives \"Over 50.5 points scored\" 56%. Blended with the market that's 52% vs a 47% price.",
    "trend": 0.0,
@@ -6541,8 +6544,8 @@
    "expected_end": "2026-10-04T20:00:00+00:00",
    "start_est": "2026-10-04T17:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.46,
-   "close_price": 0.46,
+   "latest_price": 0.475,
+   "close_price": 0.475,
    "pnl": null,
    "why": "Keon Coleman: 30 a game lately (last 12 games). Model gives \"Keon Coleman: 15+\" 77%. Blended with the market that's 63% vs a 49% price. Price up 2\u00a2 in the last 12 hours.",
    "trend": 0.02,
@@ -6580,8 +6583,8 @@
    "expected_end": "2026-10-04T23:25:00+00:00",
    "start_est": "2026-10-04T20:25:00+00:00",
    "status": "pending",
-   "latest_price": 0.425,
-   "close_price": 0.425,
+   "latest_price": 0.42,
+   "close_price": 0.42,
    "pnl": null,
    "why": "Brock Purdy: 27 a game lately (last 12 games). Model gives \"Brock Purdy: 20+\" 73%. Blended with the market that's 51% vs a 44% price.",
    "trend": 0.0,
@@ -7126,8 +7129,8 @@
    "expected_end": "2026-10-04T23:05:00+00:00",
    "start_est": "2026-10-04T20:05:00+00:00",
    "status": "pending",
-   "latest_price": 0.565,
-   "close_price": 0.565,
+   "latest_price": 0.57,
+   "close_price": 0.57,
    "pnl": null,
    "why": "Projected score margin +3.4 (home) and total 9.7. Model gives \"Minnesota\" 69%. Blended with the market that's 59% vs a 57% price.",
    "trend": -0.005,
@@ -7438,8 +7441,8 @@
    "expected_end": "2026-10-06T03:15:00+00:00",
    "start_est": "2026-10-06T00:15:00+00:00",
    "status": "pending",
-   "latest_price": 0.22,
-   "close_price": 0.22,
+   "latest_price": 0.23,
+   "close_price": 0.23,
    "pnl": null,
    "why": "Kyle Pitts: 38 a game lately (last 12 games). Model gives \"Kyle Pitts Sr.: 50+\" 39%. Blended with the market that's 27% vs a 22% price.",
    "trend": -0.015,
@@ -7712,8 +7715,8 @@
    "expected_end": "2026-10-03T20:00:00+00:00",
    "start_est": "2026-10-03T16:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.445,
-   "close_price": 0.445,
+   "latest_price": 0.44,
+   "close_price": 0.44,
    "pnl": null,
    "why": "Projected score margin -1.9 (home) and total 13.5. Model gives \"Alabama\" 59%. Blended with the market that's 47% vs a 45% price.",
    "trend": -0.005,
@@ -7751,8 +7754,8 @@
    "expected_end": "2026-10-03T20:00:00+00:00",
    "start_est": "2026-10-03T19:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.485,
-   "close_price": 0.485,
+   "latest_price": 0.495,
+   "close_price": 0.495,
    "pnl": null,
    "why": "Projected score margin +2.4 (home) and total 12.4. Model gives \"Tennessee\" 62%. Blended with the market that's 53% vs a 51% price.",
    "trend": -0.005,
@@ -7829,8 +7832,8 @@
    "expected_end": "2026-10-03T03:30:00+00:00",
    "start_est": "2026-10-03T00:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.69,
-   "close_price": null,
+   "latest_price": 0.68,
+   "close_price": 0.68,
    "pnl": null,
    "why": "Expected goals 1.81 vs 1.30 (3.10 total). Model gives \"Over 1.5 goals scored\" 82%. Blended with the market that's 72% vs a 69% price. Price down 2\u00a2 in the last 12 hours.",
    "trend": -0.02,
@@ -16076,15 +16079,15 @@
    "clv_picks": 14
   },
   "College Football": {
-   "picks": 1,
+   "picks": 2,
    "wins": 0,
-   "losses": 1,
-   "units": -0.53,
-   "staked": 0.5,
+   "losses": 2,
+   "units": -1.06,
+   "staked": 1.0,
    "roi": -1.06,
    "beat_price": 1.0,
-   "clv": 0.02,
-   "clv_picks": 1
+   "clv": 0.0375,
+   "clv_picks": 2
   },
   "Davis Cup": {
    "picks": 0,
@@ -16144,15 +16147,15 @@
    "clv_picks": 8
   },
   "Football": {
-   "picks": 1,
+   "picks": 2,
    "wins": 0,
-   "losses": 1,
-   "units": -0.53,
-   "staked": 0.5,
+   "losses": 2,
+   "units": -1.06,
+   "staked": 1.0,
    "roi": -1.06,
    "beat_price": 1.0,
-   "clv": 0.02,
-   "clv_picks": 1
+   "clv": 0.0375,
+   "clv_picks": 2
   },
   "Tennis": {
    "picks": 58,
@@ -16172,8 +16175,8 @@
    "hit": 0.2
   },
   "30-40%": {
-   "n": 19,
-   "hit": 0.211
+   "n": 20,
+   "hit": 0.2
   },
   "40-50%": {
    "n": 25,
@@ -16472,6 +16475,10 @@
   {
    "t": "2026-10-02",
    "v": 94.22
+  },
+  {
+   "t": "2026-10-02",
+   "v": 93.69
   }
  ],
  "reports": [

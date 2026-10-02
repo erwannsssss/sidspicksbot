@@ -974,8 +974,8 @@
   "model_prob": 0.1099,
   "ev": 0.532,
   "payout_units": 12.9,
-  "status": "pending",
-  "pnl": null,
+  "status": "loss",
+  "pnl": -1.0,
   "legs": [
    {
     "id": "KXLIGAMXSPREAD-26SEP27NCXAME-AME2",
@@ -1000,9 +1000,11 @@
     "price": 0.24,
     "model_prob": 0.314,
     "edge": 0.061,
-    "expected_end": "2026-10-02T04:00:00+00:00"
+    "expected_end": "2026-10-02T04:00:00+00:00",
+    "result": "loss"
    }
-  ]
+  ],
+  "graded": "2026-10-02T05:24:09.287980+00:00"
  },
  {
   "id": "PARLAY-202609290030-1",
