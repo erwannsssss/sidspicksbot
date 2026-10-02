@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-02T13:27:16.275982+00:00",
+ "updated": "2026-10-02T14:29:45.310032+00:00",
  "status_note": "Last run found 0 new pick(s) and graded 0.",
  "bankroll": 93.82,
  "protection": {
@@ -4587,36 +4587,8 @@
  },
  "learning": {
   "groups": {
-   "nfl:spread": {
-    "finished": 73,
-    "games": 2,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-02T00:15:00+00:00"
-   },
-   "nfl:team_total": {
-    "finished": 96,
-    "games": 2,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-02T00:15:00+00:00"
-   },
-   "nfl:total": {
-    "finished": 76,
-    "games": 2,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-02T00:15:00+00:00"
-   },
-   "nfl:prop_passyds": {
-    "finished": 50,
-    "games": 2,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-02T00:15:00+00:00"
-   },
    "nfl:prop_recyds": {
-    "finished": 316,
+    "finished": 291,
     "games": 2,
     "trust": 0.25,
     "confidence_fix": false,
@@ -4631,6 +4603,20 @@
    },
    "nfl:prop_passtds": {
     "finished": 22,
+    "games": 2,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-02T00:15:00+00:00"
+   },
+   "nfl:team_total": {
+    "finished": 52,
+    "games": 2,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-02T00:15:00+00:00"
+   },
+   "nfl:total": {
+    "finished": 40,
     "games": 2,
     "trust": 0.25,
     "confidence_fix": false,
@@ -4665,11 +4651,11 @@
     "last": "2026-10-02T00:15:00+00:00"
    },
    "tennis:winner": {
-    "finished": 448,
-    "games": 224,
+    "finished": 456,
+    "games": 228,
     "trust": 0.33,
     "confidence_fix": false,
-    "last": "2026-10-02T09:50:00+00:00"
+    "last": "2026-10-02T11:00:00+00:00"
    },
    "mlb:winner": {
     "finished": 18,
@@ -4888,6 +4874,20 @@
     "confidence_fix": false,
     "last": "2026-10-02T00:15:00+00:00"
    },
+   "nfl:spread": {
+    "finished": 50,
+    "games": 1,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-02T00:15:00+00:00"
+   },
+   "nfl:prop_passyds": {
+    "finished": 32,
+    "games": 1,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-02T00:15:00+00:00"
+   },
    "nfl:spread_1h": {
     "finished": 28,
     "games": 1,
@@ -4989,32 +4989,24 @@
   },
   "price_trend": {
    "flat": {
-    "markets": 4472,
-    "hit_vs_price": 0.0
+    "markets": 4343,
+    "hit_vs_price": -0.0
    },
    "rising": {
-    "markets": 823,
-    "hit_vs_price": -0.008
+    "markets": 819,
+    "hit_vs_price": -0.007
    },
    "falling": {
-    "markets": 798,
+    "markets": 793,
     "hit_vs_price": 0.008
    }
   }
  },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "tracker": {
-  "tracked": 106245,
+  "tracked": 106641,
   "series": 3953,
   "movers": [
-   {
-    "ticker": "KXVIDEOAI-26OCT02-GOOG",
-    "series": "KXVIDEOAI",
-    "title": "Google",
-    "move": -0.645,
-    "price": 0.205,
-    "close": "2026-10-02T14:00:00+00:00"
-   },
    {
     "ticker": "KXWNBA1QSPREAD-26OCT01INDLV-LV2",
     "series": "KXWNBA1QSPREAD",
@@ -5022,14 +5014,6 @@
     "move": -0.63,
     "price": 0.07,
     "close": "2026-10-04T01:00:00+00:00"
-   },
-   {
-    "ticker": "KXT20MATCH-26SEP300530NTLTIGUSNIND-NTLTIG",
-    "series": "KXT20MATCH",
-    "title": "Nainital Tigers",
-    "move": 0.565,
-    "price": 0.995,
-    "close": "2026-10-02T13:30:00+00:00"
    },
    {
     "ticker": "KXODIMATCH-26SEP300430WIIND-IND",
@@ -5080,14 +5064,6 @@
     "close": "2026-10-04T01:00:00+00:00"
    },
    {
-    "ticker": "KXT20MATCH-26SEP300530NTLTIGUSNIND-USNIND",
-    "series": "KXT20MATCH",
-    "title": "USN Indians",
-    "move": -0.475,
-    "price": 0.005,
-    "close": "2026-10-02T13:30:00+00:00"
-   },
-   {
     "ticker": "KXWNBA1QSPREAD-26OCT01INDLV-LV7",
     "series": "KXWNBA1QSPREAD",
     "title": "Las Vegas wins by over 6.5 points",
@@ -5126,34 +5102,58 @@
     "move": 0.465,
     "price": 0.955,
     "close": "2026-10-04T01:00:00+00:00"
+   },
+   {
+    "ticker": "KXWNBA2HWINNER-26OCT01INDLV-TIE",
+    "series": "KXWNBA2HWINNER",
+    "title": "Tie",
+    "move": -0.465,
+    "price": 0.015,
+    "close": "2026-10-04T01:00:00+00:00"
+   },
+   {
+    "ticker": "KXUEFANL1HSPREAD-26OCT02CYPARM-ARM2",
+    "series": "KXUEFANL1HSPREAD",
+    "title": "Armenia wins the 1H by more than 1.5 goals",
+    "move": -0.455,
+    "price": 0.04,
+    "close": "2026-10-04T16:00:00+00:00"
+   },
+   {
+    "ticker": "KXWNBA1QSPREAD-26OCT01INDLV-LV4",
+    "series": "KXWNBA1QSPREAD",
+    "title": "Las Vegas wins by over 3.5 points",
+    "move": -0.455,
+    "price": 0.035,
+    "close": "2026-10-04T01:00:00+00:00"
    }
   ]
  },
  "models": {
   "tennis": {
-   "matches": 20480,
-   "training_rows": 14142,
+   "matches": 20484,
+   "training_rows": 14146,
    "holdout": {
     "from": "2026-08-27",
     "matches": 2122,
-    "elo_log_loss": 0.6552,
-    "model_log_loss": 0.6494,
-    "elo_accuracy": 0.611,
-    "model_accuracy": 0.617
+    "elo_log_loss": 0.6556,
+    "model_log_loss": 0.6498,
+    "elo_accuracy": 0.61,
+    "model_accuracy": 0.616
    },
    "using": "full",
    "weights": {
-    "elo": 2.057,
+    "elo": 2.054,
     "dominance": 0.0,
     "rank": 0.0,
     "h2h": 0.484,
-    "form": -0.58,
+    "form": -0.576,
     "fatigue_games": -0.22,
-    "fatigue_matches": 0.091,
+    "fatigue_matches": 0.092,
     "rest": 0.015,
     "travel": 0.143,
     "altitude": 0.0,
-    "best_of_5": 0.576
+    "best_of_5": 0.577
    },
    "sport": "Tennis",
    "label": "Tennis",
@@ -5231,14 +5231,14 @@
    "holdout": {
     "matches": 655,
     "rating_log_loss": 0.6302,
-    "model_log_loss": 0.6252,
+    "model_log_loss": 0.6239,
     "rating_accuracy": 0.652,
-    "model_accuracy": 0.644
+    "model_accuracy": 0.641
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6056,
-    "model_log_loss": 0.6252,
+    "model_log_loss": 0.6239,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 655
@@ -5246,16 +5246,16 @@
    "backtest": {
     "bets": 16,
     "wins": 5,
-    "units": -9.2,
-    "roi": -0.316
+    "units": -8.4,
+    "roi": -0.288
    },
    "weights": {
-    "home_field": 0.255,
-    "rating": 1.53,
+    "home_field": 0.256,
+    "rating": 1.528,
     "rest": 0.237,
-    "point_diff_form": 0.237,
-    "qb_change": 0.291,
-    "epa": 0.159
+    "point_diff_form": 0.23,
+    "qb_change": 0.331,
+    "epa": 0.156
    },
    "matches": 4412,
    "totals": {
@@ -6117,8 +6117,8 @@
    "expected_end": "2026-10-03T20:00:00+00:00",
    "start_est": "2026-10-03T19:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.345,
-   "close_price": 0.345,
+   "latest_price": 0.35,
+   "close_price": 0.35,
    "pnl": null,
    "why": "Projected score margin +1.3 (home) and total 55.5. Model gives \"No: Florida wins by over 1.5 points\" 57%. Blended with the market that's 41% vs a 36% price.",
    "trend": -0.01,
@@ -6274,8 +6274,8 @@
    "expected_end": "2026-10-03T23:00:00+00:00",
    "start_est": "2026-10-03T20:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.45,
-   "close_price": 0.45,
+   "latest_price": 0.455,
+   "close_price": 0.455,
    "pnl": null,
    "why": "Projected score margin +22.8 (home) and total 52.7. Model gives \"Over 49.5 points\" 57%. Blended with the market that's 53% vs a 48% price.",
    "trend": 0.0,
@@ -6392,8 +6392,8 @@
    "expected_end": "2026-10-04T16:30:00+00:00",
    "start_est": "2026-10-04T13:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.53,
-   "close_price": 0.53,
+   "latest_price": 0.52,
+   "close_price": 0.52,
    "pnl": null,
    "why": "Tyler Warren: 33 a game lately (last 12 games). Model gives \"Tyler Warren: under 50\" 81%. Blended with the market that's 64% vs a 55% price.",
    "trend": 0.0,
@@ -6587,8 +6587,8 @@
    "expected_end": "2026-10-04T23:25:00+00:00",
    "start_est": "2026-10-04T20:25:00+00:00",
    "status": "pending",
-   "latest_price": 0.42,
-   "close_price": 0.42,
+   "latest_price": 0.425,
+   "close_price": 0.425,
    "pnl": null,
    "why": "Brock Purdy: 27 a game lately (last 12 games). Model gives \"Brock Purdy: 20+\" 73%. Blended with the market that's 51% vs a 44% price.",
    "trend": 0.0,
@@ -6821,8 +6821,8 @@
    "expected_end": "2026-10-04T20:00:00+00:00",
    "start_est": "2026-10-04T17:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.35,
-   "close_price": 0.35,
+   "latest_price": 0.345,
+   "close_price": 0.345,
    "pnl": null,
    "why": "Davante Adams: 87 a game lately (last 12 games). Model gives \"Davante Adams: 80+\" 55%. Blended with the market that's 45% vs a 35% price. Price down 11\u00a2 in the last 12 hours.",
    "trend": -0.11,
@@ -7406,8 +7406,8 @@
    "expected_end": "2026-10-06T03:15:00+00:00",
    "start_est": "2026-10-06T00:15:00+00:00",
    "status": "pending",
-   "latest_price": 0.23,
-   "close_price": 0.23,
+   "latest_price": 0.225,
+   "close_price": 0.225,
    "pnl": null,
    "why": "Kyle Pitts: 38 a game lately (last 12 games). Model gives \"Kyle Pitts Sr.: 50+\" 39%. Blended with the market that's 27% vs a 22% price.",
    "trend": -0.015,
@@ -7797,8 +7797,8 @@
    "expected_end": "2026-10-03T20:00:00+00:00",
    "start_est": "2026-10-03T17:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.58,
-   "close_price": 0.58,
+   "latest_price": 0.575,
+   "close_price": 0.575,
    "pnl": null,
    "why": "Munetaka Murakami: 1.99 a game this season over 127 games (adjusted 2.01). Model gives \"Munetaka Murakami: 1+\" 87%. Blended with the market that's 64% vs a 58% price.",
    "trend": 0.0,
