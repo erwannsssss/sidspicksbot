@@ -1403,5 +1403,121 @@
     "expected_end": "2026-10-03T19:30:00+00:00"
    }
   ]
+ },
+ {
+  "id": "PARLAY-202610030030-1",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-10-03T00:30:42.554375+00:00",
+  "units": 1.0,
+  "price": 0.0937,
+  "model_prob": 0.2258,
+  "ev": 1.409,
+  "payout_units": 9.7,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXNCAAFSPREAD-26OCT03TEMUSF-USF7",
+    "ticker": "KXNCAAFSPREAD-26OCT03TEMUSF-USF7",
+    "side": "yes",
+    "market": "South Florida wins by over 6.5 points",
+    "matchup": "Temple at South Florida",
+    "sport": "Football",
+    "price": 0.48,
+    "model_prob": 0.644,
+    "edge": 0.147,
+    "expected_end": "2026-10-03T20:00:00+00:00"
+   },
+   {
+    "id": "KXNCAAFSPREAD-26OCT03SAMUAB-UAB31:no",
+    "ticker": "KXNCAAFSPREAD-26OCT03SAMUAB-UAB31",
+    "side": "no",
+    "market": "No: UAB wins by over 30.5 points",
+    "matchup": "Samford at UAB",
+    "sport": "Football",
+    "price": 0.52,
+    "model_prob": 0.68,
+    "edge": 0.142,
+    "expected_end": "2026-10-03T22:30:00+00:00"
+   },
+   {
+    "id": "KXMLBHRR-26OCT032030SDMIL-SDJMERRILL3-1",
+    "ticker": "KXMLBHRR-26OCT032030SDMIL-SDJMERRILL3-1",
+    "side": "yes",
+    "market": "Jackson Merrill: 1+",
+    "matchup": "San Diego Padres at Milwaukee Brewers",
+    "sport": "Baseball",
+    "price": 0.57,
+    "model_prob": 0.718,
+    "edge": 0.131,
+    "expected_end": "2026-10-04T03:30:00+00:00"
+   },
+   {
+    "id": "KXMLBHRR-26OCT031300CWSCLE-CWSMMURAKAMI5-1",
+    "ticker": "KXMLBHRR-26OCT031300CWSCLE-CWSMMURAKAMI5-1",
+    "side": "yes",
+    "market": "Munetaka Murakami: 1+",
+    "matchup": "Chicago White Sox at Cleveland Guardians",
+    "sport": "Baseball",
+    "price": 0.58,
+    "model_prob": 0.718,
+    "edge": 0.121,
+    "expected_end": "2026-10-03T20:00:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": "PARLAY-202610030030-2",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-10-03T00:30:42.554506+00:00",
+  "units": 1.0,
+  "price": 0.1302,
+  "model_prob": 0.2564,
+  "ev": 0.969,
+  "payout_units": 6.7,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXNCAAFSPREAD-26OCT03PVMVSU-PV27:no",
+    "ticker": "KXNCAAFSPREAD-26OCT03PVMVSU-PV27",
+    "side": "no",
+    "market": "No: Prairie View A&M wins by over 26.5 points",
+    "matchup": "Prairie View A&M at Mississippi Valley State",
+    "sport": "Football",
+    "price": 0.46,
+    "model_prob": 0.611,
+    "edge": 0.133,
+    "expected_end": "2026-10-03T22:00:00+00:00"
+   },
+   {
+    "id": "KXNFLRSHYDS-26OCT04DALHOU-HOUDMONTGOMERY32-50:no",
+    "ticker": "KXNFLRSHYDS-26OCT04DALHOU-HOUDMONTGOMERY32-50",
+    "side": "no",
+    "market": "David Montgomery: under 50",
+    "matchup": "DAL at HOU",
+    "sport": "Football",
+    "price": 0.52,
+    "model_prob": 0.665,
+    "edge": 0.128,
+    "expected_end": "2026-10-04T20:00:00+00:00"
+   },
+   {
+    "id": "KXNFLRECYDS-26OCT04NEBUF-BUFKCOLEMAN0-15",
+    "ticker": "KXNFLRECYDS-26OCT04NEBUF-BUFKCOLEMAN0-15",
+    "side": "yes",
+    "market": "Keon Coleman: 15+",
+    "matchup": "NE at BUF",
+    "sport": "Football",
+    "price": 0.49,
+    "model_prob": 0.631,
+    "edge": 0.123,
+    "expected_end": "2026-10-04T20:00:00+00:00"
+   }
+  ]
  }
 ]
