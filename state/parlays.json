@@ -1060,8 +1060,8 @@
   "model_prob": 0.2284,
   "ev": 0.572,
   "payout_units": 5.9,
-  "status": "pending",
-  "pnl": null,
+  "status": "loss",
+  "pnl": -1.0,
   "legs": [
    {
     "id": "KXNCAAFGAME-26OCT02LIBDEL-DEL",
@@ -1073,7 +1073,8 @@
     "price": 0.29,
     "model_prob": 0.4,
     "edge": 0.095,
-    "expected_end": "2026-10-03T02:00:00+00:00"
+    "expected_end": "2026-10-03T02:00:00+00:00",
+    "result": "loss"
    },
    {
     "id": "KXMLBTOTAL-26SEP291700CWSHOU-9",
@@ -1088,7 +1089,8 @@
     "expected_end": "2026-09-30T00:00:00+00:00",
     "result": "win"
    }
-  ]
+  ],
+  "graded": "2026-10-03T02:26:04.276938+00:00"
  },
  {
   "id": "PARLAY-202609300032-1",
