@@ -54,48 +54,6 @@
   "graded": "2026-09-20T06:54:36.275689+00:00"
  },
  {
-  "id": "PARLAY-202609192138-2",
-  "tier": "P",
-  "sport": "Parlay",
-  "made": "2026-09-19T21:38:29.825560+00:00",
-  "units": 1.0,
-  "price": 0.3744,
-  "model_prob": 0.4515,
-  "ev": 0.206,
-  "payout_units": 1.7,
-  "status": "win",
-  "pnl": 1.67,
-  "legs": [
-   {
-    "id": "KXNCAAFSPREAD-26SEP19UTSATEX-TEX34:no",
-    "ticker": "KXNCAAFSPREAD-26SEP19UTSATEX-TEX34",
-    "side": "no",
-    "market": "No: Texas wins by over 33.5 points",
-    "matchup": "UTSA at Texas",
-    "sport": "Football",
-    "price": 0.6,
-    "model_prob": 0.678,
-    "edge": 0.061,
-    "expected_end": "2026-09-20T03:00:00+00:00",
-    "result": "win"
-   },
-   {
-    "id": "KXNCAAFSPREAD-26SEP19KENNTENN-TENN39:no",
-    "ticker": "KXNCAAFSPREAD-26SEP19KENNTENN-TENN39",
-    "side": "no",
-    "market": "No: Tennessee wins by over 38.5 points",
-    "matchup": "Kennesaw State at Tennessee",
-    "sport": "Football",
-    "price": 0.59,
-    "model_prob": 0.666,
-    "edge": 0.059,
-    "expected_end": "2026-09-20T02:45:00+00:00",
-    "result": "win"
-   }
-  ],
-  "graded": "2026-09-20T03:25:15.985234+00:00"
- },
- {
   "id": "PARLAY-202609200325-1",
   "tier": "P",
   "sport": "Parlay",
@@ -1103,8 +1061,8 @@
   "model_prob": 0.3164,
   "ev": 0.916,
   "payout_units": 5.1,
-  "status": "pending",
-  "pnl": null,
+  "status": "loss",
+  "pnl": -1.0,
   "legs": [
    {
     "id": "KXNCAAFSPREAD-26OCT03TEMUSF-USF7",
@@ -1116,7 +1074,8 @@
     "price": 0.48,
     "model_prob": 0.644,
     "edge": 0.147,
-    "expected_end": "2026-10-03T20:00:00+00:00"
+    "expected_end": "2026-10-03T20:00:00+00:00",
+    "result": "loss"
    },
    {
     "id": "KXMLBTOTAL-26SEP292200CHCSD-8",
@@ -1144,7 +1103,8 @@
     "expected_end": "2026-09-30T14:00:00+00:00",
     "result": "win"
    }
-  ]
+  ],
+  "graded": "2026-10-04T05:19:36.813007+00:00"
  },
  {
   "id": "PARLAY-202609300032-2",
@@ -1213,8 +1173,8 @@
   "model_prob": 0.2702,
   "ev": 0.992,
   "payout_units": 6.4,
-  "status": "pending",
-  "pnl": null,
+  "status": "loss",
+  "pnl": -1.0,
   "legs": [
    {
     "id": "KXNCAAFSPREAD-26OCT03TEMUSF-USF7",
@@ -1226,7 +1186,8 @@
     "price": 0.48,
     "model_prob": 0.644,
     "edge": 0.147,
-    "expected_end": "2026-10-03T20:00:00+00:00"
+    "expected_end": "2026-10-03T20:00:00+00:00",
+    "result": "loss"
    },
    {
     "id": "KXNFLRSHYDS-26OCT04DALHOU-HOUDMONTGOMERY32-50:no",
@@ -1252,7 +1213,8 @@
     "edge": 0.123,
     "expected_end": "2026-10-04T20:00:00+00:00"
    }
-  ]
+  ],
+  "graded": "2026-10-04T05:19:37.004414+00:00"
  },
  {
   "id": "PARLAY-202610010034-2",
@@ -1318,8 +1280,8 @@
   "model_prob": 0.2912,
   "ev": 1.026,
   "payout_units": 6.0,
-  "status": "pending",
-  "pnl": null,
+  "status": "loss",
+  "pnl": -1.0,
   "legs": [
    {
     "id": "KXNCAAFSPREAD-26OCT03TEMUSF-USF7",
@@ -1331,7 +1293,8 @@
     "price": 0.48,
     "model_prob": 0.644,
     "edge": 0.147,
-    "expected_end": "2026-10-03T20:00:00+00:00"
+    "expected_end": "2026-10-03T20:00:00+00:00",
+    "result": "loss"
    },
    {
     "id": "KXNCAAFSPREAD-26OCT03SAMUAB-UAB31:no",
@@ -1358,7 +1321,8 @@
     "edge": 0.128,
     "expected_end": "2026-10-04T20:00:00+00:00"
    }
-  ]
+  ],
+  "graded": "2026-10-04T05:19:37.330882+00:00"
  },
  {
   "id": "PARLAY-202610020032-2",
@@ -1424,8 +1388,8 @@
   "model_prob": 0.2258,
   "ev": 1.409,
   "payout_units": 9.7,
-  "status": "pending",
-  "pnl": null,
+  "status": "loss",
+  "pnl": -1.0,
   "legs": [
    {
     "id": "KXNCAAFSPREAD-26OCT03TEMUSF-USF7",
@@ -1437,7 +1401,8 @@
     "price": 0.48,
     "model_prob": 0.644,
     "edge": 0.147,
-    "expected_end": "2026-10-03T20:00:00+00:00"
+    "expected_end": "2026-10-03T20:00:00+00:00",
+    "result": "loss"
    },
    {
     "id": "KXNCAAFSPREAD-26OCT03SAMUAB-UAB31:no",
@@ -1462,7 +1427,8 @@
     "price": 0.57,
     "model_prob": 0.718,
     "edge": 0.131,
-    "expected_end": "2026-10-04T03:30:00+00:00"
+    "expected_end": "2026-10-04T03:30:00+00:00",
+    "result": "loss"
    },
    {
     "id": "KXMLBHRR-26OCT031300CWSCLE-CWSMMURAKAMI5-1",
@@ -1477,7 +1443,8 @@
     "expected_end": "2026-10-03T20:00:00+00:00",
     "result": "win"
    }
-  ]
+  ],
+  "graded": "2026-10-04T05:19:37.627486+00:00"
  },
  {
   "id": "PARLAY-202610030030-2",
