@@ -1,102 +1,5 @@
 [
  {
-  "id": "PARLAY-202609200325-1",
-  "tier": "P",
-  "sport": "Parlay",
-  "kind": "watchlist",
-  "made": "2026-09-20T03:25:16.811465+00:00",
-  "units": 1.0,
-  "price": 0.1936,
-  "model_prob": 0.3782,
-  "ev": 0.953,
-  "payout_units": 4.2,
-  "status": "loss",
-  "pnl": -1.0,
-  "legs": [
-   {
-    "id": "KXNFLPASSTDS-26SEP20SEAARI-SEADLOCK2-2:no",
-    "ticker": "KXNFLPASSTDS-26SEP20SEAARI-SEADLOCK2-2",
-    "side": "no",
-    "market": "Drew Lock: under 2",
-    "matchup": "SEA at ARI",
-    "sport": "Football",
-    "price": 0.63,
-    "model_prob": 0.792,
-    "edge": 0.146,
-    "expected_end": "2026-09-20T23:25:00+00:00"
-   },
-   {
-    "id": "KXNFLRECYDS-26SEP20NOBAL-BALRBATEMAN7-50:no",
-    "ticker": "KXNFLRECYDS-26SEP20NOBAL-BALRBATEMAN7-50",
-    "side": "no",
-    "market": "Rashod Bateman: under 50",
-    "matchup": "NO at BAL",
-    "sport": "Football",
-    "price": 0.67,
-    "model_prob": 0.829,
-    "edge": 0.143,
-    "expected_end": "2026-09-20T20:00:00+00:00",
-    "result": "loss"
-   },
-   {
-    "id": "KXNFLREC-26SEP20CINHOU-HOUKBOUTTE14-3:no",
-    "ticker": "KXNFLREC-26SEP20CINHOU-HOUKBOUTTE14-3",
-    "side": "no",
-    "market": "Kayshon Boutte: under 3",
-    "matchup": "CIN at HOU",
-    "sport": "Football",
-    "price": 0.42,
-    "model_prob": 0.576,
-    "edge": 0.139,
-    "expected_end": "2026-09-20T20:00:00+00:00",
-    "result": "loss"
-   }
-  ],
-  "graded": "2026-09-20T21:21:39.293880+00:00"
- },
- {
-  "id": "PARLAY-202609200325-2",
-  "tier": "P",
-  "sport": "Parlay",
-  "kind": "watchlist",
-  "made": "2026-09-20T03:25:16.811524+00:00",
-  "units": 1.0,
-  "price": 0.1883,
-  "model_prob": 0.3184,
-  "ev": 0.691,
-  "payout_units": 4.3,
-  "status": "loss",
-  "pnl": -1.0,
-  "legs": [
-   {
-    "id": "KXNFLPASSYDS-26SEP20WASDAL-WASJDANIELS5-200:no",
-    "ticker": "KXNFLPASSYDS-26SEP20WASDAL-WASJDANIELS5-200",
-    "side": "no",
-    "market": "Jayden Daniels: under 200",
-    "matchup": "WAS at DAL",
-    "sport": "Football",
-    "price": 0.37,
-    "model_prob": 0.522,
-    "edge": 0.136,
-    "expected_end": "2026-09-20T23:25:00+00:00"
-   },
-   {
-    "id": "KXSERIEASPREAD-26SEP20ACMLEC-ACM2:no",
-    "ticker": "KXSERIEASPREAD-26SEP20ACMLEC-ACM2",
-    "side": "no",
-    "market": "No: Milan wins by more than 1.5 goals",
-    "matchup": "Milan vs Lecce",
-    "sport": "Soccer",
-    "price": 0.47,
-    "model_prob": 0.61,
-    "edge": 0.123,
-    "expected_end": "2026-09-20T21:45:00+00:00",
-    "result": "loss"
-   }
-  ],
-  "graded": "2026-09-20T21:21:39.466715+00:00"
- },
- {
   "id": "PARLAY-202609210029-1",
   "tier": "P",
   "sport": "Parlay",
@@ -1295,7 +1198,8 @@
     "price": 0.49,
     "model_prob": 0.631,
     "edge": 0.123,
-    "expected_end": "2026-10-04T20:00:00+00:00"
+    "expected_end": "2026-10-04T20:00:00+00:00",
+    "result": "win"
    },
    {
     "id": "KXNFLRSHYDS-26OCT04DENSF-SFBPURDY13-20",
@@ -1404,8 +1308,8 @@
   "model_prob": 0.2564,
   "ev": 0.969,
   "payout_units": 6.7,
-  "status": "pending",
-  "pnl": null,
+  "status": "win",
+  "pnl": 6.68,
   "legs": [
    {
     "id": "KXNCAAFSPREAD-26OCT03PVMVSU-PV27:no",
@@ -1430,7 +1334,8 @@
     "price": 0.52,
     "model_prob": 0.665,
     "edge": 0.128,
-    "expected_end": "2026-10-04T20:00:00+00:00"
+    "expected_end": "2026-10-04T20:00:00+00:00",
+    "result": "win"
    },
    {
     "id": "KXNFLRECYDS-26OCT04NEBUF-BUFKCOLEMAN0-15",
@@ -1442,9 +1347,11 @@
     "price": 0.49,
     "model_prob": 0.631,
     "edge": 0.123,
-    "expected_end": "2026-10-04T20:00:00+00:00"
+    "expected_end": "2026-10-04T20:00:00+00:00",
+    "result": "win"
    }
-  ]
+  ],
+  "graded": "2026-10-04T21:26:32.007416+00:00"
  },
  {
   "id": "PARLAY-202610040236-1",
@@ -1457,8 +1364,8 @@
   "model_prob": 0.2828,
   "ev": 0.828,
   "payout_units": 5.5,
-  "status": "pending",
-  "pnl": null,
+  "status": "win",
+  "pnl": 5.46,
   "legs": [
    {
     "id": "KXNFLRSHYDS-26OCT04DALHOU-HOUDMONTGOMERY32-50:no",
@@ -1470,7 +1377,8 @@
     "price": 0.52,
     "model_prob": 0.665,
     "edge": 0.128,
-    "expected_end": "2026-10-04T20:00:00+00:00"
+    "expected_end": "2026-10-04T20:00:00+00:00",
+    "result": "win"
    },
    {
     "id": "KXNFLRECYDS-26OCT04NEBUF-BUFKCOLEMAN0-15",
@@ -1482,7 +1390,8 @@
     "price": 0.49,
     "model_prob": 0.631,
     "edge": 0.123,
-    "expected_end": "2026-10-04T20:00:00+00:00"
+    "expected_end": "2026-10-04T20:00:00+00:00",
+    "result": "win"
    },
    {
     "id": "KXNFLRECYDS-26OCT04INDWAS-INDTWARREN84-50:no",
@@ -1497,7 +1406,8 @@
     "expected_end": "2026-10-04T16:30:00+00:00",
     "result": "win"
    }
-  ]
+  ],
+  "graded": "2026-10-04T21:26:32.189848+00:00"
  },
  {
   "id": "PARLAY-202610040236-2",
@@ -1510,8 +1420,8 @@
   "model_prob": 0.2825,
   "ev": 0.688,
   "payout_units": 5.0,
-  "status": "pending",
-  "pnl": null,
+  "status": "loss",
+  "pnl": -1.0,
   "legs": [
    {
     "id": "KXNFLRSHYDS-26OCT04DENSF-SFBPURDY13-20",
@@ -1535,8 +1445,10 @@
     "price": 0.35,
     "model_prob": 0.487,
     "edge": 0.121,
-    "expected_end": "2026-10-04T20:00:00+00:00"
+    "expected_end": "2026-10-04T20:00:00+00:00",
+    "result": "loss"
    }
-  ]
+  ],
+  "graded": "2026-10-04T21:26:32.345551+00:00"
  }
 ]
