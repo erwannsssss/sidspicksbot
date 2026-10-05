@@ -1076,8 +1076,8 @@
   "model_prob": 0.2498,
   "ev": 0.826,
   "payout_units": 6.3,
-  "status": "pending",
-  "pnl": null,
+  "status": "win",
+  "pnl": 6.31,
   "legs": [
    {
     "id": "KXNFLRSHYDS-26OCT04DENSF-SFBPURDY13-20",
@@ -1089,7 +1089,8 @@
     "price": 0.44,
     "model_prob": 0.58,
     "edge": 0.123,
-    "expected_end": "2026-10-04T23:25:00+00:00"
+    "expected_end": "2026-10-04T23:25:00+00:00",
+    "result": "win"
    },
    {
     "id": "KXNCAAFTOTAL-26OCT03RICHLAF-43",
@@ -1117,7 +1118,8 @@
     "expected_end": "2026-10-04T16:30:00+00:00",
     "result": "win"
    }
-  ]
+  ],
+  "graded": "2026-10-05T00:34:25.761281+00:00"
  },
  {
   "id": "PARLAY-202610020032-1",
@@ -1185,8 +1187,8 @@
   "model_prob": 0.2339,
   "ev": 0.911,
   "payout_units": 7.2,
-  "status": "pending",
-  "pnl": null,
+  "status": "win",
+  "pnl": 7.17,
   "legs": [
    {
     "id": "KXNFLRECYDS-26OCT04NEBUF-BUFKCOLEMAN0-15",
@@ -1211,7 +1213,8 @@
     "price": 0.44,
     "model_prob": 0.58,
     "edge": 0.123,
-    "expected_end": "2026-10-04T23:25:00+00:00"
+    "expected_end": "2026-10-04T23:25:00+00:00",
+    "result": "win"
    },
    {
     "id": "KXNCAAFTOTAL-26OCT03RICHLAF-43",
@@ -1226,7 +1229,8 @@
     "expected_end": "2026-10-03T19:30:00+00:00",
     "result": "win"
    }
-  ]
+  ],
+  "graded": "2026-10-05T00:34:25.850468+00:00"
  },
  {
   "id": "PARLAY-202610030030-1",
@@ -1450,5 +1454,85 @@
    }
   ],
   "graded": "2026-10-04T21:26:32.345551+00:00"
+ },
+ {
+  "id": "PARLAY-202610050034-1",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-10-05T00:34:26.965856+00:00",
+  "units": 1.0,
+  "price": 0.1279,
+  "model_prob": 0.2181,
+  "ev": 0.705,
+  "payout_units": 6.8,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXMLBHRR-26OCT051700CWSCLE-CWSMMURAKAMI5-1",
+    "ticker": "KXMLBHRR-26OCT051700CWSCLE-CWSMMURAKAMI5-1",
+    "side": "yes",
+    "market": "Munetaka Murakami: 1+",
+    "matchup": "Chicago White Sox at Cleveland Guardians",
+    "sport": "Baseball",
+    "price": 0.56,
+    "model_prob": 0.708,
+    "edge": 0.131,
+    "expected_end": "2026-10-06T00:00:00+00:00"
+   },
+   {
+    "id": "KXATPMATCH-26OCT05SONDOU-DOU",
+    "ticker": "KXATPMATCH-26OCT05SONDOU-DOU",
+    "side": "yes",
+    "market": "Aziz Dougaz to win",
+    "matchup": "2026 ATP Shanghai",
+    "sport": "Tennis",
+    "price": 0.21,
+    "model_prob": 0.308,
+    "edge": 0.086,
+    "expected_end": "2026-10-05T07:00:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": "PARLAY-202610050034-2",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "recommended",
+  "made": "2026-10-05T00:34:26.965917+00:00",
+  "units": 1.0,
+  "price": 0.1533,
+  "model_prob": 0.2067,
+  "ev": 0.348,
+  "payout_units": 5.5,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXATPMATCH-26OCT05ILABAS-ILA",
+    "ticker": "KXATPMATCH-26OCT05ILABAS-ILA",
+    "side": "yes",
+    "market": "Andre Ilagan to win",
+    "matchup": "2026 ATP Shanghai",
+    "sport": "Tennis",
+    "price": 0.32,
+    "model_prob": 0.406,
+    "edge": 0.071,
+    "expected_end": "2026-10-05T07:00:00+00:00"
+   },
+   {
+    "id": "KXWTACHALLENGERMATCH-26OCT04IBRSRA-IBR",
+    "ticker": "KXWTACHALLENGERMATCH-26OCT04IBRSRA-IBR",
+    "side": "yes",
+    "market": "Alevtina Ibragimova to win",
+    "matchup": "2026 WTA 125K Suzhou",
+    "sport": "Tennis",
+    "price": 0.44,
+    "model_prob": 0.509,
+    "edge": 0.051,
+    "expected_end": "2026-10-05T06:10:00+00:00"
+   }
+  ]
  }
 ]
