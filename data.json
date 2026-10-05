@@ -1,6 +1,6 @@
 {
- "updated": "2026-10-05T17:24:48.706422+00:00",
- "status_note": "Last run found 1 new pick(s) and graded 0.",
+ "updated": "2026-10-05T18:30:24.121803+00:00",
+ "status_note": "Last run found 0 new pick(s) and graded 0.",
  "bankroll": 96.15,
  "protection": {
   "bankroll": 96.15,
@@ -199,8 +199,8 @@
    "expected_end": "2026-10-06T06:00:00+00:00",
    "start_est": "2026-10-06T02:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.22,
-   "close_price": null,
+   "latest_price": 0.235,
+   "close_price": 0.235,
    "pnl": null,
    "why": "Elo 1644 vs 1706 on hard. Won 50% vs 50% of games lately. Form 6-4 vs 8-2. Games played in last 3 days: 44 vs 44. Model 44%, blended with the market 32%, price 22%.",
    "trend": 0.01,
@@ -5287,7 +5287,7 @@
  "learning": {
   "groups": {
    "cfb:total_1h": {
-    "finished": 1462,
+    "finished": 1454,
     "games": 53,
     "trust": 0.25,
     "confidence_fix": false,
@@ -5392,11 +5392,11 @@
     "last": "2026-10-03T21:30:00+00:00"
    },
    "tennis:winner": {
-    "finished": 376,
-    "games": 188,
-    "trust": 0.38,
+    "finished": 386,
+    "games": 193,
+    "trust": 0.31,
     "confidence_fix": false,
-    "last": "2026-10-05T13:10:00+00:00"
+    "last": "2026-10-05T16:00:00+00:00"
    },
    "cfb:winner": {
     "finished": 196,
@@ -5779,22 +5779,22 @@
   },
   "price_trend": {
    "flat": {
-    "markets": 27679,
+    "markets": 27681,
     "hit_vs_price": -0.0
-   },
-   "rising": {
-    "markets": 3540,
-    "hit_vs_price": 0.011
    },
    "falling": {
     "markets": 3536,
     "hit_vs_price": -0.01
+   },
+   "rising": {
+    "markets": 3540,
+    "hit_vs_price": 0.011
    }
   }
  },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "tracker": {
-  "tracked": 138810,
+  "tracked": 139021,
   "series": 3952,
   "movers": [
    {
@@ -5902,48 +5902,48 @@
     "close": "2026-10-06T03:59:00+00:00"
    },
    {
-    "ticker": "KXARGNACBGAME-26OCT03CATGEJ-CAT",
-    "series": "KXARGNACBGAME",
-    "title": "Temperley",
-    "move": 0.54,
-    "price": 0.995,
-    "close": "2026-10-05T18:00:00+00:00"
-   },
-   {
     "ticker": "KXT20MATCH-26OCT041100GBRSLISSG2NDXI-LISSG2NDXI",
     "series": "KXT20MATCH",
     "title": "Lisbon Super Giants 2nd XI",
     "move": 0.52,
     "price": 0.995,
     "close": "2026-10-06T19:00:00+00:00"
+   },
+   {
+    "ticker": "KXNFLFFWEEKTOP-2026W4RBT5-KWALKER9",
+    "series": "KXNFLFFWEEKTOP",
+    "title": "Kenneth Walker III",
+    "move": 0.505,
+    "price": 0.85,
+    "close": "2026-10-06T03:59:00+00:00"
    }
   ]
  },
  "models": {
   "tennis": {
-   "matches": 20732,
-   "training_rows": 14343,
+   "matches": 20737,
+   "training_rows": 14348,
    "holdout": {
     "from": "2026-08-31",
-    "matches": 2152,
-    "elo_log_loss": 0.6526,
-    "model_log_loss": 0.6474,
-    "elo_accuracy": 0.616,
-    "model_accuracy": 0.626
+    "matches": 2153,
+    "elo_log_loss": 0.6535,
+    "model_log_loss": 0.6482,
+    "elo_accuracy": 0.615,
+    "model_accuracy": 0.625
    },
    "using": "full",
    "weights": {
     "elo": 2.077,
     "dominance": 0.0,
     "rank": 0.0,
-    "h2h": 0.475,
-    "form": -0.585,
-    "fatigue_games": -0.215,
-    "fatigue_matches": 0.086,
-    "rest": 0.015,
+    "h2h": 0.476,
+    "form": -0.59,
+    "fatigue_games": -0.216,
+    "fatigue_matches": 0.087,
+    "rest": 0.013,
     "travel": 0.146,
     "altitude": 0.0,
-    "best_of_5": 0.561
+    "best_of_5": 0.562
    },
    "sport": "Tennis",
    "label": "Tennis",
@@ -6021,31 +6021,31 @@
    "holdout": {
     "matches": 657,
     "rating_log_loss": 0.6257,
-    "model_log_loss": 0.6235,
+    "model_log_loss": 0.6228,
     "rating_accuracy": 0.656,
-    "model_accuracy": 0.648
+    "model_accuracy": 0.645
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6051,
-    "model_log_loss": 0.6235,
+    "model_log_loss": 0.6228,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 657
    },
    "backtest": {
     "bets": 15,
-    "wins": 4,
-    "units": -10.5,
-    "roi": -0.397
+    "wins": 5,
+    "units": -4.6,
+    "roi": -0.178
    },
    "weights": {
-    "home_field": 0.255,
-    "rating": 1.523,
-    "rest": 0.244,
-    "point_diff_form": 0.238,
-    "qb_change": 0.307,
-    "epa": 0.16
+    "home_field": 0.254,
+    "rating": 1.528,
+    "rest": 0.242,
+    "point_diff_form": 0.25,
+    "qb_change": 0.247,
+    "epa": 0.158
    },
    "matches": 4426,
    "totals": {
@@ -6278,8 +6278,8 @@
    "expected_end": "2026-10-08T02:30:00+00:00",
    "start_est": "2026-10-07T23:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.525,
-   "close_price": 0.525,
+   "latest_price": 0.535,
+   "close_price": 0.535,
    "pnl": null,
    "why": "Projected score margin +10.4 (home) and total 52.5. Model gives \"Florida International wins by over 4.5 points\" 64%. Blended with the market that's 53% vs a 50% price.",
    "trend": 0.0,
@@ -6709,8 +6709,8 @@
    "expected_end": "2026-10-06T01:00:00+00:00",
    "start_est": "2026-10-05T22:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.87,
-   "close_price": 0.87,
+   "latest_price": 0.875,
+   "close_price": 0.875,
    "pnl": null,
    "why": "Expected goals 1.03 vs 1.12 (2.16 total). Model gives \"No: Estudiantes La Plata wins by more than 2.5 goals\" 96%. Blended with the market that's 91% vs a 89% price.",
    "trend": 0.0,
