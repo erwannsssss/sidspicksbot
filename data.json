@@ -1,6 +1,6 @@
 {
- "updated": "2026-10-05T14:30:09.702358+00:00",
- "status_note": "Last run found 0 new pick(s) and graded 1.",
+ "updated": "2026-10-05T15:27:52.232845+00:00",
+ "status_note": "Last run found 0 new pick(s) and graded 0.",
  "bankroll": 96.15,
  "protection": {
   "bankroll": 96.15,
@@ -5208,29 +5208,8 @@
  },
  "learning": {
   "groups": {
-   "nfl:spread_2h": {
-    "finished": 438,
-    "games": 15,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-05T00:20:00+00:00"
-   },
-   "nfl:total_2h": {
-    "finished": 406,
-    "games": 15,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-05T00:20:00+00:00"
-   },
-   "nfl:period_winner_2q": {
-    "finished": 60,
-    "games": 15,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-05T00:20:00+00:00"
-   },
    "nfl:spread_2q": {
-    "finished": 304,
+    "finished": 298,
     "games": 15,
     "trust": 0.25,
     "confidence_fix": false,
@@ -5454,8 +5433,8 @@
     "last": "2026-10-03T21:30:00+00:00"
    },
    "tennis:winner": {
-    "finished": 364,
-    "games": 182,
+    "finished": 370,
+    "games": 185,
     "trust": 0.28,
     "confidence_fix": false,
     "last": "2026-10-05T12:00:00+00:00"
@@ -5663,6 +5642,27 @@
     "confidence_fix": false,
     "last": "2026-10-05T00:20:00+00:00"
    },
+   "nfl:spread_2h": {
+    "finished": 428,
+    "games": 14,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-05T00:20:00+00:00"
+   },
+   "nfl:total_2h": {
+    "finished": 378,
+    "games": 14,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-05T00:20:00+00:00"
+   },
+   "nfl:period_winner_2q": {
+    "finished": 56,
+    "games": 14,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-05T00:20:00+00:00"
+   },
    "nfl:spread": {
     "finished": 704,
     "games": 14,
@@ -5701,22 +5701,22 @@
   },
   "price_trend": {
    "flat": {
-    "markets": 27931,
+    "markets": 27893,
     "hit_vs_price": -0.0
    },
    "rising": {
-    "markets": 3596,
+    "markets": 3594,
     "hit_vs_price": 0.008
    },
    "falling": {
-    "markets": 3592,
+    "markets": 3590,
     "hit_vs_price": -0.008
    }
   }
  },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "tracker": {
-  "tracked": 138738,
+  "tracked": 138750,
   "series": 3952,
   "movers": [
    {
@@ -5843,29 +5843,29 @@
  },
  "models": {
   "tennis": {
-   "matches": 20720,
-   "training_rows": 14335,
+   "matches": 20725,
+   "training_rows": 14339,
    "holdout": {
     "from": "2026-08-31",
     "matches": 2151,
-    "elo_log_loss": 0.6528,
-    "model_log_loss": 0.6475,
+    "elo_log_loss": 0.6525,
+    "model_log_loss": 0.6473,
     "elo_accuracy": 0.616,
     "model_accuracy": 0.626
    },
    "using": "full",
    "weights": {
-    "elo": 2.077,
+    "elo": 2.078,
     "dominance": 0.0,
     "rank": 0.0,
-    "h2h": 0.472,
-    "form": -0.589,
+    "h2h": 0.475,
+    "form": -0.588,
     "fatigue_games": -0.214,
-    "fatigue_matches": 0.087,
+    "fatigue_matches": 0.086,
     "rest": 0.015,
-    "travel": 0.147,
+    "travel": 0.146,
     "altitude": 0.0,
-    "best_of_5": 0.562
+    "best_of_5": 0.561
    },
    "sport": "Tennis",
    "label": "Tennis",
@@ -5943,31 +5943,31 @@
    "holdout": {
     "matches": 657,
     "rating_log_loss": 0.6257,
-    "model_log_loss": 0.624,
+    "model_log_loss": 0.6204,
     "rating_accuracy": 0.656,
-    "model_accuracy": 0.648
+    "model_accuracy": 0.647
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6051,
-    "model_log_loss": 0.624,
+    "model_log_loss": 0.6204,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 657
    },
    "backtest": {
-    "bets": 16,
-    "wins": 5,
-    "units": -7.9,
-    "roi": -0.276
+    "bets": 14,
+    "wins": 4,
+    "units": -9.0,
+    "roi": -0.361
    },
    "weights": {
-    "home_field": 0.256,
-    "rating": 1.522,
-    "rest": 0.244,
-    "point_diff_form": 0.236,
-    "qb_change": 0.312,
-    "epa": 0.16
+    "home_field": 0.255,
+    "rating": 1.52,
+    "rest": 0.238,
+    "point_diff_form": 0.238,
+    "qb_change": 0.327,
+    "epa": 0.159
    },
    "matches": 4426,
    "totals": {
@@ -6200,8 +6200,8 @@
    "expected_end": "2026-10-08T02:30:00+00:00",
    "start_est": "2026-10-07T23:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.53,
-   "close_price": 0.53,
+   "latest_price": 0.525,
+   "close_price": 0.525,
    "pnl": null,
    "why": "Projected score margin +10.4 (home) and total 52.5. Model gives \"Florida International wins by over 4.5 points\" 64%. Blended with the market that's 53% vs a 50% price.",
    "trend": 0.0,
@@ -6435,8 +6435,8 @@
    "expected_end": "2026-10-09T03:15:00+00:00",
    "start_est": "2026-10-09T00:15:00+00:00",
    "status": "pending",
-   "latest_price": 0.355,
-   "close_price": 0.355,
+   "latest_price": 0.365,
+   "close_price": 0.365,
    "pnl": null,
    "why": "Projected score margin +5.5 (home) and total 49.0. Forecast 81F, wind 6 mph, rain 0.2 mm. Model gives \"No: DAL Cowboys wins by over 6.5 points\" 53%. Blended with the market that's 44% vs a 38% price.",
    "trend": 0.0,
@@ -6474,8 +6474,8 @@
    "expected_end": "2026-10-09T02:30:00+00:00",
    "start_est": "2026-10-08T23:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.295,
-   "close_price": 0.295,
+   "latest_price": 0.29,
+   "close_price": 0.29,
    "pnl": null,
    "why": "Ratings 1633 vs 1633, on the road. Point differential last 5: +60 vs +26. Model gives South Florida 41%. Blended with the market that's 32% vs a 30% price. Sharp sportsbook price (Pinnacle) says 29%.",
    "trend": 0.0,
