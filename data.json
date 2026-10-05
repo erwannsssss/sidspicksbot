@@ -1,11 +1,11 @@
 {
- "updated": "2026-10-05T07:28:15.629198+00:00",
- "status_note": "Last run found 0 new pick(s) and graded 2.",
- "bankroll": 95.07,
+ "updated": "2026-10-05T12:32:39.337734+00:00",
+ "status_note": "Last run found 0 new pick(s) and graded 4.",
+ "bankroll": 96.68,
  "protection": {
-  "bankroll": 95.07,
+  "bankroll": 96.68,
   "peak": 112.26,
-  "drawdown": 0.153,
+  "drawdown": 0.139,
   "paused": false
  },
  "settings": {
@@ -95,126 +95,6 @@
  },
  "open": [
   {
-   "id": "KXATPMATCH-26OCT05NOGMUL-NOG",
-   "ticker": "KXATPMATCH-26OCT05NOGMUL-NOG",
-   "side": "yes",
-   "event": "KXATPMATCH-26OCT05NOGMUL",
-   "game": "26OCT05NOGMUL",
-   "sport": "Tennis",
-   "model_key": "tennis",
-   "mtype": "winner",
-   "line": null,
-   "tour": "ATP",
-   "tournament": "2026 ATP Shanghai",
-   "matchup": "2026 ATP Shanghai",
-   "surface": "hard",
-   "pick": "Rio Noguchi",
-   "opponent": "Alexandre Muller",
-   "market": "Rio Noguchi to win",
-   "price": 0.34,
-   "model_prob": 0.412,
-   "raw_prob": 0.556,
-   "edge": 0.057,
-   "tier": "B",
-   "units": 0.5,
-   "made": "2026-10-04T18:18:29.735998+00:00",
-   "expected_end": "2026-10-05T07:00:00+00:00",
-   "start_est": "2026-10-05T03:00:00+00:00",
-   "status": "pending",
-   "latest_price": 0.335,
-   "close_price": 0.335,
-   "pnl": null,
-   "why": "Elo 1576 vs 1520 on hard. Won 50% vs 50% of games lately. Form 5-5 vs 6-4. Travelled 161 vs 1,070 km since last match. Model 56%, blended with the market 41%, price 34%.",
-   "trend": 0.005,
-   "new_market": false,
-   "trust": 0.35,
-   "sharp_prob": null,
-   "research": "",
-   "sources": [],
-   "expert_lean": "none",
-   "prechecked": true
-  },
-  {
-   "id": "KXATPMATCH-26OCT05DAMKOT-KOT",
-   "ticker": "KXATPMATCH-26OCT05DAMKOT-KOT",
-   "side": "yes",
-   "event": "KXATPMATCH-26OCT05DAMKOT",
-   "game": "26OCT05DAMKOT",
-   "sport": "Tennis",
-   "model_key": "tennis",
-   "mtype": "winner",
-   "line": null,
-   "tour": "ATP",
-   "tournament": "2026 ATP Shanghai",
-   "matchup": "2026 ATP Shanghai",
-   "surface": "hard",
-   "pick": "Pavel Kotov",
-   "opponent": "Martin Damm Jr",
-   "market": "Pavel Kotov to win",
-   "price": 0.33,
-   "model_prob": 0.4,
-   "raw_prob": 0.54,
-   "edge": 0.055,
-   "tier": "B",
-   "units": 0.5,
-   "made": "2026-10-04T22:21:54.683052+00:00",
-   "expected_end": "2026-10-05T07:00:00+00:00",
-   "start_est": "2026-10-05T03:00:00+00:00",
-   "status": "pending",
-   "latest_price": 0.325,
-   "close_price": 0.325,
-   "pnl": null,
-   "why": "Elo 1661 vs 1603 on hard. Won 50% vs 50% of games lately. Form 7-3 vs 4-6. Travelled 1,658 vs 1,760 km since last match. Model 54%, blended with the market 40%, price 33%. Price up 3\u00a2 in the last 12 hours.",
-   "trend": 0.026,
-   "new_market": false,
-   "trust": 0.35,
-   "sharp_prob": null,
-   "research": "",
-   "sources": [],
-   "expert_lean": "none",
-   "prechecked": true
-  },
-  {
-   "id": "KXATPMATCH-26OCT05ATMTOM-TOM",
-   "ticker": "KXATPMATCH-26OCT05ATMTOM-TOM",
-   "side": "yes",
-   "event": "KXATPMATCH-26OCT05ATMTOM",
-   "game": "26OCT05ATMTOM",
-   "sport": "Tennis",
-   "model_key": "tennis",
-   "mtype": "winner",
-   "line": null,
-   "tour": "ATP",
-   "tournament": "2026 ATP Shanghai",
-   "matchup": "2026 ATP Shanghai",
-   "surface": "hard",
-   "pick": "Bernard Tomic",
-   "opponent": "Terence Atmane",
-   "market": "Bernard Tomic to win",
-   "price": 0.3,
-   "model_prob": 0.379,
-   "raw_prob": 0.536,
-   "edge": 0.065,
-   "tier": "B",
-   "units": 0.5,
-   "made": "2026-10-05T00:32:46.841908+00:00",
-   "expected_end": "2026-10-05T07:00:00+00:00",
-   "start_est": "2026-10-05T03:00:00+00:00",
-   "status": "pending",
-   "latest_price": 0.285,
-   "close_price": 0.285,
-   "pnl": null,
-   "why": "Elo 1629 vs 1548 on hard. Won 50% vs 50% of games lately. Form 7-3 vs 5-5. Games played in last 3 days: 22 vs 0. Travelled 1,070 vs 1,070 km since last match. Model 54%, blended with the market 38%, price 30%.",
-   "trend": 0.0,
-   "new_market": false,
-   "trust": 0.35,
-   "sharp_prob": null,
-   "research": "",
-   "sources": [],
-   "expert_lean": "none",
-   "prechecked": true
-  },
-  {
    "id": "KXATPMATCH-26OCT05WONHEW-HEW",
    "ticker": "KXATPMATCH-26OCT05WONHEW-HEW",
    "side": "yes",
@@ -256,6 +136,129 @@
   }
  ],
  "history": [
+  {
+   "id": "KXATPMATCH-26OCT05ATMTOM-TOM",
+   "ticker": "KXATPMATCH-26OCT05ATMTOM-TOM",
+   "side": "yes",
+   "event": "KXATPMATCH-26OCT05ATMTOM",
+   "game": "26OCT05ATMTOM",
+   "sport": "Tennis",
+   "model_key": "tennis",
+   "mtype": "winner",
+   "line": null,
+   "tour": "ATP",
+   "tournament": "2026 ATP Shanghai",
+   "matchup": "2026 ATP Shanghai",
+   "surface": "hard",
+   "pick": "Bernard Tomic",
+   "opponent": "Terence Atmane",
+   "market": "Bernard Tomic to win",
+   "price": 0.3,
+   "model_prob": 0.379,
+   "raw_prob": 0.536,
+   "edge": 0.065,
+   "tier": "B",
+   "units": 0.5,
+   "made": "2026-10-05T00:32:46.841908+00:00",
+   "expected_end": "2026-10-05T07:00:00+00:00",
+   "start_est": "2026-10-05T03:00:00+00:00",
+   "status": "win",
+   "latest_price": 0.285,
+   "close_price": 0.285,
+   "pnl": 1.14,
+   "why": "Elo 1629 vs 1548 on hard. Won 50% vs 50% of games lately. Form 7-3 vs 5-5. Games played in last 3 days: 22 vs 0. Travelled 1,070 vs 1,070 km since last match. Model 54%, blended with the market 38%, price 30%.",
+   "trend": 0.0,
+   "new_market": false,
+   "trust": 0.35,
+   "sharp_prob": null,
+   "research": "",
+   "sources": [],
+   "expert_lean": "none",
+   "prechecked": true,
+   "graded": "2026-10-05T12:30:43.029432+00:00"
+  },
+  {
+   "id": "KXATPMATCH-26OCT05DAMKOT-KOT",
+   "ticker": "KXATPMATCH-26OCT05DAMKOT-KOT",
+   "side": "yes",
+   "event": "KXATPMATCH-26OCT05DAMKOT",
+   "game": "26OCT05DAMKOT",
+   "sport": "Tennis",
+   "model_key": "tennis",
+   "mtype": "winner",
+   "line": null,
+   "tour": "ATP",
+   "tournament": "2026 ATP Shanghai",
+   "matchup": "2026 ATP Shanghai",
+   "surface": "hard",
+   "pick": "Pavel Kotov",
+   "opponent": "Martin Damm Jr",
+   "market": "Pavel Kotov to win",
+   "price": 0.33,
+   "model_prob": 0.4,
+   "raw_prob": 0.54,
+   "edge": 0.055,
+   "tier": "B",
+   "units": 0.5,
+   "made": "2026-10-04T22:21:54.683052+00:00",
+   "expected_end": "2026-10-05T07:00:00+00:00",
+   "start_est": "2026-10-05T03:00:00+00:00",
+   "status": "win",
+   "latest_price": 0.325,
+   "close_price": 0.325,
+   "pnl": 0.99,
+   "why": "Elo 1661 vs 1603 on hard. Won 50% vs 50% of games lately. Form 7-3 vs 4-6. Travelled 1,658 vs 1,760 km since last match. Model 54%, blended with the market 40%, price 33%. Price up 3\u00a2 in the last 12 hours.",
+   "trend": 0.026,
+   "new_market": false,
+   "trust": 0.35,
+   "sharp_prob": null,
+   "research": "",
+   "sources": [],
+   "expert_lean": "none",
+   "prechecked": true,
+   "graded": "2026-10-05T12:30:42.690226+00:00"
+  },
+  {
+   "id": "KXATPMATCH-26OCT05NOGMUL-NOG",
+   "ticker": "KXATPMATCH-26OCT05NOGMUL-NOG",
+   "side": "yes",
+   "event": "KXATPMATCH-26OCT05NOGMUL",
+   "game": "26OCT05NOGMUL",
+   "sport": "Tennis",
+   "model_key": "tennis",
+   "mtype": "winner",
+   "line": null,
+   "tour": "ATP",
+   "tournament": "2026 ATP Shanghai",
+   "matchup": "2026 ATP Shanghai",
+   "surface": "hard",
+   "pick": "Rio Noguchi",
+   "opponent": "Alexandre Muller",
+   "market": "Rio Noguchi to win",
+   "price": 0.34,
+   "model_prob": 0.412,
+   "raw_prob": 0.556,
+   "edge": 0.057,
+   "tier": "B",
+   "units": 0.5,
+   "made": "2026-10-04T18:18:29.735998+00:00",
+   "expected_end": "2026-10-05T07:00:00+00:00",
+   "start_est": "2026-10-05T03:00:00+00:00",
+   "status": "loss",
+   "latest_price": 0.335,
+   "close_price": 0.335,
+   "pnl": -0.52,
+   "why": "Elo 1576 vs 1520 on hard. Won 50% vs 50% of games lately. Form 5-5 vs 6-4. Travelled 161 vs 1,070 km since last match. Model 56%, blended with the market 41%, price 34%.",
+   "trend": 0.005,
+   "new_market": false,
+   "trust": 0.35,
+   "sharp_prob": null,
+   "research": "",
+   "sources": [],
+   "expert_lean": "none",
+   "prechecked": true,
+   "graded": "2026-10-05T12:30:42.578898+00:00"
+  },
   {
    "id": "KXATPMATCH-26OCT05SONDOU-DOU",
    "ticker": "KXATPMATCH-26OCT05SONDOU-DOU",
@@ -5166,7 +5169,7 @@
  "learning": {
   "groups": {
    "nfl:total": {
-    "finished": 528,
+    "finished": 520,
     "games": 15,
     "trust": 0.25,
     "confidence_fix": false,
@@ -5467,11 +5470,11 @@
     "last": "2026-10-03T21:30:00+00:00"
    },
    "tennis:winner": {
-    "finished": 270,
-    "games": 135,
-    "trust": 0.36,
+    "finished": 330,
+    "games": 165,
+    "trust": 0.34,
     "confidence_fix": false,
-    "last": "2026-10-05T03:20:00+00:00"
+    "last": "2026-10-05T09:10:00+00:00"
    },
    "cfb:period_winner_2h": {
     "finished": 132,
@@ -5658,24 +5661,72 @@
   },
   "price_trend": {
    "flat": {
-    "markets": 28294,
+    "markets": 28320,
     "hit_vs_price": -0.0
    },
    "rising": {
-    "markets": 3637,
+    "markets": 3648,
     "hit_vs_price": 0.011
    },
    "falling": {
-    "markets": 3632,
-    "hit_vs_price": -0.011
+    "markets": 3643,
+    "hit_vs_price": -0.01
    }
   }
  },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "tracker": {
-  "tracked": 136889,
+  "tracked": 137007,
   "series": 3952,
   "movers": [
+   {
+    "ticker": "KXNFLFFWEEKTOP-2026W4WRT5-TMCMILLAN4",
+    "series": "KXNFLFFWEEKTOP",
+    "title": "Tetairoa McMillan",
+    "move": 0.835,
+    "price": 0.995,
+    "close": "2026-10-06T03:59:00+00:00"
+   },
+   {
+    "ticker": "KXNFLFFWEEKTOP-2026W4TET5-THOCKENSON87",
+    "series": "KXNFLFFWEEKTOP",
+    "title": "T.J. Hockenson",
+    "move": 0.825,
+    "price": 0.975,
+    "close": "2026-10-06T03:59:00+00:00"
+   },
+   {
+    "ticker": "KXNFLFFWEEKTOP-2026W4WRT5-CLAMB88",
+    "series": "KXNFLFFWEEKTOP",
+    "title": "CeeDee Lamb",
+    "move": 0.775,
+    "price": 0.995,
+    "close": "2026-10-06T03:59:00+00:00"
+   },
+   {
+    "ticker": "KXNFLFFWEEKLEAD-2026W4WR-TMCMILLAN4",
+    "series": "KXNFLFFWEEKLEAD",
+    "title": "Tetairoa McMillan",
+    "move": 0.75,
+    "price": 0.805,
+    "close": "2026-10-06T03:59:00+00:00"
+   },
+   {
+    "ticker": "KXNFLFFWEEKLEAD-2026W4TE-THOCKENSON87",
+    "series": "KXNFLFFWEEKLEAD",
+    "title": "T.J. Hockenson",
+    "move": 0.745,
+    "price": 0.8,
+    "close": "2026-10-06T03:59:00+00:00"
+   },
+   {
+    "ticker": "KXNFLFFWEEKTOP-2026W4RBT5-KWILLIAMS23",
+    "series": "KXNFLFFWEEKTOP",
+    "title": "Kyren Williams",
+    "move": 0.73,
+    "price": 0.85,
+    "close": "2026-10-06T03:59:00+00:00"
+   },
    {
     "ticker": "KXABAGAME-26OCT031300BOSSPS-SPS",
     "series": "KXABAGAME",
@@ -5683,6 +5734,14 @@
     "move": -0.71,
     "price": 0.005,
     "close": "2026-10-05T17:00:00+00:00"
+   },
+   {
+    "ticker": "KXNFLFFWEEKTOP-2026W4RBT5-JWILLIAMS33",
+    "series": "KXNFLFFWEEKTOP",
+    "title": "Javonte Williams",
+    "move": 0.705,
+    "price": 0.85,
+    "close": "2026-10-06T03:59:00+00:00"
    },
    {
     "ticker": "KXABAGAME-26OCT031300BOSSPS-BOS",
@@ -5693,145 +5752,89 @@
     "close": "2026-10-05T17:00:00+00:00"
    },
    {
-    "ticker": "KXWODIMATCH-26OCT030400GRB-WWPO-W-WPO-W",
-    "series": "KXWODIMATCH",
-    "title": "Western Province Women",
-    "move": 0.555,
-    "price": 0.995,
-    "close": "2026-10-05T16:00:00+00:00"
+    "ticker": "KXNFLFFWEEKTOP-2026W4QBT5-CSTROUD7",
+    "series": "KXNFLFFWEEKTOP",
+    "title": "C.J. Stroud",
+    "move": 0.665,
+    "price": 0.845,
+    "close": "2026-10-06T03:59:00+00:00"
    },
    {
-    "ticker": "KXARGNACBGAME-26OCT03CATGEJ-CAT",
-    "series": "KXARGNACBGAME",
-    "title": "Temperley",
-    "move": 0.54,
-    "price": 0.995,
-    "close": "2026-10-05T18:00:00+00:00"
+    "ticker": "KXNFLFFWEEKLEAD-2026W4QB-DMAYE10",
+    "series": "KXNFLFFWEEKLEAD",
+    "title": "Drake Maye",
+    "move": 0.66,
+    "price": 0.72,
+    "close": "2026-10-06T03:59:00+00:00"
    },
    {
-    "ticker": "KXUEFANL1HSPREAD-26OCT03SUISLO-SLO2",
-    "series": "KXUEFANL1HSPREAD",
-    "title": "Slovenia wins the 1H by more than 1.5 goals",
-    "move": -0.485,
-    "price": 0.01,
-    "close": "2026-10-05T18:45:00+00:00"
+    "ticker": "KXNFLFFWEEKTOP-2026W4QBT5-DMAYE10",
+    "series": "KXNFLFFWEEKTOP",
+    "title": "Drake Maye",
+    "move": 0.64,
+    "price": 0.85,
+    "close": "2026-10-06T03:59:00+00:00"
    },
    {
-    "ticker": "KXUEFANL1HSPREAD-26OCT03ESPCZE-CZE2",
-    "series": "KXUEFANL1HSPREAD",
-    "title": "Czechia wins the 1H by more than 1.5 goals",
-    "move": -0.485,
-    "price": 0.005,
-    "close": "2026-10-05T18:45:00+00:00"
+    "ticker": "KXNFLFFWEEKTOP-2026W4WRT5-NCOLLINS12",
+    "series": "KXNFLFFWEEKTOP",
+    "title": "Nico Collins",
+    "move": 0.61,
+    "price": 0.8,
+    "close": "2026-10-06T03:59:00+00:00"
    },
    {
-    "ticker": "KXUEFANL1HSPREAD-26OCT03BLRSMR-SMR2",
-    "series": "KXUEFANL1HSPREAD",
-    "title": "San Marino wins the 1H by more than 1.5 goals",
-    "move": -0.485,
-    "price": 0.005,
-    "close": "2026-10-05T16:00:00+00:00"
+    "ticker": "KXNFLFFWEEKTOP-2026W4TET5-SLAPORTA87",
+    "series": "KXNFLFFWEEKTOP",
+    "title": "Sam LaPorta",
+    "move": 0.6,
+    "price": 0.85,
+    "close": "2026-10-06T03:59:00+00:00"
    },
    {
-    "ticker": "KXUEFANL1HSPREAD-26OCT03MKDSCO-MKD2",
-    "series": "KXUEFANL1HSPREAD",
-    "title": "North Macedonia wins the 1H by more than 1.5 goals",
-    "move": -0.475,
-    "price": 0.02,
-    "close": "2026-10-05T18:45:00+00:00"
-   },
-   {
-    "ticker": "KXUEFANL1HSPREAD-26OCT03ISLBUL-BUL2",
-    "series": "KXUEFANL1HSPREAD",
-    "title": "Bulgaria wins the 1H by more than 1.5 goals",
-    "move": -0.475,
-    "price": 0.015,
-    "close": "2026-10-05T16:00:00+00:00"
-   },
-   {
-    "ticker": "KXACBGAME-26OCT031330CANMAL-CAN",
-    "series": "KXACBGAME",
-    "title": "CB 1939 Canarias",
-    "move": 0.475,
-    "price": 0.94,
-    "close": "2026-10-05T17:30:00+00:00"
-   },
-   {
-    "ticker": "KXUEFANL1HSPREAD-26OCT03CROENG-CRO2",
-    "series": "KXUEFANL1HSPREAD",
-    "title": "Croatia wins the 1H by more than 1.5 goals",
-    "move": -0.455,
-    "price": 0.04,
-    "close": "2026-10-05T16:00:00+00:00"
-   },
-   {
-    "ticker": "KXUEFANL1HSPREAD-26OCT03FINALB-ALB2",
-    "series": "KXUEFANL1HSPREAD",
-    "title": "Albania wins the 1H by more than 1.5 goals",
-    "move": -0.445,
-    "price": 0.05,
-    "close": "2026-10-05T13:00:00+00:00"
-   },
-   {
-    "ticker": "KXUEFANL1HSPREAD-26OCT03ESTLUX-EST2",
-    "series": "KXUEFANL1HSPREAD",
-    "title": "Estonia wins the 1H by more than 1.5 goals",
-    "move": -0.44,
-    "price": 0.055,
-    "close": "2026-10-05T16:00:00+00:00"
-   },
-   {
-    "ticker": "KXUEFANLFTTS-26OCT03FINALB-NONE",
-    "series": "KXUEFANLFTTS",
-    "title": "No Goal",
-    "move": -0.435,
-    "price": 0.06,
-    "close": "2026-10-05T19:00:00+00:00"
-   },
-   {
-    "ticker": "KXWODIMATCH-26OCT030400GRB-WWPO-W-GRB-W",
-    "series": "KXWODIMATCH",
-    "title": "Garden Route Badgers Women",
-    "move": -0.435,
-    "price": 0.005,
-    "close": "2026-10-05T16:00:00+00:00"
+    "ticker": "KXNFLFFWEEKTOP-2026W4QBT5-JBURROW9",
+    "series": "KXNFLFFWEEKTOP",
+    "title": "Joe Burrow",
+    "move": 0.6,
+    "price": 0.85,
+    "close": "2026-10-06T03:59:00+00:00"
    }
   ]
  },
  "models": {
   "tennis": {
-   "matches": 20664,
-   "training_rows": 14283,
+   "matches": 20703,
+   "training_rows": 14318,
    "holdout": {
-    "from": "2026-08-30",
-    "matches": 2143,
-    "elo_log_loss": 0.6534,
+    "from": "2026-08-31",
+    "matches": 2148,
+    "elo_log_loss": 0.6537,
     "model_log_loss": 0.6484,
-    "elo_accuracy": 0.614,
+    "elo_accuracy": 0.615,
     "model_accuracy": 0.622
    },
    "using": "full",
    "weights": {
-    "elo": 2.073,
+    "elo": 2.072,
     "dominance": 0.0,
     "rank": 0.0,
-    "h2h": 0.456,
-    "form": -0.591,
+    "h2h": 0.473,
+    "form": -0.581,
     "fatigue_games": -0.214,
-    "fatigue_matches": 0.086,
+    "fatigue_matches": 0.085,
     "rest": 0.015,
-    "travel": 0.148,
+    "travel": 0.147,
     "altitude": 0.0,
-    "best_of_5": 0.568
+    "best_of_5": 0.564
    },
    "sport": "Tennis",
    "label": "Tennis",
    "trust": 0.5
   },
   "soccer": {
-   "matches": 81780,
-   "from_kalshi": 187,
-   "training_rows": 79912,
+   "matches": 81782,
+   "from_kalshi": 189,
+   "training_rows": 79914,
    "totals_bias": -0.002,
    "totals": {
     "matches": 6553,
@@ -5840,19 +5843,19 @@
     "best_weight": 0.0
    },
    "holdout": {
-    "matches": 11987,
-    "rating_log_loss": 1.0117,
-    "model_log_loss": 1.01,
+    "matches": 11988,
+    "rating_log_loss": 1.0118,
+    "model_log_loss": 1.0101,
     "rating_accuracy": 0.499,
     "model_accuracy": 0.502
    },
    "using": "full",
    "market": {
-    "market_log_loss": 0.9915,
+    "market_log_loss": 0.9916,
     "model_log_loss": 1.0105,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
-    "matches": 11802
+    "matches": 11801
    },
    "backtest": {
     "bets": 73,
@@ -5861,10 +5864,10 @@
     "roi": 0.09
    },
    "weights": {
-    "rating": 1.606,
+    "rating": 1.607,
     "chance_quality": 0.397,
     "goal_diff_form": 0.029,
-    "rest": -0.063
+    "rest": -0.062
    },
    "goals_scale": 0.988,
    "sport": "Soccer",
@@ -5900,31 +5903,31 @@
    "holdout": {
     "matches": 657,
     "rating_log_loss": 0.6257,
-    "model_log_loss": 0.6231,
+    "model_log_loss": 0.6221,
     "rating_accuracy": 0.656,
-    "model_accuracy": 0.641
+    "model_accuracy": 0.648
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6051,
-    "model_log_loss": 0.6231,
+    "model_log_loss": 0.6221,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 657
    },
    "backtest": {
-    "bets": 14,
-    "wins": 4,
-    "units": -9.0,
-    "roi": -0.361
+    "bets": 15,
+    "wins": 5,
+    "units": -5.2,
+    "roi": -0.207
    },
    "weights": {
     "home_field": 0.255,
     "rating": 1.523,
-    "rest": 0.24,
-    "point_diff_form": 0.243,
-    "qb_change": 0.308,
-    "epa": 0.158
+    "rest": 0.242,
+    "point_diff_form": 0.242,
+    "qb_change": 0.284,
+    "epa": 0.162
    },
    "matches": 4426,
    "totals": {
@@ -5976,26 +5979,26 @@
  },
  "summary": {
   "all": {
-   "picks": 81,
-   "wins": 28,
-   "losses": 53,
-   "units": -4.93,
-   "staked": 88.5,
-   "roi": -0.056,
-   "beat_price": 0.259,
-   "clv": -0.0027,
-   "clv_picks": 71
+   "picks": 84,
+   "wins": 30,
+   "losses": 54,
+   "units": -3.32,
+   "staked": 90.0,
+   "roi": -0.037,
+   "beat_price": 0.25,
+   "clv": -0.003,
+   "clv_picks": 74
   },
   "week": {
-   "picks": 36,
-   "wins": 14,
+   "picks": 37,
+   "wins": 15,
    "losses": 22,
-   "units": 0.67,
+   "units": 2.07,
    "staked": 26.0,
-   "roi": 0.026,
-   "beat_price": 0.167,
-   "clv": -0.0043,
-   "clv_picks": 30
+   "roi": 0.08,
+   "beat_price": 0.162,
+   "clv": -0.0044,
+   "clv_picks": 31
   },
   "yours": {
    "picks": 15,
@@ -6009,15 +6012,15 @@
    "clv_picks": 14
   },
   "watch": {
-   "picks": 296,
+   "picks": 297,
    "wins": 132,
-   "losses": 164,
-   "units": 4.28,
-   "staked": 148.0,
-   "roi": 0.029,
-   "beat_price": 0.27,
-   "clv": -0.0079,
-   "clv_picks": 279
+   "losses": 165,
+   "units": 3.76,
+   "staked": 148.5,
+   "roi": 0.025,
+   "beat_price": 0.273,
+   "clv": -0.0078,
+   "clv_picks": 280
   }
  },
  "by_expert_lean": {
@@ -6033,15 +6036,15 @@
    "clv_picks": 2
   },
   "none": {
-   "picks": 78,
-   "wins": 25,
-   "losses": 53,
-   "units": -17.19,
-   "staked": 79.5,
-   "roi": -0.216,
-   "beat_price": 0.256,
-   "clv": -0.0028,
-   "clv_picks": 69
+   "picks": 81,
+   "wins": 27,
+   "losses": 54,
+   "units": -15.58,
+   "staked": 81.0,
+   "roi": -0.192,
+   "beat_price": 0.247,
+   "clv": -0.0031,
+   "clv_picks": 72
   }
  },
  "by_tier": {
@@ -6057,15 +6060,15 @@
    "clv_picks": 18
   },
   "B": {
-   "picks": 58,
-   "wins": 19,
-   "losses": 39,
-   "units": -4.7,
-   "staked": 53.5,
-   "roi": -0.088,
-   "beat_price": 0.259,
-   "clv": -0.0023,
-   "clv_picks": 50
+   "picks": 61,
+   "wins": 21,
+   "losses": 40,
+   "units": -3.09,
+   "staked": 55.0,
+   "roi": -0.056,
+   "beat_price": 0.246,
+   "clv": -0.0026,
+   "clv_picks": 53
   },
   "C": {
    "picks": 3,
@@ -6079,15 +6082,15 @@
    "clv_picks": 3
   },
   "W": {
-   "picks": 296,
+   "picks": 297,
    "wins": 132,
-   "losses": 164,
-   "units": 4.28,
-   "staked": 148.0,
-   "roi": 0.029,
-   "beat_price": 0.27,
-   "clv": -0.0079,
-   "clv_picks": 279
+   "losses": 165,
+   "units": 3.76,
+   "staked": 148.5,
+   "roi": 0.025,
+   "beat_price": 0.273,
+   "clv": -0.0078,
+   "clv_picks": 280
   }
  },
  "watch_open": [
@@ -6157,8 +6160,8 @@
    "expected_end": "2026-10-08T02:30:00+00:00",
    "start_est": "2026-10-07T23:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.525,
-   "close_price": 0.525,
+   "latest_price": 0.53,
+   "close_price": 0.53,
    "pnl": null,
    "why": "Projected score margin +10.4 (home) and total 52.5. Model gives \"Florida International wins by over 4.5 points\" 64%. Blended with the market that's 53% vs a 50% price.",
    "trend": 0.0,
@@ -6235,8 +6238,8 @@
    "expected_end": "2026-10-06T00:00:00+00:00",
    "start_est": "2026-10-05T21:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.555,
-   "close_price": 0.555,
+   "latest_price": 0.56,
+   "close_price": 0.56,
    "pnl": null,
    "why": "Munetaka Murakami: 1.99 a game this season over 127 games (adjusted 2.01). Model gives \"Munetaka Murakami: 1+\" 87%. Blended with the market that's 63% vs a 56% price.",
    "trend": 0.0,
@@ -6313,8 +6316,8 @@
    "expected_end": "2026-10-06T01:00:00+00:00",
    "start_est": "2026-10-05T22:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.505,
-   "close_price": 0.505,
+   "latest_price": 0.515,
+   "close_price": 0.515,
    "pnl": null,
    "why": "Ratings 1590 (Velez Sarsfield, home) vs 1410 (Platense). Share of chances lately (xG or shots on target) 50% vs 50%. Goal difference last 6: +2 vs -2. Last played Sep 21 vs Sep 20. Model gives the home 62%. Blended with the market that's 53% vs a 51% price. Sharp sportsbook price (Pinnacle) says 50%.",
    "trend": -0.005,
@@ -6392,8 +6395,8 @@
    "expected_end": "2026-10-09T03:15:00+00:00",
    "start_est": "2026-10-09T00:15:00+00:00",
    "status": "pending",
-   "latest_price": 0.36,
-   "close_price": 0.36,
+   "latest_price": 0.355,
+   "close_price": 0.355,
    "pnl": null,
    "why": "Projected score margin +5.5 (home) and total 49.0. Forecast 81F, wind 6 mph, rain 0.2 mm. Model gives \"No: DAL Cowboys wins by over 6.5 points\" 53%. Blended with the market that's 44% vs a 38% price.",
    "trend": 0.0,
@@ -6484,45 +6487,6 @@
    "expert_lean": "none"
   },
   {
-   "id": "KXATPMATCH-26OCT05LEHVAC-VAC",
-   "ticker": "KXATPMATCH-26OCT05LEHVAC-VAC",
-   "side": "yes",
-   "event": "KXATPMATCH-26OCT05LEHVAC",
-   "game": "26OCT05LEHVAC",
-   "sport": "Tennis",
-   "model_key": "tennis",
-   "mtype": "winner",
-   "line": null,
-   "tour": "ATP",
-   "tournament": "2026 ATP Tokyo",
-   "matchup": "2026 ATP Tokyo",
-   "surface": "hard",
-   "pick": "Valentin Vacherot",
-   "opponent": "Jiri Lehecka",
-   "market": "Valentin Vacherot to win",
-   "price": 0.36,
-   "model_prob": 0.419,
-   "raw_prob": 0.483,
-   "edge": 0.043,
-   "tier": "W",
-   "units": 0.5,
-   "made": "2026-10-05T00:32:46.841908+00:00",
-   "expected_end": "2026-10-05T12:00:00+00:00",
-   "start_est": "2026-10-05T08:00:00+00:00",
-   "status": "pending",
-   "latest_price": 0.365,
-   "close_price": 0.365,
-   "pnl": null,
-   "why": "Elo 1715 vs 1766 on hard. Won 50% vs 50% of games lately. Form 7-3 vs 8-2. Head to head 1-0. Games played in last 3 days: 44 vs 44. Model 48%, blended with the market 40%, price 36%.",
-   "trend": -0.015,
-   "new_market": false,
-   "trust": 0.35,
-   "sharp_prob": null,
-   "research": "",
-   "sources": [],
-   "expert_lean": "none"
-  },
-  {
    "id": "KXNCAAFSPREAD-26OCT07JVSTKENN-JVST4",
    "ticker": "KXNCAAFSPREAD-26OCT07JVSTKENN-JVST4",
    "side": "yes",
@@ -6588,8 +6552,8 @@
    "expected_end": "2026-10-09T02:30:00+00:00",
    "start_est": "2026-10-08T23:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.56,
-   "close_price": 0.56,
+   "latest_price": 0.565,
+   "close_price": 0.565,
    "pnl": null,
    "why": "Projected score margin +3.1 (home) and total 57.8. Model gives \"No: South Alabama wins by over 2.5 points\" 64%. Blended with the market that's 57% vs a 55% price.",
    "trend": -0.015,
@@ -6602,6 +6566,46 @@
   }
  ],
  "watch_history": [
+  {
+   "id": "KXATPMATCH-26OCT05LEHVAC-VAC",
+   "ticker": "KXATPMATCH-26OCT05LEHVAC-VAC",
+   "side": "yes",
+   "event": "KXATPMATCH-26OCT05LEHVAC",
+   "game": "26OCT05LEHVAC",
+   "sport": "Tennis",
+   "model_key": "tennis",
+   "mtype": "winner",
+   "line": null,
+   "tour": "ATP",
+   "tournament": "2026 ATP Tokyo",
+   "matchup": "2026 ATP Tokyo",
+   "surface": "hard",
+   "pick": "Valentin Vacherot",
+   "opponent": "Jiri Lehecka",
+   "market": "Valentin Vacherot to win",
+   "price": 0.36,
+   "model_prob": 0.419,
+   "raw_prob": 0.483,
+   "edge": 0.043,
+   "tier": "W",
+   "units": 0.5,
+   "made": "2026-10-05T00:32:46.841908+00:00",
+   "expected_end": "2026-10-05T12:00:00+00:00",
+   "start_est": "2026-10-05T08:00:00+00:00",
+   "status": "loss",
+   "latest_price": 0.365,
+   "close_price": 0.365,
+   "pnl": -0.52,
+   "why": "Elo 1715 vs 1766 on hard. Won 50% vs 50% of games lately. Form 7-3 vs 8-2. Head to head 1-0. Games played in last 3 days: 44 vs 44. Model 48%, blended with the market 40%, price 36%.",
+   "trend": -0.015,
+   "new_market": false,
+   "trust": 0.35,
+   "sharp_prob": null,
+   "research": "",
+   "sources": [],
+   "expert_lean": "none",
+   "graded": "2026-10-05T12:30:43.219115+00:00"
+  },
   {
    "id": "KXATPMATCH-26OCT05TSEMEJ-MEJ",
    "ticker": "KXATPMATCH-26OCT05TSEMEJ-MEJ",
@@ -18474,52 +18478,19 @@
    "sources": [],
    "expert_lean": "none",
    "graded": "2026-09-19T21:18:51.255269+00:00"
-  },
-  {
-   "id": "KXARGPREMDIVGAME-26SEP19GEMRIE-GEM",
-   "event": "KXARGPREMDIVGAME-26SEP19GEMRIE",
-   "sport": "Soccer",
-   "model_key": "soccer",
-   "tour": "Argentina Primera",
-   "tournament": "Mendoza vs Riestra",
-   "matchup": "Mendoza vs Riestra",
-   "surface": "",
-   "pick": "Mendoza to win",
-   "opponent": "",
-   "market": "Mendoza to win",
-   "price": 0.4,
-   "model_prob": 0.442,
-   "raw_prob": 0.485,
-   "edge": 0.025,
-   "tier": "W",
-   "units": 0.5,
-   "made": "2026-09-19T16:08:49.619994+00:00",
-   "expected_end": "2026-09-19T20:30:00+00:00",
-   "status": "loss",
-   "latest_price": 0.405,
-   "pnl": -0.52,
-   "why": "Ratings 1512 (Gimnasia Mendoza, home) vs 1462 (Dep. Riestra). Share of chances lately (xG or shots on target) 50% vs 50%. Goal difference last 6: +3 vs -3. Last played Sep 11 vs Sep 14. Model gives the home 48%. Blended with the market that's 42% vs a 40% price. Sharp sportsbook price (Pinnacle) says 40%.",
-   "start_est": "2026-09-19T18:00:00+00:00",
-   "close_price": 0.405,
-   "sharp_prob": 0.403,
-   "sharp_source": "Pinnacle",
-   "research": "",
-   "sources": [],
-   "expert_lean": "none",
-   "graded": "2026-09-19T20:16:45.442148+00:00"
   }
  ],
  "by_tour": {
   "ATP": {
-   "picks": 22,
-   "wins": 3,
-   "losses": 19,
-   "units": -19.22,
-   "staked": 24.0,
-   "roi": -0.801,
-   "beat_price": 0.227,
-   "clv": -0.0065,
-   "clv_picks": 20
+   "picks": 25,
+   "wins": 5,
+   "losses": 20,
+   "units": -17.61,
+   "staked": 25.5,
+   "roi": -0.691,
+   "beat_price": 0.2,
+   "clv": -0.0067,
+   "clv_picks": 23
   },
   "ATP Challenger": {
    "picks": 24,
@@ -18612,15 +18583,15 @@
    "clv_picks": 5
   },
   "Tennis": {
-   "picks": 68,
-   "wins": 25,
-   "losses": 43,
-   "units": 0.75,
-   "staked": 76.0,
-   "roi": 0.01,
-   "beat_price": 0.221,
-   "clv": -0.0041,
-   "clv_picks": 58
+   "picks": 71,
+   "wins": 27,
+   "losses": 44,
+   "units": 2.36,
+   "staked": 77.5,
+   "roi": 0.03,
+   "beat_price": 0.211,
+   "clv": -0.0043,
+   "clv_picks": 61
   }
  },
  "calibration": {
@@ -18629,12 +18600,12 @@
    "hit": 0.167
   },
   "30-40%": {
-   "n": 25,
-   "hit": 0.24
+   "n": 26,
+   "hit": 0.269
   },
   "40-50%": {
-   "n": 26,
-   "hit": 0.308
+   "n": 28,
+   "hit": 0.321
   },
   "50-60%": {
    "n": 14,
@@ -18989,6 +18960,18 @@
   {
    "t": "2026-10-05",
    "v": 95.07
+  },
+  {
+   "t": "2026-10-05",
+   "v": 94.55
+  },
+  {
+   "t": "2026-10-05",
+   "v": 95.54
+  },
+  {
+   "t": "2026-10-05",
+   "v": 96.68
   }
  ],
  "reports": [
