@@ -42,48 +42,6 @@
   "graded": "2026-09-22T02:22:48.863605+00:00"
  },
  {
-  "id": "PARLAY-202609210029-2",
-  "tier": "P",
-  "sport": "Parlay",
-  "kind": "watchlist",
-  "made": "2026-09-21T00:29:37.126268+00:00",
-  "units": 1.0,
-  "price": 0.136,
-  "model_prob": 0.1967,
-  "ev": 0.446,
-  "payout_units": 6.4,
-  "status": "loss",
-  "pnl": -1.0,
-  "legs": [
-   {
-    "id": "KXWTAMATCH-26SEP20VOLKAL-KAL",
-    "ticker": "KXWTAMATCH-26SEP20VOLKAL-KAL",
-    "side": "yes",
-    "market": "Elvina Kalieva to win",
-    "matchup": "2026 WTA Seoul",
-    "sport": "Tennis",
-    "price": 0.26,
-    "model_prob": 0.365,
-    "edge": 0.092,
-    "expected_end": "2026-09-21T06:00:00+00:00",
-    "result": "loss"
-   },
-   {
-    "id": "KXWTAMATCH-26SEP21HUNGAR-HUN",
-    "ticker": "KXWTAMATCH-26SEP21HUNGAR-HUN",
-    "side": "yes",
-    "market": "Storm Hunter to win",
-    "matchup": "2026 WTA Singapore",
-    "sport": "Tennis",
-    "price": 0.48,
-    "model_prob": 0.539,
-    "edge": 0.042,
-    "expected_end": "2026-09-21T14:40:00+00:00"
-   }
-  ],
-  "graded": "2026-09-21T05:21:48.943319+00:00"
- },
- {
   "id": "PARLAY-202609220029-1",
   "tier": "P",
   "sport": "Parlay",
@@ -1506,8 +1464,8 @@
   "model_prob": 0.2067,
   "ev": 0.348,
   "payout_units": 5.5,
-  "status": "pending",
-  "pnl": null,
+  "status": "loss",
+  "pnl": -1.0,
   "legs": [
    {
     "id": "KXATPMATCH-26OCT05ILABAS-ILA",
@@ -1531,8 +1489,10 @@
     "price": 0.44,
     "model_prob": 0.509,
     "edge": 0.051,
-    "expected_end": "2026-10-05T06:10:00+00:00"
+    "expected_end": "2026-10-05T06:10:00+00:00",
+    "result": "loss"
    }
-  ]
+  ],
+  "graded": "2026-10-05T05:29:14.407103+00:00"
  }
 ]
