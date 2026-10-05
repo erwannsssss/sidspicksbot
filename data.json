@@ -1,6 +1,6 @@
 {
- "updated": "2026-10-05T00:35:27.072155+00:00",
- "status_note": "Last run found 8 new pick(s) and graded 4.",
+ "updated": "2026-10-05T01:24:28.605701+00:00",
+ "status_note": "Last run found 1 new pick(s) and graded 0.",
  "bankroll": 94.26,
  "protection": {
   "bankroll": 94.26,
@@ -131,7 +131,8 @@
    "sharp_prob": null,
    "research": "",
    "sources": [],
-   "expert_lean": "none"
+   "expert_lean": "none",
+   "prechecked": true
   },
   {
    "id": "KXATPMATCH-26OCT05DAMKOT-KOT",
@@ -170,7 +171,8 @@
    "sharp_prob": null,
    "research": "",
    "sources": [],
-   "expert_lean": "none"
+   "expert_lean": "none",
+   "prechecked": true
   },
   {
    "id": "KXATPMATCH-26OCT05SONDOU-DOU",
@@ -209,7 +211,8 @@
    "sharp_prob": null,
    "research": "",
    "sources": [],
-   "expert_lean": "none"
+   "expert_lean": "none",
+   "prechecked": true
   },
   {
    "id": "KXATPMATCH-26OCT05ILABAS-ILA",
@@ -248,7 +251,8 @@
    "sharp_prob": null,
    "research": "",
    "sources": [],
-   "expert_lean": "none"
+   "expert_lean": "none",
+   "prechecked": true
   },
   {
    "id": "KXATPMATCH-26OCT05ATMTOM-TOM",
@@ -277,8 +281,8 @@
    "expected_end": "2026-10-05T07:00:00+00:00",
    "start_est": "2026-10-05T03:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.3,
-   "close_price": null,
+   "latest_price": 0.285,
+   "close_price": 0.285,
    "pnl": null,
    "why": "Elo 1629 vs 1548 on hard. Won 50% vs 50% of games lately. Form 7-3 vs 5-5. Games played in last 3 days: 22 vs 0. Travelled 1,070 vs 1,070 km since last match. Model 54%, blended with the market 38%, price 30%.",
    "trend": 0.0,
@@ -287,7 +291,8 @@
    "sharp_prob": null,
    "research": "",
    "sources": [],
-   "expert_lean": "none"
+   "expert_lean": "none",
+   "prechecked": true
   },
   {
    "id": "KXWTACHALLENGERMATCH-26OCT04IBRSRA-IBR",
@@ -316,8 +321,8 @@
    "expected_end": "2026-10-05T06:10:00+00:00",
    "start_est": "2026-10-05T02:10:00+00:00",
    "status": "pending",
-   "latest_price": 0.44,
-   "close_price": null,
+   "latest_price": 0.425,
+   "close_price": 0.425,
    "pnl": null,
    "why": "Elo 1577 vs 1466 on hard. Won 50% vs 50% of games lately. Form 7-3 vs 4-6. Head to head 1-0. Model 65%, blended with the market 51%, price 44%.",
    "trend": 0.008,
@@ -326,7 +331,8 @@
    "sharp_prob": null,
    "research": "",
    "sources": [],
-   "expert_lean": "none"
+   "expert_lean": "none",
+   "prechecked": true
   },
   {
    "id": "KXATPMATCH-26OCT05WONHEW-HEW",
@@ -355,8 +361,8 @@
    "expected_end": "2026-10-05T07:00:00+00:00",
    "start_est": "2026-10-05T03:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.22,
-   "close_price": null,
+   "latest_price": 0.205,
+   "close_price": 0.205,
    "pnl": null,
    "why": "Elo 1591 vs 1644 on hard. Won 50% vs 50% of games lately. Form 6-4 vs 7-3. Model 41%, blended with the market 28%, price 22%.",
    "trend": -0.007,
@@ -365,7 +371,8 @@
    "sharp_prob": null,
    "research": "",
    "sources": [],
-   "expert_lean": "none"
+   "expert_lean": "none",
+   "prechecked": true
   }
  ],
  "history": [
@@ -5195,7 +5202,7 @@
  "learning": {
   "groups": {
    "mlb:prop_hrr": {
-    "finished": 603,
+    "finished": 568,
     "games": 7,
     "trust": 0.25,
     "confidence_fix": false,
@@ -5687,11 +5694,11 @@
   },
   "price_trend": {
    "rising": {
-    "markets": 3600,
+    "markets": 3595,
     "hit_vs_price": 0.015
    },
    "falling": {
-    "markets": 3591,
+    "markets": 3586,
     "hit_vs_price": -0.014
    },
    "flat": {
@@ -5702,7 +5709,7 @@
  },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "tracker": {
-  "tracked": 135270,
+  "tracked": 135365,
   "series": 3958,
   "movers": [
    {
@@ -5929,31 +5936,31 @@
    "holdout": {
     "matches": 655,
     "rating_log_loss": 0.6304,
-    "model_log_loss": 0.6253,
+    "model_log_loss": 0.6252,
     "rating_accuracy": 0.65,
-    "model_accuracy": 0.641
+    "model_accuracy": 0.643
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6057,
-    "model_log_loss": 0.6253,
+    "model_log_loss": 0.6252,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 655
    },
    "backtest": {
-    "bets": 16,
-    "wins": 5,
-    "units": -9.2,
-    "roi": -0.316
+    "bets": 15,
+    "wins": 4,
+    "units": -12.0,
+    "roi": -0.429
    },
    "weights": {
     "home_field": 0.256,
-    "rating": 1.527,
-    "rest": 0.242,
-    "point_diff_form": 0.231,
-    "qb_change": 0.312,
-    "epa": 0.16
+    "rating": 1.53,
+    "rest": 0.238,
+    "point_diff_form": 0.229,
+    "qb_change": 0.326,
+    "epa": 0.158
    },
    "matches": 4413,
    "totals": {
@@ -6225,8 +6232,8 @@
    "expected_end": "2026-10-08T02:30:00+00:00",
    "start_est": "2026-10-07T23:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.53,
-   "close_price": 0.53,
+   "latest_price": 0.525,
+   "close_price": 0.525,
    "pnl": null,
    "why": "Projected score margin +10.4 (home) and total 52.5. Model gives \"Florida International wins by over 4.5 points\" 64%. Blended with the market that's 53% vs a 50% price.",
    "trend": 0.0,
@@ -6303,8 +6310,8 @@
    "expected_end": "2026-10-07T03:30:00+00:00",
    "start_est": "2026-10-07T00:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.335,
-   "close_price": 0.335,
+   "latest_price": 0.33,
+   "close_price": 0.33,
    "pnl": null,
    "why": "Expected goals 1.26 vs 1.85 (3.11 total). Model gives \"No: Both Teams To Score\" 40%. Blended with the market that's 34% vs a 33% price.",
    "trend": 0.0,
@@ -6538,8 +6545,8 @@
    "expected_end": "2026-10-09T02:30:00+00:00",
    "start_est": "2026-10-08T23:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.295,
-   "close_price": 0.295,
+   "latest_price": 0.285,
+   "close_price": 0.285,
    "pnl": null,
    "why": "Ratings 1633 vs 1633, on the road. Point differential last 5: +60 vs +26. Model gives South Florida 41%. Blended with the market that's 32% vs a 30% price. Sharp sportsbook price (Pinnacle) says 29%.",
    "trend": 0.0,
@@ -6617,8 +6624,8 @@
    "expected_end": "2026-10-05T07:00:00+00:00",
    "start_est": "2026-10-05T03:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.41,
-   "close_price": null,
+   "latest_price": 0.4,
+   "close_price": 0.4,
    "pnl": null,
    "why": "Elo 1548 vs 1591 on hard. Won 50% vs 50% of games lately. Form 4-6 vs 7-3. Travelled 12,966 vs 0 km since last match. Model 54%, blended with the market 45%, price 41%.",
    "trend": -0.004,
@@ -6656,8 +6663,8 @@
    "expected_end": "2026-10-05T07:00:00+00:00",
    "start_est": "2026-10-05T03:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.57,
-   "close_price": null,
+   "latest_price": 0.565,
+   "close_price": 0.565,
    "pnl": null,
    "why": "Elo 1694 vs 1524 on hard. Won 50% vs 50% of games lately. Form 5-5 vs 4-6. Travelled 1,760 vs 1,760 km since last match. Model 70%, blended with the market 61%, price 57%.",
    "trend": 0.003,
@@ -6695,8 +6702,8 @@
    "expected_end": "2026-10-05T12:00:00+00:00",
    "start_est": "2026-10-05T08:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.36,
-   "close_price": null,
+   "latest_price": 0.355,
+   "close_price": 0.355,
    "pnl": null,
    "why": "Elo 1715 vs 1766 on hard. Won 50% vs 50% of games lately. Form 7-3 vs 8-2. Head to head 1-0. Games played in last 3 days: 44 vs 44. Model 48%, blended with the market 40%, price 36%.",
    "trend": -0.015,
@@ -6734,11 +6741,50 @@
    "expected_end": "2026-10-08T02:00:00+00:00",
    "start_est": "2026-10-07T23:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.45,
-   "close_price": null,
+   "latest_price": 0.445,
+   "close_price": 0.445,
    "pnl": null,
    "why": "Projected score margin -5.4 (home) and total 51.8. Model gives \"Jacksonville St. wins by over 3.5 points\" 55%. Blended with the market that's 47% vs a 45% price. Price down 4\u00a2 in the last 12 hours.",
    "trend": -0.04,
+   "new_market": false,
+   "trust": 0.25,
+   "sharp_prob": null,
+   "research": "",
+   "sources": [],
+   "expert_lean": "none"
+  },
+  {
+   "id": "KXNCAAFSPREAD-26OCT08USAARST-USA3:no",
+   "ticker": "KXNCAAFSPREAD-26OCT08USAARST-USA3",
+   "side": "no",
+   "event": "KXNCAAFSPREAD-26OCT08USAARST",
+   "game": "26OCT08USAARST",
+   "sport": "Football",
+   "model_key": "cfb",
+   "mtype": "spread",
+   "line": 2.5,
+   "tour": "College Football",
+   "tournament": "South Alabama at Arkansas State",
+   "matchup": "South Alabama at Arkansas State",
+   "surface": "",
+   "pick": "No: South Alabama wins by over 2.5 points",
+   "opponent": "",
+   "market": "No: South Alabama wins by over 2.5 points",
+   "price": 0.55,
+   "model_prob": 0.591,
+   "raw_prob": 0.638,
+   "edge": 0.024,
+   "tier": "W",
+   "units": 0.5,
+   "made": "2026-10-05T01:22:31.993748+00:00",
+   "expected_end": "2026-10-09T02:30:00+00:00",
+   "start_est": "2026-10-08T23:30:00+00:00",
+   "status": "pending",
+   "latest_price": 0.55,
+   "close_price": null,
+   "pnl": null,
+   "why": "Projected score margin +3.1 (home) and total 57.8. Model gives \"No: South Alabama wins by over 2.5 points\" 64%. Blended with the market that's 57% vs a 55% price.",
+   "trend": -0.015,
    "new_market": false,
    "trust": 0.25,
    "sharp_prob": null,
