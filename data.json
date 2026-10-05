@@ -1,6 +1,6 @@
 {
- "updated": "2026-10-05T16:27:42.793313+00:00",
- "status_note": "Last run found 2 new pick(s) and graded 0.",
+ "updated": "2026-10-05T17:24:48.706422+00:00",
+ "status_note": "Last run found 1 new pick(s) and graded 0.",
  "bankroll": 96.15,
  "protection": {
   "bankroll": 96.15,
@@ -160,13 +160,52 @@
    "expected_end": "2026-10-06T06:00:00+00:00",
    "start_est": "2026-10-06T02:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.2,
-   "close_price": null,
+   "latest_price": 0.185,
+   "close_price": 0.185,
    "pnl": null,
    "why": "Elo 1635 vs 1705 on hard. Won 50% vs 50% of games lately. Form 6-4 vs 7-3. Games played in last 3 days: 44 vs 44. Model 43%, blended with the market 29%, price 20%.",
    "trend": 0.019,
    "new_market": false,
    "trust": 0.43,
+   "sharp_prob": null,
+   "research": "",
+   "sources": [],
+   "expert_lean": "none"
+  },
+  {
+   "id": "KXWTAMATCH-26OCT05CHAZHE-CHA",
+   "ticker": "KXWTAMATCH-26OCT05CHAZHE-CHA",
+   "side": "yes",
+   "event": "KXWTAMATCH-26OCT05CHAZHE",
+   "game": "26OCT05CHAZHE",
+   "sport": "Tennis",
+   "model_key": "tennis",
+   "mtype": "winner",
+   "line": null,
+   "tour": "WTA",
+   "tournament": "2026 WTA Beijing",
+   "matchup": "2026 WTA Beijing",
+   "surface": "hard",
+   "pick": "Alina Charaeva",
+   "opponent": "Qinwen Zheng",
+   "market": "Alina Charaeva to win",
+   "price": 0.22,
+   "model_prob": 0.324,
+   "raw_prob": 0.44,
+   "edge": 0.092,
+   "tier": "A",
+   "units": 0.5,
+   "made": "2026-10-05T17:22:34.720399+00:00",
+   "expected_end": "2026-10-06T06:00:00+00:00",
+   "start_est": "2026-10-06T02:00:00+00:00",
+   "status": "pending",
+   "latest_price": 0.22,
+   "close_price": null,
+   "pnl": null,
+   "why": "Elo 1644 vs 1706 on hard. Won 50% vs 50% of games lately. Form 6-4 vs 8-2. Games played in last 3 days: 44 vs 44. Model 44%, blended with the market 32%, price 22%.",
+   "trend": 0.01,
+   "new_market": false,
+   "trust": 0.48,
    "sharp_prob": null,
    "research": "",
    "sources": [],
@@ -5248,7 +5287,7 @@
  "learning": {
   "groups": {
    "cfb:total_1h": {
-    "finished": 1466,
+    "finished": 1462,
     "games": 53,
     "trust": 0.25,
     "confidence_fix": false,
@@ -5353,9 +5392,9 @@
     "last": "2026-10-03T21:30:00+00:00"
    },
    "tennis:winner": {
-    "finished": 374,
-    "games": 187,
-    "trust": 0.31,
+    "finished": 376,
+    "games": 188,
+    "trust": 0.38,
     "confidence_fix": false,
     "last": "2026-10-05T13:10:00+00:00"
    },
@@ -5740,7 +5779,7 @@
   },
   "price_trend": {
    "flat": {
-    "markets": 27681,
+    "markets": 27679,
     "hit_vs_price": -0.0
    },
    "rising": {
@@ -5755,7 +5794,7 @@
  },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "tracker": {
-  "tracked": 138777,
+  "tracked": 138810,
   "series": 3952,
   "movers": [
    {
@@ -5807,28 +5846,12 @@
     "close": "2026-10-06T03:59:00+00:00"
    },
    {
-    "ticker": "KXABAGAME-26OCT031300BOSSPS-SPS",
-    "series": "KXABAGAME",
-    "title": "Spartak Subotica",
-    "move": -0.71,
-    "price": 0.005,
-    "close": "2026-10-05T17:00:00+00:00"
-   },
-   {
     "ticker": "KXNFLFFWEEKTOP-2026W4RBT5-JWILLIAMS33",
     "series": "KXNFLFFWEEKTOP",
     "title": "Javonte Williams",
     "move": 0.705,
     "price": 0.85,
     "close": "2026-10-06T03:59:00+00:00"
-   },
-   {
-    "ticker": "KXABAGAME-26OCT031300BOSSPS-BOS",
-    "series": "KXABAGAME",
-    "title": "KK Bosna Royal Sarajevo",
-    "move": 0.695,
-    "price": 0.995,
-    "close": "2026-10-05T17:00:00+00:00"
    },
    {
     "ticker": "KXNFLFFWEEKTOP-2026W4QBT5-CSTROUD7",
@@ -5877,18 +5900,34 @@
     "move": 0.6,
     "price": 0.85,
     "close": "2026-10-06T03:59:00+00:00"
+   },
+   {
+    "ticker": "KXARGNACBGAME-26OCT03CATGEJ-CAT",
+    "series": "KXARGNACBGAME",
+    "title": "Temperley",
+    "move": 0.54,
+    "price": 0.995,
+    "close": "2026-10-05T18:00:00+00:00"
+   },
+   {
+    "ticker": "KXT20MATCH-26OCT041100GBRSLISSG2NDXI-LISSG2NDXI",
+    "series": "KXT20MATCH",
+    "title": "Lisbon Super Giants 2nd XI",
+    "move": 0.52,
+    "price": 0.995,
+    "close": "2026-10-06T19:00:00+00:00"
    }
   ]
  },
  "models": {
   "tennis": {
-   "matches": 20730,
-   "training_rows": 14341,
+   "matches": 20732,
+   "training_rows": 14343,
    "holdout": {
     "from": "2026-08-31",
     "matches": 2152,
-    "elo_log_loss": 0.6528,
-    "model_log_loss": 0.6476,
+    "elo_log_loss": 0.6526,
+    "model_log_loss": 0.6474,
     "elo_accuracy": 0.616,
     "model_accuracy": 0.626
    },
@@ -5897,11 +5936,11 @@
     "elo": 2.077,
     "dominance": 0.0,
     "rank": 0.0,
-    "h2h": 0.472,
-    "form": -0.584,
+    "h2h": 0.475,
+    "form": -0.585,
     "fatigue_games": -0.215,
     "fatigue_matches": 0.086,
-    "rest": 0.014,
+    "rest": 0.015,
     "travel": 0.146,
     "altitude": 0.0,
     "best_of_5": 0.561
@@ -5982,31 +6021,31 @@
    "holdout": {
     "matches": 657,
     "rating_log_loss": 0.6257,
-    "model_log_loss": 0.6231,
+    "model_log_loss": 0.6235,
     "rating_accuracy": 0.656,
-    "model_accuracy": 0.645
+    "model_accuracy": 0.648
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6051,
-    "model_log_loss": 0.6231,
+    "model_log_loss": 0.6235,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 657
    },
    "backtest": {
-    "bets": 16,
-    "wins": 6,
-    "units": -3.0,
-    "roi": -0.11
+    "bets": 15,
+    "wins": 4,
+    "units": -10.5,
+    "roi": -0.397
    },
    "weights": {
     "home_field": 0.255,
-    "rating": 1.527,
+    "rating": 1.523,
     "rest": 0.244,
-    "point_diff_form": 0.249,
-    "qb_change": 0.283,
-    "epa": 0.154
+    "point_diff_form": 0.238,
+    "qb_change": 0.307,
+    "epa": 0.16
    },
    "matches": 4426,
    "totals": {
@@ -6278,8 +6317,8 @@
    "expected_end": "2026-10-07T03:30:00+00:00",
    "start_est": "2026-10-07T00:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.335,
-   "close_price": 0.335,
+   "latest_price": 0.33,
+   "close_price": 0.33,
    "pnl": null,
    "why": "Expected goals 1.26 vs 1.85 (3.11 total). Model gives \"No: Both Teams To Score\" 40%. Blended with the market that's 34% vs a 33% price.",
    "trend": 0.0,
@@ -6317,8 +6356,8 @@
    "expected_end": "2026-10-06T00:00:00+00:00",
    "start_est": "2026-10-05T21:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.55,
-   "close_price": 0.55,
+   "latest_price": 0.545,
+   "close_price": 0.545,
    "pnl": null,
    "why": "Munetaka Murakami: 1.99 a game this season over 127 games (adjusted 2.01). Model gives \"Munetaka Murakami: 1+\" 87%. Blended with the market that's 63% vs a 56% price.",
    "trend": 0.0,
@@ -6395,8 +6434,8 @@
    "expected_end": "2026-10-06T01:00:00+00:00",
    "start_est": "2026-10-05T22:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.505,
-   "close_price": 0.505,
+   "latest_price": 0.495,
+   "close_price": 0.495,
    "pnl": null,
    "why": "Ratings 1590 (Velez Sarsfield, home) vs 1410 (Platense). Share of chances lately (xG or shots on target) 50% vs 50%. Goal difference last 6: +2 vs -2. Last played Sep 21 vs Sep 20. Model gives the home 62%. Blended with the market that's 53% vs a 51% price. Sharp sportsbook price (Pinnacle) says 50%.",
    "trend": -0.005,
@@ -6474,8 +6513,8 @@
    "expected_end": "2026-10-09T03:15:00+00:00",
    "start_est": "2026-10-09T00:15:00+00:00",
    "status": "pending",
-   "latest_price": 0.365,
-   "close_price": 0.365,
+   "latest_price": 0.38,
+   "close_price": 0.38,
    "pnl": null,
    "why": "Projected score margin +5.5 (home) and total 49.0. Forecast 81F, wind 6 mph, rain 0.2 mm. Model gives \"No: DAL Cowboys wins by over 6.5 points\" 53%. Blended with the market that's 44% vs a 38% price.",
    "trend": 0.0,
@@ -6670,8 +6709,8 @@
    "expected_end": "2026-10-06T01:00:00+00:00",
    "start_est": "2026-10-05T22:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.89,
-   "close_price": null,
+   "latest_price": 0.87,
+   "close_price": 0.87,
    "pnl": null,
    "why": "Expected goals 1.03 vs 1.12 (2.16 total). Model gives \"No: Estudiantes La Plata wins by more than 2.5 goals\" 96%. Blended with the market that's 91% vs a 89% price.",
    "trend": 0.0,
