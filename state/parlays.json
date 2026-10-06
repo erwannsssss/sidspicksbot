@@ -1,47 +1,5 @@
 [
  {
-  "id": "PARLAY-202609210029-1",
-  "tier": "P",
-  "sport": "Parlay",
-  "kind": "watchlist",
-  "made": "2026-09-21T00:29:37.126232+00:00",
-  "units": 1.0,
-  "price": 0.2218,
-  "model_prob": 0.3353,
-  "ev": 0.512,
-  "payout_units": 3.5,
-  "status": "loss",
-  "pnl": -1.0,
-  "legs": [
-   {
-    "id": "KXNFLREC-26SEP21NYGLAR-LARDADAMS17-5:no",
-    "ticker": "KXNFLREC-26SEP21NYGLAR-LARDADAMS17-5",
-    "side": "no",
-    "market": "Davante Adams: under 5",
-    "matchup": "NYG at LA",
-    "sport": "Football",
-    "price": 0.42,
-    "model_prob": 0.547,
-    "edge": 0.11,
-    "expected_end": "2026-09-22T06:15:00+00:00",
-    "result": "loss"
-   },
-   {
-    "id": "KXWTAMATCH-26SEP20CHAKEN-CHA",
-    "ticker": "KXWTAMATCH-26SEP20CHAKEN-CHA",
-    "side": "yes",
-    "market": "Alina Charaeva to win",
-    "matchup": "2026 WTA Seoul",
-    "sport": "Tennis",
-    "price": 0.49,
-    "model_prob": 0.613,
-    "edge": 0.106,
-    "expected_end": "2026-09-21T06:00:00+00:00"
-   }
-  ],
-  "graded": "2026-09-22T02:22:48.863605+00:00"
- },
- {
   "id": "PARLAY-202609220029-1",
   "tier": "P",
   "sport": "Parlay",
