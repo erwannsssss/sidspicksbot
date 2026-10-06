@@ -1,6 +1,6 @@
 {
- "updated": "2026-10-06T04:26:40.259669+00:00",
- "status_note": "Last run found 0 new pick(s) and graded 1.",
+ "updated": "2026-10-06T05:25:10.621904+00:00",
+ "status_note": "Last run found 0 new pick(s) and graded 0.",
  "bankroll": 96.15,
  "protection": {
   "bankroll": 96.15,
@@ -5410,7 +5410,7 @@
  "learning": {
   "groups": {
    "cfb:spread_1h": {
-    "finished": 1860,
+    "finished": 1844,
     "games": 46,
     "trust": 0.25,
     "confidence_fix": false,
@@ -5881,22 +5881,22 @@
   },
   "price_trend": {
    "falling": {
-    "markets": 3379,
+    "markets": 3377,
     "hit_vs_price": -0.014
    },
    "flat": {
-    "markets": 27080,
+    "markets": 27068,
     "hit_vs_price": -0.0
    },
    "rising": {
-    "markets": 3384,
+    "markets": 3382,
     "hit_vs_price": 0.016
    }
   }
  },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "tracker": {
-  "tracked": 140788,
+  "tracked": 140794,
   "series": 3982,
   "movers": [
    {
@@ -6023,29 +6023,29 @@
  },
  "models": {
   "tennis": {
-   "matches": 20746,
-   "training_rows": 14357,
+   "matches": 20747,
+   "training_rows": 14358,
    "holdout": {
     "from": "2026-08-31",
     "matches": 2154,
-    "elo_log_loss": 0.6528,
-    "model_log_loss": 0.6471,
+    "elo_log_loss": 0.6531,
+    "model_log_loss": 0.6472,
     "elo_accuracy": 0.615,
     "model_accuracy": 0.626
    },
    "using": "full",
    "weights": {
-    "elo": 2.073,
+    "elo": 2.072,
     "dominance": 0.0,
     "rank": 0.0,
     "h2h": 0.473,
     "form": -0.591,
-    "fatigue_games": -0.217,
-    "fatigue_matches": 0.088,
-    "rest": 0.013,
+    "fatigue_games": -0.218,
+    "fatigue_matches": 0.089,
+    "rest": 0.014,
     "travel": 0.146,
     "altitude": 0.0,
-    "best_of_5": 0.566
+    "best_of_5": 0.567
    },
    "sport": "Tennis",
    "label": "Tennis",
@@ -6123,14 +6123,14 @@
    "holdout": {
     "matches": 657,
     "rating_log_loss": 0.6257,
-    "model_log_loss": 0.6224,
+    "model_log_loss": 0.6245,
     "rating_accuracy": 0.656,
-    "model_accuracy": 0.651
+    "model_accuracy": 0.647
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6051,
-    "model_log_loss": 0.6224,
+    "model_log_loss": 0.6245,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 657
@@ -6138,16 +6138,16 @@
    "backtest": {
     "bets": 15,
     "wins": 5,
-    "units": -5.7,
-    "roi": -0.222
+    "units": -5.4,
+    "roi": -0.206
    },
    "weights": {
-    "home_field": 0.253,
-    "rating": 1.528,
-    "rest": 0.243,
+    "home_field": 0.255,
+    "rating": 1.519,
+    "rest": 0.247,
     "point_diff_form": 0.244,
-    "qb_change": 0.285,
-    "epa": 0.155
+    "qb_change": 0.305,
+    "epa": 0.158
    },
    "matches": 4426,
    "totals": {
@@ -6210,15 +6210,15 @@
    "clv_picks": 75
   },
   "week": {
-   "picks": 36,
-   "wins": 15,
+   "picks": 35,
+   "wins": 14,
    "losses": 21,
-   "units": 2.59,
-   "staked": 25.5,
-   "roi": 0.102,
-   "beat_price": 0.167,
+   "units": 1.9,
+   "staked": 24.5,
+   "roi": 0.078,
+   "beat_price": 0.171,
    "clv": -0.0047,
-   "clv_picks": 30
+   "clv_picks": 29
   },
   "yours": {
    "picks": 15,
