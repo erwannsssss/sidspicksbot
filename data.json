@@ -1,6 +1,6 @@
 {
- "updated": "2026-10-06T13:27:35.734525+00:00",
- "status_note": "Last run found 1 new pick(s) and graded 0.",
+ "updated": "2026-10-06T14:27:28.209854+00:00",
+ "status_note": "Last run found 0 new pick(s) and graded 0.",
  "bankroll": 96.55,
  "protection": {
   "bankroll": 96.55,
@@ -5329,47 +5329,47 @@
  },
  "learning": {
   "groups": {
-   "cfb:total": {
-    "finished": 2819,
-    "games": 97,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-04T03:59:00+00:00"
-   },
    "cfb:winner": {
-    "finished": 164,
-    "games": 82,
+    "finished": 161,
+    "games": 81,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-10-04T03:59:00+00:00"
    },
    "cfb:spread_1h": {
-    "finished": 1789,
+    "finished": 1753,
     "games": 45,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-10-04T03:59:00+00:00"
    },
    "cfb:total_1h": {
-    "finished": 1170,
-    "games": 43,
+    "finished": 1142,
+    "games": 42,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-10-04T03:59:00+00:00"
    },
    "cfb:spread": {
-    "finished": 3786,
+    "finished": 3728,
     "games": 96,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-10-04T03:59:00+00:00"
    },
    "cfb:team_total": {
-    "finished": 1902,
+    "finished": 1858,
     "games": 44,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-10-04T03:00:00+00:00"
+   },
+   "cfb:total": {
+    "finished": 2756,
+    "games": 95,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-04T03:59:00+00:00"
    },
    "cfb:period_winner_1q": {
     "finished": 124,
@@ -5463,8 +5463,8 @@
     "last": "2026-10-04T03:00:00+00:00"
    },
    "tennis:winner": {
-    "finished": 290,
-    "games": 145,
+    "finished": 292,
+    "games": 146,
     "trust": 0.38,
     "confidence_fix": false,
     "last": "2026-10-06T10:00:00+00:00"
@@ -5801,22 +5801,22 @@
   },
   "price_trend": {
    "flat": {
-    "markets": 26801,
+    "markets": 26581,
     "hit_vs_price": -0.0
    },
-   "falling": {
-    "markets": 3357,
-    "hit_vs_price": -0.011
-   },
    "rising": {
-    "markets": 3369,
-    "hit_vs_price": 0.014
+    "markets": 3365,
+    "hit_vs_price": 0.013
+   },
+   "falling": {
+    "markets": 3351,
+    "hit_vs_price": -0.01
    }
   }
  },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "tracker": {
-  "tracked": 141071,
+  "tracked": 141174,
   "series": 3982,
   "movers": [
    {
@@ -5943,29 +5943,29 @@
  },
  "models": {
   "tennis": {
-   "matches": 20791,
-   "training_rows": 14399,
+   "matches": 20792,
+   "training_rows": 14400,
    "holdout": {
     "from": "2026-09-01",
     "matches": 2160,
-    "elo_log_loss": 0.6545,
-    "model_log_loss": 0.6484,
+    "elo_log_loss": 0.6546,
+    "model_log_loss": 0.6485,
     "elo_accuracy": 0.613,
     "model_accuracy": 0.625
    },
    "using": "full",
    "weights": {
-    "elo": 2.078,
+    "elo": 2.077,
     "dominance": 0.0,
     "rank": 0.0,
     "h2h": 0.484,
-    "form": -0.602,
+    "form": -0.6,
     "fatigue_games": -0.219,
     "fatigue_matches": 0.089,
     "rest": 0.013,
     "travel": 0.145,
     "altitude": 0.0,
-    "best_of_5": 0.565
+    "best_of_5": 0.564
    },
    "sport": "Tennis",
    "label": "Tennis",
@@ -6043,31 +6043,31 @@
    "holdout": {
     "matches": 657,
     "rating_log_loss": 0.6263,
-    "model_log_loss": 0.623,
+    "model_log_loss": 0.6232,
     "rating_accuracy": 0.654,
-    "model_accuracy": 0.644
+    "model_accuracy": 0.647
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6055,
-    "model_log_loss": 0.623,
+    "model_log_loss": 0.6232,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 657
    },
    "backtest": {
-    "bets": 15,
-    "wins": 5,
-    "units": -4.6,
-    "roi": -0.178
+    "bets": 14,
+    "wins": 4,
+    "units": -7.4,
+    "roi": -0.297
    },
    "weights": {
     "home_field": 0.254,
-    "rating": 1.527,
-    "rest": 0.243,
-    "point_diff_form": 0.246,
-    "qb_change": 0.27,
-    "epa": 0.158
+    "rating": 1.531,
+    "rest": 0.247,
+    "point_diff_form": 0.239,
+    "qb_change": 0.34,
+    "epa": 0.15
    },
    "matches": 4427,
    "totals": {
@@ -6613,8 +6613,8 @@
    "expected_end": "2026-10-07T01:00:00+00:00",
    "start_est": "2026-10-06T22:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.45,
-   "close_price": 0.45,
+   "latest_price": 0.455,
+   "close_price": 0.455,
    "pnl": null,
    "why": "Mookie Betts: 2.14 a game this season over 123 games (adjusted 2.13). Model gives \"Mookie Betts: 2+\" 63%. Blended with the market that's 49% vs a 45% price.",
    "trend": -0.01,
@@ -6929,8 +6929,8 @@
    "expected_end": "2026-10-07T23:00:00+00:00",
    "start_est": "2026-10-07T20:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.52,
-   "close_price": null,
+   "latest_price": 0.525,
+   "close_price": 0.525,
    "pnl": null,
    "why": "Projected runs 5.4 (home) vs 4.9 (10.3 total). Park factor 1.00. Forecast 71F, wind 4 mph. Model gives \"Over 7.5 runs scored\" 69%. Blended with the market that's 56% vs a 52% price. Sharp sportsbook price (Pinnacle) says 52%.",
    "trend": 0.0,
