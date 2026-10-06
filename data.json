@@ -1,6 +1,6 @@
 {
- "updated": "2026-10-06T18:27:55.606858+00:00",
- "status_note": "Last run found 1 new pick(s) and graded 0.",
+ "updated": "2026-10-06T19:23:46.262944+00:00",
+ "status_note": "Last run found 0 new pick(s) and graded 0.",
  "bankroll": 96.55,
  "protection": {
   "bankroll": 96.55,
@@ -5408,30 +5408,16 @@
  },
  "learning": {
   "groups": {
-   "cfb:total": {
-    "finished": 1573,
-    "games": 55,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-04T03:59:00+00:00"
-   },
-   "cfb:team_total": {
-    "finished": 1042,
-    "games": 26,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-04T03:00:00+00:00"
-   },
-   "cfb:spread_1h": {
-    "finished": 978,
-    "games": 24,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-04T03:59:00+00:00"
-   },
    "cfb:spread": {
-    "finished": 2120,
-    "games": 55,
+    "finished": 2021,
+    "games": 52,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-04T03:59:00+00:00"
+   },
+   "cfb:total": {
+    "finished": 1530,
+    "games": 53,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-10-04T03:59:00+00:00"
@@ -5527,9 +5513,23 @@
     "confidence_fix": false,
     "last": "2026-10-04T03:00:00+00:00"
    },
+   "cfb:team_total": {
+    "finished": 1034,
+    "games": 25,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-04T03:00:00+00:00"
+   },
    "cfb:winner": {
     "finished": 88,
     "games": 44,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-04T03:59:00+00:00"
+   },
+   "cfb:spread_1h": {
+    "finished": 974,
+    "games": 23,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-10-04T03:59:00+00:00"
@@ -5689,8 +5689,8 @@
     "last": "2026-10-03T21:30:00+00:00"
    },
    "tennis:winner": {
-    "finished": 322,
-    "games": 161,
+    "finished": 324,
+    "games": 162,
     "trust": 0.28,
     "confidence_fix": false,
     "last": "2026-10-06T15:00:00+00:00"
@@ -5879,33 +5879,25 @@
    }
   },
   "price_trend": {
-   "flat": {
-    "markets": 20860,
-    "hit_vs_price": -0.001
+   "rising": {
+    "markets": 2560,
+    "hit_vs_price": 0.025
    },
    "falling": {
-    "markets": 2576,
-    "hit_vs_price": -0.019
+    "markets": 2543,
+    "hit_vs_price": -0.02
    },
-   "rising": {
-    "markets": 2594,
-    "hit_vs_price": 0.023
+   "flat": {
+    "markets": 20775,
+    "hit_vs_price": -0.001
    }
   }
  },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "tracker": {
-  "tracked": 142161,
+  "tracked": 142272,
   "series": 3982,
   "movers": [
-   {
-    "ticker": "KXT20MATCH-26OCT041100GBRSLISSG2NDXI-LISSG2NDXI",
-    "series": "KXT20MATCH",
-    "title": "Lisbon Super Giants 2nd XI",
-    "move": 0.52,
-    "price": 0.995,
-    "close": "2026-10-06T19:00:00+00:00"
-   },
    {
     "ticker": "KXINTLFRIENDLYTOTAL-26OCT06DZANIG-1",
     "series": "KXINTLFRIENDLYTOTAL",
@@ -6017,34 +6009,42 @@
     "move": -0.49,
     "price": 0.01,
     "close": "2026-10-08T11:35:00+00:00"
+   },
+   {
+    "ticker": "KXKBOGAME-26OCT060530SSGHAN-HAN",
+    "series": "KXKBOGAME",
+    "title": "Hanwha Eagles",
+    "move": 0.49,
+    "price": 0.995,
+    "close": "2026-10-08T09:30:00+00:00"
    }
   ]
  },
  "models": {
   "tennis": {
-   "matches": 20811,
-   "training_rows": 14416,
+   "matches": 20813,
+   "training_rows": 14418,
    "holdout": {
     "from": "2026-09-01",
     "matches": 2163,
-    "elo_log_loss": 0.656,
-    "model_log_loss": 0.6491,
-    "elo_accuracy": 0.61,
+    "elo_log_loss": 0.6561,
+    "model_log_loss": 0.6489,
+    "elo_accuracy": 0.609,
     "model_accuracy": 0.625
    },
    "using": "full",
    "weights": {
-    "elo": 2.071,
+    "elo": 2.072,
     "dominance": 0.0,
     "rank": 0.0,
-    "h2h": 0.476,
-    "form": -0.59,
-    "fatigue_games": -0.221,
+    "h2h": 0.478,
+    "form": -0.593,
+    "fatigue_games": -0.222,
     "fatigue_matches": 0.093,
     "rest": 0.014,
     "travel": 0.146,
     "altitude": 0.0,
-    "best_of_5": 0.567
+    "best_of_5": 0.566
    },
    "sport": "Tennis",
    "label": "Tennis",
@@ -6122,14 +6122,14 @@
    "holdout": {
     "matches": 657,
     "rating_log_loss": 0.6263,
-    "model_log_loss": 0.6225,
+    "model_log_loss": 0.6234,
     "rating_accuracy": 0.654,
-    "model_accuracy": 0.645
+    "model_accuracy": 0.648
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6055,
-    "model_log_loss": 0.6225,
+    "model_log_loss": 0.6234,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 657
@@ -6137,16 +6137,16 @@
    "backtest": {
     "bets": 16,
     "wins": 6,
-    "units": -1.5,
-    "roi": -0.054
+    "units": -3.0,
+    "roi": -0.11
    },
    "weights": {
-    "home_field": 0.255,
-    "rating": 1.53,
-    "rest": 0.249,
-    "point_diff_form": 0.247,
-    "qb_change": 0.265,
-    "epa": 0.155
+    "home_field": 0.254,
+    "rating": 1.536,
+    "rest": 0.244,
+    "point_diff_form": 0.246,
+    "qb_change": 0.279,
+    "epa": 0.153
    },
    "matches": 4427,
    "totals": {
@@ -6614,8 +6614,8 @@
    "expected_end": "2026-10-07T04:30:00+00:00",
    "start_est": "2026-10-07T01:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.195,
-   "close_price": 0.195,
+   "latest_price": 0.19,
+   "close_price": 0.19,
    "pnl": null,
    "why": "Dustin May: 4.65 a game this season over 31 games (adjusted 4.72). Model gives \"Dustin May: 5+\" 49%. Blended with the market that's 28% vs a 21% price.",
    "trend": 0.0,
@@ -7442,8 +7442,8 @@
    "expected_end": "2026-10-07T03:00:00+00:00",
    "start_est": "2026-10-07T00:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.24,
-   "close_price": null,
+   "latest_price": 0.235,
+   "close_price": 0.235,
    "pnl": null,
    "why": "Projected score margin +11.5 (home) and total 50.7. Model gives \"Southern Miss under 13.5 points\" 31%. Blended with the market that's 25% vs a 24% price. Price down 2\u00a2 in the last 12 hours.",
    "trend": -0.02,
