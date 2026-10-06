@@ -16223,10 +16223,10 @@
   "made": "2026-10-05T21:32:26.323992+00:00",
   "expected_end": "2026-10-06T07:00:00+00:00",
   "start_est": "2026-10-06T03:00:00+00:00",
-  "status": "pending",
+  "status": "loss",
   "latest_price": 0.425,
   "close_price": 0.425,
-  "pnl": null,
+  "pnl": -0.52,
   "why": "Elo 1614 vs 1533 on hard. Won 50% vs 50% of games lately. Form 5-5 vs 6-4. Games played in last 3 days: 22 vs 22. Model 61%, blended with the market 50%, price 43%.",
   "trend": -0.016,
   "new_market": false,
@@ -16235,7 +16235,8 @@
   "research": "",
   "sources": [],
   "expert_lean": "none",
-  "prechecked": true
+  "prechecked": true,
+  "graded": "2026-10-06T07:24:41.475569+00:00"
  },
  {
   "id": "KXNCAAFTEAMTOTAL-26OCT09FSULOU-FSU28:no",
