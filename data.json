@@ -1,6 +1,6 @@
 {
- "updated": "2026-10-06T12:32:02.777314+00:00",
- "status_note": "Last run found 0 new pick(s) and graded 3.",
+ "updated": "2026-10-06T13:27:35.734525+00:00",
+ "status_note": "Last run found 1 new pick(s) and graded 0.",
  "bankroll": 96.55,
  "protection": {
   "bankroll": 96.55,
@@ -5329,22 +5329,8 @@
  },
  "learning": {
   "groups": {
-   "cfb:spread": {
-    "finished": 3795,
-    "games": 97,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-04T03:59:00+00:00"
-   },
-   "cfb:team_total": {
-    "finished": 1944,
-    "games": 45,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-04T03:00:00+00:00"
-   },
    "cfb:total": {
-    "finished": 2832,
+    "finished": 2819,
     "games": 97,
     "trust": 0.25,
     "confidence_fix": false,
@@ -5370,6 +5356,20 @@
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-10-04T03:59:00+00:00"
+   },
+   "cfb:spread": {
+    "finished": 3786,
+    "games": 96,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-04T03:59:00+00:00"
+   },
+   "cfb:team_total": {
+    "finished": 1902,
+    "games": 44,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-04T03:00:00+00:00"
    },
    "cfb:period_winner_1q": {
     "finished": 124,
@@ -5463,11 +5463,11 @@
     "last": "2026-10-04T03:00:00+00:00"
    },
    "tennis:winner": {
-    "finished": 284,
-    "games": 142,
+    "finished": 290,
+    "games": 145,
     "trust": 0.38,
     "confidence_fix": false,
-    "last": "2026-10-06T08:10:00+00:00"
+    "last": "2026-10-06T10:00:00+00:00"
    },
    "mlb:winner": {
     "finished": 16,
@@ -5801,7 +5801,7 @@
   },
   "price_trend": {
    "flat": {
-    "markets": 26859,
+    "markets": 26801,
     "hit_vs_price": -0.0
    },
    "falling": {
@@ -5943,29 +5943,29 @@
  },
  "models": {
   "tennis": {
-   "matches": 20786,
-   "training_rows": 14395,
+   "matches": 20791,
+   "training_rows": 14399,
    "holdout": {
     "from": "2026-09-01",
     "matches": 2160,
-    "elo_log_loss": 0.6544,
-    "model_log_loss": 0.6486,
+    "elo_log_loss": 0.6545,
+    "model_log_loss": 0.6484,
     "elo_accuracy": 0.613,
     "model_accuracy": 0.625
    },
    "using": "full",
    "weights": {
-    "elo": 2.077,
+    "elo": 2.078,
     "dominance": 0.0,
     "rank": 0.0,
-    "h2h": 0.482,
-    "form": -0.6,
-    "fatigue_games": -0.218,
-    "fatigue_matches": 0.088,
+    "h2h": 0.484,
+    "form": -0.602,
+    "fatigue_games": -0.219,
+    "fatigue_matches": 0.089,
     "rest": 0.013,
     "travel": 0.145,
     "altitude": 0.0,
-    "best_of_5": 0.566
+    "best_of_5": 0.565
    },
    "sport": "Tennis",
    "label": "Tennis",
@@ -6043,14 +6043,14 @@
    "holdout": {
     "matches": 657,
     "rating_log_loss": 0.6263,
-    "model_log_loss": 0.6242,
+    "model_log_loss": 0.623,
     "rating_accuracy": 0.654,
     "model_accuracy": 0.644
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6055,
-    "model_log_loss": 0.6242,
+    "model_log_loss": 0.623,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 657
@@ -6058,16 +6058,16 @@
    "backtest": {
     "bets": 15,
     "wins": 5,
-    "units": -6.2,
-    "roi": -0.237
+    "units": -4.6,
+    "roi": -0.178
    },
    "weights": {
     "home_field": 0.254,
-    "rating": 1.532,
+    "rating": 1.527,
     "rest": 0.243,
-    "point_diff_form": 0.248,
-    "qb_change": 0.277,
-    "epa": 0.154
+    "point_diff_form": 0.246,
+    "qb_change": 0.27,
+    "epa": 0.158
    },
    "matches": 4427,
    "totals": {
@@ -6300,8 +6300,8 @@
    "expected_end": "2026-10-07T03:30:00+00:00",
    "start_est": "2026-10-07T00:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.325,
-   "close_price": 0.325,
+   "latest_price": 0.305,
+   "close_price": 0.305,
    "pnl": null,
    "why": "Expected goals 1.26 vs 1.85 (3.11 total). Model gives \"No: Both Teams To Score\" 40%. Blended with the market that's 34% vs a 33% price.",
    "trend": 0.0,
@@ -6496,8 +6496,8 @@
    "expected_end": "2026-10-09T02:30:00+00:00",
    "start_est": "2026-10-08T23:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.55,
-   "close_price": 0.55,
+   "latest_price": 0.56,
+   "close_price": 0.56,
    "pnl": null,
    "why": "Projected score margin +3.1 (home) and total 57.8. Model gives \"No: South Alabama wins by over 2.5 points\" 64%. Blended with the market that's 57% vs a 55% price.",
    "trend": -0.015,
@@ -6535,8 +6535,8 @@
    "expected_end": "2026-10-07T04:30:00+00:00",
    "start_est": "2026-10-07T01:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.2,
-   "close_price": 0.2,
+   "latest_price": 0.195,
+   "close_price": 0.195,
    "pnl": null,
    "why": "Dustin May: 4.65 a game this season over 31 games (adjusted 4.72). Model gives \"Dustin May: 5+\" 49%. Blended with the market that's 28% vs a 21% price.",
    "trend": 0.0,
@@ -6652,8 +6652,8 @@
    "expected_end": "2026-10-10T04:00:00+00:00",
    "start_est": "2026-10-10T01:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.505,
-   "close_price": 0.505,
+   "latest_price": 0.5,
+   "close_price": 0.5,
    "pnl": null,
    "why": "Projected score margin +0.4 (home) and total 49.0. Model gives \"Over 41.5 points\" 67%. Blended with the market that's 55% vs a 51% price. Sharp sportsbook price (Pinnacle) says 51%.",
    "trend": 0.0,
@@ -6898,6 +6898,46 @@
    "new_market": true,
    "trust": 0.25,
    "sharp_prob": null,
+   "research": "",
+   "sources": [],
+   "expert_lean": "none"
+  },
+  {
+   "id": "KXMLBTOTAL-26OCT071600CLECWS-8",
+   "ticker": "KXMLBTOTAL-26OCT071600CLECWS-8",
+   "side": "yes",
+   "event": "KXMLBTOTAL-26OCT071600CLECWS",
+   "game": "26OCT071600CLECWS",
+   "sport": "Baseball",
+   "model_key": "mlb",
+   "mtype": "total",
+   "line": 7.5,
+   "tour": "MLB",
+   "tournament": "Cleveland Guardians at Chicago White Sox",
+   "matchup": "Cleveland Guardians at Chicago White Sox",
+   "surface": "",
+   "pick": "Over 7.5 runs scored",
+   "opponent": "",
+   "market": "Over 7.5 runs scored",
+   "price": 0.52,
+   "model_prob": 0.604,
+   "raw_prob": 0.692,
+   "edge": 0.066,
+   "tier": "W",
+   "units": 0.5,
+   "made": "2026-10-06T13:24:59.896055+00:00",
+   "expected_end": "2026-10-07T23:00:00+00:00",
+   "start_est": "2026-10-07T20:00:00+00:00",
+   "status": "pending",
+   "latest_price": 0.52,
+   "close_price": null,
+   "pnl": null,
+   "why": "Projected runs 5.4 (home) vs 4.9 (10.3 total). Park factor 1.00. Forecast 71F, wind 4 mph. Model gives \"Over 7.5 runs scored\" 69%. Blended with the market that's 56% vs a 52% price. Sharp sportsbook price (Pinnacle) says 52%.",
+   "trend": 0.0,
+   "new_market": true,
+   "trust": 0.25,
+   "sharp_prob": 0.5168,
+   "sharp_source": "Pinnacle",
    "research": "",
    "sources": [],
    "expert_lean": "none"
