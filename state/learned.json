@@ -1,11 +1,11 @@
 {
  "trust": {
-  "cfb:spread_1h": 0.25,
   "cfb:total_1h": 0.25,
   "cfb:spread": 0.25,
   "cfb:team_total": 0.25,
   "cfb:total": 0.25,
   "cfb:winner": 0.25,
+  "cfb:spread_1h": 0.25,
   "cfb:period_winner_1q": 0.25,
   "cfb:spread_1q": 0.25,
   "cfb:total_1q": 0.25,
@@ -69,12 +69,12 @@
   "nfl:prop_rec": 0.25
  },
  "trust_league": {
-  "cfb:spread_1h|College Football": 0.25,
   "cfb:total_1h|College Football": 0.25,
   "cfb:spread|College Football": 0.25,
   "cfb:team_total|College Football": 0.25,
   "cfb:total|College Football": 0.25,
   "cfb:winner|College Football": 0.25,
+  "cfb:spread_1h|College Football": 0.25,
   "cfb:period_winner_1q|College Football": 0.25,
   "cfb:spread_1q|College Football": 0.35,
   "cfb:total_1q|College Football": 0.49,
@@ -130,12 +130,12 @@
  },
  "calib": {},
  "counts": {
-  "cfb:spread_1h": 1722,
-  "cfb:total_1h": 1142,
-  "cfb:spread": 3728,
-  "cfb:team_total": 1858,
-  "cfb:total": 2756,
-  "cfb:winner": 160,
+  "cfb:total_1h": 1109,
+  "cfb:spread": 3670,
+  "cfb:team_total": 1810,
+  "cfb:total": 2718,
+  "cfb:winner": 158,
+  "cfb:spread_1h": 1665,
   "cfb:period_winner_1q": 124,
   "cfb:spread_1q": 647,
   "cfb:total_1q": 668,
@@ -149,7 +149,7 @@
   "cfb:period_winner_4q": 124,
   "cfb:spread_4q": 668,
   "cfb:total_4q": 682,
-  "tennis:winner": 300,
+  "tennis:winner": 310,
   "mlb:winner": 16,
   "mlb:spread_f5": 64,
   "mlb:total_f5": 112,
@@ -199,12 +199,12 @@
   "nfl:prop_rec": 2236
  },
  "games": {
-  "cfb:spread_1h": 45,
-  "cfb:total_1h": 42,
-  "cfb:spread": 96,
+  "cfb:total_1h": 41,
+  "cfb:spread": 95,
   "cfb:team_total": 44,
-  "cfb:total": 95,
-  "cfb:winner": 80,
+  "cfb:total": 94,
+  "cfb:winner": 79,
+  "cfb:spread_1h": 43,
   "cfb:period_winner_1q": 31,
   "cfb:spread_1q": 31,
   "cfb:total_1q": 31,
@@ -218,7 +218,7 @@
   "cfb:period_winner_4q": 31,
   "cfb:spread_4q": 31,
   "cfb:total_4q": 31,
-  "tennis:winner": 150,
+  "tennis:winner": 155,
   "mlb:winner": 8,
   "mlb:spread_f5": 8,
   "mlb:total_f5": 8,
@@ -268,12 +268,12 @@
   "nfl:prop_rec": 15
  },
  "last": {
-  "cfb:spread_1h": "2026-10-04T03:59:00+00:00",
   "cfb:total_1h": "2026-10-04T03:59:00+00:00",
   "cfb:spread": "2026-10-04T03:59:00+00:00",
   "cfb:team_total": "2026-10-04T03:00:00+00:00",
   "cfb:total": "2026-10-04T03:59:00+00:00",
   "cfb:winner": "2026-10-04T03:59:00+00:00",
+  "cfb:spread_1h": "2026-10-04T03:59:00+00:00",
   "cfb:period_winner_1q": "2026-10-04T03:00:00+00:00",
   "cfb:spread_1q": "2026-10-04T03:00:00+00:00",
   "cfb:total_1q": "2026-10-04T03:00:00+00:00",
@@ -336,5 +336,5 @@
   "nfl:prop_rryds": "2026-10-06T00:15:00+00:00",
   "nfl:prop_rec": "2026-10-06T00:15:00+00:00"
  },
- "updated": "2026-10-06T15:23:31.736934+00:00"
+ "updated": "2026-10-06T16:25:45.854785+00:00"
 }
