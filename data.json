@@ -1,11 +1,11 @@
 {
- "updated": "2026-10-06T05:25:10.621904+00:00",
- "status_note": "Last run found 0 new pick(s) and graded 0.",
- "bankroll": 96.15,
+ "updated": "2026-10-06T06:30:40.291445+00:00",
+ "status_note": "Last run found 0 new pick(s) and graded 1.",
+ "bankroll": 95.63,
  "protection": {
-  "bankroll": 96.15,
+  "bankroll": 95.63,
   "peak": 112.26,
-  "drawdown": 0.144,
+  "drawdown": 0.148,
   "paused": false
  },
  "settings": {
@@ -215,46 +215,6 @@
    "prechecked": true
   },
   {
-   "id": "KXATPMATCH-26OCT06DOUCIN-DOU",
-   "ticker": "KXATPMATCH-26OCT06DOUCIN-DOU",
-   "side": "yes",
-   "event": "KXATPMATCH-26OCT06DOUCIN",
-   "game": "26OCT06DOUCIN",
-   "sport": "Tennis",
-   "model_key": "tennis",
-   "mtype": "winner",
-   "line": null,
-   "tour": "ATP",
-   "tournament": "2026 ATP Shanghai",
-   "matchup": "2026 ATP Shanghai",
-   "surface": "hard",
-   "pick": "Aziz Dougaz",
-   "opponent": "Federico Cina",
-   "market": "Aziz Dougaz to win",
-   "price": 0.33,
-   "model_prob": 0.418,
-   "raw_prob": 0.557,
-   "edge": 0.072,
-   "tier": "B",
-   "units": 0.5,
-   "made": "2026-10-05T21:32:26.323992+00:00",
-   "expected_end": "2026-10-06T07:00:00+00:00",
-   "start_est": "2026-10-06T03:00:00+00:00",
-   "status": "pending",
-   "latest_price": 0.335,
-   "close_price": 0.335,
-   "pnl": null,
-   "why": "Elo 1597 vs 1582 on hard. Won 50% vs 50% of games lately. Form 7-3 vs 5-5. Games played in last 3 days: 22 vs 66. Model 56%, blended with the market 42%, price 33%. Price up 4\u00a2 in the last 12 hours.",
-   "trend": 0.037,
-   "new_market": false,
-   "trust": 0.4,
-   "sharp_prob": null,
-   "research": "",
-   "sources": [],
-   "expert_lean": "none",
-   "prechecked": true
-  },
-  {
    "id": "KXATPMATCH-26OCT06DRABAS-DRA",
    "ticker": "KXATPMATCH-26OCT06DRABAS-DRA",
    "side": "yes",
@@ -296,6 +256,47 @@
   }
  ],
  "history": [
+  {
+   "id": "KXATPMATCH-26OCT06DOUCIN-DOU",
+   "ticker": "KXATPMATCH-26OCT06DOUCIN-DOU",
+   "side": "yes",
+   "event": "KXATPMATCH-26OCT06DOUCIN",
+   "game": "26OCT06DOUCIN",
+   "sport": "Tennis",
+   "model_key": "tennis",
+   "mtype": "winner",
+   "line": null,
+   "tour": "ATP",
+   "tournament": "2026 ATP Shanghai",
+   "matchup": "2026 ATP Shanghai",
+   "surface": "hard",
+   "pick": "Aziz Dougaz",
+   "opponent": "Federico Cina",
+   "market": "Aziz Dougaz to win",
+   "price": 0.33,
+   "model_prob": 0.418,
+   "raw_prob": 0.557,
+   "edge": 0.072,
+   "tier": "B",
+   "units": 0.5,
+   "made": "2026-10-05T21:32:26.323992+00:00",
+   "expected_end": "2026-10-06T07:00:00+00:00",
+   "start_est": "2026-10-06T03:00:00+00:00",
+   "status": "loss",
+   "latest_price": 0.335,
+   "close_price": 0.335,
+   "pnl": -0.52,
+   "why": "Elo 1597 vs 1582 on hard. Won 50% vs 50% of games lately. Form 7-3 vs 5-5. Games played in last 3 days: 22 vs 66. Model 56%, blended with the market 42%, price 33%. Price up 4\u00a2 in the last 12 hours.",
+   "trend": 0.037,
+   "new_market": false,
+   "trust": 0.4,
+   "sharp_prob": null,
+   "research": "",
+   "sources": [],
+   "expert_lean": "none",
+   "prechecked": true,
+   "graded": "2026-10-06T06:28:27.725158+00:00"
+  },
   {
    "id": "KXATPMATCH-26OCT05WONHEW-HEW",
    "ticker": "KXATPMATCH-26OCT05WONHEW-HEW",
@@ -5409,44 +5410,44 @@
  },
  "learning": {
   "groups": {
-   "cfb:spread_1h": {
-    "finished": 1844,
-    "games": 46,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-04T03:59:00+00:00"
-   },
-   "cfb:total_1h": {
-    "finished": 1226,
-    "games": 45,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-04T03:59:00+00:00"
-   },
    "cfb:spread": {
-    "finished": 3892,
-    "games": 98,
+    "finished": 3797,
+    "games": 97,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-10-04T03:59:00+00:00"
    },
    "cfb:team_total": {
-    "finished": 1992,
-    "games": 46,
+    "finished": 1944,
+    "games": 45,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-10-04T03:00:00+00:00"
    },
    "cfb:total": {
-    "finished": 2870,
-    "games": 98,
+    "finished": 2832,
+    "games": 97,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-10-04T03:59:00+00:00"
    },
    "cfb:winner": {
-    "finished": 166,
-    "games": 83,
+    "finished": 164,
+    "games": 82,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-04T03:59:00+00:00"
+   },
+   "cfb:spread_1h": {
+    "finished": 1789,
+    "games": 45,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-04T03:59:00+00:00"
+   },
+   "cfb:total_1h": {
+    "finished": 1170,
+    "games": 43,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-10-04T03:59:00+00:00"
@@ -5543,11 +5544,11 @@
     "last": "2026-10-04T03:00:00+00:00"
    },
    "tennis:winner": {
-    "finished": 230,
-    "games": 115,
-    "trust": 0.37,
+    "finished": 246,
+    "games": 123,
+    "trust": 0.32,
     "confidence_fix": false,
-    "last": "2026-10-06T02:00:00+00:00"
+    "last": "2026-10-06T03:00:00+00:00"
    },
    "mlb:winner": {
     "finished": 16,
@@ -5880,23 +5881,23 @@
    }
   },
   "price_trend": {
-   "falling": {
-    "markets": 3377,
-    "hit_vs_price": -0.014
-   },
    "flat": {
-    "markets": 27068,
+    "markets": 26836,
     "hit_vs_price": -0.0
    },
+   "falling": {
+    "markets": 3351,
+    "hit_vs_price": -0.011
+   },
    "rising": {
-    "markets": 3382,
-    "hit_vs_price": 0.016
+    "markets": 3362,
+    "hit_vs_price": 0.014
    }
   }
  },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "tracker": {
-  "tracked": 140794,
+  "tracked": 140864,
   "series": 3982,
   "movers": [
    {
@@ -5916,6 +5917,14 @@
     "close": "2026-10-06T19:00:00+00:00"
    },
    {
+    "ticker": "KXEUROCUPGAME-26OCT061330PAOBOS-PAO",
+    "series": "KXEUROCUPGAME",
+    "title": "PAOK BC",
+    "move": 0.385,
+    "price": 0.865,
+    "close": "2026-10-08T17:30:00+00:00"
+   },
+   {
     "ticker": "KXARGPREMDIVGAME-26OCT05BANCARC-CARC",
     "series": "KXARGPREMDIVGAME",
     "title": "Rosario",
@@ -5930,6 +5939,30 @@
     "move": 0.37,
     "price": 0.585,
     "close": "2026-10-08T00:15:00+00:00"
+   },
+   {
+    "ticker": "KXEUROCUPGAME-26OCT061400WROATR-ATR",
+    "series": "KXEUROCUPGAME",
+    "title": "Aquila Basket Trento",
+    "move": 0.365,
+    "price": 0.845,
+    "close": "2026-10-08T18:00:00+00:00"
+   },
+   {
+    "ticker": "KXEUROCUPGAME-26OCT061330PAOBOS-BOS",
+    "series": "KXEUROCUPGAME",
+    "title": "KK Bosna Royal Sarajevo",
+    "move": -0.345,
+    "price": 0.135,
+    "close": "2026-10-08T17:30:00+00:00"
+   },
+   {
+    "ticker": "KXEUROCUPGAME-26OCT061400WROATR-WRO",
+    "series": "KXEUROCUPGAME",
+    "title": "Slask Wroclaw",
+    "move": -0.325,
+    "price": 0.155,
+    "close": "2026-10-08T18:00:00+00:00"
    },
    {
     "ticker": "KXCONCACAFNLTOTAL-26OCT05HNDJAM-2",
@@ -5956,6 +5989,22 @@
     "close": "2026-10-06T14:00:00+00:00"
    },
    {
+    "ticker": "KXEUROCUPGAME-26OCT061300NAPBUD-BUD",
+    "series": "KXEUROCUPGAME",
+    "title": "KK Buducnost Voli",
+    "move": 0.28,
+    "price": 0.76,
+    "close": "2026-10-08T17:00:00+00:00"
+   },
+   {
+    "ticker": "KXEUROCUPGAME-26OCT061230MAXTTS-TTS",
+    "series": "KXEUROCUPGAME",
+    "title": "Turk Telekom",
+    "move": 0.27,
+    "price": 0.75,
+    "close": "2026-10-08T16:30:00+00:00"
+   },
+   {
     "ticker": "KXCONCACAFNLSPREAD-26OCT05HNDJAM-HND3",
     "series": "KXCONCACAFNLSPREAD",
     "title": "Honduras wins by more than 2.5 goals",
@@ -5964,73 +6013,25 @@
     "close": "2026-10-08T02:00:00+00:00"
    },
    {
-    "ticker": "KXCONCACAFNLGAME-26OCT05HNDJAM-TIE",
-    "series": "KXCONCACAFNLGAME",
-    "title": "Tie",
-    "move": 0.24,
-    "price": 0.505,
-    "close": "2026-10-08T02:00:00+00:00"
-   },
-   {
-    "ticker": "KXCONCACAFNLSPREAD-26OCT05HNDJAM-JAM3",
-    "series": "KXCONCACAFNLSPREAD",
-    "title": "Jamaica wins by more than 2.5 goals",
-    "move": -0.225,
-    "price": 0.035,
-    "close": "2026-10-08T02:00:00+00:00"
-   },
-   {
-    "ticker": "KXCONCACAFNLTOTAL-26OCT05HNDJAM-6",
-    "series": "KXCONCACAFNLTOTAL",
-    "title": "Over 5.5 goals scored",
-    "move": -0.215,
-    "price": 0.015,
-    "close": "2026-10-08T02:00:00+00:00"
-   },
-   {
-    "ticker": "KXCONCACAFNLSPREAD-26OCT05HNDJAM-HND2",
-    "series": "KXCONCACAFNLSPREAD",
-    "title": "Honduras wins by more than 1.5 goals",
-    "move": -0.21,
-    "price": 0.065,
-    "close": "2026-10-08T02:00:00+00:00"
-   },
-   {
-    "ticker": "KXCONCACAFNLGAME-26OCT05HNDJAM-HND",
-    "series": "KXCONCACAFNLGAME",
-    "title": "Honduras",
-    "move": -0.2,
-    "price": 0.325,
-    "close": "2026-10-08T02:00:00+00:00"
-   },
-   {
-    "ticker": "KXVTBGAME-26OCT040500AVSENI-ENI",
-    "series": "KXVTBGAME",
-    "title": "Enisey Krasnoyarsk",
-    "move": -0.19,
-    "price": 0.46,
-    "close": "2026-10-06T09:00:00+00:00"
-   },
-   {
-    "ticker": "KXCOPADELREYTOTAL-26OCT04AEPIBI-1",
-    "series": "KXCOPADELREYTOTAL",
-    "title": "Over 0.5 goals scored",
-    "move": -0.19,
-    "price": 0.56,
-    "close": "2026-10-06T14:00:00+00:00"
+    "ticker": "KXEUROCUPGAME-26OCT061400RIGROS-ROS",
+    "series": "KXEUROCUPGAME",
+    "title": "Rostock Seawolves",
+    "move": 0.265,
+    "price": 0.745,
+    "close": "2026-10-08T18:00:00+00:00"
    }
   ]
  },
  "models": {
   "tennis": {
-   "matches": 20747,
-   "training_rows": 14358,
+   "matches": 20756,
+   "training_rows": 14366,
    "holdout": {
     "from": "2026-08-31",
-    "matches": 2154,
-    "elo_log_loss": 0.6531,
-    "model_log_loss": 0.6472,
-    "elo_accuracy": 0.615,
+    "matches": 2155,
+    "elo_log_loss": 0.6537,
+    "model_log_loss": 0.6476,
+    "elo_accuracy": 0.613,
     "model_accuracy": 0.626
    },
    "using": "full",
@@ -6039,13 +6040,13 @@
     "dominance": 0.0,
     "rank": 0.0,
     "h2h": 0.473,
-    "form": -0.591,
-    "fatigue_games": -0.218,
-    "fatigue_matches": 0.089,
+    "form": -0.596,
+    "fatigue_games": -0.22,
+    "fatigue_matches": 0.091,
     "rest": 0.014,
     "travel": 0.146,
     "altitude": 0.0,
-    "best_of_5": 0.567
+    "best_of_5": 0.569
    },
    "sport": "Tennis",
    "label": "Tennis",
@@ -6123,31 +6124,31 @@
    "holdout": {
     "matches": 657,
     "rating_log_loss": 0.6257,
-    "model_log_loss": 0.6245,
+    "model_log_loss": 0.6219,
     "rating_accuracy": 0.656,
     "model_accuracy": 0.647
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6051,
-    "model_log_loss": 0.6245,
+    "model_log_loss": 0.6219,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 657
    },
    "backtest": {
-    "bets": 15,
-    "wins": 5,
-    "units": -5.4,
-    "roi": -0.206
+    "bets": 16,
+    "wins": 6,
+    "units": -2.5,
+    "roi": -0.093
    },
    "weights": {
     "home_field": 0.255,
-    "rating": 1.519,
-    "rest": 0.247,
-    "point_diff_form": 0.244,
-    "qb_change": 0.305,
-    "epa": 0.158
+    "rating": 1.529,
+    "rest": 0.244,
+    "point_diff_form": 0.243,
+    "qb_change": 0.281,
+    "epa": 0.156
    },
    "matches": 4426,
    "totals": {
@@ -6199,26 +6200,26 @@
  },
  "summary": {
   "all": {
-   "picks": 85,
+   "picks": 86,
    "wins": 30,
-   "losses": 55,
-   "units": -3.85,
-   "staked": 90.5,
-   "roi": -0.043,
-   "beat_price": 0.247,
-   "clv": -0.0031,
-   "clv_picks": 75
+   "losses": 56,
+   "units": -4.37,
+   "staked": 91.0,
+   "roi": -0.048,
+   "beat_price": 0.256,
+   "clv": -0.003,
+   "clv_picks": 76
   },
   "week": {
-   "picks": 35,
+   "picks": 36,
    "wins": 14,
-   "losses": 21,
-   "units": 1.9,
-   "staked": 24.5,
-   "roi": 0.078,
-   "beat_price": 0.171,
-   "clv": -0.0047,
-   "clv_picks": 29
+   "losses": 22,
+   "units": 1.38,
+   "staked": 25.0,
+   "roi": 0.055,
+   "beat_price": 0.194,
+   "clv": -0.0043,
+   "clv_picks": 30
   },
   "yours": {
    "picks": 15,
@@ -6256,15 +6257,15 @@
    "clv_picks": 2
   },
   "none": {
-   "picks": 82,
+   "picks": 83,
    "wins": 27,
-   "losses": 55,
-   "units": -16.11,
-   "staked": 81.5,
-   "roi": -0.198,
-   "beat_price": 0.244,
-   "clv": -0.0032,
-   "clv_picks": 73
+   "losses": 56,
+   "units": -16.63,
+   "staked": 82.0,
+   "roi": -0.203,
+   "beat_price": 0.253,
+   "clv": -0.0031,
+   "clv_picks": 74
   }
  },
  "by_tier": {
@@ -6280,15 +6281,15 @@
    "clv_picks": 18
   },
   "B": {
-   "picks": 62,
+   "picks": 63,
    "wins": 21,
-   "losses": 41,
-   "units": -3.62,
-   "staked": 55.5,
-   "roi": -0.065,
-   "beat_price": 0.242,
-   "clv": -0.0029,
-   "clv_picks": 54
+   "losses": 42,
+   "units": -4.14,
+   "staked": 56.0,
+   "roi": -0.074,
+   "beat_price": 0.254,
+   "clv": -0.0027,
+   "clv_picks": 55
   },
   "C": {
    "picks": 3,
@@ -18975,15 +18976,15 @@
  ],
  "by_tour": {
   "ATP": {
-   "picks": 26,
+   "picks": 27,
    "wins": 5,
-   "losses": 21,
-   "units": -18.14,
-   "staked": 26.0,
-   "roi": -0.698,
-   "beat_price": 0.192,
-   "clv": -0.0071,
-   "clv_picks": 24
+   "losses": 22,
+   "units": -18.66,
+   "staked": 26.5,
+   "roi": -0.704,
+   "beat_price": 0.222,
+   "clv": -0.0066,
+   "clv_picks": 25
   },
   "ATP Challenger": {
    "picks": 24,
@@ -19076,15 +19077,15 @@
    "clv_picks": 5
   },
   "Tennis": {
-   "picks": 72,
+   "picks": 73,
    "wins": 27,
-   "losses": 45,
-   "units": 1.83,
-   "staked": 78.0,
-   "roi": 0.023,
-   "beat_price": 0.208,
-   "clv": -0.0044,
-   "clv_picks": 62
+   "losses": 46,
+   "units": 1.31,
+   "staked": 78.5,
+   "roi": 0.017,
+   "beat_price": 0.219,
+   "clv": -0.0043,
+   "clv_picks": 63
   }
  },
  "calibration": {
@@ -19097,8 +19098,8 @@
    "hit": 0.269
   },
   "40-50%": {
-   "n": 28,
-   "hit": 0.321
+   "n": 29,
+   "hit": 0.31
   },
   "50-60%": {
    "n": 14,
@@ -19469,6 +19470,10 @@
   {
    "t": "2026-10-05",
    "v": 96.15
+  },
+  {
+   "t": "2026-10-06",
+   "v": 95.63
   }
  ],
  "reports": [
