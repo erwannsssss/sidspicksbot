@@ -1451,5 +1451,85 @@
     "expected_end": "2026-10-10T04:00:00+00:00"
    }
   ]
+ },
+ {
+  "id": "PARLAY-202610070035-1",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-10-07T00:35:09.094049+00:00",
+  "units": 1.0,
+  "price": 0.1102,
+  "model_prob": 0.2131,
+  "ev": 0.933,
+  "payout_units": 8.1,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXMLBKS-26OCT062130MILSD-MILDMAY3-5",
+    "ticker": "KXMLBKS-26OCT062130MILSD-MILDMAY3-5",
+    "side": "yes",
+    "market": "Dustin May: 5+",
+    "matchup": "Milwaukee Brewers at San Diego Padres",
+    "sport": "Baseball",
+    "price": 0.21,
+    "model_prob": 0.346,
+    "edge": 0.125,
+    "expected_end": "2026-10-07T04:30:00+00:00"
+   },
+   {
+    "id": "KXNCAAFSPREAD-26OCT10CCARMRSH-MRSH4",
+    "ticker": "KXNCAAFSPREAD-26OCT10CCARMRSH-MRSH4",
+    "side": "yes",
+    "market": "Marshall wins by over 3.5 points",
+    "matchup": "Coastal Carolina at Marshall",
+    "sport": "Football",
+    "price": 0.48,
+    "model_prob": 0.616,
+    "edge": 0.119,
+    "expected_end": "2026-10-10T20:00:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": "PARLAY-202610070035-2",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-10-07T00:35:09.094082+00:00",
+  "units": 1.0,
+  "price": 0.182,
+  "model_prob": 0.2934,
+  "ev": 0.612,
+  "payout_units": 4.5,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXATPMATCH-26OCT07TRUSAK-TRU",
+    "ticker": "KXATPMATCH-26OCT07TRUSAK-TRU",
+    "side": "yes",
+    "market": "Marco Trungelliti to win",
+    "matchup": "2026 ATP Shanghai",
+    "sport": "Tennis",
+    "price": 0.35,
+    "model_prob": 0.481,
+    "edge": 0.115,
+    "expected_end": "2026-10-07T07:00:00+00:00"
+   },
+   {
+    "id": "KXNCAAFSPREAD-26OCT10BALLNW-NW36:no",
+    "ticker": "KXNCAAFSPREAD-26OCT10BALLNW-NW36",
+    "side": "no",
+    "market": "No: Northwestern wins by over 35.5 points",
+    "matchup": "Ball State at Northwestern",
+    "sport": "Football",
+    "price": 0.48,
+    "model_prob": 0.61,
+    "edge": 0.113,
+    "expected_end": "2026-10-10T20:00:00+00:00"
+   }
+  ]
  }
 ]
