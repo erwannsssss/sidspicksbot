@@ -1425,8 +1425,8 @@
   "model_prob": 0.1902,
   "ev": 0.554,
   "payout_units": 7.2,
-  "status": "pending",
-  "pnl": null,
+  "status": "loss",
+  "pnl": -1.0,
   "legs": [
    {
     "id": "KXWTAMATCH-26OCT05CHAZHE-CHA",
@@ -1438,7 +1438,8 @@
     "price": 0.22,
     "model_prob": 0.324,
     "edge": 0.092,
-    "expected_end": "2026-10-06T06:00:00+00:00"
+    "expected_end": "2026-10-06T06:00:00+00:00",
+    "result": "loss"
    },
    {
     "id": "KXNCAAFTOTAL-26OCT09IOWAWASH-42",
@@ -1452,7 +1453,8 @@
     "edge": 0.06,
     "expected_end": "2026-10-10T04:00:00+00:00"
    }
-  ]
+  ],
+  "graded": "2026-10-07T13:27:51.840930+00:00"
  },
  {
   "id": "PARLAY-202610070035-1",
