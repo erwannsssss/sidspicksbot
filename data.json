@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-08T04:27:43.075460+00:00",
+ "updated": "2026-10-08T05:26:57.197122+00:00",
  "status_note": "Last run found 0 new pick(s) and graded 2.",
  "bankroll": 96.54,
  "protection": {
@@ -5676,22 +5676,15 @@
  "learning": {
   "groups": {
    "nfl:prop_recyds": {
-    "finished": 598,
+    "finished": 505,
     "games": 5,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-10-06T00:15:00+00:00"
    },
    "nfl:prop_rshyds": {
-    "finished": 360,
+    "finished": 324,
     "games": 5,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-06T00:15:00+00:00"
-   },
-   "nfl:total_1q": {
-    "finished": 34,
-    "games": 3,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-10-06T00:15:00+00:00"
@@ -5753,11 +5746,11 @@
     "last": "2026-10-08T00:30:00+00:00"
    },
    "mlb:winner": {
-    "finished": 16,
-    "games": 8,
+    "finished": 18,
+    "games": 9,
     "trust": 0.5,
     "confidence_fix": false,
-    "last": "2026-10-08T00:00:00+00:00"
+    "last": "2026-10-08T02:00:00+00:00"
    },
    "mlb:spread_f5": {
     "finished": 72,
@@ -5774,46 +5767,46 @@
     "last": "2026-10-08T02:00:00+00:00"
    },
    "mlb:spread": {
-    "finished": 96,
-    "games": 8,
+    "finished": 108,
+    "games": 9,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-08T00:00:00+00:00"
+    "last": "2026-10-08T02:00:00+00:00"
    },
    "mlb:team_total": {
-    "finished": 224,
-    "games": 8,
+    "finished": 252,
+    "games": 9,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-08T00:00:00+00:00"
+    "last": "2026-10-08T02:00:00+00:00"
    },
    "mlb:total": {
-    "finished": 170,
+    "finished": 186,
     "games": 9,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-10-08T02:00:00+00:00"
    },
    "mlb:prop_ks": {
-    "finished": 188,
-    "games": 7,
+    "finished": 212,
+    "games": 8,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-08T00:00:00+00:00"
+    "last": "2026-10-08T02:00:00+00:00"
    },
    "mlb:prop_hit": {
-    "finished": 606,
-    "games": 8,
+    "finished": 684,
+    "games": 9,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-08T00:00:00+00:00"
+    "last": "2026-10-08T02:00:00+00:00"
    },
    "mlb:prop_hr": {
-    "finished": 262,
-    "games": 8,
+    "finished": 296,
+    "games": 9,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-08T00:00:00+00:00"
+    "last": "2026-10-08T02:00:00+00:00"
    },
    "mlb:prop_tb": {
     "finished": 996,
@@ -5823,11 +5816,11 @@
     "last": "2026-10-08T00:00:00+00:00"
    },
    "mlb:prop_hrr": {
-    "finished": 1318,
-    "games": 8,
+    "finished": 1484,
+    "games": 9,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-08T00:00:00+00:00"
+    "last": "2026-10-08T02:00:00+00:00"
    },
    "nfl:winner": {
     "finished": 4,
@@ -5852,6 +5845,13 @@
    },
    "nfl:spread_1q": {
     "finished": 40,
+    "games": 2,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-06T00:15:00+00:00"
+   },
+   "nfl:total_1q": {
+    "finished": 32,
     "games": 2,
     "trust": 0.25,
     "confidence_fix": false,
@@ -5963,11 +5963,11 @@
     "last": "2026-10-08T00:30:00+00:00"
    },
    "tennis:winner": {
-    "finished": 370,
-    "games": 185,
+    "finished": 374,
+    "games": 187,
     "trust": 0.28,
     "confidence_fix": false,
-    "last": "2026-10-08T01:00:00+00:00"
+    "last": "2026-10-08T02:00:00+00:00"
    },
    "cfb:winner": {
     "finished": 6,
@@ -6077,22 +6077,22 @@
   },
   "price_trend": {
    "flat": {
-    "markets": 5952,
+    "markets": 6009,
     "hit_vs_price": 0.0
-   },
-   "falling": {
-    "markets": 753,
-    "hit_vs_price": -0.02
    },
    "rising": {
     "markets": 747,
-    "hit_vs_price": 0.02
+    "hit_vs_price": 0.016
+   },
+   "falling": {
+    "markets": 753,
+    "hit_vs_price": -0.016
    }
   }
  },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "tracker": {
-  "tracked": 149568,
+  "tracked": 149584,
   "series": 3863,
   "movers": [
    {
@@ -6219,29 +6219,29 @@
  },
  "models": {
   "tennis": {
-   "matches": 20882,
-   "training_rows": 14486,
+   "matches": 20884,
+   "training_rows": 14488,
    "holdout": {
     "from": "2026-09-01",
-    "matches": 2173,
-    "elo_log_loss": 0.6561,
-    "model_log_loss": 0.6493,
+    "matches": 2174,
+    "elo_log_loss": 0.6559,
+    "model_log_loss": 0.6491,
     "elo_accuracy": 0.61,
-    "model_accuracy": 0.627
+    "model_accuracy": 0.628
    },
    "using": "full",
    "weights": {
-    "elo": 2.071,
+    "elo": 2.073,
     "dominance": 0.0,
     "rank": 0.0,
     "h2h": 0.458,
-    "form": -0.588,
-    "fatigue_games": -0.216,
+    "form": -0.589,
+    "fatigue_games": -0.215,
     "fatigue_matches": 0.089,
     "rest": 0.015,
     "travel": 0.149,
     "altitude": 0.0,
-    "best_of_5": 0.568
+    "best_of_5": 0.567
    },
    "sport": "Tennis",
    "label": "Tennis",
@@ -6319,31 +6319,31 @@
    "holdout": {
     "matches": 657,
     "rating_log_loss": 0.6263,
-    "model_log_loss": 0.624,
+    "model_log_loss": 0.6225,
     "rating_accuracy": 0.654,
-    "model_accuracy": 0.645
+    "model_accuracy": 0.644
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6055,
-    "model_log_loss": 0.624,
+    "model_log_loss": 0.6225,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 657
    },
    "backtest": {
-    "bets": 16,
+    "bets": 15,
     "wins": 5,
-    "units": -7.4,
-    "roi": -0.263
+    "units": -5.4,
+    "roi": -0.206
    },
    "weights": {
-    "home_field": 0.254,
-    "rating": 1.535,
-    "rest": 0.244,
-    "point_diff_form": 0.238,
-    "qb_change": 0.298,
-    "epa": 0.156
+    "home_field": 0.255,
+    "rating": 1.524,
+    "rest": 0.246,
+    "point_diff_form": 0.243,
+    "qb_change": 0.328,
+    "epa": 0.154
    },
    "matches": 4427,
    "totals": {
@@ -6428,15 +6428,15 @@
    "clv_picks": 14
   },
   "watch": {
-   "picks": 319,
+   "picks": 321,
    "wins": 140,
-   "losses": 179,
-   "units": 1.88,
-   "staked": 159.5,
-   "roi": 0.012,
-   "beat_price": 0.27,
+   "losses": 181,
+   "units": 0.83,
+   "staked": 160.5,
+   "roi": 0.005,
+   "beat_price": 0.268,
    "clv": -0.0074,
-   "clv_picks": 300
+   "clv_picks": 302
   }
  },
  "by_expert_lean": {
@@ -6498,15 +6498,15 @@
    "clv_picks": 5
   },
   "W": {
-   "picks": 319,
+   "picks": 321,
    "wins": 140,
-   "losses": 179,
-   "units": 1.88,
-   "staked": 159.5,
-   "roi": 0.012,
-   "beat_price": 0.27,
+   "losses": 181,
+   "units": 0.83,
+   "staked": 160.5,
+   "roi": 0.005,
+   "beat_price": 0.268,
    "clv": -0.0074,
-   "clv_picks": 300
+   "clv_picks": 302
   }
  },
  "watch_open": [
@@ -6970,8 +6970,8 @@
    "expected_end": "2026-10-10T20:00:00+00:00",
    "start_est": "2026-10-10T23:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.49,
-   "close_price": 0.49,
+   "latest_price": 0.495,
+   "close_price": 0.495,
    "pnl": null,
    "why": "Projected score margin +14.9 (home) and total 53.2. Model gives \"Marshall wins by over 3.5 points\" 76%. Blended with the market that's 54% vs a 48% price.",
    "trend": 0.0,
@@ -7442,8 +7442,8 @@
    "expected_end": "2026-10-10T20:00:00+00:00",
    "start_est": "2026-10-11T00:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.435,
-   "close_price": 0.435,
+   "latest_price": 0.43,
+   "close_price": 0.43,
    "pnl": null,
    "why": "Projected score margin -10.4 (home) and total 54.8. Model gives \"Minnesota wins by over 3.5 points\" 67%. Blended with the market that's 49% vs a 43% price.",
    "trend": 0.01,
@@ -7755,8 +7755,8 @@
    "expected_end": "2026-10-09T22:00:00+00:00",
    "start_est": "2026-10-09T18:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.36,
-   "close_price": 0.36,
+   "latest_price": 0.365,
+   "close_price": 0.365,
    "pnl": null,
    "why": "Ratings 1447 (Malaga, home) vs 1596 (Espanol). Share of chances lately (xG or shots on target) 39% vs 52%. Goal difference last 6: -7 vs -3. Last played Sep 20 vs Sep 18. Model gives the away 48%. Blended with the market that's 39% vs a 36% price. Sharp sportsbook price (Pinnacle) says 36%.",
    "trend": 0.0,
@@ -7914,8 +7914,8 @@
    "expected_end": "2026-10-10T02:00:00+00:00",
    "start_est": "2026-10-09T23:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.2,
-   "close_price": 0.2,
+   "latest_price": 0.175,
+   "close_price": 0.175,
    "pnl": null,
    "why": "Projected score margin +10.0 (home) and total 49.3. Model gives \"Marist wins by over 7.5 points\" 56%. Blended with the market that's 35% vs a 23% price.",
    "trend": -0.015,
@@ -8075,45 +8075,6 @@
    "pnl": null,
    "why": "Expected goals 1.12 vs 2.33 (3.45 total). Model gives \"Brighton wins by more than 1.5 goals\" 42%. Blended with the market that's 25% vs a 20% price.",
    "trend": 0.01,
-   "new_market": false,
-   "trust": 0.25,
-   "sharp_prob": null,
-   "research": "",
-   "sources": [],
-   "expert_lean": "none"
-  },
-  {
-   "id": "KXMLBKS-26OCT072200MILSD-SDWBUEHLER10-4",
-   "ticker": "KXMLBKS-26OCT072200MILSD-SDWBUEHLER10-4",
-   "side": "yes",
-   "event": "KXMLBKS-26OCT072200MILSD",
-   "game": "26OCT072200MILSD",
-   "sport": "Baseball",
-   "model_key": "mlb",
-   "mtype": "prop_ks",
-   "line": 3.5,
-   "tour": "MLB",
-   "tournament": "Milwaukee Brewers at San Diego Padres",
-   "matchup": "Milwaukee Brewers at San Diego Padres",
-   "surface": "",
-   "pick": "Walker Buehler: 4+",
-   "opponent": "",
-   "market": "Walker Buehler: 4+",
-   "price": 0.35,
-   "model_prob": 0.462,
-   "raw_prob": 0.579,
-   "edge": 0.096,
-   "tier": "W",
-   "units": 0.5,
-   "made": "2026-10-08T00:32:45.490140+00:00",
-   "expected_end": "2026-10-08T05:00:00+00:00",
-   "start_est": "2026-10-08T02:00:00+00:00",
-   "status": "pending",
-   "latest_price": 0.345,
-   "close_price": 0.345,
-   "pnl": null,
-   "why": "Walker Buehler: 4.09 a game this season over 32 games (adjusted 4.24). Model gives \"Walker Buehler: 4+\" 58%. Blended with the market that's 40% vs a 35% price. Price down 14\u00a2 in the last 12 hours.",
-   "trend": -0.145,
    "new_market": false,
    "trust": 0.25,
    "sharp_prob": null,
@@ -8357,45 +8318,6 @@
    "expert_lean": "none"
   },
   {
-   "id": "KXATPCHALLENGERMATCH-26OCT07HARLEO-LEO",
-   "ticker": "KXATPCHALLENGERMATCH-26OCT07HARLEO-LEO",
-   "side": "yes",
-   "event": "KXATPCHALLENGERMATCH-26OCT07HARLEO",
-   "game": "26OCT07HARLEO",
-   "sport": "Tennis",
-   "model_key": "tennis",
-   "mtype": "winner",
-   "line": null,
-   "tour": "ATP Challenger",
-   "tournament": "2026 ATP Challenger Wuning 3",
-   "matchup": "2026 ATP Challenger Wuning 3",
-   "surface": "hard",
-   "pick": "Mitsuki Wei Kang Leong",
-   "opponent": "Jay Friend",
-   "market": "Mitsuki Wei Kang Leong to win",
-   "price": 0.28,
-   "model_prob": 0.362,
-   "raw_prob": 0.454,
-   "edge": 0.068,
-   "tier": "W",
-   "units": 0.5,
-   "made": "2026-10-08T00:32:45.490140+00:00",
-   "expected_end": "2026-10-08T06:00:00+00:00",
-   "start_est": "2026-10-08T02:00:00+00:00",
-   "status": "pending",
-   "latest_price": 0.27,
-   "close_price": 0.27,
-   "pnl": null,
-   "why": "Elo 1623 vs 1659 on hard. Won 50% vs 50% of games lately. Form 7-3 vs 7-3. Games played in last 3 days: 22 vs 22. Model 45%, blended with the market 32%, price 28%.",
-   "trend": -0.01,
-   "new_market": false,
-   "trust": 0.27,
-   "sharp_prob": null,
-   "research": "",
-   "sources": [],
-   "expert_lean": "none"
-  },
-  {
    "id": "KXNFLSPREAD-26OCT11NYGWAS-NYG4",
    "ticker": "KXNFLSPREAD-26OCT11NYGWAS-NYG4",
    "side": "yes",
@@ -8422,8 +8344,8 @@
    "expected_end": "2026-10-11T20:00:00+00:00",
    "start_est": "2026-10-11T17:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.245,
-   "close_price": 0.245,
+   "latest_price": 0.24,
+   "close_price": 0.24,
    "pnl": null,
    "why": "Projected score margin -0.7 (home) and total 44.5. Forecast 64F, wind 9 mph, rain 3.0 mm. Model gives \"NY Giants wins by over 3.5 points\" 42%. Blended with the market that's 29% vs a 25% price.",
    "trend": 0.0,
@@ -8539,8 +8461,8 @@
    "expected_end": "2026-10-10T14:30:00+00:00",
    "start_est": "2026-10-10T11:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.555,
-   "close_price": 0.555,
+   "latest_price": 0.55,
+   "close_price": 0.55,
    "pnl": null,
    "why": "Expected goals 1.60 vs 0.63 (2.24 total). Model gives \"No: Arsenal wins by more than 1.5 goals\" 67%. Blended with the market that's 58% vs a 56% price.",
    "trend": -0.005,
@@ -8631,6 +8553,86 @@
   }
  ],
  "watch_history": [
+  {
+   "id": "KXATPCHALLENGERMATCH-26OCT07HARLEO-LEO",
+   "ticker": "KXATPCHALLENGERMATCH-26OCT07HARLEO-LEO",
+   "side": "yes",
+   "event": "KXATPCHALLENGERMATCH-26OCT07HARLEO",
+   "game": "26OCT07HARLEO",
+   "sport": "Tennis",
+   "model_key": "tennis",
+   "mtype": "winner",
+   "line": null,
+   "tour": "ATP Challenger",
+   "tournament": "2026 ATP Challenger Wuning 3",
+   "matchup": "2026 ATP Challenger Wuning 3",
+   "surface": "hard",
+   "pick": "Mitsuki Wei Kang Leong",
+   "opponent": "Jay Friend",
+   "market": "Mitsuki Wei Kang Leong to win",
+   "price": 0.28,
+   "model_prob": 0.362,
+   "raw_prob": 0.454,
+   "edge": 0.068,
+   "tier": "W",
+   "units": 0.5,
+   "made": "2026-10-08T00:32:45.490140+00:00",
+   "expected_end": "2026-10-08T06:00:00+00:00",
+   "start_est": "2026-10-08T02:00:00+00:00",
+   "status": "loss",
+   "latest_price": 0.27,
+   "close_price": 0.27,
+   "pnl": -0.53,
+   "why": "Elo 1623 vs 1659 on hard. Won 50% vs 50% of games lately. Form 7-3 vs 7-3. Games played in last 3 days: 22 vs 22. Model 45%, blended with the market 32%, price 28%.",
+   "trend": -0.01,
+   "new_market": false,
+   "trust": 0.27,
+   "sharp_prob": null,
+   "research": "",
+   "sources": [],
+   "expert_lean": "none",
+   "graded": "2026-10-08T05:24:01.028521+00:00"
+  },
+  {
+   "id": "KXMLBKS-26OCT072200MILSD-SDWBUEHLER10-4",
+   "ticker": "KXMLBKS-26OCT072200MILSD-SDWBUEHLER10-4",
+   "side": "yes",
+   "event": "KXMLBKS-26OCT072200MILSD",
+   "game": "26OCT072200MILSD",
+   "sport": "Baseball",
+   "model_key": "mlb",
+   "mtype": "prop_ks",
+   "line": 3.5,
+   "tour": "MLB",
+   "tournament": "Milwaukee Brewers at San Diego Padres",
+   "matchup": "Milwaukee Brewers at San Diego Padres",
+   "surface": "",
+   "pick": "Walker Buehler: 4+",
+   "opponent": "",
+   "market": "Walker Buehler: 4+",
+   "price": 0.35,
+   "model_prob": 0.462,
+   "raw_prob": 0.579,
+   "edge": 0.096,
+   "tier": "W",
+   "units": 0.5,
+   "made": "2026-10-08T00:32:45.490140+00:00",
+   "expected_end": "2026-10-08T05:00:00+00:00",
+   "start_est": "2026-10-08T02:00:00+00:00",
+   "status": "loss",
+   "latest_price": 0.345,
+   "close_price": 0.345,
+   "pnl": -0.52,
+   "why": "Walker Buehler: 4.09 a game this season over 32 games (adjusted 4.24). Model gives \"Walker Buehler: 4+\" 58%. Blended with the market that's 40% vs a 35% price. Price down 14\u00a2 in the last 12 hours.",
+   "trend": -0.145,
+   "new_market": false,
+   "trust": 0.25,
+   "sharp_prob": null,
+   "research": "",
+   "sources": [],
+   "expert_lean": "none",
+   "graded": "2026-10-08T05:24:00.649364+00:00"
+  },
   {
    "id": "KXWTACHALLENGERMATCH-26OCT07BAIJON-BAI",
    "ticker": "KXWTACHALLENGERMATCH-26OCT07BAIJON-BAI",
@@ -20540,86 +20542,6 @@
    "sources": [],
    "expert_lean": "none",
    "graded": "2026-09-20T18:22:42.642339+00:00"
-  },
-  {
-   "id": "KXEREDIVISIESPREAD-26SEP20TWEPSV-PSV2",
-   "ticker": "KXEREDIVISIESPREAD-26SEP20TWEPSV-PSV2",
-   "side": "yes",
-   "event": "KXEREDIVISIESPREAD-26SEP20TWEPSV",
-   "game": "26SEP20TWEPSV",
-   "sport": "Soccer",
-   "model_key": "soccer",
-   "mtype": "spread",
-   "line": 1.5,
-   "tour": "Eredivisie",
-   "tournament": "Enschede vs Eindhoven",
-   "matchup": "Enschede vs Eindhoven",
-   "surface": "",
-   "pick": "Eindhoven wins by more than 1.5 goals",
-   "opponent": "",
-   "market": "Eindhoven wins by more than 1.5 goals",
-   "price": 0.26,
-   "model_prob": 0.358,
-   "raw_prob": 0.461,
-   "edge": 0.085,
-   "tier": "W",
-   "units": 0.5,
-   "made": "2026-09-20T00:02:10.400126+00:00",
-   "expected_end": "2026-09-20T15:30:00+00:00",
-   "start_est": "2026-09-20T13:00:00+00:00",
-   "status": "loss",
-   "latest_price": 0.245,
-   "close_price": 0.245,
-   "pnl": -0.53,
-   "why": "Expected goals 1.42 vs 2.79 (4.21 total). Model gives \"Eindhoven wins by more than 1.5 goals\" 46%. Blended with the market that's 31% vs a 26% price.",
-   "trend": -0.005,
-   "new_market": false,
-   "trust": 0.25,
-   "sharp_prob": null,
-   "research": "",
-   "sources": [],
-   "expert_lean": "none",
-   "graded": "2026-09-20T15:19:39.900671+00:00"
-  },
-  {
-   "id": "KXSERIEABTTS-26SEP20FROCOM-BTTS:no",
-   "ticker": "KXSERIEABTTS-26SEP20FROCOM-BTTS",
-   "side": "no",
-   "event": "KXSERIEABTTS-26SEP20FROCOM",
-   "game": "26SEP20FROCOM",
-   "sport": "Soccer",
-   "model_key": "soccer",
-   "mtype": "btts",
-   "line": null,
-   "tour": "Serie A",
-   "tournament": "Frosinone vs Como",
-   "matchup": "Frosinone vs Como",
-   "surface": "",
-   "pick": "No: Both Teams To Score",
-   "opponent": "",
-   "market": "No: Both Teams To Score",
-   "price": 0.39,
-   "model_prob": 0.493,
-   "raw_prob": 0.6,
-   "edge": 0.086,
-   "tier": "W",
-   "units": 0.5,
-   "made": "2026-09-20T00:02:10.400126+00:00",
-   "expected_end": "2026-09-20T16:00:00+00:00",
-   "start_est": "2026-09-20T13:30:00+00:00",
-   "status": "win",
-   "latest_price": 0.085,
-   "close_price": 0.085,
-   "pnl": 0.76,
-   "why": "Expected goals 0.69 vs 1.64 (2.32 total). Model gives \"No: Both Teams To Score\" 60%. Blended with the market that's 44% vs a 39% price.",
-   "trend": 0.0,
-   "new_market": false,
-   "trust": 0.25,
-   "sharp_prob": null,
-   "research": "",
-   "sources": [],
-   "expert_lean": "none",
-   "graded": "2026-09-20T15:19:39.845956+00:00"
   }
  ],
  "by_tour": {
