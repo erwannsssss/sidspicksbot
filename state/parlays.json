@@ -1631,5 +1631,97 @@
     "expected_end": "2026-10-11T20:00:00+00:00"
    }
   ]
+ },
+ {
+  "id": "PARLAY-202610090037-1",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-10-09T00:37:28.258624+00:00",
+  "units": 1.0,
+  "price": 0.1327,
+  "model_prob": 0.2681,
+  "ev": 1.02,
+  "payout_units": 6.5,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXNCAAFSPREAD-26OCT09CLMBMRST-MRST8",
+    "ticker": "KXNCAAFSPREAD-26OCT09CLMBMRST-MRST8",
+    "side": "yes",
+    "market": "Marist wins by over 7.5 points",
+    "matchup": "Columbia at Marist",
+    "sport": "Football",
+    "price": 0.23,
+    "model_prob": 0.388,
+    "edge": 0.146,
+    "expected_end": "2026-10-10T02:00:00+00:00"
+   },
+   {
+    "id": "KXNFLPASSYDS-26OCT11CHIGB-CHITBAGENT17-225:no",
+    "ticker": "KXNFLPASSYDS-26OCT11CHIGB-CHITBAGENT17-225",
+    "side": "no",
+    "market": "Tyson Bagent: under 225",
+    "matchup": "CHI at GB",
+    "sport": "Football",
+    "price": 0.53,
+    "model_prob": 0.691,
+    "edge": 0.144,
+    "expected_end": "2026-10-11T23:25:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": "PARLAY-202610090037-2",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-10-09T00:37:28.258672+00:00",
+  "units": 1.0,
+  "price": 0.1355,
+  "model_prob": 0.2499,
+  "ev": 0.844,
+  "payout_units": 6.4,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXNCAAFSPREAD-26OCT10CCARMRSH-MRSH4",
+    "ticker": "KXNCAAFSPREAD-26OCT10CCARMRSH-MRSH4",
+    "side": "yes",
+    "market": "Marshall wins by over 3.5 points",
+    "matchup": "Coastal Carolina at Marshall",
+    "sport": "Football",
+    "price": 0.48,
+    "model_prob": 0.616,
+    "edge": 0.119,
+    "expected_end": "2026-10-10T20:00:00+00:00"
+   },
+   {
+    "id": "KXNFLRECYDS-26OCT11INDPIT-INDTWARREN84-50:no",
+    "ticker": "KXNFLRECYDS-26OCT11INDPIT-INDTWARREN84-50",
+    "side": "no",
+    "market": "Tyler Warren: under 50",
+    "matchup": "IND at PIT",
+    "sport": "Football",
+    "price": 0.53,
+    "model_prob": 0.665,
+    "edge": 0.117,
+    "expected_end": "2026-10-11T20:00:00+00:00"
+   },
+   {
+    "id": "KXNCAAFSPREAD-26OCT10BALLNW-NW36:no",
+    "ticker": "KXNCAAFSPREAD-26OCT10BALLNW-NW36",
+    "side": "no",
+    "market": "No: Northwestern wins by over 35.5 points",
+    "matchup": "Ball State at Northwestern",
+    "sport": "Football",
+    "price": 0.48,
+    "model_prob": 0.61,
+    "edge": 0.113,
+    "expected_end": "2026-10-10T20:00:00+00:00"
+   }
+  ]
  }
 ]
