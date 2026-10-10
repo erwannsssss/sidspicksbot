@@ -1,6 +1,6 @@
 {
- "updated": "2026-10-10T02:24:55.425571+00:00",
- "status_note": "Last run found 0 new pick(s) and graded 0.",
+ "updated": "2026-10-10T03:25:53.932389+00:00",
+ "status_note": "Last run found 0 new pick(s) and graded 4.",
  "bankroll": 96.54,
  "protection": {
   "bankroll": 96.54,
@@ -4026,46 +4026,6 @@
  "parlays": {
   "open": [
    {
-    "id": "PARLAY-202610080035-1",
-    "tier": "P",
-    "sport": "Parlay",
-    "kind": "watchlist",
-    "made": "2026-10-08T00:35:36.890303+00:00",
-    "units": 1.0,
-    "price": 0.1327,
-    "model_prob": 0.258,
-    "ev": 0.944,
-    "payout_units": 6.5,
-    "status": "pending",
-    "pnl": null,
-    "legs": [
-     {
-      "id": "KXNCAAFSPREAD-26OCT09CLMBMRST-MRST8",
-      "ticker": "KXNCAAFSPREAD-26OCT09CLMBMRST-MRST8",
-      "side": "yes",
-      "market": "Marist wins by over 7.5 points",
-      "matchup": "Columbia at Marist",
-      "sport": "Football",
-      "price": 0.23,
-      "model_prob": 0.388,
-      "edge": 0.146,
-      "expected_end": "2026-10-10T02:00:00+00:00"
-     },
-     {
-      "id": "KXNFLRECYDS-26OCT11INDPIT-INDTWARREN84-50:no",
-      "ticker": "KXNFLRECYDS-26OCT11INDPIT-INDTWARREN84-50",
-      "side": "no",
-      "market": "Tyler Warren: under 50",
-      "matchup": "IND at PIT",
-      "sport": "Football",
-      "price": 0.53,
-      "model_prob": 0.665,
-      "edge": 0.117,
-      "expected_end": "2026-10-11T20:00:00+00:00"
-     }
-    ]
-   },
-   {
     "id": "PARLAY-202610080035-2",
     "tier": "P",
     "sport": "Parlay",
@@ -4114,46 +4074,6 @@
       "model_prob": 0.625,
       "edge": 0.107,
       "expected_end": "2026-10-11T20:00:00+00:00"
-     }
-    ]
-   },
-   {
-    "id": "PARLAY-202610090037-1",
-    "tier": "P",
-    "sport": "Parlay",
-    "kind": "watchlist",
-    "made": "2026-10-09T00:37:28.258624+00:00",
-    "units": 1.0,
-    "price": 0.1327,
-    "model_prob": 0.2681,
-    "ev": 1.02,
-    "payout_units": 6.5,
-    "status": "pending",
-    "pnl": null,
-    "legs": [
-     {
-      "id": "KXNCAAFSPREAD-26OCT09CLMBMRST-MRST8",
-      "ticker": "KXNCAAFSPREAD-26OCT09CLMBMRST-MRST8",
-      "side": "yes",
-      "market": "Marist wins by over 7.5 points",
-      "matchup": "Columbia at Marist",
-      "sport": "Football",
-      "price": 0.23,
-      "model_prob": 0.388,
-      "edge": 0.146,
-      "expected_end": "2026-10-10T02:00:00+00:00"
-     },
-     {
-      "id": "KXNFLPASSYDS-26OCT11CHIGB-CHITBAGENT17-225:no",
-      "ticker": "KXNFLPASSYDS-26OCT11CHIGB-CHITBAGENT17-225",
-      "side": "no",
-      "market": "Tyson Bagent: under 225",
-      "matchup": "CHI at GB",
-      "sport": "Football",
-      "price": 0.53,
-      "model_prob": 0.691,
-      "edge": 0.144,
-      "expected_end": "2026-10-11T23:25:00+00:00"
      }
     ]
    },
@@ -4303,6 +4223,90 @@
    }
   ],
   "done": [
+   {
+    "id": "PARLAY-202610090037-1",
+    "tier": "P",
+    "sport": "Parlay",
+    "kind": "watchlist",
+    "made": "2026-10-09T00:37:28.258624+00:00",
+    "units": 1.0,
+    "price": 0.1327,
+    "model_prob": 0.2681,
+    "ev": 1.02,
+    "payout_units": 6.5,
+    "status": "loss",
+    "pnl": -1.0,
+    "legs": [
+     {
+      "id": "KXNCAAFSPREAD-26OCT09CLMBMRST-MRST8",
+      "ticker": "KXNCAAFSPREAD-26OCT09CLMBMRST-MRST8",
+      "side": "yes",
+      "market": "Marist wins by over 7.5 points",
+      "matchup": "Columbia at Marist",
+      "sport": "Football",
+      "price": 0.23,
+      "model_prob": 0.388,
+      "edge": 0.146,
+      "expected_end": "2026-10-10T02:00:00+00:00",
+      "result": "loss"
+     },
+     {
+      "id": "KXNFLPASSYDS-26OCT11CHIGB-CHITBAGENT17-225:no",
+      "ticker": "KXNFLPASSYDS-26OCT11CHIGB-CHITBAGENT17-225",
+      "side": "no",
+      "market": "Tyson Bagent: under 225",
+      "matchup": "CHI at GB",
+      "sport": "Football",
+      "price": 0.53,
+      "model_prob": 0.691,
+      "edge": 0.144,
+      "expected_end": "2026-10-11T23:25:00+00:00"
+     }
+    ],
+    "graded": "2026-10-10T03:25:05.073712+00:00"
+   },
+   {
+    "id": "PARLAY-202610080035-1",
+    "tier": "P",
+    "sport": "Parlay",
+    "kind": "watchlist",
+    "made": "2026-10-08T00:35:36.890303+00:00",
+    "units": 1.0,
+    "price": 0.1327,
+    "model_prob": 0.258,
+    "ev": 0.944,
+    "payout_units": 6.5,
+    "status": "loss",
+    "pnl": -1.0,
+    "legs": [
+     {
+      "id": "KXNCAAFSPREAD-26OCT09CLMBMRST-MRST8",
+      "ticker": "KXNCAAFSPREAD-26OCT09CLMBMRST-MRST8",
+      "side": "yes",
+      "market": "Marist wins by over 7.5 points",
+      "matchup": "Columbia at Marist",
+      "sport": "Football",
+      "price": 0.23,
+      "model_prob": 0.388,
+      "edge": 0.146,
+      "expected_end": "2026-10-10T02:00:00+00:00",
+      "result": "loss"
+     },
+     {
+      "id": "KXNFLRECYDS-26OCT11INDPIT-INDTWARREN84-50:no",
+      "ticker": "KXNFLRECYDS-26OCT11INDPIT-INDTWARREN84-50",
+      "side": "no",
+      "market": "Tyler Warren: under 50",
+      "matchup": "IND at PIT",
+      "sport": "Football",
+      "price": 0.53,
+      "model_prob": 0.665,
+      "edge": 0.117,
+      "expected_end": "2026-10-11T20:00:00+00:00"
+     }
+    ],
+    "graded": "2026-10-10T03:25:04.670536+00:00"
+   },
    {
     "id": "PARLAY-202610060034-2",
     "tier": "P",
@@ -5846,12 +5850,12 @@
    }
   ],
   "summary": {
-   "picks": 30,
+   "picks": 32,
    "wins": 7,
-   "losses": 23,
-   "units": 15.88,
-   "staked": 30.0,
-   "roi": 0.529,
+   "losses": 25,
+   "units": 13.88,
+   "staked": 32.0,
+   "roi": 0.434,
    "beat_price": null,
    "clv": null,
    "clv_picks": 0
@@ -5859,166 +5863,187 @@
  },
  "learning": {
   "groups": {
-   "soccer:winner": {
-    "finished": 31,
+   "soccer:first_to_score": {
+    "finished": 22,
+    "games": 4,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-10T01:00:00+00:00"
+   },
+   "soccer:correct_score": {
+    "finished": 114,
+    "games": 4,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-10T01:00:00+00:00"
+   },
+   "soccer:spread": {
+    "finished": 84,
     "games": 11,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-09T22:30:00+00:00"
+    "last": "2026-10-10T01:00:00+00:00"
+   },
+   "soccer:total": {
+    "finished": 124,
+    "games": 11,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-10T01:00:00+00:00"
+   },
+   "soccer:winner": {
+    "finished": 33,
+    "games": 11,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-10T01:00:00+00:00"
    },
    "soccer:btts": {
     "finished": 22,
     "games": 11,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-09T22:30:00+00:00"
-   },
-   "soccer:spread": {
-    "finished": 78,
-    "games": 11,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-09T22:30:00+00:00"
-   },
-   "soccer:total": {
-    "finished": 122,
-    "games": 11,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-09T22:30:00+00:00"
+    "last": "2026-10-10T01:00:00+00:00"
    },
    "soccer:btts_1h": {
-    "finished": 14,
-    "games": 7,
+    "finished": 12,
+    "games": 6,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-09T19:15:00+00:00"
+    "last": "2026-10-10T01:00:00+00:00"
    },
    "soccer:spread_1h": {
-    "finished": 24,
-    "games": 7,
+    "finished": 22,
+    "games": 6,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-09T19:15:00+00:00"
+    "last": "2026-10-10T01:00:00+00:00"
    },
    "soccer:total_1h": {
-    "finished": 42,
-    "games": 7,
+    "finished": 36,
+    "games": 6,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-09T19:15:00+00:00"
-   },
-   "soccer:first_to_score": {
-    "finished": 18,
-    "games": 3,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-09T19:00:00+00:00"
-   },
-   "soccer:correct_score": {
-    "finished": 74,
-    "games": 3,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-09T19:00:00+00:00"
-   },
-   "tennis:winner": {
-    "finished": 2,
-    "games": 1,
-    "trust": 0.34,
-    "confidence_fix": false,
-    "last": "2026-10-09T18:00:00+00:00"
+    "last": "2026-10-10T01:00:00+00:00"
    },
    "soccer:btts_2h": {
-    "finished": 6,
-    "games": 3,
+    "finished": 8,
+    "games": 4,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-09T19:00:00+00:00"
+    "last": "2026-10-10T01:00:00+00:00"
    },
    "soccer:spread_2h": {
-    "finished": 12,
-    "games": 3,
+    "finished": 16,
+    "games": 4,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-09T19:00:00+00:00"
+    "last": "2026-10-10T01:00:00+00:00"
    },
    "soccer:total_2h": {
-    "finished": 18,
-    "games": 3,
+    "finished": 24,
+    "games": 4,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-09T19:00:00+00:00"
+    "last": "2026-10-10T01:00:00+00:00"
    },
    "soccer:team_total": {
-    "finished": 36,
-    "games": 3,
+    "finished": 48,
+    "games": 4,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-09T19:00:00+00:00"
+    "last": "2026-10-10T01:00:00+00:00"
    },
-   "cfb:spread_1h": {
-    "finished": 42,
-    "games": 1,
+   "cfb:winner": {
+    "finished": 4,
+    "games": 2,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-10-09T23:00:00+00:00"
    },
+   "cfb:spread_1h": {
+    "finished": 168,
+    "games": 4,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-10T01:00:00+00:00"
+   },
    "cfb:total_1h": {
-    "finished": 30,
-    "games": 1,
+    "finished": 114,
+    "games": 4,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-10T01:00:00+00:00"
+   },
+   "cfb:spread": {
+    "finished": 88,
+    "games": 2,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-10-09T23:00:00+00:00"
    },
    "cfb:team_total": {
-    "finished": 24,
+    "finished": 76,
+    "games": 4,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-10T01:00:00+00:00"
+   },
+   "cfb:total": {
+    "finished": 60,
+    "games": 2,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-09T23:00:00+00:00"
+   },
+   "cfb:period_winner_2h": {
+    "finished": 4,
     "games": 1,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-10-09T23:00:00+00:00"
    },
    "cfb:period_winner_1q": {
-    "finished": 4,
-    "games": 1,
+    "finished": 12,
+    "games": 3,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-09T23:00:00+00:00"
+    "last": "2026-10-10T01:00:00+00:00"
    },
    "cfb:spread_1q": {
-    "finished": 20,
-    "games": 1,
+    "finished": 60,
+    "games": 3,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-09T23:00:00+00:00"
+    "last": "2026-10-10T01:00:00+00:00"
    },
    "cfb:total_1q": {
-    "finished": 22,
-    "games": 1,
+    "finished": 60,
+    "games": 3,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-09T23:00:00+00:00"
+    "last": "2026-10-10T01:00:00+00:00"
    },
    "cfb:period_winner_2q": {
-    "finished": 4,
-    "games": 1,
+    "finished": 12,
+    "games": 3,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-09T23:00:00+00:00"
+    "last": "2026-10-10T01:00:00+00:00"
    },
    "cfb:spread_2q": {
-    "finished": 20,
-    "games": 1,
+    "finished": 60,
+    "games": 3,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-09T23:00:00+00:00"
+    "last": "2026-10-10T01:00:00+00:00"
    },
    "cfb:total_2q": {
-    "finished": 22,
-    "games": 1,
+    "finished": 66,
+    "games": 3,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-09T23:00:00+00:00"
+    "last": "2026-10-10T01:00:00+00:00"
    },
    "cfb:period_winner_3q": {
     "finished": 4,
@@ -6040,26 +6065,47 @@
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-10-09T23:00:00+00:00"
+   },
+   "cfb:period_winner_4q": {
+    "finished": 4,
+    "games": 1,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-09T23:00:00+00:00"
+   },
+   "cfb:spread_4q": {
+    "finished": 22,
+    "games": 1,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-09T23:00:00+00:00"
+   },
+   "cfb:total_4q": {
+    "finished": 22,
+    "games": 1,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-09T23:00:00+00:00"
    }
   },
   "price_trend": {
-   "flat": {
-    "markets": 551,
-    "hit_vs_price": -0.004
-   },
    "rising": {
-    "markets": 76,
-    "hit_vs_price": 0.017
+    "markets": 128,
+    "hit_vs_price": 0.056
    },
    "falling": {
-    "markets": 70,
-    "hit_vs_price": 0.024
+    "markets": 123,
+    "hit_vs_price": -0.038
+   },
+   "flat": {
+    "markets": 1148,
+    "hit_vs_price": -0.002
    }
   }
  },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "tracker": {
-  "tracked": 173659,
+  "tracked": 174137,
   "series": 3872,
   "movers": [
    {
@@ -6101,6 +6147,14 @@
     "move": 0.74,
     "price": 0.995,
     "close": "2026-10-11T17:30:00+00:00"
+   },
+   {
+    "ticker": "KXF1SPRINTPOLE-SIN26-VER",
+    "series": "KXF1SPRINTPOLE",
+    "title": "Max Verstappen",
+    "move": 0.69,
+    "price": 0.995,
+    "close": "2026-10-11T14:30:00+00:00"
    },
    {
     "ticker": "KXSAUDIPLSPREAD-26OCT09AKHQAD-QAD2",
@@ -6173,14 +6227,6 @@
     "move": 0.495,
     "price": 0.995,
     "close": "2026-10-10T16:10:00+00:00"
-   },
-   {
-    "ticker": "KXBRASILEIRO1HSPREAD-26OCT08FLUCFC-CFC2",
-    "series": "KXBRASILEIRO1HSPREAD",
-    "title": "Coritiba wins the 1H by more than 1.5 goals",
-    "move": -0.475,
-    "price": 0.015,
-    "close": "2026-10-11T00:30:00+00:00"
    }
   ]
  },
@@ -6286,31 +6332,31 @@
    "holdout": {
     "matches": 657,
     "rating_log_loss": 0.6267,
-    "model_log_loss": 0.6247,
+    "model_log_loss": 0.6243,
     "rating_accuracy": 0.654,
     "model_accuracy": 0.645
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6068,
-    "model_log_loss": 0.6247,
+    "model_log_loss": 0.6243,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 657
    },
    "backtest": {
-    "bets": 17,
-    "wins": 6,
-    "units": -5.0,
-    "roi": -0.17
+    "bets": 15,
+    "wins": 5,
+    "units": -4.6,
+    "roi": -0.178
    },
    "weights": {
-    "home_field": 0.253,
-    "rating": 1.532,
-    "rest": 0.242,
-    "point_diff_form": 0.248,
-    "qb_change": 0.261,
-    "epa": 0.155
+    "home_field": 0.254,
+    "rating": 1.525,
+    "rest": 0.247,
+    "point_diff_form": 0.246,
+    "qb_change": 0.241,
+    "epa": 0.161
    },
    "matches": 4428,
    "totals": {
@@ -6395,15 +6441,15 @@
    "clv_picks": 14
   },
   "watch": {
-   "picks": 337,
-   "wins": 147,
-   "losses": 190,
-   "units": 2.58,
-   "staked": 168.5,
+   "picks": 341,
+   "wins": 149,
+   "losses": 192,
+   "units": 2.56,
+   "staked": 170.5,
    "roi": 0.015,
    "beat_price": 0.27,
-   "clv": -0.0068,
-   "clv_picks": 317
+   "clv": -0.007,
+   "clv_picks": 320
   }
  },
  "by_expert_lean": {
@@ -6465,57 +6511,18 @@
    "clv_picks": 5
   },
   "W": {
-   "picks": 337,
-   "wins": 147,
-   "losses": 190,
-   "units": 2.58,
-   "staked": 168.5,
+   "picks": 341,
+   "wins": 149,
+   "losses": 192,
+   "units": 2.56,
+   "staked": 170.5,
    "roi": 0.015,
    "beat_price": 0.27,
-   "clv": -0.0068,
-   "clv_picks": 317
+   "clv": -0.007,
+   "clv_picks": 320
   }
  },
  "watch_open": [
-  {
-   "id": "KXNCAAFTEAMTOTAL-26OCT09FSULOU-FSU28:no",
-   "ticker": "KXNCAAFTEAMTOTAL-26OCT09FSULOU-FSU28",
-   "side": "no",
-   "event": "KXNCAAFTEAMTOTAL-26OCT09FSULOU",
-   "game": "26OCT09FSULOU",
-   "sport": "Football",
-   "model_key": "cfb",
-   "mtype": "team_total",
-   "line": 27.5,
-   "tour": "College Football",
-   "tournament": "Florida State at Louisville",
-   "matchup": "Florida State at Louisville",
-   "surface": "",
-   "pick": "Florida St. under 27.5 points",
-   "opponent": "",
-   "market": "Florida St. under 27.5 points",
-   "price": 0.46,
-   "model_prob": 0.551,
-   "raw_prob": 0.647,
-   "edge": 0.074,
-   "tier": "W",
-   "units": 0.5,
-   "made": "2026-10-05T22:22:02.350477+00:00",
-   "expected_end": "2026-10-10T02:00:00+00:00",
-   "start_est": "2026-10-09T23:00:00+00:00",
-   "status": "pending",
-   "latest_price": 0.465,
-   "close_price": 0.465,
-   "pnl": null,
-   "why": "Projected score margin +9.5 (home) and total 55.3. Model gives \"Florida St. under 27.5 points\" 65%. Blended with the market that's 50% vs a 46% price.",
-   "trend": 0.0,
-   "new_market": true,
-   "trust": 0.25,
-   "sharp_prob": null,
-   "research": "",
-   "sources": [],
-   "expert_lean": "none"
-  },
   {
    "id": "KXNCAAFTOTAL-26OCT09IOWAWASH-42",
    "ticker": "KXNCAAFTOTAL-26OCT09IOWAWASH-42",
@@ -7381,46 +7388,6 @@
    "expert_lean": "none"
   },
   {
-   "id": "KXLIGAMXTOTAL-26OCT09PUELEO-3:no",
-   "ticker": "KXLIGAMXTOTAL-26OCT09PUELEO-3",
-   "side": "no",
-   "event": "KXLIGAMXTOTAL-26OCT09PUELEO",
-   "game": "26OCT09PUELEO",
-   "sport": "Soccer",
-   "model_key": "soccer",
-   "mtype": "total",
-   "line": 2.5,
-   "tour": "Liga MX",
-   "tournament": "Puebla vs Leon",
-   "matchup": "Puebla vs Leon",
-   "surface": "",
-   "pick": "Under 2.5 goals scored",
-   "opponent": "",
-   "market": "Under 2.5 goals scored",
-   "price": 0.51,
-   "model_prob": 0.553,
-   "raw_prob": 0.607,
-   "edge": 0.026,
-   "tier": "W",
-   "units": 0.5,
-   "made": "2026-10-07T01:23:25.697059+00:00",
-   "expected_end": "2026-10-10T04:00:00+00:00",
-   "start_est": "2026-10-10T00:30:00+00:00",
-   "status": "pending",
-   "latest_price": 0.495,
-   "close_price": 0.495,
-   "pnl": null,
-   "why": "Expected goals 1.09 vs 1.17 (2.26 total). Model gives \"Under 2.5 goals scored\" 61%. Blended with the market that's 53% vs a 51% price. Sharp sportsbook price (Pinnacle) says 50%.",
-   "trend": 0.005,
-   "new_market": false,
-   "trust": 0.25,
-   "sharp_prob": 0.5026,
-   "sharp_source": "Pinnacle",
-   "research": "",
-   "sources": [],
-   "expert_lean": "none"
-  },
-  {
    "id": "KXLIGAMXSPREAD-26OCT09TIGTOL-TOL2",
    "ticker": "KXLIGAMXSPREAD-26OCT09TIGTOL-TOL2",
    "side": "yes",
@@ -7495,45 +7462,6 @@
    "trust": 0.25,
    "sharp_prob": 0.316,
    "sharp_source": "Pinnacle",
-   "research": "",
-   "sources": [],
-   "expert_lean": "none"
-  },
-  {
-   "id": "KXNCAAFSPREAD-26OCT09CLMBMRST-MRST8",
-   "ticker": "KXNCAAFSPREAD-26OCT09CLMBMRST-MRST8",
-   "side": "yes",
-   "event": "KXNCAAFSPREAD-26OCT09CLMBMRST",
-   "game": "26OCT09CLMBMRST",
-   "sport": "Football",
-   "model_key": "cfb",
-   "mtype": "spread",
-   "line": 7.5,
-   "tour": "College Football",
-   "tournament": "Columbia at Marist",
-   "matchup": "Columbia at Marist",
-   "surface": "",
-   "pick": "Marist wins by over 7.5 points",
-   "opponent": "",
-   "market": "Marist wins by over 7.5 points",
-   "price": 0.23,
-   "model_prob": 0.388,
-   "raw_prob": 0.561,
-   "edge": 0.146,
-   "tier": "W",
-   "units": 0.5,
-   "made": "2026-10-08T00:32:45.490140+00:00",
-   "expected_end": "2026-10-10T02:00:00+00:00",
-   "start_est": "2026-10-09T23:00:00+00:00",
-   "status": "pending",
-   "latest_price": 0.165,
-   "close_price": 0.165,
-   "pnl": null,
-   "why": "Projected score margin +10.0 (home) and total 49.3. Model gives \"Marist wins by over 7.5 points\" 56%. Blended with the market that's 35% vs a 23% price.",
-   "trend": -0.015,
-   "new_market": false,
-   "trust": 0.38,
-   "sharp_prob": null,
    "research": "",
    "sources": [],
    "expert_lean": "none"
@@ -8268,8 +8196,8 @@
    "expected_end": "2026-10-11T23:25:00+00:00",
    "start_est": "2026-10-11T20:25:00+00:00",
    "status": "pending",
-   "latest_price": 0.45,
-   "close_price": 0.45,
+   "latest_price": 0.455,
+   "close_price": 0.455,
    "pnl": null,
    "why": "Emanuel Wilson: 42 a game lately (last 12 games). Model gives \"Emanuel Wilson: under 60\" 68%. Blended with the market that's 51% vs a 46% price. Price down 4\u00a2 in the last 12 hours.",
    "trend": -0.035,
@@ -9412,7 +9340,9 @@
    "research": "",
    "sources": [],
    "expert_lean": "none"
-  },
+  }
+ ],
+ "watch_history": [
   {
    "id": "KXARGPREMDIVTOTAL-26OCT09UNIDYJ-3",
    "ticker": "KXARGPREMDIVTOTAL-26OCT09UNIDYJ-3",
@@ -9439,10 +9369,10 @@
    "made": "2026-10-10T00:34:00.348606+00:00",
    "expected_end": "2026-10-10T03:45:00+00:00",
    "start_est": "2026-10-10T00:45:00+00:00",
-   "status": "pending",
+   "status": "loss",
    "latest_price": 0.44,
    "close_price": null,
-   "pnl": null,
+   "pnl": -0.52,
    "why": "Expected goals 1.38 vs 1.63 (3.01 total). Model gives \"Over 2.5 goals scored\" 58%. Blended with the market that's 47% vs a 44% price.",
    "trend": 0.0,
    "new_market": false,
@@ -9450,10 +9380,130 @@
    "sharp_prob": null,
    "research": "",
    "sources": [],
-   "expert_lean": "none"
-  }
- ],
- "watch_history": [
+   "expert_lean": "none",
+   "graded": "2026-10-10T03:23:00.547855+00:00"
+  },
+  {
+   "id": "KXNCAAFSPREAD-26OCT09CLMBMRST-MRST8",
+   "ticker": "KXNCAAFSPREAD-26OCT09CLMBMRST-MRST8",
+   "side": "yes",
+   "event": "KXNCAAFSPREAD-26OCT09CLMBMRST",
+   "game": "26OCT09CLMBMRST",
+   "sport": "Football",
+   "model_key": "cfb",
+   "mtype": "spread",
+   "line": 7.5,
+   "tour": "College Football",
+   "tournament": "Columbia at Marist",
+   "matchup": "Columbia at Marist",
+   "surface": "",
+   "pick": "Marist wins by over 7.5 points",
+   "opponent": "",
+   "market": "Marist wins by over 7.5 points",
+   "price": 0.23,
+   "model_prob": 0.388,
+   "raw_prob": 0.561,
+   "edge": 0.146,
+   "tier": "W",
+   "units": 0.5,
+   "made": "2026-10-08T00:32:45.490140+00:00",
+   "expected_end": "2026-10-10T02:00:00+00:00",
+   "start_est": "2026-10-09T23:00:00+00:00",
+   "status": "loss",
+   "latest_price": 0.165,
+   "close_price": 0.165,
+   "pnl": -0.53,
+   "why": "Projected score margin +10.0 (home) and total 49.3. Model gives \"Marist wins by over 7.5 points\" 56%. Blended with the market that's 35% vs a 23% price.",
+   "trend": -0.015,
+   "new_market": false,
+   "trust": 0.38,
+   "sharp_prob": null,
+   "research": "",
+   "sources": [],
+   "expert_lean": "none",
+   "graded": "2026-10-10T03:22:55.744403+00:00"
+  },
+  {
+   "id": "KXLIGAMXTOTAL-26OCT09PUELEO-3:no",
+   "ticker": "KXLIGAMXTOTAL-26OCT09PUELEO-3",
+   "side": "no",
+   "event": "KXLIGAMXTOTAL-26OCT09PUELEO",
+   "game": "26OCT09PUELEO",
+   "sport": "Soccer",
+   "model_key": "soccer",
+   "mtype": "total",
+   "line": 2.5,
+   "tour": "Liga MX",
+   "tournament": "Puebla vs Leon",
+   "matchup": "Puebla vs Leon",
+   "surface": "",
+   "pick": "Under 2.5 goals scored",
+   "opponent": "",
+   "market": "Under 2.5 goals scored",
+   "price": 0.51,
+   "model_prob": 0.553,
+   "raw_prob": 0.607,
+   "edge": 0.026,
+   "tier": "W",
+   "units": 0.5,
+   "made": "2026-10-07T01:23:25.697059+00:00",
+   "expected_end": "2026-10-10T04:00:00+00:00",
+   "start_est": "2026-10-10T00:30:00+00:00",
+   "status": "win",
+   "latest_price": 0.495,
+   "close_price": 0.495,
+   "pnl": 0.46,
+   "why": "Expected goals 1.09 vs 1.17 (2.26 total). Model gives \"Under 2.5 goals scored\" 61%. Blended with the market that's 53% vs a 51% price. Sharp sportsbook price (Pinnacle) says 50%.",
+   "trend": 0.005,
+   "new_market": false,
+   "trust": 0.25,
+   "sharp_prob": 0.5026,
+   "sharp_source": "Pinnacle",
+   "research": "",
+   "sources": [],
+   "expert_lean": "none",
+   "graded": "2026-10-10T03:22:55.479857+00:00"
+  },
+  {
+   "id": "KXNCAAFTEAMTOTAL-26OCT09FSULOU-FSU28:no",
+   "ticker": "KXNCAAFTEAMTOTAL-26OCT09FSULOU-FSU28",
+   "side": "no",
+   "event": "KXNCAAFTEAMTOTAL-26OCT09FSULOU",
+   "game": "26OCT09FSULOU",
+   "sport": "Football",
+   "model_key": "cfb",
+   "mtype": "team_total",
+   "line": 27.5,
+   "tour": "College Football",
+   "tournament": "Florida State at Louisville",
+   "matchup": "Florida State at Louisville",
+   "surface": "",
+   "pick": "Florida St. under 27.5 points",
+   "opponent": "",
+   "market": "Florida St. under 27.5 points",
+   "price": 0.46,
+   "model_prob": 0.551,
+   "raw_prob": 0.647,
+   "edge": 0.074,
+   "tier": "W",
+   "units": 0.5,
+   "made": "2026-10-05T22:22:02.350477+00:00",
+   "expected_end": "2026-10-10T02:00:00+00:00",
+   "start_est": "2026-10-09T23:00:00+00:00",
+   "status": "win",
+   "latest_price": 0.465,
+   "close_price": 0.465,
+   "pnl": 0.57,
+   "why": "Projected score margin +9.5 (home) and total 55.3. Model gives \"Florida St. under 27.5 points\" 65%. Blended with the market that's 50% vs a 46% price.",
+   "trend": 0.0,
+   "new_market": true,
+   "trust": 0.25,
+   "sharp_prob": null,
+   "research": "",
+   "sources": [],
+   "expert_lean": "none",
+   "graded": "2026-10-10T03:22:53.495479+00:00"
+  },
   {
    "id": "KXEFLCHAMPIONSHIPSPREAD-26OCT09WHUQPR-WHU2",
    "ticker": "KXEFLCHAMPIONSHIPSPREAD-26OCT09WHUQPR-WHU2",
@@ -21346,170 +21396,6 @@
    "sources": [],
    "expert_lean": "none",
    "graded": "2026-09-22T01:18:32.423228+00:00"
-  },
-  {
-   "id": "KXARGPREMDIVGAME-26SEP21BARIRM-BAR",
-   "ticker": "KXARGPREMDIVGAME-26SEP21BARIRM-BAR",
-   "side": "yes",
-   "event": "KXARGPREMDIVGAME-26SEP21BARIRM",
-   "game": "26SEP21BARIRM",
-   "sport": "Soccer",
-   "model_key": "soccer",
-   "mtype": "winner",
-   "line": null,
-   "tour": "Argentina Primera",
-   "tournament": "Barracas vs Rivadavia",
-   "matchup": "Barracas vs Rivadavia",
-   "surface": "",
-   "pick": "Barracas to win",
-   "opponent": "",
-   "market": "Barracas to win",
-   "price": 0.29,
-   "model_prob": 0.33,
-   "raw_prob": 0.376,
-   "edge": 0.025,
-   "tier": "W",
-   "units": 0.5,
-   "made": "2026-09-21T04:22:14.900143+00:00",
-   "expected_end": "2026-09-22T01:00:00+00:00",
-   "start_est": "2026-09-21T22:00:00+00:00",
-   "status": "loss",
-   "latest_price": 0.275,
-   "close_price": 0.275,
-   "pnl": -0.52,
-   "why": "Ratings 1489 (Barracas Central, home) vs 1557 (Ind. Rivadavia). Share of chances lately (xG or shots on target) 50% vs 50%. Goal difference last 6: -4 vs +0. Last played Sep 14 vs Sep 12. Model gives the home 38%. Blended with the market that's 31% vs a 29% price. Sharp sportsbook price (Pinnacle) says 28%.",
-   "trend": 0.001,
-   "new_market": false,
-   "trust": 0.25,
-   "sharp_prob": 0.2848,
-   "sharp_source": "Pinnacle",
-   "research": "",
-   "sources": [],
-   "expert_lean": "none",
-   "graded": "2026-09-22T00:27:15.729457+00:00"
-  },
-  {
-   "id": "KXARGPREMDIVGAME-26SEP21CAATUC-CAA",
-   "ticker": "KXARGPREMDIVGAME-26SEP21CAATUC-CAA",
-   "side": "yes",
-   "event": "KXARGPREMDIVGAME-26SEP21CAATUC",
-   "game": "26SEP21CAATUC",
-   "sport": "Soccer",
-   "model_key": "soccer",
-   "mtype": "winner",
-   "line": null,
-   "tour": "Argentina Primera",
-   "tournament": "Aldosivi vs Tucuman",
-   "matchup": "Aldosivi vs Tucuman",
-   "surface": "",
-   "pick": "Aldosivi to win",
-   "opponent": "",
-   "market": "Aldosivi to win",
-   "price": 0.27,
-   "model_prob": 0.301,
-   "raw_prob": 0.336,
-   "edge": 0.017,
-   "tier": "W",
-   "units": 0.5,
-   "made": "2026-09-21T16:21:53.283656+00:00",
-   "expected_end": "2026-09-21T20:30:00+00:00",
-   "start_est": "2026-09-21T17:30:00+00:00",
-   "status": "win",
-   "latest_price": 0.285,
-   "close_price": 0.285,
-   "pnl": 1.33,
-   "why": "Ratings 1345 (Aldosivi, home) vs 1453 (Atl. Tucuman). Share of chances lately (xG or shots on target) 50% vs 50%. Goal difference last 6: -3 vs +0. Last played Sep 12 vs Sep 12. Model gives the home 34%. Blended with the market that's 28% vs a 27% price. Price down 3\u00a2 in the last 12 hours. Sharp sportsbook price (Pinnacle) says 30%.",
-   "trend": -0.03,
-   "new_market": false,
-   "trust": 0.25,
-   "sharp_prob": 0.297,
-   "sharp_source": "Pinnacle",
-   "research": "",
-   "sources": [],
-   "expert_lean": "none",
-   "graded": "2026-09-21T20:20:22.115451+00:00"
-  },
-  {
-   "id": "KXWTAMATCH-26SEP21HUNGAR-HUN",
-   "ticker": "KXWTAMATCH-26SEP21HUNGAR-HUN",
-   "side": "yes",
-   "event": "KXWTAMATCH-26SEP21HUNGAR",
-   "game": "26SEP21HUNGAR",
-   "sport": "Tennis",
-   "model_key": "tennis",
-   "mtype": "winner",
-   "line": null,
-   "tour": "WTA",
-   "tournament": "2026 WTA Singapore",
-   "matchup": "2026 WTA Singapore",
-   "surface": "hard",
-   "pick": "Storm Hunter",
-   "opponent": "Joanna Garland",
-   "market": "Storm Hunter to win",
-   "price": 0.48,
-   "model_prob": 0.539,
-   "raw_prob": 0.599,
-   "edge": 0.042,
-   "tier": "W",
-   "units": 0.5,
-   "made": "2026-09-21T00:28:25.502826+00:00",
-   "expected_end": "2026-09-21T14:40:00+00:00",
-   "start_est": "2026-09-21T10:40:00+00:00",
-   "status": "loss",
-   "latest_price": 0.475,
-   "close_price": 0.475,
-   "pnl": -0.52,
-   "why": "Elo 1609 vs 1587 on hard. Won 50% vs 50% of games lately. Form 6-4 vs 6-4. Games played in last 3 days: 0 vs 44. Model 60%, blended with the market 54%, price 48%. Price down 8\u00a2 in the last 12 hours. Sharp sportsbook price (17 books) says 50%.",
-   "trend": -0.084,
-   "new_market": false,
-   "trust": 0.5,
-   "sharp_prob": 0.4998,
-   "sharp_source": "17 books",
-   "research": "",
-   "sources": [],
-   "expert_lean": "none",
-   "graded": "2026-09-21T16:21:51.994759+00:00"
-  },
-  {
-   "id": "KXWTAMATCH-26SEP20GIBFER-FER",
-   "ticker": "KXWTAMATCH-26SEP20GIBFER-FER",
-   "side": "yes",
-   "event": "KXWTAMATCH-26SEP20GIBFER",
-   "game": "26SEP20GIBFER",
-   "sport": "Tennis",
-   "model_key": "tennis",
-   "mtype": "winner",
-   "line": null,
-   "tour": "WTA",
-   "tournament": "2026 WTA Singapore",
-   "matchup": "2026 WTA Singapore",
-   "surface": "hard",
-   "pick": "Fiona Ferro",
-   "opponent": "Talia Gibson",
-   "market": "Fiona Ferro to win",
-   "price": 0.4,
-   "model_prob": 0.454,
-   "raw_prob": 0.513,
-   "edge": 0.037,
-   "tier": "W",
-   "units": 0.5,
-   "made": "2026-09-21T00:28:25.502826+00:00",
-   "expected_end": "2026-09-21T06:00:00+00:00",
-   "start_est": "2026-09-21T02:00:00+00:00",
-   "status": "loss",
-   "latest_price": 0.395,
-   "close_price": 0.395,
-   "pnl": -0.52,
-   "why": "Elo 1693 vs 1593 on hard. Won 50% vs 50% of games lately. Form 8-2 vs 3-7. Model 51%, blended with the market 45%, price 40%. Price down 6\u00a2 in the last 12 hours. Sharp sportsbook price (Pinnacle) says 40%.",
-   "trend": -0.058,
-   "new_market": false,
-   "trust": 0.5,
-   "sharp_prob": 0.402,
-   "sharp_source": "Pinnacle",
-   "research": "",
-   "sources": [],
-   "expert_lean": "none",
-   "graded": "2026-09-21T12:24:47.276780+00:00"
   }
  ],
  "by_tour": {
