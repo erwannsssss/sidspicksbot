@@ -1,6 +1,6 @@
 {
- "updated": "2026-10-10T00:36:08.198807+00:00",
- "status_note": "Last run found 20 new pick(s) and graded 0.",
+ "updated": "2026-10-10T01:26:09.784563+00:00",
+ "status_note": "Last run found 0 new pick(s) and graded 0.",
  "bankroll": 96.54,
  "protection": {
   "bankroll": 96.54,
@@ -5859,61 +5859,40 @@
  },
  "learning": {
   "groups": {
-   "tennis:winner": {
-    "finished": 46,
-    "games": 23,
-    "trust": 0.34,
-    "confidence_fix": false,
-    "last": "2026-10-09T18:00:00+00:00"
-   },
-   "soccer:winner": {
-    "finished": 51,
-    "games": 17,
+   "soccer:total_1h": {
+    "finished": 49,
+    "games": 9,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-09T22:30:00+00:00"
-   },
-   "soccer:btts": {
-    "finished": 34,
-    "games": 17,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-09T22:30:00+00:00"
-   },
-   "soccer:spread": {
-    "finished": 130,
-    "games": 17,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-09T22:30:00+00:00"
-   },
-   "soccer:total": {
-    "finished": 188,
-    "games": 18,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-09T22:30:00+00:00"
+    "last": "2026-10-09T19:15:00+00:00"
    },
    "soccer:btts_1h": {
-    "finished": 18,
-    "games": 9,
+    "finished": 16,
+    "games": 8,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-10-09T19:15:00+00:00"
    },
    "soccer:spread_1h": {
-    "finished": 36,
-    "games": 9,
+    "finished": 32,
+    "games": 8,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-10-09T19:15:00+00:00"
    },
-   "soccer:total_1h": {
-    "finished": 54,
-    "games": 9,
+   "tennis:winner": {
+    "finished": 24,
+    "games": 12,
+    "trust": 0.34,
+    "confidence_fix": false,
+    "last": "2026-10-09T18:00:00+00:00"
+   },
+   "soccer:total": {
+    "finished": 170,
+    "games": 16,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-09T19:15:00+00:00"
+    "last": "2026-10-09T22:30:00+00:00"
    },
    "cfb:winner": {
     "finished": 2,
@@ -5935,6 +5914,27 @@
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-10-09T16:00:00+00:00"
+   },
+   "soccer:spread": {
+    "finished": 114,
+    "games": 15,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-09T22:30:00+00:00"
+   },
+   "soccer:winner": {
+    "finished": 45,
+    "games": 15,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-09T22:30:00+00:00"
+   },
+   "soccer:btts": {
+    "finished": 30,
+    "games": 15,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-09T22:30:00+00:00"
    },
    "soccer:first_to_score": {
     "finished": 18,
@@ -5977,26 +5977,89 @@
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-10-09T19:00:00+00:00"
+   },
+   "cfb:spread_1h": {
+    "finished": 42,
+    "games": 1,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-09T23:00:00+00:00"
+   },
+   "cfb:total_1h": {
+    "finished": 30,
+    "games": 1,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-09T23:00:00+00:00"
+   },
+   "cfb:team_total": {
+    "finished": 10,
+    "games": 1,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-09T23:00:00+00:00"
+   },
+   "cfb:period_winner_1q": {
+    "finished": 4,
+    "games": 1,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-09T23:00:00+00:00"
+   },
+   "cfb:spread_1q": {
+    "finished": 20,
+    "games": 1,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-09T23:00:00+00:00"
+   },
+   "cfb:total_1q": {
+    "finished": 22,
+    "games": 1,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-09T23:00:00+00:00"
+   },
+   "cfb:period_winner_2q": {
+    "finished": 4,
+    "games": 1,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-09T23:00:00+00:00"
+   },
+   "cfb:spread_2q": {
+    "finished": 20,
+    "games": 1,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-09T23:00:00+00:00"
+   },
+   "cfb:total_2q": {
+    "finished": 22,
+    "games": 1,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-09T23:00:00+00:00"
    }
   },
   "price_trend": {
    "flat": {
-    "markets": 542,
-    "hit_vs_price": -0.006
+    "markets": 637,
+    "hit_vs_price": -0.004
    },
    "falling": {
-    "markets": 96,
-    "hit_vs_price": 0.068
+    "markets": 94,
+    "hit_vs_price": 0.049
    },
    "rising": {
-    "markets": 99,
-    "hit_vs_price": -0.032
+    "markets": 97,
+    "hit_vs_price": -0.021
    }
   }
  },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "tracker": {
-  "tracked": 172582,
+  "tracked": 172979,
   "series": 3872,
   "movers": [
    {
@@ -6223,30 +6286,30 @@
    "holdout": {
     "matches": 657,
     "rating_log_loss": 0.6267,
-    "model_log_loss": 0.6256,
+    "model_log_loss": 0.6252,
     "rating_accuracy": 0.654,
-    "model_accuracy": 0.647
+    "model_accuracy": 0.645
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6068,
-    "model_log_loss": 0.6256,
+    "model_log_loss": 0.6252,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 657
    },
    "backtest": {
-    "bets": 13,
-    "wins": 3,
-    "units": -10.6,
-    "roi": -0.45
+    "bets": 15,
+    "wins": 4,
+    "units": -10.5,
+    "roi": -0.397
    },
    "weights": {
-    "home_field": 0.254,
-    "rating": 1.525,
-    "rest": 0.247,
-    "point_diff_form": 0.239,
-    "qb_change": 0.332,
+    "home_field": 0.253,
+    "rating": 1.529,
+    "rest": 0.245,
+    "point_diff_form": 0.242,
+    "qb_change": 0.308,
     "epa": 0.154
    },
    "matches": 4428,
@@ -6914,8 +6977,8 @@
    "expected_end": "2026-10-10T20:00:00+00:00",
    "start_est": "2026-10-10T19:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.315,
-   "close_price": 0.315,
+   "latest_price": 0.335,
+   "close_price": 0.335,
    "pnl": null,
    "why": "Projected score margin -11.0 (home) and total 54.8. Model gives \"Over 49.5 points\" 62%. Blended with the market that's 52% vs a 49% price.",
    "trend": 0.0,
@@ -7384,8 +7447,8 @@
    "expected_end": "2026-10-10T06:00:00+00:00",
    "start_est": "2026-10-10T02:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.21,
-   "close_price": 0.21,
+   "latest_price": 0.205,
+   "close_price": 0.205,
    "pnl": null,
    "why": "Expected goals 1.07 vs 1.74 (2.81 total). Model gives \"Toluca wins by more than 1.5 goals\" 29%. Blended with the market that's 22% vs a 21% price.",
    "trend": 0.0,
@@ -7580,8 +7643,8 @@
    "expected_end": "2026-10-10T20:00:00+00:00",
    "start_est": "2026-10-10T16:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.36,
-   "close_price": 0.36,
+   "latest_price": 0.365,
+   "close_price": 0.365,
    "pnl": null,
    "why": "Projected score margin -11.0 (home) and total 54.0. Model gives \"Arizona wins by over 7.5 points\" 59%. Blended with the market that's 43% vs a 35% price.",
    "trend": 0.005,
@@ -7854,8 +7917,8 @@
    "expected_end": "2026-10-11T01:00:00+00:00",
    "start_est": "2026-10-10T22:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.435,
-   "close_price": 0.435,
+   "latest_price": 0.425,
+   "close_price": 0.425,
    "pnl": null,
    "why": "Projected score margin +8.0 (home) and total 54.1. Model gives \"No: Oregon St. wins by over 13.5 points\" 63%. Blended with the market that's 50% vs a 43% price. Price down 2\u00a2 in the last 12 hours.",
    "trend": -0.02,
@@ -8166,8 +8229,8 @@
    "expected_end": "2026-10-11T20:00:00+00:00",
    "start_est": "2026-10-11T17:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.475,
-   "close_price": 0.475,
+   "latest_price": 0.485,
+   "close_price": 0.485,
    "pnl": null,
    "why": "Tyler Shough: 20 a game lately (last 12 games). Model gives \"Tyler Shough: 10+\" 76%. Blended with the market that's 57% vs a 52% price.",
    "trend": 0.0,
@@ -8518,8 +8581,8 @@
    "expected_end": "2026-10-10T20:00:00+00:00",
    "start_est": "2026-10-10T16:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.265,
-   "close_price": 0.265,
+   "latest_price": 0.27,
+   "close_price": 0.27,
    "pnl": null,
    "why": "Projected score margin +7.6 (home) and total 49.0. Model gives \"Missouri wins by over 11.5 points\" 40%. Blended with the market that's 33% vs a 27% price.",
    "trend": 0.005,
@@ -8635,8 +8698,8 @@
    "expected_end": "2026-10-11T01:00:00+00:00",
    "start_est": "2026-10-10T16:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.36,
-   "close_price": null,
+   "latest_price": 0.355,
+   "close_price": 0.355,
    "pnl": null,
    "why": "Projected score margin -14.3 (home) and total 50.0. Model gives \"Over 41.5 points\" 69%. Blended with the market that's 44% vs a 36% price. Price down 12\u00a2 in the last 12 hours.",
    "trend": -0.115,
@@ -8674,8 +8737,8 @@
    "expected_end": "2026-10-11T20:00:00+00:00",
    "start_est": "2026-10-11T17:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.44,
-   "close_price": null,
+   "latest_price": 0.435,
+   "close_price": 0.435,
    "pnl": null,
    "why": "Cody White: 0.93 a game lately (last 12 games). Model gives \"Cody White: under 2\" 76%. Blended with the market that's 52% vs a 44% price. Price down 4\u00a2 in the last 12 hours.",
    "trend": -0.035,
@@ -8713,8 +8776,8 @@
    "expected_end": "2026-10-11T03:00:00+00:00",
    "start_est": "2026-10-11T00:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.58,
-   "close_price": null,
+   "latest_price": 0.575,
+   "close_price": 0.575,
    "pnl": null,
    "why": "Munetaka Murakami: 1.99 a game this season over 127 games (adjusted 2.01). Model gives \"Munetaka Murakami: 1+\" 87%. Blended with the market that's 65% vs a 58% price.",
    "trend": -0.005,
@@ -8752,8 +8815,8 @@
    "expected_end": "2026-10-11T18:30:00+00:00",
    "start_est": "2026-10-11T15:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.36,
-   "close_price": null,
+   "latest_price": 0.355,
+   "close_price": 0.355,
    "pnl": null,
    "why": "Expected goals 3.12 vs 0.91 (4.03 total). Model gives \"Freiburg wins by more than 1.5 goals\" 62%. Blended with the market that's 42% vs a 36% price.",
    "trend": -0.005,
@@ -8791,8 +8854,8 @@
    "expected_end": "2026-10-11T06:00:00+00:00",
    "start_est": "2026-10-11T03:10:00+00:00",
    "status": "pending",
-   "latest_price": 0.28,
-   "close_price": null,
+   "latest_price": 0.275,
+   "close_price": 0.275,
    "pnl": null,
    "why": "Expected goals 2.83 vs 1.12 (3.95 total). Model gives \"America wins by more than 1.5 goals\" 53%. Blended with the market that's 34% vs a 28% price.",
    "trend": 0.0,
@@ -8830,8 +8893,8 @@
    "expected_end": "2026-10-10T21:45:00+00:00",
    "start_est": "2026-10-10T18:45:00+00:00",
    "status": "pending",
-   "latest_price": 0.26,
-   "close_price": null,
+   "latest_price": 0.255,
+   "close_price": 0.255,
    "pnl": null,
    "why": "Expected goals 2.50 vs 0.95 (3.45 total). Model gives \"No: PSG wins by more than 1.5 goals\" 51%. Blended with the market that's 32% vs a 26% price.",
    "trend": 0.0,
@@ -8869,8 +8932,8 @@
    "expected_end": "2026-10-11T23:05:00+00:00",
    "start_est": "2026-10-11T20:05:00+00:00",
    "status": "pending",
-   "latest_price": 0.46,
-   "close_price": null,
+   "latest_price": 0.45,
+   "close_price": 0.45,
    "pnl": null,
    "why": "Marvin Mims Jr.: 2.51 a game lately (last 12 games). Model gives \"Marvin Mims Jr.: 2+\" 71%. Blended with the market that's 52% vs a 46% price.",
    "trend": 0.015,
@@ -8908,8 +8971,8 @@
    "expected_end": "2026-10-10T20:00:00+00:00",
    "start_est": "2026-10-10T17:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.57,
-   "close_price": null,
+   "latest_price": 0.565,
+   "close_price": 0.565,
    "pnl": null,
    "why": "Projected score margin +9.8 (home) and total 58.5. Model gives \"No: San Diego wins by over 4.5 points\" 81%. Blended with the market that's 63% vs a 57% price.",
    "trend": 0.0,
@@ -8947,8 +9010,8 @@
    "expected_end": "2026-10-10T22:30:00+00:00",
    "start_est": "2026-10-10T19:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.41,
-   "close_price": null,
+   "latest_price": 0.405,
+   "close_price": 0.405,
    "pnl": null,
    "why": "Projected score margin +9.5 (home) and total 48.9. Model gives \"Ohio wins by over 3.5 points\" 65%. Blended with the market that's 47% vs a 41% price. Price down 4\u00a2 in the last 12 hours.",
    "trend": -0.04,
@@ -8986,8 +9049,8 @@
    "expected_end": "2026-10-10T19:00:00+00:00",
    "start_est": "2026-10-10T16:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.39,
-   "close_price": null,
+   "latest_price": 0.375,
+   "close_price": 0.375,
    "pnl": null,
    "why": "Expected goals 3.21 vs 0.98 (4.19 total). Model gives \"Lugano wins by more than 1.5 goals\" 63%. Blended with the market that's 44% vs a 39% price.",
    "trend": -0.01,
@@ -9025,8 +9088,8 @@
    "expected_end": "2026-10-10T06:10:00+00:00",
    "start_est": "2026-10-10T02:10:00+00:00",
    "status": "pending",
-   "latest_price": 0.33,
-   "close_price": null,
+   "latest_price": 0.325,
+   "close_price": 0.325,
    "pnl": null,
    "why": "Elo 1633 vs 1594 on hard. Won 50% vs 50% of games lately. Form 8-2 vs 5-5. Games played in last 3 days: 44 vs 44. Model 54%, blended with the market 40%, price 33%.",
    "trend": -0.008,
@@ -9064,8 +9127,8 @@
    "expected_end": "2026-10-10T20:00:00+00:00",
    "start_est": "2026-10-10T17:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.52,
-   "close_price": null,
+   "latest_price": 0.51,
+   "close_price": 0.51,
    "pnl": null,
    "why": "Projected score margin +20.1 (home) and total 48.2. Model gives \"Chattanooga wins by over 10.5 points\" 73%. Blended with the market that's 56% vs a 52% price.",
    "trend": 0.015,
@@ -9103,8 +9166,8 @@
    "expected_end": "2026-10-10T19:00:00+00:00",
    "start_est": "2026-10-10T16:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.5,
-   "close_price": null,
+   "latest_price": 0.485,
+   "close_price": 0.485,
    "pnl": null,
    "why": "Projected score margin -10.9 (home) and total 54.7. Model gives \"Over 46.5 points\" 69%. Blended with the market that's 54% vs a 50% price.",
    "trend": 0.005,
@@ -9142,8 +9205,8 @@
    "expected_end": "2026-10-10T16:30:00+00:00",
    "start_est": "2026-10-10T13:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.42,
-   "close_price": null,
+   "latest_price": 0.425,
+   "close_price": 0.425,
    "pnl": null,
    "why": "Expected goals 1.74 vs 2.36 (4.10 total). Model gives \"Over 3.5 goals scored\" 59%. Blended with the market that's 46% vs a 42% price.",
    "trend": 0.01,
@@ -9181,8 +9244,8 @@
    "expected_end": "2026-10-10T19:30:00+00:00",
    "start_est": "2026-10-10T16:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.38,
-   "close_price": null,
+   "latest_price": 0.375,
+   "close_price": 0.375,
    "pnl": null,
    "why": "Expected goals 1.90 vs 0.78 (2.68 total). Model gives \"No: Both Teams To Score\" 54%. Blended with the market that's 42% vs a 38% price.",
    "trend": 0.0,
@@ -9220,8 +9283,8 @@
    "expected_end": "2026-10-11T02:30:00+00:00",
    "start_est": "2026-10-10T23:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.31,
-   "close_price": null,
+   "latest_price": 0.3,
+   "close_price": 0.3,
    "pnl": null,
    "why": "Expected goals 1.28 vs 1.37 (2.65 total). Model gives \"No: Both Teams To Score\" 46%. Blended with the market that's 34% vs a 31% price.",
    "trend": -0.015,
@@ -9259,8 +9322,8 @@
    "expected_end": "2026-10-11T22:00:00+00:00",
    "start_est": "2026-10-11T19:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.57,
-   "close_price": null,
+   "latest_price": 0.565,
+   "close_price": 0.565,
    "pnl": null,
    "why": "Expected goals 1.96 vs 1.77 (3.73 total). Model gives \"Over 2.5 goals scored\" 72%. Blended with the market that's 60% vs a 57% price.",
    "trend": 0.0,
@@ -9298,8 +9361,8 @@
    "expected_end": "2026-10-10T17:00:00+00:00",
    "start_est": "2026-10-10T14:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.53,
-   "close_price": null,
+   "latest_price": 0.525,
+   "close_price": 0.525,
    "pnl": null,
    "why": "Expected goals 1.33 vs 2.16 (3.49 total). Model gives \"Over 2.5 goals scored\" 68%. Blended with the market that's 56% vs a 53% price. Sharp sportsbook price (Pinnacle) says 52%.",
    "trend": 0.0,
@@ -9338,8 +9401,8 @@
    "expected_end": "2026-10-10T07:00:00+00:00",
    "start_est": "2026-10-10T03:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.28,
-   "close_price": null,
+   "latest_price": 0.265,
+   "close_price": 0.265,
    "pnl": null,
    "why": "Elo 1775 vs 1800 on hard. Won 50% vs 50% of games lately. Form 8-2 vs 7-3. Games played in last 3 days: 44 vs 22. Model 43%, blended with the market 32%, price 28%.",
    "trend": -0.005,
