@@ -1723,5 +1723,97 @@
     "expected_end": "2026-10-10T20:00:00+00:00"
    }
   ]
+ },
+ {
+  "id": "PARLAY-202610100035-1",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-10-10T00:35:24.059098+00:00",
+  "units": 1.0,
+  "price": 0.1495,
+  "model_prob": 0.2975,
+  "ev": 0.991,
+  "payout_units": 5.7,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXNFLPASSYDS-26OCT11CHIGB-CHITBAGENT17-225:no",
+    "ticker": "KXNFLPASSYDS-26OCT11CHIGB-CHITBAGENT17-225",
+    "side": "no",
+    "market": "Tyson Bagent: under 225",
+    "matchup": "CHI at GB",
+    "sport": "Football",
+    "price": 0.53,
+    "model_prob": 0.691,
+    "edge": 0.144,
+    "expected_end": "2026-10-11T23:25:00+00:00"
+   },
+   {
+    "id": "KXNFLREC-26OCT11LVNE-LVCWHITE82-2:no",
+    "ticker": "KXNFLREC-26OCT11LVNE-LVCWHITE82-2",
+    "side": "no",
+    "market": "Cody White: under 2",
+    "matchup": "LV at NE",
+    "sport": "Football",
+    "price": 0.44,
+    "model_prob": 0.598,
+    "edge": 0.141,
+    "expected_end": "2026-10-11T20:00:00+00:00"
+   },
+   {
+    "id": "KXMLBHRR-26OCT102000CWSCLE-CWSMMURAKAMI5-1",
+    "ticker": "KXMLBHRR-26OCT102000CWSCLE-CWSMMURAKAMI5-1",
+    "side": "yes",
+    "market": "Munetaka Murakami: 1+",
+    "matchup": "Chicago White Sox at Cleveland Guardians",
+    "sport": "Baseball",
+    "price": 0.58,
+    "model_prob": 0.72,
+    "edge": 0.123,
+    "expected_end": "2026-10-11T03:00:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": "PARLAY-202610100035-2",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-10-10T00:35:24.059147+00:00",
+  "units": 1.0,
+  "price": 0.2059,
+  "model_prob": 0.3478,
+  "ev": 0.689,
+  "payout_units": 3.9,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXNCAAFTOTAL-26OCT10SCSTCHSO-42",
+    "ticker": "KXNCAAFTOTAL-26OCT10SCSTCHSO-42",
+    "side": "yes",
+    "market": "Over 41.5 points",
+    "matchup": "South Carolina State at Charleston Southern",
+    "sport": "Football",
+    "price": 0.36,
+    "model_prob": 0.523,
+    "edge": 0.147,
+    "expected_end": "2026-10-11T01:00:00+00:00"
+   },
+   {
+    "id": "KXNFLRECYDS-26OCT11INDPIT-INDTWARREN84-50:no",
+    "ticker": "KXNFLRECYDS-26OCT11INDPIT-INDTWARREN84-50",
+    "side": "no",
+    "market": "Tyler Warren: under 50",
+    "matchup": "IND at PIT",
+    "sport": "Football",
+    "price": 0.53,
+    "model_prob": 0.665,
+    "edge": 0.117,
+    "expected_end": "2026-10-11T20:00:00+00:00"
+   }
+  ]
  }
 ]
