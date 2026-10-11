@@ -1,114 +1,5 @@
 [
  {
-  "id": "PARLAY-202609270031-1",
-  "tier": "P",
-  "sport": "Parlay",
-  "kind": "watchlist",
-  "made": "2026-09-27T00:31:03.477606+00:00",
-  "units": 1.0,
-  "price": 0.1198,
-  "model_prob": 0.2669,
-  "ev": 1.227,
-  "payout_units": 7.3,
-  "status": "loss",
-  "pnl": -1.0,
-  "legs": [
-   {
-    "id": "KXNFLRECYDS-26SEP27LVNO-NOJJOHNSON83-35",
-    "ticker": "KXNFLRECYDS-26SEP27LVNO-NOJJOHNSON83-35",
-    "side": "yes",
-    "market": "Juwan Johnson: 35+",
-    "matchup": "LV at NO",
-    "sport": "Football",
-    "price": 0.5,
-    "model_prob": 0.664,
-    "edge": 0.147,
-    "expected_end": "2026-09-28T02:25:00+00:00"
-   },
-   {
-    "id": "KXNFLRSHYDS-26SEP27BALDAL-BALLJACKSON8-40:no",
-    "ticker": "KXNFLRSHYDS-26SEP27BALDAL-BALLJACKSON8-40",
-    "side": "no",
-    "market": "Lamar Jackson: under 40",
-    "matchup": "BAL at DAL",
-    "sport": "Football",
-    "price": 0.53,
-    "model_prob": 0.685,
-    "edge": 0.137,
-    "expected_end": "2026-09-28T02:25:00+00:00"
-   },
-   {
-    "id": "KXNFLRSHYDS-26SEP27CARCLE-CLEQJUDKINS10-60:no",
-    "ticker": "KXNFLRSHYDS-26SEP27CARCLE-CLEQJUDKINS10-60",
-    "side": "no",
-    "market": "Quinshon Judkins: under 60",
-    "matchup": "CAR at CLE",
-    "sport": "Football",
-    "price": 0.53,
-    "model_prob": 0.676,
-    "edge": 0.129,
-    "expected_end": "2026-09-27T23:00:00+00:00",
-    "result": "loss"
-   },
-   {
-    "id": "KXNFLREC-26SEP27LARDEN-LARTFERGUSON18-6:no",
-    "ticker": "KXNFLREC-26SEP27LARDEN-LARTFERGUSON18-6",
-    "side": "no",
-    "market": "Terrance Ferguson: under 6",
-    "matchup": "LA at DEN",
-    "sport": "Football",
-    "price": 0.76,
-    "model_prob": 0.868,
-    "edge": 0.095,
-    "expected_end": "2026-09-28T06:20:00+00:00"
-   }
-  ],
-  "graded": "2026-09-27T21:21:16.461877+00:00"
- },
- {
-  "id": "PARLAY-202609270031-2",
-  "tier": "P",
-  "sport": "Parlay",
-  "kind": "watchlist",
-  "made": "2026-09-27T00:31:03.477712+00:00",
-  "units": 1.0,
-  "price": 0.2833,
-  "model_prob": 0.423,
-  "ev": 0.493,
-  "payout_units": 2.5,
-  "status": "win",
-  "pnl": 2.53,
-  "legs": [
-   {
-    "id": "KXNFLREC-26SEP27LACBUF-LACLMCCONKEY15-5:no",
-    "ticker": "KXNFLREC-26SEP27LACBUF-LACLMCCONKEY15-5",
-    "side": "no",
-    "market": "Ladd McConkey: under 5",
-    "matchup": "LAC at BUF",
-    "sport": "Football",
-    "price": 0.5,
-    "model_prob": 0.639,
-    "edge": 0.122,
-    "expected_end": "2026-09-27T23:00:00+00:00",
-    "result": "win"
-   },
-   {
-    "id": "KXMLBKS-26SEP262140HOUATH-ATHJPERKINS50-5",
-    "ticker": "KXMLBKS-26SEP262140HOUATH-ATHJPERKINS50-5",
-    "side": "yes",
-    "market": "Jack Perkins: 5+",
-    "matchup": "Houston Astros at Athletics",
-    "sport": "Baseball",
-    "price": 0.53,
-    "model_prob": 0.662,
-    "edge": 0.114,
-    "expected_end": "2026-09-27T04:40:00+00:00",
-    "result": "win"
-   }
-  ],
-  "graded": "2026-09-27T21:21:16.524265+00:00"
- },
- {
   "id": "PARLAY-202609280031-1",
   "tier": "P",
   "sport": "Parlay",
@@ -1348,8 +1239,8 @@
   "model_prob": 0.3478,
   "ev": 0.689,
   "payout_units": 3.9,
-  "status": "pending",
-  "pnl": null,
+  "status": "loss",
+  "pnl": -1.0,
   "legs": [
    {
     "id": "KXNCAAFTOTAL-26OCT10SCSTCHSO-42",
@@ -1374,9 +1265,11 @@
     "price": 0.53,
     "model_prob": 0.665,
     "edge": 0.117,
-    "expected_end": "2026-10-11T20:00:00+00:00"
+    "expected_end": "2026-10-11T20:00:00+00:00",
+    "result": "loss"
    }
-  ]
+  ],
+  "graded": "2026-10-11T21:24:02.295009+00:00"
  },
  {
   "id": "PARLAY-202610110034-1",
@@ -1389,8 +1282,8 @@
   "model_prob": 0.2748,
   "ev": 1.005,
   "payout_units": 6.3,
-  "status": "pending",
-  "pnl": null,
+  "status": "loss",
+  "pnl": -1.0,
   "legs": [
    {
     "id": "KXNFLPASSYDS-26OCT11CHIGB-CHITBAGENT17-225:no",
@@ -1402,7 +1295,8 @@
     "price": 0.53,
     "model_prob": 0.691,
     "edge": 0.144,
-    "expected_end": "2026-10-11T23:25:00+00:00"
+    "expected_end": "2026-10-11T23:25:00+00:00",
+    "result": "win"
    },
    {
     "id": "KXNFLREC-26OCT11LVNE-LVCWHITE82-2:no",
@@ -1414,7 +1308,8 @@
     "price": 0.44,
     "model_prob": 0.598,
     "edge": 0.141,
-    "expected_end": "2026-10-11T20:00:00+00:00"
+    "expected_end": "2026-10-11T20:00:00+00:00",
+    "result": "loss"
    },
    {
     "id": "KXNFLRECYDS-26OCT11INDPIT-INDTWARREN84-50:no",
@@ -1426,9 +1321,11 @@
     "price": 0.53,
     "model_prob": 0.665,
     "edge": 0.117,
-    "expected_end": "2026-10-11T20:00:00+00:00"
+    "expected_end": "2026-10-11T20:00:00+00:00",
+    "result": "loss"
    }
-  ]
+  ],
+  "graded": "2026-10-11T21:24:02.554563+00:00"
  },
  {
   "id": "PARLAY-202610110034-2",
