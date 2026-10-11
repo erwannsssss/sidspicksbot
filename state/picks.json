@@ -18456,10 +18456,10 @@
   "made": "2026-10-08T00:32:45.490140+00:00",
   "expected_end": "2026-10-11T20:00:00+00:00",
   "start_est": "2026-10-11T17:00:00+00:00",
-  "status": "pending",
+  "status": "loss",
   "latest_price": 0.445,
   "close_price": 0.445,
-  "pnl": null,
+  "pnl": -0.52,
   "why": "Projected score margin -5.9 (home) and total 45.2. Model gives \"Over 39.5 points\" 66%. Blended with the market that's 49% vs a 44% price.",
   "trend": 0.0,
   "new_market": false,
@@ -18467,7 +18467,8 @@
   "sharp_prob": null,
   "research": "",
   "sources": [],
-  "expert_lean": "none"
+  "expert_lean": "none",
+  "graded": "2026-10-11T20:22:16.146817+00:00"
  },
  {
   "id": "KXNCAAFSPREAD-26OCT10TLSANAVY-NAVY3",
@@ -18895,10 +18896,10 @@
   "made": "2026-10-08T00:32:45.490140+00:00",
   "expected_end": "2026-10-11T20:00:00+00:00",
   "start_est": "2026-10-11T17:00:00+00:00",
-  "status": "pending",
+  "status": "loss",
   "latest_price": 0.245,
   "close_price": 0.245,
-  "pnl": null,
+  "pnl": -0.53,
   "why": "Ratings 1384 vs 1505, at home. Net EPA per play lately -0.24 vs +0.06. Point differential last 5: -83 vs +10. Model gives MIA 34%. Blended with the market that's 28% vs a 26% price.",
   "trend": 0.012,
   "new_market": false,
@@ -18906,7 +18907,8 @@
   "sharp_prob": null,
   "research": "",
   "sources": [],
-  "expert_lean": "none"
+  "expert_lean": "none",
+  "graded": "2026-10-11T20:22:16.347018+00:00"
  },
  {
   "id": "KXNFLPASSYDS-26OCT11CHIGB-CHITBAGENT17-225:no",
@@ -20687,10 +20689,10 @@
   "made": "2026-10-11T00:32:42.003546+00:00",
   "expected_end": "2026-10-11T20:45:00+00:00",
   "start_est": "2026-10-11T17:45:00+00:00",
-  "status": "pending",
+  "status": "win",
   "latest_price": 0.435,
   "close_price": 0.435,
-  "pnl": null,
+  "pnl": 0.62,
   "why": "Expected goals 0.73 vs 0.65 (1.38 total). Model gives \"Under 1.5 goals scored\" 60%. Blended with the market that's 49% vs a 44% price.",
   "trend": 0.005,
   "new_market": false,
@@ -20698,7 +20700,8 @@
   "sharp_prob": null,
   "research": "",
   "sources": [],
-  "expert_lean": "none"
+  "expert_lean": "none",
+  "graded": "2026-10-11T20:22:17.620276+00:00"
  },
  {
   "id": "KXUCLTOTAL-26OCT13VIKBMU-4:no",
@@ -20765,10 +20768,10 @@
   "made": "2026-10-11T00:32:42.003546+00:00",
   "expected_end": "2026-10-11T21:00:00+00:00",
   "start_est": "2026-10-11T18:00:00+00:00",
-  "status": "pending",
+  "status": "win",
   "latest_price": 0.445,
   "close_price": 0.445,
-  "pnl": null,
+  "pnl": 0.64,
   "why": "Ratings 1808 (Olympiakos, home) vs 1750 (Panathinaikos). Share of chances lately (xG or shots on target) 67% vs 55%. Goal difference last 6: +3 vs +10. Last played Sep 20 vs Sep 20. Model gives the home 56%. Blended with the market that's 50% vs a 43% price.",
   "trend": -0.004,
   "new_market": false,
@@ -20776,7 +20779,8 @@
   "sharp_prob": null,
   "research": "",
   "sources": [],
-  "expert_lean": "none"
+  "expert_lean": "none",
+  "graded": "2026-10-11T20:22:17.836037+00:00"
  },
  {
   "id": "KXATPMATCH-26OCT11KHAMAN-MAN",
