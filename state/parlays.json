@@ -1551,8 +1551,8 @@
   "model_prob": 0.2349,
   "ev": 0.834,
   "payout_units": 6.8,
-  "status": "pending",
-  "pnl": null,
+  "status": "loss",
+  "pnl": -1.0,
   "legs": [
    {
     "id": "KXNCAAFSPREAD-26OCT10CCARMRSH-MRSH4",
@@ -1564,7 +1564,8 @@
     "price": 0.48,
     "model_prob": 0.616,
     "edge": 0.119,
-    "expected_end": "2026-10-10T20:00:00+00:00"
+    "expected_end": "2026-10-10T20:00:00+00:00",
+    "result": "loss"
    },
    {
     "id": "KXNCAAFSPREAD-26OCT10BALLNW-NW36:no",
@@ -1591,7 +1592,8 @@
     "edge": 0.107,
     "expected_end": "2026-10-11T20:00:00+00:00"
    }
-  ]
+  ],
+  "graded": "2026-10-11T02:24:32.357037+00:00"
  },
  {
   "id": "PARLAY-202610090037-1",
@@ -1646,8 +1648,8 @@
   "model_prob": 0.2499,
   "ev": 0.844,
   "payout_units": 6.4,
-  "status": "pending",
-  "pnl": null,
+  "status": "loss",
+  "pnl": -1.0,
   "legs": [
    {
     "id": "KXNCAAFSPREAD-26OCT10CCARMRSH-MRSH4",
@@ -1659,7 +1661,8 @@
     "price": 0.48,
     "model_prob": 0.616,
     "edge": 0.119,
-    "expected_end": "2026-10-10T20:00:00+00:00"
+    "expected_end": "2026-10-10T20:00:00+00:00",
+    "result": "loss"
    },
    {
     "id": "KXNFLRECYDS-26OCT11INDPIT-INDTWARREN84-50:no",
@@ -1686,7 +1689,8 @@
     "expected_end": "2026-10-10T20:00:00+00:00",
     "result": "win"
    }
-  ]
+  ],
+  "graded": "2026-10-11T02:24:32.489491+00:00"
  },
  {
   "id": "PARLAY-202610100035-1",
