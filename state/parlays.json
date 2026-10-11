@@ -1441,8 +1441,8 @@
   "model_prob": 0.3056,
   "ev": 0.57,
   "payout_units": 4.1,
-  "status": "pending",
-  "pnl": null,
+  "status": "loss",
+  "pnl": -1.0,
   "legs": [
    {
     "id": "KXBUNDESLIGASPREAD-26OCT11SCFSCH-SCF2",
@@ -1454,7 +1454,8 @@
     "price": 0.36,
     "model_prob": 0.489,
     "edge": 0.113,
-    "expected_end": "2026-10-11T18:30:00+00:00"
+    "expected_end": "2026-10-11T18:30:00+00:00",
+    "result": "loss"
    },
    {
     "id": "KXNFLRECYDS-26OCT11CLENYJ-CLEDBOSTON12-50",
@@ -1468,6 +1469,7 @@
     "edge": 0.107,
     "expected_end": "2026-10-11T20:00:00+00:00"
    }
-  ]
+  ],
+  "graded": "2026-10-11T18:26:44.108319+00:00"
  }
 ]
