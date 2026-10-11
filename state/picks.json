@@ -19249,8 +19249,8 @@
   "expected_end": "2026-10-11T21:45:00+00:00",
   "start_est": "2026-10-11T18:15:00+00:00",
   "status": "pending",
-  "latest_price": 0.635,
-  "close_price": 0.635,
+  "latest_price": 0.655,
+  "close_price": 0.655,
   "pnl": null,
   "why": "Expected goals 0.91 vs 1.01 (1.92 total). Model gives \"No: Juventus wins by more than 1.5 goals\" 86%. Blended with the market that's 70% vs a 66% price.",
   "trend": 0.0,
@@ -19968,8 +19968,8 @@
   "expected_end": "2026-10-11T23:05:00+00:00",
   "start_est": "2026-10-11T20:05:00+00:00",
   "status": "pending",
-  "latest_price": 0.455,
-  "close_price": 0.455,
+  "latest_price": 0.445,
+  "close_price": 0.445,
   "pnl": null,
   "why": "Marvin Mims Jr.: 2.51 a game lately (last 12 games). Model gives \"Marvin Mims Jr.: 2+\" 71%. Blended with the market that's 52% vs a 46% price.",
   "trend": 0.015,
@@ -21276,10 +21276,10 @@
   "made": "2026-10-11T00:32:42.003546+00:00",
   "expected_end": "2026-10-11T15:00:00+00:00",
   "start_est": "2026-10-11T12:00:00+00:00",
-  "status": "pending",
+  "status": "loss",
   "latest_price": 0.725,
   "close_price": 0.725,
-  "pnl": null,
+  "pnl": -0.51,
   "why": "Expected goals 1.67 vs 4.01 (5.68 total). Model gives \"Both Teams To Score\" 80%. Blended with the market that's 74% vs a 73% price.",
   "trend": -0.005,
   "new_market": false,
@@ -21287,6 +21287,7 @@
   "sharp_prob": null,
   "research": "",
   "sources": [],
-  "expert_lean": "none"
+  "expert_lean": "none",
+  "graded": "2026-10-11T14:22:25.773671+00:00"
  }
 ]
