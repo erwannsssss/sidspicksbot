@@ -1,6 +1,6 @@
 {
- "updated": "2026-10-11T03:26:33.395696+00:00",
- "status_note": "Last run found 0 new pick(s) and graded 8.",
+ "updated": "2026-10-11T04:26:29.722292+00:00",
+ "status_note": "Last run found 0 new pick(s) and graded 1.",
  "bankroll": 96.02,
  "protection": {
   "bankroll": 96.02,
@@ -5498,424 +5498,15 @@
      }
     ],
     "graded": "2026-09-27T21:21:16.461877+00:00"
-   },
-   {
-    "id": "PARLAY-202609260030-2",
-    "tier": "P",
-    "sport": "Parlay",
-    "kind": "watchlist",
-    "made": "2026-09-26T00:30:36.374079+00:00",
-    "units": 1.0,
-    "price": 0.1358,
-    "model_prob": 0.2761,
-    "ev": 1.033,
-    "payout_units": 6.4,
-    "status": "loss",
-    "pnl": -1.0,
-    "legs": [
-     {
-      "id": "KXNCAAFSPREAD-26SEP26MOSUSMU-SMU35:no",
-      "ticker": "KXNCAAFSPREAD-26SEP26MOSUSMU-SMU35",
-      "side": "no",
-      "market": "No: SMU wins by over 34.5 points",
-      "matchup": "Missouri State at SMU",
-      "sport": "Football",
-      "price": 0.51,
-      "model_prob": 0.667,
-      "edge": 0.14,
-      "expected_end": "2026-09-26T20:00:00+00:00"
-     },
-     {
-      "id": "KXNCAAFSPREAD-26SEP26OKSTWVU-WVU2",
-      "ticker": "KXNCAAFSPREAD-26SEP26OKSTWVU-WVU2",
-      "side": "yes",
-      "market": "West Virginia wins by over 1.5 points",
-      "matchup": "Oklahoma State at West Virginia",
-      "sport": "Football",
-      "price": 0.5,
-      "model_prob": 0.654,
-      "edge": 0.136,
-      "expected_end": "2026-09-26T20:00:00+00:00",
-      "result": "loss"
-     },
-     {
-      "id": "KXNCAAFSPREAD-26SEP26HOUGASO-HOU18:no",
-      "ticker": "KXNCAAFSPREAD-26SEP26HOUGASO-HOU18",
-      "side": "no",
-      "market": "No: Houston wins by over 17.5 points",
-      "matchup": "Houston at Georgia Southern",
-      "sport": "Football",
-      "price": 0.48,
-      "model_prob": 0.633,
-      "edge": 0.135,
-      "expected_end": "2026-09-26T20:00:00+00:00",
-      "result": "win"
-     }
-    ],
-    "graded": "2026-09-27T03:24:33.442868+00:00"
-   },
-   {
-    "id": "PARLAY-202609260030-1",
-    "tier": "P",
-    "sport": "Parlay",
-    "kind": "watchlist",
-    "made": "2026-09-26T00:30:36.373986+00:00",
-    "units": 1.0,
-    "price": 0.1007,
-    "model_prob": 0.2458,
-    "ev": 1.44,
-    "payout_units": 8.9,
-    "status": "loss",
-    "pnl": -1.0,
-    "legs": [
-     {
-      "id": "KXNFLRECYDS-26SEP27LVNO-NOJJOHNSON83-35",
-      "ticker": "KXNFLRECYDS-26SEP27LVNO-NOJJOHNSON83-35",
-      "side": "yes",
-      "market": "Juwan Johnson: 35+",
-      "matchup": "LV at NO",
-      "sport": "Football",
-      "price": 0.5,
-      "model_prob": 0.664,
-      "edge": 0.147,
-      "expected_end": "2026-09-28T02:25:00+00:00"
-     },
-     {
-      "id": "KXNCAAFSPREAD-26SEP26VANAUB-AUB11:no",
-      "ticker": "KXNCAAFSPREAD-26SEP26VANAUB-AUB11",
-      "side": "no",
-      "market": "No: Auburn wins by over 10.5 points",
-      "matchup": "Vanderbilt at Auburn",
-      "sport": "Football",
-      "price": 0.55,
-      "model_prob": 0.711,
-      "edge": 0.144,
-      "expected_end": "2026-09-26T20:00:00+00:00",
-      "result": "win"
-     },
-     {
-      "id": "KXNFLRSHYDS-26SEP27BALDAL-BALLJACKSON8-40:no",
-      "ticker": "KXNFLRSHYDS-26SEP27BALDAL-BALLJACKSON8-40",
-      "side": "no",
-      "market": "Lamar Jackson: under 40",
-      "matchup": "BAL at DAL",
-      "sport": "Football",
-      "price": 0.53,
-      "model_prob": 0.685,
-      "edge": 0.137,
-      "expected_end": "2026-09-28T02:25:00+00:00"
-     },
-     {
-      "id": "KXNCAAFSPREAD-26SEP26HCUUNT-UNT42:no",
-      "ticker": "KXNCAAFSPREAD-26SEP26HCUUNT-UNT42",
-      "side": "no",
-      "market": "No: North Texas wins by over 41.5 points",
-      "matchup": "Houston Christian at North Texas",
-      "sport": "Football",
-      "price": 0.61,
-      "model_prob": 0.76,
-      "edge": 0.133,
-      "expected_end": "2026-09-27T02:30:00+00:00",
-      "result": "loss"
-     }
-    ],
-    "graded": "2026-09-27T03:24:33.305827+00:00"
-   },
-   {
-    "id": "PARLAY-202609250033-2",
-    "tier": "P",
-    "sport": "Parlay",
-    "kind": "watchlist",
-    "made": "2026-09-25T00:33:09.131966+00:00",
-    "units": 1.0,
-    "price": 0.1358,
-    "model_prob": 0.2761,
-    "ev": 1.033,
-    "payout_units": 6.4,
-    "status": "loss",
-    "pnl": -1.0,
-    "legs": [
-     {
-      "id": "KXNCAAFSPREAD-26SEP26MOSUSMU-SMU35:no",
-      "ticker": "KXNCAAFSPREAD-26SEP26MOSUSMU-SMU35",
-      "side": "no",
-      "market": "No: SMU wins by over 34.5 points",
-      "matchup": "Missouri State at SMU",
-      "sport": "Football",
-      "price": 0.51,
-      "model_prob": 0.667,
-      "edge": 0.14,
-      "expected_end": "2026-09-26T20:00:00+00:00"
-     },
-     {
-      "id": "KXNCAAFSPREAD-26SEP26OKSTWVU-WVU2",
-      "ticker": "KXNCAAFSPREAD-26SEP26OKSTWVU-WVU2",
-      "side": "yes",
-      "market": "West Virginia wins by over 1.5 points",
-      "matchup": "Oklahoma State at West Virginia",
-      "sport": "Football",
-      "price": 0.5,
-      "model_prob": 0.654,
-      "edge": 0.136,
-      "expected_end": "2026-09-26T20:00:00+00:00",
-      "result": "loss"
-     },
-     {
-      "id": "KXNCAAFSPREAD-26SEP26HOUGASO-HOU18:no",
-      "ticker": "KXNCAAFSPREAD-26SEP26HOUGASO-HOU18",
-      "side": "no",
-      "market": "No: Houston wins by over 17.5 points",
-      "matchup": "Houston at Georgia Southern",
-      "sport": "Football",
-      "price": 0.48,
-      "model_prob": 0.633,
-      "edge": 0.135,
-      "expected_end": "2026-09-26T20:00:00+00:00",
-      "result": "win"
-     }
-    ],
-    "graded": "2026-09-27T03:24:33.107024+00:00"
-   },
-   {
-    "id": "PARLAY-202609250033-1",
-    "tier": "P",
-    "sport": "Parlay",
-    "kind": "watchlist",
-    "made": "2026-09-25T00:33:09.131852+00:00",
-    "units": 1.0,
-    "price": 0.1007,
-    "model_prob": 0.2458,
-    "ev": 1.44,
-    "payout_units": 8.9,
-    "status": "loss",
-    "pnl": -1.0,
-    "legs": [
-     {
-      "id": "KXNFLRECYDS-26SEP27LVNO-NOJJOHNSON83-35",
-      "ticker": "KXNFLRECYDS-26SEP27LVNO-NOJJOHNSON83-35",
-      "side": "yes",
-      "market": "Juwan Johnson: 35+",
-      "matchup": "LV at NO",
-      "sport": "Football",
-      "price": 0.5,
-      "model_prob": 0.664,
-      "edge": 0.147,
-      "expected_end": "2026-09-28T02:25:00+00:00"
-     },
-     {
-      "id": "KXNCAAFSPREAD-26SEP26VANAUB-AUB11:no",
-      "ticker": "KXNCAAFSPREAD-26SEP26VANAUB-AUB11",
-      "side": "no",
-      "market": "No: Auburn wins by over 10.5 points",
-      "matchup": "Vanderbilt at Auburn",
-      "sport": "Football",
-      "price": 0.55,
-      "model_prob": 0.711,
-      "edge": 0.144,
-      "expected_end": "2026-09-26T20:00:00+00:00",
-      "result": "win"
-     },
-     {
-      "id": "KXNFLRSHYDS-26SEP27BALDAL-BALLJACKSON8-40:no",
-      "ticker": "KXNFLRSHYDS-26SEP27BALDAL-BALLJACKSON8-40",
-      "side": "no",
-      "market": "Lamar Jackson: under 40",
-      "matchup": "BAL at DAL",
-      "sport": "Football",
-      "price": 0.53,
-      "model_prob": 0.685,
-      "edge": 0.137,
-      "expected_end": "2026-09-28T02:25:00+00:00"
-     },
-     {
-      "id": "KXNCAAFSPREAD-26SEP26HCUUNT-UNT42:no",
-      "ticker": "KXNCAAFSPREAD-26SEP26HCUUNT-UNT42",
-      "side": "no",
-      "market": "No: North Texas wins by over 41.5 points",
-      "matchup": "Houston Christian at North Texas",
-      "sport": "Football",
-      "price": 0.61,
-      "model_prob": 0.76,
-      "edge": 0.133,
-      "expected_end": "2026-09-27T02:30:00+00:00",
-      "result": "loss"
-     }
-    ],
-    "graded": "2026-09-27T03:24:32.967664+00:00"
-   },
-   {
-    "id": "PARLAY-202609240031-2",
-    "tier": "P",
-    "sport": "Parlay",
-    "kind": "watchlist",
-    "made": "2026-09-24T00:31:37.861170+00:00",
-    "units": 1.0,
-    "price": 0.1362,
-    "model_prob": 0.2688,
-    "ev": 0.974,
-    "payout_units": 6.3,
-    "status": "loss",
-    "pnl": -1.0,
-    "legs": [
-     {
-      "id": "KXNCAAFSPREAD-26SEP26WEBBMRSH-MRSH12:no",
-      "ticker": "KXNCAAFSPREAD-26SEP26WEBBMRSH-MRSH12",
-      "side": "no",
-      "market": "No: Marshall wins by over 11.5 points",
-      "matchup": "Gardner-Webb at Marshall",
-      "sport": "Football",
-      "price": 0.25,
-      "model_prob": 0.411,
-      "edge": 0.147,
-      "expected_end": "2026-09-26T22:30:00+00:00",
-      "result": "win"
-     },
-     {
-      "id": "KXNCAAFSPREAD-26SEP26OKSTWVU-WVU2",
-      "ticker": "KXNCAAFSPREAD-26SEP26OKSTWVU-WVU2",
-      "side": "yes",
-      "market": "West Virginia wins by over 1.5 points",
-      "matchup": "Oklahoma State at West Virginia",
-      "sport": "Football",
-      "price": 0.5,
-      "model_prob": 0.654,
-      "edge": 0.136,
-      "expected_end": "2026-09-26T20:00:00+00:00",
-      "result": "loss"
-     }
-    ],
-    "graded": "2026-09-27T03:24:32.769881+00:00"
-   },
-   {
-    "id": "PARLAY-202609240031-1",
-    "tier": "P",
-    "sport": "Parlay",
-    "kind": "watchlist",
-    "made": "2026-09-24T00:31:37.861050+00:00",
-    "units": 1.0,
-    "price": 0.1027,
-    "model_prob": 0.2469,
-    "ev": 1.405,
-    "payout_units": 8.7,
-    "status": "loss",
-    "pnl": -1.0,
-    "legs": [
-     {
-      "id": "KXNCAAFSPREAD-26SEP26VANAUB-AUB11:no",
-      "ticker": "KXNCAAFSPREAD-26SEP26VANAUB-AUB11",
-      "side": "no",
-      "market": "No: Auburn wins by over 10.5 points",
-      "matchup": "Vanderbilt at Auburn",
-      "sport": "Football",
-      "price": 0.55,
-      "model_prob": 0.711,
-      "edge": 0.144,
-      "expected_end": "2026-09-26T20:00:00+00:00",
-      "result": "win"
-     },
-     {
-      "id": "KXNCAAFSPREAD-26SEP26MOSUSMU-SMU35:no",
-      "ticker": "KXNCAAFSPREAD-26SEP26MOSUSMU-SMU35",
-      "side": "no",
-      "market": "No: SMU wins by over 34.5 points",
-      "matchup": "Missouri State at SMU",
-      "sport": "Football",
-      "price": 0.51,
-      "model_prob": 0.667,
-      "edge": 0.14,
-      "expected_end": "2026-09-26T20:00:00+00:00"
-     },
-     {
-      "id": "KXNFLRSHYDS-26SEP27BALDAL-BALLJACKSON8-40:no",
-      "ticker": "KXNFLRSHYDS-26SEP27BALDAL-BALLJACKSON8-40",
-      "side": "no",
-      "market": "Lamar Jackson: under 40",
-      "matchup": "BAL at DAL",
-      "sport": "Football",
-      "price": 0.53,
-      "model_prob": 0.685,
-      "edge": 0.137,
-      "expected_end": "2026-09-28T02:25:00+00:00"
-     },
-     {
-      "id": "KXNCAAFSPREAD-26SEP26HCUUNT-UNT42:no",
-      "ticker": "KXNCAAFSPREAD-26SEP26HCUUNT-UNT42",
-      "side": "no",
-      "market": "No: North Texas wins by over 41.5 points",
-      "matchup": "Houston Christian at North Texas",
-      "sport": "Football",
-      "price": 0.61,
-      "model_prob": 0.76,
-      "edge": 0.133,
-      "expected_end": "2026-09-27T02:30:00+00:00",
-      "result": "loss"
-     }
-    ],
-    "graded": "2026-09-27T03:24:32.703537+00:00"
-   },
-   {
-    "id": "PARLAY-202609230027-1",
-    "tier": "P",
-    "sport": "Parlay",
-    "kind": "watchlist",
-    "made": "2026-09-23T00:27:53.965625+00:00",
-    "units": 1.0,
-    "price": 0.1549,
-    "model_prob": 0.3102,
-    "ev": 1.003,
-    "payout_units": 5.5,
-    "status": "loss",
-    "pnl": -1.0,
-    "legs": [
-     {
-      "id": "KXNCAAFSPREAD-26SEP26VANAUB-AUB11:no",
-      "ticker": "KXNCAAFSPREAD-26SEP26VANAUB-AUB11",
-      "side": "no",
-      "market": "No: Auburn wins by over 10.5 points",
-      "matchup": "Vanderbilt at Auburn",
-      "sport": "Football",
-      "price": 0.55,
-      "model_prob": 0.711,
-      "edge": 0.144,
-      "expected_end": "2026-09-26T20:00:00+00:00",
-      "result": "win"
-     },
-     {
-      "id": "KXNCAAFSPREAD-26SEP26MOSUSMU-SMU35:no",
-      "ticker": "KXNCAAFSPREAD-26SEP26MOSUSMU-SMU35",
-      "side": "no",
-      "market": "No: SMU wins by over 34.5 points",
-      "matchup": "Missouri State at SMU",
-      "sport": "Football",
-      "price": 0.51,
-      "model_prob": 0.667,
-      "edge": 0.14,
-      "expected_end": "2026-09-26T20:00:00+00:00"
-     },
-     {
-      "id": "KXNCAAFSPREAD-26SEP26OKSTWVU-WVU2",
-      "ticker": "KXNCAAFSPREAD-26SEP26OKSTWVU-WVU2",
-      "side": "yes",
-      "market": "West Virginia wins by over 1.5 points",
-      "matchup": "Oklahoma State at West Virginia",
-      "sport": "Football",
-      "price": 0.5,
-      "model_prob": 0.654,
-      "edge": 0.136,
-      "expected_end": "2026-09-26T20:00:00+00:00",
-      "result": "loss"
-     }
-    ],
-    "graded": "2026-09-27T03:24:32.504214+00:00"
    }
   ],
   "summary": {
-   "picks": 34,
+   "picks": 27,
    "wins": 7,
-   "losses": 27,
-   "units": 11.88,
-   "staked": 34.0,
-   "roi": 0.349,
+   "losses": 20,
+   "units": 18.88,
+   "staked": 27.0,
+   "roi": 0.699,
    "beat_price": null,
    "clv": null,
    "clv_picks": 0
@@ -5923,96 +5514,96 @@
  },
  "learning": {
   "groups": {
-   "soccer:winner": {
-    "finished": 250,
-    "games": 84,
-    "trust": 0.59,
-    "confidence_fix": false,
-    "last": "2026-10-11T01:00:00+00:00"
-   },
    "soccer:btts": {
     "finished": 168,
     "games": 84,
     "trust": 0.32,
     "confidence_fix": false,
-    "last": "2026-10-11T01:00:00+00:00"
+    "last": "2026-10-11T01:30:00+00:00"
    },
    "soccer:spread": {
-    "finished": 622,
+    "finished": 626,
     "games": 84,
     "trust": 0.41,
     "confidence_fix": false,
-    "last": "2026-10-11T01:00:00+00:00"
+    "last": "2026-10-11T01:30:00+00:00"
    },
    "soccer:total": {
     "finished": 966,
     "games": 84,
     "trust": 0.27,
+    "confidence_fix": true,
+    "last": "2026-10-11T01:30:00+00:00"
+   },
+   "soccer:winner": {
+    "finished": 247,
+    "games": 83,
+    "trust": 0.59,
     "confidence_fix": false,
-    "last": "2026-10-11T01:00:00+00:00"
+    "last": "2026-10-11T01:30:00+00:00"
    },
    "soccer:btts_1h": {
-    "finished": 120,
-    "games": 60,
+    "finished": 122,
+    "games": 61,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-11T01:00:00+00:00"
+    "last": "2026-10-11T01:30:00+00:00"
    },
    "soccer:spread_1h": {
-    "finished": 234,
-    "games": 60,
+    "finished": 238,
+    "games": 61,
     "trust": 0.53,
     "confidence_fix": false,
-    "last": "2026-10-11T01:00:00+00:00"
+    "last": "2026-10-11T01:30:00+00:00"
    },
    "soccer:total_1h": {
-    "finished": 346,
-    "games": 59,
+    "finished": 358,
+    "games": 61,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-11T00:30:00+00:00"
+    "last": "2026-10-11T01:30:00+00:00"
    },
    "soccer:btts_2h": {
-    "finished": 74,
-    "games": 37,
+    "finished": 78,
+    "games": 39,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-11T00:30:00+00:00"
+    "last": "2026-10-11T01:30:00+00:00"
    },
    "soccer:spread_2h": {
-    "finished": 146,
-    "games": 37,
+    "finished": 154,
+    "games": 39,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-11T00:30:00+00:00"
+    "last": "2026-10-11T01:30:00+00:00"
    },
    "soccer:total_2h": {
-    "finished": 210,
-    "games": 37,
+    "finished": 222,
+    "games": 39,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-11T00:30:00+00:00"
+    "last": "2026-10-11T01:30:00+00:00"
    },
    "soccer:first_to_score": {
-    "finished": 230,
-    "games": 39,
-    "trust": 0.25,
+    "finished": 242,
+    "games": 41,
+    "trust": 0.47,
     "confidence_fix": false,
-    "last": "2026-10-11T00:30:00+00:00"
+    "last": "2026-10-11T01:30:00+00:00"
    },
    "soccer:correct_score": {
-    "finished": 940,
-    "games": 39,
-    "trust": 0.25,
+    "finished": 966,
+    "games": 40,
+    "trust": 0.46,
     "confidence_fix": false,
-    "last": "2026-10-11T01:00:00+00:00"
+    "last": "2026-10-11T01:30:00+00:00"
    },
    "soccer:team_total": {
-    "finished": 440,
-    "games": 39,
-    "trust": 0.25,
+    "finished": 464,
+    "games": 41,
+    "trust": 0.29,
     "confidence_fix": false,
-    "last": "2026-10-11T00:30:00+00:00"
+    "last": "2026-10-11T01:30:00+00:00"
    },
    "tennis:winner": {
     "finished": 8,
@@ -6022,43 +5613,43 @@
     "last": "2026-10-10T15:00:00+00:00"
    },
    "cfb:winner": {
-    "finished": 152,
-    "games": 76,
+    "finished": 156,
+    "games": 78,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-10-11T00:00:00+00:00"
    },
    "cfb:spread_1h": {
-    "finished": 1742,
-    "games": 42,
+    "finished": 1752,
+    "games": 43,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-11T00:00:00+00:00"
+    "last": "2026-10-11T02:15:00+00:00"
    },
    "cfb:total_1h": {
-    "finished": 1118,
-    "games": 42,
-    "trust": 0.32,
+    "finished": 1124,
+    "games": 43,
+    "trust": 0.33,
     "confidence_fix": false,
-    "last": "2026-10-11T00:00:00+00:00"
+    "last": "2026-10-11T02:15:00+00:00"
    },
    "cfb:spread": {
-    "finished": 3344,
-    "games": 80,
+    "finished": 3468,
+    "games": 82,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-11T00:00:00+00:00"
+    "last": "2026-10-11T02:15:00+00:00"
    },
    "cfb:team_total": {
-    "finished": 1906,
+    "finished": 1986,
     "games": 42,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-11T00:00:00+00:00"
+    "last": "2026-10-11T02:15:00+00:00"
    },
    "cfb:total": {
-    "finished": 2400,
-    "games": 80,
+    "finished": 2476,
+    "games": 82,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-10-11T00:00:00+00:00"
@@ -6071,25 +5662,25 @@
     "last": "2026-10-11T00:00:00+00:00"
    },
    "cfb:spread_1q": {
-    "finished": 512,
-    "games": 25,
+    "finished": 518,
+    "games": 26,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-11T00:00:00+00:00"
+    "last": "2026-10-11T02:15:00+00:00"
    },
    "cfb:total_1q": {
-    "finished": 548,
+    "finished": 550,
+    "games": 26,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-11T01:30:00+00:00"
+   },
+   "cfb:period_winner_2h": {
+    "finished": 100,
     "games": 25,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-10-11T00:00:00+00:00"
-   },
-   "cfb:period_winner_2h": {
-    "finished": 92,
-    "games": 23,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-10T23:30:00+00:00"
    },
    "cfb:period_winner_2q": {
     "finished": 100,
@@ -6099,18 +5690,18 @@
     "last": "2026-10-11T00:00:00+00:00"
    },
    "cfb:spread_2q": {
-    "finished": 523,
-    "games": 25,
+    "finished": 527,
+    "games": 26,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-11T00:00:00+00:00"
+    "last": "2026-10-11T01:30:00+00:00"
    },
    "cfb:total_2q": {
-    "finished": 546,
+    "finished": 548,
     "games": 25,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-11T00:00:00+00:00"
+    "last": "2026-10-11T02:15:00+00:00"
    },
    "cfb:period_winner_3q": {
     "finished": 100,
@@ -6134,25 +5725,25 @@
     "last": "2026-10-11T00:00:00+00:00"
    },
    "cfb:period_winner_4q": {
-    "finished": 92,
-    "games": 23,
+    "finished": 100,
+    "games": 25,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-10T23:30:00+00:00"
+    "last": "2026-10-11T00:00:00+00:00"
    },
    "cfb:spread_4q": {
-    "finished": 518,
-    "games": 23,
+    "finished": 558,
+    "games": 25,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-10T23:30:00+00:00"
+    "last": "2026-10-11T00:00:00+00:00"
    },
    "cfb:total_4q": {
-    "finished": 502,
-    "games": 23,
+    "finished": 546,
+    "games": 25,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-10T23:30:00+00:00"
+    "last": "2026-10-11T00:00:00+00:00"
    },
    "mlb:winner": {
     "finished": 2,
@@ -6234,22 +5825,22 @@
   },
   "price_trend": {
    "flat": {
-    "markets": 15982,
-    "hit_vs_price": -0.001
-   },
-   "rising": {
-    "markets": 2087,
-    "hit_vs_price": 0.008
+    "markets": 16403,
+    "hit_vs_price": -0.0
    },
    "falling": {
-    "markets": 2094,
-    "hit_vs_price": -0.003
+    "markets": 2133,
+    "hit_vs_price": -0.002
+   },
+   "rising": {
+    "markets": 2128,
+    "hit_vs_price": 0.004
    }
   }
  },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "tracker": {
-  "tracked": 194133,
+  "tracked": 194743,
   "series": 3883,
   "movers": [
    {
@@ -6476,31 +6067,31 @@
    "holdout": {
     "matches": 657,
     "rating_log_loss": 0.6267,
-    "model_log_loss": 0.6241,
+    "model_log_loss": 0.6247,
     "rating_accuracy": 0.654,
     "model_accuracy": 0.645
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6068,
-    "model_log_loss": 0.6241,
+    "model_log_loss": 0.6247,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 657
    },
    "backtest": {
-    "bets": 14,
-    "wins": 3,
-    "units": -13.6,
-    "roi": -0.512
+    "bets": 15,
+    "wins": 5,
+    "units": -5.7,
+    "roi": -0.222
    },
    "weights": {
-    "home_field": 0.254,
-    "rating": 1.525,
-    "rest": 0.25,
-    "point_diff_form": 0.242,
-    "qb_change": 0.329,
-    "epa": 0.154
+    "home_field": 0.253,
+    "rating": 1.528,
+    "rest": 0.245,
+    "point_diff_form": 0.247,
+    "qb_change": 0.274,
+    "epa": 0.156
    },
    "matches": 4428,
    "totals": {
@@ -6585,15 +6176,15 @@
    "clv_picks": 14
   },
   "watch": {
-   "picks": 390,
+   "picks": 391,
    "wins": 173,
-   "losses": 217,
-   "units": 6.28,
-   "staked": 195.0,
-   "roi": 0.032,
-   "beat_price": 0.303,
-   "clv": -0.0066,
-   "clv_picks": 369
+   "losses": 218,
+   "units": 5.76,
+   "staked": 195.5,
+   "roi": 0.029,
+   "beat_price": 0.302,
+   "clv": -0.0067,
+   "clv_picks": 370
   }
  },
  "by_expert_lean": {
@@ -6655,57 +6246,18 @@
    "clv_picks": 5
   },
   "W": {
-   "picks": 390,
+   "picks": 391,
    "wins": 173,
-   "losses": 217,
-   "units": 6.28,
-   "staked": 195.0,
-   "roi": 0.032,
-   "beat_price": 0.303,
-   "clv": -0.0066,
-   "clv_picks": 369
+   "losses": 218,
+   "units": 5.76,
+   "staked": 195.5,
+   "roi": 0.029,
+   "beat_price": 0.302,
+   "clv": -0.0067,
+   "clv_picks": 370
   }
  },
  "watch_open": [
-  {
-   "id": "KXNCAAFSPREAD-26OCT10JMUGASO-JMU8",
-   "ticker": "KXNCAAFSPREAD-26OCT10JMUGASO-JMU8",
-   "side": "yes",
-   "event": "KXNCAAFSPREAD-26OCT10JMUGASO",
-   "game": "26OCT10JMUGASO",
-   "sport": "Football",
-   "model_key": "cfb",
-   "mtype": "spread",
-   "line": 7.5,
-   "tour": "College Football",
-   "tournament": "James Madison at Georgia Southern",
-   "matchup": "James Madison at Georgia Southern",
-   "surface": "",
-   "pick": "James Madison wins by over 7.5 points",
-   "opponent": "",
-   "market": "James Madison wins by over 7.5 points",
-   "price": 0.52,
-   "model_prob": 0.63,
-   "raw_prob": 0.745,
-   "edge": 0.093,
-   "tier": "W",
-   "units": 0.5,
-   "made": "2026-10-07T00:34:05.879823+00:00",
-   "expected_end": "2026-10-10T20:00:00+00:00",
-   "start_est": "2026-10-10T23:30:00+00:00",
-   "status": "pending",
-   "latest_price": 0.465,
-   "close_price": 0.465,
-   "pnl": null,
-   "why": "Projected score margin -18.1 (home) and total 54.5. Model gives \"James Madison wins by over 7.5 points\" 75%. Blended with the market that's 57% vs a 52% price.",
-   "trend": 0.0,
-   "new_market": false,
-   "trust": 0.25,
-   "sharp_prob": null,
-   "research": "",
-   "sources": [],
-   "expert_lean": "none"
-  },
   {
    "id": "KXNCAAFGAME-26OCT10BSUFRES-FRES",
    "ticker": "KXNCAAFGAME-26OCT10BSUFRES-FRES",
@@ -7163,8 +6715,8 @@
    "expected_end": "2026-10-11T23:25:00+00:00",
    "start_est": "2026-10-11T20:25:00+00:00",
    "status": "pending",
-   "latest_price": 0.455,
-   "close_price": 0.455,
+   "latest_price": 0.425,
+   "close_price": 0.425,
    "pnl": null,
    "why": "Emanuel Wilson: 42 a game lately (last 12 games). Model gives \"Emanuel Wilson: under 60\" 68%. Blended with the market that's 51% vs a 46% price. Price down 4\u00a2 in the last 12 hours.",
    "trend": -0.035,
@@ -7319,8 +6871,8 @@
    "expected_end": "2026-10-11T16:00:00+00:00",
    "start_est": "2026-10-11T12:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.51,
-   "close_price": 0.51,
+   "latest_price": 0.505,
+   "close_price": 0.505,
    "pnl": null,
    "why": "Expected goals 2.81 vs 0.90 (3.71 total). Model gives \"Over 2.5 goals scored\" 72%. Blended with the market that's 57% vs a 53% price. Sharp sportsbook price (Pinnacle) says 52%.",
    "trend": 0.005,
@@ -7827,8 +7379,8 @@
    "expected_end": "2026-10-11T21:00:00+00:00",
    "start_est": "2026-10-11T18:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.425,
-   "close_price": 0.425,
+   "latest_price": 0.42,
+   "close_price": 0.42,
    "pnl": null,
    "why": "Ratings 1808 (Olympiakos, home) vs 1750 (Panathinaikos). Share of chances lately (xG or shots on target) 67% vs 55%. Goal difference last 6: +3 vs +10. Last played Sep 20 vs Sep 20. Model gives the home 56%. Blended with the market that's 50% vs a 43% price.",
    "trend": -0.004,
@@ -8100,8 +7652,8 @@
    "expected_end": "2026-10-11T18:30:00+00:00",
    "start_est": "2026-10-11T15:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.215,
-   "close_price": 0.215,
+   "latest_price": 0.22,
+   "close_price": 0.22,
    "pnl": null,
    "why": "Expected goals 1.30 vs 2.00 (3.30 total). Model gives \"Manchester City wins by more than 1.5 goals\" 32%. Blended with the market that's 25% vs a 21% price.",
    "trend": 0.0,
@@ -8351,6 +7903,46 @@
   }
  ],
  "watch_history": [
+  {
+   "id": "KXNCAAFSPREAD-26OCT10JMUGASO-JMU8",
+   "ticker": "KXNCAAFSPREAD-26OCT10JMUGASO-JMU8",
+   "side": "yes",
+   "event": "KXNCAAFSPREAD-26OCT10JMUGASO",
+   "game": "26OCT10JMUGASO",
+   "sport": "Football",
+   "model_key": "cfb",
+   "mtype": "spread",
+   "line": 7.5,
+   "tour": "College Football",
+   "tournament": "James Madison at Georgia Southern",
+   "matchup": "James Madison at Georgia Southern",
+   "surface": "",
+   "pick": "James Madison wins by over 7.5 points",
+   "opponent": "",
+   "market": "James Madison wins by over 7.5 points",
+   "price": 0.52,
+   "model_prob": 0.63,
+   "raw_prob": 0.745,
+   "edge": 0.093,
+   "tier": "W",
+   "units": 0.5,
+   "made": "2026-10-07T00:34:05.879823+00:00",
+   "expected_end": "2026-10-10T20:00:00+00:00",
+   "start_est": "2026-10-10T23:30:00+00:00",
+   "status": "loss",
+   "latest_price": 0.465,
+   "close_price": 0.465,
+   "pnl": -0.52,
+   "why": "Projected score margin -18.1 (home) and total 54.5. Model gives \"James Madison wins by over 7.5 points\" 75%. Blended with the market that's 57% vs a 52% price.",
+   "trend": 0.0,
+   "new_market": false,
+   "trust": 0.25,
+   "sharp_prob": null,
+   "research": "",
+   "sources": [],
+   "expert_lean": "none",
+   "graded": "2026-10-11T04:23:33.164328+00:00"
+  },
   {
    "id": "KXMLBHRR-26OCT102000CWSCLE-CWSMMURAKAMI5-1",
    "ticker": "KXMLBHRR-26OCT102000CWSCLE-CWSMMURAKAMI5-1",
@@ -20363,46 +19955,6 @@
    "sources": [],
    "expert_lean": "none",
    "graded": "2026-09-26T05:19:57.586866+00:00"
-  },
-  {
-   "id": "KXMLBTB-26SEP252140HOUATH-HOUYALVAREZ44-4:no",
-   "ticker": "KXMLBTB-26SEP252140HOUATH-HOUYALVAREZ44-4",
-   "side": "no",
-   "event": "KXMLBTB-26SEP252140HOUATH",
-   "game": "26SEP252140HOUATH",
-   "sport": "Baseball",
-   "model_key": "mlb",
-   "mtype": "prop_tb",
-   "line": 3.5,
-   "tour": "MLB",
-   "tournament": "Houston Astros at Athletics",
-   "matchup": "Houston Astros at Athletics",
-   "surface": "",
-   "pick": "Yordan Alvarez: under 4",
-   "opponent": "",
-   "market": "Yordan Alvarez: under 4",
-   "price": 0.71,
-   "model_prob": 0.775,
-   "raw_prob": 0.845,
-   "edge": 0.051,
-   "tier": "W",
-   "units": 0.5,
-   "made": "2026-09-26T00:26:59.454440+00:00",
-   "expected_end": "2026-09-26T04:40:00+00:00",
-   "start_est": "2026-09-26T01:40:00+00:00",
-   "status": "win",
-   "latest_price": 0.705,
-   "close_price": 0.705,
-   "pnl": 0.19,
-   "why": "Yordan Alvarez: 2.15 a game this season over 155 games (adjusted 2.07). Model gives \"Yordan Alvarez: under 4\" 85%. Blended with the market that's 74% vs a 71% price. Price down 3\u00a2 in the last 12 hours.",
-   "trend": -0.03,
-   "new_market": false,
-   "trust": 0.25,
-   "sharp_prob": null,
-   "research": "",
-   "sources": [],
-   "expert_lean": "none",
-   "graded": "2026-09-26T05:19:57.377541+00:00"
   }
  ],
  "by_tour": {
@@ -22378,6 +21930,14 @@
  "changelog": [
   {
    "date": "2026-10-11",
+   "change": "soccer:correct_score: trust in the model vs the market moved from 25% to 46% after 966 finished markets"
+  },
+  {
+   "date": "2026-10-11",
+   "change": "soccer:first_to_score: trust in the model vs the market moved from 25% to 47% after 242 finished markets"
+  },
+  {
+   "date": "2026-10-11",
    "change": "soccer:btts: trust in the model vs the market moved from 45% to 32% after 168 finished markets"
   },
   {
@@ -22487,14 +22047,6 @@
   {
    "date": "2026-09-20",
    "change": "cfb:spread_2q: trust in the model vs the market moved from 60% to 25% after 352 finished markets"
-  },
-  {
-   "date": "2026-09-20",
-   "change": "cfb:total_1q: trust in the model vs the market moved from 50% to 25% after 306 finished markets"
-  },
-  {
-   "date": "2026-09-20",
-   "change": "cfb:spread_1q: trust in the model vs the market moved from 80% to 25% after 314 finished markets"
   }
  ]
 }
