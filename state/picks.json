@@ -20540,8 +20540,8 @@
   "expected_end": "2026-10-12T03:00:00+00:00",
   "start_est": "2026-10-12T00:00:00+00:00",
   "status": "pending",
-  "latest_price": 0.305,
-  "close_price": 0.305,
+  "latest_price": 0.32,
+  "close_price": 0.32,
   "pnl": null,
   "why": "Shohei Ohtani: 1.93 a game this season over 139 games (adjusted 1.87). Model gives \"Shohei Ohtani: 2+\" 56%. Blended with the market that's 36% vs a 30% price.",
   "trend": 0.0,
@@ -20658,10 +20658,10 @@
   "made": "2026-10-11T00:32:42.003546+00:00",
   "expected_end": "2026-10-11T23:30:00+00:00",
   "start_est": "2026-10-11T20:30:00+00:00",
-  "status": "pending",
+  "status": "win",
   "latest_price": 0.325,
   "close_price": 0.325,
-  "pnl": null,
+  "pnl": 0.99,
   "why": "Expected goals 2.13 vs 0.52 (2.65 total). Model gives \"Palmeiras wins by more than 1.5 goals\" 50%. Blended with the market that's 39% vs a 33% price.",
   "trend": -0.01,
   "new_market": false,
@@ -20669,7 +20669,8 @@
   "sharp_prob": null,
   "research": "",
   "sources": [],
-  "expert_lean": "none"
+  "expert_lean": "none",
+  "graded": "2026-10-11T23:21:51.167206+00:00"
  },
  {
   "id": "KXARGPREMDIVTOTAL-26OCT11SLARIE-2:no",
