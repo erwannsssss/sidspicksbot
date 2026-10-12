@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-12T06:35:13.620968+00:00",
+ "updated": "2026-10-12T07:30:56.946534+00:00",
  "status_note": "Last run found 0 new pick(s) and graded 0.",
  "bankroll": 96.02,
  "protection": {
@@ -5505,17 +5505,17 @@
  },
  "learning": {
   "groups": {
-   "cfb:spread": {
-    "finished": 3094,
-    "games": 78,
-    "trust": 0.25,
+   "cfb:total": {
+    "finished": 2222,
+    "games": 75,
+    "trust": 0.36,
     "confidence_fix": false,
     "last": "2026-10-11T02:30:00+00:00"
    },
-   "cfb:total": {
-    "finished": 2226,
-    "games": 75,
-    "trust": 0.36,
+   "cfb:spread": {
+    "finished": 3086,
+    "games": 77,
+    "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-10-11T02:30:00+00:00"
    },
@@ -5998,22 +5998,22 @@
   },
   "price_trend": {
    "flat": {
-    "markets": 26949,
+    "markets": 26943,
     "hit_vs_price": -0.0
    },
-   "falling": {
-    "markets": 3141,
-    "hit_vs_price": -0.006
-   },
    "rising": {
-    "markets": 3127,
+    "markets": 3124,
     "hit_vs_price": 0.007
+   },
+   "falling": {
+    "markets": 3138,
+    "hit_vs_price": -0.005
    }
   }
  },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "tracker": {
-  "tracked": 200594,
+  "tracked": 200596,
   "series": 3887,
   "movers": [
    {
@@ -6140,13 +6140,13 @@
  },
  "models": {
   "tennis": {
-   "matches": 21157,
-   "training_rows": 14712,
+   "matches": 21158,
+   "training_rows": 14713,
    "holdout": {
     "from": "2026-09-06",
     "matches": 2207,
     "elo_log_loss": 0.66,
-    "model_log_loss": 0.6525,
+    "model_log_loss": 0.6524,
     "elo_accuracy": 0.606,
     "model_accuracy": 0.621
    },
@@ -6156,13 +6156,13 @@
     "dominance": 0.0,
     "rank": 0.0,
     "h2h": 0.459,
-    "form": -0.56,
-    "fatigue_games": -0.217,
+    "form": -0.558,
+    "fatigue_games": -0.218,
     "fatigue_matches": 0.085,
     "rest": 0.009,
     "travel": 0.15,
     "altitude": 0.0,
-    "best_of_5": 0.577
+    "best_of_5": 0.576
    },
    "sport": "Tennis",
    "label": "Tennis",
@@ -6212,7 +6212,7 @@
    "trust": 0.25
   },
   "mlb": {
-   "training_rows": 14731,
+   "training_rows": 14732,
    "holdout": {
     "matches": 2210,
     "rating_log_loss": 0.6838,
@@ -6226,50 +6226,50 @@
     "rating": 1.542,
     "starting_pitcher": 0.079,
     "run_diff_form": 0.016,
-    "rest": 0.078,
+    "rest": 0.077,
     "pitcher_fip": 0.111
    },
-   "matches": 14810,
+   "matches": 14811,
    "runs_scale": 1.01,
    "sport": "Baseball",
    "label": "MLB",
    "trust": 0.5
   },
   "nfl": {
-   "training_rows": 4378,
+   "training_rows": 4389,
    "holdout": {
-    "matches": 657,
-    "rating_log_loss": 0.6268,
-    "model_log_loss": 0.6243,
-    "rating_accuracy": 0.654,
-    "model_accuracy": 0.645
+    "matches": 659,
+    "rating_log_loss": 0.6246,
+    "model_log_loss": 0.6219,
+    "rating_accuracy": 0.656,
+    "model_accuracy": 0.649
    },
    "using": "full",
    "market": {
-    "market_log_loss": 0.6064,
-    "model_log_loss": 0.6243,
+    "market_log_loss": 0.6042,
+    "model_log_loss": 0.6219,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
-    "matches": 657
+    "matches": 659
    },
    "backtest": {
-    "bets": 14,
-    "wins": 4,
-    "units": -9.0,
-    "roi": -0.361
+    "bets": 17,
+    "wins": 7,
+    "units": -0.9,
+    "roi": -0.032
    },
    "weights": {
-    "home_field": 0.252,
-    "rating": 1.521,
-    "rest": 0.248,
-    "point_diff_form": 0.242,
-    "qb_change": 0.296,
-    "epa": 0.159
+    "home_field": 0.253,
+    "rating": 1.536,
+    "rest": 0.245,
+    "point_diff_form": 0.239,
+    "qb_change": 0.279,
+    "epa": 0.16
    },
-   "matches": 4429,
+   "matches": 4441,
    "totals": {
-    "matches": 646,
-    "model_log_loss": 0.7184,
+    "matches": 648,
+    "model_log_loss": 0.7192,
     "market_log_loss": 0.6931,
     "best_weight": 0.0
    },
@@ -6327,15 +6327,15 @@
    "clv_picks": 84
   },
   "week": {
-   "picks": 14,
-   "wins": 5,
+   "picks": 13,
+   "wins": 4,
    "losses": 9,
-   "units": 2.8,
-   "staked": 7.0,
-   "roi": 0.4,
-   "beat_price": 0.286,
-   "clv": -0.0039,
-   "clv_picks": 14
+   "units": 0.95,
+   "staked": 6.5,
+   "roi": 0.146,
+   "beat_price": 0.231,
+   "clv": -0.0046,
+   "clv_picks": 13
   },
   "yours": {
    "picks": 15,
@@ -7087,8 +7087,8 @@
    "expected_end": "2026-10-13T03:00:00+00:00",
    "start_est": "2026-10-13T00:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.51,
-   "close_price": 0.51,
+   "latest_price": 0.505,
+   "close_price": 0.505,
    "pnl": null,
    "why": "Junior Caminero: 2.29 a game this season over 162 games (adjusted 2.26). Model gives \"Junior Caminero: 2+\" 66%. Blended with the market that's 54% vs a 51% price.",
    "trend": 0.0,
