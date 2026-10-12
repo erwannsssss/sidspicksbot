@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-12T22:25:30.708625+00:00",
+ "updated": "2026-10-12T23:25:22.805532+00:00",
  "status_note": "Last run found 0 new pick(s) and graded 0.",
  "bankroll": 96.02,
  "protection": {
@@ -5505,20 +5505,6 @@
  },
  "learning": {
   "groups": {
-   "cfb:total_3q": {
-    "finished": 471,
-    "games": 22,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-11T02:30:00+00:00"
-   },
-   "cfb:period_winner_4q": {
-    "finished": 88,
-    "games": 22,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-11T02:30:00+00:00"
-   },
    "cfb:spread_4q": {
     "finished": 492,
     "games": 22,
@@ -5724,6 +5710,20 @@
    },
    "cfb:spread_3q": {
     "finished": 444,
+    "games": 21,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-11T02:30:00+00:00"
+   },
+   "cfb:total_3q": {
+    "finished": 452,
+    "games": 21,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-11T02:30:00+00:00"
+   },
+   "cfb:period_winner_4q": {
+    "finished": 84,
     "games": 21,
     "trust": 0.25,
     "confidence_fix": false,
@@ -5998,24 +5998,40 @@
   },
   "price_trend": {
    "flat": {
-    "markets": 26484,
+    "markets": 26467,
     "hit_vs_price": -0.0
    },
-   "falling": {
-    "markets": 3103,
-    "hit_vs_price": -0.006
-   },
    "rising": {
-    "markets": 3094,
+    "markets": 3093,
     "hit_vs_price": 0.009
+   },
+   "falling": {
+    "markets": 3100,
+    "hit_vs_price": -0.006
    }
   }
  },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "tracker": {
-  "tracked": 202409,
+  "tracked": 202511,
   "series": 3887,
   "movers": [
+   {
+    "ticker": "KXLOLMAP-26OCT121700KBMLOS-3-KBM",
+    "series": "KXLOLMAP",
+    "title": "KaBuM! Ilha das Lendas",
+    "move": 0.87,
+    "price": 0.995,
+    "close": "2026-10-14T21:00:00+00:00"
+   },
+   {
+    "ticker": "KXLOLMAP-26OCT121700KBMLOS-3-LOS",
+    "series": "KXLOLMAP",
+    "title": "LOS",
+    "move": -0.865,
+    "price": 0.005,
+    "close": "2026-10-14T21:00:00+00:00"
+   },
    {
     "ticker": "KXNFLBOTH-26OCT11SFSEA-28",
     "series": "KXNFLBOTH",
@@ -6119,22 +6135,6 @@
     "move": 0.6,
     "price": 0.995,
     "close": "2026-10-14T00:20:00+00:00"
-   },
-   {
-    "ticker": "KXEREDIVISIETOTAL-26OCT11TELADO-4",
-    "series": "KXEREDIVISIETOTAL",
-    "title": "Over 3.5 goals scored",
-    "move": 0.59,
-    "price": 0.995,
-    "close": "2026-10-13T12:30:00+00:00"
-   },
-   {
-    "ticker": "KXNFL2HSPREAD-26OCT11DETARI-DET7",
-    "series": "KXNFL2HSPREAD",
-    "title": "DET Lions wins by over 6.5 points",
-    "move": 0.585,
-    "price": 0.925,
-    "close": "2026-10-13T20:25:00+00:00"
    }
   ]
  },
@@ -6240,31 +6240,31 @@
    "holdout": {
     "matches": 659,
     "rating_log_loss": 0.6246,
-    "model_log_loss": 0.6222,
+    "model_log_loss": 0.6187,
     "rating_accuracy": 0.656,
-    "model_accuracy": 0.645
+    "model_accuracy": 0.653
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6042,
-    "model_log_loss": 0.6222,
-    "best_weight": 0.0,
+    "model_log_loss": 0.6187,
+    "best_weight": 0.1,
     "backtest_weight": 0.25,
     "matches": 659
    },
    "backtest": {
-    "bets": 15,
-    "wins": 5,
-    "units": -5.7,
-    "roi": -0.222
+    "bets": 16,
+    "wins": 6,
+    "units": -2.5,
+    "roi": -0.093
    },
    "weights": {
-    "home_field": 0.252,
-    "rating": 1.537,
-    "rest": 0.248,
-    "point_diff_form": 0.235,
-    "qb_change": 0.303,
-    "epa": 0.157
+    "home_field": 0.253,
+    "rating": 1.528,
+    "rest": 0.243,
+    "point_diff_form": 0.232,
+    "qb_change": 0.33,
+    "epa": 0.159
    },
    "matches": 4441,
    "totals": {
@@ -6851,8 +6851,8 @@
    "expected_end": "2026-10-14T19:45:00+00:00",
    "start_est": "2026-10-14T16:15:00+00:00",
    "status": "pending",
-   "latest_price": 0.27,
-   "close_price": 0.27,
+   "latest_price": 0.275,
+   "close_price": 0.275,
    "pnl": null,
    "why": "Ratings 1794 (Feyenoord, home) vs 1845 (Como). Share of chances lately (xG or shots on target) 69% vs 58%. Goal difference last 6: +16 vs +4. Last played Sep 20 vs Sep 20. Model gives the home 45%. Blended with the market that's 37% vs a 28% price. Sharp sportsbook price (Pinnacle) says 28%.",
    "trend": 0.0,
@@ -7047,8 +7047,8 @@
    "expected_end": "2026-10-13T03:00:00+00:00",
    "start_est": "2026-10-13T00:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.375,
-   "close_price": 0.375,
+   "latest_price": 0.365,
+   "close_price": 0.365,
    "pnl": null,
    "why": "Expected goals 0.94 vs 1.45 (2.39 total). Model gives \"No: Both Teams To Score\" 53%. Blended with the market that's 48% vs a 41% price.",
    "trend": 0.0,
