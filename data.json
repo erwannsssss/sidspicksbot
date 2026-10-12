@@ -1,6 +1,6 @@
 {
- "updated": "2026-10-12T04:27:58.005047+00:00",
- "status_note": "Last run found 0 new pick(s) and graded 2.",
+ "updated": "2026-10-12T05:27:00.661139+00:00",
+ "status_note": "Last run found 0 new pick(s) and graded 0.",
  "bankroll": 96.02,
  "protection": {
   "bankroll": 96.02,
@@ -5505,23 +5505,23 @@
  },
  "learning": {
   "groups": {
-   "cfb:total": {
-    "finished": 2270,
-    "games": 77,
-    "trust": 0.32,
-    "confidence_fix": false,
-    "last": "2026-10-11T02:30:00+00:00"
-   },
    "cfb:spread": {
-    "finished": 3114,
+    "finished": 3096,
     "games": 78,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-10-11T02:30:00+00:00"
    },
+   "cfb:total": {
+    "finished": 2226,
+    "games": 75,
+    "trust": 0.36,
+    "confidence_fix": false,
+    "last": "2026-10-11T02:30:00+00:00"
+   },
    "cfb:spread_1h": {
-    "finished": 1502,
-    "games": 42,
+    "finished": 1498,
+    "games": 39,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-10-11T02:30:00+00:00"
@@ -5807,11 +5807,11 @@
     "last": "2026-10-12T00:00:00+00:00"
    },
    "tennis:winner": {
-    "finished": 100,
-    "games": 50,
+    "finished": 102,
+    "games": 51,
     "trust": 0.34,
     "confidence_fix": false,
-    "last": "2026-10-11T17:40:00+00:00"
+    "last": "2026-10-12T01:00:00+00:00"
    },
    "nfl:winner": {
     "finished": 24,
@@ -5998,22 +5998,22 @@
   },
   "price_trend": {
    "flat": {
-    "markets": 26982,
+    "markets": 26938,
     "hit_vs_price": -0.0
    },
    "falling": {
-    "markets": 3151,
-    "hit_vs_price": -0.005
+    "markets": 3141,
+    "hit_vs_price": -0.006
    },
    "rising": {
-    "markets": 3136,
-    "hit_vs_price": 0.007
+    "markets": 3126,
+    "hit_vs_price": 0.008
    }
   }
  },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "tracker": {
-  "tracked": 199693,
+  "tracked": 200586,
   "series": 3883,
   "movers": [
    {
@@ -6140,27 +6140,27 @@
  },
  "models": {
   "tennis": {
-   "matches": 21147,
-   "training_rows": 14703,
+   "matches": 21149,
+   "training_rows": 14705,
    "holdout": {
     "from": "2026-09-05",
     "matches": 2206,
-    "elo_log_loss": 0.6603,
-    "model_log_loss": 0.6527,
-    "elo_accuracy": 0.605,
+    "elo_log_loss": 0.66,
+    "model_log_loss": 0.6524,
+    "elo_accuracy": 0.606,
     "model_accuracy": 0.621
    },
    "using": "full",
    "weights": {
-    "elo": 2.049,
+    "elo": 2.05,
     "dominance": 0.0,
     "rank": 0.0,
     "h2h": 0.457,
-    "form": -0.56,
+    "form": -0.563,
     "fatigue_games": -0.218,
     "fatigue_matches": 0.086,
-    "rest": 0.01,
-    "travel": 0.15,
+    "rest": 0.009,
+    "travel": 0.149,
     "altitude": 0.0,
     "best_of_5": 0.579
    },
@@ -6240,31 +6240,31 @@
    "holdout": {
     "matches": 657,
     "rating_log_loss": 0.6268,
-    "model_log_loss": 0.6237,
+    "model_log_loss": 0.6228,
     "rating_accuracy": 0.654,
     "model_accuracy": 0.645
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6064,
-    "model_log_loss": 0.6237,
+    "model_log_loss": 0.6228,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 657
    },
    "backtest": {
-    "bets": 14,
-    "wins": 4,
-    "units": -9.0,
-    "roi": -0.361
+    "bets": 16,
+    "wins": 5,
+    "units": -7.1,
+    "roi": -0.251
    },
    "weights": {
     "home_field": 0.254,
-    "rating": 1.527,
-    "rest": 0.244,
-    "point_diff_form": 0.239,
-    "qb_change": 0.319,
-    "epa": 0.157
+    "rating": 1.525,
+    "rest": 0.252,
+    "point_diff_form": 0.243,
+    "qb_change": 0.254,
+    "epa": 0.161
    },
    "matches": 4429,
    "totals": {
@@ -7126,8 +7126,8 @@
    "expected_end": "2026-10-13T03:00:00+00:00",
    "start_est": "2026-10-13T00:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.4,
-   "close_price": 0.4,
+   "latest_price": 0.405,
+   "close_price": 0.405,
    "pnl": null,
    "why": "Expected goals 0.94 vs 1.45 (2.39 total). Model gives \"No: Both Teams To Score\" 53%. Blended with the market that's 48% vs a 41% price.",
    "trend": 0.0,
