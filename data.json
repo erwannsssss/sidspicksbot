@@ -1,6 +1,6 @@
 {
- "updated": "2026-10-12T19:25:19.264947+00:00",
- "status_note": "Last run found 0 new pick(s) and graded 1.",
+ "updated": "2026-10-12T20:27:06.824130+00:00",
+ "status_note": "Last run found 0 new pick(s) and graded 0.",
  "bankroll": 96.02,
  "protection": {
   "bankroll": 96.02,
@@ -5505,93 +5505,93 @@
  },
  "learning": {
   "groups": {
-   "cfb:spread_1q": {
-    "finished": 497,
-    "games": 25,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-11T02:30:00+00:00"
-   },
-   "cfb:total_1q": {
-    "finished": 548,
-    "games": 25,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-11T02:30:00+00:00"
-   },
-   "cfb:period_winner_2h": {
-    "finished": 100,
-    "games": 25,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-11T02:30:00+00:00"
-   },
    "cfb:period_winner_2q": {
-    "finished": 100,
-    "games": 25,
+    "finished": 89,
+    "games": 23,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-10-11T02:30:00+00:00"
    },
    "cfb:spread_2q": {
-    "finished": 531,
-    "games": 25,
+    "finished": 491,
+    "games": 23,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-10-11T02:30:00+00:00"
    },
    "cfb:total_2q": {
-    "finished": 548,
-    "games": 25,
+    "finished": 504,
+    "games": 23,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-10-11T02:30:00+00:00"
    },
    "cfb:period_winner_3q": {
-    "finished": 100,
-    "games": 25,
+    "finished": 92,
+    "games": 23,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-10-11T02:30:00+00:00"
    },
    "cfb:spread_3q": {
-    "finished": 524,
-    "games": 25,
+    "finished": 484,
+    "games": 23,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-10-11T02:30:00+00:00"
    },
    "cfb:total_3q": {
-    "finished": 540,
-    "games": 25,
+    "finished": 496,
+    "games": 23,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-10-11T02:30:00+00:00"
    },
    "cfb:period_winner_4q": {
-    "finished": 100,
-    "games": 25,
+    "finished": 92,
+    "games": 23,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-10-11T02:30:00+00:00"
    },
    "cfb:spread_4q": {
-    "finished": 558,
-    "games": 25,
+    "finished": 514,
+    "games": 23,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-10-11T02:30:00+00:00"
    },
    "cfb:total_4q": {
-    "finished": 546,
-    "games": 25,
+    "finished": 502,
+    "games": 23,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-10-11T02:30:00+00:00"
    },
    "cfb:period_winner_1q": {
-    "finished": 96,
-    "games": 24,
+    "finished": 88,
+    "games": 22,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-11T02:30:00+00:00"
+   },
+   "cfb:spread_1q": {
+    "finished": 456,
+    "games": 22,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-11T02:30:00+00:00"
+   },
+   "cfb:total_1q": {
+    "finished": 482,
+    "games": 22,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-11T02:30:00+00:00"
+   },
+   "cfb:period_winner_2h": {
+    "finished": 88,
+    "games": 22,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-10-11T02:30:00+00:00"
@@ -5807,11 +5807,11 @@
     "last": "2026-10-12T00:00:00+00:00"
    },
    "tennis:winner": {
-    "finished": 214,
-    "games": 107,
+    "finished": 222,
+    "games": 111,
     "trust": 0.27,
     "confidence_fix": false,
-    "last": "2026-10-12T13:30:00+00:00"
+    "last": "2026-10-12T17:00:00+00:00"
    },
    "nfl:winner": {
     "finished": 24,
@@ -5998,22 +5998,22 @@
   },
   "price_trend": {
    "flat": {
-    "markets": 26707,
+    "markets": 26363,
     "hit_vs_price": -0.0
    },
-   "falling": {
-    "markets": 3101,
-    "hit_vs_price": -0.006
-   },
    "rising": {
-    "markets": 3088,
-    "hit_vs_price": 0.008
+    "markets": 3061,
+    "hit_vs_price": 0.01
+   },
+   "falling": {
+    "markets": 3074,
+    "hit_vs_price": -0.007
    }
   }
  },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "tracker": {
-  "tracked": 202043,
+  "tracked": 202352,
   "series": 3887,
   "movers": [
    {
@@ -6140,29 +6140,29 @@
  },
  "models": {
   "tennis": {
-   "matches": 21230,
-   "training_rows": 14775,
+   "matches": 21235,
+   "training_rows": 14780,
    "holdout": {
     "from": "2026-09-07",
     "matches": 2217,
-    "elo_log_loss": 0.6615,
-    "model_log_loss": 0.6543,
+    "elo_log_loss": 0.6608,
+    "model_log_loss": 0.6536,
     "elo_accuracy": 0.606,
-    "model_accuracy": 0.618
+    "model_accuracy": 0.62
    },
    "using": "full",
    "weights": {
-    "elo": 2.039,
+    "elo": 2.043,
     "dominance": 0.0,
     "rank": 0.0,
-    "h2h": 0.448,
-    "form": -0.531,
-    "fatigue_games": -0.216,
-    "fatigue_matches": 0.076,
+    "h2h": 0.45,
+    "form": -0.538,
+    "fatigue_games": -0.217,
+    "fatigue_matches": 0.077,
     "rest": 0.006,
-    "travel": 0.149,
+    "travel": 0.15,
     "altitude": 0.0,
-    "best_of_5": 0.58
+    "best_of_5": 0.578
    },
    "sport": "Tennis",
    "label": "Tennis",
@@ -6240,31 +6240,31 @@
    "holdout": {
     "matches": 659,
     "rating_log_loss": 0.6246,
-    "model_log_loss": 0.6216,
+    "model_log_loss": 0.6199,
     "rating_accuracy": 0.656,
-    "model_accuracy": 0.648
+    "model_accuracy": 0.646
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6042,
-    "model_log_loss": 0.6216,
+    "model_log_loss": 0.6199,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 659
    },
    "backtest": {
-    "bets": 16,
-    "wins": 6,
-    "units": -3.0,
-    "roi": -0.11
+    "bets": 15,
+    "wins": 5,
+    "units": -5.9,
+    "roi": -0.221
    },
    "weights": {
     "home_field": 0.253,
-    "rating": 1.539,
-    "rest": 0.249,
+    "rating": 1.535,
+    "rest": 0.254,
     "point_diff_form": 0.239,
-    "qb_change": 0.3,
-    "epa": 0.156
+    "qb_change": 0.329,
+    "epa": 0.152
    },
    "matches": 4441,
    "totals": {
@@ -6614,8 +6614,8 @@
    "expected_end": "2026-10-16T02:30:00+00:00",
    "start_est": "2026-10-15T23:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.43,
-   "close_price": 0.43,
+   "latest_price": 0.435,
+   "close_price": 0.435,
    "pnl": null,
    "why": "Projected score margin +5.8 (home) and total 47.4. Model gives \"No: Georgia Southern wins by over 2.5 points\" 70%. Blended with the market that's 49% vs a 43% price.",
    "trend": 0.0,
