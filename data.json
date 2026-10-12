@@ -1,6 +1,6 @@
 {
- "updated": "2026-10-12T16:27:10.148499+00:00",
- "status_note": "Last run found 0 new pick(s) and graded 1.",
+ "updated": "2026-10-12T17:26:18.720569+00:00",
+ "status_note": "Last run found 0 new pick(s) and graded 0.",
  "bankroll": 96.02,
  "protection": {
   "bankroll": 96.02,
@@ -5505,43 +5505,8 @@
  },
  "learning": {
   "groups": {
-   "cfb:spread_1q": {
-    "finished": 519,
-    "games": 26,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-11T02:30:00+00:00"
-   },
-   "cfb:total_1q": {
-    "finished": 570,
-    "games": 26,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-11T02:30:00+00:00"
-   },
-   "cfb:period_winner_2h": {
-    "finished": 104,
-    "games": 26,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-11T02:30:00+00:00"
-   },
-   "cfb:period_winner_2q": {
-    "finished": 104,
-    "games": 26,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-11T02:30:00+00:00"
-   },
-   "cfb:spread_2q": {
-    "finished": 551,
-    "games": 26,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-11T02:30:00+00:00"
-   },
    "cfb:total_2q": {
-    "finished": 570,
+    "finished": 549,
     "games": 26,
     "trust": 0.25,
     "confidence_fix": false,
@@ -5591,6 +5556,41 @@
    },
    "cfb:period_winner_1q": {
     "finished": 100,
+    "games": 25,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-11T02:30:00+00:00"
+   },
+   "cfb:spread_1q": {
+    "finished": 516,
+    "games": 25,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-11T02:30:00+00:00"
+   },
+   "cfb:total_1q": {
+    "finished": 548,
+    "games": 25,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-11T02:30:00+00:00"
+   },
+   "cfb:period_winner_2h": {
+    "finished": 100,
+    "games": 25,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-11T02:30:00+00:00"
+   },
+   "cfb:period_winner_2q": {
+    "finished": 100,
+    "games": 25,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-11T02:30:00+00:00"
+   },
+   "cfb:spread_2q": {
+    "finished": 531,
     "games": 25,
     "trust": 0.25,
     "confidence_fix": false,
@@ -5646,25 +5646,25 @@
     "last": "2026-10-11T02:30:00+00:00"
    },
    "soccer:btts": {
-    "finished": 232,
-    "games": 116,
-    "trust": 0.55,
-    "confidence_fix": false,
-    "last": "2026-10-12T01:15:00+00:00"
-   },
-   "soccer:spread": {
-    "finished": 890,
-    "games": 116,
-    "trust": 0.65,
-    "confidence_fix": false,
-    "last": "2026-10-12T01:15:00+00:00"
-   },
-   "soccer:total": {
-    "finished": 1358,
-    "games": 116,
+    "finished": 234,
+    "games": 117,
     "trust": 0.6,
     "confidence_fix": false,
-    "last": "2026-10-12T01:15:00+00:00"
+    "last": "2026-10-12T15:00:00+00:00"
+   },
+   "soccer:spread": {
+    "finished": 898,
+    "games": 117,
+    "trust": 0.65,
+    "confidence_fix": false,
+    "last": "2026-10-12T15:00:00+00:00"
+   },
+   "soccer:total": {
+    "finished": 1370,
+    "games": 117,
+    "trust": 0.6,
+    "confidence_fix": false,
+    "last": "2026-10-12T15:00:00+00:00"
    },
    "cfb:spread_1h": {
     "finished": 1495,
@@ -5674,11 +5674,11 @@
     "last": "2026-10-11T02:30:00+00:00"
    },
    "soccer:winner": {
-    "finished": 332,
-    "games": 111,
+    "finished": 335,
+    "games": 112,
     "trust": 0.52,
-    "confidence_fix": true,
-    "last": "2026-10-12T01:15:00+00:00"
+    "confidence_fix": false,
+    "last": "2026-10-12T15:00:00+00:00"
    },
    "soccer:team_total": {
     "finished": 640,
@@ -5807,8 +5807,8 @@
     "last": "2026-10-12T00:00:00+00:00"
    },
    "tennis:winner": {
-    "finished": 204,
-    "games": 102,
+    "finished": 206,
+    "games": 103,
     "trust": 0.27,
     "confidence_fix": false,
     "last": "2026-10-12T13:30:00+00:00"
@@ -5998,22 +5998,22 @@
   },
   "price_trend": {
    "flat": {
-    "markets": 26707,
+    "markets": 26654,
     "hit_vs_price": -0.0
    },
-   "rising": {
-    "markets": 3058,
-    "hit_vs_price": 0.007
-   },
    "falling": {
-    "markets": 3070,
+    "markets": 3074,
     "hit_vs_price": -0.005
+   },
+   "rising": {
+    "markets": 3062,
+    "hit_vs_price": 0.007
    }
   }
  },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "tracker": {
-  "tracked": 201404,
+  "tracked": 201621,
   "series": 3887,
   "movers": [
    {
@@ -6140,13 +6140,13 @@
  },
  "models": {
   "tennis": {
-   "matches": 21222,
-   "training_rows": 14768,
+   "matches": 21224,
+   "training_rows": 14769,
    "holdout": {
     "from": "2026-09-06",
     "matches": 2216,
-    "elo_log_loss": 0.6613,
-    "model_log_loss": 0.6541,
+    "elo_log_loss": 0.661,
+    "model_log_loss": 0.6539,
     "elo_accuracy": 0.606,
     "model_accuracy": 0.618
    },
@@ -6156,13 +6156,13 @@
     "dominance": 0.0,
     "rank": 0.0,
     "h2h": 0.449,
-    "form": -0.534,
-    "fatigue_games": -0.216,
+    "form": -0.533,
+    "fatigue_games": -0.217,
     "fatigue_matches": 0.076,
     "rest": 0.006,
     "travel": 0.149,
     "altitude": 0.0,
-    "best_of_5": 0.581
+    "best_of_5": 0.58
    },
    "sport": "Tennis",
    "label": "Tennis",
@@ -6240,31 +6240,31 @@
    "holdout": {
     "matches": 659,
     "rating_log_loss": 0.6246,
-    "model_log_loss": 0.6211,
+    "model_log_loss": 0.62,
     "rating_accuracy": 0.656,
     "model_accuracy": 0.648
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6042,
-    "model_log_loss": 0.6211,
+    "model_log_loss": 0.62,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 659
    },
    "backtest": {
-    "bets": 16,
-    "wins": 6,
-    "units": -3.6,
-    "roi": -0.132
+    "bets": 14,
+    "wins": 4,
+    "units": -8.5,
+    "roi": -0.348
    },
    "weights": {
-    "home_field": 0.254,
+    "home_field": 0.253,
     "rating": 1.538,
-    "rest": 0.245,
-    "point_diff_form": 0.239,
-    "qb_change": 0.3,
-    "epa": 0.155
+    "rest": 0.246,
+    "point_diff_form": 0.227,
+    "qb_change": 0.329,
+    "epa": 0.157
    },
    "matches": 4441,
    "totals": {
@@ -6458,8 +6458,8 @@
    "expected_end": "2026-10-13T03:15:00+00:00",
    "start_est": "2026-10-13T00:15:00+00:00",
    "status": "pending",
-   "latest_price": 0.455,
-   "close_price": 0.455,
+   "latest_price": 0.465,
+   "close_price": 0.465,
    "pnl": null,
    "why": "Kyren Williams: 36 a game lately (last 12 games). Model gives \"Kyren Williams: 25+\" 69%. Blended with the market that's 50% vs a 44% price.",
    "trend": 0.0,
@@ -6772,8 +6772,8 @@
    "expected_end": "2026-10-14T22:00:00+00:00",
    "start_est": "2026-10-14T18:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.28,
-   "close_price": 0.28,
+   "latest_price": 0.275,
+   "close_price": 0.275,
    "pnl": null,
    "why": "Ratings 1784 (Betis, home) vs 1927 (Porto). Share of chances lately (xG or shots on target) 48% vs 66%. Goal difference last 6: +1 vs +10. Last played Sep 20 vs Sep 20. Model gives the away 50%. Blended with the market that's 40% vs a 29% price. Sharp sportsbook price (Pinnacle) says 29%.",
    "trend": 0.005,
@@ -6891,8 +6891,8 @@
    "expected_end": "2026-10-14T19:45:00+00:00",
    "start_est": "2026-10-14T16:15:00+00:00",
    "status": "pending",
-   "latest_price": 0.27,
-   "close_price": 0.27,
+   "latest_price": 0.265,
+   "close_price": 0.265,
    "pnl": null,
    "why": "Ratings 1794 (Feyenoord, home) vs 1845 (Como). Share of chances lately (xG or shots on target) 69% vs 58%. Goal difference last 6: +16 vs +4. Last played Sep 20 vs Sep 20. Model gives the home 45%. Blended with the market that's 37% vs a 28% price. Sharp sportsbook price (Pinnacle) says 28%.",
    "trend": 0.0,
@@ -7009,8 +7009,8 @@
    "expected_end": "2026-10-16T03:00:00+00:00",
    "start_est": "2026-10-16T00:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.455,
-   "close_price": 0.455,
+   "latest_price": 0.45,
+   "close_price": 0.45,
    "pnl": null,
    "why": "Projected score margin +17.6 (home) and total 61.5. Model gives \"Under 67.5 points\" 64%. Blended with the market that's 52% vs a 48% price. Price down 4\u00a2 in the last 12 hours.",
    "trend": -0.04,
