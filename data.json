@@ -1,6 +1,6 @@
 {
- "updated": "2026-10-12T03:27:53.222118+00:00",
- "status_note": "Last run found 0 new pick(s) and graded 1.",
+ "updated": "2026-10-12T04:27:58.005047+00:00",
+ "status_note": "Last run found 0 new pick(s) and graded 2.",
  "bankroll": 96.02,
  "protection": {
   "bankroll": 96.02,
@@ -5505,45 +5505,31 @@
  },
  "learning": {
   "groups": {
-   "cfb:spread": {
-    "finished": 3208,
-    "games": 79,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-11T02:30:00+00:00"
-   },
-   "cfb:team_total": {
-    "finished": 1796,
-    "games": 41,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-11T02:30:00+00:00"
-   },
    "cfb:total": {
-    "finished": 2324,
-    "games": 78,
+    "finished": 2270,
+    "games": 77,
     "trust": 0.32,
     "confidence_fix": false,
     "last": "2026-10-11T02:30:00+00:00"
    },
-   "cfb:winner": {
-    "finished": 132,
-    "games": 66,
+   "cfb:spread": {
+    "finished": 3114,
+    "games": 78,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-10-11T02:30:00+00:00"
    },
    "cfb:spread_1h": {
-    "finished": 1546,
-    "games": 43,
+    "finished": 1502,
+    "games": 42,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-10-11T02:30:00+00:00"
    },
-   "cfb:total_1h": {
-    "finished": 998,
-    "games": 41,
-    "trust": 0.44,
+   "cfb:team_total": {
+    "finished": 1704,
+    "games": 40,
+    "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-10-11T02:30:00+00:00"
    },
@@ -5638,6 +5624,13 @@
     "confidence_fix": false,
     "last": "2026-10-11T02:30:00+00:00"
    },
+   "cfb:total_1h": {
+    "finished": 974,
+    "games": 41,
+    "trust": 0.47,
+    "confidence_fix": false,
+    "last": "2026-10-11T02:30:00+00:00"
+   },
    "soccer:spread_1h": {
     "finished": 292,
     "games": 73,
@@ -5651,6 +5644,13 @@
     "trust": 0.52,
     "confidence_fix": false,
     "last": "2026-10-12T01:15:00+00:00"
+   },
+   "cfb:winner": {
+    "finished": 130,
+    "games": 65,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-11T02:30:00+00:00"
    },
    "soccer:btts": {
     "finished": 232,
@@ -5779,11 +5779,11 @@
     "last": "2026-10-12T00:00:00+00:00"
    },
    "mlb:prop_hit": {
-    "finished": 76,
-    "games": 1,
+    "finished": 150,
+    "games": 2,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-11T00:00:00+00:00"
+    "last": "2026-10-12T00:00:00+00:00"
    },
    "mlb:prop_hr": {
     "finished": 68,
@@ -5793,11 +5793,11 @@
     "last": "2026-10-12T00:00:00+00:00"
    },
    "mlb:prop_tb": {
-    "finished": 118,
-    "games": 1,
+    "finished": 238,
+    "games": 2,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-11T00:00:00+00:00"
+    "last": "2026-10-12T00:00:00+00:00"
    },
    "mlb:prop_hrr": {
     "finished": 340,
@@ -5814,11 +5814,11 @@
     "last": "2026-10-11T17:40:00+00:00"
    },
    "nfl:winner": {
-    "finished": 22,
-    "games": 11,
+    "finished": 24,
+    "games": 12,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-11T20:25:00+00:00"
+    "last": "2026-10-12T00:20:00+00:00"
    },
    "nfl:spread_1h": {
     "finished": 396,
@@ -5856,18 +5856,18 @@
     "last": "2026-10-12T00:20:00+00:00"
    },
    "nfl:spread_2h": {
-    "finished": 366,
-    "games": 12,
+    "finished": 396,
+    "games": 13,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-11T20:25:00+00:00"
+    "last": "2026-10-12T00:20:00+00:00"
    },
    "nfl:total_2h": {
-    "finished": 300,
-    "games": 12,
+    "finished": 326,
+    "games": 13,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-11T20:25:00+00:00"
+    "last": "2026-10-12T00:20:00+00:00"
    },
    "nfl:period_winner_2q": {
     "finished": 52,
@@ -5912,84 +5912,84 @@
     "last": "2026-10-12T00:20:00+00:00"
    },
    "nfl:period_winner_4q": {
-    "finished": 48,
-    "games": 12,
+    "finished": 52,
+    "games": 13,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-11T20:25:00+00:00"
+    "last": "2026-10-12T00:20:00+00:00"
    },
    "nfl:spread_4q": {
-    "finished": 264,
-    "games": 12,
+    "finished": 286,
+    "games": 13,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-11T20:25:00+00:00"
+    "last": "2026-10-12T00:20:00+00:00"
    },
    "nfl:total_4q": {
-    "finished": 238,
-    "games": 12,
+    "finished": 258,
+    "games": 13,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-11T20:25:00+00:00"
+    "last": "2026-10-12T00:20:00+00:00"
    },
    "nfl:spread": {
-    "finished": 600,
-    "games": 12,
+    "finished": 650,
+    "games": 13,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-11T20:25:00+00:00"
+    "last": "2026-10-12T00:20:00+00:00"
    },
    "nfl:team_total": {
-    "finished": 636,
+    "finished": 660,
     "games": 13,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-10-12T00:20:00+00:00"
    },
    "nfl:total": {
-    "finished": 470,
+    "finished": 494,
     "games": 13,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-10-12T00:20:00+00:00"
    },
    "nfl:prop_passyds": {
-    "finished": 434,
-    "games": 12,
+    "finished": 468,
+    "games": 13,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-11T20:25:00+00:00"
+    "last": "2026-10-12T00:20:00+00:00"
    },
    "nfl:prop_recyds": {
-    "finished": 2014,
-    "games": 12,
+    "finished": 2178,
+    "games": 13,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-11T20:25:00+00:00"
+    "last": "2026-10-12T00:20:00+00:00"
    },
    "nfl:prop_rshyds": {
-    "finished": 1184,
-    "games": 12,
+    "finished": 1288,
+    "games": 13,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-11T20:25:00+00:00"
+    "last": "2026-10-12T00:20:00+00:00"
    },
    "nfl:prop_passtds": {
-    "finished": 190,
+    "finished": 198,
     "games": 13,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-10-12T00:20:00+00:00"
    },
    "nfl:prop_rryds": {
-    "finished": 176,
-    "games": 12,
+    "finished": 194,
+    "games": 13,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-11T20:25:00+00:00"
+    "last": "2026-10-12T00:20:00+00:00"
    },
    "nfl:prop_rec": {
-    "finished": 1748,
+    "finished": 1850,
     "games": 13,
     "trust": 0.25,
     "confidence_fix": false,
@@ -5998,22 +5998,22 @@
   },
   "price_trend": {
    "flat": {
-    "markets": 26558,
+    "markets": 26982,
     "hit_vs_price": -0.0
    },
    "falling": {
-    "markets": 3116,
+    "markets": 3151,
     "hit_vs_price": -0.005
    },
    "rising": {
-    "markets": 3099,
+    "markets": 3136,
     "hit_vs_price": 0.007
    }
   }
  },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "tracker": {
-  "tracked": 199508,
+  "tracked": 199693,
   "series": 3883,
   "movers": [
    {
@@ -6240,31 +6240,31 @@
    "holdout": {
     "matches": 657,
     "rating_log_loss": 0.6268,
-    "model_log_loss": 0.6236,
+    "model_log_loss": 0.6237,
     "rating_accuracy": 0.654,
     "model_accuracy": 0.645
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6064,
-    "model_log_loss": 0.6236,
+    "model_log_loss": 0.6237,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 657
    },
    "backtest": {
-    "bets": 16,
-    "wins": 5,
-    "units": -7.7,
-    "roi": -0.279
+    "bets": 14,
+    "wins": 4,
+    "units": -9.0,
+    "roi": -0.361
    },
    "weights": {
-    "home_field": 0.253,
-    "rating": 1.526,
-    "rest": 0.246,
-    "point_diff_form": 0.24,
-    "qb_change": 0.295,
-    "epa": 0.159
+    "home_field": 0.254,
+    "rating": 1.527,
+    "rest": 0.244,
+    "point_diff_form": 0.239,
+    "qb_change": 0.319,
+    "epa": 0.157
    },
    "matches": 4429,
    "totals": {
@@ -6349,15 +6349,15 @@
    "clv_picks": 14
   },
   "watch": {
-   "picks": 427,
-   "wins": 189,
-   "losses": 238,
-   "units": 6.42,
-   "staked": 213.5,
-   "roi": 0.03,
-   "beat_price": 0.309,
-   "clv": -0.0064,
-   "clv_picks": 404
+   "picks": 429,
+   "wins": 190,
+   "losses": 239,
+   "units": 7.1,
+   "staked": 214.5,
+   "roi": 0.033,
+   "beat_price": 0.312,
+   "clv": -0.0063,
+   "clv_picks": 406
   }
  },
  "by_expert_lean": {
@@ -6419,15 +6419,15 @@
    "clv_picks": 5
   },
   "W": {
-   "picks": 427,
-   "wins": 189,
-   "losses": 238,
-   "units": 6.42,
-   "staked": 213.5,
-   "roi": 0.03,
-   "beat_price": 0.309,
-   "clv": -0.0064,
-   "clv_picks": 404
+   "picks": 429,
+   "wins": 190,
+   "losses": 239,
+   "units": 7.1,
+   "staked": 214.5,
+   "roi": 0.033,
+   "beat_price": 0.312,
+   "clv": -0.0063,
+   "clv_picks": 406
   }
  },
  "watch_open": [
@@ -6458,88 +6458,10 @@
    "expected_end": "2026-10-13T03:15:00+00:00",
    "start_est": "2026-10-13T00:15:00+00:00",
    "status": "pending",
-   "latest_price": 0.425,
-   "close_price": 0.425,
+   "latest_price": 0.455,
+   "close_price": 0.455,
    "pnl": null,
    "why": "Kyren Williams: 36 a game lately (last 12 games). Model gives \"Kyren Williams: 25+\" 69%. Blended with the market that's 50% vs a 44% price.",
-   "trend": 0.0,
-   "new_market": false,
-   "trust": 0.25,
-   "sharp_prob": null,
-   "research": "",
-   "sources": [],
-   "expert_lean": "none"
-  },
-  {
-   "id": "KXNFLTEAMTOTAL-26OCT11BALATL-BAL25",
-   "ticker": "KXNFLTEAMTOTAL-26OCT11BALATL-BAL25",
-   "side": "yes",
-   "event": "KXNFLTEAMTOTAL-26OCT11BALATL",
-   "game": "26OCT11BALATL",
-   "sport": "Football",
-   "model_key": "nfl",
-   "mtype": "team_total",
-   "line": 24.5,
-   "tour": "NFL",
-   "tournament": "BAL at ATL",
-   "matchup": "BAL at ATL",
-   "surface": "",
-   "pick": "BAL Ravens over 24.5 points",
-   "opponent": "",
-   "market": "BAL Ravens over 24.5 points",
-   "price": 0.29,
-   "model_prob": 0.392,
-   "raw_prob": 0.5,
-   "edge": 0.088,
-   "tier": "W",
-   "units": 0.5,
-   "made": "2026-10-09T00:35:54.455935+00:00",
-   "expected_end": "2026-10-12T03:20:00+00:00",
-   "start_est": "2026-10-12T00:20:00+00:00",
-   "status": "pending",
-   "latest_price": 0.295,
-   "close_price": 0.295,
-   "pnl": null,
-   "why": "Projected score margin -1.2 (home) and total 47.8. Forecast 67F, wind 8 mph, rain 0.0 mm. Model gives \"BAL Ravens over 24.5 points\" 50%. Blended with the market that's 34% vs a 29% price.",
-   "trend": 0.0,
-   "new_market": false,
-   "trust": 0.25,
-   "sharp_prob": null,
-   "research": "",
-   "sources": [],
-   "expert_lean": "none"
-  },
-  {
-   "id": "KXMLBTB-26OCT112000LADMIL-LADSOHTANI17-2",
-   "ticker": "KXMLBTB-26OCT112000LADMIL-LADSOHTANI17-2",
-   "side": "yes",
-   "event": "KXMLBTB-26OCT112000LADMIL",
-   "game": "26OCT112000LADMIL",
-   "sport": "Baseball",
-   "model_key": "mlb",
-   "mtype": "prop_tb",
-   "line": 1.5,
-   "tour": "MLB",
-   "tournament": "Los Angeles Dodgers at Milwaukee Brewers",
-   "matchup": "Los Angeles Dodgers at Milwaukee Brewers",
-   "surface": "",
-   "pick": "Shohei Ohtani: 2+",
-   "opponent": "",
-   "market": "Shohei Ohtani: 2+",
-   "price": 0.3,
-   "model_prob": 0.426,
-   "raw_prob": 0.558,
-   "edge": 0.112,
-   "tier": "W",
-   "units": 0.5,
-   "made": "2026-10-11T00:32:42.003546+00:00",
-   "expected_end": "2026-10-12T03:00:00+00:00",
-   "start_est": "2026-10-12T00:00:00+00:00",
-   "status": "pending",
-   "latest_price": 0.32,
-   "close_price": 0.32,
-   "pnl": null,
-   "why": "Shohei Ohtani: 1.93 a game this season over 139 games (adjusted 1.87). Model gives \"Shohei Ohtani: 2+\" 56%. Blended with the market that's 36% vs a 30% price.",
    "trend": 0.0,
    "new_market": false,
    "trust": 0.25,
@@ -7165,8 +7087,8 @@
    "expected_end": "2026-10-13T03:00:00+00:00",
    "start_est": "2026-10-13T00:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.505,
-   "close_price": 0.505,
+   "latest_price": 0.51,
+   "close_price": 0.51,
    "pnl": null,
    "why": "Junior Caminero: 2.29 a game this season over 162 games (adjusted 2.26). Model gives \"Junior Caminero: 2+\" 66%. Blended with the market that's 54% vs a 51% price.",
    "trend": 0.0,
@@ -7455,6 +7377,86 @@
   }
  ],
  "watch_history": [
+  {
+   "id": "KXMLBTB-26OCT112000LADMIL-LADSOHTANI17-2",
+   "ticker": "KXMLBTB-26OCT112000LADMIL-LADSOHTANI17-2",
+   "side": "yes",
+   "event": "KXMLBTB-26OCT112000LADMIL",
+   "game": "26OCT112000LADMIL",
+   "sport": "Baseball",
+   "model_key": "mlb",
+   "mtype": "prop_tb",
+   "line": 1.5,
+   "tour": "MLB",
+   "tournament": "Los Angeles Dodgers at Milwaukee Brewers",
+   "matchup": "Los Angeles Dodgers at Milwaukee Brewers",
+   "surface": "",
+   "pick": "Shohei Ohtani: 2+",
+   "opponent": "",
+   "market": "Shohei Ohtani: 2+",
+   "price": 0.3,
+   "model_prob": 0.426,
+   "raw_prob": 0.558,
+   "edge": 0.112,
+   "tier": "W",
+   "units": 0.5,
+   "made": "2026-10-11T00:32:42.003546+00:00",
+   "expected_end": "2026-10-12T03:00:00+00:00",
+   "start_est": "2026-10-12T00:00:00+00:00",
+   "status": "loss",
+   "latest_price": 0.32,
+   "close_price": 0.32,
+   "pnl": -0.52,
+   "why": "Shohei Ohtani: 1.93 a game this season over 139 games (adjusted 1.87). Model gives \"Shohei Ohtani: 2+\" 56%. Blended with the market that's 36% vs a 30% price.",
+   "trend": 0.0,
+   "new_market": false,
+   "trust": 0.25,
+   "sharp_prob": null,
+   "research": "",
+   "sources": [],
+   "expert_lean": "none",
+   "graded": "2026-10-12T04:25:51.515592+00:00"
+  },
+  {
+   "id": "KXNFLTEAMTOTAL-26OCT11BALATL-BAL25",
+   "ticker": "KXNFLTEAMTOTAL-26OCT11BALATL-BAL25",
+   "side": "yes",
+   "event": "KXNFLTEAMTOTAL-26OCT11BALATL",
+   "game": "26OCT11BALATL",
+   "sport": "Football",
+   "model_key": "nfl",
+   "mtype": "team_total",
+   "line": 24.5,
+   "tour": "NFL",
+   "tournament": "BAL at ATL",
+   "matchup": "BAL at ATL",
+   "surface": "",
+   "pick": "BAL Ravens over 24.5 points",
+   "opponent": "",
+   "market": "BAL Ravens over 24.5 points",
+   "price": 0.29,
+   "model_prob": 0.392,
+   "raw_prob": 0.5,
+   "edge": 0.088,
+   "tier": "W",
+   "units": 0.5,
+   "made": "2026-10-09T00:35:54.455935+00:00",
+   "expected_end": "2026-10-12T03:20:00+00:00",
+   "start_est": "2026-10-12T00:20:00+00:00",
+   "status": "win",
+   "latest_price": 0.295,
+   "close_price": 0.295,
+   "pnl": 1.2,
+   "why": "Projected score margin -1.2 (home) and total 47.8. Forecast 67F, wind 8 mph, rain 0.0 mm. Model gives \"BAL Ravens over 24.5 points\" 50%. Blended with the market that's 34% vs a 29% price.",
+   "trend": 0.0,
+   "new_market": false,
+   "trust": 0.25,
+   "sharp_prob": null,
+   "research": "",
+   "sources": [],
+   "expert_lean": "none",
+   "graded": "2026-10-12T04:25:51.439128+00:00"
+  },
   {
    "id": "KXLIGAMXGAME-26OCT11PUMCRA-PUM",
    "ticker": "KXLIGAMXGAME-26OCT11PUMCRA-PUM",
@@ -19426,87 +19428,6 @@
    "sources": [],
    "expert_lean": "none",
    "graded": "2026-09-27T03:21:38.189817+00:00"
-  },
-  {
-   "id": "KXNCAAFGAME-26SEP26TXAMLSU-TXAM",
-   "ticker": "KXNCAAFGAME-26SEP26TXAMLSU-TXAM",
-   "side": "yes",
-   "event": "KXNCAAFGAME-26SEP26TXAMLSU",
-   "game": "26SEP26TXAMLSU",
-   "sport": "Football",
-   "model_key": "cfb",
-   "mtype": "winner",
-   "line": null,
-   "tour": "College Football",
-   "tournament": "Texas A&M at LSU",
-   "matchup": "Texas A&M at LSU",
-   "surface": "",
-   "pick": "Texas A&M to win",
-   "opponent": "",
-   "market": "Texas A&M to win",
-   "price": 0.25,
-   "model_prob": 0.345,
-   "raw_prob": 0.446,
-   "edge": 0.082,
-   "tier": "W",
-   "units": 0.5,
-   "made": "2026-09-23T00:26:17.945064+00:00",
-   "expected_end": "2026-09-26T20:00:00+00:00",
-   "start_est": "2026-09-26T23:30:00+00:00",
-   "status": "loss",
-   "latest_price": 0.245,
-   "close_price": 0.245,
-   "pnl": -0.53,
-   "why": "Ratings 1638 vs 1622, on the road. Point differential last 5: +51 vs +57. Model gives Texas A&M 45%. Blended with the market that's 30% vs a 25% price. Sharp sportsbook price (Pinnacle) says 25%.",
-   "trend": 0.008,
-   "new_market": false,
-   "trust": 0.25,
-   "sharp_prob": 0.254,
-   "sharp_source": "Pinnacle",
-   "research": "",
-   "sources": [],
-   "expert_lean": "none",
-   "graded": "2026-09-27T03:21:38.117954+00:00"
-  },
-  {
-   "id": "KXNCAAFSPREAD-26SEP26OKSTWVU-WVU2",
-   "ticker": "KXNCAAFSPREAD-26SEP26OKSTWVU-WVU2",
-   "side": "yes",
-   "event": "KXNCAAFSPREAD-26SEP26OKSTWVU",
-   "game": "26SEP26OKSTWVU",
-   "sport": "Football",
-   "model_key": "cfb",
-   "mtype": "spread",
-   "line": 1.5,
-   "tour": "College Football",
-   "tournament": "Oklahoma State at West Virginia",
-   "matchup": "Oklahoma State at West Virginia",
-   "surface": "",
-   "pick": "West Virginia wins by over 1.5 points",
-   "opponent": "",
-   "market": "West Virginia wins by over 1.5 points",
-   "price": 0.5,
-   "model_prob": 0.654,
-   "raw_prob": 0.813,
-   "edge": 0.136,
-   "tier": "W",
-   "units": 0.5,
-   "made": "2026-09-22T16:21:36.657728+00:00",
-   "expected_end": "2026-09-26T20:00:00+00:00",
-   "start_est": "2026-09-26T23:00:00+00:00",
-   "status": "loss",
-   "latest_price": 0.505,
-   "close_price": 0.505,
-   "pnl": -0.52,
-   "why": "Projected score margin +15.7 (home) and total 51.4. Model gives \"West Virginia wins by over 1.5 points\" 81%. Blended with the market that's 57% vs a 50% price.",
-   "trend": 0.0,
-   "new_market": true,
-   "trust": 0.25,
-   "sharp_prob": null,
-   "research": "",
-   "sources": [],
-   "expert_lean": "none",
-   "graded": "2026-09-27T03:21:37.882127+00:00"
   }
  ],
  "by_tour": {
