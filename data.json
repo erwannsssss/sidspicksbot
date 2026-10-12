@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-12T05:27:00.661139+00:00",
+ "updated": "2026-10-12T06:35:13.620968+00:00",
  "status_note": "Last run found 0 new pick(s) and graded 0.",
  "bankroll": 96.02,
  "protection": {
@@ -5506,7 +5506,7 @@
  "learning": {
   "groups": {
    "cfb:spread": {
-    "finished": 3096,
+    "finished": 3094,
     "games": 78,
     "trust": 0.25,
     "confidence_fix": false,
@@ -5807,11 +5807,11 @@
     "last": "2026-10-12T00:00:00+00:00"
    },
    "tennis:winner": {
-    "finished": 102,
-    "games": 51,
+    "finished": 116,
+    "games": 58,
     "trust": 0.34,
     "confidence_fix": false,
-    "last": "2026-10-12T01:00:00+00:00"
+    "last": "2026-10-12T03:00:00+00:00"
    },
    "nfl:winner": {
     "finished": 24,
@@ -5998,7 +5998,7 @@
   },
   "price_trend": {
    "flat": {
-    "markets": 26938,
+    "markets": 26949,
     "hit_vs_price": -0.0
    },
    "falling": {
@@ -6006,15 +6006,15 @@
     "hit_vs_price": -0.006
    },
    "rising": {
-    "markets": 3126,
-    "hit_vs_price": 0.008
+    "markets": 3127,
+    "hit_vs_price": 0.007
    }
   }
  },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "tracker": {
-  "tracked": 200586,
-  "series": 3883,
+  "tracked": 200594,
+  "series": 3887,
   "movers": [
    {
     "ticker": "KXNFLBOTH-26OCT11SFSEA-28",
@@ -6140,29 +6140,29 @@
  },
  "models": {
   "tennis": {
-   "matches": 21149,
-   "training_rows": 14705,
+   "matches": 21157,
+   "training_rows": 14712,
    "holdout": {
-    "from": "2026-09-05",
-    "matches": 2206,
+    "from": "2026-09-06",
+    "matches": 2207,
     "elo_log_loss": 0.66,
-    "model_log_loss": 0.6524,
+    "model_log_loss": 0.6525,
     "elo_accuracy": 0.606,
     "model_accuracy": 0.621
    },
    "using": "full",
    "weights": {
-    "elo": 2.05,
+    "elo": 2.051,
     "dominance": 0.0,
     "rank": 0.0,
-    "h2h": 0.457,
-    "form": -0.563,
-    "fatigue_games": -0.218,
-    "fatigue_matches": 0.086,
+    "h2h": 0.459,
+    "form": -0.56,
+    "fatigue_games": -0.217,
+    "fatigue_matches": 0.085,
     "rest": 0.009,
-    "travel": 0.149,
+    "travel": 0.15,
     "altitude": 0.0,
-    "best_of_5": 0.579
+    "best_of_5": 0.577
    },
    "sport": "Tennis",
    "label": "Tennis",
@@ -6240,31 +6240,31 @@
    "holdout": {
     "matches": 657,
     "rating_log_loss": 0.6268,
-    "model_log_loss": 0.6228,
+    "model_log_loss": 0.6243,
     "rating_accuracy": 0.654,
     "model_accuracy": 0.645
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6064,
-    "model_log_loss": 0.6228,
+    "model_log_loss": 0.6243,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 657
    },
    "backtest": {
-    "bets": 16,
-    "wins": 5,
-    "units": -7.1,
-    "roi": -0.251
+    "bets": 14,
+    "wins": 4,
+    "units": -9.0,
+    "roi": -0.361
    },
    "weights": {
-    "home_field": 0.254,
-    "rating": 1.525,
-    "rest": 0.252,
-    "point_diff_form": 0.243,
-    "qb_change": 0.254,
-    "epa": 0.161
+    "home_field": 0.252,
+    "rating": 1.521,
+    "rest": 0.248,
+    "point_diff_form": 0.242,
+    "qb_change": 0.296,
+    "epa": 0.159
    },
    "matches": 4429,
    "totals": {
@@ -6327,15 +6327,15 @@
    "clv_picks": 84
   },
   "week": {
-   "picks": 16,
+   "picks": 14,
    "wins": 5,
-   "losses": 11,
-   "units": 1.76,
-   "staked": 8.0,
-   "roi": 0.22,
-   "beat_price": 0.25,
-   "clv": -0.0047,
-   "clv_picks": 16
+   "losses": 9,
+   "units": 2.8,
+   "staked": 7.0,
+   "roi": 0.4,
+   "beat_price": 0.286,
+   "clv": -0.0039,
+   "clv_picks": 14
   },
   "yours": {
    "picks": 15,
@@ -7363,8 +7363,8 @@
    "expected_end": "2026-10-15T02:30:00+00:00",
    "start_est": "2026-10-14T23:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.565,
-   "close_price": 0.565,
+   "latest_price": 0.57,
+   "close_price": 0.57,
    "pnl": null,
    "why": "Expected goals 2.02 vs 1.20 (3.22 total). Model gives \"No: Miami wins by more than 1.5 goals\" 66%. Blended with the market that's 62% vs a 58% price.",
    "trend": 0.01,
