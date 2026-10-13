@@ -1482,8 +1482,8 @@
   "model_prob": 0.2651,
   "ev": 0.78,
   "payout_units": 5.7,
-  "status": "pending",
-  "pnl": null,
+  "status": "loss",
+  "pnl": -1.0,
   "legs": [
    {
     "id": "KXATPCHALLENGERMATCH-26OCT13PIERIN-PIE",
@@ -1495,7 +1495,8 @@
     "price": 0.2,
     "model_prob": 0.333,
     "edge": 0.122,
-    "expected_end": "2026-10-13T11:00:00+00:00"
+    "expected_end": "2026-10-13T11:00:00+00:00",
+    "result": "loss"
    },
    {
     "id": "KXEFLCHAMPIONSHIPGAME-26OCT13WOLBOL-WOL",
@@ -1509,6 +1510,7 @@
     "edge": 0.091,
     "expected_end": "2026-10-13T21:45:00+00:00"
    }
-  ]
+  ],
+  "graded": "2026-10-13T12:34:23.025283+00:00"
  }
 ]
