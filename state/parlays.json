@@ -1460,5 +1460,97 @@
     "expected_end": "2026-10-14T22:00:00+00:00"
    }
   ]
+ },
+ {
+  "id": "PARLAY-202610130038-1",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-10-13T00:38:01.005481+00:00",
+  "units": 1.0,
+  "price": 0.1307,
+  "model_prob": 0.2743,
+  "ev": 1.099,
+  "payout_units": 6.7,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXUCLTEAMTOTAL-26OCT13INTBRU-INT2:no",
+    "ticker": "KXUCLTEAMTOTAL-26OCT13INTBRU-INT2",
+    "side": "no",
+    "market": "Inter under 1.5 goals",
+    "matchup": "Inter vs Club Brugge",
+    "sport": "Soccer",
+    "price": 0.25,
+    "model_prob": 0.409,
+    "edge": 0.146,
+    "expected_end": "2026-10-13T22:00:00+00:00"
+   },
+   {
+    "id": "KXUCLSPREAD-26OCT13ARSLIL-ARS3:no",
+    "ticker": "KXUCLSPREAD-26OCT13ARSLIL-ARS3",
+    "side": "no",
+    "market": "No: Arsenal wins by more than 2.5 goals",
+    "matchup": "Arsenal vs Lille",
+    "sport": "Soccer",
+    "price": 0.67,
+    "model_prob": 0.808,
+    "edge": 0.123,
+    "expected_end": "2026-10-13T22:00:00+00:00"
+   },
+   {
+    "id": "KXUCLSPREAD-26OCT14ROMRMA-RMA2:no",
+    "ticker": "KXUCLSPREAD-26OCT14ROMRMA-RMA2",
+    "side": "no",
+    "market": "No: Real Madrid wins by more than 1.5 goals",
+    "matchup": "Roma vs Real Madrid",
+    "sport": "Soccer",
+    "price": 0.71,
+    "model_prob": 0.83,
+    "edge": 0.105,
+    "expected_end": "2026-10-14T22:00:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": "PARLAY-202610130038-2",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-10-13T00:38:01.005587+00:00",
+  "units": 1.0,
+  "price": 0.1489,
+  "model_prob": 0.2651,
+  "ev": 0.78,
+  "payout_units": 5.7,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXATPCHALLENGERMATCH-26OCT13PIERIN-PIE",
+    "ticker": "KXATPCHALLENGERMATCH-26OCT13PIERIN-PIE",
+    "side": "yes",
+    "market": "Samuele Pieri to win",
+    "matchup": "2026 ATP Challenger Olbia",
+    "sport": "Tennis",
+    "price": 0.2,
+    "model_prob": 0.333,
+    "edge": 0.122,
+    "expected_end": "2026-10-13T11:00:00+00:00"
+   },
+   {
+    "id": "KXEFLCHAMPIONSHIPGAME-26OCT13WOLBOL-WOL",
+    "ticker": "KXEFLCHAMPIONSHIPGAME-26OCT13WOLBOL-WOL",
+    "side": "yes",
+    "market": "Wolverhampton to win",
+    "matchup": "Wolverhampton vs Bolton",
+    "sport": "Soccer",
+    "price": 0.69,
+    "model_prob": 0.796,
+    "edge": 0.091,
+    "expected_end": "2026-10-13T21:45:00+00:00"
+   }
+  ]
  }
 ]
