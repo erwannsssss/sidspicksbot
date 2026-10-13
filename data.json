@@ -1,6 +1,6 @@
 {
- "updated": "2026-10-13T13:33:23.246503+00:00",
- "status_note": "Last run found 0 new pick(s) and graded 1.",
+ "updated": "2026-10-13T14:29:53.849143+00:00",
+ "status_note": "Last run found 0 new pick(s) and graded 0.",
  "bankroll": 96.02,
  "protection": {
   "bankroll": 96.02,
@@ -5558,7 +5558,7 @@
  "learning": {
   "groups": {
    "soccer:total": {
-    "finished": 1323,
+    "finished": 1321,
     "games": 114,
     "trust": 0.54,
     "confidence_fix": false,
@@ -5859,11 +5859,11 @@
     "last": "2026-10-13T00:00:00+00:00"
    },
    "tennis:winner": {
-    "finished": 342,
-    "games": 171,
+    "finished": 356,
+    "games": 178,
     "trust": 0.27,
     "confidence_fix": false,
-    "last": "2026-10-13T10:00:00+00:00"
+    "last": "2026-10-13T10:30:00+00:00"
    },
    "nfl:winner": {
     "finished": 26,
@@ -6050,22 +6050,22 @@
   },
   "price_trend": {
    "flat": {
-    "markets": 26334,
+    "markets": 26339,
     "hit_vs_price": -0.0
    },
    "rising": {
-    "markets": 2872,
+    "markets": 2876,
     "hit_vs_price": 0.011
    },
    "falling": {
-    "markets": 2882,
+    "markets": 2885,
     "hit_vs_price": -0.01
    }
   }
  },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "tracker": {
-  "tracked": 204149,
+  "tracked": 204354,
   "series": 3895,
   "movers": [
    {
@@ -6192,29 +6192,29 @@
  },
  "models": {
   "tennis": {
-   "matches": 21309,
-   "training_rows": 14847,
+   "matches": 21319,
+   "training_rows": 14855,
    "holdout": {
     "from": "2026-09-07",
-    "matches": 2228,
-    "elo_log_loss": 0.6591,
-    "model_log_loss": 0.6518,
-    "elo_accuracy": 0.609,
-    "model_accuracy": 0.624
+    "matches": 2229,
+    "elo_log_loss": 0.6586,
+    "model_log_loss": 0.6516,
+    "elo_accuracy": 0.61,
+    "model_accuracy": 0.623
    },
    "using": "full",
    "weights": {
-    "elo": 2.034,
+    "elo": 2.032,
     "dominance": 0.0,
     "rank": 0.0,
-    "h2h": 0.458,
-    "form": -0.528,
-    "fatigue_games": -0.222,
-    "fatigue_matches": 0.077,
+    "h2h": 0.461,
+    "form": -0.526,
+    "fatigue_games": -0.22,
+    "fatigue_matches": 0.076,
     "rest": 0.004,
-    "travel": 0.149,
+    "travel": 0.15,
     "altitude": 0.0,
-    "best_of_5": 0.583
+    "best_of_5": 0.584
    },
    "sport": "Tennis",
    "label": "Tennis",
@@ -6254,9 +6254,9 @@
    },
    "weights": {
     "rating": 1.608,
-    "chance_quality": 0.396,
+    "chance_quality": 0.397,
     "goal_diff_form": 0.03,
-    "rest": -0.064
+    "rest": -0.063
    },
    "goals_scale": 0.992,
    "sport": "Soccer",
@@ -6292,14 +6292,14 @@
    "holdout": {
     "matches": 659,
     "rating_log_loss": 0.6247,
-    "model_log_loss": 0.6229,
+    "model_log_loss": 0.6194,
     "rating_accuracy": 0.656,
-    "model_accuracy": 0.648
+    "model_accuracy": 0.651
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6044,
-    "model_log_loss": 0.6229,
+    "model_log_loss": 0.6194,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 659
@@ -6307,15 +6307,15 @@
    "backtest": {
     "bets": 16,
     "wins": 6,
-    "units": -2.0,
-    "roi": -0.071
+    "units": -2.5,
+    "roi": -0.092
    },
    "weights": {
     "home_field": 0.252,
-    "rating": 1.543,
-    "rest": 0.243,
-    "point_diff_form": 0.238,
-    "qb_change": 0.264,
+    "rating": 1.531,
+    "rest": 0.249,
+    "point_diff_form": 0.237,
+    "qb_change": 0.3,
     "epa": 0.158
    },
    "matches": 4442,
@@ -6549,8 +6549,8 @@
    "expected_end": "2026-10-13T22:00:00+00:00",
    "start_est": "2026-10-13T18:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.445,
-   "close_price": 0.445,
+   "latest_price": 0.435,
+   "close_price": 0.435,
    "pnl": null,
    "why": "Expected goals 1.65 vs 2.98 (4.63 total). Model gives \"No: Barcelona wins by more than 1.5 goals\" 54%. Blended with the market that's 47% vs a 43% price.",
    "trend": 0.005,
@@ -6588,8 +6588,8 @@
    "expected_end": "2026-10-13T22:00:00+00:00",
    "start_est": "2026-10-13T18:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.635,
-   "close_price": 0.635,
+   "latest_price": 0.625,
+   "close_price": 0.625,
    "pnl": null,
    "why": "Expected goals 1.38 vs 0.54 (1.91 total). Model gives \"No: Arsenal wins by more than 2.5 goals\" 89%. Blended with the market that's 81% vs a 67% price.",
    "trend": -0.005,
@@ -6863,8 +6863,8 @@
    "expected_end": "2026-10-16T03:00:00+00:00",
    "start_est": "2026-10-16T00:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.405,
-   "close_price": 0.405,
+   "latest_price": 0.395,
+   "close_price": 0.395,
    "pnl": null,
    "why": "Projected score margin +17.6 (home) and total 61.5. Model gives \"Under 67.5 points\" 64%. Blended with the market that's 52% vs a 48% price. Price down 4\u00a2 in the last 12 hours.",
    "trend": -0.04,
@@ -6980,8 +6980,8 @@
    "expected_end": "2026-10-15T02:30:00+00:00",
    "start_est": "2026-10-14T23:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.575,
-   "close_price": 0.575,
+   "latest_price": 0.57,
+   "close_price": 0.57,
    "pnl": null,
    "why": "Expected goals 2.02 vs 1.20 (3.22 total). Model gives \"No: Miami wins by more than 1.5 goals\" 66%. Blended with the market that's 62% vs a 58% price.",
    "trend": 0.01,
@@ -7217,8 +7217,8 @@
    "expected_end": "2026-10-13T19:45:00+00:00",
    "start_est": "2026-10-13T16:15:00+00:00",
    "status": "pending",
-   "latest_price": 0.365,
-   "close_price": 0.365,
+   "latest_price": 0.375,
+   "close_price": 0.375,
    "pnl": null,
    "why": "Ratings 1758 (Lens, home) vs 1943 (Sp Lisbon). Share of chances lately (xG or shots on target) 54% vs 66%. Goal difference last 6: +4 vs +9. Last played Sep 18 vs Sep 19. Model gives the away 51%. Blended with the market that's 46% vs a 37% price. Sharp sportsbook price (Pinnacle) says 37%.",
    "trend": 0.007,
@@ -7297,8 +7297,8 @@
    "expected_end": "2026-10-16T03:15:00+00:00",
    "start_est": "2026-10-16T00:15:00+00:00",
    "status": "pending",
-   "latest_price": 0.425,
-   "close_price": 0.425,
+   "latest_price": 0.42,
+   "close_price": 0.42,
    "pnl": null,
    "why": "Cooper Kupp: 30 a game lately (last 12 games). Model gives \"Cooper Kupp: 25+\" 64%. Blended with the market that's 49% vs a 45% price.",
    "trend": -0.005,
@@ -7456,8 +7456,8 @@
    "expected_end": "2026-10-14T22:00:00+00:00",
    "start_est": "2026-10-14T18:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.59,
-   "close_price": 0.59,
+   "latest_price": 0.595,
+   "close_price": 0.595,
    "pnl": null,
    "why": "Expected goals 1.37 vs 2.15 (3.52 total). Model gives \"Over 2.5 goals scored\" 68%. Blended with the market that's 65% vs a 60% price.",
    "trend": 0.005,
@@ -7573,8 +7573,8 @@
    "expected_end": "2026-10-15T03:30:00+00:00",
    "start_est": "2026-10-15T00:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.455,
-   "close_price": 0.455,
+   "latest_price": 0.445,
+   "close_price": 0.445,
    "pnl": null,
    "why": "Expected goals 1.57 vs 2.34 (3.91 total). Model gives \"Over 3.5 goals scored\" 55%. Blended with the market that's 50% vs a 47% price.",
    "trend": 0.005,
@@ -7612,8 +7612,8 @@
    "expected_end": "2026-10-14T03:00:00+00:00",
    "start_est": "2026-10-14T00:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.45,
-   "close_price": 0.45,
+   "latest_price": 0.465,
+   "close_price": 0.465,
    "pnl": null,
    "why": "Jos\u00e9 Ram\u00edrez: 1.88 a game this season over 125 games (adjusted 1.92). Model gives \"Jos\u00e9 Ram\u00edrez: 2+\" 57%. Blended with the market that's 48% vs a 46% price.",
    "trend": 0.0,
