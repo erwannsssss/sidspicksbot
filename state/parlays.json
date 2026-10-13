@@ -1337,8 +1337,8 @@
   "model_prob": 0.3762,
   "ev": 0.694,
   "payout_units": 3.5,
-  "status": "pending",
-  "pnl": null,
+  "status": "loss",
+  "pnl": -1.0,
   "legs": [
    {
     "id": "KXUCLSPREAD-26OCT13ARSLIL-ARS3:no",
@@ -1350,7 +1350,8 @@
     "price": 0.67,
     "model_prob": 0.808,
     "edge": 0.123,
-    "expected_end": "2026-10-13T22:00:00+00:00"
+    "expected_end": "2026-10-13T22:00:00+00:00",
+    "result": "loss"
    },
    {
     "id": "KXNCAAFSPREAD-26OCT15GASOODU-GASO3:no",
@@ -1376,7 +1377,8 @@
     "edge": 0.105,
     "expected_end": "2026-10-14T22:00:00+00:00"
    }
-  ]
+  ],
+  "graded": "2026-10-13T21:33:01.801488+00:00"
  },
  {
   "id": "PARLAY-202610120036-2",
@@ -1430,8 +1432,8 @@
   "model_prob": 0.2743,
   "ev": 1.099,
   "payout_units": 6.7,
-  "status": "pending",
-  "pnl": null,
+  "status": "loss",
+  "pnl": -1.0,
   "legs": [
    {
     "id": "KXUCLTEAMTOTAL-26OCT13INTBRU-INT2:no",
@@ -1443,7 +1445,8 @@
     "price": 0.25,
     "model_prob": 0.409,
     "edge": 0.146,
-    "expected_end": "2026-10-13T22:00:00+00:00"
+    "expected_end": "2026-10-13T22:00:00+00:00",
+    "result": "loss"
    },
    {
     "id": "KXUCLSPREAD-26OCT13ARSLIL-ARS3:no",
@@ -1455,7 +1458,8 @@
     "price": 0.67,
     "model_prob": 0.808,
     "edge": 0.123,
-    "expected_end": "2026-10-13T22:00:00+00:00"
+    "expected_end": "2026-10-13T22:00:00+00:00",
+    "result": "loss"
    },
    {
     "id": "KXUCLSPREAD-26OCT14ROMRMA-RMA2:no",
@@ -1469,7 +1473,8 @@
     "edge": 0.105,
     "expected_end": "2026-10-14T22:00:00+00:00"
    }
-  ]
+  ],
+  "graded": "2026-10-13T21:33:02.027540+00:00"
  },
  {
   "id": "PARLAY-202610130038-2",
