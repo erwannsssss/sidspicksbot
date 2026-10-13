@@ -1,6 +1,6 @@
 {
- "updated": "2026-10-13T21:34:00.588299+00:00",
- "status_note": "Last run found 0 new pick(s) and graded 8.",
+ "updated": "2026-10-13T22:34:00.147799+00:00",
+ "status_note": "Last run found 0 new pick(s) and graded 0.",
  "bankroll": 96.02,
  "protection": {
   "bankroll": 96.02,
@@ -5562,44 +5562,44 @@
  },
  "learning": {
   "groups": {
-   "cfb:winner": {
-    "finished": 76,
-    "games": 38,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-11T02:30:00+00:00"
-   },
    "cfb:spread_1h": {
-    "finished": 1006,
+    "finished": 909,
     "games": 30,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-10-11T02:30:00+00:00"
    },
    "cfb:total_1h": {
-    "finished": 662,
+    "finished": 618,
     "games": 32,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-10-11T02:30:00+00:00"
    },
    "cfb:spread": {
-    "finished": 1808,
-    "games": 42,
+    "finished": 1690,
+    "games": 41,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-10-11T02:30:00+00:00"
    },
    "cfb:team_total": {
-    "finished": 1124,
-    "games": 31,
+    "finished": 1042,
+    "games": 29,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-10-11T02:30:00+00:00"
    },
    "cfb:total": {
-    "finished": 1268,
-    "games": 42,
+    "finished": 1192,
+    "games": 40,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-11T02:30:00+00:00"
+   },
+   "cfb:winner": {
+    "finished": 70,
+    "games": 35,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-10-11T02:30:00+00:00"
@@ -6054,23 +6054,23 @@
    }
   },
   "price_trend": {
-   "falling": {
-    "markets": 2820,
-    "hit_vs_price": 0.002
+   "flat": {
+    "markets": 24418,
+    "hit_vs_price": -0.0
    },
    "rising": {
-    "markets": 2810,
-    "hit_vs_price": 0.001
+    "markets": 2761,
+    "hit_vs_price": -0.002
    },
-   "flat": {
-    "markets": 24742,
-    "hit_vs_price": -0.0
+   "falling": {
+    "markets": 2770,
+    "hit_vs_price": 0.004
    }
   }
  },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "tracker": {
-  "tracked": 205481,
+  "tracked": 205527,
   "series": 3895,
   "movers": [
    {
@@ -6297,31 +6297,31 @@
    "holdout": {
     "matches": 659,
     "rating_log_loss": 0.6247,
-    "model_log_loss": 0.6203,
+    "model_log_loss": 0.6207,
     "rating_accuracy": 0.656,
-    "model_accuracy": 0.645
+    "model_accuracy": 0.646
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6044,
-    "model_log_loss": 0.6203,
+    "model_log_loss": 0.6207,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 659
    },
    "backtest": {
-    "bets": 15,
-    "wins": 5,
-    "units": -6.2,
-    "roi": -0.237
+    "bets": 14,
+    "wins": 4,
+    "units": -8.5,
+    "roi": -0.348
    },
    "weights": {
-    "home_field": 0.252,
+    "home_field": 0.253,
     "rating": 1.535,
-    "rest": 0.251,
-    "point_diff_form": 0.238,
-    "qb_change": 0.312,
-    "epa": 0.158
+    "rest": 0.246,
+    "point_diff_form": 0.231,
+    "qb_change": 0.326,
+    "epa": 0.157
    },
    "matches": 4442,
    "totals": {
@@ -6751,8 +6751,8 @@
    "expected_end": "2026-10-16T03:00:00+00:00",
    "start_est": "2026-10-16T00:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.42,
-   "close_price": 0.42,
+   "latest_price": 0.445,
+   "close_price": 0.445,
    "pnl": null,
    "why": "Projected score margin +17.6 (home) and total 61.5. Model gives \"Under 67.5 points\" 64%. Blended with the market that's 52% vs a 48% price. Price down 4\u00a2 in the last 12 hours.",
    "trend": -0.04,
@@ -7105,8 +7105,8 @@
    "expected_end": "2026-10-17T03:00:00+00:00",
    "start_est": "2026-10-17T16:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.46,
-   "close_price": 0.46,
+   "latest_price": 0.465,
+   "close_price": 0.465,
    "pnl": null,
    "why": "Ratings 1585 vs 1490, on the road. Point differential last 5: +53 vs +15. Days of rest 13 vs 7. Model gives Cincinnati 62%. Blended with the market that's 51% vs a 47% price. Sharp sportsbook price (Pinnacle) says 47%.",
    "trend": -0.002,
