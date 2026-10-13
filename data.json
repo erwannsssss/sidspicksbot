@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-13T16:28:29.235981+00:00",
+ "updated": "2026-10-13T17:26:27.938189+00:00",
  "status_note": "Last run found 0 new pick(s) and graded 0.",
  "bankroll": 96.02,
  "protection": {
@@ -5557,29 +5557,8 @@
  },
  "learning": {
   "groups": {
-   "cfb:spread_1h": {
-    "finished": 1392,
-    "games": 34,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-11T02:30:00+00:00"
-   },
-   "cfb:total_1h": {
-    "finished": 906,
-    "games": 34,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-11T02:30:00+00:00"
-   },
-   "cfb:spread": {
-    "finished": 2386,
-    "games": 50,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-11T02:30:00+00:00"
-   },
    "cfb:team_total": {
-    "finished": 1592,
+    "finished": 1584,
     "games": 34,
     "trust": 0.25,
     "confidence_fix": false,
@@ -5595,6 +5574,27 @@
    "cfb:winner": {
     "finished": 92,
     "games": 46,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-11T02:30:00+00:00"
+   },
+   "cfb:spread_1h": {
+    "finished": 1372,
+    "games": 34,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-11T02:30:00+00:00"
+   },
+   "cfb:total_1h": {
+    "finished": 884,
+    "games": 34,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-11T02:30:00+00:00"
+   },
+   "cfb:spread": {
+    "finished": 2334,
+    "games": 49,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-10-11T02:30:00+00:00"
@@ -5859,11 +5859,11 @@
     "last": "2026-10-13T00:00:00+00:00"
    },
    "tennis:winner": {
-    "finished": 382,
-    "games": 191,
+    "finished": 390,
+    "games": 195,
     "trust": 0.27,
     "confidence_fix": false,
-    "last": "2026-10-13T13:00:00+00:00"
+    "last": "2026-10-13T13:30:00+00:00"
    },
    "nfl:winner": {
     "finished": 26,
@@ -6050,22 +6050,22 @@
   },
   "price_trend": {
    "falling": {
-    "markets": 2770,
-    "hit_vs_price": -0.007
+    "markets": 2748,
+    "hit_vs_price": -0.003
    },
    "rising": {
-    "markets": 2760,
-    "hit_vs_price": 0.009
+    "markets": 2740,
+    "hit_vs_price": 0.005
    },
    "flat": {
-    "markets": 25939,
+    "markets": 25887,
     "hit_vs_price": -0.0
    }
   }
  },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "tracker": {
-  "tracked": 205299,
+  "tracked": 205377,
   "series": 3895,
   "movers": [
    {
@@ -6192,29 +6192,29 @@
  },
  "models": {
   "tennis": {
-   "matches": 21338,
-   "training_rows": 14872,
+   "matches": 21344,
+   "training_rows": 14876,
    "holdout": {
     "from": "2026-09-08",
-    "matches": 2231,
-    "elo_log_loss": 0.6587,
-    "model_log_loss": 0.6517,
-    "elo_accuracy": 0.608,
-    "model_accuracy": 0.623
+    "matches": 2232,
+    "elo_log_loss": 0.6593,
+    "model_log_loss": 0.6522,
+    "elo_accuracy": 0.607,
+    "model_accuracy": 0.622
    },
    "using": "full",
    "weights": {
-    "elo": 2.033,
+    "elo": 2.028,
     "dominance": 0.0,
     "rank": 0.0,
     "h2h": 0.464,
-    "form": -0.526,
+    "form": -0.52,
     "fatigue_games": -0.22,
-    "fatigue_matches": 0.074,
-    "rest": 0.003,
-    "travel": 0.148,
+    "fatigue_matches": 0.073,
+    "rest": 0.004,
+    "travel": 0.147,
     "altitude": 0.0,
-    "best_of_5": 0.583
+    "best_of_5": 0.586
    },
    "sport": "Tennis",
    "label": "Tennis",
@@ -6292,31 +6292,31 @@
    "holdout": {
     "matches": 659,
     "rating_log_loss": 0.6247,
-    "model_log_loss": 0.6219,
+    "model_log_loss": 0.6244,
     "rating_accuracy": 0.656,
-    "model_accuracy": 0.649
+    "model_accuracy": 0.646
    },
-   "using": "full",
+   "using": "rating",
    "market": {
     "market_log_loss": 0.6044,
-    "model_log_loss": 0.6219,
+    "model_log_loss": 0.6247,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 659
    },
    "backtest": {
-    "bets": 16,
-    "wins": 5,
-    "units": -8.4,
-    "roi": -0.288
+    "bets": 29,
+    "wins": 7,
+    "units": -17.5,
+    "roi": -0.347
    },
    "weights": {
-    "home_field": 0.252,
-    "rating": 1.534,
-    "rest": 0.245,
-    "point_diff_form": 0.232,
-    "qb_change": 0.325,
-    "epa": 0.156
+    "home_field": 0.243,
+    "rating": 2.167,
+    "rest": 0.0,
+    "point_diff_form": 0.0,
+    "qb_change": 0.0,
+    "epa": 0.0
    },
    "matches": 4442,
    "totals": {
@@ -6588,8 +6588,8 @@
    "expected_end": "2026-10-13T22:00:00+00:00",
    "start_est": "2026-10-13T18:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.625,
-   "close_price": 0.625,
+   "latest_price": 0.615,
+   "close_price": 0.615,
    "pnl": null,
    "why": "Expected goals 1.38 vs 0.54 (1.91 total). Model gives \"No: Arsenal wins by more than 2.5 goals\" 89%. Blended with the market that's 81% vs a 67% price.",
    "trend": -0.005,
@@ -6941,8 +6941,8 @@
    "expected_end": "2026-10-15T03:00:00+00:00",
    "start_est": "2026-10-15T00:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.215,
-   "close_price": 0.215,
+   "latest_price": 0.22,
+   "close_price": 0.22,
    "pnl": null,
    "why": "Projected score margin -4.4 (home) and total 53.7. Model gives \"Western Kentucky wins by over 11.5 points\" 33%. Blended with the market that's 25% vs a 24% price.",
    "trend": 0.015,
@@ -7137,8 +7137,8 @@
    "expected_end": "2026-10-13T21:45:00+00:00",
    "start_est": "2026-10-13T18:15:00+00:00",
    "status": "pending",
-   "latest_price": 0.695,
-   "close_price": 0.695,
+   "latest_price": 0.705,
+   "close_price": 0.705,
    "pnl": null,
    "why": "Ratings 1607 (Wolves, home) vs 1271 (Bolton). Share of chances lately (xG or shots on target) 59% vs 43%. Goal difference last 6: +5 vs -5. Last played Sep 20 vs Sep 20. Model gives the home 81%. Blended with the market that's 80% vs a 69% price. Sharp sportsbook price (Pinnacle) says 67%.",
    "trend": 0.007,
@@ -7297,8 +7297,8 @@
    "expected_end": "2026-10-16T03:15:00+00:00",
    "start_est": "2026-10-16T00:15:00+00:00",
    "status": "pending",
-   "latest_price": 0.43,
-   "close_price": 0.43,
+   "latest_price": 0.435,
+   "close_price": 0.435,
    "pnl": null,
    "why": "Cooper Kupp: 30 a game lately (last 12 games). Model gives \"Cooper Kupp: 25+\" 64%. Blended with the market that's 49% vs a 45% price.",
    "trend": -0.005,
@@ -7573,8 +7573,8 @@
    "expected_end": "2026-10-15T03:30:00+00:00",
    "start_est": "2026-10-15T00:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.445,
-   "close_price": 0.445,
+   "latest_price": 0.44,
+   "close_price": 0.44,
    "pnl": null,
    "why": "Expected goals 1.57 vs 2.34 (3.91 total). Model gives \"Over 3.5 goals scored\" 55%. Blended with the market that's 50% vs a 47% price.",
    "trend": 0.005,
