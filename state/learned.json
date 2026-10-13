@@ -1,7 +1,7 @@
 {
  "trust": {
+  "cfb:total": 0.27,
   "cfb:spread": 0.25,
-  "cfb:total": 0.34,
   "soccer:total": 0.55,
   "cfb:winner": 0.25,
   "soccer:btts_1h": 0.57,
@@ -72,8 +72,8 @@
   "nfl:prop_rec": 0.25
  },
  "trust_league": {
+  "cfb:total|College Football": 0.3,
   "cfb:spread|College Football": 0.25,
-  "cfb:total|College Football": 0.48,
   "soccer:total|MLS": 0.45,
   "cfb:winner|College Football": 0.29,
   "soccer:total|Ligue 1": 0.54,
@@ -162,8 +162,8 @@
   ]
  },
  "counts": {
-  "cfb:spread": 2619,
-  "cfb:total": 1842,
+  "cfb:total": 1767,
+  "cfb:spread": 2516,
   "soccer:total": 1402,
   "cfb:winner": 102,
   "soccer:btts_1h": 152,
@@ -205,7 +205,7 @@
   "mlb:prop_hr": 98,
   "mlb:prop_tb": 348,
   "mlb:prop_hrr": 488,
-  "tennis:winner": 240,
+  "tennis:winner": 242,
   "nfl:winner": 26,
   "nfl:spread_1h": 426,
   "nfl:total_1h": 345,
@@ -227,15 +227,15 @@
   "nfl:team_total": 708,
   "nfl:total": 532,
   "nfl:prop_passyds": 504,
-  "nfl:prop_recyds": 2388,
+  "nfl:prop_recyds": 2406,
   "nfl:prop_rshyds": 1402,
   "nfl:prop_passtds": 210,
   "nfl:prop_rryds": 224,
   "nfl:prop_rec": 2042
  },
  "games": {
-  "cfb:spread": 59,
-  "cfb:total": 59,
+  "cfb:total": 56,
+  "cfb:spread": 55,
   "soccer:total": 119,
   "cfb:winner": 51,
   "soccer:btts_1h": 76,
@@ -277,7 +277,7 @@
   "mlb:prop_hr": 3,
   "mlb:prop_tb": 3,
   "mlb:prop_hrr": 3,
-  "tennis:winner": 120,
+  "tennis:winner": 121,
   "nfl:winner": 13,
   "nfl:spread_1h": 14,
   "nfl:total_1h": 14,
@@ -306,8 +306,8 @@
   "nfl:prop_rec": 14
  },
  "last": {
-  "cfb:spread": "2026-10-11T02:30:00+00:00",
   "cfb:total": "2026-10-11T02:30:00+00:00",
+  "cfb:spread": "2026-10-11T02:30:00+00:00",
   "soccer:total": "2026-10-13T00:00:00+00:00",
   "cfb:winner": "2026-10-11T02:30:00+00:00",
   "soccer:btts_1h": "2026-10-13T00:00:00+00:00",
@@ -377,5 +377,5 @@
   "nfl:prop_rryds": "2026-10-13T00:15:00+00:00",
   "nfl:prop_rec": "2026-10-13T00:15:00+00:00"
  },
- "updated": "2026-10-13T04:25:30.315151+00:00"
+ "updated": "2026-10-13T05:25:42.539106+00:00"
 }

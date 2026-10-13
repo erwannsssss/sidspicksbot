@@ -1,6 +1,6 @@
 {
- "updated": "2026-10-13T04:27:28.965937+00:00",
- "status_note": "Last run found 1 new pick(s) and graded 1.",
+ "updated": "2026-10-13T05:27:33.375328+00:00",
+ "status_note": "Last run found 0 new pick(s) and graded 0.",
  "bankroll": 96.02,
  "protection": {
   "bankroll": 96.02,
@@ -5539,58 +5539,15 @@
      }
     ],
     "graded": "2026-09-30T04:25:23.875893+00:00"
-   },
-   {
-    "id": "PARLAY-202609280031-1",
-    "tier": "P",
-    "sport": "Parlay",
-    "kind": "watchlist",
-    "made": "2026-09-28T00:31:48.972621+00:00",
-    "units": 1.0,
-    "price": 0.0652,
-    "model_prob": 0.1123,
-    "ev": 0.722,
-    "payout_units": 14.3,
-    "status": "loss",
-    "pnl": -1.0,
-    "legs": [
-     {
-      "id": "KXATPMATCH-26SEP28CUIALT-CUI",
-      "ticker": "KXATPMATCH-26SEP28CUIALT-CUI",
-      "side": "yes",
-      "market": "Jie Cui to win",
-      "matchup": "2026 ATP Beijing",
-      "sport": "Tennis",
-      "price": 0.28,
-      "model_prob": 0.378,
-      "edge": 0.084,
-      "expected_end": "2026-09-28T09:30:00+00:00",
-      "result": "win"
-     },
-     {
-      "id": "KXNFLRECYDS-26SEP28PHICHI-CHICLOVELAND84-60",
-      "ticker": "KXNFLRECYDS-26SEP28PHICHI-CHICLOVELAND84-60",
-      "side": "yes",
-      "market": "Colston Loveland: 60+",
-      "matchup": "PHI at CHI",
-      "sport": "Football",
-      "price": 0.21,
-      "model_prob": 0.297,
-      "edge": 0.076,
-      "expected_end": "2026-09-29T06:15:00+00:00",
-      "result": "loss"
-     }
-    ],
-    "graded": "2026-09-29T04:24:32.043141+00:00"
    }
   ],
   "summary": {
-   "picks": 28,
+   "picks": 27,
    "wins": 6,
-   "losses": 22,
-   "units": 14.35,
-   "staked": 28.0,
-   "roi": 0.512,
+   "losses": 21,
+   "units": 15.35,
+   "staked": 27.0,
+   "roi": 0.569,
    "beat_price": null,
    "clv": null,
    "clv_picks": 0
@@ -5598,17 +5555,17 @@
  },
  "learning": {
   "groups": {
-   "cfb:spread": {
-    "finished": 2619,
-    "games": 59,
-    "trust": 0.25,
+   "cfb:total": {
+    "finished": 1767,
+    "games": 56,
+    "trust": 0.27,
     "confidence_fix": false,
     "last": "2026-10-11T02:30:00+00:00"
    },
-   "cfb:total": {
-    "finished": 1842,
-    "games": 59,
-    "trust": 0.34,
+   "cfb:spread": {
+    "finished": 2516,
+    "games": 55,
+    "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-10-11T02:30:00+00:00"
    },
@@ -5900,8 +5857,8 @@
     "last": "2026-10-13T00:00:00+00:00"
    },
    "tennis:winner": {
-    "finished": 240,
-    "games": 120,
+    "finished": 242,
+    "games": 121,
     "trust": 0.27,
     "confidence_fix": false,
     "last": "2026-10-12T21:00:00+00:00"
@@ -6054,7 +6011,7 @@
     "last": "2026-10-13T00:15:00+00:00"
    },
    "nfl:prop_recyds": {
-    "finished": 2388,
+    "finished": 2406,
     "games": 14,
     "trust": 0.25,
     "confidence_fix": false,
@@ -6091,15 +6048,15 @@
   },
   "price_trend": {
    "rising": {
-    "markets": 2967,
+    "markets": 2931,
     "hit_vs_price": 0.01
    },
    "flat": {
-    "markets": 26570,
+    "markets": 26476,
     "hit_vs_price": -0.0
    },
    "falling": {
-    "markets": 2979,
+    "markets": 2943,
     "hit_vs_price": -0.007
    }
   }
@@ -6233,13 +6190,13 @@
  },
  "models": {
   "tennis": {
-   "matches": 21246,
-   "training_rows": 14791,
+   "matches": 21247,
+   "training_rows": 14792,
    "holdout": {
     "from": "2026-09-07",
     "matches": 2219,
-    "elo_log_loss": 0.6599,
-    "model_log_loss": 0.653,
+    "elo_log_loss": 0.6598,
+    "model_log_loss": 0.6529,
     "elo_accuracy": 0.607,
     "model_accuracy": 0.621
    },
@@ -6248,8 +6205,8 @@
     "elo": 2.043,
     "dominance": 0.0,
     "rank": 0.0,
-    "h2h": 0.449,
-    "form": -0.535,
+    "h2h": 0.452,
+    "form": -0.536,
     "fatigue_games": -0.217,
     "fatigue_matches": 0.079,
     "rest": 0.007,
@@ -6333,14 +6290,14 @@
    "holdout": {
     "matches": 659,
     "rating_log_loss": 0.6246,
-    "model_log_loss": 0.6201,
+    "model_log_loss": 0.6205,
     "rating_accuracy": 0.656,
-    "model_accuracy": 0.649
+    "model_accuracy": 0.648
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6042,
-    "model_log_loss": 0.6201,
+    "model_log_loss": 0.6205,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 659
@@ -6348,16 +6305,16 @@
    "backtest": {
     "bets": 16,
     "wins": 6,
-    "units": -3.0,
-    "roi": -0.109
+    "units": -2.5,
+    "roi": -0.093
    },
    "weights": {
-    "home_field": 0.252,
-    "rating": 1.54,
+    "home_field": 0.253,
+    "rating": 1.547,
     "rest": 0.247,
-    "point_diff_form": 0.239,
-    "qb_change": 0.26,
-    "epa": 0.16
+    "point_diff_form": 0.232,
+    "qb_change": 0.302,
+    "epa": 0.156
    },
    "matches": 4441,
    "totals": {
@@ -7218,8 +7175,8 @@
    "expected_end": "2026-10-13T22:00:00+00:00",
    "start_est": "2026-10-13T18:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.235,
-   "close_price": 0.235,
+   "latest_price": 0.215,
+   "close_price": 0.215,
    "pnl": null,
    "why": "Ratings 1747 (RB Leipzig, home) vs 1907 (PSV Eindhoven). Share of chances lately (xG or shots on target) 57% vs 60%. Goal difference last 6: +0 vs +14. Last played Sep 20 vs Sep 20. Model gives the away 45%. Blended with the market that's 36% vs a 24% price. Sharp sportsbook price (Pinnacle) says 24%.",
    "trend": 0.0,
@@ -7376,8 +7333,8 @@
    "expected_end": "2026-10-17T03:00:00+00:00",
    "start_est": "2026-10-17T23:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.645,
-   "close_price": 0.645,
+   "latest_price": 0.635,
+   "close_price": 0.635,
    "pnl": null,
    "why": "Ratings 1689 vs 1537, at home. Point differential last 5: +112 vs +84. Model gives Houston 85%. Blended with the market that's 71% vs a 65% price. Sharp sportsbook price (Pinnacle) says 65%.",
    "trend": 0.0,
@@ -7416,8 +7373,8 @@
    "expected_end": "2026-10-13T19:45:00+00:00",
    "start_est": "2026-10-13T16:15:00+00:00",
    "status": "pending",
-   "latest_price": 0.365,
-   "close_price": 0.365,
+   "latest_price": 0.37,
+   "close_price": 0.37,
    "pnl": null,
    "why": "Ratings 1758 (Lens, home) vs 1943 (Sp Lisbon). Share of chances lately (xG or shots on target) 54% vs 66%. Goal difference last 6: +4 vs +9. Last played Sep 18 vs Sep 19. Model gives the away 51%. Blended with the market that's 46% vs a 37% price. Sharp sportsbook price (Pinnacle) says 37%.",
    "trend": 0.007,
@@ -7535,8 +7492,8 @@
    "expected_end": "2026-10-13T14:00:00+00:00",
    "start_est": "2026-10-13T10:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.42,
-   "close_price": 0.42,
+   "latest_price": 0.415,
+   "close_price": 0.415,
    "pnl": null,
    "why": "Elo 1543 vs 1555 on hard. Won 50% vs 50% of games lately. Form 4-6 vs 4-6. Head to head 1-0. Games played in last 3 days: 0 vs 44. Model 59%, blended with the market 46%, price 42%. Sharp sportsbook price (Pinnacle) says 42%.",
    "trend": 0.012,
@@ -7890,8 +7847,8 @@
    "expected_end": "2026-10-14T03:00:00+00:00",
    "start_est": "2026-10-14T00:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.46,
-   "close_price": null,
+   "latest_price": 0.455,
+   "close_price": 0.455,
    "pnl": null,
    "why": "Jos\u00e9 Ram\u00edrez: 1.88 a game this season over 125 games (adjusted 1.92). Model gives \"Jos\u00e9 Ram\u00edrez: 2+\" 57%. Blended with the market that's 48% vs a 46% price.",
    "trend": 0.0,
