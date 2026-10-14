@@ -1517,5 +1517,97 @@
    }
   ],
   "graded": "2026-10-13T12:34:23.025283+00:00"
+ },
+ {
+  "id": "PARLAY-202610140044-1",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-10-14T00:44:37.343761+00:00",
+  "units": 1.0,
+  "price": 0.1511,
+  "model_prob": 0.2926,
+  "ev": 0.936,
+  "payout_units": 5.6,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXNCAAFSPREAD-26OCT17OSUIND-OSU3:no",
+    "ticker": "KXNCAAFSPREAD-26OCT17OSUIND-OSU3",
+    "side": "no",
+    "market": "No: Ohio St. wins by over 2.5 points",
+    "matchup": "Ohio State at Indiana",
+    "sport": "Football",
+    "price": 0.42,
+    "model_prob": 0.577,
+    "edge": 0.139,
+    "expected_end": "2026-10-17T19:00:00+00:00"
+   },
+   {
+    "id": "KXNCAAFTEAMTOTAL-26OCT17NDBYU-BYU18",
+    "ticker": "KXNCAAFTEAMTOTAL-26OCT17NDBYU-BYU18",
+    "side": "yes",
+    "market": "BYU over 17.5 points",
+    "matchup": "Notre Dame at BYU",
+    "sport": "Football",
+    "price": 0.46,
+    "model_prob": 0.611,
+    "edge": 0.134,
+    "expected_end": "2026-10-18T02:30:00+00:00"
+   },
+   {
+    "id": "KXUCLSPREAD-26OCT14ROMRMA-RMA2:no",
+    "ticker": "KXUCLSPREAD-26OCT14ROMRMA-RMA2",
+    "side": "no",
+    "market": "No: Real Madrid wins by more than 1.5 goals",
+    "matchup": "Roma vs Real Madrid",
+    "sport": "Soccer",
+    "price": 0.71,
+    "model_prob": 0.83,
+    "edge": 0.105,
+    "expected_end": "2026-10-14T22:00:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": "PARLAY-202610140044-2",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-10-14T00:44:37.343802+00:00",
+  "units": 1.0,
+  "price": 0.2544,
+  "model_prob": 0.3975,
+  "ev": 0.562,
+  "payout_units": 2.9,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXNCAAFSPREAD-26OCT17UNCDUKE-DUKE8",
+    "ticker": "KXNCAAFSPREAD-26OCT17UNCDUKE-DUKE8",
+    "side": "yes",
+    "market": "Duke wins by over 7.5 points",
+    "matchup": "North Carolina at Duke",
+    "sport": "Football",
+    "price": 0.35,
+    "model_prob": 0.507,
+    "edge": 0.141,
+    "expected_end": "2026-10-17T22:30:00+00:00"
+   },
+   {
+    "id": "KXMLBHRR-26OCT142000MILLAD-LADSOHTANI17-1",
+    "ticker": "KXMLBHRR-26OCT142000MILLAD-LADSOHTANI17-1",
+    "side": "yes",
+    "market": "Shohei Ohtani: 1+",
+    "matchup": "Milwaukee Brewers at Los Angeles Dodgers",
+    "sport": "Baseball",
+    "price": 0.68,
+    "model_prob": 0.784,
+    "edge": 0.089,
+    "expected_end": "2026-10-15T03:00:00+00:00"
+   }
+  ]
  }
 ]
