@@ -43,49 +43,6 @@
   "graded": "2026-10-02T05:24:09.287980+00:00"
  },
  {
-  "id": "PARLAY-202609290030-1",
-  "tier": "P",
-  "sport": "Parlay",
-  "kind": "watchlist",
-  "made": "2026-09-29T00:30:14.397135+00:00",
-  "units": 1.0,
-  "price": 0.2038,
-  "model_prob": 0.3566,
-  "ev": 0.75,
-  "payout_units": 3.9,
-  "status": "win",
-  "pnl": 3.91,
-  "legs": [
-   {
-    "id": "KXMLBTOTAL-26SEP291400PHIATL-8",
-    "ticker": "KXMLBTOTAL-26SEP291400PHIATL-8",
-    "side": "yes",
-    "market": "Over 7.5 runs scored",
-    "matchup": "Philadelphia Phillies at Atlanta Braves",
-    "sport": "Baseball",
-    "price": 0.41,
-    "model_prob": 0.577,
-    "edge": 0.15,
-    "expected_end": "2026-09-29T21:00:00+00:00",
-    "result": "win"
-   },
-   {
-    "id": "KXMLBTOTAL-26SEP292200CHCSD-8",
-    "ticker": "KXMLBTOTAL-26SEP292200CHCSD-8",
-    "side": "yes",
-    "market": "Over 7.5 runs scored",
-    "matchup": "Chicago Cubs at San Diego Padres",
-    "sport": "Baseball",
-    "price": 0.46,
-    "model_prob": 0.618,
-    "edge": 0.14,
-    "expected_end": "2026-09-30T05:00:00+00:00",
-    "result": "win"
-   }
-  ],
-  "graded": "2026-09-30T04:25:23.875893+00:00"
- },
- {
   "id": "PARLAY-202609290030-2",
   "tier": "P",
   "sport": "Parlay",
