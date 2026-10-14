@@ -1348,8 +1348,8 @@
   "model_prob": 0.2241,
   "ev": 0.61,
   "payout_units": 6.2,
-  "status": "pending",
-  "pnl": null,
+  "status": "loss",
+  "pnl": -1.0,
   "legs": [
    {
     "id": "KXNFLRECYDS-26OCT12BUFLAR-LARKWILLIAMS23-25",
@@ -1374,9 +1374,11 @@
     "price": 0.29,
     "model_prob": 0.398,
     "edge": 0.093,
-    "expected_end": "2026-10-14T22:00:00+00:00"
+    "expected_end": "2026-10-14T22:00:00+00:00",
+    "result": "loss"
    }
-  ]
+  ],
+  "graded": "2026-10-14T21:35:01.570916+00:00"
  },
  {
   "id": "PARLAY-202610130038-1",
@@ -1523,7 +1525,8 @@
     "price": 0.71,
     "model_prob": 0.83,
     "edge": 0.105,
-    "expected_end": "2026-10-14T22:00:00+00:00"
+    "expected_end": "2026-10-14T22:00:00+00:00",
+    "result": "win"
    }
   ]
  },

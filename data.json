@@ -1,6 +1,6 @@
 {
- "updated": "2026-10-14T20:35:25.544992+00:00",
- "status_note": "Last run found 0 new pick(s) and graded 1.",
+ "updated": "2026-10-14T21:35:48.999704+00:00",
+ "status_note": "Last run found 0 new pick(s) and graded 4.",
  "bankroll": 96.02,
  "protection": {
   "bankroll": 96.02,
@@ -4027,47 +4027,6 @@
  "parlays": {
   "open": [
    {
-    "id": "PARLAY-202610120036-2",
-    "tier": "P",
-    "sport": "Parlay",
-    "kind": "watchlist",
-    "made": "2026-10-12T00:36:46.805737+00:00",
-    "units": 1.0,
-    "price": 0.1392,
-    "model_prob": 0.2241,
-    "ev": 0.61,
-    "payout_units": 6.2,
-    "status": "pending",
-    "pnl": null,
-    "legs": [
-     {
-      "id": "KXNFLRECYDS-26OCT12BUFLAR-LARKWILLIAMS23-25",
-      "ticker": "KXNFLRECYDS-26OCT12BUFLAR-LARKWILLIAMS23-25",
-      "side": "yes",
-      "market": "Kyren Williams: 25+",
-      "matchup": "BUF at LA",
-      "sport": "Football",
-      "price": 0.44,
-      "model_prob": 0.563,
-      "edge": 0.106,
-      "expected_end": "2026-10-13T03:15:00+00:00",
-      "result": "win"
-     },
-     {
-      "id": "KXUCLGAME-26OCT14RBBFCP-FCP",
-      "ticker": "KXUCLGAME-26OCT14RBBFCP-FCP",
-      "side": "yes",
-      "market": "Porto to win",
-      "matchup": "Real Betis vs Porto",
-      "sport": "Soccer",
-      "price": 0.29,
-      "model_prob": 0.398,
-      "edge": 0.093,
-      "expected_end": "2026-10-14T22:00:00+00:00"
-     }
-    ]
-   },
-   {
     "id": "PARLAY-202610140044-1",
     "tier": "P",
     "sport": "Parlay",
@@ -4115,7 +4074,8 @@
       "price": 0.71,
       "model_prob": 0.83,
       "edge": 0.105,
-      "expected_end": "2026-10-14T22:00:00+00:00"
+      "expected_end": "2026-10-14T22:00:00+00:00",
+      "result": "win"
      }
     ]
    },
@@ -4161,6 +4121,49 @@
    }
   ],
   "done": [
+   {
+    "id": "PARLAY-202610120036-2",
+    "tier": "P",
+    "sport": "Parlay",
+    "kind": "watchlist",
+    "made": "2026-10-12T00:36:46.805737+00:00",
+    "units": 1.0,
+    "price": 0.1392,
+    "model_prob": 0.2241,
+    "ev": 0.61,
+    "payout_units": 6.2,
+    "status": "loss",
+    "pnl": -1.0,
+    "legs": [
+     {
+      "id": "KXNFLRECYDS-26OCT12BUFLAR-LARKWILLIAMS23-25",
+      "ticker": "KXNFLRECYDS-26OCT12BUFLAR-LARKWILLIAMS23-25",
+      "side": "yes",
+      "market": "Kyren Williams: 25+",
+      "matchup": "BUF at LA",
+      "sport": "Football",
+      "price": 0.44,
+      "model_prob": 0.563,
+      "edge": 0.106,
+      "expected_end": "2026-10-13T03:15:00+00:00",
+      "result": "win"
+     },
+     {
+      "id": "KXUCLGAME-26OCT14RBBFCP-FCP",
+      "ticker": "KXUCLGAME-26OCT14RBBFCP-FCP",
+      "side": "yes",
+      "market": "Porto to win",
+      "matchup": "Real Betis vs Porto",
+      "sport": "Soccer",
+      "price": 0.29,
+      "model_prob": 0.398,
+      "edge": 0.093,
+      "expected_end": "2026-10-14T22:00:00+00:00",
+      "result": "loss"
+     }
+    ],
+    "graded": "2026-10-14T21:35:01.570916+00:00"
+   },
    {
     "id": "PARLAY-202610130038-1",
     "tier": "P",
@@ -5598,12 +5601,12 @@
    }
   ],
   "summary": {
-   "picks": 29,
+   "picks": 30,
    "wins": 5,
-   "losses": 24,
-   "units": 8.44,
-   "staked": 29.0,
-   "roi": 0.291,
+   "losses": 25,
+   "units": 7.44,
+   "staked": 30.0,
+   "roi": 0.248,
    "beat_price": null,
    "clv": null,
    "clv_picks": 0
@@ -5611,232 +5614,8 @@
  },
  "learning": {
   "groups": {
-   "soccer:btts": {
-    "finished": 163,
-    "games": 82,
-    "trust": 0.45,
-    "confidence_fix": false,
-    "last": "2026-10-14T18:30:00+00:00"
-   },
-   "soccer:spread": {
-    "finished": 614,
-    "games": 81,
-    "trust": 0.54,
-    "confidence_fix": true,
-    "last": "2026-10-14T16:15:00+00:00"
-   },
-   "soccer:total": {
-    "finished": 964,
-    "games": 85,
-    "trust": 0.46,
-    "confidence_fix": true,
-    "last": "2026-10-14T18:30:00+00:00"
-   },
-   "soccer:btts_1h": {
-    "finished": 120,
-    "games": 60,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-14T18:30:00+00:00"
-   },
-   "soccer:spread_1h": {
-    "finished": 238,
-    "games": 60,
-    "trust": 0.53,
-    "confidence_fix": false,
-    "last": "2026-10-14T18:30:00+00:00"
-   },
-   "soccer:total_1h": {
-    "finished": 358,
-    "games": 60,
-    "trust": 0.53,
-    "confidence_fix": false,
-    "last": "2026-10-14T18:30:00+00:00"
-   },
-   "soccer:btts_2h": {
-    "finished": 66,
-    "games": 33,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-14T16:15:00+00:00"
-   },
-   "soccer:spread_2h": {
-    "finished": 132,
-    "games": 33,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-14T16:15:00+00:00"
-   },
-   "soccer:total_2h": {
-    "finished": 192,
-    "games": 33,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-14T16:15:00+00:00"
-   },
-   "soccer:first_to_score": {
-    "finished": 276,
-    "games": 46,
-    "trust": 0.49,
-    "confidence_fix": false,
-    "last": "2026-10-14T18:30:00+00:00"
-   },
-   "soccer:correct_score": {
-    "finished": 1453,
-    "games": 45,
-    "trust": 0.48,
-    "confidence_fix": false,
-    "last": "2026-10-14T18:30:00+00:00"
-   },
-   "soccer:team_total": {
-    "finished": 494,
-    "games": 45,
-    "trust": 0.3,
-    "confidence_fix": false,
-    "last": "2026-10-14T18:30:00+00:00"
-   },
-   "tennis:winner": {
-    "finished": 444,
-    "games": 222,
-    "trust": 0.27,
-    "confidence_fix": false,
-    "last": "2026-10-14T17:00:00+00:00"
-   },
-   "soccer:winner": {
-    "finished": 236,
-    "games": 79,
-    "trust": 0.42,
-    "confidence_fix": false,
-    "last": "2026-10-14T16:15:00+00:00"
-   },
-   "nfl:winner": {
-    "finished": 26,
-    "games": 13,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-13T00:15:00+00:00"
-   },
-   "nfl:spread_1h": {
-    "finished": 426,
-    "games": 14,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-13T00:15:00+00:00"
-   },
-   "nfl:total_1h": {
-    "finished": 345,
-    "games": 14,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-13T00:15:00+00:00"
-   },
-   "nfl:period_winner_1q": {
-    "finished": 56,
-    "games": 14,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-13T00:15:00+00:00"
-   },
-   "nfl:spread_1q": {
-    "finished": 266,
-    "games": 14,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-13T00:15:00+00:00"
-   },
-   "nfl:total_1q": {
-    "finished": 244,
-    "games": 14,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-13T00:15:00+00:00"
-   },
-   "nfl:spread_2h": {
-    "finished": 426,
-    "games": 14,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-13T00:15:00+00:00"
-   },
-   "nfl:total_2h": {
-    "finished": 354,
-    "games": 14,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-13T00:15:00+00:00"
-   },
-   "nfl:period_winner_2q": {
-    "finished": 56,
-    "games": 14,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-13T00:15:00+00:00"
-   },
-   "nfl:spread_2q": {
-    "finished": 284,
-    "games": 14,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-13T00:15:00+00:00"
-   },
-   "nfl:total_2q": {
-    "finished": 278,
-    "games": 14,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-13T00:15:00+00:00"
-   },
-   "nfl:period_winner_3q": {
-    "finished": 56,
-    "games": 14,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-13T00:15:00+00:00"
-   },
-   "nfl:spread_3q": {
-    "finished": 272,
-    "games": 14,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-13T00:15:00+00:00"
-   },
-   "nfl:total_3q": {
-    "finished": 252,
-    "games": 14,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-13T00:15:00+00:00"
-   },
-   "nfl:period_winner_4q": {
-    "finished": 56,
-    "games": 14,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-13T00:15:00+00:00"
-   },
-   "nfl:spread_4q": {
-    "finished": 308,
-    "games": 14,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-13T00:15:00+00:00"
-   },
-   "nfl:total_4q": {
-    "finished": 278,
-    "games": 14,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-13T00:15:00+00:00"
-   },
-   "nfl:spread": {
-    "finished": 700,
-    "games": 14,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-13T00:15:00+00:00"
-   },
    "nfl:team_total": {
-    "finished": 708,
+    "finished": 706,
     "games": 14,
     "trust": 0.25,
     "confidence_fix": false,
@@ -5877,6 +5656,20 @@
     "confidence_fix": false,
     "last": "2026-10-13T00:15:00+00:00"
    },
+   "nfl:total_1q": {
+    "finished": 230,
+    "games": 14,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-13T00:15:00+00:00"
+   },
+   "nfl:spread_4q": {
+    "finished": 288,
+    "games": 14,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-13T00:15:00+00:00"
+   },
    "nfl:prop_rryds": {
     "finished": 224,
     "games": 14,
@@ -5887,6 +5680,216 @@
    "nfl:prop_rec": {
     "finished": 2042,
     "games": 14,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-13T00:15:00+00:00"
+   },
+   "nfl:total_1h": {
+    "finished": 325,
+    "games": 14,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-13T00:15:00+00:00"
+   },
+   "soccer:btts_1h": {
+    "finished": 116,
+    "games": 58,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-14T19:00:00+00:00"
+   },
+   "soccer:spread_1h": {
+    "finished": 230,
+    "games": 58,
+    "trust": 0.53,
+    "confidence_fix": false,
+    "last": "2026-10-14T19:00:00+00:00"
+   },
+   "soccer:total_1h": {
+    "finished": 348,
+    "games": 58,
+    "trust": 0.31,
+    "confidence_fix": false,
+    "last": "2026-10-14T19:00:00+00:00"
+   },
+   "soccer:btts_2h": {
+    "finished": 66,
+    "games": 33,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-14T18:30:00+00:00"
+   },
+   "soccer:spread_2h": {
+    "finished": 132,
+    "games": 33,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-14T18:30:00+00:00"
+   },
+   "soccer:total_2h": {
+    "finished": 194,
+    "games": 33,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-14T18:30:00+00:00"
+   },
+   "soccer:first_to_score": {
+    "finished": 246,
+    "games": 41,
+    "trust": 0.47,
+    "confidence_fix": false,
+    "last": "2026-10-14T18:30:00+00:00"
+   },
+   "soccer:correct_score": {
+    "finished": 1265,
+    "games": 41,
+    "trust": 0.44,
+    "confidence_fix": false,
+    "last": "2026-10-14T18:30:00+00:00"
+   },
+   "soccer:team_total": {
+    "finished": 484,
+    "games": 41,
+    "trust": 0.26,
+    "confidence_fix": false,
+    "last": "2026-10-14T18:30:00+00:00"
+   },
+   "tennis:winner": {
+    "finished": 444,
+    "games": 222,
+    "trust": 0.27,
+    "confidence_fix": false,
+    "last": "2026-10-14T17:00:00+00:00"
+   },
+   "soccer:winner": {
+    "finished": 260,
+    "games": 87,
+    "trust": 0.35,
+    "confidence_fix": false,
+    "last": "2026-10-14T19:00:00+00:00"
+   },
+   "soccer:btts": {
+    "finished": 174,
+    "games": 87,
+    "trust": 0.32,
+    "confidence_fix": false,
+    "last": "2026-10-14T19:00:00+00:00"
+   },
+   "soccer:spread": {
+    "finished": 654,
+    "games": 87,
+    "trust": 0.46,
+    "confidence_fix": false,
+    "last": "2026-10-14T19:00:00+00:00"
+   },
+   "soccer:total": {
+    "finished": 1010,
+    "games": 87,
+    "trust": 0.41,
+    "confidence_fix": true,
+    "last": "2026-10-14T19:00:00+00:00"
+   },
+   "nfl:spread_1h": {
+    "finished": 396,
+    "games": 13,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-13T00:15:00+00:00"
+   },
+   "nfl:period_winner_1q": {
+    "finished": 52,
+    "games": 13,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-13T00:15:00+00:00"
+   },
+   "nfl:spread_1q": {
+    "finished": 250,
+    "games": 13,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-13T00:15:00+00:00"
+   },
+   "nfl:spread_2h": {
+    "finished": 396,
+    "games": 13,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-13T00:15:00+00:00"
+   },
+   "nfl:total_2h": {
+    "finished": 332,
+    "games": 13,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-13T00:15:00+00:00"
+   },
+   "nfl:period_winner_2q": {
+    "finished": 52,
+    "games": 13,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-13T00:15:00+00:00"
+   },
+   "nfl:spread_2q": {
+    "finished": 266,
+    "games": 13,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-13T00:15:00+00:00"
+   },
+   "nfl:total_2q": {
+    "finished": 258,
+    "games": 13,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-13T00:15:00+00:00"
+   },
+   "nfl:period_winner_3q": {
+    "finished": 52,
+    "games": 13,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-13T00:15:00+00:00"
+   },
+   "nfl:spread_3q": {
+    "finished": 254,
+    "games": 13,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-13T00:15:00+00:00"
+   },
+   "nfl:total_3q": {
+    "finished": 236,
+    "games": 13,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-13T00:15:00+00:00"
+   },
+   "nfl:period_winner_4q": {
+    "finished": 52,
+    "games": 13,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-13T00:15:00+00:00"
+   },
+   "nfl:total_4q": {
+    "finished": 258,
+    "games": 13,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-13T00:15:00+00:00"
+   },
+   "nfl:spread": {
+    "finished": 652,
+    "games": 13,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-13T00:15:00+00:00"
+   },
+   "nfl:winner": {
+    "finished": 24,
+    "games": 12,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-10-13T00:15:00+00:00"
@@ -6013,40 +6016,24 @@
   },
   "price_trend": {
    "flat": {
-    "markets": 15836,
+    "markets": 15586,
     "hit_vs_price": -0.0
    },
-   "rising": {
-    "markets": 1691,
-    "hit_vs_price": 0.014
-   },
    "falling": {
-    "markets": 1702,
-    "hit_vs_price": -0.01
+    "markets": 1674,
+    "hit_vs_price": -0.009
+   },
+   "rising": {
+    "markets": 1662,
+    "hit_vs_price": 0.011
    }
   }
  },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "tracker": {
-  "tracked": 210692,
+  "tracked": 210835,
   "series": 3908,
   "movers": [
-   {
-    "ticker": "KXLOLMAP-26OCT121700KBMLOS-3-KBM",
-    "series": "KXLOLMAP",
-    "title": "KaBuM! Ilha das Lendas",
-    "move": 0.87,
-    "price": 0.995,
-    "close": "2026-10-14T21:00:00+00:00"
-   },
-   {
-    "ticker": "KXLOLMAP-26OCT121700KBMLOS-3-LOS",
-    "series": "KXLOLMAP",
-    "title": "LOS",
-    "move": -0.865,
-    "price": 0.005,
-    "close": "2026-10-14T21:00:00+00:00"
-   },
    {
     "ticker": "KXTFF1LIGGAME-26OCT13SARBOD-BOD",
     "series": "KXTFF1LIGGAME",
@@ -6062,14 +6049,6 @@
     "move": 0.68,
     "price": 0.995,
     "close": "2026-10-15T00:00:00+00:00"
-   },
-   {
-    "ticker": "KXLOLTOTALMAPS-26OCT121700KBMLOS-4",
-    "series": "KXLOLTOTALMAPS",
-    "title": "Over 3.5 maps",
-    "move": 0.555,
-    "price": 0.97,
-    "close": "2026-10-14T21:00:00+00:00"
    },
    {
     "ticker": "KXSVKCUPGAME-26OCT13BLVZEM-BLV",
@@ -6150,28 +6129,52 @@
     "move": -0.48,
     "price": 0.02,
     "close": "2026-10-16T10:00:00+00:00"
+   },
+   {
+    "ticker": "KXUCLFTTS-26OCT13GALBAR-NONE",
+    "series": "KXUCLFTTS",
+    "title": "No Goal",
+    "move": -0.475,
+    "price": 0.005,
+    "close": "2026-10-16T01:00:00+00:00"
+   },
+   {
+    "ticker": "KXAFCCLTOTAL-26OCT14REYPOR-1",
+    "series": "KXAFCCLTOTAL",
+    "title": "Over 0.5 goals scored",
+    "move": 0.475,
+    "price": 0.975,
+    "close": "2026-10-16T10:00:00+00:00"
+   },
+   {
+    "ticker": "KXCONMEBOLSUDSPREAD-26OCT13BOCVDG-VDG3",
+    "series": "KXCONMEBOLSUDSPREAD",
+    "title": "Reg Time: Vasco da Gama wins by more than 2.5 goals",
+    "move": -0.475,
+    "price": 0.015,
+    "close": "2026-10-16T00:30:00+00:00"
    }
   ]
  },
  "models": {
   "tennis": {
-   "matches": 21424,
-   "training_rows": 14950,
+   "matches": 21426,
+   "training_rows": 14952,
    "holdout": {
     "from": "2026-09-08",
     "matches": 2243,
-    "elo_log_loss": 0.658,
-    "model_log_loss": 0.6514,
+    "elo_log_loss": 0.6581,
+    "model_log_loss": 0.6515,
     "elo_accuracy": 0.61,
     "model_accuracy": 0.626
    },
    "using": "full",
    "weights": {
-    "elo": 2.017,
+    "elo": 2.018,
     "dominance": 0.0,
     "rank": 0.0,
-    "h2h": 0.454,
-    "form": -0.501,
+    "h2h": 0.451,
+    "form": -0.503,
     "fatigue_games": -0.223,
     "fatigue_matches": 0.074,
     "rest": 0.001,
@@ -6184,9 +6187,9 @@
    "trust": 0.3
   },
   "soccer": {
-   "matches": 82024,
-   "from_kalshi": 199,
-   "training_rows": 80156,
+   "matches": 82029,
+   "from_kalshi": 204,
+   "training_rows": 80161,
    "totals_bias": -0.004,
    "totals": {
     "matches": 6569,
@@ -6195,19 +6198,19 @@
     "best_weight": 0.0
    },
    "holdout": {
-    "matches": 12024,
-    "rating_log_loss": 1.012,
-    "model_log_loss": 1.0104,
+    "matches": 12025,
+    "rating_log_loss": 1.0121,
+    "model_log_loss": 1.0105,
     "rating_accuracy": 0.498,
     "model_accuracy": 0.502
    },
    "using": "full",
    "market": {
-    "market_log_loss": 0.9921,
-    "model_log_loss": 1.0109,
+    "market_log_loss": 0.992,
+    "model_log_loss": 1.0108,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
-    "matches": 11827
+    "matches": 11823
    },
    "backtest": {
     "bets": 72,
@@ -6218,8 +6221,8 @@
    "weights": {
     "rating": 1.607,
     "chance_quality": 0.396,
-    "goal_diff_form": 0.031,
-    "rest": -0.064
+    "goal_diff_form": 0.03,
+    "rest": -0.063
    },
    "goals_scale": 0.992,
    "sport": "Soccer",
@@ -6255,31 +6258,31 @@
    "holdout": {
     "matches": 659,
     "rating_log_loss": 0.6247,
-    "model_log_loss": 0.6198,
+    "model_log_loss": 0.6199,
     "rating_accuracy": 0.656,
-    "model_accuracy": 0.649
+    "model_accuracy": 0.646
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6044,
-    "model_log_loss": 0.6198,
+    "model_log_loss": 0.6199,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 659
    },
    "backtest": {
-    "bets": 16,
-    "wins": 6,
-    "units": -2.5,
-    "roi": -0.093
+    "bets": 14,
+    "wins": 4,
+    "units": -8.5,
+    "roi": -0.348
    },
    "weights": {
-    "home_field": 0.251,
-    "rating": 1.536,
-    "rest": 0.25,
-    "point_diff_form": 0.236,
-    "qb_change": 0.31,
-    "epa": 0.159
+    "home_field": 0.253,
+    "rating": 1.535,
+    "rest": 0.247,
+    "point_diff_form": 0.234,
+    "qb_change": 0.331,
+    "epa": 0.156
    },
    "matches": 4442,
    "totals": {
@@ -6364,15 +6367,15 @@
    "clv_picks": 14
   },
   "watch": {
-   "picks": 462,
-   "wins": 203,
-   "losses": 259,
-   "units": 5.32,
-   "staked": 231.0,
-   "roi": 0.023,
-   "beat_price": 0.325,
-   "clv": -0.0059,
-   "clv_picks": 436
+   "picks": 466,
+   "wins": 205,
+   "losses": 261,
+   "units": 4.97,
+   "staked": 233.0,
+   "roi": 0.021,
+   "beat_price": 0.328,
+   "clv": -0.0057,
+   "clv_picks": 440
   }
  },
  "by_expert_lean": {
@@ -6434,15 +6437,15 @@
    "clv_picks": 5
   },
   "W": {
-   "picks": 462,
-   "wins": 203,
-   "losses": 259,
-   "units": 5.32,
-   "staked": 231.0,
-   "roi": 0.023,
-   "beat_price": 0.325,
-   "clv": -0.0059,
-   "clv_picks": 436
+   "picks": 466,
+   "wins": 205,
+   "losses": 261,
+   "units": 4.97,
+   "staked": 233.0,
+   "roi": 0.021,
+   "beat_price": 0.328,
+   "clv": -0.0057,
+   "clv_picks": 440
   }
  },
  "watch_open": [
@@ -6486,85 +6489,6 @@
    "expert_lean": "none"
   },
   {
-   "id": "KXUCLSPREAD-26OCT14ROMRMA-RMA2:no",
-   "ticker": "KXUCLSPREAD-26OCT14ROMRMA-RMA2",
-   "side": "no",
-   "event": "KXUCLSPREAD-26OCT14ROMRMA",
-   "game": "26OCT14ROMRMA",
-   "sport": "Soccer",
-   "model_key": "soccer",
-   "mtype": "spread",
-   "line": 1.5,
-   "tour": "Champions League",
-   "tournament": "Roma vs Real Madrid",
-   "matchup": "Roma vs Real Madrid",
-   "surface": "",
-   "pick": "No: Real Madrid wins by more than 1.5 goals",
-   "opponent": "",
-   "market": "No: Real Madrid wins by more than 1.5 goals",
-   "price": 0.71,
-   "model_prob": 0.83,
-   "raw_prob": 0.9,
-   "edge": 0.105,
-   "tier": "W",
-   "units": 0.5,
-   "made": "2026-10-12T00:35:27.573018+00:00",
-   "expected_end": "2026-10-14T22:00:00+00:00",
-   "start_est": "2026-10-14T18:30:00+00:00",
-   "status": "pending",
-   "latest_price": 0.715,
-   "close_price": 0.715,
-   "pnl": null,
-   "why": "Expected goals 1.89 vs 1.23 (3.12 total). Model gives \"No: Real Madrid wins by more than 1.5 goals\" 90%. Blended with the market that's 83% vs a 71% price.",
-   "trend": 0.005,
-   "new_market": false,
-   "trust": 0.64,
-   "sharp_prob": null,
-   "research": "",
-   "sources": [],
-   "expert_lean": "none"
-  },
-  {
-   "id": "KXUCLGAME-26OCT14RBBFCP-FCP",
-   "ticker": "KXUCLGAME-26OCT14RBBFCP-FCP",
-   "side": "yes",
-   "event": "KXUCLGAME-26OCT14RBBFCP",
-   "game": "26OCT14RBBFCP",
-   "sport": "Soccer",
-   "model_key": "soccer",
-   "mtype": "winner",
-   "line": null,
-   "tour": "Champions League",
-   "tournament": "Real Betis vs Porto",
-   "matchup": "Real Betis vs Porto",
-   "surface": "",
-   "pick": "Porto to win",
-   "opponent": "",
-   "market": "Porto to win",
-   "price": 0.29,
-   "model_prob": 0.398,
-   "raw_prob": 0.499,
-   "edge": 0.093,
-   "tier": "W",
-   "units": 0.5,
-   "made": "2026-10-12T00:35:27.573018+00:00",
-   "expected_end": "2026-10-14T22:00:00+00:00",
-   "start_est": "2026-10-14T18:30:00+00:00",
-   "status": "pending",
-   "latest_price": 0.285,
-   "close_price": 0.285,
-   "pnl": null,
-   "why": "Ratings 1784 (Betis, home) vs 1927 (Porto). Share of chances lately (xG or shots on target) 48% vs 66%. Goal difference last 6: +1 vs +10. Last played Sep 20 vs Sep 20. Model gives the away 50%. Blended with the market that's 40% vs a 29% price. Sharp sportsbook price (Pinnacle) says 29%.",
-   "trend": 0.005,
-   "new_market": false,
-   "trust": 0.53,
-   "sharp_prob": 0.293,
-   "sharp_source": "Pinnacle",
-   "research": "",
-   "sources": [],
-   "expert_lean": "none"
-  },
-  {
    "id": "KXNCAAFSPREAD-26OCT15ECUUAB-ECU8",
    "ticker": "KXNCAAFSPREAD-26OCT15ECUUAB-ECU8",
    "side": "yes",
@@ -6591,8 +6515,8 @@
    "expected_end": "2026-10-16T02:30:00+00:00",
    "start_est": "2026-10-15T23:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.375,
-   "close_price": 0.375,
+   "latest_price": 0.385,
+   "close_price": 0.385,
    "pnl": null,
    "why": "Projected score margin -9.6 (home) and total 51.2. Model gives \"East Carolina wins by over 7.5 points\" 55%. Blended with the market that's 43% vs a 39% price.",
    "trend": 0.0,
@@ -6708,8 +6632,8 @@
    "expected_end": "2026-10-15T02:30:00+00:00",
    "start_est": "2026-10-14T23:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.595,
-   "close_price": 0.595,
+   "latest_price": 0.575,
+   "close_price": 0.575,
    "pnl": null,
    "why": "Expected goals 2.02 vs 1.20 (3.22 total). Model gives \"No: Miami wins by more than 1.5 goals\" 66%. Blended with the market that's 62% vs a 58% price.",
    "trend": 0.01,
@@ -6747,8 +6671,8 @@
    "expected_end": "2026-10-17T03:00:00+00:00",
    "start_est": "2026-10-17T00:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.43,
-   "close_price": 0.43,
+   "latest_price": 0.425,
+   "close_price": 0.425,
    "pnl": null,
    "why": "Projected score margin -3.4 (home) and total 54.0. Model gives \"No: Purdue wins by over 2.5 points\" 64%. Blended with the market that's 47% vs a 42% price.",
    "trend": 0.0,
@@ -6959,46 +6883,6 @@
    "expert_lean": "none"
   },
   {
-   "id": "KXUCLGAME-26OCT14MCIPSG-MCI",
-   "ticker": "KXUCLGAME-26OCT14MCIPSG-MCI",
-   "side": "yes",
-   "event": "KXUCLGAME-26OCT14MCIPSG",
-   "game": "26OCT14MCIPSG",
-   "sport": "Soccer",
-   "model_key": "soccer",
-   "mtype": "winner",
-   "line": null,
-   "tour": "Champions League",
-   "tournament": "Manchester City vs PSG",
-   "matchup": "Manchester City vs PSG",
-   "surface": "",
-   "pick": "Manchester City to win",
-   "opponent": "",
-   "market": "Manchester City to win",
-   "price": 0.45,
-   "model_prob": 0.503,
-   "raw_prob": 0.517,
-   "edge": 0.036,
-   "tier": "W",
-   "units": 0.5,
-   "made": "2026-10-13T00:36:55.850572+00:00",
-   "expected_end": "2026-10-14T22:00:00+00:00",
-   "start_est": "2026-10-14T18:30:00+00:00",
-   "status": "pending",
-   "latest_price": 0.485,
-   "close_price": 0.485,
-   "pnl": null,
-   "why": "Ratings 2009 (Man City, home) vs 1954 (Paris SG). Share of chances lately (xG or shots on target) 57% vs 54%. Goal difference last 6: +9 vs +1. Last played Sep 20 vs Sep 20. Model gives the home 52%. Blended with the market that's 50% vs a 45% price. Sharp sportsbook price (Pinnacle) says 44%.",
-   "trend": -0.002,
-   "new_market": false,
-   "trust": 0.58,
-   "sharp_prob": 0.4414,
-   "sharp_source": "Pinnacle",
-   "research": "",
-   "sources": [],
-   "expert_lean": "none"
-  },
-  {
    "id": "KXMLSTOTAL-26OCT14CHIPHI-4",
    "ticker": "KXMLSTOTAL-26OCT14CHIPHI-4",
    "side": "yes",
@@ -7025,8 +6909,8 @@
    "expected_end": "2026-10-15T03:30:00+00:00",
    "start_est": "2026-10-15T00:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.465,
-   "close_price": 0.465,
+   "latest_price": 0.475,
+   "close_price": 0.475,
    "pnl": null,
    "why": "Expected goals 1.57 vs 2.34 (3.91 total). Model gives \"Over 3.5 goals scored\" 55%. Blended with the market that's 50% vs a 47% price.",
    "trend": 0.005,
@@ -7064,8 +6948,8 @@
    "expected_end": "2026-10-17T22:30:00+00:00",
    "start_est": "2026-10-17T19:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.35,
-   "close_price": 0.35,
+   "latest_price": 0.345,
+   "close_price": 0.345,
    "pnl": null,
    "why": "Projected score margin +14.5 (home) and total 51.5. Model gives \"Duke wins by over 7.5 points\" 67%. Blended with the market that's 43% vs a 35% price.",
    "trend": 0.0,
@@ -7220,8 +7104,8 @@
    "expected_end": "2026-10-15T03:00:00+00:00",
    "start_est": "2026-10-15T00:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.675,
-   "close_price": 0.675,
+   "latest_price": 0.67,
+   "close_price": 0.67,
    "pnl": null,
    "why": "Shohei Ohtani: 2.26 a game this season over 139 games (adjusted 2.23). Model gives \"Shohei Ohtani: 1+\" 89%. Blended with the market that's 73% vs a 68% price.",
    "trend": 0.01,
@@ -7306,46 +7190,6 @@
    "new_market": false,
    "trust": 0.25,
    "sharp_prob": null,
-   "research": "",
-   "sources": [],
-   "expert_lean": "none"
-  },
-  {
-   "id": "KXUCLTOTAL-26OCT14BOGBVB-4:no",
-   "ticker": "KXUCLTOTAL-26OCT14BOGBVB-4",
-   "side": "no",
-   "event": "KXUCLTOTAL-26OCT14BOGBVB",
-   "game": "26OCT14BOGBVB",
-   "sport": "Soccer",
-   "model_key": "soccer",
-   "mtype": "total",
-   "line": 3.5,
-   "tour": "Champions League",
-   "tournament": "Bodoe/Glimt vs Dortmund",
-   "matchup": "Bodoe/Glimt vs Dortmund",
-   "surface": "",
-   "pick": "Under 3.5 goals scored",
-   "opponent": "",
-   "market": "Under 3.5 goals scored",
-   "price": 0.49,
-   "model_prob": 0.568,
-   "raw_prob": 0.652,
-   "edge": 0.061,
-   "tier": "W",
-   "units": 0.5,
-   "made": "2026-10-14T00:43:29.020848+00:00",
-   "expected_end": "2026-10-14T22:00:00+00:00",
-   "start_est": "2026-10-14T18:30:00+00:00",
-   "status": "pending",
-   "latest_price": 0.495,
-   "close_price": 0.495,
-   "pnl": null,
-   "why": "Expected goals 1.71 vs 1.27 (2.98 total). Model gives \"Under 3.5 goals scored\" 65%. Blended with the market that's 55% vs a 49% price. Price down 3\u00a2 in the last 12 hours. Sharp sportsbook price (Pinnacle) says 48%.",
-   "trend": -0.03,
-   "new_market": false,
-   "trust": 0.4,
-   "sharp_prob": 0.4845,
-   "sharp_source": "Pinnacle",
    "research": "",
    "sources": [],
    "expert_lean": "none"
@@ -7629,6 +7473,169 @@
   }
  ],
  "watch_history": [
+  {
+   "id": "KXUCLTOTAL-26OCT14BOGBVB-4:no",
+   "ticker": "KXUCLTOTAL-26OCT14BOGBVB-4",
+   "side": "no",
+   "event": "KXUCLTOTAL-26OCT14BOGBVB",
+   "game": "26OCT14BOGBVB",
+   "sport": "Soccer",
+   "model_key": "soccer",
+   "mtype": "total",
+   "line": 3.5,
+   "tour": "Champions League",
+   "tournament": "Bodoe/Glimt vs Dortmund",
+   "matchup": "Bodoe/Glimt vs Dortmund",
+   "surface": "",
+   "pick": "Under 3.5 goals scored",
+   "opponent": "",
+   "market": "Under 3.5 goals scored",
+   "price": 0.49,
+   "model_prob": 0.568,
+   "raw_prob": 0.652,
+   "edge": 0.061,
+   "tier": "W",
+   "units": 0.5,
+   "made": "2026-10-14T00:43:29.020848+00:00",
+   "expected_end": "2026-10-14T22:00:00+00:00",
+   "start_est": "2026-10-14T18:30:00+00:00",
+   "status": "win",
+   "latest_price": 0.495,
+   "close_price": 0.495,
+   "pnl": 0.5,
+   "why": "Expected goals 1.71 vs 1.27 (2.98 total). Model gives \"Under 3.5 goals scored\" 65%. Blended with the market that's 55% vs a 49% price. Price down 3\u00a2 in the last 12 hours. Sharp sportsbook price (Pinnacle) says 48%.",
+   "trend": -0.03,
+   "new_market": false,
+   "trust": 0.4,
+   "sharp_prob": 0.4845,
+   "sharp_source": "Pinnacle",
+   "research": "",
+   "sources": [],
+   "expert_lean": "none",
+   "graded": "2026-10-14T21:33:38.223174+00:00"
+  },
+  {
+   "id": "KXUCLGAME-26OCT14MCIPSG-MCI",
+   "ticker": "KXUCLGAME-26OCT14MCIPSG-MCI",
+   "side": "yes",
+   "event": "KXUCLGAME-26OCT14MCIPSG",
+   "game": "26OCT14MCIPSG",
+   "sport": "Soccer",
+   "model_key": "soccer",
+   "mtype": "winner",
+   "line": null,
+   "tour": "Champions League",
+   "tournament": "Manchester City vs PSG",
+   "matchup": "Manchester City vs PSG",
+   "surface": "",
+   "pick": "Manchester City to win",
+   "opponent": "",
+   "market": "Manchester City to win",
+   "price": 0.45,
+   "model_prob": 0.503,
+   "raw_prob": 0.517,
+   "edge": 0.036,
+   "tier": "W",
+   "units": 0.5,
+   "made": "2026-10-13T00:36:55.850572+00:00",
+   "expected_end": "2026-10-14T22:00:00+00:00",
+   "start_est": "2026-10-14T18:30:00+00:00",
+   "status": "loss",
+   "latest_price": 0.485,
+   "close_price": 0.485,
+   "pnl": -0.52,
+   "why": "Ratings 2009 (Man City, home) vs 1954 (Paris SG). Share of chances lately (xG or shots on target) 57% vs 54%. Goal difference last 6: +9 vs +1. Last played Sep 20 vs Sep 20. Model gives the home 52%. Blended with the market that's 50% vs a 45% price. Sharp sportsbook price (Pinnacle) says 44%.",
+   "trend": -0.002,
+   "new_market": false,
+   "trust": 0.58,
+   "sharp_prob": 0.4414,
+   "sharp_source": "Pinnacle",
+   "research": "",
+   "sources": [],
+   "expert_lean": "none",
+   "graded": "2026-10-14T21:33:37.442348+00:00"
+  },
+  {
+   "id": "KXUCLGAME-26OCT14RBBFCP-FCP",
+   "ticker": "KXUCLGAME-26OCT14RBBFCP-FCP",
+   "side": "yes",
+   "event": "KXUCLGAME-26OCT14RBBFCP",
+   "game": "26OCT14RBBFCP",
+   "sport": "Soccer",
+   "model_key": "soccer",
+   "mtype": "winner",
+   "line": null,
+   "tour": "Champions League",
+   "tournament": "Real Betis vs Porto",
+   "matchup": "Real Betis vs Porto",
+   "surface": "",
+   "pick": "Porto to win",
+   "opponent": "",
+   "market": "Porto to win",
+   "price": 0.29,
+   "model_prob": 0.398,
+   "raw_prob": 0.499,
+   "edge": 0.093,
+   "tier": "W",
+   "units": 0.5,
+   "made": "2026-10-12T00:35:27.573018+00:00",
+   "expected_end": "2026-10-14T22:00:00+00:00",
+   "start_est": "2026-10-14T18:30:00+00:00",
+   "status": "loss",
+   "latest_price": 0.285,
+   "close_price": 0.285,
+   "pnl": -0.52,
+   "why": "Ratings 1784 (Betis, home) vs 1927 (Porto). Share of chances lately (xG or shots on target) 48% vs 66%. Goal difference last 6: +1 vs +10. Last played Sep 20 vs Sep 20. Model gives the away 50%. Blended with the market that's 40% vs a 29% price. Sharp sportsbook price (Pinnacle) says 29%.",
+   "trend": 0.005,
+   "new_market": false,
+   "trust": 0.53,
+   "sharp_prob": 0.293,
+   "sharp_source": "Pinnacle",
+   "research": "",
+   "sources": [],
+   "expert_lean": "none",
+   "graded": "2026-10-14T21:33:36.524807+00:00"
+  },
+  {
+   "id": "KXUCLSPREAD-26OCT14ROMRMA-RMA2:no",
+   "ticker": "KXUCLSPREAD-26OCT14ROMRMA-RMA2",
+   "side": "no",
+   "event": "KXUCLSPREAD-26OCT14ROMRMA",
+   "game": "26OCT14ROMRMA",
+   "sport": "Soccer",
+   "model_key": "soccer",
+   "mtype": "spread",
+   "line": 1.5,
+   "tour": "Champions League",
+   "tournament": "Roma vs Real Madrid",
+   "matchup": "Roma vs Real Madrid",
+   "surface": "",
+   "pick": "No: Real Madrid wins by more than 1.5 goals",
+   "opponent": "",
+   "market": "No: Real Madrid wins by more than 1.5 goals",
+   "price": 0.71,
+   "model_prob": 0.83,
+   "raw_prob": 0.9,
+   "edge": 0.105,
+   "tier": "W",
+   "units": 0.5,
+   "made": "2026-10-12T00:35:27.573018+00:00",
+   "expected_end": "2026-10-14T22:00:00+00:00",
+   "start_est": "2026-10-14T18:30:00+00:00",
+   "status": "win",
+   "latest_price": 0.715,
+   "close_price": 0.715,
+   "pnl": 0.19,
+   "why": "Expected goals 1.89 vs 1.23 (3.12 total). Model gives \"No: Real Madrid wins by more than 1.5 goals\" 90%. Blended with the market that's 83% vs a 71% price.",
+   "trend": 0.005,
+   "new_market": false,
+   "trust": 0.64,
+   "sharp_prob": null,
+   "research": "",
+   "sources": [],
+   "expert_lean": "none",
+   "graded": "2026-10-14T21:33:36.445301+00:00"
+  },
   {
    "id": "KXUCLTOTAL-26OCT14AVLFEN-3",
    "ticker": "KXUCLTOTAL-26OCT14AVLFEN-3",
@@ -19521,167 +19528,6 @@
    "sources": [],
    "expert_lean": "none",
    "graded": "2026-09-28T00:30:34.925804+00:00"
-  },
-  {
-   "id": "KXNFLRSHYDS-26SEP27BALDAL-BALLJACKSON8-40:no",
-   "ticker": "KXNFLRSHYDS-26SEP27BALDAL-BALLJACKSON8-40",
-   "side": "no",
-   "event": "KXNFLRSHYDS-26SEP27BALDAL",
-   "game": "26SEP27BALDAL",
-   "sport": "Football",
-   "model_key": "nfl",
-   "mtype": "prop_rshyds",
-   "line": 39.5,
-   "tour": "NFL",
-   "tournament": "BAL at DAL",
-   "matchup": "BAL at DAL",
-   "surface": "",
-   "pick": "Lamar Jackson: under 40",
-   "opponent": "",
-   "market": "Lamar Jackson: under 40",
-   "price": 0.53,
-   "model_prob": 0.685,
-   "raw_prob": 0.844,
-   "edge": 0.137,
-   "tier": "W",
-   "units": 0.5,
-   "made": "2026-09-24T00:27:54.732582+00:00",
-   "expected_end": "2026-09-28T02:25:00+00:00",
-   "start_est": "2026-09-27T20:25:00+00:00",
-   "status": "loss",
-   "latest_price": 0.505,
-   "close_price": 0.505,
-   "pnl": -0.52,
-   "why": "Lamar Jackson: 26 a game lately (last 12 games). Model gives \"Lamar Jackson: under 40\" 84%. Blended with the market that's 60% vs a 53% price.",
-   "trend": 0.005,
-   "new_market": false,
-   "trust": 0.25,
-   "sharp_prob": null,
-   "research": "",
-   "sources": [],
-   "expert_lean": "none",
-   "graded": "2026-09-28T00:30:34.877827+00:00"
-  },
-  {
-   "id": "KXATPCHALLENGERMATCH-26SEP27BARMEN-MEN",
-   "ticker": "KXATPCHALLENGERMATCH-26SEP27BARMEN-MEN",
-   "side": "yes",
-   "event": "KXATPCHALLENGERMATCH-26SEP27BARMEN",
-   "game": "26SEP27BARMEN",
-   "sport": "Tennis",
-   "model_key": "tennis",
-   "mtype": "winner",
-   "line": null,
-   "tour": "ATP Challenger",
-   "tournament": "2026 ATP Challenger Buenos Aires II",
-   "matchup": "2026 ATP Challenger Buenos Aires II",
-   "surface": "clay",
-   "pick": "Facundo Mena",
-   "opponent": "Alex Barrena",
-   "market": "Facundo Mena to win",
-   "price": 0.53,
-   "model_prob": 0.563,
-   "raw_prob": 0.603,
-   "edge": 0.016,
-   "tier": "W",
-   "units": 0.5,
-   "made": "2026-09-27T07:20:44.288936+00:00",
-   "expected_end": "2026-09-27T19:00:00+00:00",
-   "start_est": "2026-09-27T15:00:00+00:00",
-   "status": "loss",
-   "latest_price": 0.525,
-   "close_price": 0.525,
-   "pnl": -0.52,
-   "why": "Elo 1648 vs 1588 on clay. Won 50% vs 50% of games lately. Form 9-1 vs 8-2. Games played in last 3 days: 44 vs 66. Model 60%, blended with the market 56%, price 53%.",
-   "trend": 0.006,
-   "new_market": false,
-   "trust": 0.5,
-   "sharp_prob": null,
-   "research": "",
-   "sources": [],
-   "expert_lean": "none",
-   "graded": "2026-09-27T22:20:10.234125+00:00"
-  },
-  {
-   "id": "KXMLBGAME-26SEP271510PITDET-DET",
-   "ticker": "KXMLBGAME-26SEP271510PITDET-DET",
-   "side": "yes",
-   "event": "KXMLBGAME-26SEP271510PITDET",
-   "game": "26SEP271510PITDET",
-   "sport": "Baseball",
-   "model_key": "mlb",
-   "mtype": "winner",
-   "line": null,
-   "tour": "MLB",
-   "tournament": "Pittsburgh Pirates at Detroit Tigers",
-   "matchup": "Pittsburgh Pirates at Detroit Tigers",
-   "surface": "",
-   "pick": "Detroit to win",
-   "opponent": "",
-   "market": "Detroit to win",
-   "price": 0.46,
-   "model_prob": 0.495,
-   "raw_prob": 0.534,
-   "edge": 0.017,
-   "tier": "W",
-   "units": 0.5,
-   "made": "2026-09-27T06:25:52.117225+00:00",
-   "expected_end": "2026-09-27T22:10:00+00:00",
-   "start_est": "2026-09-27T19:10:00+00:00",
-   "status": "loss",
-   "latest_price": 0.515,
-   "close_price": 0.515,
-   "pnl": -0.52,
-   "why": "Ratings 1503 vs 1508 with home field. Starters River Ryan (last season FIP 4.50, team allows 2.8 runs in his recent starts) vs Jared Jones (4.50, 3.7). Run differential last 10: -7 vs +4. Model gives Detroit Tigers 53%. Blended with the market that's 49% vs a 46% price. Sharp sportsbook price (Pinnacle) says 45%.",
-   "trend": -0.005,
-   "new_market": false,
-   "trust": 0.5,
-   "sharp_prob": 0.4467,
-   "sharp_source": "Pinnacle",
-   "research": "",
-   "sources": [],
-   "expert_lean": "none",
-   "graded": "2026-09-27T22:20:10.154472+00:00"
-  },
-  {
-   "id": "KXMLBKS-26SEP271510CLEKC-CLEPMESSICK77-4",
-   "ticker": "KXMLBKS-26SEP271510CLEKC-CLEPMESSICK77-4",
-   "side": "yes",
-   "event": "KXMLBKS-26SEP271510CLEKC",
-   "game": "26SEP271510CLEKC",
-   "sport": "Baseball",
-   "model_key": "mlb",
-   "mtype": "prop_ks",
-   "line": 3.5,
-   "tour": "MLB",
-   "tournament": "Cleveland Guardians at Kansas City Royals",
-   "matchup": "Cleveland Guardians at Kansas City Royals",
-   "surface": "",
-   "pick": "Parker Messick: 4+",
-   "opponent": "",
-   "market": "Parker Messick: 4+",
-   "price": 0.49,
-   "model_prob": 0.639,
-   "raw_prob": 0.793,
-   "edge": 0.132,
-   "tier": "W",
-   "units": 0.5,
-   "made": "2026-09-27T05:20:16.141419+00:00",
-   "expected_end": "2026-09-27T22:10:00+00:00",
-   "start_est": "2026-09-27T19:10:00+00:00",
-   "status": "loss",
-   "latest_price": 0.46,
-   "close_price": 0.46,
-   "pnl": -0.52,
-   "why": "Parker Messick: 6.16 a game this season over 31 games (adjusted 6.03). Model gives \"Parker Messick: 4+\" 79%. Blended with the market that's 57% vs a 49% price.",
-   "trend": 0.0,
-   "new_market": true,
-   "trust": 0.27,
-   "sharp_prob": null,
-   "research": "",
-   "sources": [],
-   "expert_lean": "none",
-   "graded": "2026-09-27T22:20:10.074270+00:00"
   }
  ],
  "by_tour": {
@@ -22241,6 +22087,14 @@
  "changelog": [
   {
    "date": "2026-10-14",
+   "change": "soccer:btts: trust in the model vs the market moved from 45% to 32% after 174 finished markets"
+  },
+  {
+   "date": "2026-10-14",
+   "change": "soccer:total_1h: trust in the model vs the market moved from 53% to 31% after 348 finished markets"
+  },
+  {
+   "date": "2026-10-14",
    "change": "soccer:spread_2h: trust in the model vs the market moved from 47% to 25% after 132 finished markets"
   },
   {
@@ -22350,14 +22204,6 @@
   {
    "date": "2026-10-11",
    "change": "soccer:btts: trust in the model vs the market moved from 25% to 45% after 158 finished markets"
-  },
-  {
-   "date": "2026-10-10",
-   "change": "soccer:spread_1h: trust in the model vs the market moved from 25% to 48% after 178 finished markets"
-  },
-  {
-   "date": "2026-10-10",
-   "change": "soccer:winner: trust in the model vs the market moved from 37% to 50% after 190 finished markets"
   }
  ]
 }
