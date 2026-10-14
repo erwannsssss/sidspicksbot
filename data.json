@@ -1,6 +1,6 @@
 {
- "updated": "2026-10-14T21:35:48.999704+00:00",
- "status_note": "Last run found 0 new pick(s) and graded 4.",
+ "updated": "2026-10-14T22:34:29.249374+00:00",
+ "status_note": "Last run found 0 new pick(s) and graded 0.",
  "bankroll": 96.02,
  "protection": {
   "bankroll": 96.02,
@@ -5614,22 +5614,8 @@
  },
  "learning": {
   "groups": {
-   "nfl:team_total": {
-    "finished": 706,
-    "games": 14,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-13T00:15:00+00:00"
-   },
-   "nfl:total": {
-    "finished": 532,
-    "games": 14,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-13T00:15:00+00:00"
-   },
    "nfl:prop_passyds": {
-    "finished": 504,
+    "finished": 489,
     "games": 14,
     "trust": 0.25,
     "confidence_fix": false,
@@ -5663,8 +5649,22 @@
     "confidence_fix": false,
     "last": "2026-10-13T00:15:00+00:00"
    },
+   "nfl:team_total": {
+    "finished": 668,
+    "games": 14,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-13T00:15:00+00:00"
+   },
    "nfl:spread_4q": {
     "finished": 288,
+    "games": 14,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-13T00:15:00+00:00"
+   },
+   "nfl:total": {
+    "finished": 496,
     "games": 14,
     "trust": 0.25,
     "confidence_fix": false,
@@ -5755,11 +5755,11 @@
     "last": "2026-10-14T18:30:00+00:00"
    },
    "tennis:winner": {
-    "finished": 444,
-    "games": 222,
+    "finished": 446,
+    "games": 223,
     "trust": 0.27,
     "confidence_fix": false,
-    "last": "2026-10-14T17:00:00+00:00"
+    "last": "2026-10-14T19:30:00+00:00"
    },
    "soccer:winner": {
     "finished": 260,
@@ -6016,7 +6016,7 @@
   },
   "price_trend": {
    "flat": {
-    "markets": 15586,
+    "markets": 15499,
     "hit_vs_price": -0.0
    },
    "falling": {
@@ -6031,7 +6031,7 @@
  },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "tracker": {
-  "tracked": 210835,
+  "tracked": 213016,
   "series": 3908,
   "movers": [
    {
@@ -6081,22 +6081,6 @@
     "move": -0.495,
     "price": 0.005,
     "close": "2026-10-16T10:00:00+00:00"
-   },
-   {
-    "ticker": "KXBRASILEIROBSPREAD-26OCT12GRNPON-PON3",
-    "series": "KXBRASILEIROBSPREAD",
-    "title": "Ponte Preta wins by more than 2.5 goals",
-    "move": -0.485,
-    "price": 0.005,
-    "close": "2026-10-14T22:00:00+00:00"
-   },
-   {
-    "ticker": "KXBRASILEIROBSPREAD-26OCT12GRNPON-PON2",
-    "series": "KXBRASILEIROBSPREAD",
-    "title": "Ponte Preta wins by more than 1.5 goals",
-    "move": -0.485,
-    "price": 0.01,
-    "close": "2026-10-14T22:00:00+00:00"
    },
    {
     "ticker": "KXSVKCUPGAME-26OCT13CADFTP-TIE",
@@ -6153,18 +6137,34 @@
     "move": -0.475,
     "price": 0.015,
     "close": "2026-10-16T00:30:00+00:00"
+   },
+   {
+    "ticker": "KXCONMEBOLSUDTOTAL-26OCT13BOCVDG-6",
+    "series": "KXCONMEBOLSUDTOTAL",
+    "title": "Reg Time: Over 5.5 goals scored",
+    "move": -0.475,
+    "price": 0.02,
+    "close": "2026-10-16T00:30:00+00:00"
+   },
+   {
+    "ticker": "KXTFF1LIGGAME-26OCT13SARBOD-SAR",
+    "series": "KXTFF1LIGGAME",
+    "title": "Sariyer",
+    "move": -0.47,
+    "price": 0.005,
+    "close": "2026-10-15T14:00:00+00:00"
    }
   ]
  },
  "models": {
   "tennis": {
-   "matches": 21426,
-   "training_rows": 14952,
+   "matches": 21427,
+   "training_rows": 14953,
    "holdout": {
     "from": "2026-09-08",
     "matches": 2243,
-    "elo_log_loss": 0.6581,
-    "model_log_loss": 0.6515,
+    "elo_log_loss": 0.6582,
+    "model_log_loss": 0.6516,
     "elo_accuracy": 0.61,
     "model_accuracy": 0.626
    },
@@ -6258,31 +6258,31 @@
    "holdout": {
     "matches": 659,
     "rating_log_loss": 0.6247,
-    "model_log_loss": 0.6199,
+    "model_log_loss": 0.6217,
     "rating_accuracy": 0.656,
-    "model_accuracy": 0.646
+    "model_accuracy": 0.651
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6044,
-    "model_log_loss": 0.6199,
+    "model_log_loss": 0.6217,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 659
    },
    "backtest": {
-    "bets": 14,
-    "wins": 4,
-    "units": -8.5,
-    "roi": -0.348
+    "bets": 17,
+    "wins": 7,
+    "units": 0.1,
+    "roi": 0.004
    },
    "weights": {
-    "home_field": 0.253,
+    "home_field": 0.251,
     "rating": 1.535,
-    "rest": 0.247,
-    "point_diff_form": 0.234,
-    "qb_change": 0.331,
-    "epa": 0.156
+    "rest": 0.244,
+    "point_diff_form": 0.241,
+    "qb_change": 0.278,
+    "epa": 0.16
    },
    "matches": 4442,
    "totals": {
@@ -6554,8 +6554,8 @@
    "expected_end": "2026-10-16T03:00:00+00:00",
    "start_est": "2026-10-16T00:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.445,
-   "close_price": 0.445,
+   "latest_price": 0.435,
+   "close_price": 0.435,
    "pnl": null,
    "why": "Projected score margin +17.6 (home) and total 61.5. Model gives \"Under 67.5 points\" 64%. Blended with the market that's 52% vs a 48% price. Price down 4\u00a2 in the last 12 hours.",
    "trend": -0.04,
@@ -6632,8 +6632,8 @@
    "expected_end": "2026-10-15T02:30:00+00:00",
    "start_est": "2026-10-14T23:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.575,
-   "close_price": 0.575,
+   "latest_price": 0.57,
+   "close_price": 0.57,
    "pnl": null,
    "why": "Expected goals 2.02 vs 1.20 (3.22 total). Model gives \"No: Miami wins by more than 1.5 goals\" 66%. Blended with the market that's 62% vs a 58% price.",
    "trend": 0.01,
@@ -7104,8 +7104,8 @@
    "expected_end": "2026-10-15T03:00:00+00:00",
    "start_est": "2026-10-15T00:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.67,
-   "close_price": 0.67,
+   "latest_price": 0.675,
+   "close_price": 0.675,
    "pnl": null,
    "why": "Shohei Ohtani: 2.26 a game this season over 139 games (adjusted 2.23). Model gives \"Shohei Ohtani: 1+\" 89%. Blended with the market that's 73% vs a 68% price.",
    "trend": 0.01,
@@ -7143,8 +7143,8 @@
    "expected_end": "2026-10-15T02:30:00+00:00",
    "start_est": "2026-10-14T23:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.335,
-   "close_price": 0.335,
+   "latest_price": 0.355,
+   "close_price": 0.355,
    "pnl": null,
    "why": "Expected goals 1.14 vs 1.19 (2.33 total). Model gives \"Under 2.5 goals scored\" 59%. Blended with the market that's 46% vs a 38% price.",
    "trend": 0.0,
@@ -7261,8 +7261,8 @@
    "expected_end": "2026-10-15T03:30:00+00:00",
    "start_est": "2026-10-15T00:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.225,
-   "close_price": 0.225,
+   "latest_price": 0.235,
+   "close_price": 0.235,
    "pnl": null,
    "why": "Expected goals 2.37 vs 1.56 (3.93 total). Model gives \"Saint Louis wins by more than 1.5 goals\" 35%. Blended with the market that's 28% vs a 22% price.",
    "trend": 0.0,
