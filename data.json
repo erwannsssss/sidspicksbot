@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-15T21:38:08.728263+00:00",
+ "updated": "2026-10-15T22:36:15.742402+00:00",
  "status_note": "Last run found 0 new pick(s) and graded 0.",
  "bankroll": 96.02,
  "protection": {
@@ -5709,36 +5709,29 @@
  },
  "learning": {
   "groups": {
-   "nfl:prop_passyds": {
-    "finished": 194,
-    "games": 7,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-13T00:15:00+00:00"
-   },
    "nfl:prop_recyds": {
-    "finished": 1332,
-    "games": 12,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-13T00:15:00+00:00"
-   },
-   "nfl:prop_rec": {
-    "finished": 1190,
-    "games": 13,
+    "finished": 1164,
+    "games": 10,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-10-13T00:15:00+00:00"
    },
    "nfl:prop_rshyds": {
-    "finished": 637,
+    "finished": 593,
     "games": 10,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-10-13T00:15:00+00:00"
    },
    "nfl:prop_rryds": {
-    "finished": 152,
+    "finished": 140,
+    "games": 10,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-13T00:15:00+00:00"
+   },
+   "nfl:prop_rec": {
+    "finished": 1044,
     "games": 12,
     "trust": 0.25,
     "confidence_fix": false,
@@ -5760,6 +5753,13 @@
    },
    "nfl:total_1q": {
     "finished": 92,
+    "games": 6,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-13T00:15:00+00:00"
+   },
+   "nfl:prop_passyds": {
+    "finished": 178,
     "games": 6,
     "trust": 0.25,
     "confidence_fix": false,
@@ -6111,22 +6111,22 @@
   },
   "price_trend": {
    "flat": {
-    "markets": 11170,
+    "markets": 10901,
     "hit_vs_price": -0.0
    },
-   "falling": {
-    "markets": 1445,
-    "hit_vs_price": -0.019
-   },
    "rising": {
-    "markets": 1435,
-    "hit_vs_price": 0.02
+    "markets": 1382,
+    "hit_vs_price": 0.023
+   },
+   "falling": {
+    "markets": 1391,
+    "hit_vs_price": -0.022
    }
   }
  },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "tracker": {
-  "tracked": 223312,
+  "tracked": 223317,
   "series": 3978,
   "movers": [
    {
@@ -6353,31 +6353,31 @@
    "holdout": {
     "matches": 659,
     "rating_log_loss": 0.6247,
-    "model_log_loss": 0.6226,
+    "model_log_loss": 0.6198,
     "rating_accuracy": 0.656,
-    "model_accuracy": 0.649
+    "model_accuracy": 0.648
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6044,
-    "model_log_loss": 0.6226,
+    "model_log_loss": 0.6198,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 659
    },
    "backtest": {
-    "bets": 16,
-    "wins": 6,
-    "units": -3.0,
-    "roi": -0.109
+    "bets": 15,
+    "wins": 5,
+    "units": -6.2,
+    "roi": -0.237
    },
    "weights": {
-    "home_field": 0.253,
-    "rating": 1.545,
-    "rest": 0.247,
-    "point_diff_form": 0.244,
-    "qb_change": 0.26,
-    "epa": 0.156
+    "home_field": 0.252,
+    "rating": 1.543,
+    "rest": 0.246,
+    "point_diff_form": 0.237,
+    "qb_change": 0.316,
+    "epa": 0.154
    },
    "matches": 4442,
    "totals": {
@@ -6688,8 +6688,8 @@
    "expected_end": "2026-10-17T03:00:00+00:00",
    "start_est": "2026-10-17T00:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.425,
-   "close_price": 0.425,
+   "latest_price": 0.43,
+   "close_price": 0.43,
    "pnl": null,
    "why": "Projected score margin -3.4 (home) and total 54.0. Model gives \"No: Purdue wins by over 2.5 points\" 64%. Blended with the market that's 47% vs a 42% price.",
    "trend": 0.0,
@@ -6886,8 +6886,8 @@
    "expected_end": "2026-10-17T03:00:00+00:00",
    "start_est": "2026-10-17T16:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.475,
-   "close_price": 0.475,
+   "latest_price": 0.47,
+   "close_price": 0.47,
    "pnl": null,
    "why": "Ratings 1585 vs 1490, on the road. Point differential last 5: +53 vs +15. Days of rest 13 vs 7. Model gives Cincinnati 62%. Blended with the market that's 51% vs a 47% price. Sharp sportsbook price (Pinnacle) says 47%.",
    "trend": -0.002,
@@ -7398,8 +7398,8 @@
    "expected_end": "2026-10-18T20:00:00+00:00",
    "start_est": "2026-10-18T17:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.585,
-   "close_price": 0.585,
+   "latest_price": 0.58,
+   "close_price": 0.58,
    "pnl": null,
    "why": "Rhamondre Stevenson: 52 a game lately (last 12 games). Model gives \"Rhamondre Stevenson: under 70\" 78%. Blended with the market that's 58% vs a 53% price. Price up 2\u00a2 in the last 12 hours.",
    "trend": 0.02,
@@ -7437,8 +7437,8 @@
    "expected_end": "2026-10-17T21:00:00+00:00",
    "start_est": "2026-10-17T18:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.21,
-   "close_price": 0.21,
+   "latest_price": 0.215,
+   "close_price": 0.215,
    "pnl": null,
    "why": "Ratings 1590 vs 1661, at home. Point differential last 5: +24 vs +86. Days of rest 6 vs 13. Model gives North Dakota 43%. Blended with the market that's 26% vs a 21% price. Price down 10\u00a2 in the last 12 hours. Sharp sportsbook price (Pinnacle) says 84%.",
    "trend": -0.104,
@@ -7517,8 +7517,8 @@
    "expected_end": "2026-10-18T23:25:00+00:00",
    "start_est": "2026-10-18T20:25:00+00:00",
    "status": "pending",
-   "latest_price": 0.285,
-   "close_price": 0.285,
+   "latest_price": 0.28,
+   "close_price": 0.28,
    "pnl": null,
    "why": "Josh Allen: 49 a game lately (last 12 games). Model gives \"Josh Allen: 50+\" 50%. Blended with the market that's 32% vs a 28% price.",
    "trend": -0.01,
@@ -7673,8 +7673,8 @@
    "expected_end": "2026-10-17T20:00:00+00:00",
    "start_est": "2026-10-17T17:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.495,
-   "close_price": 0.495,
+   "latest_price": 0.49,
+   "close_price": 0.49,
    "pnl": null,
    "why": "Projected score margin +20.7 (home) and total 49.1. Model gives \"Under 56.5 points\" 67%. Blended with the market that's 56% vs a 50% price. Sharp sportsbook price (1 books) says 50%.",
    "trend": -0.01,
@@ -7831,8 +7831,8 @@
    "expected_end": "2026-10-17T16:30:00+00:00",
    "start_est": "2026-10-17T13:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.38,
-   "close_price": 0.38,
+   "latest_price": 0.375,
+   "close_price": 0.375,
    "pnl": null,
    "why": "Expected goals 1.04 vs 2.76 (3.80 total). Model gives \"Dortmund wins by more than 1.5 goals\" 53%. Blended with the market that's 43% vs a 38% price.",
    "trend": 0.0,
