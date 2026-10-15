@@ -1569,5 +1569,97 @@
     "expected_end": "2026-10-15T03:00:00+00:00"
    }
   ]
+ },
+ {
+  "id": "PARLAY-202610150044-1",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-10-15T00:44:50.928165+00:00",
+  "units": 1.0,
+  "price": 0.1287,
+  "model_prob": 0.2545,
+  "ev": 0.978,
+  "payout_units": 6.8,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXNCAAFSPREAD-26OCT17OSUIND-OSU3:no",
+    "ticker": "KXNCAAFSPREAD-26OCT17OSUIND-OSU3",
+    "side": "no",
+    "market": "No: Ohio St. wins by over 2.5 points",
+    "matchup": "Ohio State at Indiana",
+    "sport": "Football",
+    "price": 0.42,
+    "model_prob": 0.577,
+    "edge": 0.139,
+    "expected_end": "2026-10-17T19:00:00+00:00"
+   },
+   {
+    "id": "KXNCAAFTEAMTOTAL-26OCT17NDBYU-BYU18",
+    "ticker": "KXNCAAFTEAMTOTAL-26OCT17NDBYU-BYU18",
+    "side": "yes",
+    "market": "BYU over 17.5 points",
+    "matchup": "Notre Dame at BYU",
+    "sport": "Football",
+    "price": 0.46,
+    "model_prob": 0.611,
+    "edge": 0.134,
+    "expected_end": "2026-10-18T02:30:00+00:00"
+   },
+   {
+    "id": "KXMLSTEAMTOTAL-26OCT14LAFCATX-LAFC3:no",
+    "ticker": "KXMLSTEAMTOTAL-26OCT14LAFCATX-LAFC3",
+    "side": "no",
+    "market": "Los Angeles F under 2.5 goals",
+    "matchup": "Los Angeles F vs Austin",
+    "sport": "Soccer",
+    "price": 0.6,
+    "model_prob": 0.722,
+    "edge": 0.105,
+    "expected_end": "2026-10-15T05:30:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": "PARLAY-202610150044-2",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-10-15T00:44:50.928199+00:00",
+  "units": 1.0,
+  "price": 0.2003,
+  "model_prob": 0.3351,
+  "ev": 0.673,
+  "payout_units": 4.0,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXNCAAFSPREAD-26OCT17UNCDUKE-DUKE8",
+    "ticker": "KXNCAAFSPREAD-26OCT17UNCDUKE-DUKE8",
+    "side": "yes",
+    "market": "Duke wins by over 7.5 points",
+    "matchup": "North Carolina at Duke",
+    "sport": "Football",
+    "price": 0.35,
+    "model_prob": 0.507,
+    "edge": 0.141,
+    "expected_end": "2026-10-17T22:30:00+00:00"
+   },
+   {
+    "id": "KXNFLPASSTDS-26OCT18TENIND-INDDJONES17-2:no",
+    "ticker": "KXNFLPASSTDS-26OCT18TENIND-INDDJONES17-2",
+    "side": "no",
+    "market": "Daniel Jones: under 2",
+    "matchup": "TEN at IND",
+    "sport": "Football",
+    "price": 0.53,
+    "model_prob": 0.661,
+    "edge": 0.114,
+    "expected_end": "2026-10-18T20:00:00+00:00"
+   }
+  ]
  }
 ]
