@@ -1582,8 +1582,8 @@
   "model_prob": 0.2545,
   "ev": 0.978,
   "payout_units": 6.8,
-  "status": "pending",
-  "pnl": null,
+  "status": "loss",
+  "pnl": -1.0,
   "legs": [
    {
     "id": "KXNCAAFSPREAD-26OCT17OSUIND-OSU3:no",
@@ -1619,9 +1619,11 @@
     "price": 0.6,
     "model_prob": 0.722,
     "edge": 0.105,
-    "expected_end": "2026-10-15T05:30:00+00:00"
+    "expected_end": "2026-10-15T05:30:00+00:00",
+    "result": "loss"
    }
-  ]
+  ],
+  "graded": "2026-10-15T04:36:42.495791+00:00"
  },
  {
   "id": "PARLAY-202610150044-2",
