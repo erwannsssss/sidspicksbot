@@ -1,6 +1,6 @@
 {
- "updated": "2026-10-15T05:36:40.747662+00:00",
- "status_note": "Last run found 0 new pick(s) and graded 3.",
+ "updated": "2026-10-15T06:44:47.060703+00:00",
+ "status_note": "Last run found 0 new pick(s) and graded 0.",
  "bankroll": 96.02,
  "protection": {
   "bankroll": 96.02,
@@ -5709,22 +5709,8 @@
  },
  "learning": {
   "groups": {
-   "nfl:total": {
-    "finished": 404,
-    "games": 13,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-13T00:15:00+00:00"
-   },
-   "nfl:prop_passyds": {
-    "finished": 432,
-    "games": 12,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-13T00:15:00+00:00"
-   },
    "nfl:prop_recyds": {
-    "finished": 2122,
+    "finished": 2112,
     "games": 13,
     "trust": 0.25,
     "confidence_fix": false,
@@ -5877,6 +5863,20 @@
     "confidence_fix": false,
     "last": "2026-10-13T00:15:00+00:00"
    },
+   "nfl:total": {
+    "finished": 386,
+    "games": 13,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-13T00:15:00+00:00"
+   },
+   "nfl:prop_passyds": {
+    "finished": 396,
+    "games": 11,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-13T00:15:00+00:00"
+   },
    "nfl:prop_rryds": {
     "finished": 212,
     "games": 13,
@@ -5941,8 +5941,8 @@
     "last": "2026-10-15T02:30:00+00:00"
    },
    "tennis:winner": {
-    "finished": 442,
-    "games": 221,
+    "finished": 444,
+    "games": 222,
     "trust": 0.27,
     "confidence_fix": false,
     "last": "2026-10-15T03:00:00+00:00"
@@ -6110,23 +6110,23 @@
    }
   },
   "price_trend": {
-   "falling": {
-    "markets": 1653,
-    "hit_vs_price": -0.02
+   "flat": {
+    "markets": 14702,
+    "hit_vs_price": -0.0
    },
    "rising": {
-    "markets": 1633,
-    "hit_vs_price": 0.021
+    "markets": 1621,
+    "hit_vs_price": 0.018
    },
-   "flat": {
-    "markets": 14740,
-    "hit_vs_price": -0.0
+   "falling": {
+    "markets": 1641,
+    "hit_vs_price": -0.017
    }
   }
  },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "tracker": {
-  "tracked": 213661,
+  "tracked": 213820,
   "series": 3908,
   "movers": [
    {
@@ -6136,6 +6136,22 @@
     "move": 0.73,
     "price": 0.975,
     "close": "2026-10-15T14:00:00+00:00"
+   },
+   {
+    "ticker": "KXDOTA2GAME-26OCT150000RBXCTN-XCTN",
+    "series": "KXDOTA2GAME",
+    "title": "Execration",
+    "move": -0.505,
+    "price": 0.005,
+    "close": "2026-10-17T04:00:00+00:00"
+   },
+   {
+    "ticker": "KXDOTA2GAME-26OCT150000RBXCTN-RB",
+    "series": "KXDOTA2GAME",
+    "title": "Royal Bear",
+    "move": 0.505,
+    "price": 0.995,
+    "close": "2026-10-17T04:00:00+00:00"
    },
    {
     "ticker": "KXSVKCUPGAME-26OCT13BLVZEM-BLV",
@@ -6168,6 +6184,14 @@
     "move": -0.495,
     "price": 0.005,
     "close": "2026-10-16T10:00:00+00:00"
+   },
+   {
+    "ticker": "KXDOTA2MAP-26OCT150000RBXCTN-2-RB",
+    "series": "KXDOTA2MAP",
+    "title": "Royal Bear",
+    "move": 0.495,
+    "price": 0.995,
+    "close": "2026-10-17T04:00:00+00:00"
    },
    {
     "ticker": "KXSVKCUPGAME-26OCT13CADFTP-TIE",
@@ -6224,58 +6248,34 @@
     "move": -0.475,
     "price": 0.015,
     "close": "2026-10-16T00:30:00+00:00"
-   },
-   {
-    "ticker": "KXCONMEBOLSUDTOTAL-26OCT13BOCVDG-6",
-    "series": "KXCONMEBOLSUDTOTAL",
-    "title": "Reg Time: Over 5.5 goals scored",
-    "move": -0.475,
-    "price": 0.02,
-    "close": "2026-10-16T00:30:00+00:00"
-   },
-   {
-    "ticker": "KXTFF1LIGGAME-26OCT13SARBOD-SAR",
-    "series": "KXTFF1LIGGAME",
-    "title": "Sariyer",
-    "move": -0.47,
-    "price": 0.005,
-    "close": "2026-10-15T14:00:00+00:00"
-   },
-   {
-    "ticker": "KXUCLFTTS-26OCT13VIKBMU-NONE",
-    "series": "KXUCLFTTS",
-    "title": "No Goal",
-    "move": -0.47,
-    "price": 0.01,
-    "close": "2026-10-16T01:00:00+00:00"
    }
   ]
  },
  "models": {
   "tennis": {
-   "matches": 21430,
-   "training_rows": 14956,
+   "matches": 21431,
+   "training_rows": 14957,
    "holdout": {
     "from": "2026-09-08",
     "matches": 2244,
-    "elo_log_loss": 0.6589,
-    "model_log_loss": 0.6522,
+    "elo_log_loss": 0.659,
+    "model_log_loss": 0.6523,
     "elo_accuracy": 0.609,
     "model_accuracy": 0.625
    },
    "using": "full",
    "weights": {
-    "elo": 2.016,
+    "elo": 2.017,
     "dominance": 0.0,
     "rank": 0.0,
-    "h2h": 0.456,
-    "form": -0.505,
+    "h2h": 0.459,
+    "form": -0.507,
     "fatigue_games": -0.222,
     "fatigue_matches": 0.072,
     "rest": 0.001,
     "travel": 0.146,
     "altitude": 0.0,
-    "best_of_5": 0.592
+    "best_of_5": 0.591
    },
    "sport": "Tennis",
    "label": "Tennis",
@@ -6353,30 +6353,30 @@
    "holdout": {
     "matches": 659,
     "rating_log_loss": 0.6247,
-    "model_log_loss": 0.6219,
+    "model_log_loss": 0.622,
     "rating_accuracy": 0.656,
-    "model_accuracy": 0.649
+    "model_accuracy": 0.648
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6044,
-    "model_log_loss": 0.6219,
+    "model_log_loss": 0.622,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 659
    },
    "backtest": {
     "bets": 14,
-    "wins": 4,
-    "units": -7.9,
-    "roi": -0.31
+    "wins": 3,
+    "units": -13.6,
+    "roi": -0.512
    },
    "weights": {
-    "home_field": 0.251,
-    "rating": 1.537,
-    "rest": 0.248,
-    "point_diff_form": 0.232,
-    "qb_change": 0.335,
+    "home_field": 0.253,
+    "rating": 1.538,
+    "rest": 0.243,
+    "point_diff_form": 0.234,
+    "qb_change": 0.329,
     "epa": 0.156
    },
    "matches": 4442,
@@ -7359,8 +7359,8 @@
    "expected_end": "2026-10-17T22:00:00+00:00",
    "start_est": "2026-10-17T19:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.41,
-   "close_price": 0.41,
+   "latest_price": 0.4,
+   "close_price": 0.4,
    "pnl": null,
    "why": "Ratings 1406 vs 1371, at home. Point differential last 5: -116 vs -72. Days of rest 6 vs 7. Model gives Eastern Illinois 66%. Blended with the market that's 47% vs a 41% price. Price down 9\u00a2 in the last 12 hours.",
    "trend": -0.089,
@@ -7478,8 +7478,8 @@
    "expected_end": "2026-10-18T16:30:00+00:00",
    "start_est": "2026-10-18T13:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.52,
-   "close_price": 0.52,
+   "latest_price": 0.515,
+   "close_price": 0.515,
    "pnl": null,
    "why": "Josh Cameron: 26 a game lately (last 5 games). Model gives \"Josh Cameron: 15+\" 76%. Blended with the market that's 58% vs a 53% price.",
    "trend": 0.005,
