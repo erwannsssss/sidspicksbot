@@ -86,87 +86,537 @@
   },
   {
    "lg": "ARG",
-   "home": "Sarmiento Junin",
-   "away": "River Plate",
-   "t": "2026-10-14T22:00:00+00:00"
+   "home": "Defensa y Justicia",
+   "away": "Instituto",
+   "t": "2026-10-16T22:00:00+00:00"
   },
   {
    "lg": "ARG",
-   "home": "Huracan",
-   "away": "Gimnasia L.P.",
-   "t": "2026-10-15T23:00:00+00:00"
+   "home": "Boca Juniors",
+   "away": "Talleres Cordoba",
+   "t": "2026-10-17T00:30:00+00:00"
+  },
+  {
+   "lg": "ARG",
+   "home": "Banfield",
+   "away": "Argentinos Jrs",
+   "t": "2026-10-17T18:00:00+00:00"
+  },
+  {
+   "lg": "ARG",
+   "home": "Ind. Rivadavia",
+   "away": "Tigre",
+   "t": "2026-10-17T20:30:00+00:00"
+  },
+  {
+   "lg": "ARG",
+   "home": "Platense",
+   "away": "Lanus",
+   "t": "2026-10-17T20:30:00+00:00"
+  },
+  {
+   "lg": "ARG",
+   "home": "Atl. Tucuman",
+   "away": "Rosario Central",
+   "t": "2026-10-17T23:00:00+00:00"
+  },
+  {
+   "lg": "ARG",
+   "home": "Velez Sarsfield",
+   "away": "Gimnasia Mendoza",
+   "t": "2026-10-17T23:00:00+00:00"
+  },
+  {
+   "lg": "ARG",
+   "home": "Racing Club",
+   "away": "Independiente",
+   "t": "2026-10-18T17:45:00+00:00"
+  },
+  {
+   "lg": "ARG",
+   "home": "Estudiantes L.P.",
+   "away": "San Lorenzo",
+   "t": "2026-10-18T21:00:00+00:00"
+  },
+  {
+   "lg": "ARG",
+   "home": "Estudiantes Rio Cuarto",
+   "away": "Aldosivi",
+   "t": "2026-10-18T21:00:00+00:00"
+  },
+  {
+   "lg": "ARG",
+   "home": "Belgrano",
+   "away": "River Plate",
+   "t": "2026-10-18T23:15:00+00:00"
+  },
+  {
+   "lg": "ARG",
+   "home": "Newells Old Boys",
+   "away": "Central Cordoba",
+   "t": "2026-10-19T22:00:00+00:00"
+  },
+  {
+   "lg": "ARG",
+   "home": "Sarmiento Junin",
+   "away": "Barracas Central",
+   "t": "2026-10-19T22:00:00+00:00"
+  },
+  {
+   "lg": "ARG",
+   "home": "Dep. Riestra",
+   "away": "Union de Santa Fe",
+   "t": "2026-10-20T00:15:00+00:00"
+  },
+  {
+   "lg": "BRA",
+   "home": "Mirassol",
+   "away": "Internacional",
+   "t": "2026-10-16T23:00:00+00:00"
+  },
+  {
+   "lg": "BRA",
+   "home": "Botafogo RJ",
+   "away": "Chapecoense-SC",
+   "t": "2026-10-17T21:00:00+00:00"
+  },
+  {
+   "lg": "BRA",
+   "home": "Atletico-MG",
+   "away": "Coritiba",
+   "t": "2026-10-17T21:30:00+00:00"
+  },
+  {
+   "lg": "BRA",
+   "home": "Athletico-PR",
+   "away": "Palmeiras",
+   "t": "2026-10-17T22:30:00+00:00"
+  },
+  {
+   "lg": "BRA",
+   "home": "Sao Paulo",
+   "away": "Vasco",
+   "t": "2026-10-18T00:00:00+00:00"
+  },
+  {
+   "lg": "BRA",
+   "home": "Fluminense",
+   "away": "Santos",
+   "t": "2026-10-18T19:00:00+00:00"
+  },
+  {
+   "lg": "BRA",
+   "home": "Gremio",
+   "away": "Cruzeiro",
+   "t": "2026-10-18T19:00:00+00:00"
+  },
+  {
+   "lg": "BRA",
+   "home": "Bahia",
+   "away": "Flamengo RJ",
+   "t": "2026-10-18T21:30:00+00:00"
+  },
+  {
+   "lg": "BRA",
+   "home": "Remo",
+   "away": "Bragantino",
+   "t": "2026-10-18T22:30:00+00:00"
+  },
+  {
+   "lg": "BRA",
+   "home": "Corinthians",
+   "away": "Vitoria",
+   "t": "2026-10-19T23:00:00+00:00"
+  },
+  {
+   "lg": "DNK",
+   "home": "Horsens",
+   "away": "Randers FC",
+   "t": "2026-10-16T17:00:00+00:00"
+  },
+  {
+   "lg": "DNK",
+   "home": "Lyngby",
+   "away": "Nordsjaelland",
+   "t": "2026-10-18T12:00:00+00:00"
+  },
+  {
+   "lg": "DNK",
+   "home": "Sonderjyske",
+   "away": "Silkeborg",
+   "t": "2026-10-18T12:00:00+00:00"
+  },
+  {
+   "lg": "DNK",
+   "home": "Odense",
+   "away": "Brondby",
+   "t": "2026-10-18T14:00:00+00:00"
+  },
+  {
+   "lg": "DNK",
+   "home": "FC Copenhagen",
+   "away": "Aarhus",
+   "t": "2026-10-18T16:00:00+00:00"
+  },
+  {
+   "lg": "DNK",
+   "home": "Viborg",
+   "away": "Midtjylland",
+   "t": "2026-10-19T17:00:00+00:00"
+  },
+  {
+   "lg": "JPN",
+   "home": "Shimizu S-Pulse",
+   "away": "Gamba Osaka",
+   "t": "2026-10-17T04:00:00+00:00"
+  },
+  {
+   "lg": "JPN",
+   "home": "Chiba",
+   "away": "Yokohama F. Marinos",
+   "t": "2026-10-17T05:00:00+00:00"
+  },
+  {
+   "lg": "JPN",
+   "home": "Sanfrecce Hiroshima",
+   "away": "Kyoto",
+   "t": "2026-10-17T05:00:00+00:00"
+  },
+  {
+   "lg": "JPN",
+   "home": "Verdy",
+   "away": "FC Tokyo",
+   "t": "2026-10-17T05:00:00+00:00"
+  },
+  {
+   "lg": "JPN",
+   "home": "Cerezo Osaka",
+   "away": "Kawasaki Frontale",
+   "t": "2026-10-17T06:00:00+00:00"
+  },
+  {
+   "lg": "JPN",
+   "home": "Kashima Antlers",
+   "away": "V-Varen Nagasaki",
+   "t": "2026-10-17T06:00:00+00:00"
+  },
+  {
+   "lg": "JPN",
+   "home": "Mito",
+   "away": "Urawa Reds",
+   "t": "2026-10-17T07:00:00+00:00"
+  },
+  {
+   "lg": "JPN",
+   "home": "Kashiwa Reysol",
+   "away": "Nagoya Grampus",
+   "t": "2026-10-17T10:00:00+00:00"
+  },
+  {
+   "lg": "JPN",
+   "home": "Okayama",
+   "away": "Vissel Kobe",
+   "t": "2026-10-18T04:55:00+00:00"
+  },
+  {
+   "lg": "JPN",
+   "home": "Machida",
+   "away": "Avispa Fukuoka",
+   "t": "2026-10-18T07:00:00+00:00"
+  },
+  {
+   "lg": "MEX",
+   "home": "Necaxa",
+   "away": "Atlas",
+   "t": "2026-10-17T01:00:00+00:00"
+  },
+  {
+   "lg": "MEX",
+   "home": "Atlante",
+   "away": "UNAM Pumas",
+   "t": "2026-10-17T03:00:00+00:00"
+  },
+  {
+   "lg": "MEX",
+   "home": "Club Tijuana",
+   "away": "Puebla",
+   "t": "2026-10-17T03:05:00+00:00"
+  },
+  {
+   "lg": "MEX",
+   "home": "Santos Laguna",
+   "away": "Queretaro",
+   "t": "2026-10-17T23:00:00+00:00"
+  },
+  {
+   "lg": "MEX",
+   "home": "Guadalajara Chivas",
+   "away": "Tigres UANL",
+   "t": "2026-10-17T23:07:00+00:00"
+  },
+  {
+   "lg": "MEX",
+   "home": "Club Leon",
+   "away": "Club America",
+   "t": "2026-10-18T01:00:00+00:00"
+  },
+  {
+   "lg": "MEX",
+   "home": "Toluca",
+   "away": "Atl. San Luis",
+   "t": "2026-10-18T01:00:00+00:00"
+  },
+  {
+   "lg": "MEX",
+   "home": "Cruz Azul",
+   "away": "Juarez",
+   "t": "2026-10-18T03:10:00+00:00"
+  },
+  {
+   "lg": "MEX",
+   "home": "Monterrey",
+   "away": "Pachuca",
+   "t": "2026-10-19T01:00:00+00:00"
+  },
+  {
+   "lg": "NOR",
+   "home": "HamKam",
+   "away": "Bodo/Glimt",
+   "t": "2026-10-17T12:00:00+00:00"
+  },
+  {
+   "lg": "NOR",
+   "home": "Kristiansund",
+   "away": "Aalesund",
+   "t": "2026-10-17T14:00:00+00:00"
+  },
+  {
+   "lg": "NOR",
+   "home": "Viking",
+   "away": "Fredrikstad",
+   "t": "2026-10-17T16:00:00+00:00"
+  },
+  {
+   "lg": "NOR",
+   "home": "Sarpsborg 08",
+   "away": "Rosenborg",
+   "t": "2026-10-18T12:30:00+00:00"
+  },
+  {
+   "lg": "NOR",
+   "home": "Molde",
+   "away": "Start",
+   "t": "2026-10-18T15:00:00+00:00"
+  },
+  {
+   "lg": "NOR",
+   "home": "Sandefjord",
+   "away": "Lillestrom",
+   "t": "2026-10-18T15:00:00+00:00"
+  },
+  {
+   "lg": "NOR",
+   "home": "Valerenga",
+   "away": "Brann",
+   "t": "2026-10-18T15:00:00+00:00"
+  },
+  {
+   "lg": "NOR",
+   "home": "Tromso",
+   "away": "KFUM Oslo",
+   "t": "2026-10-18T17:15:00+00:00"
+  },
+  {
+   "lg": "POL",
+   "home": "Wieczysta Krakow",
+   "away": "Rakow",
+   "t": "2026-10-16T16:00:00+00:00"
+  },
+  {
+   "lg": "POL",
+   "home": "Widzew Lodz",
+   "away": "Wisla",
+   "t": "2026-10-16T18:30:00+00:00"
+  },
+  {
+   "lg": "POL",
+   "home": "Motor Lublin",
+   "away": "Slask Wroclaw",
+   "t": "2026-10-17T12:45:00+00:00"
+  },
+  {
+   "lg": "POL",
+   "home": "GKS Katowice",
+   "away": "Pogon Szczecin",
+   "t": "2026-10-17T15:30:00+00:00"
+  },
+  {
+   "lg": "POL",
+   "home": "Cracovia",
+   "away": "Legia",
+   "t": "2026-10-17T18:15:00+00:00"
+  },
+  {
+   "lg": "POL",
+   "home": "Gornik Zabrze",
+   "away": "Piast Gliwice",
+   "t": "2026-10-18T10:15:00+00:00"
+  },
+  {
+   "lg": "POL",
+   "home": "Zaglebie",
+   "away": "Jagiellonia",
+   "t": "2026-10-18T12:45:00+00:00"
+  },
+  {
+   "lg": "POL",
+   "home": "Lech Poznan",
+   "away": "Korona Kielce",
+   "t": "2026-10-18T15:30:00+00:00"
+  },
+  {
+   "lg": "POL",
+   "home": "Wisla Plock",
+   "away": "Radomiak Radom",
+   "t": "2026-10-19T17:00:00+00:00"
+  },
+  {
+   "lg": "SWE",
+   "home": "Brommapojkarna",
+   "away": "Djurgarden",
+   "t": "2026-10-16T17:00:00+00:00"
+  },
+  {
+   "lg": "SWE",
+   "home": "AIK",
+   "away": "Goteborg",
+   "t": "2026-10-17T15:30:00+00:00"
+  },
+  {
+   "lg": "SWE",
+   "home": "Sirius",
+   "away": "Elfsborg",
+   "t": "2026-10-18T12:00:00+00:00"
+  },
+  {
+   "lg": "SWE",
+   "home": "Vasteras SK",
+   "away": "Mjallby",
+   "t": "2026-10-18T12:00:00+00:00"
+  },
+  {
+   "lg": "SWE",
+   "home": "Halmstad",
+   "away": "Hammarby",
+   "t": "2026-10-18T14:30:00+00:00"
+  },
+  {
+   "lg": "SWE",
+   "home": "Malmo FF",
+   "away": "Hacken",
+   "t": "2026-10-18T14:30:00+00:00"
+  },
+  {
+   "lg": "SWE",
+   "home": "Orgryte",
+   "away": "GAIS",
+   "t": "2026-10-18T14:30:00+00:00"
+  },
+  {
+   "lg": "SWE",
+   "home": "Degerfors",
+   "away": "Kalmar",
+   "t": "2026-10-19T17:00:00+00:00"
   },
   {
    "lg": "USA",
-   "home": "Columbus Crew",
+   "home": "Philadelphia Union",
    "away": "Charlotte",
-   "t": "2026-10-14T23:30:00+00:00"
+   "t": "2026-10-17T18:30:00+00:00"
   },
   {
    "lg": "USA",
-   "home": "DC United",
-   "away": "New York Red Bulls",
-   "t": "2026-10-14T23:30:00+00:00"
+   "home": "Minnesota United",
+   "away": "St. Louis City",
+   "t": "2026-10-17T20:30:00+00:00"
   },
   {
    "lg": "USA",
-   "home": "FC Cincinnati",
-   "away": "New England Revolution",
-   "t": "2026-10-14T23:30:00+00:00"
+   "home": "Atlanta Utd",
+   "away": "Inter Miami",
+   "t": "2026-10-17T23:30:00+00:00"
   },
   {
    "lg": "USA",
-   "home": "Inter Miami",
-   "away": "New York City",
-   "t": "2026-10-14T23:30:00+00:00"
+   "home": "New England Revolution",
+   "away": "Chicago Fire",
+   "t": "2026-10-17T23:30:00+00:00"
   },
   {
    "lg": "USA",
-   "home": "Chicago Fire",
-   "away": "Philadelphia Union",
-   "t": "2026-10-15T00:30:00+00:00"
+   "home": "New York City",
+   "away": "Los Angeles FC",
+   "t": "2026-10-17T23:30:00+00:00"
   },
   {
    "lg": "USA",
-   "home": "FC Dallas",
-   "away": "Seattle Sounders",
-   "t": "2026-10-15T00:30:00+00:00"
+   "home": "New York Red Bulls",
+   "away": "Toronto FC",
+   "t": "2026-10-17T23:30:00+00:00"
   },
   {
    "lg": "USA",
-   "home": "Nashville SC",
-   "away": "Sporting Kansas City",
-   "t": "2026-10-15T00:30:00+00:00"
+   "home": "Orlando City",
+   "away": "DC United",
+   "t": "2026-10-17T23:30:00+00:00"
   },
   {
    "lg": "USA",
-   "home": "Colorado Rapids",
-   "away": "Minnesota United",
-   "t": "2026-10-15T01:30:00+00:00"
+   "home": "Austin FC",
+   "away": "Vancouver Whitecaps",
+   "t": "2026-10-18T00:30:00+00:00"
   },
   {
    "lg": "USA",
-   "home": "Real Salt Lake",
-   "away": "San Jose Earthquakes",
-   "t": "2026-10-15T01:30:00+00:00"
+   "home": "Houston Dynamo",
+   "away": "FC Dallas",
+   "t": "2026-10-18T00:30:00+00:00"
   },
   {
    "lg": "USA",
-   "home": "Los Angeles FC",
-   "away": "Austin FC",
-   "t": "2026-10-15T02:30:00+00:00"
+   "home": "Sporting Kansas City",
+   "away": "Real Salt Lake",
+   "t": "2026-10-18T00:30:00+00:00"
   },
   {
    "lg": "USA",
    "home": "Los Angeles Galaxy",
-   "away": "Portland Timbers",
-   "t": "2026-10-15T02:30:00+00:00"
+   "away": "San Diego FC",
+   "t": "2026-10-18T02:30:00+00:00"
   },
   {
    "lg": "USA",
-   "home": "San Diego FC",
-   "away": "Houston Dynamo",
-   "t": "2026-10-15T02:30:00+00:00"
+   "home": "Portland Timbers",
+   "away": "Colorado Rapids",
+   "t": "2026-10-18T02:30:00+00:00"
+  },
+  {
+   "lg": "USA",
+   "home": "San Jose Earthquakes",
+   "away": "Nashville SC",
+   "t": "2026-10-18T02:30:00+00:00"
+  },
+  {
+   "lg": "USA",
+   "home": "Seattle Sounders",
+   "away": "CF Montreal",
+   "t": "2026-10-18T02:30:00+00:00"
+  },
+  {
+   "lg": "USA",
+   "home": "FC Cincinnati",
+   "away": "Columbus Crew",
+   "t": "2026-10-18T21:00:00+00:00"
   }
  ]
 }
