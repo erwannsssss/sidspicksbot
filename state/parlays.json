@@ -1664,5 +1664,85 @@
     "expected_end": "2026-10-18T20:00:00+00:00"
    }
   ]
+ },
+ {
+  "id": "PARLAY-202610160045-1",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-10-16T00:45:33.413570+00:00",
+  "units": 1.0,
+  "price": 0.115,
+  "model_prob": 0.2377,
+  "ev": 1.067,
+  "payout_units": 7.7,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXMLSTOTAL-26OCT17MINSTL-5",
+    "ticker": "KXMLSTOTAL-26OCT17MINSTL-5",
+    "side": "yes",
+    "market": "Over 4.5 goals scored",
+    "matchup": "Minnesota vs Saint Louis",
+    "sport": "Soccer",
+    "price": 0.25,
+    "model_prob": 0.412,
+    "edge": 0.149,
+    "expected_end": "2026-10-17T23:30:00+00:00"
+   },
+   {
+    "id": "KXNCAAFSPREAD-26OCT17OSUIND-OSU3:no",
+    "ticker": "KXNCAAFSPREAD-26OCT17OSUIND-OSU3",
+    "side": "no",
+    "market": "No: Ohio St. wins by over 2.5 points",
+    "matchup": "Ohio State at Indiana",
+    "sport": "Football",
+    "price": 0.42,
+    "model_prob": 0.577,
+    "edge": 0.139,
+    "expected_end": "2026-10-17T19:00:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": "PARLAY-202610160045-2",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-10-16T00:45:33.413607+00:00",
+  "units": 1.0,
+  "price": 0.1747,
+  "model_prob": 0.3098,
+  "ev": 0.773,
+  "payout_units": 4.7,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXNCAAFSPREAD-26OCT17UNCDUKE-DUKE8",
+    "ticker": "KXNCAAFSPREAD-26OCT17UNCDUKE-DUKE8",
+    "side": "yes",
+    "market": "Duke wins by over 7.5 points",
+    "matchup": "North Carolina at Duke",
+    "sport": "Football",
+    "price": 0.35,
+    "model_prob": 0.507,
+    "edge": 0.141,
+    "expected_end": "2026-10-17T22:30:00+00:00"
+   },
+   {
+    "id": "KXNCAAFTEAMTOTAL-26OCT17NDBYU-BYU18",
+    "ticker": "KXNCAAFTEAMTOTAL-26OCT17NDBYU-BYU18",
+    "side": "yes",
+    "market": "BYU over 17.5 points",
+    "matchup": "Notre Dame at BYU",
+    "sport": "Football",
+    "price": 0.46,
+    "model_prob": 0.611,
+    "edge": 0.134,
+    "expected_end": "2026-10-18T02:30:00+00:00"
+   }
+  ]
  }
 ]
