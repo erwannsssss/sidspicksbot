@@ -1,6 +1,6 @@
 {
- "updated": "2026-10-16T18:40:04.753950+00:00",
- "status_note": "Last run found 1 new pick(s) and graded 0.",
+ "updated": "2026-10-16T19:33:56.792799+00:00",
+ "status_note": "Last run found 0 new pick(s) and graded 0.",
  "bankroll": 96.02,
  "protection": {
   "bankroll": 96.02,
@@ -121,8 +121,8 @@
    "expected_end": "2026-10-19T22:00:00+00:00",
    "start_est": "2026-10-19T19:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.59,
-   "close_price": null,
+   "latest_price": 0.58,
+   "close_price": 0.58,
    "pnl": null,
    "why": "Expected goals 1.15 vs 1.37 (2.52 total). Model gives \"No: Tottenham wins by more than 1.5 goals\" 87%. Blended with the market that's 66% vs a 59% price.",
    "trend": 0.0,
@@ -5786,96 +5786,96 @@
  },
  "learning": {
   "groups": {
-   "soccer:first_to_score": {
-    "finished": 249,
-    "games": 42,
-    "trust": 0.41,
-    "confidence_fix": false,
-    "last": "2026-10-15T02:30:00+00:00"
-   },
    "soccer:correct_score": {
-    "finished": 1234,
-    "games": 42,
+    "finished": 1157,
+    "games": 41,
     "trust": 0.44,
     "confidence_fix": false,
     "last": "2026-10-15T02:30:00+00:00"
    },
    "soccer:team_total": {
-    "finished": 504,
-    "games": 42,
+    "finished": 492,
+    "games": 41,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-10-15T02:30:00+00:00"
+   },
+   "soccer:btts_1h": {
+    "finished": 106,
+    "games": 53,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-15T02:30:00+00:00"
+   },
+   "soccer:spread_1h": {
+    "finished": 212,
+    "games": 54,
+    "trust": 0.48,
+    "confidence_fix": false,
+    "last": "2026-10-16T17:30:00+00:00"
+   },
+   "soccer:total_1h": {
+    "finished": 318,
+    "games": 53,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-15T02:30:00+00:00"
+   },
+   "soccer:btts_2h": {
+    "finished": 74,
+    "games": 37,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-15T02:30:00+00:00"
+   },
+   "soccer:spread_2h": {
+    "finished": 148,
+    "games": 37,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-15T02:30:00+00:00"
+   },
+   "soccer:total_2h": {
+    "finished": 222,
+    "games": 37,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-15T02:30:00+00:00"
+   },
+   "soccer:first_to_score": {
+    "finished": 240,
+    "games": 40,
+    "trust": 0.41,
+    "confidence_fix": false,
+    "last": "2026-10-15T02:30:00+00:00"
+   },
+   "soccer:spread": {
+    "finished": 504,
+    "games": 68,
+    "trust": 0.27,
+    "confidence_fix": false,
+    "last": "2026-10-16T17:00:00+00:00"
    },
    "soccer:winner": {
     "finished": 200,
     "games": 67,
     "trust": 0.36,
     "confidence_fix": false,
-    "last": "2026-10-16T16:00:00+00:00"
+    "last": "2026-10-16T17:00:00+00:00"
    },
    "soccer:btts": {
     "finished": 134,
     "games": 67,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-16T16:00:00+00:00"
-   },
-   "soccer:spread": {
-    "finished": 502,
-    "games": 67,
-    "trust": 0.27,
-    "confidence_fix": false,
-    "last": "2026-10-16T16:00:00+00:00"
+    "last": "2026-10-16T17:00:00+00:00"
    },
    "soccer:total": {
     "finished": 766,
     "games": 68,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-16T16:30:00+00:00"
-   },
-   "soccer:btts_1h": {
-    "finished": 108,
-    "games": 54,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-15T02:30:00+00:00"
-   },
-   "soccer:spread_1h": {
-    "finished": 214,
-    "games": 54,
-    "trust": 0.48,
-    "confidence_fix": false,
-    "last": "2026-10-15T02:30:00+00:00"
-   },
-   "soccer:total_1h": {
-    "finished": 324,
-    "games": 54,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-15T02:30:00+00:00"
-   },
-   "soccer:btts_2h": {
-    "finished": 76,
-    "games": 38,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-15T02:30:00+00:00"
-   },
-   "soccer:spread_2h": {
-    "finished": 152,
-    "games": 38,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-15T02:30:00+00:00"
-   },
-   "soccer:total_2h": {
-    "finished": 228,
-    "games": 38,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-15T02:30:00+00:00"
+    "last": "2026-10-16T17:30:00+00:00"
    },
    "mlb:winner": {
     "finished": 14,
@@ -6278,23 +6278,23 @@
    }
   },
   "price_trend": {
-   "rising": {
-    "markets": 1274,
-    "hit_vs_price": 0.019
+   "flat": {
+    "markets": 9299,
+    "hit_vs_price": 0.0
    },
    "falling": {
-    "markets": 1277,
+    "markets": 1263,
     "hit_vs_price": -0.019
    },
-   "flat": {
-    "markets": 9374,
-    "hit_vs_price": 0.0
+   "rising": {
+    "markets": 1259,
+    "hit_vs_price": 0.018
    }
   }
  },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "tracker": {
-  "tracked": 230960,
+  "tracked": 231265,
   "series": 3994,
   "movers": [
    {
@@ -6521,31 +6521,31 @@
    "holdout": {
     "matches": 659,
     "rating_log_loss": 0.6251,
-    "model_log_loss": 0.6229,
+    "model_log_loss": 0.6218,
     "rating_accuracy": 0.654,
-    "model_accuracy": 0.648
+    "model_accuracy": 0.646
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6051,
-    "model_log_loss": 0.6229,
+    "model_log_loss": 0.6218,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 659
    },
    "backtest": {
-    "bets": 13,
-    "wins": 3,
-    "units": -11.6,
-    "roi": -0.472
+    "bets": 18,
+    "wins": 7,
+    "units": -2.9,
+    "roi": -0.094
    },
    "weights": {
-    "home_field": 0.25,
-    "rating": 1.543,
+    "home_field": 0.252,
+    "rating": 1.535,
     "rest": 0.243,
-    "point_diff_form": 0.234,
-    "qb_change": 0.326,
-    "epa": 0.152
+    "point_diff_form": 0.238,
+    "qb_change": 0.291,
+    "epa": 0.156
    },
    "matches": 4443,
    "totals": {
@@ -7568,8 +7568,8 @@
    "expected_end": "2026-10-18T20:00:00+00:00",
    "start_est": "2026-10-18T17:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.29,
-   "close_price": 0.29,
+   "latest_price": 0.285,
+   "close_price": 0.285,
    "pnl": null,
    "why": "Projected score margin +5.0 (home) and total 46.2. Forecast 58F, wind 7 mph, rain 0.0 mm. Model gives \"New York G wins by over 6.5 points\" 46%. Blended with the market that's 38% vs a 29% price.",
    "trend": 0.0,
@@ -7764,8 +7764,8 @@
    "expected_end": "2026-10-17T19:00:00+00:00",
    "start_est": "2026-10-17T16:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.435,
-   "close_price": 0.435,
+   "latest_price": 0.415,
+   "close_price": 0.415,
    "pnl": null,
    "why": "Projected score margin +10.8 (home) and total 53.0. Model gives \"Kansas St. wins by over 6.5 points\" 61%. Blended with the market that's 49% vs a 45% price.",
    "trend": 0.0,
@@ -7843,8 +7843,8 @@
    "expected_end": "2026-10-17T16:30:00+00:00",
    "start_est": "2026-10-17T13:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.37,
-   "close_price": 0.37,
+   "latest_price": 0.375,
+   "close_price": 0.375,
    "pnl": null,
    "why": "Expected goals 1.04 vs 2.76 (3.80 total). Model gives \"Dortmund wins by more than 1.5 goals\" 53%. Blended with the market that's 43% vs a 38% price.",
    "trend": 0.0,
@@ -8117,8 +8117,8 @@
    "expected_end": "2026-10-17T21:00:00+00:00",
    "start_est": "2026-10-17T18:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.505,
-   "close_price": 0.505,
+   "latest_price": 0.5,
+   "close_price": 0.5,
    "pnl": null,
    "why": "Projected score margin -13.4 (home) and total 52.7. Model gives \"No: Austin Peay wins by over 21.5 points\" 69%. Blended with the market that's 58% vs a 53% price.",
    "trend": 0.0,
@@ -8547,8 +8547,8 @@
    "expected_end": "2026-10-17T16:00:00+00:00",
    "start_est": "2026-10-17T12:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.555,
-   "close_price": 0.555,
+   "latest_price": 0.565,
+   "close_price": 0.565,
    "pnl": null,
    "why": "Ratings 1474 (Venezia, home) vs 1816 (Napoli). Share of chances lately (xG or shots on target) 43% vs 58%. Goal difference last 6: -11 vs +1. Last played Oct 12 vs Oct 13. Model gives the away 69%. Blended with the market that's 61% vs a 57% price. Sharp sportsbook price (Pinnacle) says 56%.",
    "trend": 0.0,
