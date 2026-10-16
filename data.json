@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-16T01:37:37.515578+00:00",
+ "updated": "2026-10-16T02:36:03.996642+00:00",
  "status_note": "Last run found 0 new pick(s) and graded 0.",
  "bankroll": 96.02,
  "protection": {
@@ -5789,110 +5789,12 @@
  },
  "learning": {
   "groups": {
-   "nfl:total": {
-    "finished": 162,
-    "games": 5,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-13T00:15:00+00:00"
-   },
-   "nfl:prop_passyds": {
-    "finished": 176,
-    "games": 5,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-13T00:15:00+00:00"
-   },
-   "nfl:prop_recyds": {
-    "finished": 876,
-    "games": 5,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-13T00:15:00+00:00"
-   },
-   "nfl:prop_rshyds": {
-    "finished": 510,
-    "games": 5,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-13T00:15:00+00:00"
-   },
-   "nfl:prop_passtds": {
-    "finished": 74,
-    "games": 5,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-13T00:15:00+00:00"
-   },
    "nfl:total_1q": {
-    "finished": 76,
+    "finished": 83,
     "games": 5,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-13T00:15:00+00:00"
-   },
-   "nfl:total_2h": {
-    "finished": 108,
-    "games": 5,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-13T00:15:00+00:00"
-   },
-   "nfl:team_total": {
-    "finished": 208,
-    "games": 5,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-13T00:15:00+00:00"
-   },
-   "nfl:total_1h": {
-    "finished": 106,
-    "games": 5,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-13T00:15:00+00:00"
-   },
-   "nfl:prop_rryds": {
-    "finished": 96,
-    "games": 5,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-13T00:15:00+00:00"
-   },
-   "nfl:prop_rec": {
-    "finished": 731,
-    "games": 5,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-13T00:15:00+00:00"
-   },
-   "nfl:winner": {
-    "finished": 8,
-    "games": 4,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-13T00:15:00+00:00"
-   },
-   "nfl:spread_1h": {
-    "finished": 122,
-    "games": 4,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-13T00:15:00+00:00"
-   },
-   "nfl:period_winner_1q": {
-    "finished": 16,
-    "games": 4,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-13T00:15:00+00:00"
-   },
-   "nfl:spread_1q": {
-    "finished": 76,
-    "games": 4,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-13T00:15:00+00:00"
+    "last": "2026-10-16T00:15:00+00:00"
    },
    "nfl:spread_2h": {
     "finished": 122,
@@ -5901,26 +5803,33 @@
     "confidence_fix": false,
     "last": "2026-10-13T00:15:00+00:00"
    },
-   "nfl:period_winner_2q": {
-    "finished": 16,
+   "nfl:total_2h": {
+    "finished": 106,
     "games": 4,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-10-13T00:15:00+00:00"
+   },
+   "nfl:period_winner_2q": {
+    "finished": 20,
+    "games": 5,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-16T00:15:00+00:00"
    },
    "nfl:spread_2q": {
-    "finished": 82,
-    "games": 4,
+    "finished": 104,
+    "games": 5,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-13T00:15:00+00:00"
+    "last": "2026-10-16T00:15:00+00:00"
    },
    "nfl:total_2q": {
-    "finished": 80,
-    "games": 4,
+    "finished": 100,
+    "games": 5,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-13T00:15:00+00:00"
+    "last": "2026-10-16T00:15:00+00:00"
    },
    "nfl:period_winner_3q": {
     "finished": 16,
@@ -5970,6 +5879,97 @@
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-10-13T00:15:00+00:00"
+   },
+   "nfl:team_total": {
+    "finished": 208,
+    "games": 5,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-16T00:15:00+00:00"
+   },
+   "nfl:total": {
+    "finished": 152,
+    "games": 4,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-13T00:15:00+00:00"
+   },
+   "nfl:prop_passyds": {
+    "finished": 142,
+    "games": 4,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-13T00:15:00+00:00"
+   },
+   "nfl:prop_recyds": {
+    "finished": 742,
+    "games": 4,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-13T00:15:00+00:00"
+   },
+   "nfl:prop_rshyds": {
+    "finished": 420,
+    "games": 4,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-13T00:15:00+00:00"
+   },
+   "nfl:prop_passtds": {
+    "finished": 60,
+    "games": 4,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-13T00:15:00+00:00"
+   },
+   "nfl:winner": {
+    "finished": 6,
+    "games": 3,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-13T00:15:00+00:00"
+   },
+   "nfl:spread_1h": {
+    "finished": 118,
+    "games": 4,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-16T00:15:00+00:00"
+   },
+   "nfl:total_1h": {
+    "finished": 104,
+    "games": 5,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-16T00:15:00+00:00"
+   },
+   "nfl:period_winner_1q": {
+    "finished": 16,
+    "games": 4,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-16T00:15:00+00:00"
+   },
+   "nfl:spread_1q": {
+    "finished": 76,
+    "games": 4,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-16T00:15:00+00:00"
+   },
+   "nfl:prop_rryds": {
+    "finished": 84,
+    "games": 4,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-13T00:15:00+00:00"
+   },
+   "nfl:prop_rec": {
+    "finished": 629,
+    "games": 5,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-16T00:15:00+00:00"
    },
    "soccer:winner": {
     "finished": 212,
@@ -6070,18 +6070,18 @@
     "last": "2026-10-15T17:00:00+00:00"
    },
    "mlb:spread_f5": {
-    "finished": 40,
-    "games": 5,
+    "finished": 48,
+    "games": 6,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-15T17:00:00+00:00"
+    "last": "2026-10-16T00:00:00+00:00"
    },
    "mlb:total_f5": {
-    "finished": 70,
-    "games": 5,
+    "finished": 84,
+    "games": 6,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-15T17:00:00+00:00"
+    "last": "2026-10-16T00:00:00+00:00"
    },
    "mlb:spread": {
     "finished": 60,
@@ -6098,11 +6098,11 @@
     "last": "2026-10-15T17:00:00+00:00"
    },
    "mlb:total": {
-    "finished": 102,
-    "games": 5,
+    "finished": 118,
+    "games": 6,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-15T17:00:00+00:00"
+    "last": "2026-10-16T00:00:00+00:00"
    },
    "mlb:prop_ks": {
     "finished": 148,
@@ -6168,45 +6168,87 @@
     "last": "2026-10-15T00:00:00+00:00"
    },
    "cfb:team_total": {
-    "finished": 170,
-    "games": 6,
+    "finished": 216,
+    "games": 7,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-15T23:30:00+00:00"
+    "last": "2026-10-16T00:00:00+00:00"
    },
    "cfb:spread_1h": {
-    "finished": 252,
-    "games": 6,
+    "finished": 296,
+    "games": 7,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-15T23:30:00+00:00"
+    "last": "2026-10-16T00:00:00+00:00"
    },
    "cfb:total_1h": {
-    "finished": 160,
-    "games": 6,
+    "finished": 192,
+    "games": 7,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-15T23:30:00+00:00"
+    "last": "2026-10-16T00:00:00+00:00"
+   },
+   "cfb:period_winner_1q": {
+    "finished": 4,
+    "games": 1,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-16T00:00:00+00:00"
+   },
+   "cfb:spread_1q": {
+    "finished": 28,
+    "games": 1,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-16T00:00:00+00:00"
+   },
+   "cfb:total_1q": {
+    "finished": 22,
+    "games": 1,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-16T00:00:00+00:00"
+   },
+   "cfb:period_winner_2q": {
+    "finished": 4,
+    "games": 1,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-16T00:00:00+00:00"
+   },
+   "cfb:spread_2q": {
+    "finished": 22,
+    "games": 1,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-16T00:00:00+00:00"
+   },
+   "cfb:total_2q": {
+    "finished": 22,
+    "games": 1,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-16T00:00:00+00:00"
    }
   },
   "price_trend": {
    "flat": {
-    "markets": 10036,
+    "markets": 9919,
     "hit_vs_price": 0.0
    },
    "rising": {
-    "markets": 1240,
-    "hit_vs_price": 0.013
+    "markets": 1248,
+    "hit_vs_price": 0.025
    },
    "falling": {
-    "markets": 1248,
-    "hit_vs_price": -0.014
+    "markets": 1256,
+    "hit_vs_price": -0.027
    }
   }
  },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "tracker": {
-  "tracked": 225813,
+  "tracked": 226393,
   "series": 3978,
   "movers": [
    {
@@ -6433,31 +6475,31 @@
    "holdout": {
     "matches": 659,
     "rating_log_loss": 0.6247,
-    "model_log_loss": 0.6216,
+    "model_log_loss": 0.6239,
     "rating_accuracy": 0.656,
-    "model_accuracy": 0.646
+    "model_accuracy": 0.64
    },
-   "using": "full",
+   "using": "rating",
    "market": {
     "market_log_loss": 0.6044,
-    "model_log_loss": 0.6216,
+    "model_log_loss": 0.6247,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 659
    },
    "backtest": {
-    "bets": 16,
-    "wins": 6,
-    "units": -1.5,
-    "roi": -0.054
+    "bets": 29,
+    "wins": 7,
+    "units": -17.5,
+    "roi": -0.347
    },
    "weights": {
-    "home_field": 0.252,
-    "rating": 1.537,
-    "rest": 0.243,
-    "point_diff_form": 0.237,
-    "qb_change": 0.27,
-    "epa": 0.159
+    "home_field": 0.243,
+    "rating": 2.167,
+    "rest": 0.0,
+    "point_diff_form": 0.0,
+    "qb_change": 0.0,
+    "epa": 0.0
    },
    "matches": 4442,
    "totals": {
@@ -7478,8 +7520,8 @@
    "expected_end": "2026-10-18T20:00:00+00:00",
    "start_est": "2026-10-18T17:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.56,
-   "close_price": 0.56,
+   "latest_price": 0.555,
+   "close_price": 0.555,
    "pnl": null,
    "why": "Rhamondre Stevenson: 52 a game lately (last 12 games). Model gives \"Rhamondre Stevenson: under 70\" 78%. Blended with the market that's 58% vs a 53% price. Price up 2\u00a2 in the last 12 hours.",
    "trend": 0.02,
@@ -7517,8 +7559,8 @@
    "expected_end": "2026-10-17T21:00:00+00:00",
    "start_est": "2026-10-17T18:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.215,
-   "close_price": 0.215,
+   "latest_price": 0.22,
+   "close_price": 0.22,
    "pnl": null,
    "why": "Ratings 1590 vs 1661, at home. Point differential last 5: +24 vs +86. Days of rest 6 vs 13. Model gives North Dakota 43%. Blended with the market that's 26% vs a 21% price. Price down 10\u00a2 in the last 12 hours. Sharp sportsbook price (Pinnacle) says 84%.",
    "trend": -0.104,
@@ -8067,8 +8109,8 @@
    "expected_end": "2026-10-20T03:15:00+00:00",
    "start_est": "2026-10-20T00:15:00+00:00",
    "status": "pending",
-   "latest_price": 0.47,
-   "close_price": 0.47,
+   "latest_price": 0.48,
+   "close_price": 0.48,
    "pnl": null,
    "why": "Jayden Daniels: 54 a game lately (last 10 games). Model gives \"Jayden Daniels: 40+\" 69%. Blended with the market that's 52% vs a 48% price.",
    "trend": 0.0,
@@ -8499,8 +8541,8 @@
    "expected_end": "2026-10-19T04:00:00+00:00",
    "start_est": "2026-10-19T00:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.21,
-   "close_price": 0.21,
+   "latest_price": 0.205,
+   "close_price": 0.205,
    "pnl": null,
    "why": "Ratings 1472 (Monterrey, home) vs 1539 (Pachuca). Share of chances lately (xG or shots on target) 50% vs 50%. Goal difference last 6: -5 vs +4. Last played Oct 11 vs Oct 12. Model gives the away 34%. Blended with the market that's 26% vs a 22% price.",
    "trend": 0.0,
