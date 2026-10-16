@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-16T05:35:23.955725+00:00",
+ "updated": "2026-10-16T06:44:57.638983+00:00",
  "status_note": "Last run found 0 new pick(s) and graded 0.",
  "bankroll": 96.02,
  "protection": {
@@ -5730,58 +5730,15 @@
      }
     ],
     "graded": "2026-10-03T02:26:04.276938+00:00"
-   },
-   {
-    "id": "PARLAY-202609280031-2",
-    "tier": "P",
-    "sport": "Parlay",
-    "kind": "watchlist",
-    "made": "2026-09-28T00:31:48.972654+00:00",
-    "units": 1.0,
-    "price": 0.0717,
-    "model_prob": 0.1099,
-    "ev": 0.532,
-    "payout_units": 12.9,
-    "status": "loss",
-    "pnl": -1.0,
-    "legs": [
-     {
-      "id": "KXLIGAMXSPREAD-26SEP27NCXAME-AME2",
-      "ticker": "KXLIGAMXSPREAD-26SEP27NCXAME-AME2",
-      "side": "yes",
-      "market": "America wins by more than 1.5 goals",
-      "matchup": "Necaxa vs America",
-      "sport": "Soccer",
-      "price": 0.27,
-      "model_prob": 0.35,
-      "edge": 0.067,
-      "expected_end": "2026-09-28T06:00:00+00:00",
-      "result": "win"
-     },
-     {
-      "id": "KXNCAAFSPREAD-26OCT01UNTTLSA-UNT8",
-      "ticker": "KXNCAAFSPREAD-26OCT01UNTTLSA-UNT8",
-      "side": "yes",
-      "market": "North Texas wins by over 7.5 points",
-      "matchup": "North Texas at Tulsa",
-      "sport": "Football",
-      "price": 0.24,
-      "model_prob": 0.314,
-      "edge": 0.061,
-      "expected_end": "2026-10-02T04:00:00+00:00",
-      "result": "loss"
-     }
-    ],
-    "graded": "2026-10-02T05:24:09.287980+00:00"
    }
   ],
   "summary": {
-   "picks": 31,
+   "picks": 30,
    "wins": 5,
-   "losses": 26,
-   "units": 6.44,
-   "staked": 31.0,
-   "roi": 0.208,
+   "losses": 25,
+   "units": 7.44,
+   "staked": 30.0,
+   "roi": 0.248,
    "beat_price": null,
    "clv": null,
    "clv_picks": 0
@@ -5789,15 +5746,8 @@
  },
  "learning": {
   "groups": {
-   "nfl:prop_passyds": {
-    "finished": 143,
-    "games": 5,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-16T00:15:00+00:00"
-   },
    "nfl:prop_recyds": {
-    "finished": 946,
+    "finished": 877,
     "games": 5,
     "trust": 0.25,
     "confidence_fix": false,
@@ -5952,6 +5902,13 @@
    },
    "nfl:total": {
     "finished": 152,
+    "games": 5,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-16T00:15:00+00:00"
+   },
+   "nfl:prop_passyds": {
+    "finished": 140,
     "games": 5,
     "trust": 0.25,
     "confidence_fix": false,
@@ -6282,7 +6239,7 @@
   },
   "price_trend": {
    "flat": {
-    "markets": 10712,
+    "markets": 10640,
     "hit_vs_price": 0.0
    },
    "falling": {
@@ -6424,8 +6381,8 @@
  },
  "models": {
   "tennis": {
-   "matches": 21477,
-   "training_rows": 15001,
+   "matches": 21478,
+   "training_rows": 15002,
    "holdout": {
     "from": "2026-09-09",
     "matches": 2251,
@@ -6436,11 +6393,11 @@
    },
    "using": "full",
    "weights": {
-    "elo": 2.024,
+    "elo": 2.023,
     "dominance": 0.0,
     "rank": 0.0,
     "h2h": 0.465,
-    "form": -0.53,
+    "form": -0.527,
     "fatigue_games": -0.225,
     "fatigue_matches": 0.072,
     "rest": -0.001,
@@ -6524,31 +6481,31 @@
    "holdout": {
     "matches": 659,
     "rating_log_loss": 0.6247,
-    "model_log_loss": 0.6217,
+    "model_log_loss": 0.6209,
     "rating_accuracy": 0.656,
-    "model_accuracy": 0.645
+    "model_accuracy": 0.649
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6044,
-    "model_log_loss": 0.6217,
+    "model_log_loss": 0.6209,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 659
    },
    "backtest": {
-    "bets": 14,
-    "wins": 4,
-    "units": -8.5,
-    "roi": -0.348
+    "bets": 17,
+    "wins": 6,
+    "units": -4.5,
+    "roi": -0.156
    },
    "weights": {
-    "home_field": 0.252,
+    "home_field": 0.253,
     "rating": 1.538,
     "rest": 0.252,
-    "point_diff_form": 0.231,
-    "qb_change": 0.326,
-    "epa": 0.157
+    "point_diff_form": 0.24,
+    "qb_change": 0.312,
+    "epa": 0.154
    },
    "matches": 4442,
    "totals": {
@@ -7374,8 +7331,8 @@
    "expected_end": "2026-10-17T22:00:00+00:00",
    "start_est": "2026-10-17T19:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.45,
-   "close_price": 0.45,
+   "latest_price": 0.455,
+   "close_price": 0.455,
    "pnl": null,
    "why": "Ratings 1406 vs 1371, at home. Point differential last 5: -116 vs -72. Days of rest 6 vs 7. Model gives Eastern Illinois 66%. Blended with the market that's 47% vs a 41% price. Price down 9\u00a2 in the last 12 hours.",
    "trend": -0.089,
@@ -7493,8 +7450,8 @@
    "expected_end": "2026-10-18T16:30:00+00:00",
    "start_est": "2026-10-18T13:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.515,
-   "close_price": 0.515,
+   "latest_price": 0.505,
+   "close_price": 0.505,
    "pnl": null,
    "why": "Josh Cameron: 26 a game lately (last 5 games). Model gives \"Josh Cameron: 15+\" 76%. Blended with the market that's 58% vs a 53% price.",
    "trend": 0.005,
@@ -8198,8 +8155,8 @@
    "expected_end": "2026-10-18T23:25:00+00:00",
    "start_est": "2026-10-18T20:25:00+00:00",
    "status": "pending",
-   "latest_price": 0.205,
-   "close_price": 0.205,
+   "latest_price": 0.2,
+   "close_price": 0.2,
    "pnl": null,
    "why": "Kenneth Walker III: 113 a game lately (last 12 games). Model gives \"Kenneth Walker III: 130+\" 37%. Blended with the market that's 25% vs a 22% price.",
    "trend": 0.005,
@@ -8277,8 +8234,8 @@
    "expected_end": "2026-10-16T21:45:00+00:00",
    "start_est": "2026-10-16T18:15:00+00:00",
    "status": "pending",
-   "latest_price": 0.305,
-   "close_price": 0.305,
+   "latest_price": 0.295,
+   "close_price": 0.295,
    "pnl": null,
    "why": "Expected goals 1.28 vs 1.40 (2.68 total). Model gives \"No: Both Teams To Score\" 46%. Blended with the market that's 34% vs a 31% price.",
    "trend": -0.015,

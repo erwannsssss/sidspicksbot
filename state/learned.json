@@ -1,6 +1,5 @@
 {
  "trust": {
-  "nfl:prop_passyds": 0.25,
   "nfl:prop_recyds": 0.25,
   "nfl:prop_rshyds": 0.25,
   "nfl:prop_passtds": 0.25,
@@ -24,6 +23,7 @@
   "nfl:spread": 0.25,
   "nfl:team_total": 0.25,
   "nfl:total": 0.25,
+  "nfl:prop_passyds": 0.25,
   "nfl:prop_rryds": 0.25,
   "nfl:prop_rec": 0.25,
   "soccer:winner": 0.36,
@@ -72,8 +72,7 @@
   "cfb:total_4q": 0.25
  },
  "trust_league": {
-  "nfl:prop_passyds|NFL": 0.25,
-  "nfl:prop_recyds|NFL": 0.25,
+  "nfl:prop_recyds|NFL": 0.36,
   "nfl:prop_rshyds|NFL": 0.25,
   "nfl:prop_passtds|NFL": 0.25,
   "nfl:spread_1h|NFL": 0.25,
@@ -91,6 +90,7 @@
   "nfl:spread|NFL": 0.25,
   "nfl:team_total|NFL": 0.25,
   "nfl:total|NFL": 0.25,
+  "nfl:prop_passyds|NFL": 0.25,
   "nfl:prop_rryds|NFL": 0.26,
   "nfl:prop_rec|NFL": 0.65,
   "soccer:total|Brasileirao": 0.25,
@@ -139,8 +139,7 @@
  },
  "calib": {},
  "counts": {
-  "nfl:prop_passyds": 143,
-  "nfl:prop_recyds": 946,
+  "nfl:prop_recyds": 877,
   "nfl:prop_rshyds": 534,
   "nfl:prop_passtds": 74,
   "nfl:winner": 8,
@@ -163,6 +162,7 @@
   "nfl:spread": 198,
   "nfl:team_total": 204,
   "nfl:total": 152,
+  "nfl:prop_passyds": 140,
   "nfl:prop_rryds": 124,
   "nfl:prop_rec": 774,
   "soccer:winner": 212,
@@ -211,7 +211,6 @@
   "cfb:total_4q": 22
  },
  "games": {
-  "nfl:prop_passyds": 5,
   "nfl:prop_recyds": 5,
   "nfl:prop_rshyds": 5,
   "nfl:prop_passtds": 5,
@@ -235,6 +234,7 @@
   "nfl:spread": 4,
   "nfl:team_total": 5,
   "nfl:total": 5,
+  "nfl:prop_passyds": 5,
   "nfl:prop_rryds": 5,
   "nfl:prop_rec": 5,
   "soccer:winner": 71,
@@ -283,7 +283,6 @@
   "cfb:total_4q": 1
  },
  "last": {
-  "nfl:prop_passyds": "2026-10-16T00:15:00+00:00",
   "nfl:prop_recyds": "2026-10-16T00:15:00+00:00",
   "nfl:prop_rshyds": "2026-10-16T00:15:00+00:00",
   "nfl:prop_passtds": "2026-10-16T00:15:00+00:00",
@@ -307,6 +306,7 @@
   "nfl:spread": "2026-10-16T00:15:00+00:00",
   "nfl:team_total": "2026-10-16T00:15:00+00:00",
   "nfl:total": "2026-10-16T00:15:00+00:00",
+  "nfl:prop_passyds": "2026-10-16T00:15:00+00:00",
   "nfl:prop_rryds": "2026-10-16T00:15:00+00:00",
   "nfl:prop_rec": "2026-10-16T00:15:00+00:00",
   "soccer:winner": "2026-10-15T23:00:00+00:00",
@@ -354,5 +354,5 @@
   "cfb:spread_4q": "2026-10-16T00:00:00+00:00",
   "cfb:total_4q": "2026-10-16T00:00:00+00:00"
  },
- "updated": "2026-10-16T05:32:44.154186+00:00"
+ "updated": "2026-10-16T06:41:11.298334+00:00"
 }
