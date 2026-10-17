@@ -1,6 +1,6 @@
 {
- "updated": "2026-10-17T21:31:53.014355+00:00",
- "status_note": "Last run found 2 new pick(s) and graded 5.",
+ "updated": "2026-10-17T22:31:52.710485+00:00",
+ "status_note": "Last run found 1 new pick(s) and graded 2.",
  "bankroll": 92.9,
  "protection": {
   "bankroll": 92.9,
@@ -121,8 +121,8 @@
    "expected_end": "2026-10-19T22:00:00+00:00",
    "start_est": "2026-10-19T19:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.585,
-   "close_price": 0.585,
+   "latest_price": 0.595,
+   "close_price": 0.595,
    "pnl": null,
    "why": "Expected goals 1.15 vs 1.37 (2.52 total). Model gives \"No: Tottenham wins by more than 1.5 goals\" 87%. Blended with the market that's 66% vs a 59% price.",
    "trend": 0.0,
@@ -170,7 +170,8 @@
    "sharp_prob": null,
    "research": "",
    "sources": [],
-   "expert_lean": "none"
+   "expert_lean": "none",
+   "prechecked": true
   },
   {
    "id": "KXLIGAMXSPREAD-26OCT17SLAQUE-SLA2:no",
@@ -199,8 +200,8 @@
    "expected_end": "2026-10-18T02:00:00+00:00",
    "start_est": "2026-10-17T23:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.76,
-   "close_price": null,
+   "latest_price": 0.765,
+   "close_price": 0.765,
    "pnl": null,
    "why": "Expected goals 0.84 vs 1.35 (2.19 total). Model gives \"No: Santos Laguna wins by more than 1.5 goals\" 93%. Blended with the market that's 83% vs a 76% price. Price down 2\u00a2 in the last 12 hours.",
    "trend": -0.02,
@@ -209,7 +210,8 @@
    "sharp_prob": null,
    "research": "",
    "sources": [],
-   "expert_lean": "none"
+   "expert_lean": "none",
+   "prechecked": true
   },
   {
    "id": "KXLALIGA1HTOTAL-26OCT18RMASEV-3",
@@ -238,13 +240,52 @@
    "expected_end": "2026-10-18T22:00:00+00:00",
    "start_est": "2026-10-18T19:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.21,
-   "close_price": null,
+   "latest_price": 0.2,
+   "close_price": 0.2,
    "pnl": null,
    "why": "Expected goals 1.31 vs 0.33 (1.64 total). Model gives \"Over 2.5 1H goals scored\" 23%. Blended with the market that's 27% vs a 21% price.",
    "trend": 0.0,
    "new_market": false,
    "trust": 0.25,
+   "sharp_prob": null,
+   "research": "",
+   "sources": [],
+   "expert_lean": "none"
+  },
+  {
+   "id": "KXMLSSPREAD-26OCT17NYRBTOR-NYRB2:no",
+   "ticker": "KXMLSSPREAD-26OCT17NYRBTOR-NYRB2",
+   "side": "no",
+   "event": "KXMLSSPREAD-26OCT17NYRBTOR",
+   "game": "26OCT17NYRBTOR",
+   "sport": "Soccer",
+   "model_key": "soccer",
+   "mtype": "spread",
+   "line": 1.5,
+   "tour": "MLS",
+   "tournament": "New York RB vs Toronto",
+   "matchup": "New York RB vs Toronto",
+   "surface": "",
+   "pick": "No: New York RB wins by more than 1.5 goals",
+   "opponent": "",
+   "market": "No: New York RB wins by more than 1.5 goals",
+   "price": 0.65,
+   "model_prob": 0.718,
+   "raw_prob": 0.782,
+   "edge": 0.052,
+   "tier": "B",
+   "units": 1.0,
+   "made": "2026-10-17T22:28:23.945743+00:00",
+   "expected_end": "2026-10-18T02:30:00+00:00",
+   "start_est": "2026-10-17T23:30:00+00:00",
+   "status": "pending",
+   "latest_price": 0.65,
+   "close_price": null,
+   "pnl": null,
+   "why": "Expected goals 1.58 vs 1.33 (2.91 total). Model gives \"No: New York RB wins by more than 1.5 goals\" 78%. Blended with the market that's 72% vs a 65% price.",
+   "trend": -0.01,
+   "new_market": false,
+   "trust": 0.35,
    "sharp_prob": null,
    "research": "",
    "sources": [],
@@ -6148,29 +6189,8 @@
  },
  "learning": {
   "groups": {
-   "mlb:prop_ks": {
-    "finished": 131,
-    "games": 5,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-16T00:00:00+00:00"
-   },
-   "soccer:correct_score": {
-    "finished": 1564,
-    "games": 59,
-    "trust": 0.49,
-    "confidence_fix": false,
-    "last": "2026-10-17T18:45:00+00:00"
-   },
-   "mlb:prop_hit": {
-    "finished": 336,
-    "games": 5,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-16T00:00:00+00:00"
-   },
    "mlb:prop_hr": {
-    "finished": 136,
+    "finished": 128,
     "games": 5,
     "trust": 0.25,
     "confidence_fix": false,
@@ -6401,53 +6421,53 @@
     "last": "2026-10-17T19:00:00+00:00"
    },
    "soccer:total": {
-    "finished": 1390,
-    "games": 122,
+    "finished": 1392,
+    "games": 123,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-17T19:00:00+00:00"
+    "last": "2026-10-17T20:00:00+00:00"
    },
    "soccer:btts_1h": {
-    "finished": 198,
-    "games": 99,
+    "finished": 202,
+    "games": 101,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-10-17T19:00:00+00:00"
    },
    "soccer:spread_1h": {
-    "finished": 384,
-    "games": 98,
-    "trust": 0.52,
-    "confidence_fix": false,
-    "last": "2026-10-17T18:45:00+00:00"
-   },
-   "soccer:total_1h": {
-    "finished": 588,
-    "games": 98,
-    "trust": 0.25,
-    "confidence_fix": true,
-    "last": "2026-10-17T18:45:00+00:00"
-   },
-   "soccer:btts_2h": {
-    "finished": 116,
-    "games": 58,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-17T18:45:00+00:00"
-   },
-   "soccer:spread_2h": {
-    "finished": 230,
-    "games": 58,
+    "finished": 396,
+    "games": 101,
     "trust": 0.53,
     "confidence_fix": false,
-    "last": "2026-10-17T18:45:00+00:00"
+    "last": "2026-10-17T19:00:00+00:00"
    },
-   "soccer:total_2h": {
-    "finished": 348,
-    "games": 58,
+   "soccer:total_1h": {
+    "finished": 606,
+    "games": 101,
+    "trust": 0.25,
+    "confidence_fix": true,
+    "last": "2026-10-17T19:00:00+00:00"
+   },
+   "soccer:btts_2h": {
+    "finished": 118,
+    "games": 59,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-17T18:45:00+00:00"
+    "last": "2026-10-17T19:00:00+00:00"
+   },
+   "soccer:spread_2h": {
+    "finished": 234,
+    "games": 59,
+    "trust": 0.53,
+    "confidence_fix": false,
+    "last": "2026-10-17T19:00:00+00:00"
+   },
+   "soccer:total_2h": {
+    "finished": 354,
+    "games": 59,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-17T19:00:00+00:00"
    },
    "soccer:first_to_score": {
     "finished": 210,
@@ -6456,54 +6476,61 @@
     "confidence_fix": false,
     "last": "2026-10-17T16:30:00+00:00"
    },
-   "soccer:team_total": {
-    "finished": 702,
+   "soccer:correct_score": {
+    "finished": 1580,
     "games": 59,
+    "trust": 0.49,
+    "confidence_fix": false,
+    "last": "2026-10-17T19:00:00+00:00"
+   },
+   "soccer:team_total": {
+    "finished": 714,
+    "games": 60,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-17T18:45:00+00:00"
+    "last": "2026-10-17T19:00:00+00:00"
    },
    "cfb:winner": {
-    "finished": 86,
-    "games": 43,
+    "finished": 94,
+    "games": 47,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-17T18:00:00+00:00"
+    "last": "2026-10-17T19:00:00+00:00"
    },
    "cfb:spread": {
-    "finished": 1266,
-    "games": 34,
+    "finished": 1344,
+    "games": 37,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-17T18:00:00+00:00"
+    "last": "2026-10-17T19:00:00+00:00"
    },
    "cfb:total": {
-    "finished": 956,
-    "games": 34,
+    "finished": 1022,
+    "games": 37,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-17T18:00:00+00:00"
+    "last": "2026-10-17T19:00:00+00:00"
    },
    "cfb:team_total": {
-    "finished": 565,
-    "games": 13,
+    "finished": 683,
+    "games": 20,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-17T17:00:00+00:00"
+    "last": "2026-10-17T19:30:00+00:00"
    },
    "cfb:spread_1h": {
-    "finished": 552,
-    "games": 13,
+    "finished": 848,
+    "games": 20,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-17T17:00:00+00:00"
+    "last": "2026-10-17T19:30:00+00:00"
    },
    "cfb:total_1h": {
-    "finished": 360,
-    "games": 13,
+    "finished": 522,
+    "games": 20,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-17T17:00:00+00:00"
+    "last": "2026-10-17T19:30:00+00:00"
    },
    "mlb:winner": {
     "finished": 8,
@@ -6547,26 +6574,40 @@
     "confidence_fix": false,
     "last": "2026-10-16T00:00:00+00:00"
    },
-   "cfb:period_winner_1q": {
-    "finished": 16,
+   "mlb:prop_ks": {
+    "finished": 110,
     "games": 4,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-17T16:00:00+00:00"
+    "last": "2026-10-16T00:00:00+00:00"
+   },
+   "mlb:prop_hit": {
+    "finished": 294,
+    "games": 4,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-16T00:00:00+00:00"
+   },
+   "cfb:period_winner_1q": {
+    "finished": 32,
+    "games": 8,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-17T19:30:00+00:00"
    },
    "cfb:spread_1q": {
-    "finished": 88,
-    "games": 4,
+    "finished": 162,
+    "games": 8,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-17T16:00:00+00:00"
+    "last": "2026-10-17T19:30:00+00:00"
    },
    "cfb:total_1q": {
-    "finished": 86,
-    "games": 4,
+    "finished": 164,
+    "games": 8,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-17T16:00:00+00:00"
+    "last": "2026-10-17T19:30:00+00:00"
    },
    "cfb:period_winner_2h": {
     "finished": 16,
@@ -6576,46 +6617,46 @@
     "last": "2026-10-17T16:00:00+00:00"
    },
    "cfb:period_winner_2q": {
-    "finished": 16,
-    "games": 4,
+    "finished": 32,
+    "games": 8,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-17T16:00:00+00:00"
+    "last": "2026-10-17T19:30:00+00:00"
    },
    "cfb:spread_2q": {
-    "finished": 82,
-    "games": 4,
+    "finished": 168,
+    "games": 8,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-17T16:00:00+00:00"
+    "last": "2026-10-17T19:30:00+00:00"
    },
    "cfb:total_2q": {
-    "finished": 86,
-    "games": 4,
+    "finished": 170,
+    "games": 8,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-17T16:00:00+00:00"
+    "last": "2026-10-17T19:30:00+00:00"
    },
    "cfb:period_winner_3q": {
-    "finished": 16,
-    "games": 4,
+    "finished": 28,
+    "games": 7,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-17T16:00:00+00:00"
+    "last": "2026-10-17T19:30:00+00:00"
    },
    "cfb:spread_3q": {
-    "finished": 82,
-    "games": 4,
+    "finished": 144,
+    "games": 7,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-17T16:00:00+00:00"
+    "last": "2026-10-17T19:30:00+00:00"
    },
    "cfb:total_3q": {
-    "finished": 86,
-    "games": 4,
+    "finished": 152,
+    "games": 7,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-17T16:00:00+00:00"
+    "last": "2026-10-17T19:30:00+00:00"
    },
    "cfb:period_winner_4q": {
     "finished": 16,
@@ -6640,23 +6681,23 @@
    }
   },
   "price_trend": {
-   "rising": {
-    "markets": 1986,
-    "hit_vs_price": 0.017
-   },
    "flat": {
-    "markets": 11480,
+    "markets": 12566,
     "hit_vs_price": -0.0
    },
    "falling": {
-    "markets": 1981,
-    "hit_vs_price": -0.014
+    "markets": 2038,
+    "hit_vs_price": -0.011
+   },
+   "rising": {
+    "markets": 2042,
+    "hit_vs_price": 0.013
    }
   }
  },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "tracker": {
-  "tracked": 258415,
+  "tracked": 258673,
   "series": 4007,
   "movers": [
    {
@@ -6883,31 +6924,31 @@
    "holdout": {
     "matches": 659,
     "rating_log_loss": 0.6251,
-    "model_log_loss": 0.6235,
+    "model_log_loss": 0.6206,
     "rating_accuracy": 0.654,
-    "model_accuracy": 0.643
+    "model_accuracy": 0.646
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6051,
-    "model_log_loss": 0.6235,
+    "model_log_loss": 0.6206,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
     "matches": 659
    },
    "backtest": {
-    "bets": 16,
-    "wins": 6,
-    "units": -3.0,
-    "roi": -0.11
+    "bets": 15,
+    "wins": 5,
+    "units": -6.2,
+    "roi": -0.237
    },
    "weights": {
-    "home_field": 0.252,
-    "rating": 1.538,
-    "rest": 0.244,
-    "point_diff_form": 0.242,
-    "qb_change": 0.287,
-    "epa": 0.154
+    "home_field": 0.251,
+    "rating": 1.537,
+    "rest": 0.249,
+    "point_diff_form": 0.237,
+    "qb_change": 0.294,
+    "epa": 0.158
    },
    "matches": 4443,
    "totals": {
@@ -6992,15 +7033,15 @@
    "clv_picks": 14
   },
   "watch": {
-   "picks": 513,
-   "wins": 227,
-   "losses": 286,
-   "units": 6.42,
-   "staked": 256.5,
-   "roi": 0.025,
-   "beat_price": 0.335,
-   "clv": -0.0055,
-   "clv_picks": 484
+   "picks": 515,
+   "wins": 228,
+   "losses": 287,
+   "units": 6.6,
+   "staked": 257.5,
+   "roi": 0.026,
+   "beat_price": 0.338,
+   "clv": -0.0053,
+   "clv_picks": 486
   }
  },
  "by_expert_lean": {
@@ -7062,15 +7103,15 @@
    "clv_picks": 5
   },
   "W": {
-   "picks": 513,
-   "wins": 227,
-   "losses": 286,
-   "units": 6.42,
-   "staked": 256.5,
-   "roi": 0.025,
-   "beat_price": 0.335,
-   "clv": -0.0055,
-   "clv_picks": 484
+   "picks": 515,
+   "wins": 228,
+   "losses": 287,
+   "units": 6.6,
+   "staked": 257.5,
+   "roi": 0.026,
+   "beat_price": 0.338,
+   "clv": -0.0053,
+   "clv_picks": 486
   }
  },
  "watch_open": [
@@ -7101,8 +7142,8 @@
    "expected_end": "2026-10-17T03:00:00+00:00",
    "start_est": "2026-10-17T23:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.635,
-   "close_price": 0.635,
+   "latest_price": 0.625,
+   "close_price": 0.625,
    "pnl": null,
    "why": "Ratings 1689 vs 1537, at home. Point differential last 5: +112 vs +84. Model gives Houston 85%. Blended with the market that's 71% vs a 65% price. Sharp sportsbook price (Pinnacle) says 65%.",
    "trend": 0.0,
@@ -7470,45 +7511,6 @@
    "expert_lean": "none"
   },
   {
-   "id": "KXNCAAFGAME-26OCT17LINWEIU-EIU",
-   "ticker": "KXNCAAFGAME-26OCT17LINWEIU-EIU",
-   "side": "yes",
-   "event": "KXNCAAFGAME-26OCT17LINWEIU",
-   "game": "26OCT17LINWEIU",
-   "sport": "Football",
-   "model_key": "cfb",
-   "mtype": "winner",
-   "line": null,
-   "tour": "College Football",
-   "tournament": "Lindenwood at Eastern Illinois",
-   "matchup": "Lindenwood at Eastern Illinois",
-   "surface": "",
-   "pick": "Eastern Illinois to win",
-   "opponent": "",
-   "market": "Eastern Illinois to win",
-   "price": 0.41,
-   "model_prob": 0.535,
-   "raw_prob": 0.664,
-   "edge": 0.108,
-   "tier": "W",
-   "units": 0.5,
-   "made": "2026-10-15T00:42:54.226949+00:00",
-   "expected_end": "2026-10-17T22:00:00+00:00",
-   "start_est": "2026-10-17T19:00:00+00:00",
-   "status": "pending",
-   "latest_price": 0.525,
-   "close_price": 0.525,
-   "pnl": null,
-   "why": "Ratings 1406 vs 1371, at home. Point differential last 5: -116 vs -72. Days of rest 6 vs 7. Model gives Eastern Illinois 66%. Blended with the market that's 47% vs a 41% price. Price down 9\u00a2 in the last 12 hours.",
-   "trend": -0.089,
-   "new_market": false,
-   "trust": 0.25,
-   "sharp_prob": null,
-   "research": "",
-   "sources": [],
-   "expert_lean": "none"
-  },
-  {
    "id": "KXNFLRSHYDS-26OCT18NYJNE-NERSTEVENSON38-70:no",
    "ticker": "KXNFLRSHYDS-26OCT18NYJNE-NERSTEVENSON38-70",
    "side": "no",
@@ -7535,8 +7537,8 @@
    "expected_end": "2026-10-18T20:00:00+00:00",
    "start_est": "2026-10-18T17:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.695,
-   "close_price": 0.695,
+   "latest_price": 0.68,
+   "close_price": 0.68,
    "pnl": null,
    "why": "Rhamondre Stevenson: 52 a game lately (last 12 games). Model gives \"Rhamondre Stevenson: under 70\" 78%. Blended with the market that's 58% vs a 53% price. Price up 2\u00a2 in the last 12 hours.",
    "trend": 0.02,
@@ -8094,45 +8096,6 @@
    "expert_lean": "none"
   },
   {
-   "id": "KXNCAAFTEAMTOTAL-26OCT17NIUWYO-WYO28",
-   "ticker": "KXNCAAFTEAMTOTAL-26OCT17NIUWYO-WYO28",
-   "side": "yes",
-   "event": "KXNCAAFTEAMTOTAL-26OCT17NIUWYO",
-   "game": "26OCT17NIUWYO",
-   "sport": "Football",
-   "model_key": "cfb",
-   "mtype": "team_total",
-   "line": 27.5,
-   "tour": "College Football",
-   "tournament": "Northern Illinois at Wyoming",
-   "matchup": "Northern Illinois at Wyoming",
-   "surface": "",
-   "pick": "Wyoming over 27.5 points",
-   "opponent": "",
-   "market": "Wyoming over 27.5 points",
-   "price": 0.41,
-   "model_prob": 0.479,
-   "raw_prob": 0.558,
-   "edge": 0.052,
-   "tier": "W",
-   "units": 0.5,
-   "made": "2026-10-16T00:43:07.096944+00:00",
-   "expected_end": "2026-10-17T22:30:00+00:00",
-   "start_est": "2026-10-17T19:30:00+00:00",
-   "status": "pending",
-   "latest_price": 0.415,
-   "close_price": 0.415,
-   "pnl": null,
-   "why": "Projected score margin +13.6 (home) and total 45.0. Model gives \"Wyoming over 27.5 points\" 56%. Blended with the market that's 46% vs a 41% price.",
-   "trend": 0.005,
-   "new_market": false,
-   "trust": 0.41,
-   "sharp_prob": null,
-   "research": "",
-   "sources": [],
-   "expert_lean": "none"
-  },
-  {
    "id": "KXLIGAMXGAME-26OCT18MONPAC-PAC",
    "ticker": "KXLIGAMXGAME-26OCT18MONPAC-PAC",
    "side": "yes",
@@ -8276,8 +8239,8 @@
    "expected_end": "2026-10-18T01:30:00+00:00",
    "start_est": "2026-10-17T22:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.395,
-   "close_price": 0.395,
+   "latest_price": 0.385,
+   "close_price": 0.385,
    "pnl": null,
    "why": "Projected score margin -13.6 (home) and total 52.3. Model gives \"Morgan St. wins by over 7.5 points\" 65%. Blended with the market that's 46% vs a 41% price.",
    "trend": -0.005,
@@ -8354,8 +8317,8 @@
    "expected_end": "2026-10-18T02:30:00+00:00",
    "start_est": "2026-10-17T23:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.455,
-   "close_price": 0.455,
+   "latest_price": 0.445,
+   "close_price": 0.445,
    "pnl": null,
    "why": "Expected goals 1.04 vs 1.09 (2.13 total). Model gives \"Under 2.5 goals scored\" 64%. Blended with the market that's 50% vs a 46% price.",
    "trend": 0.005,
@@ -8604,6 +8567,86 @@
   }
  ],
  "watch_history": [
+  {
+   "id": "KXNCAAFTEAMTOTAL-26OCT17NIUWYO-WYO28",
+   "ticker": "KXNCAAFTEAMTOTAL-26OCT17NIUWYO-WYO28",
+   "side": "yes",
+   "event": "KXNCAAFTEAMTOTAL-26OCT17NIUWYO",
+   "game": "26OCT17NIUWYO",
+   "sport": "Football",
+   "model_key": "cfb",
+   "mtype": "team_total",
+   "line": 27.5,
+   "tour": "College Football",
+   "tournament": "Northern Illinois at Wyoming",
+   "matchup": "Northern Illinois at Wyoming",
+   "surface": "",
+   "pick": "Wyoming over 27.5 points",
+   "opponent": "",
+   "market": "Wyoming over 27.5 points",
+   "price": 0.41,
+   "model_prob": 0.479,
+   "raw_prob": 0.558,
+   "edge": 0.052,
+   "tier": "W",
+   "units": 0.5,
+   "made": "2026-10-16T00:43:07.096944+00:00",
+   "expected_end": "2026-10-17T22:30:00+00:00",
+   "start_est": "2026-10-17T19:30:00+00:00",
+   "status": "win",
+   "latest_price": 0.415,
+   "close_price": 0.415,
+   "pnl": 0.7,
+   "why": "Projected score margin +13.6 (home) and total 45.0. Model gives \"Wyoming over 27.5 points\" 56%. Blended with the market that's 46% vs a 41% price.",
+   "trend": 0.005,
+   "new_market": false,
+   "trust": 0.41,
+   "sharp_prob": null,
+   "research": "",
+   "sources": [],
+   "expert_lean": "none",
+   "graded": "2026-10-17T22:28:21.428804+00:00"
+  },
+  {
+   "id": "KXNCAAFGAME-26OCT17LINWEIU-EIU",
+   "ticker": "KXNCAAFGAME-26OCT17LINWEIU-EIU",
+   "side": "yes",
+   "event": "KXNCAAFGAME-26OCT17LINWEIU",
+   "game": "26OCT17LINWEIU",
+   "sport": "Football",
+   "model_key": "cfb",
+   "mtype": "winner",
+   "line": null,
+   "tour": "College Football",
+   "tournament": "Lindenwood at Eastern Illinois",
+   "matchup": "Lindenwood at Eastern Illinois",
+   "surface": "",
+   "pick": "Eastern Illinois to win",
+   "opponent": "",
+   "market": "Eastern Illinois to win",
+   "price": 0.41,
+   "model_prob": 0.535,
+   "raw_prob": 0.664,
+   "edge": 0.108,
+   "tier": "W",
+   "units": 0.5,
+   "made": "2026-10-15T00:42:54.226949+00:00",
+   "expected_end": "2026-10-17T22:00:00+00:00",
+   "start_est": "2026-10-17T19:00:00+00:00",
+   "status": "loss",
+   "latest_price": 0.525,
+   "close_price": 0.525,
+   "pnl": -0.52,
+   "why": "Ratings 1406 vs 1371, at home. Point differential last 5: -116 vs -72. Days of rest 6 vs 7. Model gives Eastern Illinois 66%. Blended with the market that's 47% vs a 41% price. Price down 9\u00a2 in the last 12 hours.",
+   "trend": -0.089,
+   "new_market": false,
+   "trust": 0.25,
+   "sharp_prob": null,
+   "research": "",
+   "sources": [],
+   "expert_lean": "none",
+   "graded": "2026-10-17T22:28:19.879507+00:00"
+  },
   {
    "id": "KXLIGUE1GAME-26OCT17ESTRCL-RCL",
    "ticker": "KXLIGUE1GAME-26OCT17ESTRCL-RCL",
@@ -20587,86 +20630,6 @@
    "sources": [],
    "expert_lean": "none",
    "graded": "2026-10-03T15:03:27.023021+00:00"
-  },
-  {
-   "id": "KXATPMATCH-26OCT02RUBSAF-SAF",
-   "ticker": "KXATPMATCH-26OCT02RUBSAF-SAF",
-   "side": "yes",
-   "event": "KXATPMATCH-26OCT02RUBSAF",
-   "game": "26OCT02RUBSAF",
-   "sport": "Tennis",
-   "model_key": "tennis",
-   "mtype": "winner",
-   "line": null,
-   "tour": "ATP",
-   "tournament": "2026 ATP Beijing",
-   "matchup": "2026 ATP Beijing",
-   "surface": "hard",
-   "pick": "Roman Safiullin",
-   "opponent": "Andrey Rublev",
-   "market": "Roman Safiullin to win",
-   "price": 0.43,
-   "model_prob": 0.504,
-   "raw_prob": 0.583,
-   "edge": 0.057,
-   "tier": "W",
-   "units": 0.5,
-   "made": "2026-10-03T00:28:35.419050+00:00",
-   "expected_end": "2026-10-03T06:00:00+00:00",
-   "start_est": "2026-10-03T02:00:00+00:00",
-   "status": "loss",
-   "latest_price": 0.425,
-   "close_price": 0.425,
-   "pnl": -0.52,
-   "why": "Elo 1715 vs 1680 on hard. Won 50% vs 50% of games lately. Form 6-4 vs 6-4. Head to head 1-0. Games played in last 3 days: 22 vs 22. Model 58%, blended with the market 48%, price 43%.",
-   "trend": -0.007,
-   "new_market": false,
-   "trust": 0.36,
-   "sharp_prob": null,
-   "research": "",
-   "sources": [],
-   "expert_lean": "none",
-   "graded": "2026-10-03T15:03:26.828543+00:00"
-  },
-  {
-   "id": "KXATPMATCH-26OCT02BERVAL-VAL",
-   "ticker": "KXATPMATCH-26OCT02BERVAL-VAL",
-   "side": "yes",
-   "event": "KXATPMATCH-26OCT02BERVAL",
-   "game": "26OCT02BERVAL",
-   "sport": "Tennis",
-   "model_key": "tennis",
-   "mtype": "winner",
-   "line": null,
-   "tour": "ATP",
-   "tournament": "2026 ATP Tokyo",
-   "matchup": "2026 ATP Tokyo",
-   "surface": "hard",
-   "pick": "Adolfo Daniel Vallejo",
-   "opponent": "Matteo Berrettini",
-   "market": "Adolfo Daniel Vallejo to win",
-   "price": 0.41,
-   "model_prob": 0.505,
-   "raw_prob": 0.608,
-   "edge": 0.078,
-   "tier": "W",
-   "units": 0.5,
-   "made": "2026-10-03T00:28:35.419050+00:00",
-   "expected_end": "2026-10-03T05:00:00+00:00",
-   "start_est": "2026-10-03T01:00:00+00:00",
-   "status": "win",
-   "latest_price": 0.41,
-   "close_price": null,
-   "pnl": 0.7,
-   "why": "Elo 1694 vs 1619 on hard. Won 50% vs 50% of games lately. Form 6-4 vs 5-5. Games played in last 3 days: 22 vs 22. Model 61%, blended with the market 48%, price 41%.",
-   "trend": 0.006,
-   "new_market": false,
-   "trust": 0.36,
-   "sharp_prob": null,
-   "research": "",
-   "sources": [],
-   "expert_lean": "none",
-   "graded": "2026-10-03T15:03:26.682690+00:00"
   }
  ],
  "by_tour": {
@@ -20768,6 +20731,17 @@
    "beat_price": 0.444,
    "clv": 0.0017,
    "clv_picks": 9
+  },
+  "MLS": {
+   "picks": 0,
+   "wins": 0,
+   "losses": 0,
+   "units": 0,
+   "staked": 0,
+   "roi": 0.0,
+   "beat_price": null,
+   "clv": null,
+   "clv_picks": 0
   },
   "Premier League": {
    "picks": 0,
