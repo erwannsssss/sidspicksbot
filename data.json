@@ -1,11 +1,11 @@
 {
- "updated": "2026-10-17T03:34:23.622336+00:00",
- "status_note": "Last run found 0 new pick(s) and graded 1.",
- "bankroll": 96.02,
+ "updated": "2026-10-17T04:35:30.797239+00:00",
+ "status_note": "Last run found 1 new pick(s) and graded 2.",
+ "bankroll": 95.49,
  "protection": {
-  "bankroll": 96.02,
+  "bankroll": 95.49,
   "peak": 112.26,
-  "drawdown": 0.145,
+  "drawdown": 0.149,
   "paused": false
  },
  "settings": {
@@ -173,6 +173,47 @@
    "expert_lean": "none"
   },
   {
+   "id": "KXATPMATCH-26OCT17DANBAS-DAN",
+   "ticker": "KXATPMATCH-26OCT17DANBAS-DAN",
+   "side": "yes",
+   "event": "KXATPMATCH-26OCT17DANBAS",
+   "game": "26OCT17DANBAS",
+   "sport": "Tennis",
+   "model_key": "tennis",
+   "mtype": "winner",
+   "line": null,
+   "tour": "ATP",
+   "tournament": "2026 ATP Almaty",
+   "matchup": "2026 ATP Almaty",
+   "surface": "hard",
+   "pick": "Taro Daniel",
+   "opponent": "Nikoloz Basilashvili",
+   "market": "Taro Daniel to win",
+   "price": 0.38,
+   "model_prob": 0.457,
+   "raw_prob": 0.69,
+   "edge": 0.06,
+   "tier": "B",
+   "units": 0.5,
+   "made": "2026-10-17T04:32:12.470966+00:00",
+   "expected_end": "2026-10-17T10:10:00+00:00",
+   "start_est": "2026-10-17T06:10:00+00:00",
+   "status": "pending",
+   "latest_price": 0.38,
+   "close_price": null,
+   "pnl": null,
+   "why": "Elo 1673 vs 1536 on hard. Won 50% vs 50% of games lately. Form 4-6 vs 7-3. Travelled 4,109 vs 4,109 km since last match. Venue altitude 783 m. Model 69%, blended with the market 46%, price 38%. Price up 6\u00a2 in the last 12 hours.",
+   "trend": 0.055,
+   "new_market": false,
+   "trust": 0.26,
+   "sharp_prob": null,
+   "research": "",
+   "sources": [],
+   "expert_lean": "none"
+  }
+ ],
+ "history": [
+  {
    "id": "KXWTAMATCH-26OCT16JOIOKA-OKA",
    "ticker": "KXWTAMATCH-26OCT16JOIOKA-OKA",
    "side": "yes",
@@ -198,10 +239,10 @@
    "made": "2026-10-17T00:43:49.530657+00:00",
    "expected_end": "2026-10-17T05:30:00+00:00",
    "start_est": "2026-10-17T01:30:00+00:00",
-   "status": "pending",
+   "status": "loss",
    "latest_price": 0.23,
    "close_price": null,
-   "pnl": null,
+   "pnl": -0.53,
    "why": "Elo 1623 vs 1575 on hard. Won 50% vs 50% of games lately. Form 8-2 vs 5-5. Travelled 0 vs 2,036 km since last match. Model 49%, blended with the market 29%, price 23%.",
    "trend": 0.003,
    "new_market": false,
@@ -209,10 +250,9 @@
    "sharp_prob": null,
    "research": "",
    "sources": [],
-   "expert_lean": "none"
-  }
- ],
- "history": [
+   "expert_lean": "none",
+   "graded": "2026-10-17T04:32:09.306992+00:00"
+  },
   {
    "id": "KXNCAAFSPREAD-26OCT10UNCPITT-PITT5",
    "ticker": "KXNCAAFSPREAD-26OCT10UNCPITT-PITT5",
@@ -5901,22 +5941,15 @@
  },
  "learning": {
   "groups": {
-   "nfl:prop_rshyds": {
-    "finished": 230,
+   "nfl:prop_recyds": {
+    "finished": 440,
     "games": 3,
     "trust": 0.25,
     "confidence_fix": false,
     "last": "2026-10-16T00:15:00+00:00"
    },
    "nfl:prop_rec": {
-    "finished": 367,
-    "games": 3,
-    "trust": 0.25,
-    "confidence_fix": false,
-    "last": "2026-10-16T00:15:00+00:00"
-   },
-   "nfl:prop_recyds": {
-    "finished": 444,
+    "finished": 365,
     "games": 3,
     "trust": 0.25,
     "confidence_fix": false,
@@ -5951,11 +5984,11 @@
     "last": "2026-10-17T01:00:00+00:00"
    },
    "tennis:winner": {
-    "finished": 598,
-    "games": 299,
+    "finished": 600,
+    "games": 300,
     "trust": 0.26,
     "confidence_fix": false,
-    "last": "2026-10-16T19:20:00+00:00"
+    "last": "2026-10-17T01:30:00+00:00"
    },
    "soccer:btts_1h": {
     "finished": 118,
@@ -5965,11 +5998,11 @@
     "last": "2026-10-17T01:00:00+00:00"
    },
    "soccer:spread_1h": {
-    "finished": 234,
-    "games": 59,
+    "finished": 236,
+    "games": 60,
     "trust": 0.49,
     "confidence_fix": false,
-    "last": "2026-10-17T01:00:00+00:00"
+    "last": "2026-10-17T02:30:00+00:00"
    },
    "soccer:total_1h": {
     "finished": 354,
@@ -6244,6 +6277,13 @@
     "confidence_fix": false,
     "last": "2026-10-16T00:15:00+00:00"
    },
+   "nfl:prop_rshyds": {
+    "finished": 228,
+    "games": 2,
+    "trust": 0.25,
+    "confidence_fix": false,
+    "last": "2026-10-16T00:15:00+00:00"
+   },
    "nfl:prop_passtds": {
     "finished": 26,
     "games": 2,
@@ -6259,28 +6299,28 @@
     "last": "2026-10-16T00:15:00+00:00"
    },
    "cfb:winner": {
-    "finished": 16,
-    "games": 8,
+    "finished": 18,
+    "games": 9,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-16T23:30:00+00:00"
+    "last": "2026-10-17T00:00:00+00:00"
    },
    "cfb:spread": {
-    "finished": 460,
-    "games": 8,
+    "finished": 518,
+    "games": 9,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-16T23:30:00+00:00"
+    "last": "2026-10-17T00:00:00+00:00"
    },
    "cfb:total": {
-    "finished": 304,
-    "games": 8,
+    "finished": 342,
+    "games": 9,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-16T23:30:00+00:00"
+    "last": "2026-10-17T00:00:00+00:00"
    },
    "cfb:team_total": {
-    "finished": 382,
+    "finished": 392,
     "games": 9,
     "trust": 0.25,
     "confidence_fix": false,
@@ -6322,11 +6362,11 @@
     "last": "2026-10-17T00:00:00+00:00"
    },
    "cfb:period_winner_2h": {
-    "finished": 4,
-    "games": 1,
+    "finished": 8,
+    "games": 2,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-16T00:00:00+00:00"
+    "last": "2026-10-17T00:00:00+00:00"
    },
    "cfb:period_winner_2q": {
     "finished": 8,
@@ -6371,45 +6411,45 @@
     "last": "2026-10-17T00:00:00+00:00"
    },
    "cfb:period_winner_4q": {
-    "finished": 4,
-    "games": 1,
+    "finished": 8,
+    "games": 2,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-16T00:00:00+00:00"
+    "last": "2026-10-17T00:00:00+00:00"
    },
    "cfb:spread_4q": {
-    "finished": 20,
-    "games": 1,
+    "finished": 42,
+    "games": 2,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-16T00:00:00+00:00"
+    "last": "2026-10-17T00:00:00+00:00"
    },
    "cfb:total_4q": {
-    "finished": 22,
-    "games": 1,
+    "finished": 44,
+    "games": 2,
     "trust": 0.25,
     "confidence_fix": false,
-    "last": "2026-10-16T00:00:00+00:00"
+    "last": "2026-10-17T00:00:00+00:00"
    }
   },
   "price_trend": {
-   "flat": {
-    "markets": 8786,
-    "hit_vs_price": -0.0
-   },
    "rising": {
-    "markets": 1274,
-    "hit_vs_price": 0.016
+    "markets": 1306,
+    "hit_vs_price": 0.014
    },
    "falling": {
-    "markets": 1280,
-    "hit_vs_price": -0.016
+    "markets": 1310,
+    "hit_vs_price": -0.013
+   },
+   "flat": {
+    "markets": 8880,
+    "hit_vs_price": -0.0
    }
   }
  },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "tracker": {
-  "tracked": 241035,
+  "tracked": 244134,
   "series": 3994,
   "movers": [
    {
@@ -6536,12 +6576,12 @@
  },
  "models": {
   "tennis": {
-   "matches": 21518,
-   "training_rows": 15041,
+   "matches": 21521,
+   "training_rows": 15042,
    "holdout": {
     "from": "2026-09-10",
     "matches": 2257,
-    "elo_log_loss": 0.6607,
+    "elo_log_loss": 0.6608,
     "model_log_loss": 0.6533,
     "elo_accuracy": 0.606,
     "model_accuracy": 0.624
@@ -6552,9 +6592,9 @@
     "dominance": 0.0,
     "rank": 0.0,
     "h2h": 0.474,
-    "form": -0.524,
-    "fatigue_games": -0.225,
-    "fatigue_matches": 0.072,
+    "form": -0.526,
+    "fatigue_games": -0.224,
+    "fatigue_matches": 0.071,
     "rest": -0.001,
     "travel": 0.145,
     "altitude": 0.0,
@@ -6636,31 +6676,31 @@
    "holdout": {
     "matches": 659,
     "rating_log_loss": 0.6251,
-    "model_log_loss": 0.6225,
+    "model_log_loss": 0.6203,
     "rating_accuracy": 0.654,
-    "model_accuracy": 0.648
+    "model_accuracy": 0.645
    },
    "using": "full",
    "market": {
     "market_log_loss": 0.6051,
-    "model_log_loss": 0.6225,
-    "best_weight": 0.0,
+    "model_log_loss": 0.6203,
+    "best_weight": 0.1,
     "backtest_weight": 0.25,
     "matches": 659
    },
    "backtest": {
     "bets": 16,
     "wins": 6,
-    "units": -4.1,
-    "roi": -0.148
+    "units": -2.5,
+    "roi": -0.093
    },
    "weights": {
-    "home_field": 0.253,
-    "rating": 1.538,
-    "rest": 0.245,
-    "point_diff_form": 0.237,
-    "qb_change": 0.284,
-    "epa": 0.159
+    "home_field": 0.252,
+    "rating": 1.537,
+    "rest": 0.249,
+    "point_diff_form": 0.233,
+    "qb_change": 0.319,
+    "epa": 0.158
    },
    "matches": 4443,
    "totals": {
@@ -6674,21 +6714,21 @@
    "trust": 0.25
   },
   "cfb": {
-   "training_rows": 28899,
+   "training_rows": 28903,
    "holdout": {
-    "matches": 4335,
-    "rating_log_loss": 0.4964,
-    "model_log_loss": 0.4962,
+    "matches": 4336,
+    "rating_log_loss": 0.4966,
+    "model_log_loss": 0.4964,
     "rating_accuracy": 0.752,
     "model_accuracy": 0.751
    },
    "using": "rating",
    "market": {
-    "market_log_loss": 0.5161,
-    "model_log_loss": 0.5844,
+    "market_log_loss": 0.5178,
+    "model_log_loss": 0.5851,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
-    "matches": 1195
+    "matches": 1197
    },
    "backtest": {
     "bets": 88,
@@ -6697,14 +6737,14 @@
     "roi": 0.151
    },
    "weights": {
-    "home_field": 0.364,
-    "rating": 3.582,
+    "home_field": 0.363,
+    "rating": 3.583,
     "rest": 0.0,
     "point_diff_form": 0.0,
     "qb_change": 0.0,
     "epa": 0.0
    },
-   "matches": 29982,
+   "matches": 29986,
    "sport": "Football",
    "label": "College football",
    "trust": 0.25
@@ -6712,23 +6752,23 @@
  },
  "summary": {
   "all": {
-   "picks": 94,
+   "picks": 95,
    "wins": 32,
-   "losses": 62,
-   "units": -3.98,
-   "staked": 95.0,
-   "roi": -0.042,
-   "beat_price": 0.255,
+   "losses": 63,
+   "units": -4.51,
+   "staked": 95.5,
+   "roi": -0.047,
+   "beat_price": 0.253,
    "clv": -0.003,
    "clv_picks": 84
   },
   "week": {
-   "picks": 1,
+   "picks": 2,
    "wins": 0,
-   "losses": 1,
-   "units": -0.52,
-   "staked": 0.5,
-   "roi": -1.04,
+   "losses": 2,
+   "units": -1.05,
+   "staked": 1.0,
+   "roi": -1.05,
    "beat_price": 0.0,
    "clv": 0.0,
    "clv_picks": 1
@@ -6745,15 +6785,15 @@
    "clv_picks": 14
   },
   "watch": {
-   "picks": 488,
-   "wins": 214,
+   "picks": 489,
+   "wins": 215,
    "losses": 274,
-   "units": 5.32,
-   "staked": 244.0,
-   "roi": 0.022,
-   "beat_price": 0.328,
+   "units": 5.99,
+   "staked": 244.5,
+   "roi": 0.024,
+   "beat_price": 0.329,
    "clv": -0.0057,
-   "clv_picks": 461
+   "clv_picks": 462
   }
  },
  "by_expert_lean": {
@@ -6769,13 +6809,13 @@
    "clv_picks": 2
   },
   "none": {
-   "picks": 91,
+   "picks": 92,
    "wins": 29,
-   "losses": 62,
-   "units": -16.24,
-   "staked": 86.0,
-   "roi": -0.189,
-   "beat_price": 0.253,
+   "losses": 63,
+   "units": -16.77,
+   "staked": 86.5,
+   "roi": -0.194,
+   "beat_price": 0.25,
    "clv": -0.0031,
    "clv_picks": 82
   }
@@ -6793,13 +6833,13 @@
    "clv_picks": 20
   },
   "B": {
-   "picks": 67,
+   "picks": 68,
    "wins": 22,
-   "losses": 45,
-   "units": -3.73,
-   "staked": 58.0,
-   "roi": -0.064,
-   "beat_price": 0.254,
+   "losses": 46,
+   "units": -4.26,
+   "staked": 58.5,
+   "roi": -0.073,
+   "beat_price": 0.25,
    "clv": -0.0026,
    "clv_picks": 59
   },
@@ -6815,57 +6855,18 @@
    "clv_picks": 5
   },
   "W": {
-   "picks": 488,
-   "wins": 214,
+   "picks": 489,
+   "wins": 215,
    "losses": 274,
-   "units": 5.32,
-   "staked": 244.0,
-   "roi": 0.022,
-   "beat_price": 0.328,
+   "units": 5.99,
+   "staked": 244.5,
+   "roi": 0.024,
+   "beat_price": 0.329,
    "clv": -0.0057,
-   "clv_picks": 461
+   "clv_picks": 462
   }
  },
  "watch_open": [
-  {
-   "id": "KXNCAAFSPREAD-26OCT16WASHPUR-PUR3:no",
-   "ticker": "KXNCAAFSPREAD-26OCT16WASHPUR-PUR3",
-   "side": "no",
-   "event": "KXNCAAFSPREAD-26OCT16WASHPUR",
-   "game": "26OCT16WASHPUR",
-   "sport": "Football",
-   "model_key": "cfb",
-   "mtype": "spread",
-   "line": 2.5,
-   "tour": "College Football",
-   "tournament": "Washington at Purdue",
-   "matchup": "Washington at Purdue",
-   "surface": "",
-   "pick": "No: Purdue wins by over 2.5 points",
-   "opponent": "",
-   "market": "No: Purdue wins by over 2.5 points",
-   "price": 0.42,
-   "model_prob": 0.529,
-   "raw_prob": 0.644,
-   "edge": 0.092,
-   "tier": "W",
-   "units": 0.5,
-   "made": "2026-10-13T00:36:55.850572+00:00",
-   "expected_end": "2026-10-17T03:00:00+00:00",
-   "start_est": "2026-10-17T00:00:00+00:00",
-   "status": "pending",
-   "latest_price": 0.435,
-   "close_price": 0.435,
-   "pnl": null,
-   "why": "Projected score margin -3.4 (home) and total 54.0. Model gives \"No: Purdue wins by over 2.5 points\" 64%. Blended with the market that's 47% vs a 42% price.",
-   "trend": 0.0,
-   "new_market": false,
-   "trust": 0.25,
-   "sharp_prob": null,
-   "research": "",
-   "sources": [],
-   "expert_lean": "none"
-  },
   {
    "id": "KXNCAAFGAME-26OCT16OKSTHOU-HOU",
    "ticker": "KXNCAAFGAME-26OCT16OKSTHOU-HOU",
@@ -7052,8 +7053,8 @@
    "expected_end": "2026-10-17T19:00:00+00:00",
    "start_est": "2026-10-17T16:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.46,
-   "close_price": 0.46,
+   "latest_price": 0.465,
+   "close_price": 0.465,
    "pnl": null,
    "why": "Projected score margin +7.7 (home) and total 52.1. Model gives \"No: Ohio St. wins by over 2.5 points\" 74%. Blended with the market that's 50% vs a 42% price.",
    "trend": 0.0,
@@ -7130,8 +7131,8 @@
    "expected_end": "2026-10-18T02:00:00+00:00",
    "start_est": "2026-10-17T23:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.41,
-   "close_price": 0.41,
+   "latest_price": 0.415,
+   "close_price": 0.415,
    "pnl": null,
    "why": "Projected score margin +26.0 (home) and total 48.8. Model gives \"North Dakota St. wins by over 17.5 points\" 70%. Blended with the market that's 49% vs a 43% price.",
    "trend": 0.01,
@@ -7288,8 +7289,8 @@
    "expected_end": "2026-10-17T03:00:00+00:00",
    "start_est": "2026-10-17T16:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.77,
-   "close_price": 0.77,
+   "latest_price": 0.765,
+   "close_price": 0.765,
    "pnl": null,
    "why": "Ratings 1763 vs 1509, at home. Point differential last 5: +154 vs +102. Days of rest 6 vs 13. Model gives James Madison 93%. Blended with the market that's 84% vs a 81% price. Sharp sportsbook price (Pinnacle) says 80%.",
    "trend": 0.004,
@@ -7407,8 +7408,8 @@
    "expected_end": "2026-10-18T20:00:00+00:00",
    "start_est": "2026-10-18T17:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.53,
-   "close_price": 0.53,
+   "latest_price": 0.525,
+   "close_price": 0.525,
    "pnl": null,
    "why": "Daniel Jones: 0.82 a game lately (last 12 games). Model gives \"Daniel Jones: under 2\" 80%. Blended with the market that's 59% vs a 53% price.",
    "trend": 0.005,
@@ -7524,8 +7525,8 @@
    "expected_end": "2026-10-17T21:00:00+00:00",
    "start_est": "2026-10-17T18:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.205,
-   "close_price": 0.205,
+   "latest_price": 0.18,
+   "close_price": 0.18,
    "pnl": null,
    "why": "Ratings 1590 vs 1661, at home. Point differential last 5: +24 vs +86. Days of rest 6 vs 13. Model gives North Dakota 43%. Blended with the market that's 26% vs a 21% price. Price down 10\u00a2 in the last 12 hours. Sharp sportsbook price (Pinnacle) says 84%.",
    "trend": -0.104,
@@ -7643,8 +7644,8 @@
    "expected_end": "2026-10-18T20:00:00+00:00",
    "start_est": "2026-10-18T17:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.29,
-   "close_price": 0.29,
+   "latest_price": 0.295,
+   "close_price": 0.295,
    "pnl": null,
    "why": "Projected score margin +5.0 (home) and total 46.2. Forecast 58F, wind 7 mph, rain 0.0 mm. Model gives \"New York G wins by over 6.5 points\" 46%. Blended with the market that's 38% vs a 29% price.",
    "trend": 0.0,
@@ -8426,8 +8427,8 @@
    "expected_end": "2026-10-17T22:30:00+00:00",
    "start_est": "2026-10-17T19:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.435,
-   "close_price": 0.435,
+   "latest_price": 0.445,
+   "close_price": 0.445,
    "pnl": null,
    "why": "Projected score margin -1.8 (home) and total 51.6. Model gives \"No: Toledo wins by over 5.5 points\" 59%. Blended with the market that's 50% vs a 46% price.",
    "trend": -0.01,
@@ -8661,8 +8662,8 @@
    "expected_end": "2026-10-18T01:30:00+00:00",
    "start_est": "2026-10-17T22:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.395,
-   "close_price": 0.395,
+   "latest_price": 0.4,
+   "close_price": 0.4,
    "pnl": null,
    "why": "Projected score margin -13.6 (home) and total 52.3. Model gives \"Morgan St. wins by over 7.5 points\" 65%. Blended with the market that's 46% vs a 41% price.",
    "trend": -0.005,
@@ -8700,8 +8701,8 @@
    "expected_end": "2026-10-17T19:00:00+00:00",
    "start_est": "2026-10-17T16:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.44,
-   "close_price": 0.44,
+   "latest_price": 0.43,
+   "close_price": 0.43,
    "pnl": null,
    "why": "Projected score margin +6.5 (home) and total 57.5. Model gives \"No: North Carolina A&T wins by over 14.5 points\" 69%. Blended with the market that's 53% vs a 49% price. Price down 7\u00a2 in the last 12 hours.",
    "trend": -0.07,
@@ -8739,8 +8740,8 @@
    "expected_end": "2026-10-18T02:00:00+00:00",
    "start_est": "2026-10-17T23:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.515,
-   "close_price": 0.515,
+   "latest_price": 0.52,
+   "close_price": 0.52,
    "pnl": null,
    "why": "Projected score margin +27.3 (home) and total 54.7. Model gives \"Tarleton St. wins by over 18.5 points\" 71%. Blended with the market that's 56% vs a 52% price.",
    "trend": 0.005,
@@ -8895,8 +8896,8 @@
    "expected_end": "2026-10-17T22:00:00+00:00",
    "start_est": "2026-10-17T19:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.57,
-   "close_price": 0.57,
+   "latest_price": 0.58,
+   "close_price": 0.58,
    "pnl": null,
    "why": "Projected score margin +22.1 (home) and total 55.9. Model gives \"Jackson St. wins by over 11.5 points\" 75%. Blended with the market that's 61% vs a 58% price.",
    "trend": -0.01,
@@ -8934,8 +8935,8 @@
    "expected_end": "2026-10-18T16:00:00+00:00",
    "start_est": "2026-10-18T13:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.405,
-   "close_price": 0.405,
+   "latest_price": 0.415,
+   "close_price": 0.415,
    "pnl": null,
    "why": "Expected goals 2.97 vs 1.04 (4.01 total). Model gives \"Brighton wins by more than 1.5 goals\" 57%. Blended with the market that's 45% vs a 41% price.",
    "trend": 0.01,
@@ -9052,8 +9053,8 @@
    "expected_end": "2026-10-17T21:45:00+00:00",
    "start_est": "2026-10-17T18:45:00+00:00",
    "status": "pending",
-   "latest_price": 0.525,
-   "close_price": 0.525,
+   "latest_price": 0.52,
+   "close_price": 0.52,
    "pnl": null,
    "why": "Ratings 1423 (Troyes, home) vs 1760 (Lens). Share of chances lately (xG or shots on target) 41% vs 54%. Goal difference last 6: -9 vs -3. Last played Oct 11 vs Oct 13. Model gives the away 67%. Blended with the market that's 58% vs a 53% price. Sharp sportsbook price (Pinnacle) says 52%.",
    "trend": 0.007,
@@ -9171,8 +9172,8 @@
    "expected_end": "2026-10-17T17:00:00+00:00",
    "start_est": "2026-10-17T14:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.62,
-   "close_price": 0.62,
+   "latest_price": 0.625,
+   "close_price": 0.625,
    "pnl": null,
    "why": "Expected goals 2.26 vs 1.73 (3.99 total). Model gives \"Over 2.5 goals scored\" 76%. Blended with the market that's 66% vs a 63% price.",
    "trend": 0.005,
@@ -9342,6 +9343,46 @@
   }
  ],
  "watch_history": [
+  {
+   "id": "KXNCAAFSPREAD-26OCT16WASHPUR-PUR3:no",
+   "ticker": "KXNCAAFSPREAD-26OCT16WASHPUR-PUR3",
+   "side": "no",
+   "event": "KXNCAAFSPREAD-26OCT16WASHPUR",
+   "game": "26OCT16WASHPUR",
+   "sport": "Football",
+   "model_key": "cfb",
+   "mtype": "spread",
+   "line": 2.5,
+   "tour": "College Football",
+   "tournament": "Washington at Purdue",
+   "matchup": "Washington at Purdue",
+   "surface": "",
+   "pick": "No: Purdue wins by over 2.5 points",
+   "opponent": "",
+   "market": "No: Purdue wins by over 2.5 points",
+   "price": 0.42,
+   "model_prob": 0.529,
+   "raw_prob": 0.644,
+   "edge": 0.092,
+   "tier": "W",
+   "units": 0.5,
+   "made": "2026-10-13T00:36:55.850572+00:00",
+   "expected_end": "2026-10-17T03:00:00+00:00",
+   "start_est": "2026-10-17T00:00:00+00:00",
+   "status": "win",
+   "latest_price": 0.435,
+   "close_price": 0.435,
+   "pnl": 0.67,
+   "why": "Projected score margin -3.4 (home) and total 54.0. Model gives \"No: Purdue wins by over 2.5 points\" 64%. Blended with the market that's 47% vs a 42% price.",
+   "trend": 0.0,
+   "new_market": false,
+   "trust": 0.25,
+   "sharp_prob": null,
+   "research": "",
+   "sources": [],
+   "expert_lean": "none",
+   "graded": "2026-10-17T04:32:04.536220+00:00"
+  },
   {
    "id": "KXNCAAFGAME-26OCT16MEMTULN-TULN",
    "ticker": "KXNCAAFGAME-26OCT16MEMTULN-TULN",
@@ -21362,46 +21403,6 @@
    "sources": [],
    "expert_lean": "none",
    "graded": "2026-10-01T00:31:49.011196+00:00"
-  },
-  {
-   "id": "KXMLBF5SPREAD-26SEP301400PHIATL-PHI2:no",
-   "ticker": "KXMLBF5SPREAD-26SEP301400PHIATL-PHI2",
-   "side": "no",
-   "event": "KXMLBF5SPREAD-26SEP301400PHIATL",
-   "game": "26SEP301400PHIATL",
-   "sport": "Baseball",
-   "model_key": "mlb",
-   "mtype": "spread_f5",
-   "line": 1.5,
-   "tour": "MLB",
-   "tournament": "Philadelphia Phillies at Atlanta Braves",
-   "matchup": "Philadelphia Phillies at Atlanta Braves",
-   "surface": "",
-   "pick": "No: Philadelphia wins by over 1.5 runs",
-   "opponent": "",
-   "market": "No: Philadelphia wins by over 1.5 runs",
-   "price": 0.64,
-   "model_prob": 0.699,
-   "raw_prob": 0.764,
-   "edge": 0.043,
-   "tier": "W",
-   "units": 0.5,
-   "made": "2026-09-29T21:22:15.336025+00:00",
-   "expected_end": "2026-09-30T21:00:00+00:00",
-   "start_est": "2026-09-30T18:00:00+00:00",
-   "status": "win",
-   "latest_price": 0.665,
-   "close_price": 0.665,
-   "pnl": 0.27,
-   "why": "Projected runs 2.3 (home) vs 2.1 (4.4 total). Park factor 1.01. Forecast 87F, wind 7 mph. Model gives \"No: Philadelphia wins by over 1.5 runs\" 76%. Blended with the market that's 67% vs a 64% price.",
-   "trend": 0.0,
-   "new_market": true,
-   "trust": 0.25,
-   "sharp_prob": null,
-   "research": "",
-   "sources": [],
-   "expert_lean": "none",
-   "graded": "2026-09-30T20:23:21.872623+00:00"
   }
  ],
  "by_tour": {
@@ -21472,13 +21473,13 @@
    "clv_picks": 0
   },
   "WTA": {
-   "picks": 18,
+   "picks": 19,
    "wins": 7,
-   "losses": 11,
-   "units": 5.86,
-   "staked": 23.0,
-   "roi": 0.255,
-   "beat_price": 0.333,
+   "losses": 12,
+   "units": 5.33,
+   "staked": 23.5,
+   "roi": 0.227,
+   "beat_price": 0.316,
    "clv": -0.0006,
    "clv_picks": 18
   },
@@ -21529,21 +21530,21 @@
    "clv_picks": 0
   },
   "Tennis": {
-   "picks": 79,
+   "picks": 80,
    "wins": 29,
-   "losses": 50,
-   "units": 2.74,
-   "staked": 81.5,
-   "roi": 0.034,
-   "beat_price": 0.228,
+   "losses": 51,
+   "units": 2.21,
+   "staked": 82.0,
+   "roi": 0.027,
+   "beat_price": 0.225,
    "clv": -0.0042,
    "clv_picks": 69
   }
  },
  "calibration": {
   "20-30%": {
-   "n": 9,
-   "hit": 0.222
+   "n": 10,
+   "hit": 0.2
   },
   "30-40%": {
    "n": 28,
@@ -21958,6 +21959,10 @@
   {
    "t": "2026-10-10",
    "v": 96.02
+  },
+  {
+   "t": "2026-10-17",
+   "v": 95.49
   }
  ],
  "reports": [
