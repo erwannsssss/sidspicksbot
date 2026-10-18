@@ -56,62 +56,6 @@
   "graded": "2026-10-04T05:19:36.813007+00:00"
  },
  {
-  "id": "PARLAY-202609300032-2",
-  "tier": "P",
-  "sport": "Parlay",
-  "kind": "watchlist",
-  "made": "2026-09-30T00:32:05.046335+00:00",
-  "units": 1.0,
-  "price": 0.1358,
-  "model_prob": 0.2325,
-  "ev": 0.712,
-  "payout_units": 6.4,
-  "status": "loss",
-  "pnl": -1.0,
-  "legs": [
-   {
-    "id": "KXNCAAFSPREAD-26OCT03VANUGA-UGA24:no",
-    "ticker": "KXNCAAFSPREAD-26OCT03VANUGA-UGA24",
-    "side": "no",
-    "market": "No: Georgia wins by over 23.5 points",
-    "matchup": "Vanderbilt at Georgia",
-    "sport": "Football",
-    "price": 0.48,
-    "model_prob": 0.604,
-    "edge": 0.106,
-    "expected_end": "2026-10-03T20:00:00+00:00",
-    "result": "loss"
-   },
-   {
-    "id": "KXNCAAFSPREAD-26OCT03MTUKU-KU19:no",
-    "ticker": "KXNCAAFSPREAD-26OCT03MTUKU-KU19",
-    "side": "no",
-    "market": "No: Kansas wins by over 18.5 points",
-    "matchup": "Middle Tennessee at Kansas",
-    "sport": "Football",
-    "price": 0.5,
-    "model_prob": 0.616,
-    "edge": 0.098,
-    "expected_end": "2026-10-03T20:00:00+00:00",
-    "result": "loss"
-   },
-   {
-    "id": "KXNCAAFSPREAD-26OCT03WYONDSU-NDSU19",
-    "ticker": "KXNCAAFSPREAD-26OCT03WYONDSU-NDSU19",
-    "side": "yes",
-    "market": "North Dakota St. wins by over 18.5 points",
-    "matchup": "Wyoming at North Dakota State",
-    "sport": "Football",
-    "price": 0.51,
-    "model_prob": 0.625,
-    "edge": 0.097,
-    "expected_end": "2026-10-03T22:30:00+00:00",
-    "result": "win"
-   }
-  ],
-  "graded": "2026-10-04T02:36:04.235456+00:00"
- },
- {
   "id": "PARLAY-202610010034-1",
   "tier": "P",
   "sport": "Parlay",
