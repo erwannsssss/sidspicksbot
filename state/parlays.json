@@ -1500,7 +1500,8 @@
     "price": 0.53,
     "model_prob": 0.661,
     "edge": 0.114,
-    "expected_end": "2026-10-18T20:00:00+00:00"
+    "expected_end": "2026-10-18T20:00:00+00:00",
+    "result": "win"
    },
    {
     "id": "KXUCLTOTAL-26OCT20MCIAEK-5:no",
@@ -1527,8 +1528,8 @@
   "model_prob": 0.2793,
   "ev": 0.621,
   "payout_units": 4.8,
-  "status": "pending",
-  "pnl": null,
+  "status": "win",
+  "pnl": 4.8,
   "legs": [
    {
     "id": "KXATPMATCH-26OCT18DAMGUE-GUE",
@@ -1553,8 +1554,10 @@
     "price": 0.53,
     "model_prob": 0.648,
     "edge": 0.1,
-    "expected_end": "2026-10-18T20:00:00+00:00"
+    "expected_end": "2026-10-18T20:00:00+00:00",
+    "result": "win"
    }
-  ]
+  ],
+  "graded": "2026-10-18T20:30:10.867901+00:00"
  }
 ]
