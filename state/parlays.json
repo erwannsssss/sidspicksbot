@@ -1752,5 +1752,97 @@
    }
   ],
   "graded": "2026-10-17T23:28:52.126593+00:00"
+ },
+ {
+  "id": "PARLAY-202610180045-1",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-10-18T00:45:00.854188+00:00",
+  "units": 1.0,
+  "price": 0.1391,
+  "model_prob": 0.2522,
+  "ev": 0.812,
+  "payout_units": 6.2,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXATPMATCH-26OCT18SHESAK-SAK",
+    "ticker": "KXATPMATCH-26OCT18SHESAK-SAK",
+    "side": "yes",
+    "market": "Stefanos Sakellaridis to win",
+    "matchup": "2026 ATP Almaty",
+    "sport": "Tennis",
+    "price": 0.36,
+    "model_prob": 0.5,
+    "edge": 0.124,
+    "expected_end": "2026-10-18T13:00:00+00:00"
+   },
+   {
+    "id": "KXNFLPASSTDS-26OCT18TENIND-INDDJONES17-2:no",
+    "ticker": "KXNFLPASSTDS-26OCT18TENIND-INDDJONES17-2",
+    "side": "no",
+    "market": "Daniel Jones: under 2",
+    "matchup": "TEN at IND",
+    "sport": "Football",
+    "price": 0.53,
+    "model_prob": 0.661,
+    "edge": 0.114,
+    "expected_end": "2026-10-18T20:00:00+00:00"
+   },
+   {
+    "id": "KXUCLTOTAL-26OCT20MCIAEK-5:no",
+    "ticker": "KXUCLTOTAL-26OCT20MCIAEK-5",
+    "side": "no",
+    "market": "Under 4.5 goals scored",
+    "matchup": "Manchester City vs AEK Athens",
+    "sport": "Soccer",
+    "price": 0.66,
+    "model_prob": 0.763,
+    "edge": 0.088,
+    "expected_end": "2026-10-20T22:00:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": "PARLAY-202610180045-2",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-10-18T00:45:00.854228+00:00",
+  "units": 1.0,
+  "price": 0.1723,
+  "model_prob": 0.2793,
+  "ev": 0.621,
+  "payout_units": 4.8,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXATPMATCH-26OCT18DAMGUE-GUE",
+    "ticker": "KXATPMATCH-26OCT18DAMGUE-GUE",
+    "side": "yes",
+    "market": "Andrea Guerrieri to win",
+    "matchup": "2026 ATP Brussels",
+    "sport": "Tennis",
+    "price": 0.3,
+    "model_prob": 0.431,
+    "edge": 0.116,
+    "expected_end": "2026-10-18T17:00:00+00:00"
+   },
+   {
+    "id": "KXNFLRSHYDS-26OCT18NYJNE-NERSTEVENSON38-70:no",
+    "ticker": "KXNFLRSHYDS-26OCT18NYJNE-NERSTEVENSON38-70",
+    "side": "no",
+    "market": "Rhamondre Stevenson: under 70",
+    "matchup": "NYJ at NE",
+    "sport": "Football",
+    "price": 0.53,
+    "model_prob": 0.648,
+    "edge": 0.1,
+    "expected_end": "2026-10-18T20:00:00+00:00"
+   }
+  ]
  }
 ]
