@@ -43,48 +43,6 @@
   "graded": "2026-10-06T00:34:16.267911+00:00"
  },
  {
-  "id": "PARLAY-202610050034-2",
-  "tier": "P",
-  "sport": "Parlay",
-  "kind": "recommended",
-  "made": "2026-10-05T00:34:26.965917+00:00",
-  "units": 1.0,
-  "price": 0.1533,
-  "model_prob": 0.2067,
-  "ev": 0.348,
-  "payout_units": 5.5,
-  "status": "loss",
-  "pnl": -1.0,
-  "legs": [
-   {
-    "id": "KXATPMATCH-26OCT05ILABAS-ILA",
-    "ticker": "KXATPMATCH-26OCT05ILABAS-ILA",
-    "side": "yes",
-    "market": "Andre Ilagan to win",
-    "matchup": "2026 ATP Shanghai",
-    "sport": "Tennis",
-    "price": 0.32,
-    "model_prob": 0.406,
-    "edge": 0.071,
-    "expected_end": "2026-10-05T07:00:00+00:00"
-   },
-   {
-    "id": "KXWTACHALLENGERMATCH-26OCT04IBRSRA-IBR",
-    "ticker": "KXWTACHALLENGERMATCH-26OCT04IBRSRA-IBR",
-    "side": "yes",
-    "market": "Alevtina Ibragimova to win",
-    "matchup": "2026 WTA 125K Suzhou",
-    "sport": "Tennis",
-    "price": 0.44,
-    "model_prob": 0.509,
-    "edge": 0.051,
-    "expected_end": "2026-10-05T06:10:00+00:00",
-    "result": "loss"
-   }
-  ],
-  "graded": "2026-10-05T05:29:14.407103+00:00"
- },
- {
   "id": "PARLAY-202610060034-1",
   "tier": "P",
   "sport": "Parlay",
