@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-19T05:37:23.933832+00:00",
+ "updated": "2026-10-19T06:49:23.223113+00:00",
  "status_note": "Last run found 0 new pick(s) and graded 0.",
  "bankroll": 90.88,
  "protection": {
@@ -6019,57 +6019,15 @@
      }
     ],
     "graded": "2026-10-06T00:34:16.267911+00:00"
-   },
-   {
-    "id": "PARLAY-202610050034-2",
-    "tier": "P",
-    "sport": "Parlay",
-    "kind": "recommended",
-    "made": "2026-10-05T00:34:26.965917+00:00",
-    "units": 1.0,
-    "price": 0.1533,
-    "model_prob": 0.2067,
-    "ev": 0.348,
-    "payout_units": 5.5,
-    "status": "loss",
-    "pnl": -1.0,
-    "legs": [
-     {
-      "id": "KXATPMATCH-26OCT05ILABAS-ILA",
-      "ticker": "KXATPMATCH-26OCT05ILABAS-ILA",
-      "side": "yes",
-      "market": "Andre Ilagan to win",
-      "matchup": "2026 ATP Shanghai",
-      "sport": "Tennis",
-      "price": 0.32,
-      "model_prob": 0.406,
-      "edge": 0.071,
-      "expected_end": "2026-10-05T07:00:00+00:00"
-     },
-     {
-      "id": "KXWTACHALLENGERMATCH-26OCT04IBRSRA-IBR",
-      "ticker": "KXWTACHALLENGERMATCH-26OCT04IBRSRA-IBR",
-      "side": "yes",
-      "market": "Alevtina Ibragimova to win",
-      "matchup": "2026 WTA 125K Suzhou",
-      "sport": "Tennis",
-      "price": 0.44,
-      "model_prob": 0.509,
-      "edge": 0.051,
-      "expected_end": "2026-10-05T06:10:00+00:00",
-      "result": "loss"
-     }
-    ],
-    "graded": "2026-10-05T05:29:14.407103+00:00"
    }
   ],
   "summary": {
-   "picks": 27,
+   "picks": 26,
    "wins": 2,
-   "losses": 25,
-   "units": -13.38,
-   "staked": 27.0,
-   "roi": -0.496,
+   "losses": 24,
+   "units": -12.38,
+   "staked": 26.0,
+   "roi": -0.476,
    "beat_price": null,
    "clv": null,
    "clv_picks": 0
@@ -6078,7 +6036,7 @@
  "learning": {
   "groups": {
    "soccer:total": {
-    "finished": 2122,
+    "finished": 2118,
     "games": 184,
     "trust": 0.25,
     "confidence_fix": false,
@@ -6169,8 +6127,8 @@
     "last": "2026-10-19T01:00:00+00:00"
    },
    "tennis:winner": {
-    "finished": 380,
-    "games": 190,
+    "finished": 386,
+    "games": 193,
     "trust": 0.27,
     "confidence_fix": true,
     "last": "2026-10-19T03:00:00+00:00"
@@ -6570,22 +6528,22 @@
   },
   "price_trend": {
    "flat": {
-    "markets": 26706,
+    "markets": 26704,
     "hit_vs_price": -0.0
    },
    "falling": {
-    "markets": 3190,
+    "markets": 3192,
     "hit_vs_price": -0.012
    },
    "rising": {
-    "markets": 3223,
+    "markets": 3225,
     "hit_vs_price": 0.015
    }
   }
  },
  "worker_url": "https://picks-helper.erwannsdkmarketing.workers.dev",
  "tracker": {
-  "tracked": 265253,
+  "tracked": 265621,
   "series": 4007,
   "movers": [
    {
@@ -6712,27 +6670,27 @@
  },
  "models": {
   "tennis": {
-   "matches": 21683,
-   "training_rows": 15176,
+   "matches": 21686,
+   "training_rows": 15179,
    "holdout": {
     "from": "2026-09-13",
     "matches": 2277,
-    "elo_log_loss": 0.6648,
-    "model_log_loss": 0.6565,
-    "elo_accuracy": 0.6,
+    "elo_log_loss": 0.6647,
+    "model_log_loss": 0.6562,
+    "elo_accuracy": 0.599,
     "model_accuracy": 0.618
    },
    "using": "full",
    "weights": {
-    "elo": 1.989,
+    "elo": 1.992,
     "dominance": 0.0,
     "rank": 0.0,
     "h2h": 0.474,
-    "form": -0.472,
+    "form": -0.477,
     "fatigue_games": -0.226,
     "fatigue_matches": 0.065,
     "rest": -0.006,
-    "travel": 0.148,
+    "travel": 0.149,
     "altitude": 0.0,
     "best_of_5": 0.604
    },
@@ -6741,9 +6699,9 @@
    "trust": 0.3
   },
   "soccer": {
-   "matches": 82059,
-   "from_kalshi": 205,
-   "training_rows": 80191,
+   "matches": 82057,
+   "from_kalshi": 203,
+   "training_rows": 80189,
    "totals_bias": -0.004,
    "totals": {
     "matches": 6570,
@@ -6760,11 +6718,11 @@
    },
    "using": "full",
    "market": {
-    "market_log_loss": 0.9922,
-    "model_log_loss": 1.011,
+    "market_log_loss": 0.9921,
+    "model_log_loss": 1.0109,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
-    "matches": 11826
+    "matches": 11828
    },
    "backtest": {
     "bets": 72,
@@ -6776,7 +6734,7 @@
     "rating": 1.607,
     "chance_quality": 0.397,
     "goal_diff_form": 0.031,
-    "rest": -0.063
+    "rest": -0.065
    },
    "goals_scale": 0.993,
    "sport": "Soccer",
@@ -6784,7 +6742,7 @@
    "trust": 0.43
   },
   "mlb": {
-   "training_rows": 14739,
+   "training_rows": 14740,
    "holdout": {
     "matches": 2211,
     "rating_log_loss": 0.6835,
@@ -6795,53 +6753,53 @@
    "using": "full",
    "weights": {
     "home_field": 0.126,
-    "rating": 1.544,
+    "rating": 1.545,
     "starting_pitcher": 0.078,
     "run_diff_form": 0.017,
     "rest": 0.073,
     "pitcher_fip": 0.11
    },
-   "matches": 14818,
+   "matches": 14819,
    "runs_scale": 1.01,
    "sport": "Baseball",
    "label": "MLB",
    "trust": 0.5
   },
   "nfl": {
-   "training_rows": 4392,
+   "training_rows": 4403,
    "holdout": {
-    "matches": 659,
-    "rating_log_loss": 0.6249,
-    "model_log_loss": 0.622,
-    "rating_accuracy": 0.654,
-    "model_accuracy": 0.648
+    "matches": 661,
+    "rating_log_loss": 0.6285,
+    "model_log_loss": 0.6253,
+    "rating_accuracy": 0.649,
+    "model_accuracy": 0.643
    },
    "using": "full",
    "market": {
-    "market_log_loss": 0.6043,
-    "model_log_loss": 0.622,
+    "market_log_loss": 0.6076,
+    "model_log_loss": 0.6253,
     "best_weight": 0.0,
     "backtest_weight": 0.25,
-    "matches": 659
+    "matches": 661
    },
    "backtest": {
-    "bets": 15,
-    "wins": 5,
-    "units": -5.9,
-    "roi": -0.221
+    "bets": 16,
+    "wins": 6,
+    "units": -2.5,
+    "roi": -0.093
    },
    "weights": {
-    "home_field": 0.252,
-    "rating": 1.531,
-    "rest": 0.25,
-    "point_diff_form": 0.237,
-    "qb_change": 0.324,
-    "epa": 0.155
+    "home_field": 0.247,
+    "rating": 1.535,
+    "rest": 0.255,
+    "point_diff_form": 0.233,
+    "qb_change": 0.308,
+    "epa": 0.154
    },
-   "matches": 4444,
+   "matches": 4455,
    "totals": {
-    "matches": 648,
-    "model_log_loss": 0.7195,
+    "matches": 650,
+    "model_log_loss": 0.7202,
     "market_log_loss": 0.6931,
     "best_weight": 0.0
    },
@@ -7108,8 +7066,8 @@
    "expected_end": "2026-10-19T19:30:00+00:00",
    "start_est": "2026-10-19T16:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.315,
-   "close_price": 0.315,
+   "latest_price": 0.325,
+   "close_price": 0.325,
    "pnl": null,
    "why": "Ratings 1471 (Monza, home) vs 1672 (Cagliari). Share of chances lately (xG or shots on target) 53% vs 49%. Goal difference last 6: -6 vs +3. Last played Oct 11 vs Oct 11. Model gives the away 45%. Blended with the market that's 35% vs a 31% price. Sharp sportsbook price (Pinnacle) says 31%.",
    "trend": 0.0,
@@ -7226,8 +7184,8 @@
    "expected_end": "2026-10-19T12:00:00+00:00",
    "start_est": "2026-10-19T08:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.39,
-   "close_price": 0.39,
+   "latest_price": 0.395,
+   "close_price": 0.395,
    "pnl": null,
    "why": "Elo 1601 vs 1497 on clay. Won 50% vs 50% of games lately. Form 5-5 vs 3-7. Games played in last 3 days: 44 vs 22. Model 58%, blended with the market 44%, price 40%. Price down 11\u00a2 in the last 12 hours.",
    "trend": -0.108,
@@ -7305,8 +7263,8 @@
    "expected_end": "2026-10-19T20:00:00+00:00",
    "start_est": "2026-10-19T17:00:00+00:00",
    "status": "pending",
-   "latest_price": 0.475,
-   "close_price": 0.475,
+   "latest_price": 0.47,
+   "close_price": 0.47,
    "pnl": null,
    "why": "Expected goals 1.30 vs 0.69 (1.99 total). Model gives \"No: Both Teams To Score\" 64%. Blended with the market that's 52% vs a 48% price.",
    "trend": 0.015,
@@ -7383,8 +7341,8 @@
    "expected_end": "2026-10-19T17:30:00+00:00",
    "start_est": "2026-10-19T13:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.265,
-   "close_price": 0.265,
+   "latest_price": 0.275,
+   "close_price": 0.275,
    "pnl": null,
    "why": "Elo 1510 vs 1616 on hard. Won 50% vs 50% of games lately. Form 3-7 vs 4-6. Games played in last 3 days: 0 vs 44. Venue altitude 783 m. Model 44%, blended with the market 32%, price 29%.",
    "trend": -0.019,
@@ -7855,8 +7813,8 @@
    "expected_end": "2026-10-22T06:00:00+00:00",
    "start_est": "2026-10-22T02:30:00+00:00",
    "status": "pending",
-   "latest_price": 0.32,
-   "close_price": 0.32,
+   "latest_price": 0.315,
+   "close_price": 0.315,
    "pnl": null,
    "why": "Ratings 1356 (Santos Laguna, home) vs 1533 (UNAM Pumas). Share of chances lately (xG or shots on target) 50% vs 50%. Goal difference last 6: +3 vs -4. Last played Oct 12 vs Oct 12. Model gives the away 44%. Blended with the market that's 36% vs a 33% price. Sharp sportsbook price (Pinnacle) says 32%.",
    "trend": 0.0,
