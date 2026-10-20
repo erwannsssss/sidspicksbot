@@ -1123,8 +1123,8 @@
   "model_prob": 0.2522,
   "ev": 0.812,
   "payout_units": 6.2,
-  "status": "pending",
-  "pnl": null,
+  "status": "loss",
+  "pnl": -1.0,
   "legs": [
    {
     "id": "KXATPMATCH-26OCT18SHESAK-SAK",
@@ -1162,9 +1162,11 @@
     "price": 0.66,
     "model_prob": 0.763,
     "edge": 0.088,
-    "expected_end": "2026-10-20T22:00:00+00:00"
+    "expected_end": "2026-10-20T22:00:00+00:00",
+    "result": "loss"
    }
-  ]
+  ],
+  "graded": "2026-10-20T23:49:44.922888+00:00"
  },
  {
   "id": "PARLAY-202610180045-2",
@@ -1220,8 +1222,8 @@
   "model_prob": 0.3374,
   "ev": 0.53,
   "payout_units": 3.5,
-  "status": "pending",
-  "pnl": null,
+  "status": "loss",
+  "pnl": -1.0,
   "legs": [
    {
     "id": "KXUCLSPREAD-26OCT21AVLVIK-AVL3:no",
@@ -1257,9 +1259,11 @@
     "price": 0.66,
     "model_prob": 0.763,
     "edge": 0.088,
-    "expected_end": "2026-10-20T22:00:00+00:00"
+    "expected_end": "2026-10-20T22:00:00+00:00",
+    "result": "loss"
    }
-  ]
+  ],
+  "graded": "2026-10-20T23:49:45.089482+00:00"
  },
  {
   "id": "PARLAY-202610190045-2",
@@ -1314,8 +1318,8 @@
   "model_prob": 0.2531,
   "ev": 0.823,
   "payout_units": 6.2,
-  "status": "pending",
-  "pnl": null,
+  "status": "loss",
+  "pnl": -1.0,
   "legs": [
    {
     "id": "KXNCAAFGAME-26OCT23TENNSCAR-TENN",
@@ -1351,7 +1355,8 @@
     "price": 0.64,
     "model_prob": 0.745,
     "edge": 0.089,
-    "expected_end": "2026-10-20T22:00:00+00:00"
+    "expected_end": "2026-10-20T22:00:00+00:00",
+    "result": "win"
    },
    {
     "id": "KXUCLTOTAL-26OCT20MCIAEK-5:no",
@@ -1363,9 +1368,11 @@
     "price": 0.66,
     "model_prob": 0.763,
     "edge": 0.088,
-    "expected_end": "2026-10-20T22:00:00+00:00"
+    "expected_end": "2026-10-20T22:00:00+00:00",
+    "result": "loss"
    }
-  ]
+  ],
+  "graded": "2026-10-20T23:49:45.310621+00:00"
  },
  {
   "id": "PARLAY-202610200145-2",
