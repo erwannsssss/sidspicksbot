@@ -1,48 +1,5 @@
 [
  {
-  "id": "PARLAY-202610050034-1",
-  "tier": "P",
-  "sport": "Parlay",
-  "kind": "watchlist",
-  "made": "2026-10-05T00:34:26.965856+00:00",
-  "units": 1.0,
-  "price": 0.1279,
-  "model_prob": 0.2181,
-  "ev": 0.705,
-  "payout_units": 6.8,
-  "status": "win",
-  "pnl": 6.82,
-  "legs": [
-   {
-    "id": "KXMLBHRR-26OCT051700CWSCLE-CWSMMURAKAMI5-1",
-    "ticker": "KXMLBHRR-26OCT051700CWSCLE-CWSMMURAKAMI5-1",
-    "side": "yes",
-    "market": "Munetaka Murakami: 1+",
-    "matchup": "Chicago White Sox at Cleveland Guardians",
-    "sport": "Baseball",
-    "price": 0.56,
-    "model_prob": 0.708,
-    "edge": 0.131,
-    "expected_end": "2026-10-06T00:00:00+00:00",
-    "result": "win"
-   },
-   {
-    "id": "KXATPMATCH-26OCT05SONDOU-DOU",
-    "ticker": "KXATPMATCH-26OCT05SONDOU-DOU",
-    "side": "yes",
-    "market": "Aziz Dougaz to win",
-    "matchup": "2026 ATP Shanghai",
-    "sport": "Tennis",
-    "price": 0.21,
-    "model_prob": 0.308,
-    "edge": 0.086,
-    "expected_end": "2026-10-05T07:00:00+00:00",
-    "result": "win"
-   }
-  ],
-  "graded": "2026-10-06T00:34:16.267911+00:00"
- },
- {
   "id": "PARLAY-202610060034-1",
   "tier": "P",
   "sport": "Parlay",
@@ -1341,6 +1298,110 @@
     "model_prob": 0.577,
     "edge": 0.08,
     "expected_end": "2026-10-20T03:15:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": "PARLAY-202610200145-1",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-10-20T01:45:15.248861+00:00",
+  "units": 1.0,
+  "price": 0.1389,
+  "model_prob": 0.2531,
+  "ev": 0.823,
+  "payout_units": 6.2,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXNCAAFGAME-26OCT23TENNSCAR-TENN",
+    "ticker": "KXNCAAFGAME-26OCT23TENNSCAR-TENN",
+    "side": "yes",
+    "market": "Tennessee to win",
+    "matchup": "Tennessee at South Carolina",
+    "sport": "Football",
+    "price": 0.46,
+    "model_prob": 0.589,
+    "edge": 0.111,
+    "expected_end": "2026-10-24T03:00:00+00:00"
+   },
+   {
+    "id": "KXUCLSPREAD-26OCT21AVLVIK-AVL3:no",
+    "ticker": "KXUCLSPREAD-26OCT21AVLVIK-AVL3",
+    "side": "no",
+    "market": "No: Aston Villa wins by more than 2.5 goals",
+    "matchup": "Aston Villa vs Viking",
+    "sport": "Soccer",
+    "price": 0.64,
+    "model_prob": 0.756,
+    "edge": 0.1,
+    "expected_end": "2026-10-21T22:00:00+00:00"
+   },
+   {
+    "id": "KXUCLSPREAD-26OCT20NAPBOG-NAP2:no",
+    "ticker": "KXUCLSPREAD-26OCT20NAPBOG-NAP2",
+    "side": "no",
+    "market": "No: Napoli wins by more than 1.5 goals",
+    "matchup": "Napoli vs Bodoe/Glimt",
+    "sport": "Soccer",
+    "price": 0.64,
+    "model_prob": 0.745,
+    "edge": 0.089,
+    "expected_end": "2026-10-20T22:00:00+00:00"
+   },
+   {
+    "id": "KXUCLTOTAL-26OCT20MCIAEK-5:no",
+    "ticker": "KXUCLTOTAL-26OCT20MCIAEK-5",
+    "side": "no",
+    "market": "Under 4.5 goals scored",
+    "matchup": "Manchester City vs AEK Athens",
+    "sport": "Soccer",
+    "price": 0.66,
+    "model_prob": 0.763,
+    "edge": 0.088,
+    "expected_end": "2026-10-20T22:00:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": "PARLAY-202610200145-2",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-10-20T01:45:15.248941+00:00",
+  "units": 1.0,
+  "price": 0.2314,
+  "model_prob": 0.3373,
+  "ev": 0.458,
+  "payout_units": 3.3,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXNCAAFSPREAD-26OCT23ARMYTLSA-TLSA2:no",
+    "ticker": "KXNCAAFSPREAD-26OCT23ARMYTLSA-TLSA2",
+    "side": "no",
+    "market": "No: Tulsa wins by over 1.5 points",
+    "matchup": "Army at Tulsa",
+    "sport": "Football",
+    "price": 0.5,
+    "model_prob": 0.62,
+    "edge": 0.102,
+    "expected_end": "2026-10-24T03:30:00+00:00"
+   },
+   {
+    "id": "KXATPMATCH-26OCT20HERBAE-BAE",
+    "ticker": "KXATPMATCH-26OCT20HERBAE-BAE",
+    "side": "yes",
+    "market": "Sebastian Baez to win",
+    "matchup": "2026 ATP Lyon",
+    "sport": "Tennis",
+    "price": 0.43,
+    "model_prob": 0.544,
+    "edge": 0.097,
+    "expected_end": "2026-10-20T13:00:00+00:00"
    }
   ]
  }
