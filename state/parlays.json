@@ -1378,8 +1378,8 @@
   "model_prob": 0.3373,
   "ev": 0.458,
   "payout_units": 3.3,
-  "status": "pending",
-  "pnl": null,
+  "status": "loss",
+  "pnl": -1.0,
   "legs": [
    {
     "id": "KXNCAAFSPREAD-26OCT23ARMYTLSA-TLSA2:no",
@@ -1403,8 +1403,10 @@
     "price": 0.43,
     "model_prob": 0.544,
     "edge": 0.097,
-    "expected_end": "2026-10-20T13:00:00+00:00"
+    "expected_end": "2026-10-20T13:00:00+00:00",
+    "result": "loss"
    }
-  ]
+  ],
+  "graded": "2026-10-20T16:54:58.572660+00:00"
  }
 ]
