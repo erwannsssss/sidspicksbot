@@ -1272,8 +1272,8 @@
   "model_prob": 0.2948,
   "ev": 0.422,
   "payout_units": 3.8,
-  "status": "pending",
-  "pnl": null,
+  "status": "loss",
+  "pnl": -1.0,
   "legs": [
    {
     "id": "KXUCLSPREAD-26OCT21SPOASK-SPO3",
@@ -1297,9 +1297,11 @@
     "price": 0.48,
     "model_prob": 0.577,
     "edge": 0.08,
-    "expected_end": "2026-10-20T03:15:00+00:00"
+    "expected_end": "2026-10-20T03:15:00+00:00",
+    "result": "loss"
    }
-  ]
+  ],
+  "graded": "2026-10-20T07:27:36.085545+00:00"
  },
  {
   "id": "PARLAY-202610200145-1",
