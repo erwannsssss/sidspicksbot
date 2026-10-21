@@ -1415,5 +1415,97 @@
    }
   ],
   "graded": "2026-10-20T16:54:58.572660+00:00"
+ },
+ {
+  "id": "PARLAY-202610210435-1",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-10-21T04:35:00.048250+00:00",
+  "units": 1.0,
+  "price": 0.1527,
+  "model_prob": 0.2774,
+  "ev": 0.817,
+  "payout_units": 5.5,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXNCAAFSPREAD-26OCT24NDSUUNM-UNM4:no",
+    "ticker": "KXNCAAFSPREAD-26OCT24NDSUUNM-UNM4",
+    "side": "no",
+    "market": "No: New Mexico wins by over 3.5 points",
+    "matchup": "North Dakota State at New Mexico",
+    "sport": "Football",
+    "price": 0.47,
+    "model_prob": 0.623,
+    "edge": 0.136,
+    "expected_end": "2026-10-25T05:00:00+00:00"
+   },
+   {
+    "id": "KXNCAAFGAME-26OCT23TENNSCAR-TENN",
+    "ticker": "KXNCAAFGAME-26OCT23TENNSCAR-TENN",
+    "side": "yes",
+    "market": "Tennessee to win",
+    "matchup": "Tennessee at South Carolina",
+    "sport": "Football",
+    "price": 0.46,
+    "model_prob": 0.589,
+    "edge": 0.111,
+    "expected_end": "2026-10-24T03:00:00+00:00"
+   },
+   {
+    "id": "KXUCLSPREAD-26OCT21AVLVIK-AVL3:no",
+    "ticker": "KXUCLSPREAD-26OCT21AVLVIK-AVL3",
+    "side": "no",
+    "market": "No: Aston Villa wins by more than 2.5 goals",
+    "matchup": "Aston Villa vs Viking",
+    "sport": "Soccer",
+    "price": 0.64,
+    "model_prob": 0.756,
+    "edge": 0.1,
+    "expected_end": "2026-10-21T22:00:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": "PARLAY-202610210435-2",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "recommended",
+  "made": "2026-10-21T04:35:00.048296+00:00",
+  "units": 1.0,
+  "price": 0.1415,
+  "model_prob": 0.2362,
+  "ev": 0.669,
+  "payout_units": 6.1,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXJLEAGUESPREAD-26OCT21MARVER-MAR2",
+    "ticker": "KXJLEAGUESPREAD-26OCT21MARVER-MAR2",
+    "side": "yes",
+    "market": "Marinos wins by more than 1.5 goals",
+    "matchup": "Marinos vs Tokyo V",
+    "sport": "Soccer",
+    "price": 0.26,
+    "model_prob": 0.381,
+    "edge": 0.108,
+    "expected_end": "2026-10-21T13:00:00+00:00"
+   },
+   {
+    "id": "KXNCAAFSPREAD-26OCT23ARMYTLSA-TLSA2:no",
+    "ticker": "KXNCAAFSPREAD-26OCT23ARMYTLSA-TLSA2",
+    "side": "no",
+    "market": "No: Tulsa wins by over 1.5 points",
+    "matchup": "Army at Tulsa",
+    "sport": "Football",
+    "price": 0.5,
+    "model_prob": 0.62,
+    "edge": 0.102,
+    "expected_end": "2026-10-24T03:30:00+00:00"
+   }
+  ]
  }
 ]
