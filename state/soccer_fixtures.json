@@ -1,286 +1,1714 @@
 {
  "rows": [
   {
+   "lg": "B1",
+   "home": "Kortrijk",
+   "away": "Mechelen",
+   "t": "2026-10-23T18:45:00+00:00"
+  },
+  {
+   "lg": "B1",
+   "home": "Antwerp",
+   "away": "Charleroi",
+   "t": "2026-10-24T14:00:00+00:00"
+  },
+  {
+   "lg": "B1",
+   "home": "Oud-Heverlee Leuven",
+   "away": "Lommel SK",
+   "t": "2026-10-24T16:15:00+00:00"
+  },
+  {
+   "lg": "B1",
+   "home": "RAAL La Louviere",
+   "away": "Waregem",
+   "t": "2026-10-24T18:45:00+00:00"
+  },
+  {
+   "lg": "B1",
+   "home": "Westerlo",
+   "away": "Beveren",
+   "t": "2026-10-24T18:45:00+00:00"
+  },
+  {
+   "lg": "B1",
+   "home": "Genk",
+   "away": "Standard",
+   "t": "2026-10-25T12:30:00+00:00"
+  },
+  {
+   "lg": "B1",
+   "home": "Club Brugge",
+   "away": "St Truiden",
+   "t": "2026-10-25T15:00:00+00:00"
+  },
+  {
+   "lg": "B1",
+   "home": "Gent",
+   "away": "Anderlecht",
+   "t": "2026-10-25T17:30:00+00:00"
+  },
+  {
+   "lg": "B1",
+   "home": "St. Gilloise",
+   "away": "Cercle Brugge",
+   "t": "2026-10-25T18:15:00+00:00"
+  },
+  {
+   "lg": "D1",
+   "home": "Stuttgart",
+   "away": "M'gladbach",
+   "t": "2026-10-23T18:30:00+00:00"
+  },
+  {
+   "lg": "D1",
+   "home": "Augsburg",
+   "away": "Union Berlin",
+   "t": "2026-10-24T13:30:00+00:00"
+  },
+  {
+   "lg": "D1",
+   "home": "FC Koln",
+   "away": "Schalke 04",
+   "t": "2026-10-24T13:30:00+00:00"
+  },
+  {
+   "lg": "D1",
+   "home": "Mainz",
+   "away": "Werder Bremen",
+   "t": "2026-10-24T13:30:00+00:00"
+  },
+  {
+   "lg": "D1",
+   "home": "Paderborn",
+   "away": "Hamburg",
+   "t": "2026-10-24T13:30:00+00:00"
+  },
+  {
+   "lg": "D1",
+   "home": "RB Leipzig",
+   "away": "Elversberg",
+   "t": "2026-10-24T13:30:00+00:00"
+  },
+  {
+   "lg": "D1",
+   "home": "Dortmund",
+   "away": "Ein Frankfurt",
+   "t": "2026-10-24T16:30:00+00:00"
+  },
+  {
+   "lg": "D1",
+   "home": "Hoffenheim",
+   "away": "Leverkusen",
+   "t": "2026-10-25T14:30:00+00:00"
+  },
+  {
+   "lg": "D1",
+   "home": "Freiburg",
+   "away": "Bayern Munich",
+   "t": "2026-10-25T16:30:00+00:00"
+  },
+  {
+   "lg": "D2",
+   "home": "Bochum",
+   "away": "Wolfsburg",
+   "t": "2026-10-23T16:30:00+00:00"
+  },
+  {
+   "lg": "D2",
+   "home": "Darmstadt",
+   "away": "St Pauli",
+   "t": "2026-10-23T16:30:00+00:00"
+  },
+  {
+   "lg": "D2",
+   "home": "Heidenheim",
+   "away": "Cottbus",
+   "t": "2026-10-24T11:00:00+00:00"
+  },
+  {
+   "lg": "D2",
+   "home": "Hertha",
+   "away": "Bielefeld",
+   "t": "2026-10-24T11:00:00+00:00"
+  },
+  {
+   "lg": "D2",
+   "home": "Magdeburg",
+   "away": "Karlsruhe",
+   "t": "2026-10-24T11:00:00+00:00"
+  },
+  {
+   "lg": "D2",
+   "home": "Nurnberg",
+   "away": "Kaiserslautern",
+   "t": "2026-10-24T18:30:00+00:00"
+  },
+  {
+   "lg": "D2",
+   "home": "Braunschweig",
+   "away": "Hannover",
+   "t": "2026-10-25T12:30:00+00:00"
+  },
+  {
+   "lg": "D2",
+   "home": "Holstein Kiel",
+   "away": "Dresden",
+   "t": "2026-10-25T12:30:00+00:00"
+  },
+  {
+   "lg": "D2",
+   "home": "Osnabruck",
+   "away": "Greuther Furth",
+   "t": "2026-10-25T12:30:00+00:00"
+  },
+  {
+   "lg": "E0",
+   "home": "Ipswich",
+   "away": "Nott'm Forest",
+   "t": "2026-10-23T19:00:00+00:00"
+  },
+  {
+   "lg": "E0",
+   "home": "Aston Villa",
+   "away": "Man City",
+   "t": "2026-10-24T11:30:00+00:00"
+  },
+  {
+   "lg": "E0",
+   "home": "Arsenal",
+   "away": "Everton",
+   "t": "2026-10-24T14:00:00+00:00"
+  },
+  {
+   "lg": "E0",
+   "home": "Coventry",
+   "away": "Fulham",
+   "t": "2026-10-24T14:00:00+00:00"
+  },
+  {
+   "lg": "E0",
+   "home": "Chelsea",
+   "away": "Tottenham",
+   "t": "2026-10-24T16:30:00+00:00"
+  },
+  {
+   "lg": "E0",
+   "home": "Crystal Palace",
+   "away": "Newcastle",
+   "t": "2026-10-25T14:00:00+00:00"
+  },
+  {
+   "lg": "E0",
+   "home": "Hull",
+   "away": "Brentford",
+   "t": "2026-10-25T14:00:00+00:00"
+  },
+  {
+   "lg": "E0",
+   "home": "Liverpool",
+   "away": "Brighton",
+   "t": "2026-10-25T14:00:00+00:00"
+  },
+  {
+   "lg": "E0",
+   "home": "Man United",
+   "away": "Bournemouth",
+   "t": "2026-10-25T14:00:00+00:00"
+  },
+  {
+   "lg": "E0",
+   "home": "Sunderland",
+   "away": "Leeds",
+   "t": "2026-10-25T16:30:00+00:00"
+  },
+  {
+   "lg": "E1",
+   "home": "Bolton",
+   "away": "Middlesbrough",
+   "t": "2026-10-23T19:00:00+00:00"
+  },
+  {
+   "lg": "E1",
+   "home": "Charlton",
+   "away": "Norwich",
+   "t": "2026-10-24T11:30:00+00:00"
+  },
+  {
+   "lg": "E1",
+   "home": "Portsmouth",
+   "away": "Millwall",
+   "t": "2026-10-24T11:30:00+00:00"
+  },
+  {
+   "lg": "E1",
+   "home": "Sheffield United",
+   "away": "Derby",
+   "t": "2026-10-24T11:30:00+00:00"
+  },
+  {
+   "lg": "E1",
+   "home": "Blackburn",
+   "away": "Wrexham",
+   "t": "2026-10-24T14:00:00+00:00"
+  },
+  {
+   "lg": "E1",
+   "home": "Cardiff",
+   "away": "Birmingham",
+   "t": "2026-10-24T14:00:00+00:00"
+  },
+  {
+   "lg": "E1",
+   "home": "Lincoln",
+   "away": "Burnley",
+   "t": "2026-10-24T14:00:00+00:00"
+  },
+  {
+   "lg": "E1",
+   "home": "Preston",
+   "away": "West Brom",
+   "t": "2026-10-24T14:00:00+00:00"
+  },
+  {
+   "lg": "E1",
+   "home": "QPR",
+   "away": "Swansea",
+   "t": "2026-10-24T14:00:00+00:00"
+  },
+  {
+   "lg": "E1",
+   "home": "Stoke",
+   "away": "Bristol City",
+   "t": "2026-10-24T14:00:00+00:00"
+  },
+  {
+   "lg": "E1",
+   "home": "West Ham",
+   "away": "Southampton",
+   "t": "2026-10-24T14:00:00+00:00"
+  },
+  {
    "lg": "E1",
    "home": "Wolves",
-   "away": "Portsmouth",
-   "t": "2026-10-20T18:45:00+00:00"
-  },
-  {
-   "lg": "E2",
-   "home": "AFC Wimbledon",
-   "away": "Mansfield",
-   "t": "2026-10-20T18:45:00+00:00"
-  },
-  {
-   "lg": "E2",
-   "home": "Blackpool",
-   "away": "Milton Keynes Dons",
-   "t": "2026-10-20T18:45:00+00:00"
-  },
-  {
-   "lg": "E2",
-   "home": "Bromley",
-   "away": "Leicester",
-   "t": "2026-10-20T18:45:00+00:00"
-  },
-  {
-   "lg": "E2",
-   "home": "Burton",
-   "away": "Bradford",
-   "t": "2026-10-20T18:45:00+00:00"
-  },
-  {
-   "lg": "E2",
-   "home": "Cambridge",
-   "away": "Wycombe",
-   "t": "2026-10-20T18:45:00+00:00"
-  },
-  {
-   "lg": "E2",
-   "home": "Doncaster",
-   "away": "Stockport",
-   "t": "2026-10-20T18:45:00+00:00"
+   "away": "Watford",
+   "t": "2026-10-24T14:00:00+00:00"
   },
   {
    "lg": "E2",
    "home": "Huddersfield",
-   "away": "Peterboro",
-   "t": "2026-10-20T18:45:00+00:00"
+   "away": "Wigan",
+   "t": "2026-10-24T11:30:00+00:00"
   },
   {
    "lg": "E2",
    "home": "Luton",
-   "away": "Barnsley",
-   "t": "2026-10-20T18:45:00+00:00"
+   "away": "Leicester",
+   "t": "2026-10-24T11:30:00+00:00"
+  },
+  {
+   "lg": "E2",
+   "home": "AFC Wimbledon",
+   "away": "Wycombe",
+   "t": "2026-10-24T14:00:00+00:00"
+  },
+  {
+   "lg": "E2",
+   "home": "Blackpool",
+   "away": "Mansfield",
+   "t": "2026-10-24T14:00:00+00:00"
+  },
+  {
+   "lg": "E2",
+   "home": "Bromley",
+   "away": "Peterboro",
+   "t": "2026-10-24T14:00:00+00:00"
+  },
+  {
+   "lg": "E2",
+   "home": "Burton",
+   "away": "Leyton Orient",
+   "t": "2026-10-24T14:00:00+00:00"
+  },
+  {
+   "lg": "E2",
+   "home": "Cambridge",
+   "away": "Plymouth",
+   "t": "2026-10-24T14:00:00+00:00"
+  },
+  {
+   "lg": "E2",
+   "home": "Doncaster",
+   "away": "Sheffield Weds",
+   "t": "2026-10-24T14:00:00+00:00"
   },
   {
    "lg": "E2",
    "home": "Notts County",
-   "away": "Sheffield Weds",
-   "t": "2026-10-20T18:45:00+00:00"
+   "away": "Stockport",
+   "t": "2026-10-24T14:00:00+00:00"
   },
   {
    "lg": "E2",
    "home": "Oxford",
-   "away": "Wigan",
-   "t": "2026-10-20T18:45:00+00:00"
-  },
-  {
-   "lg": "E2",
-   "home": "Stevenage",
-   "away": "Plymouth",
-   "t": "2026-10-20T18:45:00+00:00"
+   "away": "Bradford",
+   "t": "2026-10-24T14:00:00+00:00"
   },
   {
    "lg": "E2",
    "home": "Reading",
-   "away": "Leyton Orient",
-   "t": "2026-10-21T19:00:00+00:00"
+   "away": "Barnsley",
+   "t": "2026-10-24T14:00:00+00:00"
   },
   {
-   "lg": "E3",
-   "home": "Barnet",
-   "away": "Swindon",
-   "t": "2026-10-20T18:45:00+00:00"
+   "lg": "E2",
+   "home": "Stevenage",
+   "away": "Milton Keynes Dons",
+   "t": "2026-10-24T14:00:00+00:00"
   },
   {
    "lg": "E3",
    "home": "Bristol Rvs",
-   "away": "Salford",
-   "t": "2026-10-20T18:45:00+00:00"
+   "away": "Swindon",
+   "t": "2026-10-24T11:30:00+00:00"
   },
   {
    "lg": "E3",
    "home": "Cheltenham",
-   "away": "Fleetwood Town",
-   "t": "2026-10-20T18:45:00+00:00"
-  },
-  {
-   "lg": "E3",
-   "home": "Chesterfield",
-   "away": "Colchester",
-   "t": "2026-10-20T18:45:00+00:00"
-  },
-  {
-   "lg": "E3",
-   "home": "Crawley Town",
-   "away": "Shrewsbury",
-   "t": "2026-10-20T18:45:00+00:00"
-  },
-  {
-   "lg": "E3",
-   "home": "Exeter",
-   "away": "Crewe",
-   "t": "2026-10-20T18:45:00+00:00"
+   "away": "Newport County",
+   "t": "2026-10-24T11:30:00+00:00"
   },
   {
    "lg": "E3",
    "home": "Northampton",
-   "away": "Tranmere",
-   "t": "2026-10-20T18:45:00+00:00"
+   "away": "Colchester",
+   "t": "2026-10-24T11:30:00+00:00"
   },
   {
    "lg": "E3",
-   "home": "Rochdale",
-   "away": "Grimsby",
-   "t": "2026-10-20T18:45:00+00:00"
-  },
-  {
-   "lg": "E3",
-   "home": "Rotherham",
-   "away": "Newport County",
-   "t": "2026-10-20T18:45:00+00:00"
-  },
-  {
-   "lg": "E3",
-   "home": "Walsall",
+   "home": "Barnet",
    "away": "Oldham",
-   "t": "2026-10-20T18:45:00+00:00"
+   "t": "2026-10-24T14:00:00+00:00"
   },
   {
    "lg": "E3",
-   "home": "York",
-   "away": "Accrington",
-   "t": "2026-10-20T18:45:00+00:00"
+   "home": "Chesterfield",
+   "away": "Crewe",
+   "t": "2026-10-24T14:00:00+00:00"
+  },
+  {
+   "lg": "E3",
+   "home": "Crawley Town",
+   "away": "Tranmere",
+   "t": "2026-10-24T14:00:00+00:00"
+  },
+  {
+   "lg": "E3",
+   "home": "Exeter",
+   "away": "Fleetwood Town",
+   "t": "2026-10-24T14:00:00+00:00"
   },
   {
    "lg": "E3",
    "home": "Gillingham",
+   "away": "Grimsby",
+   "t": "2026-10-24T14:00:00+00:00"
+  },
+  {
+   "lg": "E3",
+   "home": "Rochdale",
+   "away": "Accrington",
+   "t": "2026-10-24T14:00:00+00:00"
+  },
+  {
+   "lg": "E3",
+   "home": "Rotherham",
+   "away": "Shrewsbury",
+   "t": "2026-10-24T14:00:00+00:00"
+  },
+  {
+   "lg": "E3",
+   "home": "York",
    "away": "Port Vale",
-   "t": "2026-10-20T19:00:00+00:00"
+   "t": "2026-10-24T14:00:00+00:00"
+  },
+  {
+   "lg": "E3",
+   "home": "Walsall",
+   "away": "Salford",
+   "t": "2026-10-26T20:00:00+00:00"
+  },
+  {
+   "lg": "EC",
+   "home": "Gateshead",
+   "away": "Tamworth",
+   "t": "2026-10-23T18:45:00+00:00"
+  },
+  {
+   "lg": "EC",
+   "home": "Eastleigh",
+   "away": "Boston Utd",
+   "t": "2026-10-24T11:30:00+00:00"
+  },
+  {
+   "lg": "EC",
+   "home": "Harrogate",
+   "away": "Sutton",
+   "t": "2026-10-24T11:30:00+00:00"
+  },
+  {
+   "lg": "EC",
+   "home": "Aldershot",
+   "away": "Wealdstone",
+   "t": "2026-10-24T14:00:00+00:00"
+  },
+  {
+   "lg": "EC",
+   "home": "Barrow",
+   "away": "Forest Green",
+   "t": "2026-10-24T14:00:00+00:00"
+  },
+  {
+   "lg": "EC",
+   "home": "Boreham Wood",
+   "away": "Fylde",
+   "t": "2026-10-24T14:00:00+00:00"
+  },
+  {
+   "lg": "EC",
+   "home": "Hartlepool",
+   "away": "Hornchurch",
+   "t": "2026-10-24T14:00:00+00:00"
+  },
+  {
+   "lg": "EC",
+   "home": "Scunthorpe",
+   "away": "Woking",
+   "t": "2026-10-24T14:00:00+00:00"
+  },
+  {
+   "lg": "EC",
+   "home": "Solihull",
+   "away": "Carlisle",
+   "t": "2026-10-24T14:00:00+00:00"
+  },
+  {
+   "lg": "EC",
+   "home": "Southend",
+   "away": "Halifax",
+   "t": "2026-10-24T14:00:00+00:00"
+  },
+  {
+   "lg": "EC",
+   "home": "Yeovil",
+   "away": "Altrincham",
+   "t": "2026-10-24T14:00:00+00:00"
+  },
+  {
+   "lg": "EC",
+   "home": "Kidderminster",
+   "away": "Worthing",
+   "t": "2026-10-24T16:30:00+00:00"
+  },
+  {
+   "lg": "F1",
+   "home": "Brest",
+   "away": "Nice",
+   "t": "2026-10-23T18:45:00+00:00"
+  },
+  {
+   "lg": "F1",
+   "home": "Lens",
+   "away": "Paris FC",
+   "t": "2026-10-24T18:45:00+00:00"
+  },
+  {
+   "lg": "F1",
+   "home": "Monaco",
+   "away": "Lille",
+   "t": "2026-10-25T14:00:00+00:00"
+  },
+  {
+   "lg": "F1",
+   "home": "Angers",
+   "away": "Lorient",
+   "t": "2026-10-25T16:15:00+00:00"
+  },
+  {
+   "lg": "F1",
+   "home": "Auxerre",
+   "away": "Le Mans",
+   "t": "2026-10-25T16:15:00+00:00"
+  },
+  {
+   "lg": "F1",
+   "home": "Marseille",
+   "away": "Le Havre",
+   "t": "2026-10-25T16:15:00+00:00"
+  },
+  {
+   "lg": "F1",
+   "home": "Rennes",
+   "away": "Strasbourg",
+   "t": "2026-10-25T16:15:00+00:00"
+  },
+  {
+   "lg": "F1",
+   "home": "Toulouse",
+   "away": "Troyes",
+   "t": "2026-10-25T16:15:00+00:00"
+  },
+  {
+   "lg": "F1",
+   "home": "Paris SG",
+   "away": "Lyon",
+   "t": "2026-10-26T19:30:00+00:00"
+  },
+  {
+   "lg": "F2",
+   "home": "Clermont",
+   "away": "Guingamp",
+   "t": "2026-10-23T18:00:00+00:00"
+  },
+  {
+   "lg": "F2",
+   "home": "Dunkerque",
+   "away": "Metz",
+   "t": "2026-10-23T18:00:00+00:00"
+  },
+  {
+   "lg": "F2",
+   "home": "Nancy",
+   "away": "Laval",
+   "t": "2026-10-23T18:00:00+00:00"
+  },
+  {
+   "lg": "F2",
+   "home": "Pau FC",
+   "away": "Grenoble",
+   "t": "2026-10-23T18:00:00+00:00"
+  },
+  {
+   "lg": "F2",
+   "home": "Sochaux",
+   "away": "Annecy",
+   "t": "2026-10-23T18:00:00+00:00"
+  },
+  {
+   "lg": "F2",
+   "home": "Dijon",
+   "away": "Rodez",
+   "t": "2026-10-24T12:00:00+00:00"
+  },
+  {
+   "lg": "F2",
+   "home": "St Etienne",
+   "away": "Nantes",
+   "t": "2026-10-24T18:45:00+00:00"
+  },
+  {
+   "lg": "F2",
+   "home": "Boulogne",
+   "away": "Reims",
+   "t": "2026-10-26T19:45:00+00:00"
+  },
+  {
+   "lg": "F2",
+   "home": "Montpellier",
+   "away": "Red Star",
+   "t": "2026-10-26T19:45:00+00:00"
+  },
+  {
+   "lg": "G1",
+   "home": "Iraklis",
+   "away": "Kifisia",
+   "t": "2026-10-24T16:00:00+00:00"
+  },
+  {
+   "lg": "G1",
+   "home": "Asteras Tripolis",
+   "away": "Levadeiakos",
+   "t": "2026-10-24T16:30:00+00:00"
+  },
+  {
+   "lg": "G1",
+   "home": "AEK",
+   "away": "Panetolikos",
+   "t": "2026-10-24T17:00:00+00:00"
+  },
+  {
+   "lg": "G1",
+   "home": "Olympiakos",
+   "away": "Kalamata",
+   "t": "2026-10-25T14:00:00+00:00"
+  },
+  {
+   "lg": "G1",
+   "home": "Volos NFC",
+   "away": "Panathinaikos",
+   "t": "2026-10-25T16:00:00+00:00"
+  },
+  {
+   "lg": "G1",
+   "home": "Aris",
+   "away": "Atromitos",
+   "t": "2026-10-25T17:30:00+00:00"
+  },
+  {
+   "lg": "G1",
+   "home": "OFI Crete",
+   "away": "PAOK",
+   "t": "2026-10-25T18:00:00+00:00"
+  },
+  {
+   "lg": "I1",
+   "home": "Torino",
+   "away": "Monza",
+   "t": "2026-10-23T18:45:00+00:00"
+  },
+  {
+   "lg": "I1",
+   "home": "Cagliari",
+   "away": "Bologna",
+   "t": "2026-10-24T13:00:00+00:00"
+  },
+  {
+   "lg": "I1",
+   "home": "Como",
+   "away": "Sassuolo",
+   "t": "2026-10-24T13:00:00+00:00"
+  },
+  {
+   "lg": "I1",
+   "home": "Napoli",
+   "away": "Roma",
+   "t": "2026-10-24T16:00:00+00:00"
+  },
+  {
+   "lg": "I1",
+   "home": "Lazio",
+   "away": "Parma",
+   "t": "2026-10-24T18:45:00+00:00"
+  },
+  {
+   "lg": "I1",
+   "home": "Inter",
+   "away": "Fiorentina",
+   "t": "2026-10-25T11:30:00+00:00"
+  },
+  {
+   "lg": "I1",
+   "home": "Atalanta",
+   "away": "Frosinone",
+   "t": "2026-10-25T14:00:00+00:00"
+  },
+  {
+   "lg": "I1",
+   "home": "Genoa",
+   "away": "Venezia",
+   "t": "2026-10-25T14:00:00+00:00"
+  },
+  {
+   "lg": "I1",
+   "home": "Lecce",
+   "away": "Juventus",
+   "t": "2026-10-25T17:00:00+00:00"
+  },
+  {
+   "lg": "I1",
+   "home": "Udinese",
+   "away": "Milan",
+   "t": "2026-10-25T19:45:00+00:00"
+  },
+  {
+   "lg": "I2",
+   "home": "Empoli",
+   "away": "Vicenza",
+   "t": "2026-10-23T18:30:00+00:00"
+  },
+  {
+   "lg": "I2",
+   "home": "Avellino",
+   "away": "Padova",
+   "t": "2026-10-24T13:00:00+00:00"
+  },
+  {
+   "lg": "I2",
+   "home": "Cremonese",
+   "away": "Juve Stabia",
+   "t": "2026-10-24T13:00:00+00:00"
+  },
+  {
+   "lg": "I2",
+   "home": "Modena",
+   "away": "Cesena",
+   "t": "2026-10-24T13:00:00+00:00"
+  },
+  {
+   "lg": "I2",
+   "home": "Sudtirol",
+   "away": "Sampdoria",
+   "t": "2026-10-24T13:00:00+00:00"
+  },
+  {
+   "lg": "I2",
+   "home": "Virtus Entella",
+   "away": "Mantova",
+   "t": "2026-10-24T13:00:00+00:00"
+  },
+  {
+   "lg": "I2",
+   "home": "Catanzaro",
+   "away": "Ascoli",
+   "t": "2026-10-24T15:15:00+00:00"
+  },
+  {
+   "lg": "I2",
+   "home": "Arezzo",
+   "away": "Benevento",
+   "t": "2026-10-24T17:30:00+00:00"
+  },
+  {
+   "lg": "I2",
+   "home": "Palermo",
+   "away": "Carrarese",
+   "t": "2026-10-25T14:00:00+00:00"
+  },
+  {
+   "lg": "I2",
+   "home": "Verona",
+   "away": "Pisa",
+   "t": "2026-10-25T16:15:00+00:00"
+  },
+  {
+   "lg": "N1",
+   "home": "Go Ahead Eagles",
+   "away": "Telstar",
+   "t": "2026-10-23T18:00:00+00:00"
+  },
+  {
+   "lg": "N1",
+   "home": "Utrecht",
+   "away": "Zwolle",
+   "t": "2026-10-24T14:30:00+00:00"
+  },
+  {
+   "lg": "N1",
+   "home": "Willem II",
+   "away": "Cambuur",
+   "t": "2026-10-24T16:45:00+00:00"
+  },
+  {
+   "lg": "N1",
+   "home": "Den Haag",
+   "away": "Heerenveen",
+   "t": "2026-10-24T19:00:00+00:00"
+  },
+  {
+   "lg": "N1",
+   "home": "For Sittard",
+   "away": "Excelsior",
+   "t": "2026-10-25T11:15:00+00:00"
+  },
+  {
+   "lg": "N1",
+   "home": "Nijmegen",
+   "away": "Groningen",
+   "t": "2026-10-25T13:30:00+00:00"
+  },
+  {
+   "lg": "N1",
+   "home": "PSV Eindhoven",
+   "away": "Feyenoord",
+   "t": "2026-10-25T13:30:00+00:00"
+  },
+  {
+   "lg": "N1",
+   "home": "Sparta Rotterdam",
+   "away": "Ajax",
+   "t": "2026-10-25T15:45:00+00:00"
+  },
+  {
+   "lg": "N1",
+   "home": "AZ Alkmaar",
+   "away": "Twente",
+   "t": "2026-10-25T19:00:00+00:00"
+  },
+  {
+   "lg": "P1",
+   "home": "Guimaraes",
+   "away": "Maritimo",
+   "t": "2026-10-23T19:45:00+00:00"
+  },
+  {
+   "lg": "P1",
+   "home": "Estrela",
+   "away": "Casa Pia",
+   "t": "2026-10-24T14:30:00+00:00"
+  },
+  {
+   "lg": "P1",
+   "home": "Alverca",
+   "away": "Arouca",
+   "t": "2026-10-24T17:00:00+00:00"
+  },
+  {
+   "lg": "P1",
+   "home": "Gil Vicente",
+   "away": "Porto",
+   "t": "2026-10-24T19:30:00+00:00"
+  },
+  {
+   "lg": "P1",
+   "home": "Estoril",
+   "away": "Moreirense",
+   "t": "2026-10-25T15:30:00+00:00"
+  },
+  {
+   "lg": "P1",
+   "home": "Nacional",
+   "away": "Sp Braga",
+   "t": "2026-10-25T18:00:00+00:00"
+  },
+  {
+   "lg": "P1",
+   "home": "Rio Ave",
+   "away": "Famalicao",
+   "t": "2026-10-25T18:00:00+00:00"
+  },
+  {
+   "lg": "P1",
+   "home": "Sp Lisbon",
+   "away": "Academico Viseu",
+   "t": "2026-10-25T20:30:00+00:00"
+  },
+  {
+   "lg": "P1",
+   "home": "Santa Clara",
+   "away": "Benfica",
+   "t": "2026-10-26T18:45:00+00:00"
+  },
+  {
+   "lg": "SC0",
+   "home": "Dundee United",
+   "away": "Aberdeen",
+   "t": "2026-10-24T14:00:00+00:00"
+  },
+  {
+   "lg": "SC0",
+   "home": "Falkirk",
+   "away": "Kilmarnock",
+   "t": "2026-10-24T14:00:00+00:00"
+  },
+  {
+   "lg": "SC0",
+   "home": "Rangers",
+   "away": "St Johnstone",
+   "t": "2026-10-24T14:00:00+00:00"
+  },
+  {
+   "lg": "SC0",
+   "home": "St Mirren",
+   "away": "Dundee",
+   "t": "2026-10-24T14:00:00+00:00"
+  },
+  {
+   "lg": "SC0",
+   "home": "Hibernian",
+   "away": "Celtic",
+   "t": "2026-10-25T12:00:00+00:00"
+  },
+  {
+   "lg": "SC0",
+   "home": "Motherwell",
+   "away": "Hearts",
+   "t": "2026-10-25T14:00:00+00:00"
   },
   {
    "lg": "SC1",
-   "home": "Dunfermline",
-   "away": "Partick",
-   "t": "2026-10-20T18:45:00+00:00"
+   "home": "Livingston",
+   "away": "Arbroath",
+   "t": "2026-10-24T14:00:00+00:00"
+  },
+  {
+   "lg": "SC1",
+   "home": "Morton",
+   "away": "Ayr",
+   "t": "2026-10-24T14:00:00+00:00"
+  },
+  {
+   "lg": "SC1",
+   "home": "Partick",
+   "away": "Stenhousemuir",
+   "t": "2026-10-24T14:00:00+00:00"
+  },
+  {
+   "lg": "SC1",
+   "home": "Queens Park",
+   "away": "Dunfermline",
+   "t": "2026-10-24T14:00:00+00:00"
+  },
+  {
+   "lg": "SC1",
+   "home": "Raith Rvs",
+   "away": "Inverness C",
+   "t": "2026-10-24T14:00:00+00:00"
+  },
+  {
+   "lg": "SC2",
+   "home": "Alloa",
+   "away": "Queen of Sth",
+   "t": "2026-10-24T14:00:00+00:00"
+  },
+  {
+   "lg": "SC2",
+   "home": "Cove Rangers",
+   "away": "East Kilbride",
+   "t": "2026-10-24T14:00:00+00:00"
+  },
+  {
+   "lg": "SC2",
+   "home": "Hamilton",
+   "away": "East Fife",
+   "t": "2026-10-24T14:00:00+00:00"
+  },
+  {
+   "lg": "SC2",
+   "home": "Montrose",
+   "away": "Peterhead",
+   "t": "2026-10-24T14:00:00+00:00"
+  },
+  {
+   "lg": "SC2",
+   "home": "Ross County",
+   "away": "Airdrie Utd",
+   "t": "2026-10-24T14:00:00+00:00"
   },
   {
    "lg": "SP1",
-   "home": "Levante",
-   "away": "Ath Bilbao",
-   "t": "2026-10-21T18:00:00+00:00"
+   "home": "Alaves",
+   "away": "Malaga",
+   "t": "2026-10-23T19:00:00+00:00"
+  },
+  {
+   "lg": "SP1",
+   "home": "Vallecano",
+   "away": "Elche",
+   "t": "2026-10-24T12:00:00+00:00"
+  },
+  {
+   "lg": "SP1",
+   "home": "Santander",
+   "away": "Espanol",
+   "t": "2026-10-24T14:15:00+00:00"
+  },
+  {
+   "lg": "SP1",
+   "home": "Valencia",
+   "away": "Villarreal",
+   "t": "2026-10-24T16:30:00+00:00"
+  },
+  {
+   "lg": "SP1",
+   "home": "Ath Madrid",
+   "away": "La Coruna",
+   "t": "2026-10-24T19:00:00+00:00"
+  },
+  {
+   "lg": "SP1",
+   "home": "Ath Bilbao",
+   "away": "Getafe",
+   "t": "2026-10-25T13:00:00+00:00"
+  },
+  {
+   "lg": "SP1",
+   "home": "Celta",
+   "away": "Betis",
+   "t": "2026-10-25T15:15:00+00:00"
+  },
+  {
+   "lg": "SP1",
+   "home": "Sociedad",
+   "away": "Levante",
+   "t": "2026-10-25T17:30:00+00:00"
+  },
+  {
+   "lg": "SP1",
+   "home": "Barcelona",
+   "away": "Real Madrid",
+   "t": "2026-10-25T20:00:00+00:00"
+  },
+  {
+   "lg": "SP1",
+   "home": "Sevilla",
+   "away": "Osasuna",
+   "t": "2026-10-26T20:00:00+00:00"
+  },
+  {
+   "lg": "SP2",
+   "home": "Granada",
+   "away": "Valladolid",
+   "t": "2026-10-23T18:30:00+00:00"
+  },
+  {
+   "lg": "SP2",
+   "home": "Cordoba",
+   "away": "Eibar",
+   "t": "2026-10-24T12:00:00+00:00"
+  },
+  {
+   "lg": "SP2",
+   "home": "Leganes",
+   "away": "Mallorca",
+   "t": "2026-10-24T14:15:00+00:00"
+  },
+  {
+   "lg": "SP2",
+   "home": "Girona",
+   "away": "Celta B",
+   "t": "2026-10-24T16:30:00+00:00"
+  },
+  {
+   "lg": "SP2",
+   "home": "Las Palmas",
+   "away": "Sociedad B",
+   "t": "2026-10-24T16:30:00+00:00"
+  },
+  {
+   "lg": "SP2",
+   "home": "Almeria",
+   "away": "Oviedo",
+   "t": "2026-10-24T19:00:00+00:00"
+  },
+  {
+   "lg": "SP2",
+   "home": "Sabadell",
+   "away": "Tenerife",
+   "t": "2026-10-25T13:00:00+00:00"
+  },
+  {
+   "lg": "SP2",
+   "home": "Albacete",
+   "away": "Eldense",
+   "t": "2026-10-25T15:15:00+00:00"
+  },
+  {
+   "lg": "SP2",
+   "home": "Cadiz",
+   "away": "Ceuta",
+   "t": "2026-10-25T15:15:00+00:00"
+  },
+  {
+   "lg": "SP2",
+   "home": "Castellon",
+   "away": "Sp Gijon",
+   "t": "2026-10-25T17:30:00+00:00"
+  },
+  {
+   "lg": "SP2",
+   "home": "Andorra",
+   "away": "Burgos",
+   "t": "2026-10-26T19:30:00+00:00"
+  },
+  {
+   "lg": "T1",
+   "home": "Alanyaspor",
+   "away": "Kocaelispor",
+   "t": "2026-10-23T17:00:00+00:00"
+  },
+  {
+   "lg": "T1",
+   "home": "Eyupspor",
+   "away": "Kasimpasa",
+   "t": "2026-10-24T10:30:00+00:00"
+  },
+  {
+   "lg": "T1",
+   "home": "Gaziantep",
+   "away": "Erzurumspor",
+   "t": "2026-10-24T13:00:00+00:00"
+  },
+  {
+   "lg": "T1",
+   "home": "Samsunspor",
+   "away": "Amedspor",
+   "t": "2026-10-24T16:00:00+00:00"
+  },
+  {
+   "lg": "T1",
+   "home": "Konyaspor",
+   "away": "Genclerbirligi",
+   "t": "2026-10-25T13:00:00+00:00"
+  },
+  {
+   "lg": "T1",
+   "home": "Goztep",
+   "away": "Corum",
+   "t": "2026-10-25T16:00:00+00:00"
+  },
+  {
+   "lg": "T1",
+   "home": "Besiktas",
+   "away": "Buyuksehyr",
+   "t": "2026-10-26T16:00:00+00:00"
+  },
+  {
+   "lg": "T1",
+   "home": "Rizespor",
+   "away": "Trabzonspor",
+   "t": "2026-10-26T16:00:00+00:00"
+  },
+  {
+   "lg": "T1",
+   "home": "Galatasaray",
+   "away": "Fenerbahce",
+   "t": "2026-10-26T18:30:00+00:00"
+  },
+  {
+   "lg": "ARG",
+   "home": "Gimnasia L.P.",
+   "away": "Sarmiento Junin",
+   "t": "2026-10-23T21:00:00+00:00"
+  },
+  {
+   "lg": "ARG",
+   "home": "Gimnasia Mendoza",
+   "away": "Platense",
+   "t": "2026-10-23T21:30:00+00:00"
+  },
+  {
+   "lg": "ARG",
+   "home": "Tigre",
+   "away": "Atl. Tucuman",
+   "t": "2026-10-24T00:15:00+00:00"
+  },
+  {
+   "lg": "ARG",
+   "home": "Banfield",
+   "away": "Lanus",
+   "t": "2026-10-24T17:45:00+00:00"
+  },
+  {
+   "lg": "ARG",
+   "home": "Talleres Cordoba",
+   "away": "Defensa y Justicia",
+   "t": "2026-10-24T20:00:00+00:00"
+  },
+  {
+   "lg": "ARG",
+   "home": "San Lorenzo",
+   "away": "Newells Old Boys",
+   "t": "2026-10-24T22:15:00+00:00"
+  },
+  {
+   "lg": "ARG",
+   "home": "Aldosivi",
+   "away": "Belgrano",
+   "t": "2026-10-25T18:45:00+00:00"
+  },
+  {
+   "lg": "ARG",
+   "home": "Independiente",
+   "away": "Boca Juniors",
+   "t": "2026-10-25T21:00:00+00:00"
+  },
+  {
+   "lg": "ARG",
+   "home": "River Plate",
+   "away": "Racing Club",
+   "t": "2026-10-25T23:15:00+00:00"
+  },
+  {
+   "lg": "ARG",
+   "home": "Barracas Central",
+   "away": "Estudiantes Rio Cuarto",
+   "t": "2026-10-26T01:30:00+00:00"
+  },
+  {
+   "lg": "ARG",
+   "home": "Central Cordoba",
+   "away": "Velez Sarsfield",
+   "t": "2026-10-26T01:30:00+00:00"
+  },
+  {
+   "lg": "ARG",
+   "home": "Union de Santa Fe",
+   "away": "Estudiantes L.P.",
+   "t": "2026-10-26T23:00:00+00:00"
+  },
+  {
+   "lg": "ARG",
+   "home": "Instituto",
+   "away": "Dep. Riestra",
+   "t": "2026-10-27T01:15:00+00:00"
+  },
+  {
+   "lg": "ARG",
+   "home": "Argentinos Jrs",
+   "away": "Ind. Rivadavia",
+   "t": "2026-10-27T23:00:00+00:00"
+  },
+  {
+   "lg": "BRA",
+   "home": "Cruzeiro",
+   "away": "Remo",
+   "t": "2026-10-23T23:00:00+00:00"
+  },
+  {
+   "lg": "BRA",
+   "home": "Internacional",
+   "away": "Botafogo RJ",
+   "t": "2026-10-24T19:30:00+00:00"
+  },
+  {
+   "lg": "BRA",
+   "home": "Mirassol",
+   "away": "Sao Paulo",
+   "t": "2026-10-24T19:30:00+00:00"
+  },
+  {
+   "lg": "BRA",
+   "home": "Vitoria",
+   "away": "Athletico-PR",
+   "t": "2026-10-24T19:30:00+00:00"
+  },
+  {
+   "lg": "BRA",
+   "home": "Palmeiras",
+   "away": "Bragantino",
+   "t": "2026-10-24T21:30:00+00:00"
+  },
+  {
+   "lg": "BRA",
+   "home": "Vasco",
+   "away": "Corinthians",
+   "t": "2026-10-24T21:30:00+00:00"
+  },
+  {
+   "lg": "BRA",
+   "home": "Chapecoense-SC",
+   "away": "Fluminense",
+   "t": "2026-10-24T22:30:00+00:00"
+  },
+  {
+   "lg": "BRA",
+   "home": "Coritiba",
+   "away": "Gremio",
+   "t": "2026-10-26T23:30:00+00:00"
+  },
+  {
+   "lg": "BRA",
+   "home": "Flamengo RJ",
+   "away": "Atletico-MG",
+   "t": "2026-10-27T00:00:00+00:00"
+  },
+  {
+   "lg": "DNK",
+   "home": "Randers FC",
+   "away": "Brondby",
+   "t": "2026-10-23T17:00:00+00:00"
+  },
+  {
+   "lg": "DNK",
+   "home": "Midtjylland",
+   "away": "Lyngby",
+   "t": "2026-10-25T14:00:00+00:00"
+  },
+  {
+   "lg": "DNK",
+   "home": "Silkeborg",
+   "away": "Nordsjaelland",
+   "t": "2026-10-25T14:00:00+00:00"
+  },
+  {
+   "lg": "DNK",
+   "home": "Horsens",
+   "away": "Sonderjyske",
+   "t": "2026-10-25T16:00:00+00:00"
+  },
+  {
+   "lg": "DNK",
+   "home": "Aarhus",
+   "away": "Viborg",
+   "t": "2026-10-25T18:00:00+00:00"
+  },
+  {
+   "lg": "DNK",
+   "home": "FC Copenhagen",
+   "away": "Odense",
+   "t": "2026-10-26T19:00:00+00:00"
   },
   {
    "lg": "JPN",
-   "home": "Avispa Fukuoka",
-   "away": "Gamba Osaka",
-   "t": "2026-10-21T10:00:00+00:00"
+   "home": "Sanfrecce Hiroshima",
+   "away": "Shimizu S-Pulse",
+   "t": "2026-10-24T05:00:00+00:00"
   },
   {
    "lg": "JPN",
-   "home": "FC Tokyo",
+   "home": "Kashima Antlers",
    "away": "Kashiwa Reysol",
-   "t": "2026-10-21T10:00:00+00:00"
+   "t": "2026-10-24T06:00:00+00:00"
   },
   {
    "lg": "JPN",
-   "home": "Kawasaki Frontale",
-   "away": "Vissel Kobe",
-   "t": "2026-10-21T10:00:00+00:00"
+   "home": "Verdy",
+   "away": "Avispa Fukuoka",
+   "t": "2026-10-24T06:00:00+00:00"
   },
   {
    "lg": "JPN",
-   "home": "Kawasaki Frontale",
-   "away": "Vissel Kobe",
-   "t": "2026-10-21T10:00:00+00:00"
+   "home": "Vissel Kobe",
+   "away": "Machida",
+   "t": "2026-10-24T06:00:00+00:00"
   },
   {
    "lg": "JPN",
-   "home": "Kyoto",
-   "away": "Kashima Antlers",
-   "t": "2026-10-21T10:00:00+00:00"
+   "home": "Gamba Osaka",
+   "away": "Kyoto",
+   "t": "2026-10-24T07:00:00+00:00"
   },
   {
    "lg": "JPN",
    "home": "Nagoya Grampus",
-   "away": "Cerezo Osaka",
-   "t": "2026-10-21T10:00:00+00:00"
+   "away": "Yokohama F. Marinos",
+   "t": "2026-10-25T06:00:00+00:00"
   },
   {
    "lg": "JPN",
-   "home": "Okayama",
-   "away": "Mito",
-   "t": "2026-10-21T10:00:00+00:00"
-  },
-  {
-   "lg": "JPN",
-   "home": "V-Varen Nagasaki",
-   "away": "Sanfrecce Hiroshima",
-   "t": "2026-10-21T10:00:00+00:00"
-  },
-  {
-   "lg": "JPN",
-   "home": "Yokohama F. Marinos",
-   "away": "Verdy",
-   "t": "2026-10-21T10:00:00+00:00"
+   "home": "Cerezo Osaka",
+   "away": "Chiba",
+   "t": "2026-10-25T07:00:00+00:00"
   },
   {
    "lg": "JPN",
    "home": "Urawa Reds",
-   "away": "Chiba",
-   "t": "2026-10-21T10:30:00+00:00"
+   "away": "V-Varen Nagasaki",
+   "t": "2026-10-25T07:00:00+00:00"
+  },
+  {
+   "lg": "JPN",
+   "home": "FC Tokyo",
+   "away": "Mito",
+   "t": "2026-10-25T08:00:00+00:00"
+  },
+  {
+   "lg": "JPN",
+   "home": "Kawasaki Frontale",
+   "away": "Okayama",
+   "t": "2026-10-25T08:00:00+00:00"
   },
   {
    "lg": "MEX",
-   "home": "Guadalajara Chivas",
-   "away": "Necaxa",
-   "t": "2026-10-21T00:07:00+00:00"
+   "home": "Necaxa",
+   "away": "Juarez",
+   "t": "2026-10-24T01:00:00+00:00"
   },
   {
    "lg": "MEX",
-   "home": "Atl. San Luis",
-   "away": "Queretaro",
-   "t": "2026-10-21T01:00:00+00:00"
+   "home": "Atlante",
+   "away": "Atl. San Luis",
+   "t": "2026-10-24T03:00:00+00:00"
   },
   {
    "lg": "MEX",
-   "home": "Juarez",
-   "away": "Atlante",
-   "t": "2026-10-21T01:00:00+00:00"
+   "home": "Club Leon",
+   "away": "Toluca",
+   "t": "2026-10-24T23:00:00+00:00"
   },
   {
    "lg": "MEX",
-   "home": "Tigres UANL",
-   "away": "Club Leon",
-   "t": "2026-10-21T03:00:00+00:00"
+   "home": "Monterrey",
+   "away": "Guadalajara Chivas",
+   "t": "2026-10-25T03:00:00+00:00"
+  },
+  {
+   "lg": "MEX",
+   "home": "UNAM Pumas",
+   "away": "Tigres UANL",
+   "t": "2026-10-25T04:10:00+00:00"
   },
   {
    "lg": "MEX",
    "home": "Atlas",
-   "away": "Club America",
-   "t": "2026-10-22T01:00:00+00:00"
+   "away": "Puebla",
+   "t": "2026-10-26T00:00:00+00:00"
   },
   {
    "lg": "MEX",
-   "home": "Puebla",
-   "away": "Monterrey",
-   "t": "2026-10-22T01:00:00+00:00"
-  },
-  {
-   "lg": "MEX",
-   "home": "Toluca",
-   "away": "Club Tijuana",
-   "t": "2026-10-22T01:00:00+00:00"
-  },
-  {
-   "lg": "MEX",
-   "home": "Pachuca",
+   "home": "Queretaro",
    "away": "Cruz Azul",
-   "t": "2026-10-22T03:00:00+00:00"
+   "t": "2026-10-26T02:00:00+00:00"
   },
   {
    "lg": "MEX",
-   "home": "Santos Laguna",
-   "away": "UNAM Pumas",
-   "t": "2026-10-22T03:10:00+00:00"
+   "home": "Club America",
+   "away": "Pachuca",
+   "t": "2026-10-26T02:05:00+00:00"
+  },
+  {
+   "lg": "MEX",
+   "home": "Club Tijuana",
+   "away": "Santos Laguna",
+   "t": "2026-10-26T04:10:00+00:00"
+  },
+  {
+   "lg": "NOR",
+   "home": "Bodo/Glimt",
+   "away": "Valerenga",
+   "t": "2026-10-24T14:00:00+00:00"
+  },
+  {
+   "lg": "NOR",
+   "home": "HamKam",
+   "away": "Rosenborg",
+   "t": "2026-10-24T16:00:00+00:00"
+  },
+  {
+   "lg": "NOR",
+   "home": "Viking",
+   "away": "Tromso",
+   "t": "2026-10-25T14:30:00+00:00"
+  },
+  {
+   "lg": "NOR",
+   "home": "Kristiansund",
+   "away": "KFUM Oslo",
+   "t": "2026-10-25T17:00:00+00:00"
+  },
+  {
+   "lg": "NOR",
+   "home": "Lillestrom",
+   "away": "Brann",
+   "t": "2026-10-25T17:00:00+00:00"
+  },
+  {
+   "lg": "NOR",
+   "home": "Sarpsborg 08",
+   "away": "Aalesund",
+   "t": "2026-10-25T17:00:00+00:00"
+  },
+  {
+   "lg": "NOR",
+   "home": "Start",
+   "away": "Sandefjord",
+   "t": "2026-10-25T17:00:00+00:00"
+  },
+  {
+   "lg": "NOR",
+   "home": "Molde",
+   "away": "Fredrikstad",
+   "t": "2026-10-25T19:15:00+00:00"
+  },
+  {
+   "lg": "POL",
+   "home": "Motor Lublin",
+   "away": "Zaglebie",
+   "t": "2026-10-23T16:00:00+00:00"
+  },
+  {
+   "lg": "POL",
+   "home": "Widzew Lodz",
+   "away": "Gornik Zabrze",
+   "t": "2026-10-23T18:30:00+00:00"
+  },
+  {
+   "lg": "POL",
+   "home": "Piast Gliwice",
+   "away": "Cracovia",
+   "t": "2026-10-24T10:15:00+00:00"
+  },
+  {
+   "lg": "POL",
+   "home": "Korona Kielce",
+   "away": "GKS Katowice",
+   "t": "2026-10-24T12:45:00+00:00"
+  },
+  {
+   "lg": "POL",
+   "home": "Pogon Szczecin",
+   "away": "Radomiak Radom",
+   "t": "2026-10-24T15:30:00+00:00"
+  },
+  {
+   "lg": "POL",
+   "home": "Wisla",
+   "away": "Rakow",
+   "t": "2026-10-24T18:15:00+00:00"
+  },
+  {
+   "lg": "POL",
+   "home": "Slask Wroclaw",
+   "away": "Wieczysta Krakow",
+   "t": "2026-10-25T12:15:00+00:00"
+  },
+  {
+   "lg": "POL",
+   "home": "Jagiellonia",
+   "away": "Wisla Plock",
+   "t": "2026-10-25T14:45:00+00:00"
+  },
+  {
+   "lg": "POL",
+   "home": "Legia",
+   "away": "Lech Poznan",
+   "t": "2026-10-25T17:30:00+00:00"
+  },
+  {
+   "lg": "SWE",
+   "home": "Elfsborg",
+   "away": "Malmo FF",
+   "t": "2026-10-23T17:00:00+00:00"
+  },
+  {
+   "lg": "SWE",
+   "home": "Vasteras SK",
+   "away": "Halmstad",
+   "t": "2026-10-23T17:00:00+00:00"
+  },
+  {
+   "lg": "SWE",
+   "home": "Hacken",
+   "away": "Degerfors",
+   "t": "2026-10-24T13:00:00+00:00"
+  },
+  {
+   "lg": "SWE",
+   "home": "Sirius",
+   "away": "AIK",
+   "t": "2026-10-24T13:00:00+00:00"
+  },
+  {
+   "lg": "SWE",
+   "home": "Djurgarden",
+   "away": "Orgryte",
+   "t": "2026-10-24T15:30:00+00:00"
+  },
+  {
+   "lg": "SWE",
+   "home": "Kalmar",
+   "away": "Brommapojkarna",
+   "t": "2026-10-24T15:30:00+00:00"
+  },
+  {
+   "lg": "SWE",
+   "home": "GAIS",
+   "away": "Goteborg",
+   "t": "2026-10-25T14:00:00+00:00"
+  },
+  {
+   "lg": "SWE",
+   "home": "Mjallby",
+   "away": "Hammarby",
+   "t": "2026-10-25T16:30:00+00:00"
+  },
+  {
+   "lg": "SWZ",
+   "home": "Servette",
+   "away": "Vaduz",
+   "t": "2026-10-24T16:00:00+00:00"
+  },
+  {
+   "lg": "SWZ",
+   "home": "Zurich",
+   "away": "Luzern",
+   "t": "2026-10-24T16:00:00+00:00"
+  },
+  {
+   "lg": "SWZ",
+   "home": "Young Boys",
+   "away": "St. Gallen",
+   "t": "2026-10-24T18:30:00+00:00"
+  },
+  {
+   "lg": "SWZ",
+   "home": "Thun",
+   "away": "Lugano",
+   "t": "2026-10-25T14:00:00+00:00"
+  },
+  {
+   "lg": "SWZ",
+   "home": "Basel",
+   "away": "Grasshoppers",
+   "t": "2026-10-25T16:30:00+00:00"
+  },
+  {
+   "lg": "SWZ",
+   "home": "Sion",
+   "away": "Lausanne",
+   "t": "2026-10-25T16:30:00+00:00"
   },
   {
    "lg": "USA",
-   "home": "FC Cincinnati",
-   "away": "DC United",
-   "t": "2026-10-21T23:00:00+00:00"
+   "home": "CF Montreal",
+   "away": "Nashville SC",
+   "t": "2026-10-24T17:30:00+00:00"
+  },
+  {
+   "lg": "USA",
+   "home": "Columbus Crew",
+   "away": "Toronto FC",
+   "t": "2026-10-24T19:30:00+00:00"
+  },
+  {
+   "lg": "USA",
+   "home": "New York Red Bulls",
+   "away": "Inter Miami",
+   "t": "2026-10-24T21:30:00+00:00"
+  },
+  {
+   "lg": "USA",
+   "home": "Atlanta Utd",
+   "away": "Chicago Fire",
+   "t": "2026-10-24T23:30:00+00:00"
+  },
+  {
+   "lg": "USA",
+   "home": "DC United",
+   "away": "FC Cincinnati",
+   "t": "2026-10-24T23:30:00+00:00"
+  },
+  {
+   "lg": "USA",
+   "home": "Orlando City",
+   "away": "New York City",
+   "t": "2026-10-24T23:30:00+00:00"
+  },
+  {
+   "lg": "USA",
+   "home": "Philadelphia Union",
+   "away": "New England Revolution",
+   "t": "2026-10-24T23:30:00+00:00"
+  },
+  {
+   "lg": "USA",
+   "home": "Colorado Rapids",
+   "away": "Vancouver Whitecaps",
+   "t": "2026-10-25T03:30:00+00:00"
+  },
+  {
+   "lg": "USA",
+   "home": "Portland Timbers",
+   "away": "Charlotte",
+   "t": "2026-10-25T03:30:00+00:00"
+  },
+  {
+   "lg": "USA",
+   "home": "Real Salt Lake",
+   "away": "St. Louis City",
+   "t": "2026-10-25T03:30:00+00:00"
+  },
+  {
+   "lg": "USA",
+   "home": "San Diego FC",
+   "away": "Seattle Sounders",
+   "t": "2026-10-25T03:30:00+00:00"
+  },
+  {
+   "lg": "USA",
+   "home": "Los Angeles FC",
+   "away": "Los Angeles Galaxy",
+   "t": "2026-10-26T02:00:00+00:00"
   }
  ]
 }
