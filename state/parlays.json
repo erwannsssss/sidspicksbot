@@ -1422,5 +1422,85 @@
     "expected_end": "2026-10-26T03:20:00+00:00"
    }
   ]
+ },
+ {
+  "id": "PARLAY-202610230439-1",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-10-23T04:39:37.168973+00:00",
+  "units": 1.0,
+  "price": 0.1283,
+  "model_prob": 0.2492,
+  "ev": 0.943,
+  "payout_units": 6.8,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXNFLRECYDS-26OCT25LARLV-LARKMUMPFIELD4-25:no",
+    "ticker": "KXNFLRECYDS-26OCT25LARLV-LARKMUMPFIELD4-25",
+    "side": "no",
+    "market": "Konata Mumpfield: under 25",
+    "matchup": "LA at LV",
+    "sport": "Football",
+    "price": 0.25,
+    "model_prob": 0.4,
+    "edge": 0.136,
+    "expected_end": "2026-10-25T23:25:00+00:00"
+   },
+   {
+    "id": "KXNCAAFSPREAD-26OCT24NDSUUNM-UNM4:no",
+    "ticker": "KXNCAAFSPREAD-26OCT24NDSUUNM-UNM4",
+    "side": "no",
+    "market": "No: New Mexico wins by over 3.5 points",
+    "matchup": "North Dakota State at New Mexico",
+    "sport": "Football",
+    "price": 0.47,
+    "model_prob": 0.623,
+    "edge": 0.136,
+    "expected_end": "2026-10-25T05:00:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": "PARLAY-202610230439-2",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-10-23T04:39:37.169024+00:00",
+  "units": 1.0,
+  "price": 0.247,
+  "model_prob": 0.3652,
+  "ev": 0.478,
+  "payout_units": 3.0,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXNCAAFGAME-26OCT23TENNSCAR-TENN",
+    "ticker": "KXNCAAFGAME-26OCT23TENNSCAR-TENN",
+    "side": "yes",
+    "market": "Tennessee to win",
+    "matchup": "Tennessee at South Carolina",
+    "sport": "Football",
+    "price": 0.46,
+    "model_prob": 0.589,
+    "edge": 0.111,
+    "expected_end": "2026-10-24T03:00:00+00:00"
+   },
+   {
+    "id": "KXNCAAFSPREAD-26OCT23ARMYTLSA-TLSA2:no",
+    "ticker": "KXNCAAFSPREAD-26OCT23ARMYTLSA-TLSA2",
+    "side": "no",
+    "market": "No: Tulsa wins by over 1.5 points",
+    "matchup": "Army at Tulsa",
+    "sport": "Football",
+    "price": 0.5,
+    "model_prob": 0.62,
+    "edge": 0.102,
+    "expected_end": "2026-10-24T03:30:00+00:00"
+   }
+  ]
  }
 ]
