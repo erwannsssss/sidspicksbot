@@ -1472,8 +1472,8 @@
   "model_prob": 0.3022,
   "ev": 0.638,
   "payout_units": 4.4,
-  "status": "pending",
-  "pnl": null,
+  "status": "loss",
+  "pnl": -1.0,
   "legs": [
    {
     "id": "KXATPMATCH-26OCT24PAUFRI-PAU",
@@ -1485,7 +1485,8 @@
     "price": 0.37,
     "model_prob": 0.513,
     "edge": 0.127,
-    "expected_end": "2026-10-24T13:00:00+00:00"
+    "expected_end": "2026-10-24T13:00:00+00:00",
+    "result": "loss"
    },
    {
     "id": "KXNCAAFGAME-26OCT23TENNSCAR-TENN",
@@ -1499,6 +1500,7 @@
     "edge": 0.111,
     "expected_end": "2026-10-24T03:00:00+00:00"
    }
-  ]
+  ],
+  "graded": "2026-10-24T15:53:58.348982+00:00"
  }
 ]
