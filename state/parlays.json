@@ -1,47 +1,5 @@
 [
  {
-  "id": "PARLAY-202610080035-1",
-  "tier": "P",
-  "sport": "Parlay",
-  "kind": "watchlist",
-  "made": "2026-10-08T00:35:36.890303+00:00",
-  "units": 1.0,
-  "price": 0.1327,
-  "model_prob": 0.258,
-  "ev": 0.944,
-  "payout_units": 6.5,
-  "status": "loss",
-  "pnl": -1.0,
-  "legs": [
-   {
-    "id": "KXNCAAFSPREAD-26OCT09CLMBMRST-MRST8",
-    "ticker": "KXNCAAFSPREAD-26OCT09CLMBMRST-MRST8",
-    "side": "yes",
-    "market": "Marist wins by over 7.5 points",
-    "matchup": "Columbia at Marist",
-    "sport": "Football",
-    "price": 0.23,
-    "model_prob": 0.388,
-    "edge": 0.146,
-    "expected_end": "2026-10-10T02:00:00+00:00",
-    "result": "loss"
-   },
-   {
-    "id": "KXNFLRECYDS-26OCT11INDPIT-INDTWARREN84-50:no",
-    "ticker": "KXNFLRECYDS-26OCT11INDPIT-INDTWARREN84-50",
-    "side": "no",
-    "market": "Tyler Warren: under 50",
-    "matchup": "IND at PIT",
-    "sport": "Football",
-    "price": 0.53,
-    "model_prob": 0.665,
-    "edge": 0.117,
-    "expected_end": "2026-10-11T20:00:00+00:00"
-   }
-  ],
-  "graded": "2026-10-10T03:25:04.670536+00:00"
- },
- {
   "id": "PARLAY-202610080035-2",
   "tier": "P",
   "sport": "Parlay",
@@ -95,48 +53,6 @@
    }
   ],
   "graded": "2026-10-11T02:24:32.357037+00:00"
- },
- {
-  "id": "PARLAY-202610090037-1",
-  "tier": "P",
-  "sport": "Parlay",
-  "kind": "watchlist",
-  "made": "2026-10-09T00:37:28.258624+00:00",
-  "units": 1.0,
-  "price": 0.1327,
-  "model_prob": 0.2681,
-  "ev": 1.02,
-  "payout_units": 6.5,
-  "status": "loss",
-  "pnl": -1.0,
-  "legs": [
-   {
-    "id": "KXNCAAFSPREAD-26OCT09CLMBMRST-MRST8",
-    "ticker": "KXNCAAFSPREAD-26OCT09CLMBMRST-MRST8",
-    "side": "yes",
-    "market": "Marist wins by over 7.5 points",
-    "matchup": "Columbia at Marist",
-    "sport": "Football",
-    "price": 0.23,
-    "model_prob": 0.388,
-    "edge": 0.146,
-    "expected_end": "2026-10-10T02:00:00+00:00",
-    "result": "loss"
-   },
-   {
-    "id": "KXNFLPASSYDS-26OCT11CHIGB-CHITBAGENT17-225:no",
-    "ticker": "KXNFLPASSYDS-26OCT11CHIGB-CHITBAGENT17-225",
-    "side": "no",
-    "market": "Tyson Bagent: under 225",
-    "matchup": "CHI at GB",
-    "sport": "Football",
-    "price": 0.53,
-    "model_prob": 0.691,
-    "edge": 0.144,
-    "expected_end": "2026-10-11T23:25:00+00:00"
-   }
-  ],
-  "graded": "2026-10-10T03:25:05.073712+00:00"
  },
  {
   "id": "PARLAY-202610090037-2",
@@ -1407,7 +1323,8 @@
     "price": 0.5,
     "model_prob": 0.62,
     "edge": 0.102,
-    "expected_end": "2026-10-24T03:30:00+00:00"
+    "expected_end": "2026-10-24T03:30:00+00:00",
+    "result": "win"
    },
    {
     "id": "KXNFLRSHYDS-26OCT25KCSEA-KCKWALKER9-100",
@@ -1499,7 +1416,88 @@
     "price": 0.5,
     "model_prob": 0.62,
     "edge": 0.102,
-    "expected_end": "2026-10-24T03:30:00+00:00"
+    "expected_end": "2026-10-24T03:30:00+00:00",
+    "result": "win"
+   }
+  ]
+ },
+ {
+  "id": "PARLAY-202610240428-1",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-10-24T04:28:38.604496+00:00",
+  "units": 1.0,
+  "price": 0.1283,
+  "model_prob": 0.2492,
+  "ev": 0.943,
+  "payout_units": 6.8,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXNCAAFSPREAD-26OCT24NDSUUNM-UNM4:no",
+    "ticker": "KXNCAAFSPREAD-26OCT24NDSUUNM-UNM4",
+    "side": "no",
+    "market": "No: New Mexico wins by over 3.5 points",
+    "matchup": "North Dakota State at New Mexico",
+    "sport": "Football",
+    "price": 0.47,
+    "model_prob": 0.623,
+    "edge": 0.136,
+    "expected_end": "2026-10-25T05:00:00+00:00"
+   },
+   {
+    "id": "KXNFLRECYDS-26OCT25LARLV-LARKMUMPFIELD4-25:no",
+    "ticker": "KXNFLRECYDS-26OCT25LARLV-LARKMUMPFIELD4-25",
+    "side": "no",
+    "market": "Konata Mumpfield: under 25",
+    "matchup": "LA at LV",
+    "sport": "Football",
+    "price": 0.25,
+    "model_prob": 0.4,
+    "edge": 0.136,
+    "expected_end": "2026-10-25T23:25:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": "PARLAY-202610240428-2",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-10-24T04:28:38.604523+00:00",
+  "units": 1.0,
+  "price": 0.1844,
+  "model_prob": 0.3022,
+  "ev": 0.638,
+  "payout_units": 4.4,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXATPMATCH-26OCT24PAUFRI-PAU",
+    "ticker": "KXATPMATCH-26OCT24PAUFRI-PAU",
+    "side": "yes",
+    "market": "Tommy Paul to win",
+    "matchup": "2026 ATP Lyon",
+    "sport": "Tennis",
+    "price": 0.37,
+    "model_prob": 0.513,
+    "edge": 0.127,
+    "expected_end": "2026-10-24T13:00:00+00:00"
+   },
+   {
+    "id": "KXNCAAFGAME-26OCT23TENNSCAR-TENN",
+    "ticker": "KXNCAAFGAME-26OCT23TENNSCAR-TENN",
+    "side": "yes",
+    "market": "Tennessee to win",
+    "matchup": "Tennessee at South Carolina",
+    "sport": "Football",
+    "price": 0.46,
+    "model_prob": 0.589,
+    "edge": 0.111,
+    "expected_end": "2026-10-24T03:00:00+00:00"
    }
   ]
  }
