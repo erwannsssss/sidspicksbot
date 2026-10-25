@@ -1175,8 +1175,8 @@
   "model_prob": 0.2774,
   "ev": 0.817,
   "payout_units": 5.5,
-  "status": "pending",
-  "pnl": null,
+  "status": "loss",
+  "pnl": -1.0,
   "legs": [
    {
     "id": "KXNCAAFSPREAD-26OCT24NDSUUNM-UNM4:no",
@@ -1200,7 +1200,8 @@
     "price": 0.46,
     "model_prob": 0.589,
     "edge": 0.111,
-    "expected_end": "2026-10-24T03:00:00+00:00"
+    "expected_end": "2026-10-24T03:00:00+00:00",
+    "result": "loss"
    },
    {
     "id": "KXUCLSPREAD-26OCT21AVLVIK-AVL3:no",
@@ -1215,7 +1216,8 @@
     "expected_end": "2026-10-21T22:00:00+00:00",
     "result": "win"
    }
-  ]
+  ],
+  "graded": "2026-10-25T00:17:59.034607+00:00"
  },
  {
   "id": "PARLAY-202610210435-2",
@@ -1270,8 +1272,8 @@
   "model_prob": 0.3669,
   "ev": 0.577,
   "payout_units": 3.3,
-  "status": "pending",
-  "pnl": null,
+  "status": "loss",
+  "pnl": -1.0,
   "legs": [
    {
     "id": "KXNCAAFSPREAD-26OCT24NDSUUNM-UNM4:no",
@@ -1295,9 +1297,11 @@
     "price": 0.46,
     "model_prob": 0.589,
     "edge": 0.111,
-    "expected_end": "2026-10-24T03:00:00+00:00"
+    "expected_end": "2026-10-24T03:00:00+00:00",
+    "result": "loss"
    }
-  ]
+  ],
+  "graded": "2026-10-25T00:17:59.110595+00:00"
  },
  {
   "id": "PARLAY-202610220040-2",
@@ -1391,8 +1395,8 @@
   "model_prob": 0.3652,
   "ev": 0.478,
   "payout_units": 3.0,
-  "status": "pending",
-  "pnl": null,
+  "status": "loss",
+  "pnl": -1.0,
   "legs": [
    {
     "id": "KXNCAAFGAME-26OCT23TENNSCAR-TENN",
@@ -1404,7 +1408,8 @@
     "price": 0.46,
     "model_prob": 0.589,
     "edge": 0.111,
-    "expected_end": "2026-10-24T03:00:00+00:00"
+    "expected_end": "2026-10-24T03:00:00+00:00",
+    "result": "loss"
    },
    {
     "id": "KXNCAAFSPREAD-26OCT23ARMYTLSA-TLSA2:no",
@@ -1419,7 +1424,8 @@
     "expected_end": "2026-10-24T03:30:00+00:00",
     "result": "win"
    }
-  ]
+  ],
+  "graded": "2026-10-25T00:17:59.279888+00:00"
  },
  {
   "id": "PARLAY-202610240428-1",
@@ -1502,5 +1508,85 @@
    }
   ],
   "graded": "2026-10-24T15:53:58.348982+00:00"
+ },
+ {
+  "id": "PARLAY-202610250018-1",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-10-25T00:18:00.667686+00:00",
+  "units": 1.0,
+  "price": 0.1283,
+  "model_prob": 0.2492,
+  "ev": 0.943,
+  "payout_units": 6.8,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXNCAAFSPREAD-26OCT24NDSUUNM-UNM4:no",
+    "ticker": "KXNCAAFSPREAD-26OCT24NDSUUNM-UNM4",
+    "side": "no",
+    "market": "No: New Mexico wins by over 3.5 points",
+    "matchup": "North Dakota State at New Mexico",
+    "sport": "Football",
+    "price": 0.47,
+    "model_prob": 0.623,
+    "edge": 0.136,
+    "expected_end": "2026-10-25T05:00:00+00:00"
+   },
+   {
+    "id": "KXNFLRECYDS-26OCT25LARLV-LARKMUMPFIELD4-25:no",
+    "ticker": "KXNFLRECYDS-26OCT25LARLV-LARKMUMPFIELD4-25",
+    "side": "no",
+    "market": "Konata Mumpfield: under 25",
+    "matchup": "LA at LV",
+    "sport": "Football",
+    "price": 0.25,
+    "model_prob": 0.4,
+    "edge": 0.136,
+    "expected_end": "2026-10-25T23:25:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": "PARLAY-202610250018-2",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-10-25T00:18:00.667733+00:00",
+  "units": 1.0,
+  "price": 0.2038,
+  "model_prob": 0.3103,
+  "ev": 0.522,
+  "payout_units": 3.9,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXMLSTEAMTOTAL-26OCT24RSLSTL-STL2",
+    "ticker": "KXMLSTEAMTOTAL-26OCT24RSLSTL-STL2",
+    "side": "yes",
+    "market": "Saint Louis over 1.5 goals",
+    "matchup": "Salt Lake vs Saint Louis",
+    "sport": "Soccer",
+    "price": 0.41,
+    "model_prob": 0.534,
+    "edge": 0.107,
+    "expected_end": "2026-10-25T03:30:00+00:00"
+   },
+   {
+    "id": "KXNFLREC-26OCT25TBCAR-CARJMETCHIE13-2",
+    "ticker": "KXNFLREC-26OCT25TBCAR-CARJMETCHIE13-2",
+    "side": "yes",
+    "market": "John Metchie III: 2+",
+    "matchup": "TB at CAR",
+    "sport": "Football",
+    "price": 0.46,
+    "model_prob": 0.581,
+    "edge": 0.103,
+    "expected_end": "2026-10-25T20:00:00+00:00"
+   }
+  ]
  }
 ]
