@@ -99,48 +99,6 @@
   "graded": "2026-10-11T21:24:02.554563+00:00"
  },
  {
-  "id": "PARLAY-202610110034-2",
-  "tier": "P",
-  "sport": "Parlay",
-  "kind": "watchlist",
-  "made": "2026-10-11T00:34:33.904468+00:00",
-  "units": 1.0,
-  "price": 0.1946,
-  "model_prob": 0.3056,
-  "ev": 0.57,
-  "payout_units": 4.1,
-  "status": "loss",
-  "pnl": -1.0,
-  "legs": [
-   {
-    "id": "KXBUNDESLIGASPREAD-26OCT11SCFSCH-SCF2",
-    "ticker": "KXBUNDESLIGASPREAD-26OCT11SCFSCH-SCF2",
-    "side": "yes",
-    "market": "Freiburg wins by more than 1.5 goals",
-    "matchup": "Freiburg vs Schalke",
-    "sport": "Soccer",
-    "price": 0.36,
-    "model_prob": 0.489,
-    "edge": 0.113,
-    "expected_end": "2026-10-11T18:30:00+00:00",
-    "result": "loss"
-   },
-   {
-    "id": "KXNFLRECYDS-26OCT11CLENYJ-CLEDBOSTON12-50",
-    "ticker": "KXNFLRECYDS-26OCT11CLENYJ-CLEDBOSTON12-50",
-    "side": "yes",
-    "market": "Denzel Boston: 50+",
-    "matchup": "CLE at NYJ",
-    "sport": "Football",
-    "price": 0.5,
-    "model_prob": 0.625,
-    "edge": 0.107,
-    "expected_end": "2026-10-11T20:00:00+00:00"
-   }
-  ],
-  "graded": "2026-10-11T18:26:44.108319+00:00"
- },
- {
   "id": "PARLAY-202610120036-1",
   "tier": "P",
   "sport": "Parlay",
