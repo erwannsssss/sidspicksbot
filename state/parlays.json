@@ -1,169 +1,5 @@
 [
  {
-  "id": "PARLAY-202610080035-2",
-  "tier": "P",
-  "sport": "Parlay",
-  "kind": "watchlist",
-  "made": "2026-10-08T00:35:36.890341+00:00",
-  "units": 1.0,
-  "price": 0.1281,
-  "model_prob": 0.2349,
-  "ev": 0.834,
-  "payout_units": 6.8,
-  "status": "loss",
-  "pnl": -1.0,
-  "legs": [
-   {
-    "id": "KXNCAAFSPREAD-26OCT10CCARMRSH-MRSH4",
-    "ticker": "KXNCAAFSPREAD-26OCT10CCARMRSH-MRSH4",
-    "side": "yes",
-    "market": "Marshall wins by over 3.5 points",
-    "matchup": "Coastal Carolina at Marshall",
-    "sport": "Football",
-    "price": 0.48,
-    "model_prob": 0.616,
-    "edge": 0.119,
-    "expected_end": "2026-10-10T20:00:00+00:00",
-    "result": "loss"
-   },
-   {
-    "id": "KXNCAAFSPREAD-26OCT10BALLNW-NW36:no",
-    "ticker": "KXNCAAFSPREAD-26OCT10BALLNW-NW36",
-    "side": "no",
-    "market": "No: Northwestern wins by over 35.5 points",
-    "matchup": "Ball State at Northwestern",
-    "sport": "Football",
-    "price": 0.48,
-    "model_prob": 0.61,
-    "edge": 0.113,
-    "expected_end": "2026-10-10T20:00:00+00:00",
-    "result": "win"
-   },
-   {
-    "id": "KXNFLRECYDS-26OCT11CLENYJ-CLEDBOSTON12-50",
-    "ticker": "KXNFLRECYDS-26OCT11CLENYJ-CLEDBOSTON12-50",
-    "side": "yes",
-    "market": "Denzel Boston: 50+",
-    "matchup": "CLE at NYJ",
-    "sport": "Football",
-    "price": 0.5,
-    "model_prob": 0.625,
-    "edge": 0.107,
-    "expected_end": "2026-10-11T20:00:00+00:00"
-   }
-  ],
-  "graded": "2026-10-11T02:24:32.357037+00:00"
- },
- {
-  "id": "PARLAY-202610090037-2",
-  "tier": "P",
-  "sport": "Parlay",
-  "kind": "watchlist",
-  "made": "2026-10-09T00:37:28.258672+00:00",
-  "units": 1.0,
-  "price": 0.1355,
-  "model_prob": 0.2499,
-  "ev": 0.844,
-  "payout_units": 6.4,
-  "status": "loss",
-  "pnl": -1.0,
-  "legs": [
-   {
-    "id": "KXNCAAFSPREAD-26OCT10CCARMRSH-MRSH4",
-    "ticker": "KXNCAAFSPREAD-26OCT10CCARMRSH-MRSH4",
-    "side": "yes",
-    "market": "Marshall wins by over 3.5 points",
-    "matchup": "Coastal Carolina at Marshall",
-    "sport": "Football",
-    "price": 0.48,
-    "model_prob": 0.616,
-    "edge": 0.119,
-    "expected_end": "2026-10-10T20:00:00+00:00",
-    "result": "loss"
-   },
-   {
-    "id": "KXNFLRECYDS-26OCT11INDPIT-INDTWARREN84-50:no",
-    "ticker": "KXNFLRECYDS-26OCT11INDPIT-INDTWARREN84-50",
-    "side": "no",
-    "market": "Tyler Warren: under 50",
-    "matchup": "IND at PIT",
-    "sport": "Football",
-    "price": 0.53,
-    "model_prob": 0.665,
-    "edge": 0.117,
-    "expected_end": "2026-10-11T20:00:00+00:00"
-   },
-   {
-    "id": "KXNCAAFSPREAD-26OCT10BALLNW-NW36:no",
-    "ticker": "KXNCAAFSPREAD-26OCT10BALLNW-NW36",
-    "side": "no",
-    "market": "No: Northwestern wins by over 35.5 points",
-    "matchup": "Ball State at Northwestern",
-    "sport": "Football",
-    "price": 0.48,
-    "model_prob": 0.61,
-    "edge": 0.113,
-    "expected_end": "2026-10-10T20:00:00+00:00",
-    "result": "win"
-   }
-  ],
-  "graded": "2026-10-11T02:24:32.489491+00:00"
- },
- {
-  "id": "PARLAY-202610100035-1",
-  "tier": "P",
-  "sport": "Parlay",
-  "kind": "watchlist",
-  "made": "2026-10-10T00:35:24.059098+00:00",
-  "units": 1.0,
-  "price": 0.1495,
-  "model_prob": 0.2975,
-  "ev": 0.991,
-  "payout_units": 5.7,
-  "status": "loss",
-  "pnl": -1.0,
-  "legs": [
-   {
-    "id": "KXNFLPASSYDS-26OCT11CHIGB-CHITBAGENT17-225:no",
-    "ticker": "KXNFLPASSYDS-26OCT11CHIGB-CHITBAGENT17-225",
-    "side": "no",
-    "market": "Tyson Bagent: under 225",
-    "matchup": "CHI at GB",
-    "sport": "Football",
-    "price": 0.53,
-    "model_prob": 0.691,
-    "edge": 0.144,
-    "expected_end": "2026-10-11T23:25:00+00:00"
-   },
-   {
-    "id": "KXNFLREC-26OCT11LVNE-LVCWHITE82-2:no",
-    "ticker": "KXNFLREC-26OCT11LVNE-LVCWHITE82-2",
-    "side": "no",
-    "market": "Cody White: under 2",
-    "matchup": "LV at NE",
-    "sport": "Football",
-    "price": 0.44,
-    "model_prob": 0.598,
-    "edge": 0.141,
-    "expected_end": "2026-10-11T20:00:00+00:00"
-   },
-   {
-    "id": "KXMLBHRR-26OCT102000CWSCLE-CWSMMURAKAMI5-1",
-    "ticker": "KXMLBHRR-26OCT102000CWSCLE-CWSMMURAKAMI5-1",
-    "side": "yes",
-    "market": "Munetaka Murakami: 1+",
-    "matchup": "Chicago White Sox at Cleveland Guardians",
-    "sport": "Baseball",
-    "price": 0.58,
-    "model_prob": 0.72,
-    "edge": 0.123,
-    "expected_end": "2026-10-11T03:00:00+00:00",
-    "result": "loss"
-   }
-  ],
-  "graded": "2026-10-11T03:25:44.670895+00:00"
- },
- {
   "id": "PARLAY-202610100035-2",
   "tier": "P",
   "sport": "Parlay",
@@ -1355,8 +1191,8 @@
   "model_prob": 0.2492,
   "ev": 0.943,
   "payout_units": 6.8,
-  "status": "pending",
-  "pnl": null,
+  "status": "loss",
+  "pnl": -1.0,
   "legs": [
    {
     "id": "KXNFLRECYDS-26OCT25LARLV-LARKMUMPFIELD4-25:no",
@@ -1380,9 +1216,11 @@
     "price": 0.47,
     "model_prob": 0.623,
     "edge": 0.136,
-    "expected_end": "2026-10-25T05:00:00+00:00"
+    "expected_end": "2026-10-25T05:00:00+00:00",
+    "result": "loss"
    }
-  ]
+  ],
+  "graded": "2026-10-25T06:01:03.579641+00:00"
  },
  {
   "id": "PARLAY-202610230439-2",
@@ -1438,8 +1276,8 @@
   "model_prob": 0.2492,
   "ev": 0.943,
   "payout_units": 6.8,
-  "status": "pending",
-  "pnl": null,
+  "status": "loss",
+  "pnl": -1.0,
   "legs": [
    {
     "id": "KXNCAAFSPREAD-26OCT24NDSUUNM-UNM4:no",
@@ -1451,7 +1289,8 @@
     "price": 0.47,
     "model_prob": 0.623,
     "edge": 0.136,
-    "expected_end": "2026-10-25T05:00:00+00:00"
+    "expected_end": "2026-10-25T05:00:00+00:00",
+    "result": "loss"
    },
    {
     "id": "KXNFLRECYDS-26OCT25LARLV-LARKMUMPFIELD4-25:no",
@@ -1465,7 +1304,8 @@
     "edge": 0.136,
     "expected_end": "2026-10-25T23:25:00+00:00"
    }
-  ]
+  ],
+  "graded": "2026-10-25T06:01:03.710161+00:00"
  },
  {
   "id": "PARLAY-202610240428-2",
@@ -1520,8 +1360,8 @@
   "model_prob": 0.2492,
   "ev": 0.943,
   "payout_units": 6.8,
-  "status": "pending",
-  "pnl": null,
+  "status": "loss",
+  "pnl": -1.0,
   "legs": [
    {
     "id": "KXNCAAFSPREAD-26OCT24NDSUUNM-UNM4:no",
@@ -1533,7 +1373,8 @@
     "price": 0.47,
     "model_prob": 0.623,
     "edge": 0.136,
-    "expected_end": "2026-10-25T05:00:00+00:00"
+    "expected_end": "2026-10-25T05:00:00+00:00",
+    "result": "loss"
    },
    {
     "id": "KXNFLRECYDS-26OCT25LARLV-LARKMUMPFIELD4-25:no",
@@ -1547,7 +1388,8 @@
     "edge": 0.136,
     "expected_end": "2026-10-25T23:25:00+00:00"
    }
-  ]
+  ],
+  "graded": "2026-10-25T06:01:03.829420+00:00"
  },
  {
   "id": "PARLAY-202610250018-2",
@@ -1560,8 +1402,8 @@
   "model_prob": 0.3103,
   "ev": 0.522,
   "payout_units": 3.9,
-  "status": "pending",
-  "pnl": null,
+  "status": "loss",
+  "pnl": -1.0,
   "legs": [
    {
     "id": "KXMLSTEAMTOTAL-26OCT24RSLSTL-STL2",
@@ -1573,7 +1415,8 @@
     "price": 0.41,
     "model_prob": 0.534,
     "edge": 0.107,
-    "expected_end": "2026-10-25T03:30:00+00:00"
+    "expected_end": "2026-10-25T03:30:00+00:00",
+    "result": "loss"
    },
    {
     "id": "KXNFLREC-26OCT25TBCAR-CARJMETCHIE13-2",
@@ -1587,6 +1430,7 @@
     "edge": 0.103,
     "expected_end": "2026-10-25T20:00:00+00:00"
    }
-  ]
+  ],
+  "graded": "2026-10-25T06:01:03.961925+00:00"
  }
 ]
