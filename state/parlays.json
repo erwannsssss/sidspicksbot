@@ -1009,8 +1009,8 @@
   "model_prob": 0.3081,
   "ev": 0.502,
   "payout_units": 3.9,
-  "status": "pending",
-  "pnl": null,
+  "status": "loss",
+  "pnl": -1.0,
   "legs": [
    {
     "id": "KXNCAAFSPREAD-26OCT23ARMYTLSA-TLSA2:no",
@@ -1035,9 +1035,11 @@
     "price": 0.38,
     "model_prob": 0.497,
     "edge": 0.1,
-    "expected_end": "2026-10-26T03:20:00+00:00"
+    "expected_end": "2026-10-26T03:20:00+00:00",
+    "result": "loss"
    }
-  ]
+  ],
+  "graded": "2026-10-26T06:04:44.364067+00:00"
  },
  {
   "id": "PARLAY-202610230439-1",
