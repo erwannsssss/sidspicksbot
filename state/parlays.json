@@ -1291,5 +1291,85 @@
    }
   ],
   "graded": "2026-10-25T06:01:03.961925+00:00"
+ },
+ {
+  "id": "PARLAY-202610260012-1",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-10-26T00:12:32.923169+00:00",
+  "units": 1.0,
+  "price": 0.0956,
+  "model_prob": 0.1833,
+  "ev": 0.918,
+  "payout_units": 9.5,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXSERIEATOTAL-26OCT28VENINT-5",
+    "ticker": "KXSERIEATOTAL-26OCT28VENINT-5",
+    "side": "yes",
+    "market": "Over 4.5 goals scored",
+    "matchup": "Venezia vs Inter",
+    "sport": "Soccer",
+    "price": 0.31,
+    "model_prob": 0.446,
+    "edge": 0.121,
+    "expected_end": "2026-10-28T20:30:00+00:00"
+   },
+   {
+    "id": "KXMLBKS-26OCT262000MILTB-MILRGASSER54-5",
+    "ticker": "KXMLBKS-26OCT262000MILTB-MILRGASSER54-5",
+    "side": "yes",
+    "market": "Robert Gasser: 5+",
+    "matchup": "Milwaukee Brewers at Tampa Bay Rays",
+    "sport": "Baseball",
+    "price": 0.28,
+    "model_prob": 0.411,
+    "edge": 0.117,
+    "expected_end": "2026-10-27T03:00:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": "PARLAY-202610260012-2",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-10-26T00:12:32.923219+00:00",
+  "units": 1.0,
+  "price": 0.2464,
+  "model_prob": 0.3365,
+  "ev": 0.366,
+  "payout_units": 3.1,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXNFLSPREAD-26OCT26DALPHI-DAL3:no",
+    "ticker": "KXNFLSPREAD-26OCT26DALPHI-DAL3",
+    "side": "no",
+    "market": "No: Dallas wins by over 2.5 points",
+    "matchup": "DAL at PHI",
+    "sport": "Football",
+    "price": 0.41,
+    "model_prob": 0.525,
+    "edge": 0.098,
+    "expected_end": "2026-10-27T03:15:00+00:00"
+   },
+   {
+    "id": "KXLIGAPORTUGALSPREAD-26OCT26SCLBEN-BEN2:no",
+    "ticker": "KXLIGAPORTUGALSPREAD-26OCT26SCLBEN-BEN2",
+    "side": "no",
+    "market": "No: SL Benfica wins by more than 1.5 goals",
+    "matchup": "Santa Clara Azores vs SL Benfica",
+    "sport": "Soccer",
+    "price": 0.56,
+    "model_prob": 0.641,
+    "edge": 0.064,
+    "expected_end": "2026-10-26T21:45:00+00:00"
+   }
+  ]
  }
 ]
