@@ -1,59 +1,5 @@
 [
  {
-  "id": "PARLAY-202610120036-1",
-  "tier": "P",
-  "sport": "Parlay",
-  "kind": "watchlist",
-  "made": "2026-10-12T00:36:46.805677+00:00",
-  "units": 1.0,
-  "price": 0.222,
-  "model_prob": 0.3762,
-  "ev": 0.694,
-  "payout_units": 3.5,
-  "status": "loss",
-  "pnl": -1.0,
-  "legs": [
-   {
-    "id": "KXUCLSPREAD-26OCT13ARSLIL-ARS3:no",
-    "ticker": "KXUCLSPREAD-26OCT13ARSLIL-ARS3",
-    "side": "no",
-    "market": "No: Arsenal wins by more than 2.5 goals",
-    "matchup": "Arsenal vs Lille",
-    "sport": "Soccer",
-    "price": 0.67,
-    "model_prob": 0.808,
-    "edge": 0.123,
-    "expected_end": "2026-10-13T22:00:00+00:00",
-    "result": "loss"
-   },
-   {
-    "id": "KXNCAAFSPREAD-26OCT15GASOODU-GASO3:no",
-    "ticker": "KXNCAAFSPREAD-26OCT15GASOODU-GASO3",
-    "side": "no",
-    "market": "No: Georgia Southern wins by over 2.5 points",
-    "matchup": "Georgia Southern at Old Dominion",
-    "sport": "Football",
-    "price": 0.43,
-    "model_prob": 0.561,
-    "edge": 0.114,
-    "expected_end": "2026-10-16T02:30:00+00:00"
-   },
-   {
-    "id": "KXUCLSPREAD-26OCT14ROMRMA-RMA2:no",
-    "ticker": "KXUCLSPREAD-26OCT14ROMRMA-RMA2",
-    "side": "no",
-    "market": "No: Real Madrid wins by more than 1.5 goals",
-    "matchup": "Roma vs Real Madrid",
-    "sport": "Soccer",
-    "price": 0.71,
-    "model_prob": 0.83,
-    "edge": 0.105,
-    "expected_end": "2026-10-14T22:00:00+00:00"
-   }
-  ],
-  "graded": "2026-10-13T21:33:01.801488+00:00"
- },
- {
   "id": "PARLAY-202610120036-2",
   "tier": "P",
   "sport": "Parlay",
@@ -95,61 +41,6 @@
    }
   ],
   "graded": "2026-10-14T21:35:01.570916+00:00"
- },
- {
-  "id": "PARLAY-202610130038-1",
-  "tier": "P",
-  "sport": "Parlay",
-  "kind": "watchlist",
-  "made": "2026-10-13T00:38:01.005481+00:00",
-  "units": 1.0,
-  "price": 0.1307,
-  "model_prob": 0.2743,
-  "ev": 1.099,
-  "payout_units": 6.7,
-  "status": "loss",
-  "pnl": -1.0,
-  "legs": [
-   {
-    "id": "KXUCLTEAMTOTAL-26OCT13INTBRU-INT2:no",
-    "ticker": "KXUCLTEAMTOTAL-26OCT13INTBRU-INT2",
-    "side": "no",
-    "market": "Inter under 1.5 goals",
-    "matchup": "Inter vs Club Brugge",
-    "sport": "Soccer",
-    "price": 0.25,
-    "model_prob": 0.409,
-    "edge": 0.146,
-    "expected_end": "2026-10-13T22:00:00+00:00",
-    "result": "loss"
-   },
-   {
-    "id": "KXUCLSPREAD-26OCT13ARSLIL-ARS3:no",
-    "ticker": "KXUCLSPREAD-26OCT13ARSLIL-ARS3",
-    "side": "no",
-    "market": "No: Arsenal wins by more than 2.5 goals",
-    "matchup": "Arsenal vs Lille",
-    "sport": "Soccer",
-    "price": 0.67,
-    "model_prob": 0.808,
-    "edge": 0.123,
-    "expected_end": "2026-10-13T22:00:00+00:00",
-    "result": "loss"
-   },
-   {
-    "id": "KXUCLSPREAD-26OCT14ROMRMA-RMA2:no",
-    "ticker": "KXUCLSPREAD-26OCT14ROMRMA-RMA2",
-    "side": "no",
-    "market": "No: Real Madrid wins by more than 1.5 goals",
-    "matchup": "Roma vs Real Madrid",
-    "sport": "Soccer",
-    "price": 0.71,
-    "model_prob": 0.83,
-    "edge": 0.105,
-    "expected_end": "2026-10-14T22:00:00+00:00"
-   }
-  ],
-  "graded": "2026-10-13T21:33:02.027540+00:00"
  },
  {
   "id": "PARLAY-202610140044-1",
