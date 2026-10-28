@@ -1,48 +1,5 @@
 [
  {
-  "id": "PARLAY-202610120036-2",
-  "tier": "P",
-  "sport": "Parlay",
-  "kind": "watchlist",
-  "made": "2026-10-12T00:36:46.805737+00:00",
-  "units": 1.0,
-  "price": 0.1392,
-  "model_prob": 0.2241,
-  "ev": 0.61,
-  "payout_units": 6.2,
-  "status": "loss",
-  "pnl": -1.0,
-  "legs": [
-   {
-    "id": "KXNFLRECYDS-26OCT12BUFLAR-LARKWILLIAMS23-25",
-    "ticker": "KXNFLRECYDS-26OCT12BUFLAR-LARKWILLIAMS23-25",
-    "side": "yes",
-    "market": "Kyren Williams: 25+",
-    "matchup": "BUF at LA",
-    "sport": "Football",
-    "price": 0.44,
-    "model_prob": 0.563,
-    "edge": 0.106,
-    "expected_end": "2026-10-13T03:15:00+00:00",
-    "result": "win"
-   },
-   {
-    "id": "KXUCLGAME-26OCT14RBBFCP-FCP",
-    "ticker": "KXUCLGAME-26OCT14RBBFCP-FCP",
-    "side": "yes",
-    "market": "Porto to win",
-    "matchup": "Real Betis vs Porto",
-    "sport": "Soccer",
-    "price": 0.29,
-    "model_prob": 0.398,
-    "edge": 0.093,
-    "expected_end": "2026-10-14T22:00:00+00:00",
-    "result": "loss"
-   }
-  ],
-  "graded": "2026-10-14T21:35:01.570916+00:00"
- },
- {
   "id": "PARLAY-202610140044-1",
   "tier": "P",
   "sport": "Parlay",
@@ -1239,8 +1196,8 @@
   "model_prob": 0.3037,
   "ev": 0.565,
   "payout_units": 4.2,
-  "status": "pending",
-  "pnl": null,
+  "status": "loss",
+  "pnl": -1.0,
   "legs": [
    {
     "id": "KXSERIEATOTAL-26OCT28VENINT-5",
@@ -1252,7 +1209,8 @@
     "price": 0.31,
     "model_prob": 0.446,
     "edge": 0.121,
-    "expected_end": "2026-10-28T20:30:00+00:00"
+    "expected_end": "2026-10-28T20:30:00+00:00",
+    "result": "loss"
    },
    {
     "id": "KXNCAAFGAME-26OCT30ILLMD-ILL",
@@ -1266,7 +1224,8 @@
     "edge": 0.084,
     "expected_end": "2026-10-31T03:00:00+00:00"
    }
-  ]
+  ],
+  "graded": "2026-10-28T23:10:14.629347+00:00"
  },
  {
   "id": "PARLAY-202610270455-2",
@@ -1321,8 +1280,8 @@
   "model_prob": 0.2121,
   "ev": 0.844,
   "payout_units": 7.7,
-  "status": "pending",
-  "pnl": null,
+  "status": "loss",
+  "pnl": -1.0,
   "legs": [
    {
     "id": "KXNCAAFTEAMTOTAL-26OCT31UTEPNDSU-NDSU42",
@@ -1346,9 +1305,11 @@
     "price": 0.42,
     "model_prob": 0.548,
     "edge": 0.111,
-    "expected_end": "2026-10-28T21:00:00+00:00"
+    "expected_end": "2026-10-28T21:00:00+00:00",
+    "result": "loss"
    }
-  ]
+  ],
+  "graded": "2026-10-28T23:10:14.728275+00:00"
  },
  {
   "id": "PARLAY-202610280209-2",
@@ -1361,8 +1322,8 @@
   "model_prob": 0.3037,
   "ev": 0.565,
   "payout_units": 4.2,
-  "status": "pending",
-  "pnl": null,
+  "status": "loss",
+  "pnl": -1.0,
   "legs": [
    {
     "id": "KXSERIEATOTAL-26OCT28VENINT-5",
@@ -1374,7 +1335,8 @@
     "price": 0.31,
     "model_prob": 0.446,
     "edge": 0.121,
-    "expected_end": "2026-10-28T20:30:00+00:00"
+    "expected_end": "2026-10-28T20:30:00+00:00",
+    "result": "loss"
    },
    {
     "id": "KXNCAAFGAME-26OCT30ILLMD-ILL",
@@ -1388,6 +1350,7 @@
     "edge": 0.084,
     "expected_end": "2026-10-31T03:00:00+00:00"
    }
-  ]
+  ],
+  "graded": "2026-10-28T23:10:14.814673+00:00"
  }
 ]
