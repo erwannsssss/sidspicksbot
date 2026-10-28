@@ -1279,8 +1279,8 @@
   "model_prob": 0.3942,
   "ev": 0.269,
   "payout_units": 2.2,
-  "status": "pending",
-  "pnl": null,
+  "status": "loss",
+  "pnl": -1.0,
   "legs": [
    {
     "id": "KXNCAAFGAME-26OCT30KSUCOLO-KSU",
@@ -1304,9 +1304,11 @@
     "price": 0.53,
     "model_prob": 0.613,
     "edge": 0.065,
-    "expected_end": "2026-10-28T02:00:00+00:00"
+    "expected_end": "2026-10-28T02:00:00+00:00",
+    "result": "loss"
    }
-  ]
+  ],
+  "graded": "2026-10-28T09:36:02.033097+00:00"
  },
  {
   "id": "PARLAY-202610280209-1",
