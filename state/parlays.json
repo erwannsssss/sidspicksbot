@@ -98,60 +98,6 @@
   "graded": "2026-10-17T23:28:51.622843+00:00"
  },
  {
-  "id": "PARLAY-202610150044-1",
-  "tier": "P",
-  "sport": "Parlay",
-  "kind": "watchlist",
-  "made": "2026-10-15T00:44:50.928165+00:00",
-  "units": 1.0,
-  "price": 0.1287,
-  "model_prob": 0.2545,
-  "ev": 0.978,
-  "payout_units": 6.8,
-  "status": "loss",
-  "pnl": -1.0,
-  "legs": [
-   {
-    "id": "KXNCAAFSPREAD-26OCT17OSUIND-OSU3:no",
-    "ticker": "KXNCAAFSPREAD-26OCT17OSUIND-OSU3",
-    "side": "no",
-    "market": "No: Ohio St. wins by over 2.5 points",
-    "matchup": "Ohio State at Indiana",
-    "sport": "Football",
-    "price": 0.42,
-    "model_prob": 0.577,
-    "edge": 0.139,
-    "expected_end": "2026-10-17T19:00:00+00:00"
-   },
-   {
-    "id": "KXNCAAFTEAMTOTAL-26OCT17NDBYU-BYU18",
-    "ticker": "KXNCAAFTEAMTOTAL-26OCT17NDBYU-BYU18",
-    "side": "yes",
-    "market": "BYU over 17.5 points",
-    "matchup": "Notre Dame at BYU",
-    "sport": "Football",
-    "price": 0.46,
-    "model_prob": 0.611,
-    "edge": 0.134,
-    "expected_end": "2026-10-18T02:30:00+00:00"
-   },
-   {
-    "id": "KXMLSTEAMTOTAL-26OCT14LAFCATX-LAFC3:no",
-    "ticker": "KXMLSTEAMTOTAL-26OCT14LAFCATX-LAFC3",
-    "side": "no",
-    "market": "Los Angeles F under 2.5 goals",
-    "matchup": "Los Angeles F vs Austin",
-    "sport": "Soccer",
-    "price": 0.6,
-    "model_prob": 0.722,
-    "edge": 0.105,
-    "expected_end": "2026-10-15T05:30:00+00:00",
-    "result": "loss"
-   }
-  ],
-  "graded": "2026-10-15T04:36:42.495791+00:00"
- },
- {
   "id": "PARLAY-202610150044-2",
   "tier": "P",
   "sport": "Parlay",
@@ -1352,5 +1298,85 @@
    }
   ],
   "graded": "2026-10-28T23:10:14.814673+00:00"
+ },
+ {
+  "id": "PARLAY-202610290540-1",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-10-29T05:40:05.163004+00:00",
+  "units": 1.0,
+  "price": 0.1597,
+  "model_prob": 0.2697,
+  "ev": 0.689,
+  "payout_units": 5.3,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXNCAAFTEAMTOTAL-26OCT31UTEPNDSU-NDSU42",
+    "ticker": "KXNCAAFTEAMTOTAL-26OCT31UTEPNDSU-NDSU42",
+    "side": "yes",
+    "market": "North Dakota St. over 41.5 points",
+    "matchup": "UTEP at North Dakota State",
+    "sport": "Football",
+    "price": 0.25,
+    "model_prob": 0.387,
+    "edge": 0.124,
+    "expected_end": "2026-10-31T22:30:00+00:00"
+   },
+   {
+    "id": "KXNFLPASSTDS-26NOV01MINDET-MINKMURRAY1-2:no",
+    "ticker": "KXNFLPASSTDS-26NOV01MINDET-MINKMURRAY1-2",
+    "side": "no",
+    "market": "Kyler Murray: under 2",
+    "matchup": "MIN at DET",
+    "sport": "Football",
+    "price": 0.59,
+    "model_prob": 0.697,
+    "edge": 0.09,
+    "expected_end": "2026-11-01T21:00:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": "PARLAY-202610290540-2",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-10-29T05:40:05.163040+00:00",
+  "units": 1.0,
+  "price": 0.303,
+  "model_prob": 0.4161,
+  "ev": 0.373,
+  "payout_units": 2.3,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXNFLTOTAL-26NOV01PHIWAS-41",
+    "ticker": "KXNFLTOTAL-26NOV01PHIWAS-41",
+    "side": "yes",
+    "market": "Over 40.5 points",
+    "matchup": "PHI at WAS",
+    "sport": "Football",
+    "price": 0.49,
+    "model_prob": 0.611,
+    "edge": 0.104,
+    "expected_end": "2026-11-02T04:20:00+00:00"
+   },
+   {
+    "id": "KXNCAAFGAME-26OCT30ILLMD-ILL",
+    "ticker": "KXNCAAFGAME-26OCT30ILLMD-ILL",
+    "side": "yes",
+    "market": "Illinois to win",
+    "matchup": "Illinois at Maryland",
+    "sport": "Football",
+    "price": 0.58,
+    "model_prob": 0.681,
+    "edge": 0.084,
+    "expected_end": "2026-10-31T03:00:00+00:00"
+   }
+  ]
  }
 ]
