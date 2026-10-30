@@ -1378,5 +1378,85 @@
     "expected_end": "2026-10-31T03:00:00+00:00"
    }
   ]
+ },
+ {
+  "id": "PARLAY-202610300538-1",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-10-30T05:38:54.936842+00:00",
+  "units": 1.0,
+  "price": 0.1597,
+  "model_prob": 0.2697,
+  "ev": 0.689,
+  "payout_units": 5.3,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXNCAAFTEAMTOTAL-26OCT31UTEPNDSU-NDSU42",
+    "ticker": "KXNCAAFTEAMTOTAL-26OCT31UTEPNDSU-NDSU42",
+    "side": "yes",
+    "market": "North Dakota St. over 41.5 points",
+    "matchup": "UTEP at North Dakota State",
+    "sport": "Football",
+    "price": 0.25,
+    "model_prob": 0.387,
+    "edge": 0.124,
+    "expected_end": "2026-10-31T22:30:00+00:00"
+   },
+   {
+    "id": "KXNFLPASSTDS-26NOV01MINDET-MINKMURRAY1-2:no",
+    "ticker": "KXNFLPASSTDS-26NOV01MINDET-MINKMURRAY1-2",
+    "side": "no",
+    "market": "Kyler Murray: under 2",
+    "matchup": "MIN at DET",
+    "sport": "Football",
+    "price": 0.59,
+    "model_prob": 0.697,
+    "edge": 0.09,
+    "expected_end": "2026-11-01T21:00:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": "PARLAY-202610300538-2",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-10-30T05:38:54.936876+00:00",
+  "units": 1.0,
+  "price": 0.2474,
+  "model_prob": 0.3611,
+  "ev": 0.46,
+  "payout_units": 3.0,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXNFLRECYDS-26NOV01LVNYJ-LVAJEANTY2-30",
+    "ticker": "KXNFLRECYDS-26NOV01LVNYJ-LVAJEANTY2-30",
+    "side": "yes",
+    "market": "Ashton Jeanty: 30+",
+    "matchup": "LV at NYJ",
+    "sport": "Football",
+    "price": 0.47,
+    "model_prob": 0.591,
+    "edge": 0.104,
+    "expected_end": "2026-11-01T21:00:00+00:00"
+   },
+   {
+    "id": "KXNFLTOTAL-26NOV01PHIWAS-41",
+    "ticker": "KXNFLTOTAL-26NOV01PHIWAS-41",
+    "side": "yes",
+    "market": "Over 40.5 points",
+    "matchup": "PHI at WAS",
+    "sport": "Football",
+    "price": 0.49,
+    "model_prob": 0.611,
+    "edge": 0.104,
+    "expected_end": "2026-11-02T04:20:00+00:00"
+   }
+  ]
  }
 ]
