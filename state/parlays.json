@@ -1,60 +1,5 @@
 [
  {
-  "id": "PARLAY-202610140044-1",
-  "tier": "P",
-  "sport": "Parlay",
-  "kind": "watchlist",
-  "made": "2026-10-14T00:44:37.343761+00:00",
-  "units": 1.0,
-  "price": 0.1511,
-  "model_prob": 0.2926,
-  "ev": 0.936,
-  "payout_units": 5.6,
-  "status": "loss",
-  "pnl": -1.0,
-  "legs": [
-   {
-    "id": "KXNCAAFSPREAD-26OCT17OSUIND-OSU3:no",
-    "ticker": "KXNCAAFSPREAD-26OCT17OSUIND-OSU3",
-    "side": "no",
-    "market": "No: Ohio St. wins by over 2.5 points",
-    "matchup": "Ohio State at Indiana",
-    "sport": "Football",
-    "price": 0.42,
-    "model_prob": 0.577,
-    "edge": 0.139,
-    "expected_end": "2026-10-17T19:00:00+00:00",
-    "result": "loss"
-   },
-   {
-    "id": "KXNCAAFTEAMTOTAL-26OCT17NDBYU-BYU18",
-    "ticker": "KXNCAAFTEAMTOTAL-26OCT17NDBYU-BYU18",
-    "side": "yes",
-    "market": "BYU over 17.5 points",
-    "matchup": "Notre Dame at BYU",
-    "sport": "Football",
-    "price": 0.46,
-    "model_prob": 0.611,
-    "edge": 0.134,
-    "expected_end": "2026-10-18T02:30:00+00:00"
-   },
-   {
-    "id": "KXUCLSPREAD-26OCT14ROMRMA-RMA2:no",
-    "ticker": "KXUCLSPREAD-26OCT14ROMRMA-RMA2",
-    "side": "no",
-    "market": "No: Real Madrid wins by more than 1.5 goals",
-    "matchup": "Roma vs Real Madrid",
-    "sport": "Soccer",
-    "price": 0.71,
-    "model_prob": 0.83,
-    "edge": 0.105,
-    "expected_end": "2026-10-14T22:00:00+00:00",
-    "result": "win"
-   }
-  ],
-  "graded": "2026-10-17T20:32:29.129866+00:00"
- },
- {
   "id": "PARLAY-202610140044-2",
   "tier": "P",
   "sport": "Parlay",
@@ -140,48 +85,6 @@
   "graded": "2026-10-17T23:28:51.793780+00:00"
  },
  {
-  "id": "PARLAY-202610160045-1",
-  "tier": "P",
-  "sport": "Parlay",
-  "kind": "watchlist",
-  "made": "2026-10-16T00:45:33.413570+00:00",
-  "units": 1.0,
-  "price": 0.115,
-  "model_prob": 0.2377,
-  "ev": 1.067,
-  "payout_units": 7.7,
-  "status": "loss",
-  "pnl": -1.0,
-  "legs": [
-   {
-    "id": "KXMLSTOTAL-26OCT17MINSTL-5",
-    "ticker": "KXMLSTOTAL-26OCT17MINSTL-5",
-    "side": "yes",
-    "market": "Over 4.5 goals scored",
-    "matchup": "Minnesota vs Saint Louis",
-    "sport": "Soccer",
-    "price": 0.25,
-    "model_prob": 0.412,
-    "edge": 0.149,
-    "expected_end": "2026-10-17T23:30:00+00:00"
-   },
-   {
-    "id": "KXNCAAFSPREAD-26OCT17OSUIND-OSU3:no",
-    "ticker": "KXNCAAFSPREAD-26OCT17OSUIND-OSU3",
-    "side": "no",
-    "market": "No: Ohio St. wins by over 2.5 points",
-    "matchup": "Ohio State at Indiana",
-    "sport": "Football",
-    "price": 0.42,
-    "model_prob": 0.577,
-    "edge": 0.139,
-    "expected_end": "2026-10-17T19:00:00+00:00",
-    "result": "loss"
-   }
-  ],
-  "graded": "2026-10-17T20:32:29.562888+00:00"
- },
- {
   "id": "PARLAY-202610160045-2",
   "tier": "P",
   "sport": "Parlay",
@@ -222,48 +125,6 @@
    }
   ],
   "graded": "2026-10-17T23:28:51.960893+00:00"
- },
- {
-  "id": "PARLAY-202610170046-1",
-  "tier": "P",
-  "sport": "Parlay",
-  "kind": "watchlist",
-  "made": "2026-10-17T00:46:35.086027+00:00",
-  "units": 1.0,
-  "price": 0.115,
-  "model_prob": 0.2377,
-  "ev": 1.067,
-  "payout_units": 7.7,
-  "status": "loss",
-  "pnl": -1.0,
-  "legs": [
-   {
-    "id": "KXMLSTOTAL-26OCT17MINSTL-5",
-    "ticker": "KXMLSTOTAL-26OCT17MINSTL-5",
-    "side": "yes",
-    "market": "Over 4.5 goals scored",
-    "matchup": "Minnesota vs Saint Louis",
-    "sport": "Soccer",
-    "price": 0.25,
-    "model_prob": 0.412,
-    "edge": 0.149,
-    "expected_end": "2026-10-17T23:30:00+00:00"
-   },
-   {
-    "id": "KXNCAAFSPREAD-26OCT17OSUIND-OSU3:no",
-    "ticker": "KXNCAAFSPREAD-26OCT17OSUIND-OSU3",
-    "side": "no",
-    "market": "No: Ohio St. wins by over 2.5 points",
-    "matchup": "Ohio State at Indiana",
-    "sport": "Football",
-    "price": 0.42,
-    "model_prob": 0.577,
-    "edge": 0.139,
-    "expected_end": "2026-10-17T19:00:00+00:00",
-    "result": "loss"
-   }
-  ],
-  "graded": "2026-10-17T20:32:29.906410+00:00"
  },
  {
   "id": "PARLAY-202610170046-2",
@@ -1375,7 +1236,8 @@
     "price": 0.58,
     "model_prob": 0.681,
     "edge": 0.084,
-    "expected_end": "2026-10-31T03:00:00+00:00"
+    "expected_end": "2026-10-31T03:00:00+00:00",
+    "result": "win"
    }
   ]
  },
@@ -1535,7 +1397,8 @@
     "price": 0.54,
     "model_prob": 0.652,
     "edge": 0.094,
-    "expected_end": "2026-10-31T20:45:00+00:00"
+    "expected_end": "2026-10-31T20:45:00+00:00",
+    "result": "win"
    }
   ]
  }
