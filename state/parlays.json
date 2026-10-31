@@ -1458,5 +1458,85 @@
     "expected_end": "2026-11-02T04:20:00+00:00"
    }
   ]
+ },
+ {
+  "id": "PARLAY-202610310219-1",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-10-31T02:19:23.916201+00:00",
+  "units": 1.0,
+  "price": 0.1753,
+  "model_prob": 0.2872,
+  "ev": 0.638,
+  "payout_units": 4.7,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXSERIEASPREAD-26NOV01COMVEN-COM3",
+    "ticker": "KXSERIEASPREAD-26NOV01COMVEN-COM3",
+    "side": "yes",
+    "market": "Como wins by more than 2.5 goals",
+    "matchup": "Como vs Venezia",
+    "sport": "Soccer",
+    "price": 0.33,
+    "model_prob": 0.47,
+    "edge": 0.124,
+    "expected_end": "2026-11-01T14:30:00+00:00"
+   },
+   {
+    "id": "KXNFLTOTAL-26NOV01PHIWAS-41",
+    "ticker": "KXNFLTOTAL-26NOV01PHIWAS-41",
+    "side": "yes",
+    "market": "Over 40.5 points",
+    "matchup": "PHI at WAS",
+    "sport": "Football",
+    "price": 0.49,
+    "model_prob": 0.611,
+    "edge": 0.104,
+    "expected_end": "2026-11-02T04:20:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": "PARLAY-202610310219-2",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-10-31T02:19:23.916227+00:00",
+  "units": 1.0,
+  "price": 0.1467,
+  "model_prob": 0.2523,
+  "ev": 0.72,
+  "payout_units": 5.8,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXNCAAFTEAMTOTAL-26OCT31UTEPNDSU-NDSU42",
+    "ticker": "KXNCAAFTEAMTOTAL-26OCT31UTEPNDSU-NDSU42",
+    "side": "yes",
+    "market": "North Dakota St. over 41.5 points",
+    "matchup": "UTEP at North Dakota State",
+    "sport": "Football",
+    "price": 0.25,
+    "model_prob": 0.387,
+    "edge": 0.124,
+    "expected_end": "2026-10-31T22:30:00+00:00"
+   },
+   {
+    "id": "KXEREDIVISIETOTAL-26OCT31PSVWIL-5",
+    "ticker": "KXEREDIVISIETOTAL-26OCT31PSVWIL-5",
+    "side": "yes",
+    "market": "Over 4.5 goals scored",
+    "matchup": "Eindhoven vs Willem II",
+    "sport": "Soccer",
+    "price": 0.54,
+    "model_prob": 0.652,
+    "edge": 0.094,
+    "expected_end": "2026-10-31T20:45:00+00:00"
+   }
+  ]
  }
 ]
