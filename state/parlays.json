@@ -1,174 +1,5 @@
 [
  {
-  "id": "PARLAY-202610140044-2",
-  "tier": "P",
-  "sport": "Parlay",
-  "kind": "watchlist",
-  "made": "2026-10-14T00:44:37.343802+00:00",
-  "units": 1.0,
-  "price": 0.2544,
-  "model_prob": 0.3975,
-  "ev": 0.562,
-  "payout_units": 2.9,
-  "status": "loss",
-  "pnl": -1.0,
-  "legs": [
-   {
-    "id": "KXNCAAFSPREAD-26OCT17UNCDUKE-DUKE8",
-    "ticker": "KXNCAAFSPREAD-26OCT17UNCDUKE-DUKE8",
-    "side": "yes",
-    "market": "Duke wins by over 7.5 points",
-    "matchup": "North Carolina at Duke",
-    "sport": "Football",
-    "price": 0.35,
-    "model_prob": 0.507,
-    "edge": 0.141,
-    "expected_end": "2026-10-17T22:30:00+00:00",
-    "result": "loss"
-   },
-   {
-    "id": "KXMLBHRR-26OCT142000MILLAD-LADSOHTANI17-1",
-    "ticker": "KXMLBHRR-26OCT142000MILLAD-LADSOHTANI17-1",
-    "side": "yes",
-    "market": "Shohei Ohtani: 1+",
-    "matchup": "Milwaukee Brewers at Los Angeles Dodgers",
-    "sport": "Baseball",
-    "price": 0.68,
-    "model_prob": 0.784,
-    "edge": 0.089,
-    "expected_end": "2026-10-15T03:00:00+00:00",
-    "result": "win"
-   }
-  ],
-  "graded": "2026-10-17T23:28:51.622843+00:00"
- },
- {
-  "id": "PARLAY-202610150044-2",
-  "tier": "P",
-  "sport": "Parlay",
-  "kind": "watchlist",
-  "made": "2026-10-15T00:44:50.928199+00:00",
-  "units": 1.0,
-  "price": 0.2003,
-  "model_prob": 0.3351,
-  "ev": 0.673,
-  "payout_units": 4.0,
-  "status": "loss",
-  "pnl": -1.0,
-  "legs": [
-   {
-    "id": "KXNCAAFSPREAD-26OCT17UNCDUKE-DUKE8",
-    "ticker": "KXNCAAFSPREAD-26OCT17UNCDUKE-DUKE8",
-    "side": "yes",
-    "market": "Duke wins by over 7.5 points",
-    "matchup": "North Carolina at Duke",
-    "sport": "Football",
-    "price": 0.35,
-    "model_prob": 0.507,
-    "edge": 0.141,
-    "expected_end": "2026-10-17T22:30:00+00:00",
-    "result": "loss"
-   },
-   {
-    "id": "KXNFLPASSTDS-26OCT18TENIND-INDDJONES17-2:no",
-    "ticker": "KXNFLPASSTDS-26OCT18TENIND-INDDJONES17-2",
-    "side": "no",
-    "market": "Daniel Jones: under 2",
-    "matchup": "TEN at IND",
-    "sport": "Football",
-    "price": 0.53,
-    "model_prob": 0.661,
-    "edge": 0.114,
-    "expected_end": "2026-10-18T20:00:00+00:00"
-   }
-  ],
-  "graded": "2026-10-17T23:28:51.793780+00:00"
- },
- {
-  "id": "PARLAY-202610160045-2",
-  "tier": "P",
-  "sport": "Parlay",
-  "kind": "watchlist",
-  "made": "2026-10-16T00:45:33.413607+00:00",
-  "units": 1.0,
-  "price": 0.1747,
-  "model_prob": 0.3098,
-  "ev": 0.773,
-  "payout_units": 4.7,
-  "status": "loss",
-  "pnl": -1.0,
-  "legs": [
-   {
-    "id": "KXNCAAFSPREAD-26OCT17UNCDUKE-DUKE8",
-    "ticker": "KXNCAAFSPREAD-26OCT17UNCDUKE-DUKE8",
-    "side": "yes",
-    "market": "Duke wins by over 7.5 points",
-    "matchup": "North Carolina at Duke",
-    "sport": "Football",
-    "price": 0.35,
-    "model_prob": 0.507,
-    "edge": 0.141,
-    "expected_end": "2026-10-17T22:30:00+00:00",
-    "result": "loss"
-   },
-   {
-    "id": "KXNCAAFTEAMTOTAL-26OCT17NDBYU-BYU18",
-    "ticker": "KXNCAAFTEAMTOTAL-26OCT17NDBYU-BYU18",
-    "side": "yes",
-    "market": "BYU over 17.5 points",
-    "matchup": "Notre Dame at BYU",
-    "sport": "Football",
-    "price": 0.46,
-    "model_prob": 0.611,
-    "edge": 0.134,
-    "expected_end": "2026-10-18T02:30:00+00:00"
-   }
-  ],
-  "graded": "2026-10-17T23:28:51.960893+00:00"
- },
- {
-  "id": "PARLAY-202610170046-2",
-  "tier": "P",
-  "sport": "Parlay",
-  "kind": "watchlist",
-  "made": "2026-10-17T00:46:35.086056+00:00",
-  "units": 1.0,
-  "price": 0.1747,
-  "model_prob": 0.3098,
-  "ev": 0.773,
-  "payout_units": 4.7,
-  "status": "loss",
-  "pnl": -1.0,
-  "legs": [
-   {
-    "id": "KXNCAAFSPREAD-26OCT17UNCDUKE-DUKE8",
-    "ticker": "KXNCAAFSPREAD-26OCT17UNCDUKE-DUKE8",
-    "side": "yes",
-    "market": "Duke wins by over 7.5 points",
-    "matchup": "North Carolina at Duke",
-    "sport": "Football",
-    "price": 0.35,
-    "model_prob": 0.507,
-    "edge": 0.141,
-    "expected_end": "2026-10-17T22:30:00+00:00",
-    "result": "loss"
-   },
-   {
-    "id": "KXNCAAFTEAMTOTAL-26OCT17NDBYU-BYU18",
-    "ticker": "KXNCAAFTEAMTOTAL-26OCT17NDBYU-BYU18",
-    "side": "yes",
-    "market": "BYU over 17.5 points",
-    "matchup": "Notre Dame at BYU",
-    "sport": "Football",
-    "price": 0.46,
-    "model_prob": 0.611,
-    "edge": 0.134,
-    "expected_end": "2026-10-18T02:30:00+00:00"
-   }
-  ],
-  "graded": "2026-10-17T23:28:52.126593+00:00"
- },
- {
   "id": "PARLAY-202610180045-1",
   "tier": "P",
   "sport": "Parlay",
@@ -1171,8 +1002,8 @@
   "model_prob": 0.2697,
   "ev": 0.689,
   "payout_units": 5.3,
-  "status": "pending",
-  "pnl": null,
+  "status": "loss",
+  "pnl": -1.0,
   "legs": [
    {
     "id": "KXNCAAFTEAMTOTAL-26OCT31UTEPNDSU-NDSU42",
@@ -1184,7 +1015,8 @@
     "price": 0.25,
     "model_prob": 0.387,
     "edge": 0.124,
-    "expected_end": "2026-10-31T22:30:00+00:00"
+    "expected_end": "2026-10-31T22:30:00+00:00",
+    "result": "loss"
    },
    {
     "id": "KXNFLPASSTDS-26NOV01MINDET-MINKMURRAY1-2:no",
@@ -1198,7 +1030,8 @@
     "edge": 0.09,
     "expected_end": "2026-11-01T21:00:00+00:00"
    }
-  ]
+  ],
+  "graded": "2026-11-01T01:04:23.248613+00:00"
  },
  {
   "id": "PARLAY-202610290540-2",
@@ -1252,8 +1085,8 @@
   "model_prob": 0.2697,
   "ev": 0.689,
   "payout_units": 5.3,
-  "status": "pending",
-  "pnl": null,
+  "status": "loss",
+  "pnl": -1.0,
   "legs": [
    {
     "id": "KXNCAAFTEAMTOTAL-26OCT31UTEPNDSU-NDSU42",
@@ -1265,7 +1098,8 @@
     "price": 0.25,
     "model_prob": 0.387,
     "edge": 0.124,
-    "expected_end": "2026-10-31T22:30:00+00:00"
+    "expected_end": "2026-10-31T22:30:00+00:00",
+    "result": "loss"
    },
    {
     "id": "KXNFLPASSTDS-26NOV01MINDET-MINKMURRAY1-2:no",
@@ -1279,7 +1113,8 @@
     "edge": 0.09,
     "expected_end": "2026-11-01T21:00:00+00:00"
    }
-  ]
+  ],
+  "graded": "2026-11-01T01:04:23.560458+00:00"
  },
  {
   "id": "PARLAY-202610300538-2",
@@ -1372,8 +1207,8 @@
   "model_prob": 0.2523,
   "ev": 0.72,
   "payout_units": 5.8,
-  "status": "pending",
-  "pnl": null,
+  "status": "loss",
+  "pnl": -1.0,
   "legs": [
    {
     "id": "KXNCAAFTEAMTOTAL-26OCT31UTEPNDSU-NDSU42",
@@ -1385,7 +1220,8 @@
     "price": 0.25,
     "model_prob": 0.387,
     "edge": 0.124,
-    "expected_end": "2026-10-31T22:30:00+00:00"
+    "expected_end": "2026-10-31T22:30:00+00:00",
+    "result": "loss"
    },
    {
     "id": "KXEREDIVISIETOTAL-26OCT31PSVWIL-5",
@@ -1399,6 +1235,87 @@
     "edge": 0.094,
     "expected_end": "2026-10-31T20:45:00+00:00",
     "result": "win"
+   }
+  ],
+  "graded": "2026-11-01T01:04:24.029239+00:00"
+ },
+ {
+  "id": "PARLAY-202611010104-1",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-11-01T01:04:25.713414+00:00",
+  "units": 1.0,
+  "price": 0.2097,
+  "model_prob": 0.3276,
+  "ev": 0.562,
+  "payout_units": 3.8,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXSERIEASPREAD-26NOV01COMVEN-COM3",
+    "ticker": "KXSERIEASPREAD-26NOV01COMVEN-COM3",
+    "side": "yes",
+    "market": "Como wins by more than 2.5 goals",
+    "matchup": "Como vs Venezia",
+    "sport": "Soccer",
+    "price": 0.33,
+    "model_prob": 0.47,
+    "edge": 0.124,
+    "expected_end": "2026-11-01T14:30:00+00:00"
+   },
+   {
+    "id": "KXNFLPASSTDS-26NOV01MINDET-MINKMURRAY1-2:no",
+    "ticker": "KXNFLPASSTDS-26NOV01MINDET-MINKMURRAY1-2",
+    "side": "no",
+    "market": "Kyler Murray: under 2",
+    "matchup": "MIN at DET",
+    "sport": "Football",
+    "price": 0.59,
+    "model_prob": 0.697,
+    "edge": 0.09,
+    "expected_end": "2026-11-01T21:00:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": "PARLAY-202611010104-2",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-11-01T01:04:25.713445+00:00",
+  "units": 1.0,
+  "price": 0.1701,
+  "model_prob": 0.278,
+  "ev": 0.634,
+  "payout_units": 4.9,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXSUPERLIGSPREAD-26NOV01AMSEYU-AMS3",
+    "ticker": "KXSUPERLIGSPREAD-26NOV01AMSEYU-AMS3",
+    "side": "yes",
+    "market": "Amed wins by more than 2.5 goals",
+    "matchup": "Amed vs Eyupspor",
+    "sport": "Soccer",
+    "price": 0.32,
+    "model_prob": 0.455,
+    "edge": 0.12,
+    "expected_end": "2026-11-01T13:30:00+00:00"
+   },
+   {
+    "id": "KXNFLTOTAL-26NOV01PHIWAS-41",
+    "ticker": "KXNFLTOTAL-26NOV01PHIWAS-41",
+    "side": "yes",
+    "market": "Over 40.5 points",
+    "matchup": "PHI at WAS",
+    "sport": "Football",
+    "price": 0.49,
+    "model_prob": 0.611,
+    "edge": 0.104,
+    "expected_end": "2026-11-02T04:20:00+00:00"
    }
   ]
  }
