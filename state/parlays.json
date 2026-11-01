@@ -56,49 +56,6 @@
   "graded": "2026-10-20T23:49:44.922888+00:00"
  },
  {
-  "id": "PARLAY-202610180045-2",
-  "tier": "P",
-  "sport": "Parlay",
-  "kind": "watchlist",
-  "made": "2026-10-18T00:45:00.854228+00:00",
-  "units": 1.0,
-  "price": 0.1723,
-  "model_prob": 0.2793,
-  "ev": 0.621,
-  "payout_units": 4.8,
-  "status": "win",
-  "pnl": 4.8,
-  "legs": [
-   {
-    "id": "KXATPMATCH-26OCT18DAMGUE-GUE",
-    "ticker": "KXATPMATCH-26OCT18DAMGUE-GUE",
-    "side": "yes",
-    "market": "Andrea Guerrieri to win",
-    "matchup": "2026 ATP Brussels",
-    "sport": "Tennis",
-    "price": 0.3,
-    "model_prob": 0.431,
-    "edge": 0.116,
-    "expected_end": "2026-10-18T17:00:00+00:00",
-    "result": "win"
-   },
-   {
-    "id": "KXNFLRSHYDS-26OCT18NYJNE-NERSTEVENSON38-70:no",
-    "ticker": "KXNFLRSHYDS-26OCT18NYJNE-NERSTEVENSON38-70",
-    "side": "no",
-    "market": "Rhamondre Stevenson: under 70",
-    "matchup": "NYJ at NE",
-    "sport": "Football",
-    "price": 0.53,
-    "model_prob": 0.648,
-    "edge": 0.1,
-    "expected_end": "2026-10-18T20:00:00+00:00",
-    "result": "win"
-   }
-  ],
-  "graded": "2026-10-18T20:30:10.867901+00:00"
- },
- {
   "id": "PARLAY-202610190045-1",
   "tier": "P",
   "sport": "Parlay",
@@ -1140,7 +1097,8 @@
     "price": 0.47,
     "model_prob": 0.591,
     "edge": 0.104,
-    "expected_end": "2026-11-01T21:00:00+00:00"
+    "expected_end": "2026-11-01T21:00:00+00:00",
+    "result": "win"
    },
    {
     "id": "KXNFLTOTAL-26NOV01PHIWAS-41",
