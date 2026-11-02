@@ -47,11 +47,11 @@
  "model_weight": 0.5,
  "min_model_weight": 0.25,
  "weights": {
-  "tennis": 0.26,
-  "soccer": 0.27,
+  "tennis": 0.25,
+  "soccer": 0.43,
   "mlb": 0.5,
   "nfl": 0.25,
-  "cfb": 0.26
+  "cfb": 0.25
  },
  "horizon_hours": 24,
  "horizon": {
@@ -77,7 +77,9 @@
  "watch_weight": 0.5,
  "watch_per_type": 4,
  "odds_calls_per_day": 15,
- "disabled": [],
+ "disabled": [
+  "MLS"
+ ],
  "max_edge": 0.15,
  "starting_bankroll": 100.0,
  "max_research": 6,

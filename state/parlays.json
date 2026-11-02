@@ -1299,8 +1299,8 @@
   "model_prob": 0.3382,
   "ev": 0.671,
   "payout_units": 3.9,
-  "status": "pending",
-  "pnl": null,
+  "status": "loss",
+  "pnl": -1.0,
   "legs": [
    {
     "id": "KXUCLSPREAD-26NOV04AEKRMA-RMA3:no",
@@ -1336,9 +1336,11 @@
     "price": 0.46,
     "model_prob": 0.585,
     "edge": 0.108,
-    "expected_end": "2026-11-02T18:40:00+00:00"
+    "expected_end": "2026-11-02T18:40:00+00:00",
+    "result": "loss"
    }
-  ]
+  ],
+  "graded": "2026-11-02T21:43:18.808948+00:00"
  },
  {
   "id": "PARLAY-202611020129-2",
@@ -1351,8 +1353,8 @@
   "model_prob": 0.3445,
   "ev": 0.457,
   "payout_units": 3.2,
-  "status": "pending",
-  "pnl": null,
+  "status": "loss",
+  "pnl": -1.0,
   "legs": [
    {
     "id": "KXATPMATCH-26NOV02JACMAC-JAC",
@@ -1364,7 +1366,8 @@
     "price": 0.4,
     "model_prob": 0.526,
     "edge": 0.109,
-    "expected_end": "2026-11-02T17:30:00+00:00"
+    "expected_end": "2026-11-02T17:30:00+00:00",
+    "result": "loss"
    },
    {
     "id": "KXNCAAFSPREAD-26NOV03OHIOAKR-OHIO11",
@@ -1378,6 +1381,7 @@
     "edge": 0.088,
     "expected_end": "2026-11-04T03:00:00+00:00"
    }
-  ]
+  ],
+  "graded": "2026-11-02T21:43:18.951079+00:00"
  }
 ]
