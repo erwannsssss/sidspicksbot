@@ -1281,5 +1281,97 @@
     "expected_end": "2026-11-02T04:20:00+00:00"
    }
   ]
+ },
+ {
+  "id": "PARLAY-202611020129-1",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-11-02T01:29:51.571187+00:00",
+  "units": 1.0,
+  "price": 0.2023,
+  "model_prob": 0.3382,
+  "ev": 0.671,
+  "payout_units": 3.9,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXUCLSPREAD-26NOV04AEKRMA-RMA3:no",
+    "ticker": "KXUCLSPREAD-26NOV04AEKRMA-RMA3",
+    "side": "no",
+    "market": "No: Real Madrid wins by more than 2.5 goals",
+    "matchup": "AEK Athens vs Real Madrid",
+    "sport": "Soccer",
+    "price": 0.65,
+    "model_prob": 0.776,
+    "edge": 0.11,
+    "expected_end": "2026-11-04T20:45:00+00:00"
+   },
+   {
+    "id": "KXUCLSPREAD-26NOV04FENLFC-LFC2:no",
+    "ticker": "KXUCLSPREAD-26NOV04FENLFC-LFC2",
+    "side": "no",
+    "market": "No: Liverpool wins by more than 1.5 goals",
+    "matchup": "Fenerbahce vs Liverpool",
+    "sport": "Soccer",
+    "price": 0.62,
+    "model_prob": 0.745,
+    "edge": 0.109,
+    "expected_end": "2026-11-04T20:45:00+00:00"
+   },
+   {
+    "id": "KXATPMATCH-26NOV02MOLDRO-DRO",
+    "ticker": "KXATPMATCH-26NOV02MOLDRO-DRO",
+    "side": "yes",
+    "market": "Titouan Droguet to win",
+    "matchup": "2026 ATP Paris",
+    "sport": "Tennis",
+    "price": 0.46,
+    "model_prob": 0.585,
+    "edge": 0.108,
+    "expected_end": "2026-11-02T18:40:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": "PARLAY-202611020129-2",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-11-02T01:29:51.571266+00:00",
+  "units": 1.0,
+  "price": 0.2365,
+  "model_prob": 0.3445,
+  "ev": 0.457,
+  "payout_units": 3.2,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXATPMATCH-26NOV02JACMAC-JAC",
+    "ticker": "KXATPMATCH-26NOV02JACMAC-JAC",
+    "side": "yes",
+    "market": "Kyrian Jacquet to win",
+    "matchup": "2026 ATP Paris",
+    "sport": "Tennis",
+    "price": 0.4,
+    "model_prob": 0.526,
+    "edge": 0.109,
+    "expected_end": "2026-11-02T17:30:00+00:00"
+   },
+   {
+    "id": "KXNCAAFSPREAD-26NOV03OHIOAKR-OHIO11",
+    "ticker": "KXNCAAFSPREAD-26NOV03OHIOAKR-OHIO11",
+    "side": "yes",
+    "market": "Ohio wins by over 10.5 points",
+    "matchup": "Ohio at Akron",
+    "sport": "Football",
+    "price": 0.55,
+    "model_prob": 0.655,
+    "edge": 0.088,
+    "expected_end": "2026-11-04T03:00:00+00:00"
+   }
+  ]
  }
 ]
