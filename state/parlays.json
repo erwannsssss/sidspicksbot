@@ -177,48 +177,6 @@
   "graded": "2026-10-20T23:49:45.310621+00:00"
  },
  {
-  "id": "PARLAY-202610200145-2",
-  "tier": "P",
-  "sport": "Parlay",
-  "kind": "watchlist",
-  "made": "2026-10-20T01:45:15.248941+00:00",
-  "units": 1.0,
-  "price": 0.2314,
-  "model_prob": 0.3373,
-  "ev": 0.458,
-  "payout_units": 3.3,
-  "status": "loss",
-  "pnl": -1.0,
-  "legs": [
-   {
-    "id": "KXNCAAFSPREAD-26OCT23ARMYTLSA-TLSA2:no",
-    "ticker": "KXNCAAFSPREAD-26OCT23ARMYTLSA-TLSA2",
-    "side": "no",
-    "market": "No: Tulsa wins by over 1.5 points",
-    "matchup": "Army at Tulsa",
-    "sport": "Football",
-    "price": 0.5,
-    "model_prob": 0.62,
-    "edge": 0.102,
-    "expected_end": "2026-10-24T03:30:00+00:00"
-   },
-   {
-    "id": "KXATPMATCH-26OCT20HERBAE-BAE",
-    "ticker": "KXATPMATCH-26OCT20HERBAE-BAE",
-    "side": "yes",
-    "market": "Sebastian Baez to win",
-    "matchup": "2026 ATP Lyon",
-    "sport": "Tennis",
-    "price": 0.43,
-    "model_prob": 0.544,
-    "edge": 0.097,
-    "expected_end": "2026-10-20T13:00:00+00:00",
-    "result": "loss"
-   }
-  ],
-  "graded": "2026-10-20T16:54:58.572660+00:00"
- },
- {
   "id": "PARLAY-202610210435-1",
   "tier": "P",
   "sport": "Parlay",
