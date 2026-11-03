@@ -110,48 +110,6 @@
   "graded": "2026-10-20T23:49:45.089482+00:00"
  },
  {
-  "id": "PARLAY-202610190045-2",
-  "tier": "P",
-  "sport": "Parlay",
-  "kind": "watchlist",
-  "made": "2026-10-19T00:45:48.145938+00:00",
-  "units": 1.0,
-  "price": 0.2073,
-  "model_prob": 0.2948,
-  "ev": 0.422,
-  "payout_units": 3.8,
-  "status": "loss",
-  "pnl": -1.0,
-  "legs": [
-   {
-    "id": "KXUCLSPREAD-26OCT21SPOASK-SPO3",
-    "ticker": "KXUCLSPREAD-26OCT21SPOASK-SPO3",
-    "side": "yes",
-    "market": "Sporting CP wins by more than 2.5 goals",
-    "matchup": "Sporting CP vs LASK",
-    "sport": "Soccer",
-    "price": 0.4,
-    "model_prob": 0.511,
-    "edge": 0.094,
-    "expected_end": "2026-10-21T22:00:00+00:00"
-   },
-   {
-    "id": "KXNFLRSHYDS-26OCT19WASSF-WASJDANIELS5-40",
-    "ticker": "KXNFLRSHYDS-26OCT19WASSF-WASJDANIELS5-40",
-    "side": "yes",
-    "market": "Jayden Daniels: 40+",
-    "matchup": "WAS at SF",
-    "sport": "Football",
-    "price": 0.48,
-    "model_prob": 0.577,
-    "edge": 0.08,
-    "expected_end": "2026-10-20T03:15:00+00:00",
-    "result": "loss"
-   }
-  ],
-  "graded": "2026-10-20T07:27:36.085545+00:00"
- },
- {
   "id": "PARLAY-202610200145-1",
   "tier": "P",
   "sport": "Parlay",
@@ -1395,8 +1353,8 @@
   "model_prob": 0.4082,
   "ev": 0.561,
   "payout_units": 2.8,
-  "status": "pending",
-  "pnl": null,
+  "status": "loss",
+  "pnl": -1.0,
   "legs": [
    {
     "id": "KXUCLSPREAD-26NOV04AEKRMA-RMA3:no",
@@ -1432,9 +1390,11 @@
     "price": 0.6,
     "model_prob": 0.706,
     "edge": 0.089,
-    "expected_end": "2026-11-03T10:00:00+00:00"
+    "expected_end": "2026-11-03T10:00:00+00:00",
+    "result": "loss"
    }
-  ]
+  ],
+  "graded": "2026-11-03T11:52:23.462596+00:00"
  },
  {
   "id": "PARLAY-202611030328-2",
