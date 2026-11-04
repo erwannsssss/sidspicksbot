@@ -1,182 +1,5 @@
 [
  {
-  "id": "PARLAY-202610180045-1",
-  "tier": "P",
-  "sport": "Parlay",
-  "kind": "watchlist",
-  "made": "2026-10-18T00:45:00.854188+00:00",
-  "units": 1.0,
-  "price": 0.1391,
-  "model_prob": 0.2522,
-  "ev": 0.812,
-  "payout_units": 6.2,
-  "status": "loss",
-  "pnl": -1.0,
-  "legs": [
-   {
-    "id": "KXATPMATCH-26OCT18SHESAK-SAK",
-    "ticker": "KXATPMATCH-26OCT18SHESAK-SAK",
-    "side": "yes",
-    "market": "Stefanos Sakellaridis to win",
-    "matchup": "2026 ATP Almaty",
-    "sport": "Tennis",
-    "price": 0.36,
-    "model_prob": 0.5,
-    "edge": 0.124,
-    "expected_end": "2026-10-18T13:00:00+00:00",
-    "result": "win"
-   },
-   {
-    "id": "KXNFLPASSTDS-26OCT18TENIND-INDDJONES17-2:no",
-    "ticker": "KXNFLPASSTDS-26OCT18TENIND-INDDJONES17-2",
-    "side": "no",
-    "market": "Daniel Jones: under 2",
-    "matchup": "TEN at IND",
-    "sport": "Football",
-    "price": 0.53,
-    "model_prob": 0.661,
-    "edge": 0.114,
-    "expected_end": "2026-10-18T20:00:00+00:00",
-    "result": "win"
-   },
-   {
-    "id": "KXUCLTOTAL-26OCT20MCIAEK-5:no",
-    "ticker": "KXUCLTOTAL-26OCT20MCIAEK-5",
-    "side": "no",
-    "market": "Under 4.5 goals scored",
-    "matchup": "Manchester City vs AEK Athens",
-    "sport": "Soccer",
-    "price": 0.66,
-    "model_prob": 0.763,
-    "edge": 0.088,
-    "expected_end": "2026-10-20T22:00:00+00:00",
-    "result": "loss"
-   }
-  ],
-  "graded": "2026-10-20T23:49:44.922888+00:00"
- },
- {
-  "id": "PARLAY-202610190045-1",
-  "tier": "P",
-  "sport": "Parlay",
-  "kind": "watchlist",
-  "made": "2026-10-19T00:45:48.145888+00:00",
-  "units": 1.0,
-  "price": 0.2206,
-  "model_prob": 0.3374,
-  "ev": 0.53,
-  "payout_units": 3.5,
-  "status": "loss",
-  "pnl": -1.0,
-  "legs": [
-   {
-    "id": "KXUCLSPREAD-26OCT21AVLVIK-AVL3:no",
-    "ticker": "KXUCLSPREAD-26OCT21AVLVIK-AVL3",
-    "side": "no",
-    "market": "No: Aston Villa wins by more than 2.5 goals",
-    "matchup": "Aston Villa vs Viking",
-    "sport": "Soccer",
-    "price": 0.64,
-    "model_prob": 0.756,
-    "edge": 0.1,
-    "expected_end": "2026-10-21T22:00:00+00:00"
-   },
-   {
-    "id": "KXNFLTOTAL-26OCT22NECHI-50:no",
-    "ticker": "KXNFLTOTAL-26OCT22NECHI-50",
-    "side": "no",
-    "market": "Under 49.5 points",
-    "matchup": "NE at CHI",
-    "sport": "Football",
-    "price": 0.48,
-    "model_prob": 0.585,
-    "edge": 0.088,
-    "expected_end": "2026-10-23T03:15:00+00:00"
-   },
-   {
-    "id": "KXUCLTOTAL-26OCT20MCIAEK-5:no",
-    "ticker": "KXUCLTOTAL-26OCT20MCIAEK-5",
-    "side": "no",
-    "market": "Under 4.5 goals scored",
-    "matchup": "Manchester City vs AEK Athens",
-    "sport": "Soccer",
-    "price": 0.66,
-    "model_prob": 0.763,
-    "edge": 0.088,
-    "expected_end": "2026-10-20T22:00:00+00:00",
-    "result": "loss"
-   }
-  ],
-  "graded": "2026-10-20T23:49:45.089482+00:00"
- },
- {
-  "id": "PARLAY-202610200145-1",
-  "tier": "P",
-  "sport": "Parlay",
-  "kind": "watchlist",
-  "made": "2026-10-20T01:45:15.248861+00:00",
-  "units": 1.0,
-  "price": 0.1389,
-  "model_prob": 0.2531,
-  "ev": 0.823,
-  "payout_units": 6.2,
-  "status": "loss",
-  "pnl": -1.0,
-  "legs": [
-   {
-    "id": "KXNCAAFGAME-26OCT23TENNSCAR-TENN",
-    "ticker": "KXNCAAFGAME-26OCT23TENNSCAR-TENN",
-    "side": "yes",
-    "market": "Tennessee to win",
-    "matchup": "Tennessee at South Carolina",
-    "sport": "Football",
-    "price": 0.46,
-    "model_prob": 0.589,
-    "edge": 0.111,
-    "expected_end": "2026-10-24T03:00:00+00:00"
-   },
-   {
-    "id": "KXUCLSPREAD-26OCT21AVLVIK-AVL3:no",
-    "ticker": "KXUCLSPREAD-26OCT21AVLVIK-AVL3",
-    "side": "no",
-    "market": "No: Aston Villa wins by more than 2.5 goals",
-    "matchup": "Aston Villa vs Viking",
-    "sport": "Soccer",
-    "price": 0.64,
-    "model_prob": 0.756,
-    "edge": 0.1,
-    "expected_end": "2026-10-21T22:00:00+00:00"
-   },
-   {
-    "id": "KXUCLSPREAD-26OCT20NAPBOG-NAP2:no",
-    "ticker": "KXUCLSPREAD-26OCT20NAPBOG-NAP2",
-    "side": "no",
-    "market": "No: Napoli wins by more than 1.5 goals",
-    "matchup": "Napoli vs Bodoe/Glimt",
-    "sport": "Soccer",
-    "price": 0.64,
-    "model_prob": 0.745,
-    "edge": 0.089,
-    "expected_end": "2026-10-20T22:00:00+00:00",
-    "result": "win"
-   },
-   {
-    "id": "KXUCLTOTAL-26OCT20MCIAEK-5:no",
-    "ticker": "KXUCLTOTAL-26OCT20MCIAEK-5",
-    "side": "no",
-    "market": "Under 4.5 goals scored",
-    "matchup": "Manchester City vs AEK Athens",
-    "sport": "Soccer",
-    "price": 0.66,
-    "model_prob": 0.763,
-    "edge": 0.088,
-    "expected_end": "2026-10-20T22:00:00+00:00",
-    "result": "loss"
-   }
-  ],
-  "graded": "2026-10-20T23:49:45.310621+00:00"
- },
- {
   "id": "PARLAY-202610210435-1",
   "tier": "P",
   "sport": "Parlay",
@@ -1378,7 +1201,8 @@
     "price": 0.36,
     "model_prob": 0.477,
     "edge": 0.1,
-    "expected_end": "2026-11-03T23:00:00+00:00"
+    "expected_end": "2026-11-03T23:00:00+00:00",
+    "result": "win"
    },
    {
     "id": "KXNCAAFSPREAD-26NOV03OHIOAKR-OHIO11",
@@ -1391,6 +1215,110 @@
     "model_prob": 0.655,
     "edge": 0.088,
     "expected_end": "2026-11-04T03:00:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": "PARLAY-202611040035-1",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-11-04T00:35:47.422562+00:00",
+  "units": 1.0,
+  "price": 0.2109,
+  "model_prob": 0.3602,
+  "ev": 0.708,
+  "payout_units": 3.7,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXNCAAFGAME-26NOV07TLSATULN-TULN",
+    "ticker": "KXNCAAFGAME-26NOV07TLSATULN-TULN",
+    "side": "yes",
+    "market": "Tulane to win",
+    "matchup": "Tulsa at Tulane",
+    "sport": "Football",
+    "price": 0.48,
+    "model_prob": 0.623,
+    "edge": 0.126,
+    "expected_end": "2026-11-07T23:00:00+00:00"
+   },
+   {
+    "id": "KXUCLSPREAD-26NOV04AEKRMA-RMA3:no",
+    "ticker": "KXUCLSPREAD-26NOV04AEKRMA-RMA3",
+    "side": "no",
+    "market": "No: Real Madrid wins by more than 2.5 goals",
+    "matchup": "AEK Athens vs Real Madrid",
+    "sport": "Soccer",
+    "price": 0.65,
+    "model_prob": 0.776,
+    "edge": 0.11,
+    "expected_end": "2026-11-04T20:45:00+00:00"
+   },
+   {
+    "id": "KXUCLSPREAD-26NOV04FENLFC-LFC2:no",
+    "ticker": "KXUCLSPREAD-26NOV04FENLFC-LFC2",
+    "side": "no",
+    "market": "No: Liverpool wins by more than 1.5 goals",
+    "matchup": "Fenerbahce vs Liverpool",
+    "sport": "Soccer",
+    "price": 0.62,
+    "model_prob": 0.745,
+    "edge": 0.109,
+    "expected_end": "2026-11-04T20:45:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": "PARLAY-202611040035-2",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-11-04T00:35:47.422669+00:00",
+  "units": 1.0,
+  "price": 0.1697,
+  "model_prob": 0.2755,
+  "ev": 0.623,
+  "payout_units": 4.9,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXNCAAFSPREAD-26NOV07COLOASU-ASU4",
+    "ticker": "KXNCAAFSPREAD-26NOV07COLOASU-ASU4",
+    "side": "yes",
+    "market": "Arizona St. wins by over 3.5 points",
+    "matchup": "Colorado at Arizona State",
+    "sport": "Football",
+    "price": 0.49,
+    "model_prob": 0.607,
+    "edge": 0.099,
+    "expected_end": "2026-11-07T23:00:00+00:00"
+   },
+   {
+    "id": "KXNCAAFSPREAD-26NOV07RICEUNT-UNT18",
+    "ticker": "KXNCAAFSPREAD-26NOV07RICEUNT-UNT18",
+    "side": "yes",
+    "market": "North Texas wins by over 17.5 points",
+    "matchup": "Rice at North Texas",
+    "sport": "Football",
+    "price": 0.5,
+    "model_prob": 0.615,
+    "edge": 0.098,
+    "expected_end": "2026-11-07T23:00:00+00:00"
+   },
+   {
+    "id": "KXATPMATCH-26NOV04FILMAC-FIL",
+    "ticker": "KXATPMATCH-26NOV04FILMAC-FIL",
+    "side": "yes",
+    "market": "Arthur Fils to win",
+    "matchup": "2026 ATP Paris",
+    "sport": "Tennis",
+    "price": 0.63,
+    "model_prob": 0.738,
+    "edge": 0.091,
+    "expected_end": "2026-11-04T13:00:00+00:00"
    }
   ]
  }
