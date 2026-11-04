@@ -1188,8 +1188,8 @@
   "model_prob": 0.3124,
   "ev": 0.464,
   "payout_units": 3.7,
-  "status": "pending",
-  "pnl": null,
+  "status": "loss",
+  "pnl": -1.0,
   "legs": [
    {
     "id": "KXUCLBTTS-26NOV03BOGLIL-BTTS:no",
@@ -1214,9 +1214,11 @@
     "price": 0.55,
     "model_prob": 0.655,
     "edge": 0.088,
-    "expected_end": "2026-11-04T03:00:00+00:00"
+    "expected_end": "2026-11-04T03:00:00+00:00",
+    "result": "loss"
    }
-  ]
+  ],
+  "graded": "2026-11-04T07:29:16.080655+00:00"
  },
  {
   "id": "PARLAY-202611040035-1",
