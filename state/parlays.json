@@ -55,48 +55,6 @@
   "graded": "2026-10-25T00:17:59.034607+00:00"
  },
  {
-  "id": "PARLAY-202610210435-2",
-  "tier": "P",
-  "sport": "Parlay",
-  "kind": "recommended",
-  "made": "2026-10-21T04:35:00.048296+00:00",
-  "units": 1.0,
-  "price": 0.1415,
-  "model_prob": 0.2362,
-  "ev": 0.669,
-  "payout_units": 6.1,
-  "status": "loss",
-  "pnl": -1.0,
-  "legs": [
-   {
-    "id": "KXJLEAGUESPREAD-26OCT21MARVER-MAR2",
-    "ticker": "KXJLEAGUESPREAD-26OCT21MARVER-MAR2",
-    "side": "yes",
-    "market": "Marinos wins by more than 1.5 goals",
-    "matchup": "Marinos vs Tokyo V",
-    "sport": "Soccer",
-    "price": 0.26,
-    "model_prob": 0.381,
-    "edge": 0.108,
-    "expected_end": "2026-10-21T13:00:00+00:00",
-    "result": "loss"
-   },
-   {
-    "id": "KXNCAAFSPREAD-26OCT23ARMYTLSA-TLSA2:no",
-    "ticker": "KXNCAAFSPREAD-26OCT23ARMYTLSA-TLSA2",
-    "side": "no",
-    "market": "No: Tulsa wins by over 1.5 points",
-    "matchup": "Army at Tulsa",
-    "sport": "Football",
-    "price": 0.5,
-    "model_prob": 0.62,
-    "edge": 0.102,
-    "expected_end": "2026-10-24T03:30:00+00:00"
-   }
-  ],
-  "graded": "2026-10-21T17:08:01.053345+00:00"
- },
- {
   "id": "PARLAY-202610220040-1",
   "tier": "P",
   "sport": "Parlay",
