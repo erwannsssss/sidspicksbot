@@ -1214,7 +1214,8 @@
     "price": 0.65,
     "model_prob": 0.776,
     "edge": 0.11,
-    "expected_end": "2026-11-04T20:45:00+00:00"
+    "expected_end": "2026-11-04T20:45:00+00:00",
+    "result": "win"
    },
    {
     "id": "KXUCLSPREAD-26NOV04FENLFC-LFC2:no",
@@ -1226,7 +1227,8 @@
     "price": 0.62,
     "model_prob": 0.745,
     "edge": 0.109,
-    "expected_end": "2026-11-04T20:45:00+00:00"
+    "expected_end": "2026-11-04T20:45:00+00:00",
+    "result": "win"
    }
   ]
  },
@@ -1278,7 +1280,88 @@
     "price": 0.63,
     "model_prob": 0.738,
     "edge": 0.091,
-    "expected_end": "2026-11-04T13:00:00+00:00"
+    "expected_end": "2026-11-04T13:00:00+00:00",
+    "result": "win"
+   }
+  ]
+ },
+ {
+  "id": "PARLAY-202611050053-1",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-11-05T00:53:36.146138+00:00",
+  "units": 1.0,
+  "price": 0.1668,
+  "model_prob": 0.2916,
+  "ev": 0.748,
+  "payout_units": 5.0,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXNFLSPREAD-26NOV08DALIND-DAL2:no",
+    "ticker": "KXNFLSPREAD-26NOV08DALIND-DAL2",
+    "side": "no",
+    "market": "No: Dallas wins by over 1.5 points",
+    "matchup": "DAL at IND",
+    "sport": "Football",
+    "price": 0.32,
+    "model_prob": 0.468,
+    "edge": 0.132,
+    "expected_end": "2026-11-08T21:00:00+00:00"
+   },
+   {
+    "id": "KXNCAAFGAME-26NOV07TLSATULN-TULN",
+    "ticker": "KXNCAAFGAME-26NOV07TLSATULN-TULN",
+    "side": "yes",
+    "market": "Tulane to win",
+    "matchup": "Tulsa at Tulane",
+    "sport": "Football",
+    "price": 0.48,
+    "model_prob": 0.623,
+    "edge": 0.126,
+    "expected_end": "2026-11-07T23:00:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": "PARLAY-202611050053-2",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-11-05T00:53:36.146188+00:00",
+  "units": 1.0,
+  "price": 0.2269,
+  "model_prob": 0.3357,
+  "ev": 0.479,
+  "payout_units": 3.4,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXNCAAFTOTAL-26NOV07UCLAMINN-42",
+    "ticker": "KXNCAAFTOTAL-26NOV07UCLAMINN-42",
+    "side": "yes",
+    "market": "Over 41.5 points",
+    "matchup": "UCLA at Minnesota",
+    "sport": "Football",
+    "price": 0.43,
+    "model_prob": 0.553,
+    "edge": 0.105,
+    "expected_end": "2026-11-07T23:00:00+00:00"
+   },
+   {
+    "id": "KXNCAAFSPREAD-26NOV07COLOASU-ASU4",
+    "ticker": "KXNCAAFSPREAD-26NOV07COLOASU-ASU4",
+    "side": "yes",
+    "market": "Arizona St. wins by over 3.5 points",
+    "matchup": "Colorado at Arizona State",
+    "sport": "Football",
+    "price": 0.49,
+    "model_prob": 0.607,
+    "edge": 0.099,
+    "expected_end": "2026-11-07T23:00:00+00:00"
    }
   ]
  }
