@@ -1364,5 +1364,97 @@
     "expected_end": "2026-11-07T23:00:00+00:00"
    }
   ]
+ },
+ {
+  "id": "PARLAY-202611060058-1",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-11-06T00:58:47.179277+00:00",
+  "units": 1.0,
+  "price": 0.1733,
+  "model_prob": 0.3177,
+  "ev": 0.833,
+  "payout_units": 4.8,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXNFLRECYDS-26NOV09BUFMIN-MINJJEFFERSON18-100:no",
+    "ticker": "KXNFLRECYDS-26NOV09BUFMIN-MINJJEFFERSON18-100",
+    "side": "no",
+    "market": "Justin Jefferson: under 100",
+    "matchup": "BUF at MIN",
+    "sport": "Football",
+    "price": 0.7,
+    "model_prob": 0.843,
+    "edge": 0.128,
+    "expected_end": "2026-11-10T04:15:00+00:00"
+   },
+   {
+    "id": "KXNCAAFGAME-26NOV07TLSATULN-TULN",
+    "ticker": "KXNCAAFGAME-26NOV07TLSATULN-TULN",
+    "side": "yes",
+    "market": "Tulane to win",
+    "matchup": "Tulsa at Tulane",
+    "sport": "Football",
+    "price": 0.48,
+    "model_prob": 0.623,
+    "edge": 0.126,
+    "expected_end": "2026-11-07T23:00:00+00:00"
+   },
+   {
+    "id": "KXNFLRECYDS-26NOV08NYJKC-KCNGRAY83-15",
+    "ticker": "KXNFLRECYDS-26NOV08NYJKC-KCNGRAY83-15",
+    "side": "yes",
+    "market": "Noah Gray: 15+",
+    "matchup": "NYJ at KC",
+    "sport": "Football",
+    "price": 0.47,
+    "model_prob": 0.605,
+    "edge": 0.118,
+    "expected_end": "2026-11-08T21:00:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": "PARLAY-202611060058-2",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-11-06T00:58:47.179319+00:00",
+  "units": 1.0,
+  "price": 0.1701,
+  "model_prob": 0.2841,
+  "ev": 0.67,
+  "payout_units": 4.9,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXNFLSPREAD-26NOV08DALIND-DAL2:no",
+    "ticker": "KXNFLSPREAD-26NOV08DALIND-DAL2",
+    "side": "no",
+    "market": "No: Dallas wins by over 1.5 points",
+    "matchup": "DAL at IND",
+    "sport": "Football",
+    "price": 0.32,
+    "model_prob": 0.468,
+    "edge": 0.132,
+    "expected_end": "2026-11-08T21:00:00+00:00"
+   },
+   {
+    "id": "KXNCAAFSPREAD-26NOV07COLOASU-ASU4",
+    "ticker": "KXNCAAFSPREAD-26NOV07COLOASU-ASU4",
+    "side": "yes",
+    "market": "Arizona St. wins by over 3.5 points",
+    "matchup": "Colorado at Arizona State",
+    "sport": "Football",
+    "price": 0.49,
+    "model_prob": 0.607,
+    "edge": 0.099,
+    "expected_end": "2026-11-07T23:00:00+00:00"
+   }
+  ]
  }
 ]
