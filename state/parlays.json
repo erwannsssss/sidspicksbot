@@ -267,48 +267,6 @@
   "graded": "2026-10-25T06:01:03.710161+00:00"
  },
  {
-  "id": "PARLAY-202610240428-2",
-  "tier": "P",
-  "sport": "Parlay",
-  "kind": "watchlist",
-  "made": "2026-10-24T04:28:38.604523+00:00",
-  "units": 1.0,
-  "price": 0.1844,
-  "model_prob": 0.3022,
-  "ev": 0.638,
-  "payout_units": 4.4,
-  "status": "loss",
-  "pnl": -1.0,
-  "legs": [
-   {
-    "id": "KXATPMATCH-26OCT24PAUFRI-PAU",
-    "ticker": "KXATPMATCH-26OCT24PAUFRI-PAU",
-    "side": "yes",
-    "market": "Tommy Paul to win",
-    "matchup": "2026 ATP Lyon",
-    "sport": "Tennis",
-    "price": 0.37,
-    "model_prob": 0.513,
-    "edge": 0.127,
-    "expected_end": "2026-10-24T13:00:00+00:00",
-    "result": "loss"
-   },
-   {
-    "id": "KXNCAAFGAME-26OCT23TENNSCAR-TENN",
-    "ticker": "KXNCAAFGAME-26OCT23TENNSCAR-TENN",
-    "side": "yes",
-    "market": "Tennessee to win",
-    "matchup": "Tennessee at South Carolina",
-    "sport": "Football",
-    "price": 0.46,
-    "model_prob": 0.589,
-    "edge": 0.111,
-    "expected_end": "2026-10-24T03:00:00+00:00"
-   }
-  ],
-  "graded": "2026-10-24T15:53:58.348982+00:00"
- },
- {
   "id": "PARLAY-202610250018-1",
   "tier": "P",
   "sport": "Parlay",
