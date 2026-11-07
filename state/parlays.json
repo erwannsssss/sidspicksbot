@@ -1456,5 +1456,97 @@
     "expected_end": "2026-11-07T23:00:00+00:00"
    }
   ]
+ },
+ {
+  "id": "PARLAY-202611070006-1",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-11-07T00:06:01.217259+00:00",
+  "units": 1.0,
+  "price": 0.2576,
+  "model_prob": 0.438,
+  "ev": 0.701,
+  "payout_units": 2.9,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXNFLRECYDS-26NOV09BUFMIN-MINJJEFFERSON18-100:no",
+    "ticker": "KXNFLRECYDS-26NOV09BUFMIN-MINJJEFFERSON18-100",
+    "side": "no",
+    "market": "Justin Jefferson: under 100",
+    "matchup": "BUF at MIN",
+    "sport": "Football",
+    "price": 0.7,
+    "model_prob": 0.843,
+    "edge": 0.128,
+    "expected_end": "2026-11-10T04:15:00+00:00"
+   },
+   {
+    "id": "KXNCAAFGAME-26NOV07TLSATULN-TULN",
+    "ticker": "KXNCAAFGAME-26NOV07TLSATULN-TULN",
+    "side": "yes",
+    "market": "Tulane to win",
+    "matchup": "Tulsa at Tulane",
+    "sport": "Football",
+    "price": 0.48,
+    "model_prob": 0.623,
+    "edge": 0.126,
+    "expected_end": "2026-11-07T23:00:00+00:00"
+   },
+   {
+    "id": "KXNFLRECYDS-26NOV08LARWAS-WASAWILLIAMS14-70:no",
+    "ticker": "KXNFLRECYDS-26NOV08LARWAS-WASAWILLIAMS14-70",
+    "side": "no",
+    "market": "Antonio Williams: under 70",
+    "matchup": "LA at WAS",
+    "sport": "Football",
+    "price": 0.71,
+    "model_prob": 0.834,
+    "edge": 0.11,
+    "expected_end": "2026-11-08T21:00:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": "PARLAY-202611070006-2",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-11-07T00:06:01.217317+00:00",
+  "units": 1.0,
+  "price": 0.1634,
+  "model_prob": 0.2831,
+  "ev": 0.733,
+  "payout_units": 5.1,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXNFLSPREAD-26NOV08DALIND-DAL2:no",
+    "ticker": "KXNFLSPREAD-26NOV08DALIND-DAL2",
+    "side": "no",
+    "market": "No: Dallas wins by over 1.5 points",
+    "matchup": "DAL at IND",
+    "sport": "Football",
+    "price": 0.32,
+    "model_prob": 0.468,
+    "edge": 0.132,
+    "expected_end": "2026-11-08T21:00:00+00:00"
+   },
+   {
+    "id": "KXNFLRECYDS-26NOV08NYJKC-KCNGRAY83-15",
+    "ticker": "KXNFLRECYDS-26NOV08NYJKC-KCNGRAY83-15",
+    "side": "yes",
+    "market": "Noah Gray: 15+",
+    "matchup": "NYJ at KC",
+    "sport": "Football",
+    "price": 0.47,
+    "model_prob": 0.605,
+    "edge": 0.118,
+    "expected_end": "2026-11-08T21:00:00+00:00"
+   }
+  ]
  }
 ]
