@@ -1147,8 +1147,8 @@
   "model_prob": 0.3602,
   "ev": 0.708,
   "payout_units": 3.7,
-  "status": "pending",
-  "pnl": null,
+  "status": "loss",
+  "pnl": -1.0,
   "legs": [
    {
     "id": "KXNCAAFGAME-26NOV07TLSATULN-TULN",
@@ -1160,7 +1160,8 @@
     "price": 0.48,
     "model_prob": 0.623,
     "edge": 0.126,
-    "expected_end": "2026-11-07T23:00:00+00:00"
+    "expected_end": "2026-11-07T23:00:00+00:00",
+    "result": "loss"
    },
    {
     "id": "KXUCLSPREAD-26NOV04AEKRMA-RMA3:no",
@@ -1188,7 +1189,8 @@
     "expected_end": "2026-11-04T20:45:00+00:00",
     "result": "win"
    }
-  ]
+  ],
+  "graded": "2026-11-07T21:45:49.632323+00:00"
  },
  {
   "id": "PARLAY-202611040035-2",
@@ -1254,8 +1256,8 @@
   "model_prob": 0.2916,
   "ev": 0.748,
   "payout_units": 5.0,
-  "status": "pending",
-  "pnl": null,
+  "status": "loss",
+  "pnl": -1.0,
   "legs": [
    {
     "id": "KXNFLSPREAD-26NOV08DALIND-DAL2:no",
@@ -1279,9 +1281,11 @@
     "price": 0.48,
     "model_prob": 0.623,
     "edge": 0.126,
-    "expected_end": "2026-11-07T23:00:00+00:00"
+    "expected_end": "2026-11-07T23:00:00+00:00",
+    "result": "loss"
    }
-  ]
+  ],
+  "graded": "2026-11-07T21:45:49.973898+00:00"
  },
  {
   "id": "PARLAY-202611050053-2",
@@ -1307,7 +1311,8 @@
     "price": 0.43,
     "model_prob": 0.553,
     "edge": 0.105,
-    "expected_end": "2026-11-07T23:00:00+00:00"
+    "expected_end": "2026-11-07T23:00:00+00:00",
+    "result": "win"
    },
    {
     "id": "KXNCAAFSPREAD-26NOV07COLOASU-ASU4",
@@ -1334,8 +1339,8 @@
   "model_prob": 0.3177,
   "ev": 0.833,
   "payout_units": 4.8,
-  "status": "pending",
-  "pnl": null,
+  "status": "loss",
+  "pnl": -1.0,
   "legs": [
    {
     "id": "KXNFLRECYDS-26NOV09BUFMIN-MINJJEFFERSON18-100:no",
@@ -1359,7 +1364,8 @@
     "price": 0.48,
     "model_prob": 0.623,
     "edge": 0.126,
-    "expected_end": "2026-11-07T23:00:00+00:00"
+    "expected_end": "2026-11-07T23:00:00+00:00",
+    "result": "loss"
    },
    {
     "id": "KXNFLRECYDS-26NOV08NYJKC-KCNGRAY83-15",
@@ -1373,7 +1379,8 @@
     "edge": 0.118,
     "expected_end": "2026-11-08T21:00:00+00:00"
    }
-  ]
+  ],
+  "graded": "2026-11-07T21:45:50.415028+00:00"
  },
  {
   "id": "PARLAY-202611060058-2",
@@ -1426,8 +1433,8 @@
   "model_prob": 0.438,
   "ev": 0.701,
   "payout_units": 2.9,
-  "status": "pending",
-  "pnl": null,
+  "status": "loss",
+  "pnl": -1.0,
   "legs": [
    {
     "id": "KXNFLRECYDS-26NOV09BUFMIN-MINJJEFFERSON18-100:no",
@@ -1451,7 +1458,8 @@
     "price": 0.48,
     "model_prob": 0.623,
     "edge": 0.126,
-    "expected_end": "2026-11-07T23:00:00+00:00"
+    "expected_end": "2026-11-07T23:00:00+00:00",
+    "result": "loss"
    },
    {
     "id": "KXNFLRECYDS-26NOV08LARWAS-WASAWILLIAMS14-70:no",
@@ -1465,7 +1473,8 @@
     "edge": 0.11,
     "expected_end": "2026-11-08T21:00:00+00:00"
    }
-  ]
+  ],
+  "graded": "2026-11-07T21:45:50.840235+00:00"
  },
  {
   "id": "PARLAY-202611070006-2",
