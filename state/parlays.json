@@ -1,102 +1,5 @@
 [
  {
-  "id": "PARLAY-202610210435-1",
-  "tier": "P",
-  "sport": "Parlay",
-  "kind": "watchlist",
-  "made": "2026-10-21T04:35:00.048250+00:00",
-  "units": 1.0,
-  "price": 0.1527,
-  "model_prob": 0.2774,
-  "ev": 0.817,
-  "payout_units": 5.5,
-  "status": "loss",
-  "pnl": -1.0,
-  "legs": [
-   {
-    "id": "KXNCAAFSPREAD-26OCT24NDSUUNM-UNM4:no",
-    "ticker": "KXNCAAFSPREAD-26OCT24NDSUUNM-UNM4",
-    "side": "no",
-    "market": "No: New Mexico wins by over 3.5 points",
-    "matchup": "North Dakota State at New Mexico",
-    "sport": "Football",
-    "price": 0.47,
-    "model_prob": 0.623,
-    "edge": 0.136,
-    "expected_end": "2026-10-25T05:00:00+00:00"
-   },
-   {
-    "id": "KXNCAAFGAME-26OCT23TENNSCAR-TENN",
-    "ticker": "KXNCAAFGAME-26OCT23TENNSCAR-TENN",
-    "side": "yes",
-    "market": "Tennessee to win",
-    "matchup": "Tennessee at South Carolina",
-    "sport": "Football",
-    "price": 0.46,
-    "model_prob": 0.589,
-    "edge": 0.111,
-    "expected_end": "2026-10-24T03:00:00+00:00",
-    "result": "loss"
-   },
-   {
-    "id": "KXUCLSPREAD-26OCT21AVLVIK-AVL3:no",
-    "ticker": "KXUCLSPREAD-26OCT21AVLVIK-AVL3",
-    "side": "no",
-    "market": "No: Aston Villa wins by more than 2.5 goals",
-    "matchup": "Aston Villa vs Viking",
-    "sport": "Soccer",
-    "price": 0.64,
-    "model_prob": 0.756,
-    "edge": 0.1,
-    "expected_end": "2026-10-21T22:00:00+00:00",
-    "result": "win"
-   }
-  ],
-  "graded": "2026-10-25T00:17:59.034607+00:00"
- },
- {
-  "id": "PARLAY-202610220040-1",
-  "tier": "P",
-  "sport": "Parlay",
-  "kind": "watchlist",
-  "made": "2026-10-22T00:40:21.556273+00:00",
-  "units": 1.0,
-  "price": 0.2327,
-  "model_prob": 0.3669,
-  "ev": 0.577,
-  "payout_units": 3.3,
-  "status": "loss",
-  "pnl": -1.0,
-  "legs": [
-   {
-    "id": "KXNCAAFSPREAD-26OCT24NDSUUNM-UNM4:no",
-    "ticker": "KXNCAAFSPREAD-26OCT24NDSUUNM-UNM4",
-    "side": "no",
-    "market": "No: New Mexico wins by over 3.5 points",
-    "matchup": "North Dakota State at New Mexico",
-    "sport": "Football",
-    "price": 0.47,
-    "model_prob": 0.623,
-    "edge": 0.136,
-    "expected_end": "2026-10-25T05:00:00+00:00"
-   },
-   {
-    "id": "KXNCAAFGAME-26OCT23TENNSCAR-TENN",
-    "ticker": "KXNCAAFGAME-26OCT23TENNSCAR-TENN",
-    "side": "yes",
-    "market": "Tennessee to win",
-    "matchup": "Tennessee at South Carolina",
-    "sport": "Football",
-    "price": 0.46,
-    "model_prob": 0.589,
-    "edge": 0.111,
-    "expected_end": "2026-10-24T03:00:00+00:00",
-    "result": "loss"
-   }
-  ],
-  "graded": "2026-10-25T00:17:59.110595+00:00"
- },
- {
   "id": "PARLAY-202610220040-2",
   "tier": "P",
   "sport": "Parlay",
@@ -180,49 +83,6 @@
    }
   ],
   "graded": "2026-10-25T06:01:03.579641+00:00"
- },
- {
-  "id": "PARLAY-202610230439-2",
-  "tier": "P",
-  "sport": "Parlay",
-  "kind": "watchlist",
-  "made": "2026-10-23T04:39:37.169024+00:00",
-  "units": 1.0,
-  "price": 0.247,
-  "model_prob": 0.3652,
-  "ev": 0.478,
-  "payout_units": 3.0,
-  "status": "loss",
-  "pnl": -1.0,
-  "legs": [
-   {
-    "id": "KXNCAAFGAME-26OCT23TENNSCAR-TENN",
-    "ticker": "KXNCAAFGAME-26OCT23TENNSCAR-TENN",
-    "side": "yes",
-    "market": "Tennessee to win",
-    "matchup": "Tennessee at South Carolina",
-    "sport": "Football",
-    "price": 0.46,
-    "model_prob": 0.589,
-    "edge": 0.111,
-    "expected_end": "2026-10-24T03:00:00+00:00",
-    "result": "loss"
-   },
-   {
-    "id": "KXNCAAFSPREAD-26OCT23ARMYTLSA-TLSA2:no",
-    "ticker": "KXNCAAFSPREAD-26OCT23ARMYTLSA-TLSA2",
-    "side": "no",
-    "market": "No: Tulsa wins by over 1.5 points",
-    "matchup": "Army at Tulsa",
-    "sport": "Football",
-    "price": 0.5,
-    "model_prob": 0.62,
-    "edge": 0.102,
-    "expected_end": "2026-10-24T03:30:00+00:00",
-    "result": "win"
-   }
-  ],
-  "graded": "2026-10-25T00:17:59.279888+00:00"
  },
  {
   "id": "PARLAY-202610240428-1",
@@ -1228,7 +1088,8 @@
     "price": 0.5,
     "model_prob": 0.615,
     "edge": 0.098,
-    "expected_end": "2026-11-07T23:00:00+00:00"
+    "expected_end": "2026-11-07T23:00:00+00:00",
+    "result": "win"
    },
    {
     "id": "KXATPMATCH-26NOV04FILMAC-FIL",
@@ -1513,6 +1374,98 @@
     "model_prob": 0.605,
     "edge": 0.118,
     "expected_end": "2026-11-08T21:00:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": "PARLAY-202611080122-1",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-11-08T01:22:30.828988+00:00",
+  "units": 1.0,
+  "price": 0.1736,
+  "model_prob": 0.329,
+  "ev": 0.896,
+  "payout_units": 4.8,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXNFLSPREAD-26NOV08DALIND-DAL2:no",
+    "ticker": "KXNFLSPREAD-26NOV08DALIND-DAL2",
+    "side": "no",
+    "market": "No: Dallas wins by over 1.5 points",
+    "matchup": "DAL at IND",
+    "sport": "Football",
+    "price": 0.32,
+    "model_prob": 0.468,
+    "edge": 0.132,
+    "expected_end": "2026-11-08T21:00:00+00:00"
+   },
+   {
+    "id": "KXNFLRECYDS-26NOV09BUFMIN-MINJJEFFERSON18-100:no",
+    "ticker": "KXNFLRECYDS-26NOV09BUFMIN-MINJJEFFERSON18-100",
+    "side": "no",
+    "market": "Justin Jefferson: under 100",
+    "matchup": "BUF at MIN",
+    "sport": "Football",
+    "price": 0.7,
+    "model_prob": 0.843,
+    "edge": 0.128,
+    "expected_end": "2026-11-10T04:15:00+00:00"
+   },
+   {
+    "id": "KXNFLRECYDS-26NOV08LARWAS-WASAWILLIAMS14-70:no",
+    "ticker": "KXNFLRECYDS-26NOV08LARWAS-WASAWILLIAMS14-70",
+    "side": "no",
+    "market": "Antonio Williams: under 70",
+    "matchup": "LA at WAS",
+    "sport": "Football",
+    "price": 0.71,
+    "model_prob": 0.834,
+    "edge": 0.11,
+    "expected_end": "2026-11-08T21:00:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": "PARLAY-202611080122-2",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-11-08T01:22:30.829031+00:00",
+  "units": 1.0,
+  "price": 0.1933,
+  "model_prob": 0.3104,
+  "ev": 0.606,
+  "payout_units": 4.2,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXNFLRECYDS-26NOV08NYJKC-KCNGRAY83-15",
+    "ticker": "KXNFLRECYDS-26NOV08NYJKC-KCNGRAY83-15",
+    "side": "yes",
+    "market": "Noah Gray: 15+",
+    "matchup": "NYJ at KC",
+    "sport": "Football",
+    "price": 0.47,
+    "model_prob": 0.605,
+    "edge": 0.118,
+    "expected_end": "2026-11-08T21:00:00+00:00"
+   },
+   {
+    "id": "KXATPCHALLENGERMATCH-26NOV08WATKUM-KUM",
+    "ticker": "KXATPCHALLENGERMATCH-26NOV08WATKUM-KUM",
+    "side": "yes",
+    "market": "Jan Kumstat to win",
+    "matchup": "2026 ATP Challenger Taipei",
+    "sport": "Tennis",
+    "price": 0.38,
+    "model_prob": 0.513,
+    "edge": 0.117,
+    "expected_end": "2026-11-08T09:30:00+00:00"
    }
   ]
  }
