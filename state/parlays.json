@@ -1090,8 +1090,8 @@
   "model_prob": 0.2841,
   "ev": 0.67,
   "payout_units": 4.9,
-  "status": "pending",
-  "pnl": null,
+  "status": "loss",
+  "pnl": -1.0,
   "legs": [
    {
     "id": "KXNFLSPREAD-26NOV08DALIND-DAL2:no",
@@ -1103,7 +1103,8 @@
     "price": 0.32,
     "model_prob": 0.468,
     "edge": 0.132,
-    "expected_end": "2026-11-08T21:00:00+00:00"
+    "expected_end": "2026-11-08T21:00:00+00:00",
+    "result": "loss"
    },
    {
     "id": "KXNCAAFSPREAD-26NOV07COLOASU-ASU4",
@@ -1118,7 +1119,8 @@
     "expected_end": "2026-11-07T23:00:00+00:00",
     "result": "win"
    }
-  ]
+  ],
+  "graded": "2026-11-08T21:59:40.969042+00:00"
  },
  {
   "id": "PARLAY-202611070006-1",
@@ -1185,8 +1187,8 @@
   "model_prob": 0.2831,
   "ev": 0.733,
   "payout_units": 5.1,
-  "status": "pending",
-  "pnl": null,
+  "status": "loss",
+  "pnl": -1.0,
   "legs": [
    {
     "id": "KXNFLSPREAD-26NOV08DALIND-DAL2:no",
@@ -1198,7 +1200,8 @@
     "price": 0.32,
     "model_prob": 0.468,
     "edge": 0.132,
-    "expected_end": "2026-11-08T21:00:00+00:00"
+    "expected_end": "2026-11-08T21:00:00+00:00",
+    "result": "loss"
    },
    {
     "id": "KXNFLRECYDS-26NOV08NYJKC-KCNGRAY83-15",
@@ -1210,9 +1213,11 @@
     "price": 0.47,
     "model_prob": 0.605,
     "edge": 0.118,
-    "expected_end": "2026-11-08T21:00:00+00:00"
+    "expected_end": "2026-11-08T21:00:00+00:00",
+    "result": "loss"
    }
-  ]
+  ],
+  "graded": "2026-11-08T21:59:41.118449+00:00"
  },
  {
   "id": "PARLAY-202611080122-1",
@@ -1225,8 +1230,8 @@
   "model_prob": 0.329,
   "ev": 0.896,
   "payout_units": 4.8,
-  "status": "pending",
-  "pnl": null,
+  "status": "loss",
+  "pnl": -1.0,
   "legs": [
    {
     "id": "KXNFLSPREAD-26NOV08DALIND-DAL2:no",
@@ -1238,7 +1243,8 @@
     "price": 0.32,
     "model_prob": 0.468,
     "edge": 0.132,
-    "expected_end": "2026-11-08T21:00:00+00:00"
+    "expected_end": "2026-11-08T21:00:00+00:00",
+    "result": "loss"
    },
    {
     "id": "KXNFLRECYDS-26NOV09BUFMIN-MINJJEFFERSON18-100:no",
@@ -1262,9 +1268,11 @@
     "price": 0.71,
     "model_prob": 0.834,
     "edge": 0.11,
-    "expected_end": "2026-11-08T21:00:00+00:00"
+    "expected_end": "2026-11-08T21:00:00+00:00",
+    "result": "win"
    }
-  ]
+  ],
+  "graded": "2026-11-08T21:59:41.356882+00:00"
  },
  {
   "id": "PARLAY-202611080122-2",
