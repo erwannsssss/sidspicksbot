@@ -1315,5 +1315,85 @@
    }
   ],
   "graded": "2026-11-08T08:56:19.688620+00:00"
+ },
+ {
+  "id": "PARLAY-202611090142-1",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-11-09T01:42:04.416092+00:00",
+  "units": 1.0,
+  "price": 0.4055,
+  "model_prob": 0.5412,
+  "ev": 0.335,
+  "payout_units": 1.5,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXNFLRECYDS-26NOV09BUFMIN-MINJJEFFERSON18-100:no",
+    "ticker": "KXNFLRECYDS-26NOV09BUFMIN-MINJJEFFERSON18-100",
+    "side": "no",
+    "market": "Justin Jefferson: under 100",
+    "matchup": "BUF at MIN",
+    "sport": "Football",
+    "price": 0.7,
+    "model_prob": 0.843,
+    "edge": 0.128,
+    "expected_end": "2026-11-10T04:15:00+00:00"
+   },
+   {
+    "id": "KXNCAAFGAME-26NOV11BUFFBALL-BUFF",
+    "ticker": "KXNCAAFGAME-26NOV11BUFFBALL-BUFF",
+    "side": "yes",
+    "market": "Buffalo to win",
+    "matchup": "Buffalo at Ball State",
+    "sport": "Football",
+    "price": 0.55,
+    "model_prob": 0.642,
+    "edge": 0.075,
+    "expected_end": "2026-11-11T23:00:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": "PARLAY-202611090142-2",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-11-09T01:42:04.416134+00:00",
+  "units": 1.0,
+  "price": 0.2626,
+  "model_prob": 0.3405,
+  "ev": 0.296,
+  "payout_units": 2.8,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXNCAAFGAME-26NOV10OHIOMOH-OHIO",
+    "ticker": "KXNCAAFGAME-26NOV10OHIOMOH-OHIO",
+    "side": "yes",
+    "market": "Ohio to win",
+    "matchup": "Ohio at Miami (OH)",
+    "sport": "Football",
+    "price": 0.49,
+    "model_prob": 0.586,
+    "edge": 0.078,
+    "expected_end": "2026-11-11T03:00:00+00:00"
+   },
+   {
+    "id": "KXNCAAFSPREAD-26NOV10WMUAKR-WMU15",
+    "ticker": "KXNCAAFSPREAD-26NOV10WMUAKR-WMU15",
+    "side": "yes",
+    "market": "Western Michigan wins by over 14.5 points",
+    "matchup": "Western Michigan at Akron",
+    "sport": "Football",
+    "price": 0.5,
+    "model_prob": 0.581,
+    "edge": 0.063,
+    "expected_end": "2026-11-11T03:00:00+00:00"
+   }
+  ]
  }
 ]
