@@ -1,48 +1,5 @@
 [
  {
-  "id": "PARLAY-202610220040-2",
-  "tier": "P",
-  "sport": "Parlay",
-  "kind": "watchlist",
-  "made": "2026-10-22T00:40:21.556324+00:00",
-  "units": 1.0,
-  "price": 0.2052,
-  "model_prob": 0.3081,
-  "ev": 0.502,
-  "payout_units": 3.9,
-  "status": "loss",
-  "pnl": -1.0,
-  "legs": [
-   {
-    "id": "KXNCAAFSPREAD-26OCT23ARMYTLSA-TLSA2:no",
-    "ticker": "KXNCAAFSPREAD-26OCT23ARMYTLSA-TLSA2",
-    "side": "no",
-    "market": "No: Tulsa wins by over 1.5 points",
-    "matchup": "Army at Tulsa",
-    "sport": "Football",
-    "price": 0.5,
-    "model_prob": 0.62,
-    "edge": 0.102,
-    "expected_end": "2026-10-24T03:30:00+00:00",
-    "result": "win"
-   },
-   {
-    "id": "KXNFLRSHYDS-26OCT25KCSEA-KCKWALKER9-100",
-    "ticker": "KXNFLRSHYDS-26OCT25KCSEA-KCKWALKER9-100",
-    "side": "yes",
-    "market": "Kenneth Walker III: 100+",
-    "matchup": "KC at SEA",
-    "sport": "Football",
-    "price": 0.38,
-    "model_prob": 0.497,
-    "edge": 0.1,
-    "expected_end": "2026-10-26T03:20:00+00:00",
-    "result": "loss"
-   }
-  ],
-  "graded": "2026-10-26T06:04:44.364067+00:00"
- },
- {
   "id": "PARLAY-202610260012-1",
   "tier": "P",
   "sport": "Parlay",
