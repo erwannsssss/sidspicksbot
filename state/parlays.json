@@ -1320,8 +1320,8 @@
   "model_prob": 0.3721,
   "ev": 0.292,
   "payout_units": 2.5,
-  "status": "pending",
-  "pnl": null,
+  "status": "loss",
+  "pnl": -1.0,
   "legs": [
    {
     "id": "KXNCAAFGAME-26NOV10OHIOMOH-OHIO",
@@ -1345,8 +1345,10 @@
     "price": 0.55,
     "model_prob": 0.635,
     "edge": 0.068,
-    "expected_end": "2026-11-10T13:00:00+00:00"
+    "expected_end": "2026-11-10T13:00:00+00:00",
+    "result": "loss"
    }
-  ]
+  ],
+  "graded": "2026-11-10T20:48:41.405783+00:00"
  }
 ]
