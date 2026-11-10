@@ -1352,5 +1352,85 @@
     "expected_end": "2026-11-11T03:00:00+00:00"
    }
   ]
+ },
+ {
+  "id": "PARLAY-202611100436-1",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-11-10T04:36:55.616784+00:00",
+  "units": 1.0,
+  "price": 0.2879,
+  "model_prob": 0.3769,
+  "ev": 0.309,
+  "payout_units": 2.5,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXNCAAFSPREAD-26NOV13HOUCOLO-HOU11",
+    "ticker": "KXNCAAFSPREAD-26NOV13HOUCOLO-HOU11",
+    "side": "yes",
+    "market": "Houston wins by over 10.5 points",
+    "matchup": "Houston at Colorado",
+    "sport": "Football",
+    "price": 0.49,
+    "model_prob": 0.587,
+    "edge": 0.079,
+    "expected_end": "2026-11-14T06:15:00+00:00"
+   },
+   {
+    "id": "KXNCAAFGAME-26NOV11BUFFBALL-BUFF",
+    "ticker": "KXNCAAFGAME-26NOV11BUFFBALL-BUFF",
+    "side": "yes",
+    "market": "Buffalo to win",
+    "matchup": "Buffalo at Ball State",
+    "sport": "Football",
+    "price": 0.55,
+    "model_prob": 0.642,
+    "edge": 0.075,
+    "expected_end": "2026-11-11T23:00:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": "PARLAY-202611100436-2",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-11-10T04:36:55.616811+00:00",
+  "units": 1.0,
+  "price": 0.2879,
+  "model_prob": 0.3721,
+  "ev": 0.292,
+  "payout_units": 2.5,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXNCAAFGAME-26NOV10OHIOMOH-OHIO",
+    "ticker": "KXNCAAFGAME-26NOV10OHIOMOH-OHIO",
+    "side": "yes",
+    "market": "Ohio to win",
+    "matchup": "Ohio at Miami (OH)",
+    "sport": "Football",
+    "price": 0.49,
+    "model_prob": 0.586,
+    "edge": 0.078,
+    "expected_end": "2026-11-11T03:00:00+00:00"
+   },
+   {
+    "id": "KXATPMATCH-26NOV10SONHAL-HAL",
+    "ticker": "KXATPMATCH-26NOV10SONHAL-HAL",
+    "side": "yes",
+    "market": "Quentin Halys to win",
+    "matchup": "2026 ATP Stockholm 1/16",
+    "sport": "Tennis",
+    "price": 0.55,
+    "model_prob": 0.635,
+    "edge": 0.068,
+    "expected_end": "2026-11-10T13:00:00+00:00"
+   }
+  ]
  }
 ]
