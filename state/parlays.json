@@ -1350,5 +1350,97 @@
    }
   ],
   "graded": "2026-11-10T20:48:41.405783+00:00"
+ },
+ {
+  "id": "PARLAY-202611110114-1",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-11-11T01:14:25.946816+00:00",
+  "units": 1.0,
+  "price": 0.1332,
+  "model_prob": 0.2394,
+  "ev": 0.797,
+  "payout_units": 6.5,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXNCAAFSPREAD-26NOV14WYOUTEP-WYO8",
+    "ticker": "KXNCAAFSPREAD-26NOV14WYOUTEP-WYO8",
+    "side": "yes",
+    "market": "Wyoming wins by over 7.5 points",
+    "matchup": "Wyoming at UTEP",
+    "sport": "Football",
+    "price": 0.5,
+    "model_prob": 0.632,
+    "edge": 0.115,
+    "expected_end": "2026-11-14T23:00:00+00:00"
+   },
+   {
+    "id": "KXNCAAFTOTAL-26NOV14FAUTLSA-74:no",
+    "ticker": "KXNCAAFTOTAL-26NOV14FAUTLSA-74",
+    "side": "no",
+    "market": "Under 73.5 points",
+    "matchup": "Florida Atlantic at Tulsa",
+    "sport": "Football",
+    "price": 0.48,
+    "model_prob": 0.609,
+    "edge": 0.111,
+    "expected_end": "2026-11-14T23:00:00+00:00"
+   },
+   {
+    "id": "KXNCAAFSPREAD-26NOV14FLAUK-UK4",
+    "ticker": "KXNCAAFSPREAD-26NOV14FLAUK-UK4",
+    "side": "yes",
+    "market": "Kentucky wins by over 3.5 points",
+    "matchup": "Florida at Kentucky",
+    "sport": "Football",
+    "price": 0.5,
+    "model_prob": 0.622,
+    "edge": 0.105,
+    "expected_end": "2026-11-14T23:00:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": "PARLAY-202611110114-2",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-11-11T01:14:25.946859+00:00",
+  "units": 1.0,
+  "price": 0.2423,
+  "model_prob": 0.3592,
+  "ev": 0.483,
+  "payout_units": 3.1,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXNCAAFTOTAL-26NOV14MICHORE-40",
+    "ticker": "KXNCAAFTOTAL-26NOV14MICHORE-40",
+    "side": "yes",
+    "market": "Over 39.5 points",
+    "matchup": "Michigan at Oregon",
+    "sport": "Football",
+    "price": 0.46,
+    "model_prob": 0.586,
+    "edge": 0.109,
+    "expected_end": "2026-11-14T23:00:00+00:00"
+   },
+   {
+    "id": "KXNCAAFSPREAD-26NOV14SYRNCST-SYR3:no",
+    "ticker": "KXNCAAFSPREAD-26NOV14SYRNCST-SYR3",
+    "side": "no",
+    "market": "No: Syracuse wins by over 2.5 points",
+    "matchup": "Syracuse at NC State",
+    "sport": "Football",
+    "price": 0.49,
+    "model_prob": 0.613,
+    "edge": 0.106,
+    "expected_end": "2026-11-14T23:00:00+00:00"
+   }
+  ]
  }
 ]
