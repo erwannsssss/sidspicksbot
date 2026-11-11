@@ -1240,8 +1240,8 @@
   "model_prob": 0.3405,
   "ev": 0.296,
   "payout_units": 2.8,
-  "status": "pending",
-  "pnl": null,
+  "status": "loss",
+  "pnl": -1.0,
   "legs": [
    {
     "id": "KXNCAAFGAME-26NOV10OHIOMOH-OHIO",
@@ -1253,7 +1253,8 @@
     "price": 0.49,
     "model_prob": 0.586,
     "edge": 0.078,
-    "expected_end": "2026-11-11T03:00:00+00:00"
+    "expected_end": "2026-11-11T03:00:00+00:00",
+    "result": "loss"
    },
    {
     "id": "KXNCAAFSPREAD-26NOV10WMUAKR-WMU15",
@@ -1265,9 +1266,11 @@
     "price": 0.5,
     "model_prob": 0.581,
     "edge": 0.063,
-    "expected_end": "2026-11-11T03:00:00+00:00"
+    "expected_end": "2026-11-11T03:00:00+00:00",
+    "result": "win"
    }
-  ]
+  ],
+  "graded": "2026-11-11T09:17:16.162210+00:00"
  },
  {
   "id": "PARLAY-202611100436-1",
