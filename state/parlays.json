@@ -42,48 +42,6 @@
   "graded": "2026-10-28T23:10:14.629347+00:00"
  },
  {
-  "id": "PARLAY-202610270455-2",
-  "tier": "P",
-  "sport": "Parlay",
-  "kind": "watchlist",
-  "made": "2026-10-27T04:55:14.567127+00:00",
-  "units": 1.0,
-  "price": 0.3106,
-  "model_prob": 0.3942,
-  "ev": 0.269,
-  "payout_units": 2.2,
-  "status": "loss",
-  "pnl": -1.0,
-  "legs": [
-   {
-    "id": "KXNCAAFGAME-26OCT30KSUCOLO-KSU",
-    "ticker": "KXNCAAFGAME-26OCT30KSUCOLO-KSU",
-    "side": "yes",
-    "market": "Kansas St. to win",
-    "matchup": "Kansas State at Colorado",
-    "sport": "Football",
-    "price": 0.55,
-    "model_prob": 0.643,
-    "edge": 0.075,
-    "expected_end": "2026-10-31T03:00:00+00:00"
-   },
-   {
-    "id": "KXNCAAFSPREAD-26OCT27DELWKU-DEL3:no",
-    "ticker": "KXNCAAFSPREAD-26OCT27DELWKU-DEL3",
-    "side": "no",
-    "market": "No: Delaware wins by over 2.5 points",
-    "matchup": "Delaware at Western Kentucky",
-    "sport": "Football",
-    "price": 0.53,
-    "model_prob": 0.613,
-    "edge": 0.065,
-    "expected_end": "2026-10-28T02:00:00+00:00",
-    "result": "loss"
-   }
-  ],
-  "graded": "2026-10-28T09:36:02.033097+00:00"
- },
- {
   "id": "PARLAY-202610280209-1",
   "tier": "P",
   "sport": "Parlay",
