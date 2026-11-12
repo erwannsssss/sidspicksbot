@@ -1031,8 +1031,8 @@
   "model_prob": 0.5412,
   "ev": 0.335,
   "payout_units": 1.5,
-  "status": "pending",
-  "pnl": null,
+  "status": "win",
+  "pnl": 1.47,
   "legs": [
    {
     "id": "KXNFLRECYDS-26NOV09BUFMIN-MINJJEFFERSON18-100:no",
@@ -1057,9 +1057,11 @@
     "price": 0.55,
     "model_prob": 0.642,
     "edge": 0.075,
-    "expected_end": "2026-11-11T23:00:00+00:00"
+    "expected_end": "2026-11-11T23:00:00+00:00",
+    "result": "win"
    }
-  ]
+  ],
+  "graded": "2026-11-12T09:45:01.459004+00:00"
  },
  {
   "id": "PARLAY-202611090142-2",
@@ -1140,7 +1142,8 @@
     "price": 0.55,
     "model_prob": 0.642,
     "edge": 0.075,
-    "expected_end": "2026-11-11T23:00:00+00:00"
+    "expected_end": "2026-11-11T23:00:00+00:00",
+    "result": "win"
    }
   ]
  },
