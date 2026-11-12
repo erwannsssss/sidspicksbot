@@ -1,131 +1,5 @@
 [
  {
-  "id": "PARLAY-202610270455-1",
-  "tier": "P",
-  "sport": "Parlay",
-  "kind": "watchlist",
-  "made": "2026-10-27T04:55:14.567078+00:00",
-  "units": 1.0,
-  "price": 0.194,
-  "model_prob": 0.3037,
-  "ev": 0.565,
-  "payout_units": 4.2,
-  "status": "loss",
-  "pnl": -1.0,
-  "legs": [
-   {
-    "id": "KXSERIEATOTAL-26OCT28VENINT-5",
-    "ticker": "KXSERIEATOTAL-26OCT28VENINT-5",
-    "side": "yes",
-    "market": "Over 4.5 goals scored",
-    "matchup": "Venezia vs Inter",
-    "sport": "Soccer",
-    "price": 0.31,
-    "model_prob": 0.446,
-    "edge": 0.121,
-    "expected_end": "2026-10-28T20:30:00+00:00",
-    "result": "loss"
-   },
-   {
-    "id": "KXNCAAFGAME-26OCT30ILLMD-ILL",
-    "ticker": "KXNCAAFGAME-26OCT30ILLMD-ILL",
-    "side": "yes",
-    "market": "Illinois to win",
-    "matchup": "Illinois at Maryland",
-    "sport": "Football",
-    "price": 0.58,
-    "model_prob": 0.681,
-    "edge": 0.084,
-    "expected_end": "2026-10-31T03:00:00+00:00"
-   }
-  ],
-  "graded": "2026-10-28T23:10:14.629347+00:00"
- },
- {
-  "id": "PARLAY-202610280209-1",
-  "tier": "P",
-  "sport": "Parlay",
-  "kind": "watchlist",
-  "made": "2026-10-28T02:09:27.306404+00:00",
-  "units": 1.0,
-  "price": 0.115,
-  "model_prob": 0.2121,
-  "ev": 0.844,
-  "payout_units": 7.7,
-  "status": "loss",
-  "pnl": -1.0,
-  "legs": [
-   {
-    "id": "KXNCAAFTEAMTOTAL-26OCT31UTEPNDSU-NDSU42",
-    "ticker": "KXNCAAFTEAMTOTAL-26OCT31UTEPNDSU-NDSU42",
-    "side": "yes",
-    "market": "North Dakota St. over 41.5 points",
-    "matchup": "UTEP at North Dakota State",
-    "sport": "Football",
-    "price": 0.25,
-    "model_prob": 0.387,
-    "edge": 0.124,
-    "expected_end": "2026-10-31T22:30:00+00:00"
-   },
-   {
-    "id": "KXALLSVENSKANTOTAL-26OCT28HALMAL-3:no",
-    "ticker": "KXALLSVENSKANTOTAL-26OCT28HALMAL-3",
-    "side": "no",
-    "market": "Under 2.5 goals scored",
-    "matchup": "Halmstad vs Malmo",
-    "sport": "Soccer",
-    "price": 0.42,
-    "model_prob": 0.548,
-    "edge": 0.111,
-    "expected_end": "2026-10-28T21:00:00+00:00",
-    "result": "loss"
-   }
-  ],
-  "graded": "2026-10-28T23:10:14.728275+00:00"
- },
- {
-  "id": "PARLAY-202610280209-2",
-  "tier": "P",
-  "sport": "Parlay",
-  "kind": "watchlist",
-  "made": "2026-10-28T02:09:27.306428+00:00",
-  "units": 1.0,
-  "price": 0.194,
-  "model_prob": 0.3037,
-  "ev": 0.565,
-  "payout_units": 4.2,
-  "status": "loss",
-  "pnl": -1.0,
-  "legs": [
-   {
-    "id": "KXSERIEATOTAL-26OCT28VENINT-5",
-    "ticker": "KXSERIEATOTAL-26OCT28VENINT-5",
-    "side": "yes",
-    "market": "Over 4.5 goals scored",
-    "matchup": "Venezia vs Inter",
-    "sport": "Soccer",
-    "price": 0.31,
-    "model_prob": 0.446,
-    "edge": 0.121,
-    "expected_end": "2026-10-28T20:30:00+00:00",
-    "result": "loss"
-   },
-   {
-    "id": "KXNCAAFGAME-26OCT30ILLMD-ILL",
-    "ticker": "KXNCAAFGAME-26OCT30ILLMD-ILL",
-    "side": "yes",
-    "market": "Illinois to win",
-    "matchup": "Illinois at Maryland",
-    "sport": "Football",
-    "price": 0.58,
-    "model_prob": 0.681,
-    "edge": 0.084,
-    "expected_end": "2026-10-31T03:00:00+00:00"
-   }
-  ],
-  "graded": "2026-10-28T23:10:14.814673+00:00"
- },
- {
   "id": "PARLAY-202610290540-1",
   "tier": "P",
   "sport": "Parlay",
@@ -1400,6 +1274,98 @@
     "price": 0.49,
     "model_prob": 0.613,
     "edge": 0.106,
+    "expected_end": "2026-11-14T23:00:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": "PARLAY-202611120155-1",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-11-12T01:55:11.509318+00:00",
+  "units": 1.0,
+  "price": 0.2314,
+  "model_prob": 0.3833,
+  "ev": 0.656,
+  "payout_units": 3.3,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXNFLRECYDS-26NOV15MINGB-MINJJEFFERSON18-70:no",
+    "ticker": "KXNFLRECYDS-26NOV15MINGB-MINJJEFFERSON18-70",
+    "side": "no",
+    "market": "Justin Jefferson: under 70",
+    "matchup": "MIN at GB",
+    "sport": "Football",
+    "price": 0.43,
+    "model_prob": 0.597,
+    "edge": 0.15,
+    "expected_end": "2026-11-15T21:00:00+00:00"
+   },
+   {
+    "id": "KXNFLRSHYDS-26NOV15NEDET-NECKINER9-50:no",
+    "ticker": "KXNFLRSHYDS-26NOV15NEDET-NECKINER9-50",
+    "side": "no",
+    "market": "Corey Kiner: under 50",
+    "matchup": "NE at DET",
+    "sport": "Football",
+    "price": 0.5,
+    "model_prob": 0.642,
+    "edge": 0.125,
+    "expected_end": "2026-11-15T17:30:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": "PARLAY-202611120155-2",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-11-12T01:55:11.509369+00:00",
+  "units": 1.0,
+  "price": 0.1306,
+  "model_prob": 0.2409,
+  "ev": 0.844,
+  "payout_units": 6.7,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXNFLRECYDS-26NOV15CARNO-NODVELE14-30",
+    "ticker": "KXNFLRECYDS-26NOV15CARNO-NODVELE14-30",
+    "side": "yes",
+    "market": "Devaughn Vele: 30+",
+    "matchup": "CAR at NO",
+    "sport": "Football",
+    "price": 0.49,
+    "model_prob": 0.626,
+    "edge": 0.118,
+    "expected_end": "2026-11-15T21:00:00+00:00"
+   },
+   {
+    "id": "KXNCAAFSPREAD-26NOV14WYOUTEP-WYO8",
+    "ticker": "KXNCAAFSPREAD-26NOV14WYOUTEP-WYO8",
+    "side": "yes",
+    "market": "Wyoming wins by over 7.5 points",
+    "matchup": "Wyoming at UTEP",
+    "sport": "Football",
+    "price": 0.5,
+    "model_prob": 0.632,
+    "edge": 0.115,
+    "expected_end": "2026-11-14T23:00:00+00:00"
+   },
+   {
+    "id": "KXNCAAFTOTAL-26NOV14FAUTLSA-74:no",
+    "ticker": "KXNCAAFTOTAL-26NOV14FAUTLSA-74",
+    "side": "no",
+    "market": "Under 73.5 points",
+    "matchup": "Florida Atlantic at Tulsa",
+    "sport": "Football",
+    "price": 0.48,
+    "model_prob": 0.609,
+    "edge": 0.111,
     "expected_end": "2026-11-14T23:00:00+00:00"
    }
   ]
