@@ -1372,5 +1372,97 @@
     "expected_end": "2026-11-14T23:00:00+00:00"
    }
   ]
+ },
+ {
+  "id": "PARLAY-202611130101-1",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-11-13T01:01:54.802841+00:00",
+  "units": 1.0,
+  "price": 0.2314,
+  "model_prob": 0.3833,
+  "ev": 0.656,
+  "payout_units": 3.3,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXNFLRECYDS-26NOV15MINGB-MINJJEFFERSON18-70:no",
+    "ticker": "KXNFLRECYDS-26NOV15MINGB-MINJJEFFERSON18-70",
+    "side": "no",
+    "market": "Justin Jefferson: under 70",
+    "matchup": "MIN at GB",
+    "sport": "Football",
+    "price": 0.43,
+    "model_prob": 0.597,
+    "edge": 0.15,
+    "expected_end": "2026-11-15T21:00:00+00:00"
+   },
+   {
+    "id": "KXNFLRSHYDS-26NOV15NEDET-NECKINER9-50:no",
+    "ticker": "KXNFLRSHYDS-26NOV15NEDET-NECKINER9-50",
+    "side": "no",
+    "market": "Corey Kiner: under 50",
+    "matchup": "NE at DET",
+    "sport": "Football",
+    "price": 0.5,
+    "model_prob": 0.642,
+    "edge": 0.125,
+    "expected_end": "2026-11-15T17:30:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": "PARLAY-202611130101-2",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-11-13T01:01:54.802893+00:00",
+  "units": 1.0,
+  "price": 0.1306,
+  "model_prob": 0.2409,
+  "ev": 0.844,
+  "payout_units": 6.7,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXNFLRECYDS-26NOV15CARNO-NODVELE14-30",
+    "ticker": "KXNFLRECYDS-26NOV15CARNO-NODVELE14-30",
+    "side": "yes",
+    "market": "Devaughn Vele: 30+",
+    "matchup": "CAR at NO",
+    "sport": "Football",
+    "price": 0.49,
+    "model_prob": 0.626,
+    "edge": 0.118,
+    "expected_end": "2026-11-15T21:00:00+00:00"
+   },
+   {
+    "id": "KXNCAAFSPREAD-26NOV14WYOUTEP-WYO8",
+    "ticker": "KXNCAAFSPREAD-26NOV14WYOUTEP-WYO8",
+    "side": "yes",
+    "market": "Wyoming wins by over 7.5 points",
+    "matchup": "Wyoming at UTEP",
+    "sport": "Football",
+    "price": 0.5,
+    "model_prob": 0.632,
+    "edge": 0.115,
+    "expected_end": "2026-11-14T23:00:00+00:00"
+   },
+   {
+    "id": "KXNCAAFTOTAL-26NOV14FAUTLSA-74:no",
+    "ticker": "KXNCAAFTOTAL-26NOV14FAUTLSA-74",
+    "side": "no",
+    "market": "Under 73.5 points",
+    "matchup": "Florida Atlantic at Tulsa",
+    "sport": "Football",
+    "price": 0.48,
+    "model_prob": 0.609,
+    "edge": 0.111,
+    "expected_end": "2026-11-14T23:00:00+00:00"
+   }
+  ]
  }
 ]
