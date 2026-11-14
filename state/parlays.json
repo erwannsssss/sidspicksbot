@@ -1117,8 +1117,8 @@
   "model_prob": 0.3769,
   "ev": 0.309,
   "payout_units": 2.5,
-  "status": "pending",
-  "pnl": null,
+  "status": "loss",
+  "pnl": -1.0,
   "legs": [
    {
     "id": "KXNCAAFSPREAD-26NOV13HOUCOLO-HOU11",
@@ -1130,7 +1130,8 @@
     "price": 0.49,
     "model_prob": 0.587,
     "edge": 0.079,
-    "expected_end": "2026-11-14T06:15:00+00:00"
+    "expected_end": "2026-11-14T06:15:00+00:00",
+    "result": "loss"
    },
    {
     "id": "KXNCAAFGAME-26NOV11BUFFBALL-BUFF",
@@ -1145,7 +1146,8 @@
     "expected_end": "2026-11-11T23:00:00+00:00",
     "result": "win"
    }
-  ]
+  ],
+  "graded": "2026-11-14T07:34:19.624265+00:00"
  },
  {
   "id": "PARLAY-202611100436-2",
