@@ -1075,8 +1075,8 @@
   "model_prob": 0.2394,
   "ev": 0.797,
   "payout_units": 6.5,
-  "status": "pending",
-  "pnl": null,
+  "status": "loss",
+  "pnl": -1.0,
   "legs": [
    {
     "id": "KXNCAAFSPREAD-26NOV14WYOUTEP-WYO8",
@@ -1088,7 +1088,8 @@
     "price": 0.5,
     "model_prob": 0.632,
     "edge": 0.115,
-    "expected_end": "2026-11-14T23:00:00+00:00"
+    "expected_end": "2026-11-14T23:00:00+00:00",
+    "result": "win"
    },
    {
     "id": "KXNCAAFTOTAL-26NOV14FAUTLSA-74:no",
@@ -1100,7 +1101,8 @@
     "price": 0.48,
     "model_prob": 0.609,
     "edge": 0.111,
-    "expected_end": "2026-11-14T23:00:00+00:00"
+    "expected_end": "2026-11-14T23:00:00+00:00",
+    "result": "win"
    },
    {
     "id": "KXNCAAFSPREAD-26NOV14FLAUK-UK4",
@@ -1112,9 +1114,11 @@
     "price": 0.5,
     "model_prob": 0.622,
     "edge": 0.105,
-    "expected_end": "2026-11-14T23:00:00+00:00"
+    "expected_end": "2026-11-14T23:00:00+00:00",
+    "result": "loss"
    }
-  ]
+  ],
+  "graded": "2026-11-15T10:44:13.058560+00:00"
  },
  {
   "id": "PARLAY-202611110114-2",
@@ -1234,7 +1238,8 @@
     "price": 0.5,
     "model_prob": 0.632,
     "edge": 0.115,
-    "expected_end": "2026-11-14T23:00:00+00:00"
+    "expected_end": "2026-11-14T23:00:00+00:00",
+    "result": "win"
    },
    {
     "id": "KXNCAAFTOTAL-26NOV14FAUTLSA-74:no",
@@ -1246,7 +1251,8 @@
     "price": 0.48,
     "model_prob": 0.609,
     "edge": 0.111,
-    "expected_end": "2026-11-14T23:00:00+00:00"
+    "expected_end": "2026-11-14T23:00:00+00:00",
+    "result": "win"
    }
   ]
  },
@@ -1326,7 +1332,8 @@
     "price": 0.5,
     "model_prob": 0.632,
     "edge": 0.115,
-    "expected_end": "2026-11-14T23:00:00+00:00"
+    "expected_end": "2026-11-14T23:00:00+00:00",
+    "result": "win"
    },
    {
     "id": "KXNCAAFTOTAL-26NOV14FAUTLSA-74:no",
@@ -1338,7 +1345,8 @@
     "price": 0.48,
     "model_prob": 0.609,
     "edge": 0.111,
-    "expected_end": "2026-11-14T23:00:00+00:00"
+    "expected_end": "2026-11-14T23:00:00+00:00",
+    "result": "win"
    }
   ]
  },
@@ -1418,7 +1426,8 @@
     "price": 0.5,
     "model_prob": 0.632,
     "edge": 0.115,
-    "expected_end": "2026-11-14T23:00:00+00:00"
+    "expected_end": "2026-11-14T23:00:00+00:00",
+    "result": "win"
    },
    {
     "id": "KXNCAAFTOTAL-26NOV14FAUTLSA-74:no",
@@ -1430,7 +1439,8 @@
     "price": 0.48,
     "model_prob": 0.609,
     "edge": 0.111,
-    "expected_end": "2026-11-14T23:00:00+00:00"
+    "expected_end": "2026-11-14T23:00:00+00:00",
+    "result": "win"
    }
   ]
  },
