@@ -1,47 +1,5 @@
 [
  {
-  "id": "PARLAY-202610290540-1",
-  "tier": "P",
-  "sport": "Parlay",
-  "kind": "watchlist",
-  "made": "2026-10-29T05:40:05.163004+00:00",
-  "units": 1.0,
-  "price": 0.1597,
-  "model_prob": 0.2697,
-  "ev": 0.689,
-  "payout_units": 5.3,
-  "status": "loss",
-  "pnl": -1.0,
-  "legs": [
-   {
-    "id": "KXNCAAFTEAMTOTAL-26OCT31UTEPNDSU-NDSU42",
-    "ticker": "KXNCAAFTEAMTOTAL-26OCT31UTEPNDSU-NDSU42",
-    "side": "yes",
-    "market": "North Dakota St. over 41.5 points",
-    "matchup": "UTEP at North Dakota State",
-    "sport": "Football",
-    "price": 0.25,
-    "model_prob": 0.387,
-    "edge": 0.124,
-    "expected_end": "2026-10-31T22:30:00+00:00",
-    "result": "loss"
-   },
-   {
-    "id": "KXNFLPASSTDS-26NOV01MINDET-MINKMURRAY1-2:no",
-    "ticker": "KXNFLPASSTDS-26NOV01MINDET-MINKMURRAY1-2",
-    "side": "no",
-    "market": "Kyler Murray: under 2",
-    "matchup": "MIN at DET",
-    "sport": "Football",
-    "price": 0.59,
-    "model_prob": 0.697,
-    "edge": 0.09,
-    "expected_end": "2026-11-01T21:00:00+00:00"
-   }
-  ],
-  "graded": "2026-11-01T01:04:23.248613+00:00"
- },
- {
   "id": "PARLAY-202610290540-2",
   "tier": "P",
   "sport": "Parlay",
@@ -83,48 +41,6 @@
    }
   ],
   "graded": "2026-11-02T09:22:21.900246+00:00"
- },
- {
-  "id": "PARLAY-202610300538-1",
-  "tier": "P",
-  "sport": "Parlay",
-  "kind": "watchlist",
-  "made": "2026-10-30T05:38:54.936842+00:00",
-  "units": 1.0,
-  "price": 0.1597,
-  "model_prob": 0.2697,
-  "ev": 0.689,
-  "payout_units": 5.3,
-  "status": "loss",
-  "pnl": -1.0,
-  "legs": [
-   {
-    "id": "KXNCAAFTEAMTOTAL-26OCT31UTEPNDSU-NDSU42",
-    "ticker": "KXNCAAFTEAMTOTAL-26OCT31UTEPNDSU-NDSU42",
-    "side": "yes",
-    "market": "North Dakota St. over 41.5 points",
-    "matchup": "UTEP at North Dakota State",
-    "sport": "Football",
-    "price": 0.25,
-    "model_prob": 0.387,
-    "edge": 0.124,
-    "expected_end": "2026-10-31T22:30:00+00:00",
-    "result": "loss"
-   },
-   {
-    "id": "KXNFLPASSTDS-26NOV01MINDET-MINKMURRAY1-2:no",
-    "ticker": "KXNFLPASSTDS-26NOV01MINDET-MINKMURRAY1-2",
-    "side": "no",
-    "market": "Kyler Murray: under 2",
-    "matchup": "MIN at DET",
-    "sport": "Football",
-    "price": 0.59,
-    "model_prob": 0.697,
-    "edge": 0.09,
-    "expected_end": "2026-11-01T21:00:00+00:00"
-   }
-  ],
-  "graded": "2026-11-01T01:04:23.560458+00:00"
  },
  {
   "id": "PARLAY-202610300538-2",
@@ -210,49 +126,6 @@
    }
   ],
   "graded": "2026-11-01T17:56:03.700335+00:00"
- },
- {
-  "id": "PARLAY-202610310219-2",
-  "tier": "P",
-  "sport": "Parlay",
-  "kind": "watchlist",
-  "made": "2026-10-31T02:19:23.916227+00:00",
-  "units": 1.0,
-  "price": 0.1467,
-  "model_prob": 0.2523,
-  "ev": 0.72,
-  "payout_units": 5.8,
-  "status": "loss",
-  "pnl": -1.0,
-  "legs": [
-   {
-    "id": "KXNCAAFTEAMTOTAL-26OCT31UTEPNDSU-NDSU42",
-    "ticker": "KXNCAAFTEAMTOTAL-26OCT31UTEPNDSU-NDSU42",
-    "side": "yes",
-    "market": "North Dakota St. over 41.5 points",
-    "matchup": "UTEP at North Dakota State",
-    "sport": "Football",
-    "price": 0.25,
-    "model_prob": 0.387,
-    "edge": 0.124,
-    "expected_end": "2026-10-31T22:30:00+00:00",
-    "result": "loss"
-   },
-   {
-    "id": "KXEREDIVISIETOTAL-26OCT31PSVWIL-5",
-    "ticker": "KXEREDIVISIETOTAL-26OCT31PSVWIL-5",
-    "side": "yes",
-    "market": "Over 4.5 goals scored",
-    "matchup": "Eindhoven vs Willem II",
-    "sport": "Soccer",
-    "price": 0.54,
-    "model_prob": 0.652,
-    "edge": 0.094,
-    "expected_end": "2026-10-31T20:45:00+00:00",
-    "result": "win"
-   }
-  ],
-  "graded": "2026-11-01T01:04:24.029239+00:00"
  },
  {
   "id": "PARLAY-202611010104-1",
@@ -1558,6 +1431,86 @@
     "model_prob": 0.609,
     "edge": 0.111,
     "expected_end": "2026-11-14T23:00:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": "PARLAY-202611150235-1",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-11-15T02:35:23.004034+00:00",
+  "units": 1.0,
+  "price": 0.2314,
+  "model_prob": 0.3833,
+  "ev": 0.656,
+  "payout_units": 3.3,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXNFLRECYDS-26NOV15MINGB-MINJJEFFERSON18-70:no",
+    "ticker": "KXNFLRECYDS-26NOV15MINGB-MINJJEFFERSON18-70",
+    "side": "no",
+    "market": "Justin Jefferson: under 70",
+    "matchup": "MIN at GB",
+    "sport": "Football",
+    "price": 0.43,
+    "model_prob": 0.597,
+    "edge": 0.15,
+    "expected_end": "2026-11-15T21:00:00+00:00"
+   },
+   {
+    "id": "KXNFLRSHYDS-26NOV15NEDET-NECKINER9-50:no",
+    "ticker": "KXNFLRSHYDS-26NOV15NEDET-NECKINER9-50",
+    "side": "no",
+    "market": "Corey Kiner: under 50",
+    "matchup": "NE at DET",
+    "sport": "Football",
+    "price": 0.5,
+    "model_prob": 0.642,
+    "edge": 0.125,
+    "expected_end": "2026-11-15T17:30:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": "PARLAY-202611150235-2",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-11-15T02:35:23.004065+00:00",
+  "units": 1.0,
+  "price": 0.2626,
+  "model_prob": 0.3837,
+  "ev": 0.461,
+  "payout_units": 2.8,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXNFLRECYDS-26NOV15CARNO-NODVELE14-30",
+    "ticker": "KXNFLRECYDS-26NOV15CARNO-NODVELE14-30",
+    "side": "yes",
+    "market": "Devaughn Vele: 30+",
+    "matchup": "CAR at NO",
+    "sport": "Football",
+    "price": 0.49,
+    "model_prob": 0.626,
+    "edge": 0.118,
+    "expected_end": "2026-11-15T21:00:00+00:00"
+   },
+   {
+    "id": "KXNFLTOTAL-26NOV15SEALV-41",
+    "ticker": "KXNFLTOTAL-26NOV15SEALV-41",
+    "side": "yes",
+    "market": "Over 40.5 points",
+    "matchup": "SEA at LV",
+    "sport": "Football",
+    "price": 0.5,
+    "model_prob": 0.613,
+    "edge": 0.096,
+    "expected_end": "2026-11-16T00:05:00+00:00"
    }
   ]
  }
