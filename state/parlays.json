@@ -1459,5 +1459,85 @@
    }
   ],
   "graded": "2026-11-15T23:23:47.949856+00:00"
+ },
+ {
+  "id": "PARLAY-202611160615-1",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-11-16T06:15:27.407199+00:00",
+  "units": 1.0,
+  "price": 0.2012,
+  "model_prob": 0.2844,
+  "ev": 0.413,
+  "payout_units": 4.0,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXATPCHALLENGERMATCH-26NOV16CREECH-CRE",
+    "ticker": "KXATPCHALLENGERMATCH-26NOV16CREECH-CRE",
+    "side": "yes",
+    "market": "Cezar Cretu (b. 2001) to win",
+    "matchup": "2026 ATP Challenger Helsinki",
+    "sport": "Tennis",
+    "price": 0.38,
+    "model_prob": 0.482,
+    "edge": 0.086,
+    "expected_end": "2026-11-16T14:00:00+00:00"
+   },
+   {
+    "id": "KXNCAAFSPREAD-26NOV17EMUWMU-WMU14",
+    "ticker": "KXNCAAFSPREAD-26NOV17EMUWMU-WMU14",
+    "side": "yes",
+    "market": "Western Michigan wins by over 13.5 points",
+    "matchup": "Eastern Michigan at Western Michigan",
+    "sport": "Football",
+    "price": 0.49,
+    "model_prob": 0.59,
+    "edge": 0.083,
+    "expected_end": "2026-11-18T03:00:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": "PARLAY-202611160615-2",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-11-16T06:15:27.407229+00:00",
+  "units": 1.0,
+  "price": 0.2208,
+  "model_prob": 0.2811,
+  "ev": 0.273,
+  "payout_units": 3.5,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXNFLRSHYDS-26NOV16LACBAL-BALJBRISSETT7-10",
+    "ticker": "KXNFLRSHYDS-26NOV16LACBAL-BALJBRISSETT7-10",
+    "side": "yes",
+    "market": "Jacoby Brissett: 10+",
+    "matchup": "LAC at BAL",
+    "sport": "Football",
+    "price": 0.36,
+    "model_prob": 0.442,
+    "edge": 0.065,
+    "expected_end": "2026-11-17T04:15:00+00:00"
+   },
+   {
+    "id": "KXNCAAFGAME-26NOV18CMUBUFF-BUFF",
+    "ticker": "KXNCAAFGAME-26NOV18CMUBUFF-BUFF",
+    "side": "yes",
+    "market": "Buffalo to win",
+    "matchup": "Central Michigan at Buffalo",
+    "sport": "Football",
+    "price": 0.57,
+    "model_prob": 0.636,
+    "edge": 0.049,
+    "expected_end": "2026-11-18T23:00:00+00:00"
+   }
+  ]
  }
 ]
