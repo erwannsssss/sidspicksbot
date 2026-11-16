@@ -1,134 +1,5 @@
 [
  {
-  "id": "PARLAY-202610290540-2",
-  "tier": "P",
-  "sport": "Parlay",
-  "kind": "watchlist",
-  "made": "2026-10-29T05:40:05.163040+00:00",
-  "units": 1.0,
-  "price": 0.303,
-  "model_prob": 0.4161,
-  "ev": 0.373,
-  "payout_units": 2.3,
-  "status": "loss",
-  "pnl": -1.0,
-  "legs": [
-   {
-    "id": "KXNFLTOTAL-26NOV01PHIWAS-41",
-    "ticker": "KXNFLTOTAL-26NOV01PHIWAS-41",
-    "side": "yes",
-    "market": "Over 40.5 points",
-    "matchup": "PHI at WAS",
-    "sport": "Football",
-    "price": 0.49,
-    "model_prob": 0.611,
-    "edge": 0.104,
-    "expected_end": "2026-11-02T04:20:00+00:00",
-    "result": "loss"
-   },
-   {
-    "id": "KXNCAAFGAME-26OCT30ILLMD-ILL",
-    "ticker": "KXNCAAFGAME-26OCT30ILLMD-ILL",
-    "side": "yes",
-    "market": "Illinois to win",
-    "matchup": "Illinois at Maryland",
-    "sport": "Football",
-    "price": 0.58,
-    "model_prob": 0.681,
-    "edge": 0.084,
-    "expected_end": "2026-10-31T03:00:00+00:00",
-    "result": "win"
-   }
-  ],
-  "graded": "2026-11-02T09:22:21.900246+00:00"
- },
- {
-  "id": "PARLAY-202610300538-2",
-  "tier": "P",
-  "sport": "Parlay",
-  "kind": "watchlist",
-  "made": "2026-10-30T05:38:54.936876+00:00",
-  "units": 1.0,
-  "price": 0.2474,
-  "model_prob": 0.3611,
-  "ev": 0.46,
-  "payout_units": 3.0,
-  "status": "loss",
-  "pnl": -1.0,
-  "legs": [
-   {
-    "id": "KXNFLRECYDS-26NOV01LVNYJ-LVAJEANTY2-30",
-    "ticker": "KXNFLRECYDS-26NOV01LVNYJ-LVAJEANTY2-30",
-    "side": "yes",
-    "market": "Ashton Jeanty: 30+",
-    "matchup": "LV at NYJ",
-    "sport": "Football",
-    "price": 0.47,
-    "model_prob": 0.591,
-    "edge": 0.104,
-    "expected_end": "2026-11-01T21:00:00+00:00",
-    "result": "win"
-   },
-   {
-    "id": "KXNFLTOTAL-26NOV01PHIWAS-41",
-    "ticker": "KXNFLTOTAL-26NOV01PHIWAS-41",
-    "side": "yes",
-    "market": "Over 40.5 points",
-    "matchup": "PHI at WAS",
-    "sport": "Football",
-    "price": 0.49,
-    "model_prob": 0.611,
-    "edge": 0.104,
-    "expected_end": "2026-11-02T04:20:00+00:00",
-    "result": "loss"
-   }
-  ],
-  "graded": "2026-11-02T09:22:21.936474+00:00"
- },
- {
-  "id": "PARLAY-202611010104-2",
-  "tier": "P",
-  "sport": "Parlay",
-  "kind": "watchlist",
-  "made": "2026-11-01T01:04:25.713445+00:00",
-  "units": 1.0,
-  "price": 0.1701,
-  "model_prob": 0.278,
-  "ev": 0.634,
-  "payout_units": 4.9,
-  "status": "loss",
-  "pnl": -1.0,
-  "legs": [
-   {
-    "id": "KXSUPERLIGSPREAD-26NOV01AMSEYU-AMS3",
-    "ticker": "KXSUPERLIGSPREAD-26NOV01AMSEYU-AMS3",
-    "side": "yes",
-    "market": "Amed wins by more than 2.5 goals",
-    "matchup": "Amed vs Eyupspor",
-    "sport": "Soccer",
-    "price": 0.32,
-    "model_prob": 0.455,
-    "edge": 0.12,
-    "expected_end": "2026-11-01T13:30:00+00:00",
-    "result": "win"
-   },
-   {
-    "id": "KXNFLTOTAL-26NOV01PHIWAS-41",
-    "ticker": "KXNFLTOTAL-26NOV01PHIWAS-41",
-    "side": "yes",
-    "market": "Over 40.5 points",
-    "matchup": "PHI at WAS",
-    "sport": "Football",
-    "price": 0.49,
-    "model_prob": 0.611,
-    "edge": 0.104,
-    "expected_end": "2026-11-02T04:20:00+00:00",
-    "result": "loss"
-   }
-  ],
-  "graded": "2026-11-02T09:22:21.973835+00:00"
- },
- {
   "id": "PARLAY-202611020129-1",
   "tier": "P",
   "sport": "Parlay",
@@ -1484,7 +1355,8 @@
     "price": 0.38,
     "model_prob": 0.482,
     "edge": 0.086,
-    "expected_end": "2026-11-16T14:00:00+00:00"
+    "expected_end": "2026-11-16T14:00:00+00:00",
+    "result": "win"
    },
    {
     "id": "KXNCAAFSPREAD-26NOV17EMUWMU-WMU14",
