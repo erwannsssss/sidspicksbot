@@ -1,59 +1,5 @@
 [
  {
-  "id": "PARLAY-202611030328-1",
-  "tier": "P",
-  "sport": "Parlay",
-  "kind": "watchlist",
-  "made": "2026-11-03T03:28:38.863421+00:00",
-  "units": 1.0,
-  "price": 0.2614,
-  "model_prob": 0.4082,
-  "ev": 0.561,
-  "payout_units": 2.8,
-  "status": "loss",
-  "pnl": -1.0,
-  "legs": [
-   {
-    "id": "KXUCLSPREAD-26NOV04AEKRMA-RMA3:no",
-    "ticker": "KXUCLSPREAD-26NOV04AEKRMA-RMA3",
-    "side": "no",
-    "market": "No: Real Madrid wins by more than 2.5 goals",
-    "matchup": "AEK Athens vs Real Madrid",
-    "sport": "Soccer",
-    "price": 0.65,
-    "model_prob": 0.776,
-    "edge": 0.11,
-    "expected_end": "2026-11-04T20:45:00+00:00"
-   },
-   {
-    "id": "KXUCLSPREAD-26NOV04FENLFC-LFC2:no",
-    "ticker": "KXUCLSPREAD-26NOV04FENLFC-LFC2",
-    "side": "no",
-    "market": "No: Liverpool wins by more than 1.5 goals",
-    "matchup": "Fenerbahce vs Liverpool",
-    "sport": "Soccer",
-    "price": 0.62,
-    "model_prob": 0.745,
-    "edge": 0.109,
-    "expected_end": "2026-11-04T20:45:00+00:00"
-   },
-   {
-    "id": "KXATPCHALLENGERMATCH-26NOV03HARWAT-HAR",
-    "ticker": "KXATPCHALLENGERMATCH-26NOV03HARWAT-HAR",
-    "side": "yes",
-    "market": "Lloyd Harris to win",
-    "matchup": "2026 ATP Challenger Taipei",
-    "sport": "Tennis",
-    "price": 0.6,
-    "model_prob": 0.706,
-    "edge": 0.089,
-    "expected_end": "2026-11-03T10:00:00+00:00",
-    "result": "loss"
-   }
-  ],
-  "graded": "2026-11-03T11:52:23.462596+00:00"
- },
- {
   "id": "PARLAY-202611030328-2",
   "tier": "P",
   "sport": "Parlay",

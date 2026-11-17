@@ -1,12 +1,8 @@
 {
  "trust": {
-  "tennis:winner": 0.43,
-  "cfb:winner": 0.25,
-  "cfb:spread": 0.25,
-  "cfb:total": 0.25,
-  "cfb:team_total": 0.25,
   "cfb:spread_1h": 0.25,
   "cfb:total_1h": 0.25,
+  "tennis:winner": 0.26,
   "nfl:winner": 0.25,
   "nfl:spread": 0.25,
   "nfl:total": 0.25,
@@ -33,6 +29,10 @@
   "nfl:period_winner_4q": 0.25,
   "nfl:spread_4q": 0.25,
   "nfl:total_4q": 0.25,
+  "cfb:winner": 0.25,
+  "cfb:spread": 0.25,
+  "cfb:team_total": 0.25,
+  "cfb:total": 0.25,
   "cfb:period_winner_1q": 0.25,
   "cfb:spread_1q": 0.25,
   "cfb:total_1q": 0.25,
@@ -61,13 +61,9 @@
   "soccer:total_2h": 0.25
  },
  "trust_league": {
-  "tennis:winner|ATP Challenger": 0.47,
-  "cfb:winner|College Football": 0.25,
-  "cfb:spread|College Football": 0.25,
-  "cfb:total|College Football": 0.25,
-  "cfb:team_total|College Football": 0.25,
   "cfb:spread_1h|College Football": 0.25,
   "cfb:total_1h|College Football": 0.25,
+  "tennis:winner|ATP Challenger": 0.26,
   "nfl:spread|NFL": 0.25,
   "nfl:total|NFL": 0.25,
   "nfl:team_total|NFL": 0.25,
@@ -89,6 +85,10 @@
   "nfl:total_3q|NFL": 0.61,
   "nfl:spread_4q|NFL": 0.63,
   "nfl:total_4q|NFL": 0.25,
+  "cfb:winner|College Football": 0.25,
+  "cfb:spread|College Football": 0.25,
+  "cfb:team_total|College Football": 0.25,
+  "cfb:total|College Football": 0.25,
   "cfb:period_winner_1q|College Football": 0.27,
   "cfb:spread_1q|College Football": 0.25,
   "cfb:total_1q|College Football": 0.25,
@@ -103,15 +103,20 @@
   "cfb:spread_4q|College Football": 0.25,
   "cfb:total_4q|College Football": 0.25
  },
- "calib": {},
+ "calib": {
+  "tennis:winner": [
+   0.008,
+   1.047
+  ],
+  "cfb:spread": [
+   -0.0,
+   0.962
+  ]
+ },
  "counts": {
-  "tennis:winner": 394,
-  "cfb:winner": 232,
-  "cfb:spread": 5002,
-  "cfb:total": 3534,
-  "cfb:team_total": 2826,
-  "cfb:spread_1h": 2518,
-  "cfb:total_1h": 1676,
+  "cfb:spread_1h": 2422,
+  "cfb:total_1h": 1622,
+  "tennis:winner": 330,
   "nfl:winner": 28,
   "nfl:spread": 700,
   "nfl:total": 530,
@@ -138,6 +143,10 @@
   "nfl:period_winner_4q": 56,
   "nfl:spread_4q": 302,
   "nfl:total_4q": 278,
+  "cfb:winner": 226,
+  "cfb:spread": 4820,
+  "cfb:team_total": 2696,
+  "cfb:total": 3420,
   "cfb:period_winner_1q": 148,
   "cfb:spread_1q": 709,
   "cfb:total_1q": 776,
@@ -166,13 +175,9 @@
   "soccer:total_2h": 6
  },
  "games": {
-  "tennis:winner": 197,
-  "cfb:winner": 116,
-  "cfb:spread": 117,
-  "cfb:total": 117,
-  "cfb:team_total": 60,
-  "cfb:spread_1h": 60,
-  "cfb:total_1h": 60,
+  "cfb:spread_1h": 58,
+  "cfb:total_1h": 58,
+  "tennis:winner": 165,
   "nfl:winner": 14,
   "nfl:spread": 14,
   "nfl:total": 14,
@@ -199,6 +204,10 @@
   "nfl:period_winner_4q": 14,
   "nfl:spread_4q": 14,
   "nfl:total_4q": 14,
+  "cfb:winner": 113,
+  "cfb:spread": 114,
+  "cfb:team_total": 57,
+  "cfb:total": 114,
   "cfb:period_winner_1q": 37,
   "cfb:spread_1q": 37,
   "cfb:total_1q": 37,
@@ -227,13 +236,9 @@
   "soccer:total_2h": 1
  },
  "last": {
-  "tennis:winner": "2026-11-17T04:30:00+00:00",
-  "cfb:winner": "2026-11-15T18:00:00+00:00",
-  "cfb:spread": "2026-11-15T18:00:00+00:00",
-  "cfb:total": "2026-11-15T18:00:00+00:00",
-  "cfb:team_total": "2026-11-15T18:00:00+00:00",
   "cfb:spread_1h": "2026-11-15T18:00:00+00:00",
   "cfb:total_1h": "2026-11-15T18:00:00+00:00",
+  "tennis:winner": "2026-11-17T17:20:00+00:00",
   "nfl:winner": "2026-11-17T01:15:00+00:00",
   "nfl:spread": "2026-11-17T01:15:00+00:00",
   "nfl:total": "2026-11-17T01:15:00+00:00",
@@ -260,6 +265,10 @@
   "nfl:period_winner_4q": "2026-11-17T01:15:00+00:00",
   "nfl:spread_4q": "2026-11-17T01:15:00+00:00",
   "nfl:total_4q": "2026-11-17T01:15:00+00:00",
+  "cfb:winner": "2026-11-15T18:00:00+00:00",
+  "cfb:spread": "2026-11-15T18:00:00+00:00",
+  "cfb:team_total": "2026-11-15T18:00:00+00:00",
+  "cfb:total": "2026-11-15T18:00:00+00:00",
   "cfb:period_winner_1q": "2026-11-15T18:00:00+00:00",
   "cfb:spread_1q": "2026-11-15T18:00:00+00:00",
   "cfb:total_1q": "2026-11-15T18:00:00+00:00",
@@ -287,5 +296,5 @@
   "soccer:spread_2h": "2026-11-14T23:00:00+00:00",
   "soccer:total_2h": "2026-11-14T23:00:00+00:00"
  },
- "updated": "2026-11-17T09:06:44.199117+00:00"
+ "updated": "2026-11-17T20:48:11.015069+00:00"
 }
