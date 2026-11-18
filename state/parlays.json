@@ -1192,8 +1192,8 @@
   "model_prob": 0.2844,
   "ev": 0.413,
   "payout_units": 4.0,
-  "status": "pending",
-  "pnl": null,
+  "status": "loss",
+  "pnl": -1.0,
   "legs": [
    {
     "id": "KXATPCHALLENGERMATCH-26NOV16CREECH-CRE",
@@ -1218,9 +1218,11 @@
     "price": 0.49,
     "model_prob": 0.59,
     "edge": 0.083,
-    "expected_end": "2026-11-18T03:00:00+00:00"
+    "expected_end": "2026-11-18T03:00:00+00:00",
+    "result": "loss"
    }
-  ]
+  ],
+  "graded": "2026-11-18T02:52:26.291173+00:00"
  },
  {
   "id": "PARLAY-202611160615-2",
@@ -1275,8 +1277,8 @@
   "model_prob": 0.3092,
   "ev": 0.332,
   "payout_units": 3.3,
-  "status": "pending",
-  "pnl": null,
+  "status": "loss",
+  "pnl": -1.0,
   "legs": [
    {
     "id": "KXNCAAFSPREAD-26NOV17EMUWMU-WMU14",
@@ -1288,7 +1290,8 @@
     "price": 0.49,
     "model_prob": 0.59,
     "edge": 0.083,
-    "expected_end": "2026-11-18T03:00:00+00:00"
+    "expected_end": "2026-11-18T03:00:00+00:00",
+    "result": "loss"
    },
    {
     "id": "KXNCAAFTOTAL-26NOV20CLEMDUKE-43",
@@ -1302,7 +1305,8 @@
     "edge": 0.067,
     "expected_end": "2026-11-21T03:30:00+00:00"
    }
-  ]
+  ],
+  "graded": "2026-11-18T02:52:26.355334+00:00"
  },
  {
   "id": "PARLAY-202611170047-2",
@@ -1341,6 +1345,86 @@
     "model_prob": 0.636,
     "edge": 0.049,
     "expected_end": "2026-11-18T23:00:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": "PARLAY-202611180252-1",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-11-18T02:52:27.246855+00:00",
+  "units": 1.0,
+  "price": 0.1883,
+  "model_prob": 0.2837,
+  "ev": 0.507,
+  "payout_units": 4.3,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXNCAAFSPREAD-26NOV21UCLAMICH-UCLA8",
+    "ticker": "KXNCAAFSPREAD-26NOV21UCLAMICH-UCLA8",
+    "side": "yes",
+    "market": "UCLA wins by over 7.5 points",
+    "matchup": "UCLA at Michigan",
+    "sport": "Football",
+    "price": 0.37,
+    "model_prob": 0.485,
+    "edge": 0.099,
+    "expected_end": "2026-11-21T23:00:00+00:00"
+   },
+   {
+    "id": "KXNCAAFTOTAL-26NOV21HOUWVU-70:no",
+    "ticker": "KXNCAAFTOTAL-26NOV21HOUWVU-70",
+    "side": "no",
+    "market": "Under 69.5 points",
+    "matchup": "Houston at West Virginia",
+    "sport": "Football",
+    "price": 0.47,
+    "model_prob": 0.585,
+    "edge": 0.098,
+    "expected_end": "2026-11-21T23:00:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": "PARLAY-202611180252-2",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-11-18T02:52:27.246891+00:00",
+  "units": 1.0,
+  "price": 0.1634,
+  "model_prob": 0.2465,
+  "ev": 0.509,
+  "payout_units": 5.1,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXNCAAFSPREAD-26NOV21STANCAL-STAN8",
+    "ticker": "KXNCAAFSPREAD-26NOV21STANCAL-STAN8",
+    "side": "yes",
+    "market": "Stanford wins by over 7.5 points",
+    "matchup": "Stanford at California",
+    "sport": "Football",
+    "price": 0.32,
+    "model_prob": 0.428,
+    "edge": 0.093,
+    "expected_end": "2026-11-21T23:00:00+00:00"
+   },
+   {
+    "id": "KXNCAAFSPREAD-26NOV21DELNMSU-DEL4",
+    "ticker": "KXNCAAFSPREAD-26NOV21DELNMSU-DEL4",
+    "side": "yes",
+    "market": "Delaware wins by over 3.5 points",
+    "matchup": "Delaware at New Mexico State",
+    "sport": "Football",
+    "price": 0.47,
+    "model_prob": 0.576,
+    "edge": 0.089,
+    "expected_end": "2026-11-21T23:00:00+00:00"
    }
   ]
  }
