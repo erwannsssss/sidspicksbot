@@ -1384,5 +1384,97 @@
     "expected_end": "2026-11-21T23:00:00+00:00"
    }
   ]
+ },
+ {
+  "id": "PARLAY-202611190233-1",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-11-19T02:33:15.877519+00:00",
+  "units": 1.0,
+  "price": 0.1332,
+  "model_prob": 0.234,
+  "ev": 0.757,
+  "payout_units": 6.5,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXNFLRSHYDS-26NOV22MINSF-SFKBLACK26-30",
+    "ticker": "KXNFLRSHYDS-26NOV22MINSF-SFKBLACK26-30",
+    "side": "yes",
+    "market": "Kaelon Black: 30+",
+    "matchup": "MIN at SF",
+    "sport": "Football",
+    "price": 0.48,
+    "model_prob": 0.606,
+    "edge": 0.108,
+    "expected_end": "2026-11-23T04:20:00+00:00"
+   },
+   {
+    "id": "KXNCAAFTOTAL-26NOV21CHATALA-59:no",
+    "ticker": "KXNCAAFTOTAL-26NOV21CHATALA-59",
+    "side": "no",
+    "market": "Under 58.5 points",
+    "matchup": "Chattanooga at Alabama",
+    "sport": "Football",
+    "price": 0.51,
+    "model_prob": 0.632,
+    "edge": 0.104,
+    "expected_end": "2026-11-21T22:00:00+00:00"
+   },
+   {
+    "id": "KXNFLRSHYDS-26NOV22NOCHI-NOTETIENNE3-30",
+    "ticker": "KXNFLRSHYDS-26NOV22NOCHI-NOTETIENNE3-30",
+    "side": "yes",
+    "market": "Travis Etienne Jr.: 30+",
+    "matchup": "NO at CHI",
+    "sport": "Football",
+    "price": 0.49,
+    "model_prob": 0.611,
+    "edge": 0.103,
+    "expected_end": "2026-11-22T21:00:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": "PARLAY-202611190233-2",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-11-19T02:33:15.877556+00:00",
+  "units": 1.0,
+  "price": 0.2032,
+  "model_prob": 0.3065,
+  "ev": 0.509,
+  "payout_units": 3.9,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXNFLTOTAL-26NOV22LVDEN-44",
+    "ticker": "KXNFLTOTAL-26NOV22LVDEN-44",
+    "side": "yes",
+    "market": "Over 43.5 points",
+    "matchup": "LV at DEN",
+    "sport": "Football",
+    "price": 0.4,
+    "model_prob": 0.524,
+    "edge": 0.107,
+    "expected_end": "2026-11-23T00:25:00+00:00"
+   },
+   {
+    "id": "KXNCAAFTOTAL-26NOV21HOUWVU-70:no",
+    "ticker": "KXNCAAFTOTAL-26NOV21HOUWVU-70",
+    "side": "no",
+    "market": "Under 69.5 points",
+    "matchup": "Houston at West Virginia",
+    "sport": "Football",
+    "price": 0.47,
+    "model_prob": 0.585,
+    "edge": 0.098,
+    "expected_end": "2026-11-21T23:00:00+00:00"
+   }
+  ]
  }
 ]
