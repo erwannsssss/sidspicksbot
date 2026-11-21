@@ -1276,8 +1276,8 @@
   "model_prob": 0.339,
   "ev": 0.209,
   "payout_units": 2.6,
-  "status": "pending",
-  "pnl": null,
+  "status": "loss",
+  "pnl": -1.0,
   "legs": [
    {
     "id": "KXNCAAFGAME-26NOV20ISUUCF-ISU",
@@ -1289,7 +1289,8 @@
     "price": 0.46,
     "model_prob": 0.533,
     "edge": 0.055,
-    "expected_end": "2026-11-21T02:00:00+00:00"
+    "expected_end": "2026-11-21T02:00:00+00:00",
+    "result": "loss"
    },
    {
     "id": "KXNCAAFGAME-26NOV18CMUBUFF-BUFF",
@@ -1304,7 +1305,8 @@
     "expected_end": "2026-11-18T23:00:00+00:00",
     "result": "win"
    }
-  ]
+  ],
+  "graded": "2026-11-21T09:40:28.427556+00:00"
  },
  {
   "id": "PARLAY-202611180252-1",
