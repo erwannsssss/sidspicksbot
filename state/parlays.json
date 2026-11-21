@@ -1557,5 +1557,85 @@
     "expected_end": "2026-11-22T21:00:00+00:00"
    }
   ]
+ },
+ {
+  "id": "PARLAY-202611210126-1",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-11-21T01:26:18.145474+00:00",
+  "units": 1.0,
+  "price": 0.1388,
+  "model_prob": 0.244,
+  "ev": 0.758,
+  "payout_units": 6.2,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXSERIEASPREAD-26NOV21LAZLEC-LAZ3",
+    "ticker": "KXSERIEASPREAD-26NOV21LAZLEC-LAZ3",
+    "side": "yes",
+    "market": "Lazio wins by more than 2.5 goals",
+    "matchup": "Lazio vs Lecce",
+    "sport": "Soccer",
+    "price": 0.25,
+    "model_prob": 0.386,
+    "edge": 0.122,
+    "expected_end": "2026-11-21T17:00:00+00:00"
+   },
+   {
+    "id": "KXNCAAFTOTAL-26NOV21CHATALA-59:no",
+    "ticker": "KXNCAAFTOTAL-26NOV21CHATALA-59",
+    "side": "no",
+    "market": "Under 58.5 points",
+    "matchup": "Chattanooga at Alabama",
+    "sport": "Football",
+    "price": 0.51,
+    "model_prob": 0.632,
+    "edge": 0.104,
+    "expected_end": "2026-11-21T22:00:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": "PARLAY-202611210126-2",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-11-21T01:26:18.145504+00:00",
+  "units": 1.0,
+  "price": 0.1972,
+  "model_prob": 0.3121,
+  "ev": 0.582,
+  "payout_units": 4.1,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXSUPERLIGSPREAD-26NOV21GALSAM-GAL3",
+    "ticker": "KXSUPERLIGSPREAD-26NOV21GALSAM-GAL3",
+    "side": "yes",
+    "market": "Galatasaray wins by more than 2.5 goals",
+    "matchup": "Galatasaray vs Samsunspor",
+    "sport": "Soccer",
+    "price": 0.38,
+    "model_prob": 0.515,
+    "edge": 0.118,
+    "expected_end": "2026-11-21T16:00:00+00:00"
+   },
+   {
+    "id": "KXNFLRSHYDS-26NOV22MINSF-SFKBLACK26-30",
+    "ticker": "KXNFLRSHYDS-26NOV22MINSF-SFKBLACK26-30",
+    "side": "yes",
+    "market": "Kaelon Black: 30+",
+    "matchup": "MIN at SF",
+    "sport": "Football",
+    "price": 0.48,
+    "model_prob": 0.606,
+    "edge": 0.108,
+    "expected_end": "2026-11-23T04:20:00+00:00"
+   }
+  ]
  }
 ]
