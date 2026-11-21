@@ -1504,7 +1504,8 @@
     "price": 0.25,
     "model_prob": 0.386,
     "edge": 0.122,
-    "expected_end": "2026-11-21T17:00:00+00:00"
+    "expected_end": "2026-11-21T17:00:00+00:00",
+    "result": "win"
    },
    {
     "id": "KXNCAAFTOTAL-26NOV21CHATALA-59:no",
@@ -1584,7 +1585,8 @@
     "price": 0.25,
     "model_prob": 0.386,
     "edge": 0.122,
-    "expected_end": "2026-11-21T17:00:00+00:00"
+    "expected_end": "2026-11-21T17:00:00+00:00",
+    "result": "win"
    },
    {
     "id": "KXNCAAFTOTAL-26NOV21CHATALA-59:no",
@@ -1611,8 +1613,8 @@
   "model_prob": 0.3121,
   "ev": 0.582,
   "payout_units": 4.1,
-  "status": "pending",
-  "pnl": null,
+  "status": "loss",
+  "pnl": -1.0,
   "legs": [
    {
     "id": "KXSUPERLIGSPREAD-26NOV21GALSAM-GAL3",
@@ -1624,7 +1626,8 @@
     "price": 0.38,
     "model_prob": 0.515,
     "edge": 0.118,
-    "expected_end": "2026-11-21T16:00:00+00:00"
+    "expected_end": "2026-11-21T16:00:00+00:00",
+    "result": "loss"
    },
    {
     "id": "KXNFLRSHYDS-26NOV22MINSF-SFKBLACK26-30",
@@ -1638,6 +1641,7 @@
     "edge": 0.108,
     "expected_end": "2026-11-23T04:20:00+00:00"
    }
-  ]
+  ],
+  "graded": "2026-11-21T19:08:43.765169+00:00"
  }
 ]
