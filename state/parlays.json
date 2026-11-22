@@ -1113,8 +1113,8 @@
   "model_prob": 0.2837,
   "ev": 0.507,
   "payout_units": 4.3,
-  "status": "pending",
-  "pnl": null,
+  "status": "loss",
+  "pnl": -1.0,
   "legs": [
    {
     "id": "KXNCAAFSPREAD-26NOV21UCLAMICH-UCLA8",
@@ -1126,7 +1126,8 @@
     "price": 0.37,
     "model_prob": 0.485,
     "edge": 0.099,
-    "expected_end": "2026-11-21T23:00:00+00:00"
+    "expected_end": "2026-11-21T23:00:00+00:00",
+    "result": "loss"
    },
    {
     "id": "KXNCAAFTOTAL-26NOV21HOUWVU-70:no",
@@ -1141,7 +1142,8 @@
     "expected_end": "2026-11-21T23:00:00+00:00",
     "result": "win"
    }
-  ]
+  ],
+  "graded": "2026-11-22T07:59:02.385896+00:00"
  },
  {
   "id": "PARLAY-202611180252-2",
@@ -1154,8 +1156,8 @@
   "model_prob": 0.2465,
   "ev": 0.509,
   "payout_units": 5.1,
-  "status": "pending",
-  "pnl": null,
+  "status": "win",
+  "pnl": 5.12,
   "legs": [
    {
     "id": "KXNCAAFSPREAD-26NOV21STANCAL-STAN8",
@@ -1167,7 +1169,8 @@
     "price": 0.32,
     "model_prob": 0.428,
     "edge": 0.093,
-    "expected_end": "2026-11-21T23:00:00+00:00"
+    "expected_end": "2026-11-21T23:00:00+00:00",
+    "result": "win"
    },
    {
     "id": "KXNCAAFSPREAD-26NOV21DELNMSU-DEL4",
@@ -1182,7 +1185,8 @@
     "expected_end": "2026-11-21T23:00:00+00:00",
     "result": "win"
    }
-  ]
+  ],
+  "graded": "2026-11-22T07:59:02.423307+00:00"
  },
  {
   "id": "PARLAY-202611190233-1",
