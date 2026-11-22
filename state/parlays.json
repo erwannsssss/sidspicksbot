@@ -1,61 +1,5 @@
 [
  {
-  "id": "PARLAY-202611040035-1",
-  "tier": "P",
-  "sport": "Parlay",
-  "kind": "watchlist",
-  "made": "2026-11-04T00:35:47.422562+00:00",
-  "units": 1.0,
-  "price": 0.2109,
-  "model_prob": 0.3602,
-  "ev": 0.708,
-  "payout_units": 3.7,
-  "status": "loss",
-  "pnl": -1.0,
-  "legs": [
-   {
-    "id": "KXNCAAFGAME-26NOV07TLSATULN-TULN",
-    "ticker": "KXNCAAFGAME-26NOV07TLSATULN-TULN",
-    "side": "yes",
-    "market": "Tulane to win",
-    "matchup": "Tulsa at Tulane",
-    "sport": "Football",
-    "price": 0.48,
-    "model_prob": 0.623,
-    "edge": 0.126,
-    "expected_end": "2026-11-07T23:00:00+00:00",
-    "result": "loss"
-   },
-   {
-    "id": "KXUCLSPREAD-26NOV04AEKRMA-RMA3:no",
-    "ticker": "KXUCLSPREAD-26NOV04AEKRMA-RMA3",
-    "side": "no",
-    "market": "No: Real Madrid wins by more than 2.5 goals",
-    "matchup": "AEK Athens vs Real Madrid",
-    "sport": "Soccer",
-    "price": 0.65,
-    "model_prob": 0.776,
-    "edge": 0.11,
-    "expected_end": "2026-11-04T20:45:00+00:00",
-    "result": "win"
-   },
-   {
-    "id": "KXUCLSPREAD-26NOV04FENLFC-LFC2:no",
-    "ticker": "KXUCLSPREAD-26NOV04FENLFC-LFC2",
-    "side": "no",
-    "market": "No: Liverpool wins by more than 1.5 goals",
-    "matchup": "Fenerbahce vs Liverpool",
-    "sport": "Soccer",
-    "price": 0.62,
-    "model_prob": 0.745,
-    "edge": 0.109,
-    "expected_end": "2026-11-04T20:45:00+00:00",
-    "result": "win"
-   }
-  ],
-  "graded": "2026-11-07T21:45:49.632323+00:00"
- },
- {
   "id": "PARLAY-202611040035-2",
   "tier": "P",
   "sport": "Parlay",
@@ -112,48 +56,6 @@
   "graded": "2026-11-08T08:56:19.169918+00:00"
  },
  {
-  "id": "PARLAY-202611050053-1",
-  "tier": "P",
-  "sport": "Parlay",
-  "kind": "watchlist",
-  "made": "2026-11-05T00:53:36.146138+00:00",
-  "units": 1.0,
-  "price": 0.1668,
-  "model_prob": 0.2916,
-  "ev": 0.748,
-  "payout_units": 5.0,
-  "status": "loss",
-  "pnl": -1.0,
-  "legs": [
-   {
-    "id": "KXNFLSPREAD-26NOV08DALIND-DAL2:no",
-    "ticker": "KXNFLSPREAD-26NOV08DALIND-DAL2",
-    "side": "no",
-    "market": "No: Dallas wins by over 1.5 points",
-    "matchup": "DAL at IND",
-    "sport": "Football",
-    "price": 0.32,
-    "model_prob": 0.468,
-    "edge": 0.132,
-    "expected_end": "2026-11-08T21:00:00+00:00"
-   },
-   {
-    "id": "KXNCAAFGAME-26NOV07TLSATULN-TULN",
-    "ticker": "KXNCAAFGAME-26NOV07TLSATULN-TULN",
-    "side": "yes",
-    "market": "Tulane to win",
-    "matchup": "Tulsa at Tulane",
-    "sport": "Football",
-    "price": 0.48,
-    "model_prob": 0.623,
-    "edge": 0.126,
-    "expected_end": "2026-11-07T23:00:00+00:00",
-    "result": "loss"
-   }
-  ],
-  "graded": "2026-11-07T21:45:49.973898+00:00"
- },
- {
   "id": "PARLAY-202611050053-2",
   "tier": "P",
   "sport": "Parlay",
@@ -197,60 +99,6 @@
   "graded": "2026-11-08T08:56:19.218154+00:00"
  },
  {
-  "id": "PARLAY-202611060058-1",
-  "tier": "P",
-  "sport": "Parlay",
-  "kind": "watchlist",
-  "made": "2026-11-06T00:58:47.179277+00:00",
-  "units": 1.0,
-  "price": 0.1733,
-  "model_prob": 0.3177,
-  "ev": 0.833,
-  "payout_units": 4.8,
-  "status": "loss",
-  "pnl": -1.0,
-  "legs": [
-   {
-    "id": "KXNFLRECYDS-26NOV09BUFMIN-MINJJEFFERSON18-100:no",
-    "ticker": "KXNFLRECYDS-26NOV09BUFMIN-MINJJEFFERSON18-100",
-    "side": "no",
-    "market": "Justin Jefferson: under 100",
-    "matchup": "BUF at MIN",
-    "sport": "Football",
-    "price": 0.7,
-    "model_prob": 0.843,
-    "edge": 0.128,
-    "expected_end": "2026-11-10T04:15:00+00:00"
-   },
-   {
-    "id": "KXNCAAFGAME-26NOV07TLSATULN-TULN",
-    "ticker": "KXNCAAFGAME-26NOV07TLSATULN-TULN",
-    "side": "yes",
-    "market": "Tulane to win",
-    "matchup": "Tulsa at Tulane",
-    "sport": "Football",
-    "price": 0.48,
-    "model_prob": 0.623,
-    "edge": 0.126,
-    "expected_end": "2026-11-07T23:00:00+00:00",
-    "result": "loss"
-   },
-   {
-    "id": "KXNFLRECYDS-26NOV08NYJKC-KCNGRAY83-15",
-    "ticker": "KXNFLRECYDS-26NOV08NYJKC-KCNGRAY83-15",
-    "side": "yes",
-    "market": "Noah Gray: 15+",
-    "matchup": "NYJ at KC",
-    "sport": "Football",
-    "price": 0.47,
-    "model_prob": 0.605,
-    "edge": 0.118,
-    "expected_end": "2026-11-08T21:00:00+00:00"
-   }
-  ],
-  "graded": "2026-11-07T21:45:50.415028+00:00"
- },
- {
   "id": "PARLAY-202611060058-2",
   "tier": "P",
   "sport": "Parlay",
@@ -292,60 +140,6 @@
    }
   ],
   "graded": "2026-11-08T21:59:40.969042+00:00"
- },
- {
-  "id": "PARLAY-202611070006-1",
-  "tier": "P",
-  "sport": "Parlay",
-  "kind": "watchlist",
-  "made": "2026-11-07T00:06:01.217259+00:00",
-  "units": 1.0,
-  "price": 0.2576,
-  "model_prob": 0.438,
-  "ev": 0.701,
-  "payout_units": 2.9,
-  "status": "loss",
-  "pnl": -1.0,
-  "legs": [
-   {
-    "id": "KXNFLRECYDS-26NOV09BUFMIN-MINJJEFFERSON18-100:no",
-    "ticker": "KXNFLRECYDS-26NOV09BUFMIN-MINJJEFFERSON18-100",
-    "side": "no",
-    "market": "Justin Jefferson: under 100",
-    "matchup": "BUF at MIN",
-    "sport": "Football",
-    "price": 0.7,
-    "model_prob": 0.843,
-    "edge": 0.128,
-    "expected_end": "2026-11-10T04:15:00+00:00"
-   },
-   {
-    "id": "KXNCAAFGAME-26NOV07TLSATULN-TULN",
-    "ticker": "KXNCAAFGAME-26NOV07TLSATULN-TULN",
-    "side": "yes",
-    "market": "Tulane to win",
-    "matchup": "Tulsa at Tulane",
-    "sport": "Football",
-    "price": 0.48,
-    "model_prob": 0.623,
-    "edge": 0.126,
-    "expected_end": "2026-11-07T23:00:00+00:00",
-    "result": "loss"
-   },
-   {
-    "id": "KXNFLRECYDS-26NOV08LARWAS-WASAWILLIAMS14-70:no",
-    "ticker": "KXNFLRECYDS-26NOV08LARWAS-WASAWILLIAMS14-70",
-    "side": "no",
-    "market": "Antonio Williams: under 70",
-    "matchup": "LA at WAS",
-    "sport": "Football",
-    "price": 0.71,
-    "model_prob": 0.834,
-    "edge": 0.11,
-    "expected_end": "2026-11-08T21:00:00+00:00"
-   }
-  ],
-  "graded": "2026-11-07T21:45:50.840235+00:00"
  },
  {
   "id": "PARLAY-202611070006-2",
@@ -1344,7 +1138,8 @@
     "price": 0.47,
     "model_prob": 0.585,
     "edge": 0.098,
-    "expected_end": "2026-11-21T23:00:00+00:00"
+    "expected_end": "2026-11-21T23:00:00+00:00",
+    "result": "win"
    }
   ]
  },
@@ -1384,7 +1179,8 @@
     "price": 0.47,
     "model_prob": 0.576,
     "edge": 0.089,
-    "expected_end": "2026-11-21T23:00:00+00:00"
+    "expected_end": "2026-11-21T23:00:00+00:00",
+    "result": "win"
    }
   ]
  },
@@ -1424,7 +1220,8 @@
     "price": 0.51,
     "model_prob": 0.632,
     "edge": 0.104,
-    "expected_end": "2026-11-21T22:00:00+00:00"
+    "expected_end": "2026-11-21T22:00:00+00:00",
+    "result": "win"
    },
    {
     "id": "KXNFLRSHYDS-26NOV22NOCHI-NOTETIENNE3-30",
@@ -1476,7 +1273,8 @@
     "price": 0.47,
     "model_prob": 0.585,
     "edge": 0.098,
-    "expected_end": "2026-11-21T23:00:00+00:00"
+    "expected_end": "2026-11-21T23:00:00+00:00",
+    "result": "win"
    }
   ]
  },
@@ -1491,8 +1289,8 @@
   "model_prob": 0.244,
   "ev": 0.758,
   "payout_units": 6.2,
-  "status": "pending",
-  "pnl": null,
+  "status": "win",
+  "pnl": 6.2,
   "legs": [
    {
     "id": "KXSERIEASPREAD-26NOV21LAZLEC-LAZ3",
@@ -1517,9 +1315,11 @@
     "price": 0.51,
     "model_prob": 0.632,
     "edge": 0.104,
-    "expected_end": "2026-11-21T22:00:00+00:00"
+    "expected_end": "2026-11-21T22:00:00+00:00",
+    "result": "win"
    }
-  ]
+  ],
+  "graded": "2026-11-22T00:18:54.837288+00:00"
  },
  {
   "id": "PARLAY-202611200216-2",
@@ -1572,8 +1372,8 @@
   "model_prob": 0.244,
   "ev": 0.758,
   "payout_units": 6.2,
-  "status": "pending",
-  "pnl": null,
+  "status": "win",
+  "pnl": 6.2,
   "legs": [
    {
     "id": "KXSERIEASPREAD-26NOV21LAZLEC-LAZ3",
@@ -1598,9 +1398,11 @@
     "price": 0.51,
     "model_prob": 0.632,
     "edge": 0.104,
-    "expected_end": "2026-11-21T22:00:00+00:00"
+    "expected_end": "2026-11-21T22:00:00+00:00",
+    "result": "win"
    }
-  ]
+  ],
+  "graded": "2026-11-22T00:18:54.889799+00:00"
  },
  {
   "id": "PARLAY-202611210126-2",
@@ -1643,5 +1445,97 @@
    }
   ],
   "graded": "2026-11-21T19:08:43.765169+00:00"
+ },
+ {
+  "id": "PARLAY-202611220018-1",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-11-22T00:18:55.652107+00:00",
+  "units": 1.0,
+  "price": 0.1804,
+  "model_prob": 0.2984,
+  "ev": 0.654,
+  "payout_units": 4.5,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXNFLRSHYDS-26NOV22MINSF-SFKBLACK26-30",
+    "ticker": "KXNFLRSHYDS-26NOV22MINSF-SFKBLACK26-30",
+    "side": "yes",
+    "market": "Kaelon Black: 30+",
+    "matchup": "MIN at SF",
+    "sport": "Football",
+    "price": 0.48,
+    "model_prob": 0.606,
+    "edge": 0.108,
+    "expected_end": "2026-11-23T04:20:00+00:00"
+   },
+   {
+    "id": "KXNFLRSHYDS-26NOV22NOCHI-NOTETIENNE3-30",
+    "ticker": "KXNFLRSHYDS-26NOV22NOCHI-NOTETIENNE3-30",
+    "side": "yes",
+    "market": "Travis Etienne Jr.: 30+",
+    "matchup": "NO at CHI",
+    "sport": "Football",
+    "price": 0.49,
+    "model_prob": 0.611,
+    "edge": 0.103,
+    "expected_end": "2026-11-22T21:00:00+00:00"
+   },
+   {
+    "id": "KXSUPERLIGSPREAD-26NOV22TRAEYU-TRA2",
+    "ticker": "KXSUPERLIGSPREAD-26NOV22TRAEYU-TRA2",
+    "side": "yes",
+    "market": "Trabzonspor wins by more than 1.5 goals",
+    "matchup": "Trabzonspor vs Eyupspor",
+    "sport": "Soccer",
+    "price": 0.7,
+    "model_prob": 0.806,
+    "edge": 0.092,
+    "expected_end": "2026-11-22T19:00:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": "PARLAY-202611220018-2",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-11-22T00:18:55.652145+00:00",
+  "units": 1.0,
+  "price": 0.2406,
+  "model_prob": 0.3511,
+  "ev": 0.459,
+  "payout_units": 3.2,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXNFLTOTAL-26NOV22LVDEN-44",
+    "ticker": "KXNFLTOTAL-26NOV22LVDEN-44",
+    "side": "yes",
+    "market": "Over 43.5 points",
+    "matchup": "LV at DEN",
+    "sport": "Football",
+    "price": 0.4,
+    "model_prob": 0.524,
+    "edge": 0.107,
+    "expected_end": "2026-11-23T00:25:00+00:00"
+   },
+   {
+    "id": "KXUCLSPREAD-26NOV24ARSBVB-ARS2:no",
+    "ticker": "KXUCLSPREAD-26NOV24ARSBVB-ARS2",
+    "side": "no",
+    "market": "No: Arsenal wins by more than 1.5 goals",
+    "matchup": "Arsenal vs Dortmund",
+    "sport": "Soccer",
+    "price": 0.56,
+    "model_prob": 0.67,
+    "edge": 0.093,
+    "expected_end": "2026-11-24T23:00:00+00:00"
+   }
+  ]
  }
 ]
