@@ -917,8 +917,8 @@
   "model_prob": 0.234,
   "ev": 0.757,
   "payout_units": 6.5,
-  "status": "pending",
-  "pnl": null,
+  "status": "loss",
+  "pnl": -1.0,
   "legs": [
    {
     "id": "KXNFLRSHYDS-26NOV22MINSF-SFKBLACK26-30",
@@ -930,7 +930,8 @@
     "price": 0.48,
     "model_prob": 0.606,
     "edge": 0.108,
-    "expected_end": "2026-11-23T04:20:00+00:00"
+    "expected_end": "2026-11-23T04:20:00+00:00",
+    "result": "loss"
    },
    {
     "id": "KXNCAAFTOTAL-26NOV21CHATALA-59:no",
@@ -958,7 +959,8 @@
     "expected_end": "2026-11-22T21:00:00+00:00",
     "result": "win"
    }
-  ]
+  ],
+  "graded": "2026-11-23T08:57:38.114216+00:00"
  },
  {
   "id": "PARLAY-202611190233-2",
@@ -1057,8 +1059,8 @@
   "model_prob": 0.3703,
   "ev": 0.467,
   "payout_units": 3.0,
-  "status": "pending",
-  "pnl": null,
+  "status": "loss",
+  "pnl": -1.0,
   "legs": [
    {
     "id": "KXNFLRSHYDS-26NOV22MINSF-SFKBLACK26-30",
@@ -1070,7 +1072,8 @@
     "price": 0.48,
     "model_prob": 0.606,
     "edge": 0.108,
-    "expected_end": "2026-11-23T04:20:00+00:00"
+    "expected_end": "2026-11-23T04:20:00+00:00",
+    "result": "loss"
    },
    {
     "id": "KXNFLRSHYDS-26NOV22NOCHI-NOTETIENNE3-30",
@@ -1085,7 +1088,8 @@
     "expected_end": "2026-11-22T21:00:00+00:00",
     "result": "win"
    }
-  ]
+  ],
+  "graded": "2026-11-23T08:57:38.158488+00:00"
  },
  {
   "id": "PARLAY-202611210126-1",
@@ -1318,8 +1322,8 @@
   "model_prob": 0.406,
   "ev": 0.414,
   "payout_units": 2.5,
-  "status": "pending",
-  "pnl": null,
+  "status": "loss",
+  "pnl": -1.0,
   "legs": [
    {
     "id": "KXNFLRSHYDS-26NOV22MINSF-SFKBLACK26-30",
@@ -1331,7 +1335,8 @@
     "price": 0.48,
     "model_prob": 0.606,
     "edge": 0.108,
-    "expected_end": "2026-11-23T04:20:00+00:00"
+    "expected_end": "2026-11-23T04:20:00+00:00",
+    "result": "loss"
    },
    {
     "id": "KXUCLSPREAD-26NOV24ARSBVB-ARS2:no",
@@ -1345,6 +1350,7 @@
     "edge": 0.093,
     "expected_end": "2026-11-24T23:00:00+00:00"
    }
-  ]
+  ],
+  "graded": "2026-11-23T08:57:38.476345+00:00"
  }
 ]
