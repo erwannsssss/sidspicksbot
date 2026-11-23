@@ -1,146 +1,5 @@
 [
  {
-  "id": "PARLAY-202611060058-2",
-  "tier": "P",
-  "sport": "Parlay",
-  "kind": "watchlist",
-  "made": "2026-11-06T00:58:47.179319+00:00",
-  "units": 1.0,
-  "price": 0.1701,
-  "model_prob": 0.2841,
-  "ev": 0.67,
-  "payout_units": 4.9,
-  "status": "loss",
-  "pnl": -1.0,
-  "legs": [
-   {
-    "id": "KXNFLSPREAD-26NOV08DALIND-DAL2:no",
-    "ticker": "KXNFLSPREAD-26NOV08DALIND-DAL2",
-    "side": "no",
-    "market": "No: Dallas wins by over 1.5 points",
-    "matchup": "DAL at IND",
-    "sport": "Football",
-    "price": 0.32,
-    "model_prob": 0.468,
-    "edge": 0.132,
-    "expected_end": "2026-11-08T21:00:00+00:00",
-    "result": "loss"
-   },
-   {
-    "id": "KXNCAAFSPREAD-26NOV07COLOASU-ASU4",
-    "ticker": "KXNCAAFSPREAD-26NOV07COLOASU-ASU4",
-    "side": "yes",
-    "market": "Arizona St. wins by over 3.5 points",
-    "matchup": "Colorado at Arizona State",
-    "sport": "Football",
-    "price": 0.49,
-    "model_prob": 0.607,
-    "edge": 0.099,
-    "expected_end": "2026-11-07T23:00:00+00:00",
-    "result": "win"
-   }
-  ],
-  "graded": "2026-11-08T21:59:40.969042+00:00"
- },
- {
-  "id": "PARLAY-202611070006-2",
-  "tier": "P",
-  "sport": "Parlay",
-  "kind": "watchlist",
-  "made": "2026-11-07T00:06:01.217317+00:00",
-  "units": 1.0,
-  "price": 0.1634,
-  "model_prob": 0.2831,
-  "ev": 0.733,
-  "payout_units": 5.1,
-  "status": "loss",
-  "pnl": -1.0,
-  "legs": [
-   {
-    "id": "KXNFLSPREAD-26NOV08DALIND-DAL2:no",
-    "ticker": "KXNFLSPREAD-26NOV08DALIND-DAL2",
-    "side": "no",
-    "market": "No: Dallas wins by over 1.5 points",
-    "matchup": "DAL at IND",
-    "sport": "Football",
-    "price": 0.32,
-    "model_prob": 0.468,
-    "edge": 0.132,
-    "expected_end": "2026-11-08T21:00:00+00:00",
-    "result": "loss"
-   },
-   {
-    "id": "KXNFLRECYDS-26NOV08NYJKC-KCNGRAY83-15",
-    "ticker": "KXNFLRECYDS-26NOV08NYJKC-KCNGRAY83-15",
-    "side": "yes",
-    "market": "Noah Gray: 15+",
-    "matchup": "NYJ at KC",
-    "sport": "Football",
-    "price": 0.47,
-    "model_prob": 0.605,
-    "edge": 0.118,
-    "expected_end": "2026-11-08T21:00:00+00:00",
-    "result": "loss"
-   }
-  ],
-  "graded": "2026-11-08T21:59:41.118449+00:00"
- },
- {
-  "id": "PARLAY-202611080122-1",
-  "tier": "P",
-  "sport": "Parlay",
-  "kind": "watchlist",
-  "made": "2026-11-08T01:22:30.828988+00:00",
-  "units": 1.0,
-  "price": 0.1736,
-  "model_prob": 0.329,
-  "ev": 0.896,
-  "payout_units": 4.8,
-  "status": "loss",
-  "pnl": -1.0,
-  "legs": [
-   {
-    "id": "KXNFLSPREAD-26NOV08DALIND-DAL2:no",
-    "ticker": "KXNFLSPREAD-26NOV08DALIND-DAL2",
-    "side": "no",
-    "market": "No: Dallas wins by over 1.5 points",
-    "matchup": "DAL at IND",
-    "sport": "Football",
-    "price": 0.32,
-    "model_prob": 0.468,
-    "edge": 0.132,
-    "expected_end": "2026-11-08T21:00:00+00:00",
-    "result": "loss"
-   },
-   {
-    "id": "KXNFLRECYDS-26NOV09BUFMIN-MINJJEFFERSON18-100:no",
-    "ticker": "KXNFLRECYDS-26NOV09BUFMIN-MINJJEFFERSON18-100",
-    "side": "no",
-    "market": "Justin Jefferson: under 100",
-    "matchup": "BUF at MIN",
-    "sport": "Football",
-    "price": 0.7,
-    "model_prob": 0.843,
-    "edge": 0.128,
-    "expected_end": "2026-11-10T04:15:00+00:00"
-   },
-   {
-    "id": "KXNFLRECYDS-26NOV08LARWAS-WASAWILLIAMS14-70:no",
-    "ticker": "KXNFLRECYDS-26NOV08LARWAS-WASAWILLIAMS14-70",
-    "side": "no",
-    "market": "Antonio Williams: under 70",
-    "matchup": "LA at WAS",
-    "sport": "Football",
-    "price": 0.71,
-    "model_prob": 0.834,
-    "edge": 0.11,
-    "expected_end": "2026-11-08T21:00:00+00:00",
-    "result": "win"
-   }
-  ],
-  "graded": "2026-11-08T21:59:41.356882+00:00"
- },
- {
   "id": "PARLAY-202611090142-1",
   "tier": "P",
   "sport": "Parlay",
@@ -1096,7 +955,8 @@
     "price": 0.49,
     "model_prob": 0.611,
     "edge": 0.103,
-    "expected_end": "2026-11-22T21:00:00+00:00"
+    "expected_end": "2026-11-22T21:00:00+00:00",
+    "result": "win"
    }
   ]
  },
@@ -1111,8 +971,8 @@
   "model_prob": 0.3065,
   "ev": 0.509,
   "payout_units": 3.9,
-  "status": "pending",
-  "pnl": null,
+  "status": "win",
+  "pnl": 3.92,
   "legs": [
    {
     "id": "KXNFLTOTAL-26NOV22LVDEN-44",
@@ -1124,7 +984,8 @@
     "price": 0.4,
     "model_prob": 0.524,
     "edge": 0.107,
-    "expected_end": "2026-11-23T00:25:00+00:00"
+    "expected_end": "2026-11-23T00:25:00+00:00",
+    "result": "win"
    },
    {
     "id": "KXNCAAFTOTAL-26NOV21HOUWVU-70:no",
@@ -1139,7 +1000,8 @@
     "expected_end": "2026-11-21T23:00:00+00:00",
     "result": "win"
    }
-  ]
+  ],
+  "graded": "2026-11-23T00:47:30.437487+00:00"
  },
  {
   "id": "PARLAY-202611200216-1",
@@ -1220,7 +1082,8 @@
     "price": 0.49,
     "model_prob": 0.611,
     "edge": 0.103,
-    "expected_end": "2026-11-22T21:00:00+00:00"
+    "expected_end": "2026-11-22T21:00:00+00:00",
+    "result": "win"
    }
   ]
  },
@@ -1387,7 +1250,88 @@
     "price": 0.4,
     "model_prob": 0.524,
     "edge": 0.107,
-    "expected_end": "2026-11-23T00:25:00+00:00"
+    "expected_end": "2026-11-23T00:25:00+00:00",
+    "result": "win"
+   },
+   {
+    "id": "KXUCLSPREAD-26NOV24ARSBVB-ARS2:no",
+    "ticker": "KXUCLSPREAD-26NOV24ARSBVB-ARS2",
+    "side": "no",
+    "market": "No: Arsenal wins by more than 1.5 goals",
+    "matchup": "Arsenal vs Dortmund",
+    "sport": "Soccer",
+    "price": 0.56,
+    "model_prob": 0.67,
+    "edge": 0.093,
+    "expected_end": "2026-11-24T23:00:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": "PARLAY-202611230047-1",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-11-23T00:47:31.214855+00:00",
+  "units": 1.0,
+  "price": 0.2104,
+  "model_prob": 0.3355,
+  "ev": 0.594,
+  "payout_units": 3.8,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXUCLGAME-26NOV25SPOMUN-SPO",
+    "ticker": "KXUCLGAME-26NOV25SPOMUN-SPO",
+    "side": "yes",
+    "market": "Sporting CP to win",
+    "matchup": "Sporting CP vs Manchester United",
+    "sport": "Soccer",
+    "price": 0.39,
+    "model_prob": 0.53,
+    "edge": 0.123,
+    "expected_end": "2026-11-25T23:00:00+00:00"
+   },
+   {
+    "id": "KXNFLTOTAL-26NOV26CHIDET-56:no",
+    "ticker": "KXNFLTOTAL-26NOV26CHIDET-56",
+    "side": "no",
+    "market": "Under 55.5 points",
+    "matchup": "CHI at DET",
+    "sport": "Football",
+    "price": 0.5,
+    "model_prob": 0.633,
+    "edge": 0.116,
+    "expected_end": "2026-11-26T21:00:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": "PARLAY-202611230047-2",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-11-23T00:47:31.214882+00:00",
+  "units": 1.0,
+  "price": 0.2872,
+  "model_prob": 0.406,
+  "ev": 0.414,
+  "payout_units": 2.5,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXNFLRSHYDS-26NOV22MINSF-SFKBLACK26-30",
+    "ticker": "KXNFLRSHYDS-26NOV22MINSF-SFKBLACK26-30",
+    "side": "yes",
+    "market": "Kaelon Black: 30+",
+    "matchup": "MIN at SF",
+    "sport": "Football",
+    "price": 0.48,
+    "model_prob": 0.606,
+    "edge": 0.108,
+    "expected_end": "2026-11-23T04:20:00+00:00"
    },
    {
     "id": "KXUCLSPREAD-26NOV24ARSBVB-ARS2:no",
