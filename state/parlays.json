@@ -1352,5 +1352,85 @@
    }
   ],
   "graded": "2026-11-23T08:57:38.476345+00:00"
+ },
+ {
+  "id": "PARLAY-202611240945-1",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-11-24T09:45:59.206599+00:00",
+  "units": 1.0,
+  "price": 0.2104,
+  "model_prob": 0.3355,
+  "ev": 0.594,
+  "payout_units": 3.8,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXUCLGAME-26NOV25SPOMUN-SPO",
+    "ticker": "KXUCLGAME-26NOV25SPOMUN-SPO",
+    "side": "yes",
+    "market": "Sporting CP to win",
+    "matchup": "Sporting CP vs Manchester United",
+    "sport": "Soccer",
+    "price": 0.39,
+    "model_prob": 0.53,
+    "edge": 0.123,
+    "expected_end": "2026-11-25T23:00:00+00:00"
+   },
+   {
+    "id": "KXNFLTOTAL-26NOV26CHIDET-56:no",
+    "ticker": "KXNFLTOTAL-26NOV26CHIDET-56",
+    "side": "no",
+    "market": "Under 55.5 points",
+    "matchup": "CHI at DET",
+    "sport": "Football",
+    "price": 0.5,
+    "model_prob": 0.633,
+    "edge": 0.116,
+    "expected_end": "2026-11-26T21:00:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": "PARLAY-202611240945-2",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-11-24T09:45:59.206636+00:00",
+  "units": 1.0,
+  "price": 0.2523,
+  "model_prob": 0.3692,
+  "ev": 0.463,
+  "payout_units": 3.0,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXUCLSPREAD-26NOV24BOGASK-BOG2",
+    "ticker": "KXUCLSPREAD-26NOV24BOGASK-BOG2",
+    "side": "yes",
+    "market": "Bodoe/Glimt wins by more than 1.5 goals",
+    "matchup": "Bodoe/Glimt vs LASK",
+    "sport": "Soccer",
+    "price": 0.42,
+    "model_prob": 0.551,
+    "edge": 0.114,
+    "expected_end": "2026-11-24T20:45:00+00:00"
+   },
+   {
+    "id": "KXUCLSPREAD-26NOV24ARSBVB-ARS2:no",
+    "ticker": "KXUCLSPREAD-26NOV24ARSBVB-ARS2",
+    "side": "no",
+    "market": "No: Arsenal wins by more than 1.5 goals",
+    "matchup": "Arsenal vs Dortmund",
+    "sport": "Soccer",
+    "price": 0.56,
+    "model_prob": 0.67,
+    "edge": 0.093,
+    "expected_end": "2026-11-24T23:00:00+00:00"
+   }
+  ]
  }
 ]
