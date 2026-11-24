@@ -129,48 +129,6 @@
   "graded": "2026-11-14T07:34:19.624265+00:00"
  },
  {
-  "id": "PARLAY-202611100436-2",
-  "tier": "P",
-  "sport": "Parlay",
-  "kind": "watchlist",
-  "made": "2026-11-10T04:36:55.616811+00:00",
-  "units": 1.0,
-  "price": 0.2879,
-  "model_prob": 0.3721,
-  "ev": 0.292,
-  "payout_units": 2.5,
-  "status": "loss",
-  "pnl": -1.0,
-  "legs": [
-   {
-    "id": "KXNCAAFGAME-26NOV10OHIOMOH-OHIO",
-    "ticker": "KXNCAAFGAME-26NOV10OHIOMOH-OHIO",
-    "side": "yes",
-    "market": "Ohio to win",
-    "matchup": "Ohio at Miami (OH)",
-    "sport": "Football",
-    "price": 0.49,
-    "model_prob": 0.586,
-    "edge": 0.078,
-    "expected_end": "2026-11-11T03:00:00+00:00"
-   },
-   {
-    "id": "KXATPMATCH-26NOV10SONHAL-HAL",
-    "ticker": "KXATPMATCH-26NOV10SONHAL-HAL",
-    "side": "yes",
-    "market": "Quentin Halys to win",
-    "matchup": "2026 ATP Stockholm 1/16",
-    "sport": "Tennis",
-    "price": 0.55,
-    "model_prob": 0.635,
-    "edge": 0.068,
-    "expected_end": "2026-11-10T13:00:00+00:00",
-    "result": "loss"
-   }
-  ],
-  "graded": "2026-11-10T20:48:41.405783+00:00"
- },
- {
   "id": "PARLAY-202611110114-1",
   "tier": "P",
   "sport": "Parlay",
@@ -1241,8 +1199,8 @@
   "model_prob": 0.3511,
   "ev": 0.459,
   "payout_units": 3.2,
-  "status": "pending",
-  "pnl": null,
+  "status": "win",
+  "pnl": 3.16,
   "legs": [
    {
     "id": "KXNFLTOTAL-26NOV22LVDEN-44",
@@ -1267,9 +1225,11 @@
     "price": 0.56,
     "model_prob": 0.67,
     "edge": 0.093,
-    "expected_end": "2026-11-24T23:00:00+00:00"
+    "expected_end": "2026-11-24T23:00:00+00:00",
+    "result": "win"
    }
-  ]
+  ],
+  "graded": "2026-11-24T22:21:35.820502+00:00"
  },
  {
   "id": "PARLAY-202611230047-1",
@@ -1404,8 +1364,8 @@
   "model_prob": 0.3692,
   "ev": 0.463,
   "payout_units": 3.0,
-  "status": "pending",
-  "pnl": null,
+  "status": "loss",
+  "pnl": -1.0,
   "legs": [
    {
     "id": "KXUCLSPREAD-26NOV24BOGASK-BOG2",
@@ -1417,7 +1377,8 @@
     "price": 0.42,
     "model_prob": 0.551,
     "edge": 0.114,
-    "expected_end": "2026-11-24T20:45:00+00:00"
+    "expected_end": "2026-11-24T20:45:00+00:00",
+    "result": "loss"
    },
    {
     "id": "KXUCLSPREAD-26NOV24ARSBVB-ARS2:no",
@@ -1429,8 +1390,10 @@
     "price": 0.56,
     "model_prob": 0.67,
     "edge": 0.093,
-    "expected_end": "2026-11-24T23:00:00+00:00"
+    "expected_end": "2026-11-24T23:00:00+00:00",
+    "result": "win"
    }
-  ]
+  ],
+  "graded": "2026-11-24T22:21:36.365453+00:00"
  }
 ]
