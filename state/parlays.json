@@ -1395,5 +1395,85 @@
    }
   ],
   "graded": "2026-11-24T22:21:36.365453+00:00"
+ },
+ {
+  "id": "PARLAY-202611250525-1",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "recommended",
+  "made": "2026-11-25T05:25:07.438007+00:00",
+  "units": 1.0,
+  "price": 0.1434,
+  "model_prob": 0.2763,
+  "ev": 0.927,
+  "payout_units": 6.0,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXNCAAFSPREAD-26NOV28USCUCLA-UCLA3",
+    "ticker": "KXNCAAFSPREAD-26NOV28USCUCLA-UCLA3",
+    "side": "yes",
+    "market": "UCLA wins by over 2.5 points",
+    "matchup": "USC at UCLA",
+    "sport": "Football",
+    "price": 0.28,
+    "model_prob": 0.44,
+    "edge": 0.146,
+    "expected_end": "2026-11-28T23:30:00+00:00"
+   },
+   {
+    "id": "KXNCAAFSPREAD-26NOV28SCARCLEM-SCAR6:no",
+    "ticker": "KXNCAAFSPREAD-26NOV28SCARCLEM-SCAR6",
+    "side": "no",
+    "market": "No: South Carolina wins by over 5.5 points",
+    "matchup": "South Carolina at Clemson",
+    "sport": "Football",
+    "price": 0.47,
+    "model_prob": 0.628,
+    "edge": 0.141,
+    "expected_end": "2026-11-28T23:00:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": "PARLAY-202611250525-2",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-11-25T05:25:07.438069+00:00",
+  "units": 1.0,
+  "price": 0.2104,
+  "model_prob": 0.3355,
+  "ev": 0.594,
+  "payout_units": 3.8,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXUCLGAME-26NOV25SPOMUN-SPO",
+    "ticker": "KXUCLGAME-26NOV25SPOMUN-SPO",
+    "side": "yes",
+    "market": "Sporting CP to win",
+    "matchup": "Sporting CP vs Manchester United",
+    "sport": "Soccer",
+    "price": 0.39,
+    "model_prob": 0.53,
+    "edge": 0.123,
+    "expected_end": "2026-11-25T23:00:00+00:00"
+   },
+   {
+    "id": "KXNFLTOTAL-26NOV26CHIDET-56:no",
+    "ticker": "KXNFLTOTAL-26NOV26CHIDET-56",
+    "side": "no",
+    "market": "Under 55.5 points",
+    "matchup": "CHI at DET",
+    "sport": "Football",
+    "price": 0.5,
+    "model_prob": 0.633,
+    "edge": 0.116,
+    "expected_end": "2026-11-26T21:00:00+00:00"
+   }
+  ]
  }
 ]
