@@ -1199,8 +1199,8 @@
   "model_prob": 0.3355,
   "ev": 0.594,
   "payout_units": 3.8,
-  "status": "pending",
-  "pnl": null,
+  "status": "loss",
+  "pnl": -1.0,
   "legs": [
    {
     "id": "KXUCLGAME-26NOV25SPOMUN-SPO",
@@ -1212,7 +1212,8 @@
     "price": 0.39,
     "model_prob": 0.53,
     "edge": 0.123,
-    "expected_end": "2026-11-25T23:00:00+00:00"
+    "expected_end": "2026-11-25T23:00:00+00:00",
+    "result": "loss"
    },
    {
     "id": "KXNFLTOTAL-26NOV26CHIDET-56:no",
@@ -1226,7 +1227,8 @@
     "edge": 0.116,
     "expected_end": "2026-11-26T21:00:00+00:00"
    }
-  ]
+  ],
+  "graded": "2026-11-26T01:47:46.414292+00:00"
  },
  {
   "id": "PARLAY-202611230047-2",
@@ -1281,8 +1283,8 @@
   "model_prob": 0.3355,
   "ev": 0.594,
   "payout_units": 3.8,
-  "status": "pending",
-  "pnl": null,
+  "status": "loss",
+  "pnl": -1.0,
   "legs": [
    {
     "id": "KXUCLGAME-26NOV25SPOMUN-SPO",
@@ -1294,7 +1296,8 @@
     "price": 0.39,
     "model_prob": 0.53,
     "edge": 0.123,
-    "expected_end": "2026-11-25T23:00:00+00:00"
+    "expected_end": "2026-11-25T23:00:00+00:00",
+    "result": "loss"
    },
    {
     "id": "KXNFLTOTAL-26NOV26CHIDET-56:no",
@@ -1308,7 +1311,8 @@
     "edge": 0.116,
     "expected_end": "2026-11-26T21:00:00+00:00"
    }
-  ]
+  ],
+  "graded": "2026-11-26T01:47:46.519111+00:00"
  },
  {
   "id": "PARLAY-202611240945-2",
@@ -1404,8 +1408,8 @@
   "model_prob": 0.3355,
   "ev": 0.594,
   "payout_units": 3.8,
-  "status": "pending",
-  "pnl": null,
+  "status": "loss",
+  "pnl": -1.0,
   "legs": [
    {
     "id": "KXUCLGAME-26NOV25SPOMUN-SPO",
@@ -1417,7 +1421,89 @@
     "price": 0.39,
     "model_prob": 0.53,
     "edge": 0.123,
-    "expected_end": "2026-11-25T23:00:00+00:00"
+    "expected_end": "2026-11-25T23:00:00+00:00",
+    "result": "loss"
+   },
+   {
+    "id": "KXNFLTOTAL-26NOV26CHIDET-56:no",
+    "ticker": "KXNFLTOTAL-26NOV26CHIDET-56",
+    "side": "no",
+    "market": "Under 55.5 points",
+    "matchup": "CHI at DET",
+    "sport": "Football",
+    "price": 0.5,
+    "model_prob": 0.633,
+    "edge": 0.116,
+    "expected_end": "2026-11-26T21:00:00+00:00"
+   }
+  ],
+  "graded": "2026-11-26T01:47:46.811291+00:00"
+ },
+ {
+  "id": "PARLAY-202611260147-1",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-11-26T01:47:48.648517+00:00",
+  "units": 1.0,
+  "price": 0.2376,
+  "model_prob": 0.3994,
+  "ev": 0.681,
+  "payout_units": 3.2,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXNFLTOTAL-26NOV29NELAC-37",
+    "ticker": "KXNFLTOTAL-26NOV29NELAC-37",
+    "side": "yes",
+    "market": "Over 36.5 points",
+    "matchup": "NE at LAC",
+    "sport": "Football",
+    "price": 0.47,
+    "model_prob": 0.636,
+    "edge": 0.148,
+    "expected_end": "2026-11-30T04:20:00+00:00"
+   },
+   {
+    "id": "KXNCAAFSPREAD-26NOV28SCARCLEM-SCAR6:no",
+    "ticker": "KXNCAAFSPREAD-26NOV28SCARCLEM-SCAR6",
+    "side": "no",
+    "market": "No: South Carolina wins by over 5.5 points",
+    "matchup": "South Carolina at Clemson",
+    "sport": "Football",
+    "price": 0.47,
+    "model_prob": 0.628,
+    "edge": 0.141,
+    "expected_end": "2026-11-28T23:00:00+00:00"
+   }
+  ]
+ },
+ {
+  "id": "PARLAY-202611260147-2",
+  "tier": "P",
+  "sport": "Parlay",
+  "kind": "watchlist",
+  "made": "2026-11-26T01:47:48.648550+00:00",
+  "units": 1.0,
+  "price": 0.1522,
+  "model_prob": 0.2785,
+  "ev": 0.83,
+  "payout_units": 5.6,
+  "status": "pending",
+  "pnl": null,
+  "legs": [
+   {
+    "id": "KXNCAAFSPREAD-26NOV28USCUCLA-UCLA3",
+    "ticker": "KXNCAAFSPREAD-26NOV28USCUCLA-UCLA3",
+    "side": "yes",
+    "market": "UCLA wins by over 2.5 points",
+    "matchup": "USC at UCLA",
+    "sport": "Football",
+    "price": 0.28,
+    "model_prob": 0.44,
+    "edge": 0.146,
+    "expected_end": "2026-11-28T23:30:00+00:00"
    },
    {
     "id": "KXNFLTOTAL-26NOV26CHIDET-56:no",
